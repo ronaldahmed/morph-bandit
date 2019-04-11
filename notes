@@ -1,0 +1,67 @@
+
+metrics to use:
+- lemmata acc (eval lemming?)
+	lemming disregards CASE
+		basic_eval == lemming acc
+
+- lemmata dist
+- MSD acc
+- MSD F1
+
+
++ search & isolate code from neural-lemm & neural-tagger
+--> test & compare w lemming eval
+
+	- code available
+	- decoded files available
+		-> no need to re-train
+		-> pretrained models also avalbl
+
+
+
+MSD acc : whole label ==
+MSD F1
+	normal f1 score
+MSD micro-avg F1:
+	avg of P, R
+	-> then calc avg.F1
+
+::questions for Dan
+- MSD F1 label aggregation
+	micro, macro, unweighted?
+	-> lemming does: unweighted
+- MSD acc & F1 empty lines "_"
+	for decoded files: 
+		accuracy lemming==baseline reproduced with "filter-empty lines" of lemming
+
+
++ retrain en-ewt neural-lemmatizer
+-> reproduce res in table (dev or hidden test?)
+-> must be eq to basic_eval
+-> train for DE, MT
+mt: done --> check for files & evaluate
+
+
+
+
+agenda for today
+- baselines
+	lemming -> running
+	neural lemmatizer / tagger -> still to configure my server user
+	isolated scorer
+- primitive merges : en,es,cs,tr,ar,it
+	better way to visualize it
+		normalize by LABEL + barplot of LABEL freq, in same order
+		smaller font size -> clutter more op names
+- got info on Maltese data
+	limitations on UD / UM data
+		only first inflection form of verbs
+		no obj agreement morphemes
+
+	ar, hebrew -> obj clitic is tokenized
+
+
+- general experiment setup
+	task 2 seems to be tak2-data spec
+
+- SoPa
