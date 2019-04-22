@@ -59,7 +59,7 @@ class WFGen:
     count = 0
     for lid in langs:
       lang = iso_mapper[lid]
-      dirname = gb.glob("task1/"+lang+"--*")[0]
+      dirname = gb.glob("2019/task1/"+lang+"--*")[0]
       filename = os.path.join(dirname,lang+"-train-high")
       for line in open(filename,'r'):
         line = line.strip("\n")
@@ -84,7 +84,7 @@ class WFGen:
     count = 0
     for tbname in tb_names:
       uddir = self.tbname2uddir[tbname]
-      filename = "task2/%s/%s-um-train.conllu" % (uddir,tbname)
+      filename = "2019/task2/%s/%s-um-train.conllu" % (uddir,tbname)
 
       # collect per-lang vocab
       vocab = {} # { lem::form : [FEAT_SET.1,FEAT_SET.2,...] }
