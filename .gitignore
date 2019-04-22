@@ -3,4 +3,5 @@ train-ops/
 dicts/
 *.pyc
 __pycache__
+dicts/
 
