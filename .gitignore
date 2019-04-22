@@ -1,7 +1,5 @@
 *.pyc
 __pycache__
-task1/*
-task2/*
-data/*
-baselines-t2/*
-emb/*
+dicts/
+emb/
+
