@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# usage example:
+#   bash gen_exp_mono-emb_dante.sh de_gsd 2019/task2/UD_German-GSD/de_gsd-um-train.conllu
+
 treebank=$1
 input=$2
 outfile=mono-"$treebank"-dante.sh

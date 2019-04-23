@@ -4,9 +4,11 @@ tbname=$1
 input=$2
 njobs=20
 
-outname="wraps/ft-$tbname"
+outname="mono-$tbname-ufal.sh"
 
 echo "#!/bin/bash" > $outname
+echo "" >> $outname
+echo "cd $HOME/morph-bandit"
 echo "" >> $outname
 echo "qsub -cwd -l mem_free=15G,act_mem_free=15G,h_vmem=22G -p -50 -pe smp $njobs \ " >> $outname
 echo "-o $outname.out \ " >> $outname
