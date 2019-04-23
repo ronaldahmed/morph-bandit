@@ -3,7 +3,7 @@
 treebank=$1
 input=$2
 outfile=mono-emb_"$treebank"_dante.sh
-njobs=40
+njobs=30
 
 echo "#!/bin/bash" > $outfile
 echo "" >> $outfile
@@ -12,7 +12,7 @@ echo "#SBATCH --job-name=mono_$treebank" >> $outfile
 echo "#SBATCH --output=/users/cborg/rcardenas/morph-bandit/wraps/ft-emb_$treebank.log" >> $outfile
 echo "#SBATCH --nodes=1" >> $outfile
 echo "#SBATCH --ntasks=$njobs" >> $outfile
-echo "#SBATCH --mem=80GB" >> $outfile
+echo "#SBATCH --mem=50GB" >> $outfile
 echo "#SBATCH --time=100:00:00" >> $outfile
 echo "" >> $outfile
 
