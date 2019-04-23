@@ -13,8 +13,7 @@ for filename in gb.glob("dicts/*.txt"):
     try:
       w1,w2 = line.split('\t')
     except:
-      w1,w2 = line.split(' ')
-      
+      w1,w2 = line.split(' ') 
 
     opf1 = "START.START-" + w1.lower()
     opf2 = "START.START-" + w2.lower()
