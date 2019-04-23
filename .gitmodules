@@ -4,3 +4,6 @@
 [submodule "contextual-analysis-baseline"]
 	path = contextual-analysis-baseline
 	url = git@github.com:sigmorphon/contextual-analysis-baseline.git
+[submodule "soft_patterns"]
+	path = soft_patterns
+	url = git@github.com:Noahs-ARK/soft_patterns.git
