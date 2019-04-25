@@ -14,7 +14,7 @@ echo "#SBATCH --job-name=$src-$tgt" >> $outfile
 echo "#SBATCH --output=$basedir/emb/multi/$src-$tgt.log" >> $outfile
 echo "#SBATCH --nodes=1" >> $outfile
 echo "#SBATCH --ntasks=20" >> $outfile
-echo "#SBATCH --mem=50GB" >> $outfile
+echo "#SBATCH --mem=40GB" >> $outfile
 echo "#SBATCH --gres=gpu:1" >> $outfile
 echo "#SBATCH --time=100:00:00" >> $outfile
 echo "" >> $outfile
