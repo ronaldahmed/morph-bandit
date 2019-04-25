@@ -4,7 +4,7 @@ tbname=$1
 input=$2
 njobs=20
 
-outname="wraps/ft-$tbname"
+outname="mono-$tbname-ufal.sh"
 
 echo "#!/bin/bash" > $outname
 echo "" >> $outname

@@ -45,7 +45,7 @@ def uploadObject(obj_name):
 
 def map_ud_folders():
   mapper = {}
-  basedir = "task2"
+  basedir = "2019/task2"
   for root,dirnames,_ in os.walk(basedir):
     for uddir in dirnames:
       _file_list = gb.glob(os.path.join(basedir,uddir,"*-um-*.conllu"))
