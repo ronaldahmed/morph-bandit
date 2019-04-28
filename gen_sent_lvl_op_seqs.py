@@ -16,7 +16,10 @@ if __name__=="__main__":
 
   # read task 1 data
   wg = WFGen(_maxdata=150000,_num_merges=50)
-  wg.read_task2(tbs)
   
+  # ops = wg.get_primitive_actions("abc","at")
+  # print(wg.encode_op_seq(ops))
+  
+  wg.read_task2(tbs)
   wg.dump_coded_sents_conllu(args.input,args.output)
   
