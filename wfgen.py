@@ -153,8 +153,8 @@ class WFGen:
         else:
           ops = self.get_primitive_actions(lem,form)
         
-        print(line)
-        print(form,"-->",lem)
+        # print(line)
+        # print(form,"-->",lem)
         op_tokens = self.encode_op_seq(ops)
         orig = lem if self.inflector else form
         start_tok = "%s.%s-%s" % (START,START,orig)
@@ -319,10 +319,6 @@ class WFGen:
       else:
         prefs_cnt -= 1
 
-    # print(ops)
-    # print(prefs_cnt,sufs_cnt)
-    # pdb.set_trace()
-
     if prefs_cnt >= sufs_cnt:
       print("prefs > sufs!!")
       pdb.set_trace()
@@ -333,71 +329,49 @@ class WFGen:
     mids  = [x for x in ops[prefs_cnt+1:sufs_cnt] if x.name!=SKIP]
 
     # e) reverse ins/del ops accordingly
-    def reverse_chunk_op(seq,name):
+
+    def reverse_by_blocks(seq,mode='suff'):
+      """ mode: suff, pref
+      """
       if seq==[]: return []
-      cnt = 0
+
       buff = []
-      ENTRA = False
-      seq.append(Operation(STOP,-1,seq[0].form,True))
-      n_seq = len(seq)
+      ins = []
+      cnt = 0
+      # seq.append(Operation(STOP,-1,seq[0].form,True))
+      # n_seq = len(seq)
       for i,op in enumerate(seq):
-        if op.name==name:
-          cnt += 1
+        if op.name==INS:
+          ins.append(op)
         else:
-          if cnt>1:
-            buff = buff[:-cnt] + list(reversed(buff[-cnt:]))
-            ENTRA = True
-          cnt = 0
-        if i < n_seq-1:
           buff.append(op)
-
-      if ENTRA: pdb.set_trace()
-
-      if len(buff) != n_seq-1:
-        print("buff diff len!!")
-        print(buff)
-        pdb.set_trace()
-
+          # if op.name == DEL:
+          #   cnt += 1
+          # else:
+          #   if cnt>0 and mode=="suff":
+          #     buff = list(reversed(buff))
+          #   cnt = 0
+          # if i < n_seq-1:
+      #
+      if mode=="suff":
+        buff = list(reversed(buff))
+      buff += ins
       return buff
 
-    # e.1. prefix: reverse INS
-    try:
-      prefs = reverse_chunk_op(list(reversed(prefs)),DEL) # <---
-      suffs = reverse_chunk_op(suffs,DEL)                 # --->
-    except:
-      pdb.set_trace()
-
-    # sent = []
-    # to_inv = []
-    # prefs = []
-    # sufs = []
-    # mid = []
-    # for i,op in enumerate(ops):
-    #   if op.name==SKIP:
-    #     continue
-    #   op_mask_code = "_A_"
-    #   if i <= prefs_cnt:
-    #     op_mask_code = "_A"
-    #   if i >= sufs_cnt:
-    #     op_mask_code = "A_"
-    #   token = "%s.%s-%s" % (op.name,op_mask_code,op.segment)
-    #   if op_mask_code=="A_":
-    #     sufs.append(token)
-    #   elif op_mask_code=="_A":
-    #     prefs.append(token)
-    #   else:
-    #     mid.append(token)
-    # ##
+    # e.1. prefix: reverse INS  
+    prefs = reverse_by_blocks(prefs,'pref') # <---
+    suffs = reverse_by_blocks(suffs,'suff') # --->
+  
 
     # f) encode operation & aggregate
     sent = ["%s.%s-%s" % (op.name,"_A" ,op.segment) for op in prefs] + \
-           ["%s.%s-%s" % (op.name,"_A_",op.segment) for op in mids] + \
+           ["%s._%d_-%s" % (op.name,op.pos,op.segment) for op in mids] + \
            ["%s.%s-%s" % (op.name,"A_" ,op.segment) for op in suffs]
     
 
-    if len(prefs)>1:
-      print(prefs)
-      pdb.set_trace()
+    # if len(prefs)>1:
+    #   print(prefs)
+    #   pdb.set_trace()
 
 
     return sent
