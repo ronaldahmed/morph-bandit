@@ -4,7 +4,6 @@
 #   bash gen_exp_mono-emb_dante.sh de_gsd 2019/task2/UD_German-GSD/de_gsd-um-train.conllu
 
 treebank=$1
-input=$2
 outfile=mono-"$treebank"-dante.sh
 njobs=30
 
@@ -25,4 +24,4 @@ echo "conda activate sopa" >> $outfile
 echo "cd /users/cborg/rcardenas/morph-bandit/" >> $outfile
 echo "" >> $outfile
 
-echo "/users/cborg/rcardenas/fastText/fasttext skipgram -minCount 1 -input $input -output emb/$treebank -thread $njobs" >> $outfile
+echo "/users/cborg/rcardenas/fastText/fasttext skipgram -minCount 1 -input train-ops/$treebank -output emb/$treebank -thread $njobs" >> $outfile

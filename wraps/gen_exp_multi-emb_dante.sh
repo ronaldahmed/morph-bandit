@@ -27,8 +27,8 @@ echo "" >> $outfile
 echo "cd /users/cborg/rcardenas/MUSE" >> $outfile
 
 run_com="
-python supervised.py --seed 42 --cuda --normalize_embeddings \
---exp_path emb/multi/ --exp_name $src-$tgt --exp_id $src-$tgt \
+python supervised.py --seed 42 --cuda True --normalize_embeddings center \
+--exp_path $basedir/emb/multi/ --exp_name $src-$tgt --exp_id $src-$tgt \
 --src_lang $src --tgt_lang $tgt \
 --emb_dim 100 \
 --dico_train $basedir/dicts/$src_lang-$tgt_lang.0-5000.ops \

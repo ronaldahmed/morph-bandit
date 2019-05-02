@@ -9,7 +9,7 @@ for filename in gb.glob("dicts/*.txt"):
 
   for line in open(filename,'r'):
     line = line.strip('\n')
-    if line == '': continue
+    if line == '': continueassert
     try:
       w1,w2 = line.split('\t')
     except:
@@ -17,6 +17,6 @@ for filename in gb.glob("dicts/*.txt"):
 
     opf1 = "START.START-" + w1.lower()
     opf2 = "START.START-" + w2.lower()
-    print("%s\t%s" % (opf1,opf2), file=outfile)
+    print("%s\t%s" % (opf1.lower(),opf2.lower()), file=outfile)
   #
 #

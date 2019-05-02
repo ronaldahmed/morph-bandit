@@ -3,4 +3,4 @@
 qsub -cwd -l mem_free=15G,act_mem_free=15G,h_vmem=22G -p -50 -pe smp 20 \
 -o wraps/ft-es_ancora.out \
 -e wraps/ft-es_ancora.err \
-/home/acosta/fastText/fasttext skipgram -minCount 1 -input 2019/task2/UD_Spanish-AnCora/es_ancora-um-train.conllu -output emb/es_ancora -thread 20 
+$HOME/fastText/fasttext skipgram -minCount 1 -input 2019/task2/UD_Spanish-AnCora/es_ancora-um-train.conllu -output emb/es_ancora -thread 20 
