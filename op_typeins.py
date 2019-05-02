@@ -23,6 +23,9 @@ class Operation:
   def __repr__(self):
     return "(%s,%d,%s)" % (self.name,self.pos,self.segment)
 
+  def as_merge_op(self,):
+    return "%s-%s" % (self.name,self.segment)
+
   # def update_mask(self,mask2,seg2):
   #   # to be called only for contiguous ops of the same type
   #   self.mask |= mask2

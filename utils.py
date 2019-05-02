@@ -29,6 +29,9 @@ iso_mapper = {
   'mt': 'maltese'
 }
 
+# Sopa sharing params
+SHARED_SL_PARAM_PER_STATE_PER_PATTERN = 1
+SHARED_SL_SINGLE_PARAM = 2
 
 
 def saveObject(obj, name='model'):
@@ -57,3 +60,10 @@ def map_ud_folders():
   #
 
   return mapper
+
+
+def to_cuda(gpu):
+  return (lambda v: v.cuda()) if gpu else identity
+
+def fixed_var(tensor):
+    return Variable(tensor, requires_grad=False)
