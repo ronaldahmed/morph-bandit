@@ -3,6 +3,7 @@ import pickle
 import glob as gb
 import re
 import pdb
+import torch
 
 # label names
 MAX_INT = 1000000
@@ -74,7 +75,7 @@ def identity(x):
     return x
 
 def fixed_var(tensor):
-  return Variable(tensor, requires_grad=False)
+  return tensor.detach()
 
 
 def apply_operations(init_form,operations,debug=False):

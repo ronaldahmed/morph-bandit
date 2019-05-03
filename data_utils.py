@@ -1,7 +1,8 @@
 from label_dictionary import LabelDictionary
 import numpy as np
 import pdb
-from utils import oplabel_pat, apply_operations
+from utils import oplabel_pat, apply_operations, to_cuda, fixed_var
+import torch
 
 # Special IDs
 UNK_TOKEN = "*UNK*"
@@ -132,12 +133,13 @@ class DataLoaderAnalizer:
 
 
 class BatchBase:
-  def __init__(self,data,batch_size):
+  def __init__(self,data,batch_size,gpu=True):
     self.size = batch_size
     self.stop_id = data.ops[0][-1][-1] # last token: STOP.
     self.sents = self.strip_stop(data.ops)
     self.lemmas = data.lemmas
     self.forms = data.forms
+    self.cuda = to_cuda(gpu)
     N = len(self.sents)
     idx = list(range(N))
     idx.sort(key=lambda x: len(self.sents[x]),reverse=True)
@@ -166,7 +168,7 @@ class BatchBase:
       max_sent_len = len(sents[batch_ids[0]]) # to pad sents
       max_wop_len = 0
       for idx in batch_ids:
-        max_wop_len = max(max_wop_len,max([len(w)-1 for w in sents[idx]]))
+        max_wop_len = max(max_wop_len,max([len(w) for w in sents[idx]]))
 
       for idx in batch_ids:
         # pad the op sequence, sent still same len
@@ -180,9 +182,24 @@ class BatchBase:
     return sents
 
 
+  def invert_axes(self,sequence,idxs):
+    """ [bs,S,W] -> Sx[tensor(bs,W)] 
+        padded sequence assumed
+    """
+    new_seq = []
+    S = len(sequence[idxs[0]])
+    W = len(sequence[idxs[0]][0])
+    for i in range(S):
+      w_i = [sequence[idx][i] for idx in idxs]
+      new_seq.append( self.cuda(fixed_var(torch.LongTensor(w_i))) )
+
+    return new_seq
+
+
+
 class BatchSegm(BatchBase):
-  def __init__(self, data, batch_size):
-    super(BatchSegm, self).__init__(data,batch_size)
+  def __init__(self, data, batch_size,gpu):
+    super(BatchSegm, self).__init__(data,batch_size,gpu)
     self.tgt_sents = [] # LM-like training
     self.build_gold_lm_seq()
     self.sents = self.pad_data_per_batch(self.sents)
@@ -199,15 +216,14 @@ class BatchSegm(BatchBase):
   def get_batch(self):
     np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
-      sents = [self.sents[idx] for idx in batch_ids]
-      tgt_sents = [self.tgt_sents[idx] for idx in batch_ids]
-      lemmas = [self.lemmas[idx] for idx in batch_ids]
-      yield sents,tgt_sents
+      ops = self.invert_axes(self.sents,batch_ids)
+      tgt_ops = self.invert_axes(self.tgt_sents,batch_ids)
+      yield ops,tgt_ops
 
   def get_eval_batch(self):
     np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
-      ops = [self.sents[idx] for idx in batch_ids]
+      ops = self.invert_axes(self.sents,batch_ids)
       forms = [self.forms[idx] for idx in batch_ids]
       lemmas = [self.lemmas[idx] for idx in batch_ids]
       yield ops,forms,lemmas
@@ -215,8 +231,8 @@ class BatchSegm(BatchBase):
 
 
 class BatchAnalizer(BatchSegm):
-  def __init__(self, data, batch_size):
-    super(BatchBase, self).__init__(data,batch_size)
+  def __init__(self, data, batch_size, gpu):
+    super(BatchBase, self).__init__(data,batch_size,gpu)
     self.sents = self.pad_data_per_batch(self.sents)
     self.labels = data.feats
 

@@ -8,19 +8,19 @@ from torch.nn.utils.rnn import pad_packed_sequence
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from utils import to_cuda
+import pdb
+
 
 class Analizer(Module):
   def __init__(self,args,nvocab):
     super(Analizer, self).__init__()
     self.args = args
-    self.to_cuda = to_cuda(args.gpu)
+    self.cuda = to_cuda(args.gpu)
     self.drop = torch.nn.Dropout(args.dropout)
-    self.criterion = CrossEntropyLoss()
-    
-    self.emb = torch.nn.Embedding(nvocab, args.emb_size)
-    self.encoder = LSTM(args.emb_size,args.rnn_size,dropout=args.dropout,batch_first=True)
-    self.mlp = torch.nn.Linear(args.mlp_size, nvocab)
-    self.logprob = torch.nn.LogSoftmax()
+    self.emb = self.cuda(torch.nn.Embedding(nvocab, args.emb_size))
+    self.encoder = self.cuda(LSTM(args.emb_size,args.rnn_size,dropout=args.dropout,batch_first=True))
+    self.mlp = self.cuda(torch.nn.Linear(args.mlp_size, nvocab))
+    #self.logprob = torch.nn.LogSoftmax()
     self.init_weights()
 
 
@@ -38,7 +38,7 @@ class Analizer(Module):
     for w in input:
       emb = self.emb(w)
       rnn_output, hidden = self.encoder(emb, hidden)
-      rnn_output = self.drop(rnn_output)
+      rnn_output = self.drop(rnn_output).contiguous()
 
       output_flat = self.mlp(
                 rnn_output.view(
@@ -54,8 +54,8 @@ class Analizer(Module):
   def predict(self, input):
     # emb = self.drop(self.emb(input))
     # output = self.mlp(rnn_output)
-    hidden = (torch.zeros(args.batch_size,1, self.args.rnn_size),
-              torch.zeros(args.batch_size,1, self.args.rnn_size))
+    hidden = (self.cuda(torch.zeros(1,args.batch_size,self.args.rnn_size)),
+              self.cuda(torch.zeros(1,args.batch_size,self.args.rnn_size)))
     output = self.forward(input,hidden)
     preds = []
     # wseq_len = output[0].size(0) // args.batch_size
@@ -72,7 +72,7 @@ class Analizer(Module):
 
   def init_hidden(self, bsz):
     weight = next(self.parameters())
-    return (weight.new_zeros(bsz,1, self.args.rnn_size),
-            weight.new_zeros(bsz,1, self.args.rnn_size))
+    return (self.cuda(weight.new_zeros(1,bsz,self.args.rnn_size)),
+            self.cuda(weight.new_zeros(1,bsz,self.args.rnn_size)))
 
 

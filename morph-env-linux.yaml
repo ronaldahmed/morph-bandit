@@ -4,11 +4,11 @@ channels:
   - soumith
   - pytorch
 dependencies:
-  - pytorch
-  - torchvision
-  - cudatoolkit=10.0
+  - pytorch==1.0.0
+  - torchvision==0.2.1
+  - cudatoolkit==10.0
   - python==3.7.3
-  - mkl==2019.3-199
+  - mkl==2019.3
   - numpy==1.16.3
   - pyyaml==5.1
   - ipython==7.5.0

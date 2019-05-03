@@ -5,9 +5,10 @@ from torch.nn import Module, Parameter, NLLLoss, LSTM
 from tensorboardX import SummaryWriter
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
+from time import monotonic
 from utils import to_cuda, fixed_var
+from data_utils import PAD_ID
 import pdb
-
 
 class Trainer:
   def __init__(self,model,num_classes,args):
@@ -15,8 +16,9 @@ class Trainer:
     self.n_classes = num_classes
     self.model = model
     self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
-    self.loss_function = torch.nn.CrossEntropyLoss()
+    self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
+    self.cuda = to_cuda(args.gpu)
     self.writer = None
     self.scheduler = None
 
@@ -49,12 +51,12 @@ class Trainer:
   def compute_loss(self,pred,gold_output,debug=0):
     time1 = monotonic()
     total_loss = []
-    batch_size = self.args.batch_size
+    batch_size = gold_output[0].shape[0]
     for pred_w,gold_w in zip(pred,gold_output):
-      loss = self.loss_function(
-          pred_w.view(batch_size, self.n_classes),
-          to_cuda(self.args.gpu)(fixed_var(LongTensor(gold_w)))
-      )
+      mask = (gold_w!=PAD_ID).float() # [bs,W]
+      gold_w = self.cuda(fixed_var(gold_w.view(-1))) # [bs*W], pred_w: [bs*w,n_classes]
+      loss = self.loss_function(pred_w,gold_w)       # [bs*W]
+      loss = ((loss.view(batch_size,-1)*mask).sum(1) / mask.sum(1) ).sum() # [1]
       total_loss.append(loss)
     total_loss = sum(total_loss)
     if debug:
@@ -66,16 +68,13 @@ class Trainer:
   def train_batch(self, batch, gold_output, debug=0):
     """Train on one batch of sentences """
     self.model.train()
-
-    pdb.set_trace()
-
-    hidden = self.model.init_hidden(self.args.batch_size)
+    batch_size = gold_output[0].shape[0]
+    hidden = self.model.init_hidden(batch_size)
     hidden = self.repackage_hidden(hidden)
-    output = self.model.foward(batch, hidden)
-
+    output = self.model.forward(batch, hidden)
     self.optimizer.zero_grad()
     time0 = monotonic()
-    loss = self.compute_loss(batch, gold_output, debug)
+    loss = self.compute_loss(output, gold_output, debug)
     time1 = monotonic()
     loss.backward()
     time2 = monotonic()

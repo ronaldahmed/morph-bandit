@@ -3,6 +3,7 @@ import torch
 import numpy as np
 from torch.nn import Module, Parameter, NLLLoss, LSTM
 from torch.optim import Adam
+from time import monotonic
 from my_flags import *
 from data_utils import *
 from model_analizer import Analizer
@@ -18,8 +19,8 @@ def train(args):
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
   print("Init batch objs")
-  train_batch = BatchSegm(train,args.batch_size)
-  dev_batch   = BatchSegm(dev,args.batch_size)
+  train_batch = BatchSegm(train,args.batch_size,args.gpu)
+  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
   n_vocab = loader.get_vocab_size()
   debug_print = int(100 / args.batch_size) + 1
   debug = True
@@ -32,7 +33,7 @@ def train(args):
     train_loss = 0
     i = 0
     for sents,gold in train_batch.get_batch():
-      train_loss += torch.sum(trainer.train_batch(sents, gold, debug))
+      train_loss += torch.sum(trainer.train_batch(sents, gold, debug=False))
       if i % debug_print == (debug_print - 1):
         print(".", end="", flush=True)
       i += 1
