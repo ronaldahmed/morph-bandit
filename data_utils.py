@@ -1,13 +1,13 @@
 from label_dictionary import LabelDictionary
 import numpy as np
-import re
 import pdb
+from utils import oplabel_pat, apply_operations
 
 # Special IDs
 UNK_TOKEN = "*UNK*"
 PAD_TOKEN = "*PAD*"
 PAD_ID = 0
-oplabel_pat = re.compile("(?P<name>[a-zA-Z]+)[.](?P<pos>[_]?[0-9A]+[_]?)-(?P<seg>.+)")
+
 
 class DataWrap:
   def __init__(self,sents,feats,forms,lemmas):
@@ -94,6 +94,8 @@ class DataLoaderAnalizer:
       if line=='':
         sents.append(sent)
         labels.append(label)
+        forms.append(form_sent)
+        lemmas.append(lem_sent)
         sent = []
         label = []
         lem_sent = []
@@ -131,7 +133,6 @@ class DataLoaderAnalizer:
 
 class BatchBase:
   def __init__(self,data,batch_size):
-    sents,_,lemmas = data
     self.size = batch_size
     self.stop_id = data.ops[0][-1][-1] # last token: STOP.
     self.sents = self.strip_stop(data.ops)

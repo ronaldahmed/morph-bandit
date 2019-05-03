@@ -5,7 +5,9 @@ from torch.nn import Module, Parameter, NLLLoss, LSTM
 from tensorboardX import SummaryWriter
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-from utils import to_gpu, fixed_var
+from utils import to_cuda, fixed_var
+import pdb
+
 
 class Trainer:
   def __init__(self,model,num_classes,args):
@@ -13,15 +15,15 @@ class Trainer:
     self.n_classes = num_classes
     self.model = model
     self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
-    self.loss_function = nn.CrossEntropyLoss()
+    self.loss_function = torch.nn.CrossEntropyLoss()
     self.enable_gradient_clipping()
     self.writer = None
     self.scheduler = None
 
     if args.model_save_dir is not None:
         writer = SummaryWriter(os.path.join(model_save_dir, "logs"))
-    if args.run_scheduler:
-        scheduler = ReduceLROnPlateau(optimizer, 'min', 0.1, 10, True)
+    if args.scheduler:
+        self.scheduler = ReduceLROnPlateau(optimizer, 'min', 0.1, 10, True)
 
 
   ### Adapted from AllenNLP
@@ -36,12 +38,12 @@ class Trainer:
           parameter.register_hook(clip_function)
 
 
-  def repackage_hidden(h):
+  def repackage_hidden(self,h):
     """Wraps hidden states in new Tensors, to detach them from their history."""
     if isinstance(h, torch.Tensor):
       return h.detach()
     else:
-      return tuple(repackage_hidden(v) for v in h)
+      return tuple(self.repackage_hidden(v) for v in h)
 
 
   def compute_loss(self,pred,gold_output,debug=0):
@@ -50,7 +52,7 @@ class Trainer:
     batch_size = self.args.batch_size
     for pred_w,gold_w in zip(pred,gold_output):
       loss = self.loss_function(
-          pred_w.(batch_size, self.n_classes),
+          pred_w.view(batch_size, self.n_classes),
           to_cuda(self.args.gpu)(fixed_var(LongTensor(gold_w)))
       )
       total_loss.append(loss)
@@ -64,8 +66,11 @@ class Trainer:
   def train_batch(self, batch, gold_output, debug=0):
     """Train on one batch of sentences """
     self.model.train()
-    hidden = self.model.init_hidden(args.batch_size)
-    hidden = repackage_hidden(hidden)
+
+    pdb.set_trace()
+
+    hidden = self.model.init_hidden(self.args.batch_size)
+    hidden = self.repackage_hidden(hidden)
     output = self.model.foward(batch, hidden)
 
     self.optimizer.zero_grad()
@@ -104,8 +109,7 @@ class Trainer:
     #
 
 
-  def apply_operations(self,init_form,operations):
-    """ """
+  
 
 
   def evaluate_batch(self,batch,data_obj):

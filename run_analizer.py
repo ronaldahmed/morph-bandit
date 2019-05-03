@@ -13,18 +13,20 @@ import pdb
 
 
 def train(args):
+  print("Loading data...")
   loader = DataLoaderAnalizer(args)
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
+  print("Init batch objs")
   train_batch = BatchSegm(train,args.batch_size)
   dev_batch   = BatchSegm(dev,args.batch_size)
   n_vocab = loader.get_vocab_size()
   debug_print = int(100 / args.batch_size) + 1
+  debug = True
 
   # init trainer
   model = Analizer(args,n_vocab)
   trainer = Trainer(model,n_vocab,args)
-  trainer.model.train()
   
   for ep in range(args.epochs):
     train_loss = 0

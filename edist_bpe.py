@@ -48,7 +48,7 @@ class EDistBPE:
   def train(self,vocab):
     """
       train BPE encoder based on edit-distance operations 
-      data: [ (form,lemma,feat)_i ]
+      vocab: [ (form,lemma,feat)_i ]
       merge_file: filename where to output licensed merges
     """
     op_seqs = []
@@ -113,10 +113,10 @@ class EDistBPE:
     count = 0
     for sent in data:
       for form,lemma,feat in sent:
-        ops = self.get_primitive_actions(lemma,form)
+        ops = self.get_primitive_actions(lemma.lower(),form.lower())
         merged_ops = self.merge_ops_sent(ops)
         op_tokens = self.oracle_sequencer(merged_ops)
-        orig = lem if self.inflector else form
+        orig = lemma.lower() if self.inflector else form.lower()
         start_tok = "%s.%s-%s" % (START,START,orig)
         op_tokens = [start_tok] + op_tokens + [stop_tok]
         op_tok_str = " ".join(op_tokens)
@@ -228,8 +228,10 @@ class EDistBPE:
       if ops[i].name==SKIP:
         break
       if any([ops[i].pos==1,
-              i>0 and ops[i-1].pos==ops[i].pos,
-              i>0 and ops[i-1].name!=INS and ops[i-1].pos!=ops[i].pos and ops[i-1].pos + len(ops[i-1].segment) == ops[i].pos,
+              i>0 and ops[i-1].name==DEL and ops[i].name==DEL and ops[i-1].pos + len(ops[i-1].segment) == ops[i].pos,
+              i>0 and ops[i-1].name==DEL and ops[i].name!=INS and ops[i-1].pos + len(ops[i-1].segment) == ops[i].pos,
+              # i>0 and ops[i-1].pos==ops[i].pos,
+              # i>0 and ops[i-1].name!=INS and ops[i-1].pos!=ops[i].pos and ops[i-1].pos + len(ops[i-1].segment) == ops[i].pos,
               ]):
         prefs_cnt = i
       else:
@@ -241,9 +243,13 @@ class EDistBPE:
     for i in range(n_ops-1,-1,-1):
       if ops[i].name==SKIP:
         break
-      if any([ ops[i].pos >= len_form,
-               i<n_ops-1 and ops[i].pos==ops[i+1].pos,
-               i<n_ops-1 and ops[i].name!=INS and ops[i].pos!=ops[i+1].pos and ops[i].pos + len(ops[i].segment) == ops[i+1].pos,
+      if any([ ops[i].name==INS and ops[i].pos > len_form,
+               # ops[i].name==DEL and ops[i].pos == len_form,
+               ops[i].name!=INS and ops[i].pos-1 + len(ops[i].segment)==len_form,
+               i<n_ops-1 and ops[i].name!=INS and ops[i+1].name==DEL and ops[i].pos + len(ops[i].segment) == ops[i+1].pos,
+               i<n_ops-1 and ops[i].name==DEL and ops[i+1].name==DEL and ops[i].pos + len(ops[i].segment) == ops[i+1].pos,
+               # i<n_ops-1 and ops[i].pos==ops[i+1].pos,
+               # i<n_ops-1 and ops[i].name!=INS and ops[i].pos!=ops[i+1].pos and ops[i].pos + len(ops[i].segment) == ops[i+1].pos,
                ]):
         sufs_cnt = i
       else:
@@ -301,19 +307,36 @@ class EDistBPE:
           # if i < n_seq-1:
       #
       if mode=="suff":
-        buff = list(reversed(buff))
-      buff += ins
+        buff = list(reversed(buff)) + ins
+      else:
+        buff += list(reversed(ins))
       return buff
 
     # e.1. prefix: reverse INS  
     prefs = reverse_by_blocks(prefs,'pref') # <---
     suffs = reverse_by_blocks(suffs,'suff') # --->
   
+    # f) relitivize positions 
+    discounter = 0
+    for x in prefs:
+      if x.name==INS:
+        discounter += len(x.segment)
+      if x.name==DEL:
+        discounter -= len(x.segment)
+    for i in range(len(mids)):
+      mids[i].pos += discounter
+      if mids[i].name==INS:
+        discounter += len(mids[i].segment)
+      if mids[i].name==DEL:
+        discounter -= len(mids[i].segment)
+      if mids[i].pos < 1:
+        print("Bad discounting!!")
+        pdb.set_trace()
 
-    # f) encode operation & aggregate
-    sent = ["%s.%s-%s" % (op.name,"_A" ,op.segment) for op in prefs] + \
+    # g) encode operation & aggregate
+    sent = ["%s.%s-%s" % (op.name,PREF_POS ,op.segment) for op in prefs] + \
            ["%s._%d_-%s" % (op.name,op.pos,op.segment) for op in mids] + \
-           ["%s.%s-%s" % (op.name,"A_" ,op.segment) for op in suffs]
+           ["%s.%s-%s" % (op.name,SUFF_POS ,op.segment) for op in suffs]
     
 
     # if len(prefs)>1:

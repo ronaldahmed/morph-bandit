@@ -9,7 +9,7 @@ def get_type_vocab(data):
   vocab = defaultdict(set)
   for sent in data:
     for form,lemma,_ in sent:
-      vocab[lemma].add(form)
+      vocab[lemma.lower()].add(form.lower())
   return vocab
 
 

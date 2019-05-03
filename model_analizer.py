@@ -7,28 +7,28 @@ from torch.nn.functional import sigmoid, log_softmax
 from torch.nn.utils.rnn import pad_packed_sequence
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-
+from utils import to_cuda
 
 class Analizer(Module):
   def __init__(self,args,nvocab):
     super(Analizer, self).__init__()
     self.args = args
     self.to_cuda = to_cuda(args.gpu)
-    self.drop = nn.Dropout(dropout)
+    self.drop = torch.nn.Dropout(args.dropout)
     self.criterion = CrossEntropyLoss()
     
-    self.emb = nn.Embedding(nvocab, args.emb_size)
+    self.emb = torch.nn.Embedding(nvocab, args.emb_size)
     self.encoder = LSTM(args.emb_size,args.rnn_size,dropout=args.dropout,batch_first=True)
-    self.mlp = nn.Linear(args.mlp_size, nvocab)
-    self.logprob = nn.LogSoftmax()
+    self.mlp = torch.nn.Linear(args.mlp_size, nvocab)
+    self.logprob = torch.nn.LogSoftmax()
     self.init_weights()
 
 
   def init_weights(self):
     initrange = 0.1
     self.emb.weight.data.uniform_(-initrange, initrange)
-    self.encoder.bias.data.zero_()
-    self.encoder.weight.data.uniform_(-initrange, initrange)
+    self.mlp.bias.data.zero_()
+    self.mlp.weight.data.uniform_(-initrange, initrange)
 
 
   def forward(self, input, hidden):
@@ -71,7 +71,7 @@ class Analizer(Module):
     return am
 
   def init_hidden(self, bsz):
-    weight = next(self.parameters())    
+    weight = next(self.parameters())
     return (weight.new_zeros(bsz,1, self.args.rnn_size),
             weight.new_zeros(bsz,1, self.args.rnn_size))
 
