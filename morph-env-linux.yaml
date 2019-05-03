@@ -3,9 +3,9 @@ channels:
   - conda-forge
   - soumith
 dependencies:
-  - python==3.6.3
+  - python==3.7.3
   - mkl==2019.3-199
-  - numpy==1.13.1
+  - numpy==1.16.3
   - pyyaml==3.12
   - ipython==6.2.0
   - pip:
