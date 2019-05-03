@@ -1,6 +1,8 @@
 import sys
 import warnings
 
+UNK_TOKEN = "*UNK*"
+
 class LabelDictionary(dict):
     '''This class implements a dictionary of labels. Labels as mapped to 
     integers, and it is efficient to retrieve the label name from its 
@@ -23,4 +25,4 @@ class LabelDictionary(dict):
         return self.names[label_id]
 
     def get_label_id(self, name):
-        return self[name]
+        return self.get(name,self[UNK_TOKEN])
