@@ -26,9 +26,8 @@ def random_search(args):
       for sents,gold in train_batch.get_batch():
         loss = torch.sum(trainer.train_batch(sents, gold, debug=False))
         train_loss += loss
-        
-        if i>3: break
-        i+=1
+        # if i>3: break
+        # i+=1
       #
       
       train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
