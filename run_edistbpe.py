@@ -2,6 +2,7 @@ import argparse
 from collections import defaultdict
 from shared_task_reader import SharedTaskReader
 from edist_bpe import EDistBPE
+import os
 
 import pdb
 
@@ -23,11 +24,13 @@ if __name__=="__main__":
   args = parser.parse_args()
 
   reader = SharedTaskReader()
-  train,dev,test = reader.read_task2(args.tb)
+  train,dev,test = reader.read_task2(tbname=args.tb)
   train_vocab = get_type_vocab(train)
 
   edbpe = EDistBPE(_num_merges=50,_inflector=False)
 
+  if not os.path.exits("data/" + args.tb):
+    os.makedirs("data/" + args.tb)
   # if args.mode == 'train':
   print("Training BPE merges...")
   edbpe.train(train_vocab)

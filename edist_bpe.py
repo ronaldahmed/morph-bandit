@@ -122,8 +122,8 @@ class EDistBPE:
         op_tok_str = " ".join(op_tokens)
         print("%s\t%s\t%s\t%s" % (form,lemma,feat,op_tok_str),file=outfile)
 
-        if count % 10000 == 0:
-          print("->",count)
+        # if count % 20000 == 0:
+        #   print("->",count)
         count += 1
       #
       print("",file=outfile)
@@ -483,8 +483,8 @@ class EDistBPE:
         i += 1
       #
       v_out.append(new_seq)
-      if count % 10000 == 0:
-        print("-->",count)
+      # if count % 20000 == 0:
+      #   print("-->",count)
       count += 1
     #
     return v_out
