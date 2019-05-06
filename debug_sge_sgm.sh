@@ -2,6 +2,8 @@
 
 batch=$1
 for tb in $(cut -f 2 -d " " $batch); do
-	echo "::$tb ----------------------------"
+	echo "::$tb -------------------------------------------"
 	cat models-segm/$tb/log.err
+	echo ""
+	echo ""
 done
