@@ -19,6 +19,8 @@ PREF_POS="_A"
 SUFF_POS="A_"
 
 STOP_LABEL = "STOP.STOP-</>"
+SPACE_LABEL = "S"
+
 # Special IDs
 UNK_TOKEN = "*UNK*"
 PAD_TOKEN = "*PAD*"

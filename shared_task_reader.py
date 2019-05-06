@@ -83,6 +83,8 @@ class SharedTaskReader:
       else:
         cols = line.split("\t")
         lem,form = cols[2], cols[1]
+        lem = lem.lower().replace(" ",SPACE_LABEL)
+        form = form.lower().replace(" ",SPACE_LABEL)
         feats = cols[5]
         sent.append([form,lem,feats])
     #
