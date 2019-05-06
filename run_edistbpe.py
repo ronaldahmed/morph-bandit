@@ -10,7 +10,7 @@ def get_type_vocab(data):
   vocab = defaultdict(set)
   for sent in data:
     for form,lemma,_ in sent:
-      vocab[lemma.lower()].add(form.lower())
+      vocab[lemma].add(form)
   return vocab
 
 
@@ -29,7 +29,7 @@ if __name__=="__main__":
 
   edbpe = EDistBPE(_num_merges=50,_inflector=False)
 
-  if not os.path.exits("data/" + args.tb):
+  if not os.path.exists("data/" + args.tb):
     os.makedirs("data/" + args.tb)
   # if args.mode == 'train':
   print("Training BPE merges...")
