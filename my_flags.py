@@ -35,9 +35,10 @@ def morph_analizer_arg_parser():
     p.add_argument("-r", "--scheduler", help="Use reduce learning rate on plateau schedule", action='store_true')
     p.add_argument("-w", "--word_dropout", help="Use word dropout", type=float, default=0)
     p.add_argument("--dropout", help="Use dropout", type=float, default=0)
-    p.add_argument("--emb_size", help="Input embeddings size", type=str, default=100)
-    p.add_argument("--rnn_size", help="Input embeddings size", type=str, default=100)
-    p.add_argument("--mlp_size", help="Input embeddings size", type=str, default=100)
+    p.add_argument("--emb_size", help="Input embeddings size", type=int, default=100)
+    p.add_argument("--rnn_size", help="Input embeddings size", type=int, default=100)
+    p.add_argument("--rnn_type", help="Type of rnn cell [LSTM,GRU]", type=str, default="LSTM")
+    p.add_argument("--mlp_size", help="Input embeddings size", type=int, default=100)
     p.add_argument("--debug", help="Debug", type=int, default=0)
     
     return p

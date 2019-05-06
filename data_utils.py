@@ -1,21 +1,41 @@
 from label_dictionary import LabelDictionary
 import numpy as np
 import pdb
-from utils import oplabel_pat, apply_operations, to_cuda, fixed_var
+from utils import oplabel_pat, apply_operations, \
+                  to_cuda, fixed_var, \
+                  PAD_ID, UNK_TOKEN, PAD_TOKEN
 import torch
 
-# Special IDs
-UNK_TOKEN = "*UNK*"
-PAD_TOKEN = "*PAD*"
-PAD_ID = 0
+
+def dump_conllu(filename,forms,lemmas=None,feats=None):
+  nsents = len(forms)
+  outfile = open(filename,'w')
+  for idx_sent in range(nsents):
+    for i,w in enumerate(forms[idx_sent]):
+      cols = [str(i+1)] + ["_"]*9
+      cols[1] = w
+      try:
+        if lemmas!=None: cols[2] = lemmas[idx_sent][i]
+        if feats!=None:  cols[5] = feats[idx_sent][i]
+      except:
+        pdb.set_trace()
+
+      print("\t".join(cols),file=outfile)
+    print("",file=outfile)
+  #
+  #print("\n%s written!" % filename)
+
 
 
 class DataWrap:
   def __init__(self,sents,feats,forms,lemmas):
     self.ops = sents
     self.feats = feats
-    self.forms = forms,
+    self.forms = forms
     self.lemmas = lemmas
+
+  def get_num_instances(self,):
+    return len(self.forms)
 
 
 class DataLoaderAnalizer:
@@ -33,7 +53,6 @@ class DataLoaderAnalizer:
 
   def get_vocab_size(self,):
     return len(self.vocab_oplabel)
-
 
   def load_vocab(self):
     def init_labdict(_dict):
@@ -121,15 +140,16 @@ class DataLoaderAnalizer:
             ])
       #
       sent.append(op_ids)
-      lem_sent.append(self.vocab_lemmas.get_label_id(lem))
-      form_sent.append(self.vocab_forms.get_label_id(w))
+      # lem_sent.append(self.vocab_lemmas.get_label_id(lem))
+      # form_sent.append(self.vocab_forms.get_label_id(w))
+      lem_sent.append(lem)
+      form_sent.append(w)
       if self.args.out_mode=="coarse":
         label.append(self.vocab_feats.get_label_id(feats))
       else:
         label.append([self.vocab_feats.get_label_id(feat) for feat in feats.split(";")])
     #
     return DataWrap(sents,labels,forms,lemmas)
-
 
 
 class BatchBase:
@@ -196,6 +216,17 @@ class BatchBase:
     return new_seq
 
 
+  def restore_batch(self,batch):
+    """ Sx[np(bs,W)] -> [bs,S,W] """
+    new_seq = []
+    S = len(batch) # len of sentence
+    bs = batch[0].shape[0] # batch size
+    for i in range(bs):
+      s_i = [ batch[j][i,:] for j in range(S)]
+      new_seq.append(s_i)
+    return new_seq
+
+
 
 class BatchSegm(BatchBase):
   def __init__(self, data, batch_size,gpu):
@@ -213,19 +244,25 @@ class BatchSegm(BatchBase):
       self.tgt_sents.append( [w[1:]+[self.stop_id] for w in sent ] )
     #
 
-  def get_batch(self):
-    np.random.shuffle(self.sorted_ids_per_batch)
+  def get_batch(self,shuffle=True):
+    if shuffle:
+      np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
       ops = self.invert_axes(self.sents,batch_ids)
       tgt_ops = self.invert_axes(self.tgt_sents,batch_ids)
       yield ops,tgt_ops
 
   def get_eval_batch(self):
-    np.random.shuffle(self.sorted_ids_per_batch)
+    #np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
       ops = self.invert_axes(self.sents,batch_ids)
       forms = [self.forms[idx] for idx in batch_ids]
       lemmas = [self.lemmas[idx] for idx in batch_ids]
+
+      # for i in range(ops[0].shape[0]):
+      #   if len(forms[i]) != len(ops):
+      #     pdb.set_trace()
+
       yield ops,forms,lemmas
 
 
@@ -237,8 +274,9 @@ class BatchAnalizer(BatchSegm):
     self.labels = data.feats
 
 
-  def get_batch(self):
-    np.random.shuffle(self.sorted_ids_per_batch)
+  def get_batch(self,shuffle=True):
+    if shuffle:
+      np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
       sents = [self.sents[idx] for idx in batch_ids]
       labels = [self.labels[idx] for idx in batch_ids]
