@@ -1,13 +1,16 @@
-import sys
+import sys, os
 import torch
 import numpy as np
 from torch.nn import Module, Parameter, NLLLoss, LSTM
 from tensorboardX import SummaryWriter
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-from utils import to_cuda, fixed_var
-import pdb
+from time import monotonic
+from utils import to_cuda, fixed_var, apply_operations, PAD_ID, STOP_LABEL
+from data_utils import dump_conllu
+import subprocess as sp
 
+import pdb
 
 class Trainer:
   def __init__(self,model,num_classes,args):
@@ -15,13 +18,14 @@ class Trainer:
     self.n_classes = num_classes
     self.model = model
     self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
-    self.loss_function = torch.nn.CrossEntropyLoss()
+    self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
+    self.cuda = to_cuda(args.gpu)
     self.writer = None
     self.scheduler = None
 
     if args.model_save_dir is not None:
-        writer = SummaryWriter(os.path.join(model_save_dir, "logs"))
+        self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
     if args.scheduler:
         self.scheduler = ReduceLROnPlateau(optimizer, 'min', 0.1, 10, True)
 
@@ -45,80 +49,183 @@ class Trainer:
     else:
       return tuple(self.repackage_hidden(v) for v in h)
 
+  def flush_hidden(self,h):
+    if isinstance(h, torch.Tensor):
+      return h.data.zero_()
+    else:
+      return tuple(self.flush_hidden(v) for v in h)
 
-  def compute_loss(self,pred,gold_output,debug=0):
-    time1 = monotonic()
+  def slice(self,h,bs):
+    if isinstance(h, torch.Tensor):
+      return h[:,:bs,:]
+    else:
+      return tuple(self.slice(v,bs) for v in h)
+
+
+  def compute_loss(self,pred_w,gold_w,debug=0):
     total_loss = []
-    batch_size = self.args.batch_size
-    for pred_w,gold_w in zip(pred,gold_output):
-      loss = self.loss_function(
-          pred_w.view(batch_size, self.n_classes),
-          to_cuda(self.args.gpu)(fixed_var(LongTensor(gold_w)))
-      )
-      total_loss.append(loss)
-    total_loss = sum(total_loss)
-    if debug:
-      time2 = monotonic()
-      print("Forward total in loss: {}".format(round(time2 - time1, 3)))
-    return total_loss
+    batch_size = gold_w.shape[0]
+
+    mask = (gold_w!=PAD_ID).float() # [bs,W]
+    sum_mask = mask.sum(1)
+    sum_mask[sum_mask==0] = 1
+    gold_w = self.cuda(fixed_var(gold_w.view(-1))) # [bs*W], pred_w: [bs*w,n_classes]
+    loss = self.loss_function(pred_w,gold_w)       # [bs*W]
+    loss = ((loss.view(batch_size,-1)*mask).sum(1) / sum_mask).sum()  # [1]
+    
+    return loss
 
       
   def train_batch(self, batch, gold_output, debug=0):
     """Train on one batch of sentences """
     self.model.train()
+    batch_size = gold_output[0].shape[0]
+    hidden = self.flush_hidden(self.model.rnn_hidden)
+    hidden = self.slice(hidden,batch_size)
+    total_loss = 0
 
-    pdb.set_trace()
+    for w_seq,gold_w in zip(batch,gold_output):
+      hidden = self.repackage_hidden(hidden) # ([]
+      self.optimizer.zero_grad()
+      pred_w,hidden = self.model.forward(w_seq, hidden)
+      loss = self.compute_loss(pred_w, gold_w, debug)
+      loss.backward()
+      self.optimizer.step()
+      total_loss += loss
 
-    hidden = self.model.init_hidden(self.args.batch_size)
-    hidden = self.repackage_hidden(hidden)
-    output = self.model.foward(batch, hidden)
-
-    self.optimizer.zero_grad()
-    time0 = monotonic()
-    loss = self.compute_loss(batch, gold_output, debug)
-    time1 = monotonic()
-    loss.backward()
-    time2 = monotonic()
-
-    self.optimizer.step()
-    if debug:
-      time3 = monotonic()
-      print("Time in loss: {}, time in backward: {}, time in step: {}".format(round(time1 - time0, 3),
-                                                                              round(time2 - time1, 3),
-                                                                              round(time3 - time2, 3)))
-    return loss.data
+    return total_loss.data
 
 
-  def update_summary(self,epoch,train_loss,dev_loss):
+  def eval_batch(self,batch,gold_output,debug=0):
+    self.model.eval()
+    batch_size = gold_output[0].shape[0]
+    hidden = self.flush_hidden(self.model.rnn_hidden)
+    hidden = self.slice(hidden,batch_size)
+    tloss = 0
+    for w_seq,gold_w in zip(batch,gold_output):
+      hidden = self.repackage_hidden(hidden) # ([]
+      output,hidden = self.model.forward(w_seq, hidden)
+      loss = self.compute_loss(output, gold_w, debug)
+      tloss += loss
+    return tloss.data
+
+
+  def predict_batch(self,batch):
+    self.model.eval()
+    batch_size = batch[0].shape[0]
+    hidden = self.flush_hidden(self.model.rnn_hidden)
+    hidden = self.slice(hidden,batch_size)
+    preds = []
+    for w in batch:
+      hidden = self.repackage_hidden(hidden) # ([]
+      pred,hidden = self.model.predict(w,hidden)
+      preds.append(pred)
+    return preds
+
+
+  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1):
+    """ eval lemmatizer using official script """
+    cnt = 0
+    stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
+    forms_to_dump = []
+    pred_lem_to_dump = []
+    gold_lem_to_dump = []
+
+    for op_seqs,forms,lemmas in batch.get_eval_batch():
+      predicted = self.predict_batch(op_seqs)
+      predicted = batch.restore_batch(predicted)
+
+      forms_to_dump.extend(forms)
+      gold_lem_to_dump.extend(lemmas)
+      # get op labels & apply oracle 
+      for i,sent in enumerate(predicted):
+        sent = predicted[i]
+        # forms_to_dump.append( [data_vocabs.vocab_forms.get_label_name(x) \
+        #                         for x in forms[i]] )
+        # gold_lem_to_dump.append( [data_vocabs.vocab_lemmas.get_label_name(x) \
+        #                         for x in lemmas[i]] )
+        pred_lemmas = []
+        len_sent = len(forms[i]) # forms and lemmas are not sent-padded
+        for j in range(len_sent):
+          w_op_seq = sent[j]
+          # form_str = data_vocabs.vocab_forms.get_label_name(forms[i][j])
+          form_str = forms[i][j]
+          if sum(w_op_seq)==0:
+            pred_lemmas.append(form_str.lower())
+            continue
+            
+          if stop_id in w_op_seq:
+            _id = np.where(np.array(w_op_seq)==stop_id)[0][0]
+            w_op_seq = w_op_seq[:_id+1]
+          optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
+                        for x in w_op_seq if x!=PAD_ID]
+          
+          pred_lemmas.append( apply_operations(form_str,optokens) )
+        #
+        if len(pred_lemmas)==0:
+          pdb.set_trace()
+        pred_lem_to_dump.append(pred_lemmas)
+      #
+      #pdb.set_trace()
+
+      cnt += op_seqs[0].shape[0]
+      if max_data!=-1 and cnt > max_data:
+        break
+    #
+    filename = ""
+    if   split=='train':
+      filename = self.args.train_file
+    elif split=='dev':
+      filename = self.args.dev_file
+    elif split=='test':
+      filename = self.args.test_file
+    
+    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump)
+    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump)
+
+    pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
+                   "--reference", filename + ".conllu.gold",
+                   "--output"   , filename + ".conllu.pred",
+                  ], capture_output=True)
+
+    try:
+      output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")
+    except:
+      print("-->Wrong eval output format")
+      pdb.set_trace()
+    output_res = [float(x) for x in output_res]
+
+    return output_res[:2]
+
+
+  def save_model(self,epoch):
+    if self.args.model_save_dir is not None:
+      if not os.path.exists(self.args.model_save_dir):
+        os.makedirs(self.args.model_save_dir)
+      model_save_file = os.path.join(self.args.model_save_dir, "{}_{}.pth".format("segm", epoch))
+      print("Saving model to", model_save_file)
+      torch.save(self.model.state_dict(), model_save_file)
+
+
+  def update_summary(self,step,train_loss,dev_loss=None):
     if self.writer is not None:
       for name, param in self.model.named_parameters():
         self.writer.add_scalar("parameter_mean/" + name,
                           param.data.mean(),
-                          epoch)
-        self.writer.add_scalar("parameter_std/" + name, param.data.std(), ep)
+                          step)
+        self.writer.add_scalar("parameter_std/" + name, param.data.std(), step)
         if param.grad is not None:
             self.writer.add_scalar("gradient_mean/" + name,
                               param.grad.data.mean(),
-                              epoch)
+                              step)
             self.writer.add_scalar("gradient_std/" + name,
                               param.grad.data.std(),
-                              epoch)
+                              step)
 
-      self.writer.add_scalar("loss/loss_train", train_loss, epoch)
-      self.writer.add_scalar("loss/loss_dev", dev_loss, epoch)
+      self.writer.add_scalar("loss/loss_train", train_loss, step)
+      if isinstance(dev_loss, torch.Tensor):
+        self.writer.add_scalar("loss/loss_dev", dev_loss, step)
     #
-
-
-  
-
-
-  def evaluate_batch(self,batch,data_obj):
-    """ eval lemmatizer using official script """
-    self.model.eval()
-    for op_seqs,forms,lemmas in batch.get_eval_batch():
-      predicted = self.model.predict(op_seqs)
-
-
 
 
 

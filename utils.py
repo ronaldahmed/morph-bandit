@@ -3,6 +3,7 @@ import pickle
 import glob as gb
 import re
 import pdb
+import torch
 
 # label names
 MAX_INT = 1000000
@@ -16,6 +17,12 @@ START = "START"
 
 PREF_POS="_A"
 SUFF_POS="A_"
+
+STOP_LABEL = "STOP.STOP-</>"
+# Special IDs
+UNK_TOKEN = "*UNK*"
+PAD_TOKEN = "*PAD*"
+PAD_ID = 0
 
 iso_mapper = {
   'en': 'english',
@@ -74,8 +81,11 @@ def identity(x):
     return x
 
 def fixed_var(tensor):
-  return Variable(tensor, requires_grad=False)
+  return tensor.detach()
 
+
+
+###############################################################################
 
 def apply_operations(init_form,operations,debug=False):
   """ Apply sequence of operations on initial form """
@@ -96,52 +106,57 @@ def apply_operations(init_form,operations,debug=False):
     if name==STOP:
       break
 
-    if   pos == PREF_POS:
-      if   name==INS:
-        curr_tok = segment + curr_tok
-      elif name==DEL:
-        assert curr_tok.startswith(segment)
-        curr_tok = curr_tok[len(segment):]
-      elif name==SUBS:
-        curr_tok = segment + curr_tok[len(segment):]
-      elif name==TRSP:
-        assert curr_tok.startswith(segment)
-        assert len(segment)==2
-        curr_tok = segment[::-1] + curr_tok[len(segment):]
+    try:
+      if   pos == PREF_POS:
+        if   name==INS:
+          curr_tok = segment + curr_tok
+        elif name==DEL:
+          assert curr_tok.startswith(segment)
+          curr_tok = curr_tok[len(segment):]
+        elif name==SUBS:
+          curr_tok = segment + curr_tok[len(segment):]
+        elif name==TRSP:
+          assert curr_tok.startswith(segment)
+          assert len(segment)==2
+          curr_tok = segment[::-1] + curr_tok[len(segment):]
 
-    elif pos == SUFF_POS:
-      if   name==INS:
-        curr_tok += segment
-      elif name==DEL:
-        assert curr_tok.endswith(segment)
-        curr_tok = curr_tok[:-len(segment)]
-      elif name==SUBS:
-        curr_tok = curr_tok[:-len(segment)] + segment
-      elif name==TRSP:
-        assert curr_tok.endswith(segment)
-        assert len(segment)==2
-        curr_tok = curr_tok[:-len(segment)] + segment[::-1]
+      elif pos == SUFF_POS:
+        if   name==INS:
+          curr_tok += segment
+        elif name==DEL:
+          # try: assert curr_tok.endswith(segment)
+          # except: pdb.set_trace()
+          assert curr_tok.endswith(segment)
+          curr_tok = curr_tok[:-len(segment)]
+        elif name==SUBS:
+          curr_tok = curr_tok[:-len(segment)] + segment
+        elif name==TRSP:
+          assert curr_tok.endswith(segment)
+          assert len(segment)==2
+          curr_tok = curr_tok[:-len(segment)] + segment[::-1]
 
-    else:
-      try:
-        pos = int(pos[1:-1]) - 1
-      except:
-        print("bad pos:",segment)
-        pdb.set_trace()
+      else:
+        try:
+          pos = int(pos[1:-1]) - 1
+        except:
+          print("bad pos:",segment)
+          pdb.set_trace()
 
-      if   name==INS:
-        curr_tok = curr_tok[:pos] + segment + curr_tok[pos:]
-      elif name==DEL:
-        curr_tok = curr_tok[:pos] + curr_tok[pos+len(segment):]
-      elif name==SUBS:
-        curr_tok = curr_tok[:pos] + segment + curr_tok[pos+len(segment):]
-      elif name==TRSP:
-        assert curr_tok[pos:pos+len(segment)] == segment
-        assert len(segment)==2
-        curr_tok = curr_tok[:pos] + segment[::-1] + curr_tok[pos+len(segment):]
-    #
-    if debug:
-      print("\t",op_token,"|",curr_tok)
+        if   name==INS:
+          curr_tok = curr_tok[:pos] + segment + curr_tok[pos:]
+        elif name==DEL:
+          curr_tok = curr_tok[:pos] + curr_tok[pos+len(segment):]
+        elif name==SUBS:
+          curr_tok = curr_tok[:pos] + segment + curr_tok[pos+len(segment):]
+        elif name==TRSP:
+          assert curr_tok[pos:pos+len(segment)] == segment
+          assert len(segment)==2
+          curr_tok = curr_tok[:pos] + segment[::-1] + curr_tok[pos+len(segment):]
+      #
+      if debug:
+        print("\t",op_token,"|",curr_tok)
+    except AssertionError:
+      return curr_tok
   #
   
   return curr_tok

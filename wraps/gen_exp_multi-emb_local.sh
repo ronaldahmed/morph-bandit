@@ -24,7 +24,7 @@ python supervised.py --seed 42 --cuda True --normalize_embeddings center \
 --dico_eval $basedir/dicts/$src_lang-$tgt_lang.5000-6500.ops \
 --src_emb $basedir/emb/$src.vec \
 --tgt_emb $basedir/emb/$tgt.vec \
---n_refinement 5
+--n_refinement 20
 "
 
 echo $run_com >> $outfile
