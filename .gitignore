@@ -1,5 +1,6 @@
 emb/
 train-ops/
+models/
 dicts/
 *.pyc
 __pycache__
