@@ -27,7 +27,7 @@ class Trainer:
     if args.model_save_dir is not None:
         self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
     if args.scheduler:
-        self.scheduler = ReduceLROnPlateau(optimizer, 'min', 0.1, 10, True)
+        self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', 0.1, 10, True)
 
 
   ### Adapted from AllenNLP
