@@ -212,6 +212,7 @@ class BatchBase:
     for i in range(S):
       w_i = [sequence[idx][i] for idx in idxs]
       new_seq.append( self.cuda(fixed_var(torch.LongTensor(w_i))) )
+      # new_seq.append(w_i)
 
     return new_seq
 
@@ -226,6 +227,13 @@ class BatchBase:
       new_seq.append(s_i)
     return new_seq
 
+  def batchify(self,seq):
+    batches = []
+    for batch_ids in self.sorted_ids_per_batch:
+      ops = self.invert_axes(seq,batch_ids)
+      batches.append(ops)
+    return batches
+
 
 
 class BatchSegm(BatchBase):
@@ -235,6 +243,9 @@ class BatchSegm(BatchBase):
     self.build_gold_lm_seq()
     self.sents = self.pad_data_per_batch(self.sents)
     self.tgt_sents = self.pad_data_per_batch(self.tgt_sents)
+    # self.src_batches = self.batchify(self.sents)
+    # self.tgt_batches = self.batchify(self.tgt_sents)
+
     
 
   def build_gold_lm_seq(self,):
@@ -245,6 +256,11 @@ class BatchSegm(BatchBase):
     #
 
   def get_batch(self,shuffle=True):
+    # batch_ids = np.arange(len(self.sorted_ids_per_batch))
+    # if shuffle:
+    #   np.random.shuffle(batch_ids)
+    # for _id in batch_ids:
+    #   yield self.src_batches[_id],self.tgt_[_id]
     if shuffle:
       np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
@@ -253,16 +269,11 @@ class BatchSegm(BatchBase):
       yield ops,tgt_ops
 
   def get_eval_batch(self):
-    #np.random.shuffle(self.sorted_ids_per_batch)
-    for batch_ids in self.sorted_ids_per_batch:
+    for _id,batch_ids in enumerate(self.sorted_ids_per_batch):
+      # ops = self.src_batches[_id]
       ops = self.invert_axes(self.sents,batch_ids)
       forms = [self.forms[idx] for idx in batch_ids]
       lemmas = [self.lemmas[idx] for idx in batch_ids]
-
-      # for i in range(ops[0].shape[0]):
-      #   if len(forms[i]) != len(ops):
-      #     pdb.set_trace()
-
       yield ops,forms,lemmas
 
 

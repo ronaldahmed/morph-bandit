@@ -69,7 +69,8 @@ class Trainer:
     mask = (gold_w!=PAD_ID).float() # [bs,W]
     sum_mask = mask.sum(1)
     sum_mask[sum_mask==0] = 1
-    gold_w = self.cuda(fixed_var(gold_w.view(-1))) # [bs*W], pred_w: [bs*w,n_classes]
+    #gold_w = self.cuda(fixed_var(gold_w.view(-1))) # [bs*W], pred_w: [bs*w,n_classes]
+    gold_w = gold_w.view(-1)
     loss = self.loss_function(pred_w,gold_w)       # [bs*W]
     loss = ((loss.view(batch_size,-1)*mask).sum(1) / sum_mask).sum()  # [1]
     
@@ -79,11 +80,12 @@ class Trainer:
   def train_batch(self, batch, gold_output, debug=0):
     """Train on one batch of sentences """
     self.model.train()
+
     batch_size = gold_output[0].shape[0]
+    #batch_size = len(gold_output[0])
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
     total_loss = 0
-
     for w_seq,gold_w in zip(batch,gold_output):
       hidden = self.repackage_hidden(hidden) # ([]
       self.optimizer.zero_grad()
@@ -91,9 +93,9 @@ class Trainer:
       loss = self.compute_loss(pred_w, gold_w, debug)
       loss.backward()
       self.optimizer.step()
-      total_loss += loss
+      total_loss += loss.item()
 
-    return total_loss.data
+    return total_loss
 
 
   def eval_batch(self,batch,gold_output,debug=0):
@@ -102,12 +104,13 @@ class Trainer:
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
     tloss = 0
-    for w_seq,gold_w in zip(batch,gold_output):
-      hidden = self.repackage_hidden(hidden) # ([]
-      output,hidden = self.model.forward(w_seq, hidden)
-      loss = self.compute_loss(output, gold_w, debug)
-      tloss += loss
-    return tloss.data
+    with torch.no_grad():
+      for w_seq,gold_w in zip(batch,gold_output):
+        hidden = self.repackage_hidden(hidden) # ([]
+        output,hidden = self.model.forward(w_seq, hidden)
+        loss = self.compute_loss(output, gold_w, debug)
+        tloss += loss.item()
+    return tloss
 
 
   def predict_batch(self,batch):
@@ -116,10 +119,11 @@ class Trainer:
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
     preds = []
-    for w in batch:
-      hidden = self.repackage_hidden(hidden) # ([]
-      pred,hidden = self.model.predict(w,hidden)
-      preds.append(pred)
+    with torch.no_grad():
+      for w in batch:
+        hidden = self.repackage_hidden(hidden) # ([]
+        pred,hidden = self.model.predict(w,hidden)
+        preds.append(pred)
     return preds
 
 
@@ -207,7 +211,15 @@ class Trainer:
       torch.save(self.model.state_dict(), model_save_file)
 
 
-  def update_summary(self,step,train_loss,dev_loss=None):
+  def update_summary(self,
+                     step,
+                     train_loss,
+                     dev_loss=None,
+                     train_acc=None,
+                     dev_acc=None,
+                     train_dist=None,
+                     dev_dist=None
+                      ):
     if self.writer is not None:
       for name, param in self.model.named_parameters():
         self.writer.add_scalar("parameter_mean/" + name,
@@ -222,9 +234,12 @@ class Trainer:
                               param.grad.data.std(),
                               step)
 
-      self.writer.add_scalar("loss/loss_train", train_loss, step)
-      if isinstance(dev_loss, torch.Tensor):
-        self.writer.add_scalar("loss/loss_dev", dev_loss, step)
+      for var,name in zip([train_loss,dev_loss,train_acc,dev_acc,train_dist,dev_dist],
+                          ["loss/loss_train","loss/loss_dev",
+                          "acc/train_acc","acc/dev_acc","dist/train_dist","dist/dev_dist"]):
+        #if isinstance(dev_loss, torch.Tensor):
+        if var != None:
+          self.writer.add_scalar(name, var, step)
     #
 
 

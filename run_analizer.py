@@ -35,40 +35,45 @@ def train(args):
   best_dev_loss = 100000000
   best_dev_loss_index = -1
   best_dev_acc = -1
-  start_time = monotonic()
 
   for ep in range(args.epochs):
+    start_time = monotonic()
     train_loss = 0
     i = 0
     for sents,gold in train_batch.get_batch():
-      loss = torch.sum(trainer.train_batch(sents, gold, debug=False))
+      loss = trainer.train_batch(sents, gold, debug=False)
       train_loss += loss
-      
+
       if i % debug_print == (debug_print - 1):
         trainer.update_summary(train_log_step_cnt,train_loss=loss)
         print(".", end="", flush=True)
       i += 1
       train_log_step_cnt += 1
 
-      # if i>10: break
-    #
+      if i>10: break
+    
     dev_loss = 0.0
     i = 0
     for sents,gold in dev_batch.get_batch(shuffle=False):
-      dev_loss += torch.sum(trainer.eval_batch(sents,gold,debug=False))
+      dev_loss += trainer.eval_batch(sents,gold,debug=False)
       if i % debug_print == (debug_print - 1):
           print(".", end="", flush=True)
       i += 1
 
-      # if i>5: break
+      if i>5: break
     #
-    train_loss /= train.get_num_instances()
     dev_loss /= dev.get_num_instances()
-    trainer.update_summary(train_log_step_cnt,train_loss,dev_loss)
+    train_loss /= train.get_num_instances()
 
     finish_iter_time = monotonic()
     train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
     dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
+    # train_acc,train_dist = 0,0
+    # dev_acc,dev_dist = 0,0
+    
+    trainer.update_summary(train_log_step_cnt,train_loss,dev_loss,
+                           train_acc,dev_acc,train_dist,dev_dist)
+
     print(  "\nEpoch {:>4,} train | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
             "           dev   | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
             .format(ep,

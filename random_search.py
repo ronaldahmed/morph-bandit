@@ -48,7 +48,7 @@ def random_search(args):
     exp_args.mlp_size = int(opt_params["mlp_size"])
     exp_args.batch_size = int(opt_params["batch_size"])
     acc = train_search(exp_args)
-    print("-->",acc,sep=" ")
+    print("\n-->",acc,sep=" ")
 
     return -acc
   ##################################################
