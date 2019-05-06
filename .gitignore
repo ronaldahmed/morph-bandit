@@ -1,6 +1,7 @@
 emb/
 train-ops/
 models/
+models-segm/
 dicts/
 *.pyc
 __pycache__
