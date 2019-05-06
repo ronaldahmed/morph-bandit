@@ -1,0 +1,12 @@
+Job resources: hard resource_list:         gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G
+Assigned GPUs:  3
+LRC:ubuntu 18.04: SGE 8.1.9 configured...
+Traceback (most recent call last):
+  File "run_analizer.py", line 2, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+======= EPILOG: Tue May 7 00:41:29 CEST 2019
+== Limits:   gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G
+== Usage:    cpu=00:00:00, mem=0.00000 GB s, io=0.00000 GB, vmem=N/A, maxvmem=N/A
+== Duration: 00:00:00 (0 s)
+== Server name: dll4
