@@ -3,6 +3,7 @@ import torch
 import numpy as np
 import hyperopt
 from hyperopt import hp, fmin, tpe, space_eval
+from time import monotonic
 from my_flags import *
 from data_utils import *
 from model_analizer import Analizer
@@ -23,15 +24,30 @@ def random_search(args):
     for ep in range(curr_args.epochs):
       train_loss = 0
       i = 0
+      start_time = monotonic()
       for sents,gold in train_batch.get_batch():
-        loss = torch.sum(trainer.train_batch(sents, gold, debug=False))
+        loss = trainer.train_batch(sents, gold, debug=False)
         train_loss += loss
         # if i>3: break
         # i+=1
       #
-      
+      finish_iter_time = monotonic()
+      train_loss /= train.get_num_instances()
       train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
       dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
+      print(  "\nEpoch {:>4,} train | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
+            "           dev   | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
+            .format(ep,
+                    (finish_iter_time - start_time) / 60,
+                    train_loss,
+                    train_acc,
+                    train_dist,
+                    (monotonic() - finish_iter_time) / 60,
+                    0.0,
+                    dev_acc,
+                    dev_dist)
+        )
+
       if dev_acc > best_dev_acc:
         best_dev_acc = dev_acc
     #
@@ -48,7 +64,7 @@ def random_search(args):
     exp_args.mlp_size = int(opt_params["mlp_size"])
     exp_args.batch_size = int(opt_params["batch_size"])
     acc = train_search(exp_args)
-    print("-->",acc,sep=" ")
+    print("\n-->",acc,sep=" ")
 
     return -acc
   ##################################################
@@ -72,7 +88,7 @@ def random_search(args):
     'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)
   }
   
-  best = fmin(objective, space, algo=tpe.suggest, max_evals=30)
+  best = fmin(objective, space, algo=tpe.suggest, max_evals=10)
   
   print(best)
   # -> {'a': 1, 'c2': 0.01420615366247227}
