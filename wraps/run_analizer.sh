@@ -3,6 +3,9 @@
 tbname=$1
 mdir=$2
 
+cd /home/acosta/morph-bandit/
+conda activate morph
+
 python3 run_analizer.py --mode train \
 --train_file data/$tbname/train \
 --dev_file data/$tbname/dev \
