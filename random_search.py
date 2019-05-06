@@ -26,12 +26,13 @@ def random_search(args):
       i = 0
       start_time = monotonic()
       for sents,gold in train_batch.get_batch():
-        loss = torch.sum(trainer.train_batch(sents, gold, debug=False))
+        loss = trainer.train_batch(sents, gold, debug=False)
         train_loss += loss
         # if i>3: break
         # i+=1
       #
       finish_iter_time = monotonic()
+      train_loss /= train.get_num_instances()
       train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
       dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
       print(  "\nEpoch {:>4,} train | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
@@ -87,7 +88,7 @@ def random_search(args):
     'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)
   }
   
-  best = fmin(objective, space, algo=tpe.suggest, max_evals=30)
+  best = fmin(objective, space, algo=tpe.suggest, max_evals=10)
   
   print(best)
   # -> {'a': 1, 'c2': 0.01420615366247227}
