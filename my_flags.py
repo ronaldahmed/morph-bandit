@@ -8,7 +8,7 @@ def general_arg_parser():
     p.add_argument("--seed", help="Random seed", type=int, default=42)
     p.add_argument("--mode", help="Running mode [train,test]", type=str, default="train")
     p.add_argument("--train_file","-train", help="Training --op extended-- file", type=str, required=True)
-    p.add_argument("--dev_file"  ,"-dev"  , help="Development --op extended-- file", type=str, required=True)
+    p.add_argument("--dev_file"  ,"-dev"  , help="Development --op extended-- file", type=str)
     p.add_argument("--test_file" ,"-test" , help="Testing --op extended-- file", type=str)
     p.add_argument("--test_hidden" , help="Flag if test set is hidden (no gold label added)",  action='store_true')
 
@@ -21,7 +21,7 @@ def general_arg_parser():
     p.add_argument("--gpu", help="Use GPU", action='store_true')
     p.add_argument("--embedding_file", help="Pretrained op-token embedding file", type=str, default=None)
     p.add_argument("--pretrained_form_emb", help="Pretrained word forms embedding file", type=str, default=None)
-    p.add_argument("--input_model", help="Model name to load")
+    p.add_argument("--input_model", help="Model name to load", type=str, default=None)
     p.add_argument("--model_save_dir", help="where to save the trained models and logs", type=str)
 
     return p

@@ -132,7 +132,7 @@ class Trainer:
     return preds
 
 
-  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1):
+  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,covered=False):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
@@ -192,19 +192,17 @@ class Trainer:
     dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump)
     dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump)
 
-    pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
-                   "--reference", filename + ".conllu.gold",
-                   "--output"   , filename + ".conllu.pred",
-                  ], capture_output=True)
+    if covered:
+      return -1,-1
 
-    try:
-      output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")
-    except:
-      print("-->Wrong eval output format")
-      pdb.set_trace()
-    output_res = [float(x) for x in output_res]
-
-    return output_res[:2]
+    else:
+      pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
+                     "--reference", filename + ".conllu.gold",
+                     "--output"   , filename + ".conllu.pred",
+                    ], capture_output=True)
+      output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
+      output_res = [float(x) for x in output_res]
+      return output_res[:2]
 
 
   def save_model(self,epoch):

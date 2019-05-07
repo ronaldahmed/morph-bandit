@@ -47,6 +47,6 @@ splitted = np.split(np.array(list_data),6)
 splitted[-1] = splitted[-1][:7]
 
 
-for i,batch in enumerate(splitted[:-1]):
+for i,batch in enumerate(splitted):
 	pre = ["%s %s"%(x,y) for x,y in batch]
 	open("data/tbnames-"+str(i),'w').write("\n".join(pre))
