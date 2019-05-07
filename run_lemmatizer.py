@@ -51,7 +51,7 @@ def train(args):
       i += 1
       train_log_step_cnt += 1
 
-      if i>10: break
+      #if i>10: break
       #break
     
     dev_loss = 0.0
@@ -63,7 +63,7 @@ def train(args):
       i += 1
 
       # if i>5: break
-      break
+      #break
     #
     dev_loss /= dev.get_num_instances()
     train_loss /= train.get_num_instances()
