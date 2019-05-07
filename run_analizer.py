@@ -131,20 +131,23 @@ def test(args):
   # init model
   model = Analizer(args,n_vocab)
   # load model
+  if args.input_model is None:
+    print("Please specify model to load!")
+    return
   if args.gpu:
     state_dict = torch.load(args.input_model)
   else:
     state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
   model.load_state_dict(state_dict)
-  if args.gpu:
-    model.cuda(model)
+  # if args.gpu:
+  #   model.cuda(model)
   # init trainer
   trainer = Trainer(model,n_vocab,args)
   dev_acc  ,dev_dist   = trainer.eval_metrics_batch(
                                     dev_batch,
                                     loader,
                                     split=to_eval_split,
-                                    covered=(to_eval_split=="covered-test"))
+                                    covered=(args.mode=="covered-test"))
   print("%s | acc: %.4f, dist: %.4f" % (to_eval_split,dev_acc,dev_dist))
   return
 
