@@ -96,6 +96,8 @@ def apply_operations(init_form,operations,debug=False):
     print(init_form,">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
   for op_token in operations:
+    if op_token == UNK_TOKEN:
+      return curr_tok
     match = oplabel_pat.match(op_token)
     if match==None:
       print("Operation token with bad format!!")
