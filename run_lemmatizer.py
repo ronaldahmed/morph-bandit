@@ -141,8 +141,6 @@ def test(args):
   else:
     state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
 
-  pdb.set_trace()
-
   model.load_state_dict(state_dict)
   # if args.gpu:
   #   model.cuda(model)
