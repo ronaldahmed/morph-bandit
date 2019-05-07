@@ -9,7 +9,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 	op_ep=$(tail -1 models-segm/$tb/log.out | cut -f 1)
 
 	if [ $op_ep == "0" ]; then
-		op_ep="19"
+		op_ep="9"
 	fi
 	input_model=models-segm/$tb/segm_$op_ep.pth
 	
