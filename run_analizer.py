@@ -7,7 +7,9 @@ from time import monotonic
 from my_flags import *
 from data_utils import *
 from model_analizer import Analizer
-from trainer_analizer import TrainerAnalizer as Trainer
+from model_lemmatizer import Lemmatizer
+from trainer_analizer import TrainerAnalizer
+from trainer_lemmatizer import TrainerLemmatizer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
 import pdb
@@ -23,13 +25,29 @@ def train(args):
   train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
   dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
   n_vocab = loader.get_vocab_size()
+  n_feats = loader.get_feat_vocab_size()
+
   debug_print = int(100 / args.batch_size) + 1
   train_log_step_cnt = 0
   debug = True
 
   # init trainer
-  model = Analizer(args,n_vocab)
-  trainer = Trainer(model,n_vocab,args)
+  lemmatizer = Lemmatizer(args,n_vocab)
+  analizer = Analizer(args,n_feats)
+
+  # load lemmatizer
+  if args.input_lem_model is None:
+    print("Please specify lemmatizer model to load!")
+    return
+  if args.gpu:
+    state_dict = torch.load(args.input_lem_model)
+  else:
+    state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
+  lemmatizer.load_state_dict(state_dict)
+
+  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
+  trainer_lem.freeze_model()
   
   # <-----------------
 
@@ -48,7 +66,7 @@ def train(args):
       train_loss += loss
 
       if i % debug_print == (debug_print - 1):
-        trainer.update_summary(train_log_step_cnt,train_loss=loss)
+        trainer_analizer.update_summary(train_log_step_cnt,train_loss=loss)
         print(".", end="", flush=True)
       i += 1
       train_log_step_cnt += 1
@@ -69,13 +87,11 @@ def train(args):
     train_loss /= train.get_num_instances()
 
     finish_iter_time = monotonic()
-    train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
-    dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
-    # train_acc,train_dist = 0,0
-    # dev_acc,dev_dist = 0,0
+    train_metrics = trainer_analizer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
+    dev_metrics   = trainer_analizer.eval_metrics_batch(dev_batch, loader,split="dev")
     
-    trainer.update_summary(train_log_step_cnt,train_loss,dev_loss,
-                           train_acc,dev_acc,train_dist,dev_dist)
+    trainer_analizer.update_summary(train_log_step_cnt,train_loss,dev_loss,
+                                    train_metrics,dev_metrics)
 
     print(  "\nEpoch {:>4,} train | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
             "           dev   | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
@@ -140,8 +156,6 @@ def test(args):
     state_dict = torch.load(args.input_model)
   else:
     state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
-
-  pdb.set_trace()
 
   model.load_state_dict(state_dict)
   # if args.gpu:

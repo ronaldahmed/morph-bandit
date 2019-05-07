@@ -17,17 +17,26 @@ import subprocess as sp
 
 import pdb
 
+class MetricsWrap:
+  def __init__(self,acc,dist,msd_acc,msd_f1):
+    self.lem_acc = acc
+    self.lem_edist = dist
+    self.msd_acc = msd_acc
+    self.msd_f1 = msd_f1
+
+
 class TrainerAnalizer:
-  def __init__(self,model,num_classes,args):
+  def __init__(self,anlz_model,num_classes,args):
     self.args = args
     self.n_classes = num_classes
-    self.model = model
+    self.model = anlz_model
     self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
     self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
     self.cuda = to_cuda(args.gpu)
     self.writer = None
     self.scheduler = None
+    self.freeze_lemma()
 
     if args.model_save_dir is not None:
         self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
@@ -89,8 +98,6 @@ class TrainerAnalizer:
     #batch_size = len(gold_output[0])
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
-    
-
     hidden = self.repackage_hidden(hidden)
     self.optimizer.zero_grad()
     pred_seq,hidden = self.model.forward(batch, hidden)
@@ -114,16 +121,25 @@ class TrainerAnalizer:
     return loss.item()
 
 
-  def predict_batch(self,batch):
+  def predict_batch(self,batch,trainer_lem):
     self.model.eval()
+
+    
     batch_size = batch[0].shape[0]
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
     
     with torch.no_grad():
       hidden = self.repackage_hidden(hidden) # ([]
-      pred,hidden = self.model.predict(batch,hidden)
+      pred,hidden = self.model.predict(batch_ops,hidden)
     return pred
+
+  def get_batch_op(self,batch,data_vocabs,trainer_lem):
+    batch_ops = trainer_lem.model.predict_batch(batch) # Sx[bs x W]
+    cleaned = []
+    # clean batch
+    for w in batch_ops:
+      #
 
 
   def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,covered=False):
@@ -134,7 +150,7 @@ class TrainerAnalizer:
     pred_lem_to_dump = []
     gold_lem_to_dump = []
 
-    for op_seqs,forms,lemmas in batch.get_eval_batch():
+    for op_seqs,feats,forms,lemmas in batch.get_eval_batch():
       predicted = self.predict_batch(op_seqs)
       predicted = batch.restore_batch(predicted)
 
@@ -212,11 +228,9 @@ class TrainerAnalizer:
                      step,
                      train_loss,
                      dev_loss=None,
-                     train_acc=None,
-                     dev_acc=None,
-                     train_dist=None,
-                     dev_dist=None
-                      ):
+                     train_metrics=None,
+                     dev_metrics=None
+                     ):
     if self.writer is not None:
       for name, param in self.model.named_parameters():
         self.writer.add_scalar("parameter_mean/" + name,
@@ -231,9 +245,18 @@ class TrainerAnalizer:
                               param.grad.data.std(),
                               step)
 
-      for var,name in zip([train_loss,dev_loss,train_acc,dev_acc,train_dist,dev_dist],
+      for var,name in zip([train_loss,dev_loss,
+                           train_metrics.lem_acc,dev_metrics.lem_acc,
+                           train_metrics.lem_edist,dev_metrics.lem_edist,
+                           train_metrics.msd_acc,dev_metrics.msd_acc,
+                           train_metrics.msd_f1,dev_metrics.msd_f1
+                           ],
                           ["loss/loss_train","loss/loss_dev",
-                          "acc/train_acc","acc/dev_acc","dist/train_dist","dist/dev_dist"]):
+                           "acc/train_lem_acc","acc/dev_lem_acc",
+                           "acc/train_lem_edist","acc/dev_lem_edist",
+                           "acc/train_msd_acc","acc/dev_msd_acc",
+                           "acc/train_msd_f1","acc/dev_msd_f1"
+                           ]):
         #if isinstance(dev_loss, torch.Tensor):
         if var != None:
           self.writer.add_scalar(name, var, step)

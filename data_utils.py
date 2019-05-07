@@ -54,6 +54,9 @@ class DataLoaderAnalizer:
   def get_vocab_size(self,):
     return len(self.vocab_oplabel)
 
+  def get_feat_vocab_size(self,):
+    return len(self.vocab_feats)
+
   def load_vocab(self):
     def init_labdict(_dict):
       _dict.add(PAD_TOKEN)
@@ -296,3 +299,13 @@ class BatchAnalizer(BatchSegm):
                     torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
 
       yield ops,labels
+
+
+  def get_eval_batch(self):
+    for _id,batch_ids in enumerate(self.sorted_ids_per_batch):
+      ops = self.invert_axes(self.sents,batch_ids,_eval=True)
+      forms = [self.forms[idx] for idx in batch_ids]
+      lemmas = [self.lemmas[idx] for idx in batch_ids]
+      labels = self.cuda(fixed_var(
+                    torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
+      yield ops,labels,forms,lemmas

@@ -35,6 +35,11 @@ class TrainerLemmatizer:
         self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', 0.1, 10, True)
 
 
+  def freeze_model(self):
+    for params in self.model.parameters():
+      param.requires_grad = False
+
+
   ### Adapted from AllenNLP
   def enable_gradient_clipping(self) -> None:
     clip = self.args.clip
@@ -133,7 +138,7 @@ class TrainerLemmatizer:
   #   return preds
 
 
-  def predict_batch(self,batch):
+  def predict_batch(self,batch,to_cpu=True):
     """ Start with initial form and sample from LM until 
         reaching STOP or MAX_OPS
     """
@@ -152,9 +157,12 @@ class TrainerLemmatizer:
           op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
           op_idx = torch.multinomial(op_weights, 1)
           curr_tok = op_idx
-          pred_w.append( op_idx.cpu().numpy() )
+          pred_w.append( op_idx )
         #
-        pred_batch.append(np.hstack(pred_w))
+        pred_w = torch.cat(pred_w,1)
+        if to_cpu:
+          pred_w = pred_w.cpu().numpy()
+        pred_batch.append(pred_w)
       #
 
     return pred_batch
