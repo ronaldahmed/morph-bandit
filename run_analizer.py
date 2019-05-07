@@ -7,7 +7,7 @@ from time import monotonic
 from my_flags import *
 from data_utils import *
 from model_analizer import Analizer
-from trainer import Trainer
+from trainer_analizer import TrainerAnalizer as Trainer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
 import pdb
@@ -20,8 +20,8 @@ def train(args):
   dev   = loader.load_data("dev")
 
   print("Init batch objs")
-  train_batch = BatchSegm(train,args.batch_size,args.gpu)
-  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
+  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
   n_vocab = loader.get_vocab_size()
   debug_print = int(100 / args.batch_size) + 1
   train_log_step_cnt = 0
@@ -31,6 +31,8 @@ def train(args):
   model = Analizer(args,n_vocab)
   trainer = Trainer(model,n_vocab,args)
   
+  # <-----------------
+
   # init local vars
   best_dev_loss = 100000000
   best_dev_loss_index = -1
@@ -129,7 +131,7 @@ def test(args):
   n_vocab = loader.get_vocab_size()
   
   # init model
-  model = Analizer(args,n_vocab)
+  model = Lemmatizer(args,n_vocab)
   # load model
   if args.input_model is None:
     print("Please specify model to load!")
