@@ -112,6 +112,40 @@ def train(args):
   # 
 
 
+def test(args):
+  print("Loading data...")
+  loader = DataLoaderAnalizer(args)
+  train = loader.load_data("train")
+  to_eval_split = "dev" if args.mode=="dev" else "test"
+  dev   = loader.load_data(to_eval_split)
+
+  print("Init batch objs")
+  train_batch = BatchSegm(train,args.batch_size,args.gpu)
+  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  n_vocab = loader.get_vocab_size()
+  
+  # init model
+  model = Analizer(args,n_vocab)
+  # load model
+  if args.gpu:
+    state_dict = torch.load(args.input_model)
+  else:
+    state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
+  model.load_state_dict(state_dict)
+  if args.gpu:
+    model.cuda(model)
+  # init trainer
+  trainer = Trainer(model,n_vocab,args)
+  dev_acc  ,dev_dist   = trainer.eval_metrics_batch(
+                                    dev_batch,
+                                    loader,
+                                    split=to_eval_split,
+                                    covered=(to_eval_split=="covered-test"))
+  print("%s | acc: %.4f, dist: %.4f" % (to_eval_split,dev_acc,dev_dist))
+  return
+
+
+
 def main(args):
   print(args)
   if args.seed != -1:
