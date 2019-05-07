@@ -1,12 +1,13 @@
 #!/bin/bash
 
 tbname=$1
-imodel=$2
+mode=$2
+imodel=$3
 
 cd /home/acosta/morph-bandit/
 conda activate morph
 
-python3 run_analizer.py --mode covered-test \
+python3 run_analizer.py --mode $mode \
 --train_file data/$tbname/train \
 --test_file data/$tbname/test \
 --epochs 20 \

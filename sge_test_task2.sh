@@ -1,7 +1,7 @@
 #!/bin/bash
 
 batch=$1
-
+mode=$2  # dev, test, covered-test
 
 for tb in $(cut -f 2 -d " " $batch); do
 	echo $tb
@@ -14,8 +14,8 @@ for tb in $(cut -f 2 -d " " $batch); do
 	input_model=models-segm/$tb/segm_$op_ep.pth
 	
 	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
-	-o models-segm/$tb/log-test.out \
-	-e models-segm/$tb/log-test.err \
-	wraps/test_lemm.sh $tb $input_model
+	-o models-segm/$tb/log-$mode.out \
+	-e models-segm/$tb/log-$mode.err \
+	wraps/test_lemm.sh $tb $mode $input_model
 
 done
