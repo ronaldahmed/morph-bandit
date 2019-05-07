@@ -99,6 +99,7 @@ def apply_operations(init_form,operations,debug=False):
     match = oplabel_pat.match(op_token)
     if match==None:
       print("Operation token with bad format!!")
+      print("::: ",op_token," :::")
       pdb.set_trace()
     name = match.group("name")
     pos = match.group("pos")
