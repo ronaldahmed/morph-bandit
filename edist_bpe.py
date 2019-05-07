@@ -113,17 +113,17 @@ class EDistBPE:
     count = 0
     for sent in data:
       for form,lemma,feat in sent:
-        ops = self.get_primitive_actions(lemma.lower(),form.lower())
+        ops = self.get_primitive_actions(lemma,form)
         merged_ops = self.merge_ops_sent(ops)
         op_tokens = self.oracle_sequencer(merged_ops)
-        orig = lemma.lower() if self.inflector else form.lower()
+        orig = lemma if self.inflector else form
         start_tok = "%s.%s-%s" % (START,START,orig)
         op_tokens = [start_tok] + op_tokens + [stop_tok]
         op_tok_str = " ".join(op_tokens)
         print("%s\t%s\t%s\t%s" % (form,lemma,feat,op_tok_str),file=outfile)
 
-        if count % 10000 == 0:
-          print("->",count)
+        # if count % 20000 == 0:
+        #   print("->",count)
         count += 1
       #
       print("",file=outfile)
@@ -483,8 +483,8 @@ class EDistBPE:
         i += 1
       #
       v_out.append(new_seq)
-      if count % 10000 == 0:
-        print("-->",count)
+      # if count % 20000 == 0:
+      #   print("-->",count)
       count += 1
     #
     return v_out

@@ -6,7 +6,12 @@ from tensorboardX import SummaryWriter
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from time import monotonic
-from utils import to_cuda, fixed_var, apply_operations, PAD_ID, STOP_LABEL
+from utils import to_cuda, \
+                  fixed_var, \
+                  apply_operations, \
+                  PAD_ID, \
+                  STOP_LABEL, \
+                  SPACE_LABEL
 from data_utils import dump_conllu
 import subprocess as sp
 
@@ -27,7 +32,7 @@ class Trainer:
     if args.model_save_dir is not None:
         self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
     if args.scheduler:
-        self.scheduler = ReduceLROnPlateau(optimizer, 'min', 0.1, 10, True)
+        self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', 0.1, 10, True)
 
 
   ### Adapted from AllenNLP
@@ -153,7 +158,7 @@ class Trainer:
         for j in range(len_sent):
           w_op_seq = sent[j]
           # form_str = data_vocabs.vocab_forms.get_label_name(forms[i][j])
-          form_str = forms[i][j]
+          form_str = forms[i][j].replace(SPACE_LABEL," ")
           if sum(w_op_seq)==0:
             pred_lemmas.append(form_str.lower())
             continue
@@ -163,8 +168,8 @@ class Trainer:
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          
-          pred_lemmas.append( apply_operations(form_str,optokens) )
+          pred_lem = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lemmas.append(pred_lem)
         #
         if len(pred_lemmas)==0:
           pdb.set_trace()

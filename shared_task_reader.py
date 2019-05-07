@@ -1,6 +1,7 @@
 from collections import defaultdict
 from label_dictionary import LabelDictionary
 from utils import *
+import os
 
 
 class SharedTaskReader:
@@ -82,14 +83,20 @@ class SharedTaskReader:
       else:
         cols = line.split("\t")
         lem,form = cols[2], cols[1]
+        lem = lem.lower().replace(" ",SPACE_LABEL)
+        form = form.lower().replace(" ",SPACE_LABEL)
         feats = cols[5]
         sent.append([form,lem,feats])
     #
     return data
 
-  def read_task2(self,tbname):
+  def read_task2(self,tbname=None,uddir=None):
     count = 0
-    uddir = self.tbname2uddir[tbname]
+
+    if uddir!=None and tbname==None:
+      tbname = self.uddir2tbname[uddir]
+    if uddir==None and tbname!=None:
+      uddir = self.tbname2uddir[tbname]
 
     train = self.read_conllu("2019/task2/%s/%s-um-train.conllu" % (uddir,tbname))
     dev   = self.read_conllu("2019/task2/%s/%s-um-dev.conllu" % (uddir,tbname))

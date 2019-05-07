@@ -35,6 +35,7 @@ def train(args):
   best_dev_loss = 100000000
   best_dev_loss_index = -1
   best_dev_acc = -1
+  best_ep = -1
 
   for ep in range(args.epochs):
     start_time = monotonic()
@@ -50,7 +51,7 @@ def train(args):
       i += 1
       train_log_step_cnt += 1
 
-      if i>10: break
+      # if i>10: break
     
     dev_loss = 0.0
     i = 0
@@ -60,7 +61,7 @@ def train(args):
           print(".", end="", flush=True)
       i += 1
 
-      if i>5: break
+      # if i>5: break
     #
     dev_loss /= dev.get_num_instances()
     train_loss /= train.get_num_instances()
@@ -90,6 +91,7 @@ def train(args):
     if dev_loss < best_dev_loss:
       if dev_acc > best_dev_acc:
         best_dev_acc = dev_acc
+        best_ep = ep
         print("New best acc!")
       print("New best dev!")
       best_dev_loss = dev_loss
@@ -103,13 +105,15 @@ def train(args):
         break
     if dev_acc > best_dev_acc:
       best_dev_acc = dev_acc
+      best_ep = ep
       print("New best acc!")
       trainer.save_model(ep)
 
     if trainer.scheduler != None:
       trainer.scheduler.step(dev_loss)
     #
-  # 
+  #
+  print(best_ep,best_dev_acc,sep="\t")
 
 
 def test(args):
