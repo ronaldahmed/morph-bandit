@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mode=$2  # dev, test, covered-test
+mode=$1  # dev, test, covered-test
 
 outfile="models-segm/res.$mode.csv"
 echo "treebank,lem_acc,edist" > $outfile
