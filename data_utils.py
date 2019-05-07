@@ -202,7 +202,7 @@ class BatchBase:
     return sents
 
 
-  def invert_axes(self,sequence,idxs):
+  def invert_axes(self,sequence,idxs,_eval=False):
     """ [bs,S,W] -> Sx[tensor(bs,W)] 
         padded sequence assumed
     """
@@ -210,7 +210,10 @@ class BatchBase:
     S = len(sequence[idxs[0]])
     W = len(sequence[idxs[0]][0])
     for i in range(S):
-      w_i = [sequence[idx][i] for idx in idxs]
+      if _eval:
+        w_i = [[sequence[idx][i][0]] for idx in idxs]
+      else:
+        w_i = [sequence[idx][i] for idx in idxs]
       new_seq.append( self.cuda(fixed_var(torch.LongTensor(w_i))) )
       # new_seq.append(w_i)
 
@@ -270,8 +273,7 @@ class BatchSegm(BatchBase):
 
   def get_eval_batch(self):
     for _id,batch_ids in enumerate(self.sorted_ids_per_batch):
-      # ops = self.src_batches[_id]
-      ops = self.invert_axes(self.sents,batch_ids)
+      ops = self.invert_axes(self.sents,batch_ids,_eval=True)
       forms = [self.forms[idx] for idx in batch_ids]
       lemmas = [self.lemmas[idx] for idx in batch_ids]
       yield ops,forms,lemmas
@@ -289,6 +291,8 @@ class BatchAnalizer(BatchSegm):
     if shuffle:
       np.random.shuffle(self.sorted_ids_per_batch)
     for batch_ids in self.sorted_ids_per_batch:
-      sents = [self.sents[idx] for idx in batch_ids]
-      labels = [self.labels[idx] for idx in batch_ids]
-      yield sents,labels
+      ops = self.invert_axes(self.sents,batch_ids)
+      labels = self.cuda(fixed_var(
+                    torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
+
+      yield ops,labels

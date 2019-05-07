@@ -8,7 +8,7 @@ cd /home/acosta/morph-bandit/
 conda activate morph
 
 if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
-	python3 run_analizer.py --mode $mode \
+	python3 run_lemmatizer.py --mode $mode \
 	--train_file data/$tbname/train \
 	--test_file data/$tbname/test \
 	--epochs 20 \
@@ -22,7 +22,7 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--gpu
 
 elif [ $mode == "dev" ]; then
-	python3 run_analizer.py --mode $mode \
+	python3 run_lemmatizer.py --mode $mode \
 	--train_file data/$tbname/train \
 	--dev_file data/$tbname/dev \
 	--epochs 20 \

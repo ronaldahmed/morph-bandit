@@ -17,32 +17,44 @@ def general_arg_parser():
     p.add_argument("--patience", help="Patience parameter (for early stopping)", type=int, default=30)
     p.add_argument("-lr", "--learning_rate", help="Adam Learning rate", type=float, default=1e-3)
     p.add_argument("--clip", help="Gradient clipping", type=float, default=None)
+    p.add_argument("-r", "--scheduler", help="Use reduce learning rate on plateau schedule", action='store_true')
     
+    p.add_argument("--in_mode", help="Input op token mode [coarse,grain]", type=str, default="coarse")
+    p.add_argument("--out_mode", help="Output feat label mode [coarse,grain]", type=str, default="coarse")
     p.add_argument("--gpu", help="Use GPU", action='store_true')
-    p.add_argument("--embedding_file", help="Pretrained op-token embedding file", type=str, default=None)
+    p.add_argument("--embedding_txt", help="Pretrained op-token embedding file [txt format]", type=str, default=None)
+    p.add_argument("--embedding_pth", help="Pretrained op-token embedding file [pth format]", type=str, default=None)
     p.add_argument("--pretrained_form_emb", help="Pretrained word forms embedding file", type=str, default=None)
     p.add_argument("--input_model", help="Model name to load", type=str, default=None)
     p.add_argument("--model_save_dir", help="where to save the trained models and logs", type=str)
+    
+    p.add_argument("--dropout", help="Use dropout", type=float, default=0)
+    p.add_argument("--emb_size", help="Input embeddings size", type=int, default=100)
+    p.add_argument("--rnn_type", help="Type of rnn cell [LSTM,GRU]", type=str, default="LSTM")
+    p.add_argument("--rnn_size", help="Size of RNN cell", type=int, default=100)
+    p.add_argument("--debug", help="Debug", type=int, default=0)
 
+    p.add_argument("--max_ops", help="Maximum number of operations to generate during evaluation", type=int, default=15)
+    p.add_argument('--temperature', type=float, default=1.0, help='temperature - higher will increase diversity')
+
+    return p
+
+
+def lemmatizer_arg_parser():
+    """ CLI args related to training models. """
+    p = ArgumentParser(add_help=False)
+    p.add_argument("-w", "--word_dropout", help="Use word dropout", type=float, default=0)
+    p.add_argument("--mlp_size", help="Input embeddings size", type=int, default=100)
+    
     return p
 
 
 def morph_analizer_arg_parser():
-    """ CLI args related to training models. """
     p = ArgumentParser(add_help=False)
-    p.add_argument("--in_mode", help="Input op token mode [coarse,grain]", type=str, default="coarse")
-    p.add_argument("--out_mode", help="Output feat label mode [coarse,grain]", type=str, default="coarse")
-    p.add_argument("-r", "--scheduler", help="Use reduce learning rate on plateau schedule", action='store_true')
-    p.add_argument("-w", "--word_dropout", help="Use word dropout", type=float, default=0)
-    p.add_argument("--dropout", help="Use dropout", type=float, default=0)
-    p.add_argument("--emb_size", help="Input embeddings size", type=int, default=100)
-    p.add_argument("--rnn_size", help="Input embeddings size", type=int, default=100)
-    p.add_argument("--rnn_type", help="Type of rnn cell [LSTM,GRU]", type=str, default="LSTM")
-    p.add_argument("--mlp_size", help="Input embeddings size", type=int, default=100)
-    p.add_argument("--debug", help="Debug", type=int, default=0)
-    
-    return p
+    p.add_argument("--op_aggr", help="Aggregation strat for op embeddings [rnn,cnn,sopa]", type=str, default="rnn")
+    # p.add_argument("--rnn_w_size", help="Size of word-lvl RNN cell", type=int, default=100)
 
+    return p
 
 
 def sopamlp_arg_parser():
@@ -95,6 +107,13 @@ def soft_pattern_arg_parser():
 
 
 
+
+
+def lemmatizer_args():
+  parser = ArgumentParser(description=__doc__,
+                          formatter_class=ArgumentDefaultsHelpFormatter,
+                          parents=[soft_pattern_arg_parser(), lemmatizer_arg_parser(), general_arg_parser()])
+  return parser.parse_args()
 
 
 def analizer_args():
