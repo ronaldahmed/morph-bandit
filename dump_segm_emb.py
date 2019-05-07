@@ -25,7 +25,7 @@ if __name__ == '__main__':
   	# tb_args.train_file = "data/"+tb+"/train"
   	# loader = DataLoaderAnalizer(tb_args)
 
-  	state_dict = torch.load(input_model)
+  	state_dict = torch.load(input_model,map_location='cpu')
   	emb_matrix = state_dict["emb.weight"]
   	outname = "models-segm/%s/ops.bin" % (tb)
   	torch.save(emb_matrix,outname)
