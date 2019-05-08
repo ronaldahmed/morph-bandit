@@ -2,6 +2,7 @@
 
 tbname=$1
 imodel=$2
+emb_file=$3
 
 cd /home/acosta/morph-bandit/
 conda activate morph
@@ -15,7 +16,7 @@ python3 run_analizer.py --mode train \
 --emb_size 140 \
 --learning_rate 0.0005 \
 --dropout 0.05 \
---embedding_pth models-anlz/$tbname/emb.pth \
+--embedding_pth $emb_file \
 --input_lem_model $imodel \
 --model_save_dir models-anlz/$tbname \
 --scheduler \
