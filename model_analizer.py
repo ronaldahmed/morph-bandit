@@ -65,10 +65,10 @@ class Analizer(Module):
     batch_size = batch[0].shape[0]
     for w_op in batch:
       emb = self.emb(w_op)
-      try:
-        h_op,hidden_op  = self.op_encoder(emb,hidden_op) # h_op: [W,bs,2*size]
-      except:
-        pdb.set_trace()
+      # try:
+      h_op,hidden_op  = self.op_encoder(emb,hidden_op) # h_op: [W,bs,2*size]
+      # except:
+      #   pdb.set_trace()
 
       h_op = h_op.view(batch_size,-1,2,self.args.rnn_size)
       fw_bw = [ h_op[:,-1,0,:].view(batch_size,1,self.args.rnn_size),
