@@ -17,11 +17,19 @@ import subprocess as sp
 
 import pdb
 
+class MetricsWrap:
+  def __init__(self,acc,dist,msd_acc,msd_f1):
+    self.lem_acc = acc
+    self.lem_edist = dist
+    self.msd_acc = msd_acc
+    self.msd_f1 = msd_f1
+
+
 class TrainerAnalizer:
-  def __init__(self,model,num_classes,args):
+  def __init__(self,anlz_model,num_classes,args):
     self.args = args
     self.n_classes = num_classes
-    self.model = model
+    self.model = anlz_model
     self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
     self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
@@ -89,8 +97,6 @@ class TrainerAnalizer:
     #batch_size = len(gold_output[0])
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
-    
-
     hidden = self.repackage_hidden(hidden)
     self.optimizer.zero_grad()
     pred_seq,hidden = self.model.forward(batch, hidden)
@@ -116,64 +122,79 @@ class TrainerAnalizer:
 
   def predict_batch(self,batch):
     self.model.eval()
+
     batch_size = batch[0].shape[0]
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
     
     with torch.no_grad():
       hidden = self.repackage_hidden(hidden) # ([]
-      pred,hidden = self.model.predict(batch,hidden)
-    return pred
+      pred,hidden = self.model.predict(batch_ops,hidden)
+    return pred.cpu().numpy()
 
 
-  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,covered=False):
+      #
+
+
+  def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,covered=False):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
     forms_to_dump = []
     pred_lem_to_dump = []
+    pred_feats_to_dump = []
     gold_lem_to_dump = []
+    gold_feats_to_dump = []
 
-    for op_seqs,forms,lemmas in batch.get_eval_batch():
-      predicted = self.predict_batch(op_seqs)
-      predicted = batch.restore_batch(predicted)
-
+    for op_seqs,feats,forms,lemmas in batch.get_eval_batch():
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
-      # get op labels & apply oracle 
+      gold_feats_to_dump.extend([[data_vocabs.get_feat_label(x) for x in sent] for sent in feats])
+      filtered_op_batch = []             # bs x [ S x W ]
+
+      # 1. predict operation sequence
+      predicted = trainer_lem.predict_batch(op_seqs) # Sx[ bs x W ]
+      predicted = batch.restore_batch(predicted)     # bs x [ SxW ]
+      #    get op labels & apply oracle 
       for i,sent in enumerate(predicted):
         sent = predicted[i]
-        # forms_to_dump.append( [data_vocabs.vocab_forms.get_label_name(x) \
-        #                         for x in forms[i]] )
-        # gold_lem_to_dump.append( [data_vocabs.vocab_lemmas.get_label_name(x) \
-        #                         for x in lemmas[i]] )
         pred_lemmas = []
+        filt_op_sent = []
         len_sent = len(forms[i]) # forms and lemmas are not sent-padded
         for j in range(len_sent):
           w_op_seq = sent[j]
-          # form_str = data_vocabs.vocab_forms.get_label_name(forms[i][j])
           form_str = forms[i][j].replace(SPACE_LABEL," ")
           if sum(w_op_seq)==0:
             pred_lemmas.append(form_str.lower())
             continue
-            
           if stop_id in w_op_seq:
             _id = np.where(np.array(w_op_seq)==stop_id)[0][0]
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lem,op_len = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
+          filt_op_sent.append( w_op_seq[:op_len] + [stop_id] )
         #
         if len(pred_lemmas)==0:
           pdb.set_trace()
         pred_lem_to_dump.append(pred_lemmas)
+        filtered_op_batch.append(filt_op_sent)
       #
-      #pdb.set_trace()
-
       cnt += op_seqs[0].shape[0]
       if max_data!=-1 and cnt > max_data:
         break
+      #  rebatch op seqs
+      padded = data_vocabs.pad_data_per_batch(filtered_op_batch,[np.arange(len(filtered_op_batch))])
+      filtered_op_batch = data_vocabs.invert_axes(padded,np.arange(len(filtered_op_batch))) # Sx[ bs x W ]
+
+      # 2. predict labels
+      pred_labels = self.predict_batch(filtered_op_batch) # [bs x S]
+      bs = pred_labels.shape[0]
+      for i in range(bs):
+        len_sent = len(forms[i])
+        pred_feats_to_dump.append( [ data_vocabs.get_feat_label(x) for x in pred_labels[i,:len_sent] ] )
+      #
     #
     filename = ""
     if   split=='train':
@@ -183,20 +204,21 @@ class TrainerAnalizer:
     elif split=='test':
       filename = self.args.test_file
     
-    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump)
-    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump)
+    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
+    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump)
 
     if covered:
-      return -1,-1
+      return MetricsWrap(-1,-1,-1,-1)
 
     else:
       pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
-                     "--reference", filename + ".conllu.gold",
-                     "--output"   , filename + ".conllu.pred",
+                     "--reference", filename + ".anlz.conllu.gold",
+                     "--output"   , filename + ".anlz.conllu.pred",
                     ], capture_output=True)
       output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
       output_res = [float(x) for x in output_res]
-      return output_res[:2]
+      res_wrap = MetricsWrap(output_res[0],output_res[1],output_res[2],output_res[3])
+      return res_wrap
 
 
   def save_model(self,epoch):
@@ -212,11 +234,9 @@ class TrainerAnalizer:
                      step,
                      train_loss,
                      dev_loss=None,
-                     train_acc=None,
-                     dev_acc=None,
-                     train_dist=None,
-                     dev_dist=None
-                      ):
+                     train_metrics=None,
+                     dev_metrics=None
+                     ):
     if self.writer is not None:
       for name, param in self.model.named_parameters():
         self.writer.add_scalar("parameter_mean/" + name,
@@ -231,9 +251,18 @@ class TrainerAnalizer:
                               param.grad.data.std(),
                               step)
 
-      for var,name in zip([train_loss,dev_loss,train_acc,dev_acc,train_dist,dev_dist],
+      for var,name in zip([train_loss,dev_loss,
+                           train_metrics.lem_acc,dev_metrics.lem_acc,
+                           train_metrics.lem_edist,dev_metrics.lem_edist,
+                           train_metrics.msd_acc,dev_metrics.msd_acc,
+                           train_metrics.msd_f1,dev_metrics.msd_f1
+                           ],
                           ["loss/loss_train","loss/loss_dev",
-                          "acc/train_acc","acc/dev_acc","dist/train_dist","dist/dev_dist"]):
+                           "acc/train_lem_acc","acc/dev_lem_acc",
+                           "acc/train_lem_edist","acc/dev_lem_edist",
+                           "acc/train_msd_acc","acc/dev_msd_acc",
+                           "acc/train_msd_f1","acc/dev_msd_f1"
+                           ]):
         #if isinstance(dev_loss, torch.Tensor):
         if var != None:
           self.writer.add_scalar(name, var, step)

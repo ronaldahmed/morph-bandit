@@ -35,6 +35,11 @@ class TrainerLemmatizer:
         self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', 0.1, 10, True)
 
 
+  def freeze_model(self):
+    for params in self.model.parameters():
+      param.requires_grad = False
+
+
   ### Adapted from AllenNLP
   def enable_gradient_clipping(self) -> None:
     clip = self.args.clip
@@ -123,7 +128,7 @@ class TrainerLemmatizer:
   #   self.model.eval()
   #   batch_size = batch[0].shape[0]
   #   hidden = self.flush_hidden(self.model.rnn_hidden)
-  #   hidden = self.slice(hidden,batch_size)
+  #   hidden = self.slice(hidden,batch_size)monotonic
   #   preds = []
   #   with torch.no_grad():
   #     for w in batch:
@@ -133,7 +138,7 @@ class TrainerLemmatizer:
   #   return preds
 
 
-  def predict_batch(self,batch):
+  def predict_batch(self,batch,to_cpu=True):
     """ Start with initial form and sample from LM until 
         reaching STOP or MAX_OPS
     """
@@ -152,9 +157,12 @@ class TrainerLemmatizer:
           op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
           op_idx = torch.multinomial(op_weights, 1)
           curr_tok = op_idx
-          pred_w.append( op_idx.cpu().numpy() )
+          pred_w.append( op_idx )
         #
-        pred_batch.append(np.hstack(pred_w))
+        pred_w = torch.cat(pred_w,1)
+        if to_cpu:
+          pred_w = pred_w.cpu().numpy()
+        pred_batch.append(pred_w)
       #
 
     return pred_batch
@@ -196,7 +204,7 @@ class TrainerLemmatizer:
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lem,_ = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
         #
         if len(pred_lemmas)==0:

@@ -54,6 +54,12 @@ class DataLoaderAnalizer:
   def get_vocab_size(self,):
     return len(self.vocab_oplabel)
 
+  def get_feat_vocab_size(self,):
+    return len(self.vocab_feats)
+
+  def get_feat_label(self,ids):
+    return self.vocab_feats.get_label_name(ids)
+
   def load_vocab(self):
     def init_labdict(_dict):
       _dict.add(PAD_TOKEN)
@@ -153,10 +159,10 @@ class DataLoaderAnalizer:
 
 
 class BatchBase:
-  def __init__(self,data,batch_size,gpu=True):
+  def __init__(self,data,batch_size,strip_stop=True,gpu=True):
     self.size = batch_size
     self.stop_id = data.ops[0][-1][-1] # last token: STOP.
-    self.sents = self.strip_stop(data.ops)
+    self.sents = self.strip_stop(data.ops) if strip_stop else data.ops
     self.lemmas = data.lemmas
     self.forms = data.forms
     self.cuda = to_cuda(gpu)
@@ -183,8 +189,10 @@ class BatchBase:
       new_sents.append( [w[:-1] for w in sent] )
     return new_sents
 
-  def pad_data_per_batch(self,sents):
-    for batch_ids in self.sorted_ids_per_batch:
+  def pad_data_per_batch(self,sents,list_batch_ids=None):
+    if list_batch_ids is None:
+      list_batch_ids = self.sorted_ids_per_batch
+    for batch_ids in list_batch_ids:
       max_sent_len = len(sents[batch_ids[0]]) # to pad sents
       max_wop_len = 0
       for idx in batch_ids:
@@ -229,6 +237,7 @@ class BatchBase:
       s_i = [ batch[j][i,:] for j in range(S)]
       new_seq.append(s_i)
     return new_seq
+
 
   def batchify(self,seq):
     batches = []
@@ -282,7 +291,7 @@ class BatchSegm(BatchBase):
 
 class BatchAnalizer(BatchSegm):
   def __init__(self, data, batch_size, gpu):
-    super(BatchBase, self).__init__(data,batch_size,gpu)
+    super(BatchBase, self).__init__(data,batch_size,strip_stop=False,gpu=gpu)
     self.sents = self.pad_data_per_batch(self.sents)
     self.labels = data.feats
 
@@ -296,3 +305,13 @@ class BatchAnalizer(BatchSegm):
                     torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
 
       yield ops,labels
+
+
+  def get_eval_batch(self):
+    for _id,batch_ids in enumerate(self.sorted_ids_per_batch):
+      ops = self.invert_axes(self.sents,batch_ids,_eval=True)
+      forms = [self.forms[idx] for idx in batch_ids]
+      lemmas = [self.lemmas[idx] for idx in batch_ids]
+      labels = self.cuda(fixed_var(
+                    torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
+      yield ops,labels,forms,lemmas

@@ -95,9 +95,10 @@ def apply_operations(init_form,operations,debug=False):
   if debug:
     print(init_form,">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-  for op_token in operations:
+  cnt = 0
+  for i,op_token in enumerate(operations):
     if op_token == UNK_TOKEN:
-      return curr_tok
+      return curr_tok,cnt
     match = oplabel_pat.match(op_token)
     if match==None:
       print("Operation token with bad format!!")
@@ -161,7 +162,8 @@ def apply_operations(init_form,operations,debug=False):
       if debug:
         print("\t",op_token,"|",curr_tok)
     except AssertionError:
-      return curr_tok
+      return curr_tok,cnt
+    cnt += 1
   #
   
-  return curr_tok
+  return curr_tok,cnt
