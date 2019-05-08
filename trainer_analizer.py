@@ -36,7 +36,6 @@ class TrainerAnalizer:
     self.cuda = to_cuda(args.gpu)
     self.writer = None
     self.scheduler = None
-    self.freeze_lemma()
 
     if args.model_save_dir is not None:
         self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
@@ -121,10 +120,9 @@ class TrainerAnalizer:
     return loss.item()
 
 
-  def predict_batch(self,batch,trainer_lem):
+  def predict_batch(self,batch):
     self.model.eval()
 
-    
     batch_size = batch[0].shape[0]
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
@@ -132,64 +130,71 @@ class TrainerAnalizer:
     with torch.no_grad():
       hidden = self.repackage_hidden(hidden) # ([]
       pred,hidden = self.model.predict(batch_ops,hidden)
-    return pred
+    return pred.cpu().numpy()
 
-  def get_batch_op(self,batch,data_vocabs,trainer_lem):
-    batch_ops = trainer_lem.model.predict_batch(batch) # Sx[bs x W]
-    cleaned = []
-    # clean batch
-    for w in batch_ops:
+
       #
 
 
-  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,covered=False):
+  def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,covered=False):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
     forms_to_dump = []
     pred_lem_to_dump = []
+    pred_feats_to_dump = []
     gold_lem_to_dump = []
+    gold_feats_to_dump = []
 
     for op_seqs,feats,forms,lemmas in batch.get_eval_batch():
-      predicted = self.predict_batch(op_seqs)
-      predicted = batch.restore_batch(predicted)
-
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
-      # get op labels & apply oracle 
+      gold_feats_to_dump.extend([[data_vocabs.get_feat_label(x) for x in sent] for sent in feats])
+      filtered_op_batch = []             # bs x [ S x W ]
+
+      # 1. predict operation sequence
+      predicted = trainer_lem.predict_batch(op_seqs) # Sx[ bs x W ]
+      predicted = batch.restore_batch(predicted)     # bs x [ SxW ]
+      #    get op labels & apply oracle 
       for i,sent in enumerate(predicted):
         sent = predicted[i]
-        # forms_to_dump.append( [data_vocabs.vocab_forms.get_label_name(x) \
-        #                         for x in forms[i]] )
-        # gold_lem_to_dump.append( [data_vocabs.vocab_lemmas.get_label_name(x) \
-        #                         for x in lemmas[i]] )
         pred_lemmas = []
+        filt_op_sent = []
         len_sent = len(forms[i]) # forms and lemmas are not sent-padded
         for j in range(len_sent):
           w_op_seq = sent[j]
-          # form_str = data_vocabs.vocab_forms.get_label_name(forms[i][j])
           form_str = forms[i][j].replace(SPACE_LABEL," ")
           if sum(w_op_seq)==0:
             pred_lemmas.append(form_str.lower())
             continue
-            
           if stop_id in w_op_seq:
             _id = np.where(np.array(w_op_seq)==stop_id)[0][0]
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lem,op_len = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
+          filt_op_sent.append( w_op_seq[:op_len] + [stop_id] )
         #
         if len(pred_lemmas)==0:
           pdb.set_trace()
         pred_lem_to_dump.append(pred_lemmas)
+        filtered_op_batch.append(filt_op_sent)
       #
-      #pdb.set_trace()
-
       cnt += op_seqs[0].shape[0]
       if max_data!=-1 and cnt > max_data:
         break
+      #  rebatch op seqs
+      padded = data_vocabs.pad_data_per_batch(filtered_op_batch,[np.arange(len(filtered_op_batch))])
+      filtered_op_batch = data_vocabs.invert_axes(padded,np.arange(len(filtered_op_batch))) # Sx[ bs x W ]
+
+      # 2. predict labels
+      pred_labels = self.predict_batch(filtered_op_batch) # [bs x S]
+      bs = pred_labels.shape[0]
+      for i in range(bs):
+        len_sent = len(forms[i])
+        pred_feats_to_dump.append( [ data_vocabs.get_feat_label(x) for x in pred_labels[i,:len_sent] ] )
+      #
     #
     filename = ""
     if   split=='train':
@@ -199,20 +204,21 @@ class TrainerAnalizer:
     elif split=='test':
       filename = self.args.test_file
     
-    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump)
-    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump)
+    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
+    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump)
 
     if covered:
-      return -1,-1
+      return MetricsWrap(-1,-1,-1,-1)
 
     else:
       pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
-                     "--reference", filename + ".conllu.gold",
-                     "--output"   , filename + ".conllu.pred",
+                     "--reference", filename + ".anlz.conllu.gold",
+                     "--output"   , filename + ".anlz.conllu.pred",
                     ], capture_output=True)
       output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
       output_res = [float(x) for x in output_res]
-      return output_res[:2]
+      res_wrap = MetricsWrap(output_res[0],output_res[1],output_res[2],output_res[3])
+      return res_wrap
 
 
   def save_model(self,epoch):

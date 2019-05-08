@@ -128,7 +128,7 @@ class TrainerLemmatizer:
   #   self.model.eval()
   #   batch_size = batch[0].shape[0]
   #   hidden = self.flush_hidden(self.model.rnn_hidden)
-  #   hidden = self.slice(hidden,batch_size)
+  #   hidden = self.slice(hidden,batch_size)monotonic
   #   preds = []
   #   with torch.no_grad():
   #     for w in batch:
@@ -204,7 +204,7 @@ class TrainerLemmatizer:
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lem,_ = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
         #
         if len(pred_lemmas)==0:

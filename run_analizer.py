@@ -87,8 +87,8 @@ def train(args):
     train_loss /= train.get_num_instances()
 
     finish_iter_time = monotonic()
-    train_metrics = trainer_analizer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
-    dev_metrics   = trainer_analizer.eval_metrics_batch(dev_batch, loader,split="dev")
+    train_metrics = trainer_analizer.eval_metrics_batch(trainer_lemmatizer,train_batch,loader,split="train",max_data=1000)
+    dev_metrics   = trainer_analizer.eval_metrics_batch(trainer_lemmatizer,dev_batch  ,loader,split="dev")
     
     trainer_analizer.update_summary(train_log_step_cnt,train_loss,dev_loss,
                                     train_metrics,dev_metrics)
