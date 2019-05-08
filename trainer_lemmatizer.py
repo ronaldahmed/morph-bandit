@@ -36,7 +36,7 @@ class TrainerLemmatizer:
 
 
   def freeze_model(self):
-    for params in self.model.parameters():
+    for param in self.model.parameters():
       param.requires_grad = False
 
 
@@ -138,7 +138,7 @@ class TrainerLemmatizer:
   #   return preds
 
 
-  def predict_batch(self,batch,to_cpu=True):
+  def predict_batch(self,batch,start=False):
     """ Start with initial form and sample from LM until 
         reaching STOP or MAX_OPS
     """
@@ -152,6 +152,7 @@ class TrainerLemmatizer:
         hidden = self.repackage_hidden(hidden) # ([]
         curr_tok = w
         pred_w = []
+        if start: pred_w.append(w)
         for i in range(self.args.max_ops):
           output,hidden = self.model.forward(curr_tok,hidden)
           op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
@@ -160,8 +161,7 @@ class TrainerLemmatizer:
           pred_w.append( op_idx )
         #
         pred_w = torch.cat(pred_w,1)
-        if to_cpu:
-          pred_w = pred_w.cpu().numpy()
+        pred_w = pred_w.cpu().numpy()
         pred_batch.append(pred_w)
       #
 
@@ -204,7 +204,8 @@ class TrainerLemmatizer:
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem,_ = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lem,_ = apply_operations(form_str,optokens)
+          pred_lem = pred_lem.replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
         #
         if len(pred_lemmas)==0:

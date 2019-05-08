@@ -159,10 +159,10 @@ class DataLoaderAnalizer:
 
 
 class BatchBase:
-  def __init__(self,data,batch_size,strip_stop=True,gpu=True):
+  def __init__(self,data,batch_size,gpu=True):
     self.size = batch_size
     self.stop_id = data.ops[0][-1][-1] # last token: STOP.
-    self.sents = self.strip_stop(data.ops) if strip_stop else data.ops
+    self.sents = self.strip_stop(data.ops)
     self.lemmas = data.lemmas
     self.forms = data.forms
     self.cuda = to_cuda(gpu)
@@ -208,6 +208,17 @@ class BatchBase:
       #
     #
     return sents
+
+
+  def pad_labels_per_batch(self,labs,list_batch_ids=None):
+    if list_batch_ids is None:
+      list_batch_ids = self.sorted_ids_per_batch
+    for batch_ids in list_batch_ids:
+      max_sent_len = len(self.sents[batch_ids[0]]) # to pad sents
+      for idx in batch_ids:
+        labs[idx] = self.right_pad(labs[idx],max_sent_len,PAD_ID)
+    return labs
+
 
 
   def invert_axes(self,sequence,idxs,_eval=False):
@@ -257,7 +268,6 @@ class BatchSegm(BatchBase):
     self.tgt_sents = self.pad_data_per_batch(self.tgt_sents)
     # self.src_batches = self.batchify(self.sents)
     # self.tgt_batches = self.batchify(self.tgt_sents)
-
     
 
   def build_gold_lm_seq(self,):
@@ -289,11 +299,11 @@ class BatchSegm(BatchBase):
 
 
 
-class BatchAnalizer(BatchSegm):
+class BatchAnalizer(BatchBase):
   def __init__(self, data, batch_size, gpu):
-    super(BatchBase, self).__init__(data,batch_size,strip_stop=False,gpu=gpu)
+    super(BatchAnalizer, self).__init__(data,batch_size,gpu)
     self.sents = self.pad_data_per_batch(self.sents)
-    self.labels = data.feats
+    self.labels = self.pad_labels_per_batch(data.feats)
 
 
   def get_batch(self,shuffle=True):
@@ -302,8 +312,7 @@ class BatchAnalizer(BatchSegm):
     for batch_ids in self.sorted_ids_per_batch:
       ops = self.invert_axes(self.sents,batch_ids)
       labels = self.cuda(fixed_var(
-                    torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
-
+                      torch.LongTensor( np.array([self.labels[idx] for idx in batch_ids]) )))
       yield ops,labels
 
 
@@ -313,5 +322,5 @@ class BatchAnalizer(BatchSegm):
       forms = [self.forms[idx] for idx in batch_ids]
       lemmas = [self.lemmas[idx] for idx in batch_ids]
       labels = self.cuda(fixed_var(
-                    torch.LongTensor( [self.labels[idx] for idx in batch_ids] )))
+                    torch.LongTensor( np.array([self.labels[idx] for idx in batch_ids]) )))
       yield ops,labels,forms,lemmas

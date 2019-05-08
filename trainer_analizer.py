@@ -30,7 +30,7 @@ class TrainerAnalizer:
     self.args = args
     self.n_classes = num_classes
     self.model = anlz_model
-    self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
+    self.optimizer = Adam(anlz_model.parameters(), lr=args.learning_rate)
     self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
     self.cuda = to_cuda(args.gpu)
@@ -55,25 +55,6 @@ class TrainerAnalizer:
           parameter.register_hook(clip_function)
 
 
-  def repackage_hidden(self,h):
-    """Wraps hidden states in new Tensors, to detach them from their history."""
-    if isinstance(h, torch.Tensor):
-      return h.detach()
-    else:
-      return tuple(self.repackage_hidden(v) for v in h)
-
-  def flush_hidden(self,h):
-    if isinstance(h, torch.Tensor):
-      return h.data.zero_()
-    else:
-      return tuple(self.flush_hidden(v) for v in h)
-
-  def slice(self,h,bs):
-    if isinstance(h, torch.Tensor):
-      return h[:,:bs,:]
-    else:
-      return tuple(self.slice(v,bs) for v in h)
-
 
   def compute_loss(self,pred_seq,gold_labs,debug=0):
     total_loss = []
@@ -95,9 +76,7 @@ class TrainerAnalizer:
 
     batch_size = gold_output[0].shape[0]
     #batch_size = len(gold_output[0])
-    hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
-    hidden = self.repackage_hidden(hidden)
+    hidden = self.model.refactor_hidden(batch_size)
     self.optimizer.zero_grad()
     pred_seq,hidden = self.model.forward(batch, hidden)
     loss = self.compute_loss(pred_seq, gold_output, debug)
@@ -110,11 +89,9 @@ class TrainerAnalizer:
   def eval_batch(self,batch,gold_output,debug=0):
     self.model.eval()
     batch_size = gold_output[0].shape[0]
-    hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
+    hidden = self.model.refactor_hidden(batch_size)
     
     with torch.no_grad():
-      hidden = self.repackage_hidden(hidden) # ([]
       output,hidden = self.model.forward(batch, hidden)
       loss = self.compute_loss(output, gold_output, debug)
     return loss.item()
@@ -122,15 +99,12 @@ class TrainerAnalizer:
 
   def predict_batch(self,batch):
     self.model.eval()
-
     batch_size = batch[0].shape[0]
-    hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
+    hidden = self.model.refactor_hidden(batch_size)
     
     with torch.no_grad():
-      hidden = self.repackage_hidden(hidden) # ([]
-      pred,hidden = self.model.predict(batch_ops,hidden)
-    return pred.cpu().numpy()
+      pred,hidden = self.model.predict(batch,hidden)
+    return pred
 
 
       #
@@ -153,7 +127,7 @@ class TrainerAnalizer:
       filtered_op_batch = []             # bs x [ S x W ]
 
       # 1. predict operation sequence
-      predicted = trainer_lem.predict_batch(op_seqs) # Sx[ bs x W ]
+      predicted = trainer_lem.predict_batch(op_seqs,start=True) # Sx[ bs x W ]
       predicted = batch.restore_batch(predicted)     # bs x [ SxW ]
       #    get op labels & apply oracle 
       for i,sent in enumerate(predicted):
@@ -172,21 +146,19 @@ class TrainerAnalizer:
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem,op_len = apply_operations(form_str,optokens).replace(SPACE_LABEL," ")
+          pred_lem,op_len = apply_operations(form_str,optokens)
+          pred_lem = pred_lem.replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
-          filt_op_sent.append( w_op_seq[:op_len] + [stop_id] )
+          filt_op_sent.append( w_op_seq[:op_len+1].tolist() ) # discarded the stop_id
         #
         if len(pred_lemmas)==0:
           pdb.set_trace()
         pred_lem_to_dump.append(pred_lemmas)
         filtered_op_batch.append(filt_op_sent)
       #
-      cnt += op_seqs[0].shape[0]
-      if max_data!=-1 and cnt > max_data:
-        break
       #  rebatch op seqs
-      padded = data_vocabs.pad_data_per_batch(filtered_op_batch,[np.arange(len(filtered_op_batch))])
-      filtered_op_batch = data_vocabs.invert_axes(padded,np.arange(len(filtered_op_batch))) # Sx[ bs x W ]
+      padded = batch.pad_data_per_batch(filtered_op_batch,[np.arange(len(filtered_op_batch))])
+      filtered_op_batch = batch.invert_axes(padded,np.arange(len(filtered_op_batch))) # Sx[ bs x W ]
 
       # 2. predict labels
       pred_labels = self.predict_batch(filtered_op_batch) # [bs x S]
@@ -195,6 +167,9 @@ class TrainerAnalizer:
         len_sent = len(forms[i])
         pred_feats_to_dump.append( [ data_vocabs.get_feat_label(x) for x in pred_labels[i,:len_sent] ] )
       #
+      cnt += op_seqs[0].shape[0]
+      if max_data!=-1 and cnt > max_data:
+        break
     #
     filename = ""
     if   split=='train':
@@ -203,9 +178,9 @@ class TrainerAnalizer:
       filename = self.args.dev_file
     elif split=='test':
       filename = self.args.test_file
-    
-    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
-    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump)
+
+    dump_conllu(filename + ".anlz.conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
+    dump_conllu(filename + ".anlz.conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump)
 
     if covered:
       return MetricsWrap(-1,-1,-1,-1)
@@ -216,16 +191,18 @@ class TrainerAnalizer:
                      "--output"   , filename + ".anlz.conllu.pred",
                     ], capture_output=True)
       output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
+
       output_res = [float(x) for x in output_res]
       res_wrap = MetricsWrap(output_res[0],output_res[1],output_res[2],output_res[3])
       return res_wrap
+
 
 
   def save_model(self,epoch):
     if self.args.model_save_dir is not None:
       if not os.path.exists(self.args.model_save_dir):
         os.makedirs(self.args.model_save_dir)
-      model_save_file = os.path.join(self.args.model_save_dir, "{}_{}.pth".format("segm", epoch))
+      model_save_file = os.path.join(self.args.model_save_dir, "{}_{}.pth".format("anlz", epoch))
       print("Saving model to", model_save_file)
       torch.save(self.model.state_dict(), model_save_file)
 
@@ -257,11 +234,11 @@ class TrainerAnalizer:
                            train_metrics.msd_acc,dev_metrics.msd_acc,
                            train_metrics.msd_f1,dev_metrics.msd_f1
                            ],
-                          ["loss/loss_train","loss/loss_dev",
-                           "acc/train_lem_acc","acc/dev_lem_acc",
+                          ["loss/loss_train"    ,"loss/loss_dev",
+                           "acc/train_lem_acc"  ,"acc/dev_lem_acc",
                            "acc/train_lem_edist","acc/dev_lem_edist",
-                           "acc/train_msd_acc","acc/dev_msd_acc",
-                           "acc/train_msd_f1","acc/dev_msd_f1"
+                           "acc/train_msd_acc"  ,"acc/dev_msd_acc",
+                           "acc/train_msd_f1"   ,"acc/dev_msd_f1"
                            ]):
         #if isinstance(dev_loss, torch.Tensor):
         if var != None:
