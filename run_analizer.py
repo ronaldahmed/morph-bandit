@@ -48,7 +48,7 @@ def train(args):
   trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
   trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
   trainer_lem.freeze_model()
-  
+
   # <-----------------
 
   # init local vars
@@ -62,7 +62,7 @@ def train(args):
     train_loss = 0
     i = 0
     for sents,gold in train_batch.get_batch():
-      loss = trainer.train_batch(sents, gold, debug=False)
+      loss = trainer_analizer.train_batch(sents, gold, debug=False)
       train_loss += loss
 
       if i % debug_print == (debug_print - 1):
@@ -72,11 +72,11 @@ def train(args):
       train_log_step_cnt += 1
 
       # if i>10: break
-    
+    #
     dev_loss = 0.0
     i = 0
     for sents,gold in dev_batch.get_batch(shuffle=False):
-      dev_loss += trainer.eval_batch(sents,gold,debug=False)
+      dev_loss += trainer_analizer.eval_batch(sents,gold,debug=False)
       if i % debug_print == (debug_print - 1):
           print(".", end="", flush=True)
       i += 1
@@ -87,25 +87,29 @@ def train(args):
     train_loss /= train.get_num_instances()
 
     finish_iter_time = monotonic()
-    train_metrics = trainer_analizer.eval_metrics_batch(trainer_lemmatizer,train_batch,loader,split="train",max_data=1000)
-    dev_metrics   = trainer_analizer.eval_metrics_batch(trainer_lemmatizer,dev_batch  ,loader,split="dev")
+    train_metrics = trainer_analizer.eval_metrics_batch(trainer_lem,train_batch,loader,split="train",max_data=1000)
+    dev_metrics   = trainer_analizer.eval_metrics_batch(trainer_lem,dev_batch  ,loader,split="dev")
+    dev_acc = dev_metrics.msd_f1
     
     trainer_analizer.update_summary(train_log_step_cnt,train_loss,dev_loss,
                                     train_metrics,dev_metrics)
 
-    print(  "\nEpoch {:>4,} train | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
-            "           dev   | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
+    print(  "\nEpoch {:>4,} train | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.2f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
+            "           dev   | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.3f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
             .format(ep,
                     (finish_iter_time - start_time) / 60,
                     train_loss,
-                    train_acc,
-                    train_dist,
+                    train_metrics.lem_acc,
+                    train_metrics.lem_edist,
+                    train_metrics.msd_acc,
+                    train_metrics.msd_f1,
                     (monotonic() - finish_iter_time) / 60,
                     dev_loss,
-                    dev_acc,
-                    dev_dist)
+                    dev_metrics.lem_acc,
+                    dev_metrics.lem_edist,
+                    dev_metrics.msd_acc,
+                    dev_metrics.msd_f1)
         )
-
     if dev_loss < best_dev_loss:
       if dev_acc > best_dev_acc:
         best_dev_acc = dev_acc
@@ -114,7 +118,7 @@ def train(args):
       print("New best dev!")
       best_dev_loss = dev_loss
       best_dev_loss_index = 0
-      trainer.save_model(ep)
+      trainer_analizer.save_model(ep)
         
     else:
       best_dev_loss_index += 1
@@ -125,10 +129,10 @@ def train(args):
       best_dev_acc = dev_acc
       best_ep = ep
       print("New best acc!")
-      trainer.save_model(ep)
+      trainer_analizer.save_model(ep)
 
-    if trainer.scheduler != None:
-      trainer.scheduler.step(dev_loss)
+    if trainer_analizer.scheduler != None:
+      trainer_analizer.scheduler.step(dev_loss)
     #
   #
   print(best_ep,best_dev_acc,sep="\t")

@@ -15,7 +15,7 @@ import pdb
 
 class Analizer(Module):
   def __init__(self,args,nvocab):
-    super(Lemmatizer, self).__init__()
+    super(Analizer, self).__init__()
     self.args = args
     self.cuda = to_cuda(args.gpu)
     self.drop = nn.Dropout(args.dropout)
@@ -43,13 +43,15 @@ class Analizer(Module):
 
 
   def load_embeddings(self,):
-    return self.cuda(fixed_var(torch.load(self.args.embedding_pth)))
+    emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth).contiguous()) )
+    for param in emb.parameters():
+      param.requires_grad = False
+    return emb
 
 
   def init_weights(self,nvocab):
-    ff1_range = 1.0 / np.sqrt(self.args.rnn_size)
+    ff1_range = 1.0 / np.sqrt(2*self.args.rnn_size)
     ff2_range = 1.0 / np.sqrt(self.args.mlp_size)
-    self.emb.weight.data.uniform_(-emb_range, emb_range)
     self.ff1.bias.data.zero_()
     self.ff1.weight.data.uniform_(-ff1_range, ff1_range)
     self.ff2.bias.data.zero_()
@@ -63,14 +65,19 @@ class Analizer(Module):
     batch_size = batch[0].shape[0]
     for w_op in batch:
       emb = self.emb(w_op)
-      h_op,hidden_op  = self.op_encoder(emb,hidden_op) # h_op: [W,bs,2*size]
-      h_op = h_op.view(-1,batch_size,2,self.args.rnn_size)
-      fw_bw = [ h_op[-1,:,0,,:].view(1,batch_size,self.args.rnn_size),
-                h_op[0,:,1,:].view(1,batch_size,self.args.rnn_size)]
-      fw_bw = torch.cat(fw_bw,2) # on rnn_size axis --> [1,bs,2*size]
+      try:
+        h_op,hidden_op  = self.op_encoder(emb,hidden_op) # h_op: [W,bs,2*size]
+      except:
+        pdb.set_trace()
+
+      h_op = h_op.view(batch_size,-1,2,self.args.rnn_size)
+      fw_bw = [ h_op[:,-1,0,:].view(batch_size,1,self.args.rnn_size),
+                h_op[:,0,1,:].view(batch_size,1,self.args.rnn_size)]
+      
+      fw_bw = torch.cat(fw_bw,2) # on rnn_size axis --> [bs,1,2*size]
       w_emb.append(fw_bw)
     #
-    w_seq = torch.cat(w_emb,0) # [S,bs,2*size]
+    w_seq = torch.cat(w_emb,1) # [bs,S,2*size]    
     h_w, hidden_w = self.word_encoder(w_seq,hidden_w) # h_w: [S,bs,2*size]
     rnn_shape = h_w.shape
     sent_output = h_w.contiguous().view(rnn_shape[0]*rnn_shape[1],rnn_shape[2])
@@ -97,11 +104,45 @@ class Analizer(Module):
     weight = next(self.parameters())
     if self.args.rnn_type == 'LSTM':
       self.rnn_hidden = [(self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
-                          self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size))),
-                         (self.cuda(weight.new_zeros(2,bsz,2*self.args.rnn_size)),
-                          self.cuda(weight.new_zeros(2,bsz,2*self.args.rnn_size))) ]
+                          self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) ),
+                         (self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
+                          self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) )]
                          
     else:
       self.rnn_hidden = [self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
-                         self.cuda(weight.new_zeros(2,bsz,2*self.args.rnn_size)) ]
+                         self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) ]
                         
+
+  def repackage_tensors(self,h):
+    """Wraps hidden states in new Tensors, to detach them from their history."""
+    if isinstance(h, torch.Tensor):
+      return h.detach()
+    else:
+      return tuple(self.repackage_tensors(v) for v in h)
+
+  def flush_tensors(self,h):
+    if isinstance(h, torch.Tensor):
+      return h.data.zero_()
+    else:
+      return tuple(self.flush_tensors(v) for v in h)
+
+  def make_continuous(self,h):
+    if isinstance(h, torch.Tensor):
+      return h.contiguous()
+    else:
+      return tuple(self.make_continuous(v) for v in h)
+
+
+  def slice(self,h,bs):
+    if isinstance(h, torch.Tensor):
+      return h[:,:bs,:]
+    else:
+      return tuple(self.slice(v,bs) for v in h)
+
+
+  def refactor_hidden(self,batch_size):
+    hidden = self.flush_tensors(self.rnn_hidden)
+    hidden = self.slice(hidden,batch_size)
+    hidden = self.make_continuous(hidden)
+    hidden = self.repackage_tensors(hidden)
+    return hidden
