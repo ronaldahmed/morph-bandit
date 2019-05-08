@@ -2,6 +2,7 @@ emb/
 train-ops/
 models/
 models-segm/
+models-anlz/
 dicts/
 *.pyc
 __pycache__
