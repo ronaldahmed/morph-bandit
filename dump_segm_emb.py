@@ -6,7 +6,13 @@ import numpy as np
 if __name__ == '__main__':
   # args = analizer_args()
 
-  tbnames = open("tbnames_order_tab.txt",'r').read().strip("\n").split("\n")
+  # tbnames = open("tbnames_order_tab.txt",'r').read().strip("\n").split("\n")
+  tnames ="""
+pt_gsd
+no_nynorsk
+fa_seraji
+de_gsd
+hy_armtdp""".strip("\n").split("\n")
 
   for tb in tbnames:
   	print(tb)

@@ -96,3 +96,8 @@ yo_ytb
 yue_hk
 zh_cfl
 zh_gsd
+pt_gsd
+no_nynorsk
+fa_seraji
+de_gsd
+hy_armtdp
