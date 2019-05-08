@@ -73,9 +73,7 @@ class TrainerAnalizer:
   def train_batch(self, batch, gold_output, debug=0):
     """Train on one batch of sentences """
     self.model.train()
-
-    batch_size = gold_output[0].shape[0]
-    #batch_size = len(gold_output[0])
+    batch_size = gold_output.shape[0]
     hidden = self.model.refactor_hidden(batch_size)
     self.optimizer.zero_grad()
     pred_seq,hidden = self.model.forward(batch, hidden)
@@ -88,7 +86,7 @@ class TrainerAnalizer:
 
   def eval_batch(self,batch,gold_output,debug=0):
     self.model.eval()
-    batch_size = gold_output[0].shape[0]
+    batch_size = gold_output.shape[0]
     hidden = self.model.refactor_hidden(batch_size)
     
     with torch.no_grad():
@@ -228,20 +226,36 @@ class TrainerAnalizer:
                               param.grad.data.std(),
                               step)
 
-      for var,name in zip([train_loss,dev_loss,
-                           train_metrics.lem_acc,dev_metrics.lem_acc,
-                           train_metrics.lem_edist,dev_metrics.lem_edist,
-                           train_metrics.msd_acc,dev_metrics.msd_acc,
-                           train_metrics.msd_f1,dev_metrics.msd_f1
-                           ],
-                          ["loss/loss_train"    ,"loss/loss_dev",
-                           "acc/train_lem_acc"  ,"acc/dev_lem_acc",
-                           "acc/train_lem_edist","acc/dev_lem_edist",
-                           "acc/train_msd_acc"  ,"acc/dev_msd_acc",
-                           "acc/train_msd_f1"   ,"acc/dev_msd_f1"
-                           ]):
-        #if isinstance(dev_loss, torch.Tensor):
-        if var != None:
+      if train_metrics!=None:
+        for var,name in zip([train_loss,
+                             train_metrics.lem_acc,
+                             train_metrics.lem_edist,
+                             train_metrics.msd_acc,
+                             train_metrics.msd_f1,
+                             ],
+                            ["loss/loss_train",
+                             "acc/train_lem_acc",
+                             "acc/train_lem_edist",
+                             "acc/train_msd_acc"  ,
+                             "acc/train_msd_f1"   ,
+                             ]):
+          
+          self.writer.add_scalar(name, var, step)
+
+      if dev_metrics!=None:
+        for var,name in zip([dev_loss,
+                             dev_metrics.lem_acc,
+                             dev_metrics.lem_edist,
+                             dev_metrics.msd_acc,
+                             dev_metrics.msd_f1
+                             ],
+                            ["loss/loss_dev",
+                             "acc/dev_lem_acc",
+                             "acc/dev_lem_edist",
+                             "acc/dev_msd_acc",
+                             "acc/dev_msd_f1"
+                             ]):
+          
           self.writer.add_scalar(name, var, step)
     #
 

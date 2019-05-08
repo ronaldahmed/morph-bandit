@@ -92,7 +92,7 @@ def train(args):
     dev_acc = dev_metrics.msd_f1
     
     trainer_analizer.update_summary(train_log_step_cnt,train_loss,dev_loss,
-                                    train_metrics,dev_metrics)
+                                    train_metrics=train_metrics,dev_metrics=dev_metrics)
 
     print(  "\nEpoch {:>4,} train | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.2f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
             "           dev   | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.3f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
@@ -136,6 +136,7 @@ def train(args):
     #
   #
   print(best_ep,best_dev_acc,sep="\t")
+
 
 
 def test(args):
