@@ -10,5 +10,5 @@ while read line; do
 	uddir=$(echo $line | cut -f 1 -d " ")
 	tbname=$(echo $line | cut -f 2 -d " ")
 	mkdir -p $dirname/$uddir
-	cp data/$tbname/test.anlz.conllu.pred $dirname/$uddir/$tbname-um-test.output
+	cp data/$tbname/test.anlz.conllu.pred $dirname/$uddir/$tbname-um-test.conllu.output
 done < $ud_tb_names
