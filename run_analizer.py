@@ -141,19 +141,39 @@ def train(args):
 
 def test(args):
   print("Loading data...")
+  to_eval_split = "dev" if args.mode=="dev" else "test"
   loader = DataLoaderAnalizer(args)
   train = loader.load_data("train")
-  to_eval_split = "dev" if args.mode=="dev" else "test"
   dev   = loader.load_data(to_eval_split)
 
   print("Init batch objs")
-  train_batch = BatchSegm(train,args.batch_size,args.gpu)
-  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
+  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
   n_vocab = loader.get_vocab_size()
-  
-  # init model
-  model = Lemmatizer(args,n_vocab)
-  # load model
+  n_feats = loader.get_feat_vocab_size()
+
+  debug_print = int(100 / args.batch_size) + 1
+  train_log_step_cnt = 0
+  debug = True
+
+  # init trainer
+  lemmatizer = Lemmatizer(args,n_vocab)
+  analizer = Analizer(args,n_feats)
+
+  # load lemmatizer
+  if args.input_lem_model is None:
+    print("Please specify lemmatizer model to load!")
+    return
+  if args.gpu:
+    state_dict = torch.load(args.input_lem_model)
+  else:
+    state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
+  lemmatizer.load_state_dict(state_dict)
+
+  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_lem.freeze_model()
+
+  # load analizer
   if args.input_model is None:
     print("Please specify model to load!")
     return
@@ -162,17 +182,22 @@ def test(args):
   else:
     state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
 
-  model.load_state_dict(state_dict)
-  # if args.gpu:
-  #   model.cuda(model)
-  # init trainer
-  trainer = Trainer(model,n_vocab,args)
-  dev_acc  ,dev_dist   = trainer.eval_metrics_batch(
-                                    dev_batch,
-                                    loader,
-                                    split=to_eval_split,
-                                    covered=(args.mode=="covered-test"))
-  print("%s | acc: %.4f, dist: %.4f" % (to_eval_split,dev_acc,dev_dist))
+  analizer.load_state_dict(state_dict)
+  trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
+  
+  dev_metrics   = trainer_analizer.eval_metrics_batch(
+                                      trainer_lem,
+                                      dev_batch,
+                                      loader,
+                                      split=to_eval_split,
+                                      covered=(args.mode=="covered-test"))
+  
+  print("%s | lem_acc: %.4f, dist: %.4f, msd_acc: %.4f, msd_f1: %.4f" % 
+                (to_eval_split,
+                  dev_metrics.lem_acc,
+                  dev_metrics.lem_edist,
+                  dev_metrics.msd_acc,
+                  dev_metrics.msd_f1 ))
   return
 
 

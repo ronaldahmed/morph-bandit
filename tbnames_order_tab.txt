@@ -101,3 +101,7 @@ no_nynorsk
 fa_seraji
 de_gsd
 hy_armtdp
+grc_perseus
+sv_talbanken
+grc_proiel
+es_gsd

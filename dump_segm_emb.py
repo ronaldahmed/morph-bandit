@@ -7,7 +7,7 @@ if __name__ == '__main__':
   # args = analizer_args()
 
   # tbnames = open("tbnames_order_tab.txt",'r').read().strip("\n").split("\n")
-  tnames ="""
+  tbnames ="""
 pt_gsd
 no_nynorsk
 fa_seraji
