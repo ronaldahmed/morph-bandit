@@ -3,6 +3,7 @@ train-ops/
 models/
 models-segm/
 models-anlz/
+CHARLES-MALTA-01-2/
 dicts/
 *.pyc
 __pycache__
