@@ -17,9 +17,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	if [ $op_ep_anl == "0" ]; then
 		op_ep_anl="19"
 	fi
-	if [ $tb == "kpv_lattice" ]; then
-		op_ep_anl="13"
-	fi
 
 	input_lem_model=models-segm/$tb/segm_"$op_ep_seg".pth
 	input_anlz_model=models-anlz/$tb/anlz_"$op_ep_anl".pth
