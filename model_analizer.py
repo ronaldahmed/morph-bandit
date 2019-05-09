@@ -24,17 +24,17 @@ class Analizer(Module):
 
     if args.op_aggr == "rnn":
       self.op_encoder = self.cuda(
-        getattr(nn, args.rnn_type)(args.emb_size,args.rnn_size,dropout=args.dropout,batch_first=True,bidirectional=True)
+        getattr(nn, args.rnn_type)(args.emb_size,args.op_enc_size,dropout=args.dropout,batch_first=True,bidirectional=True)
         )
     elif args.op_aggr=="cnn":
       self.op_encoder = None # not implemented yet
 
     self.word_encoder = self.cuda(
-        getattr(nn, args.rnn_type)(2*args.rnn_size,args.rnn_size,dropout=args.dropout,batch_first=True,bidirectional=True)
+        getattr(nn, args.rnn_type)(2*args.op_enc_size,args.w_enc_size,dropout=args.dropout,batch_first=True,bidirectional=True)
         )
 
-    self.ff1 = self.cuda(nn.Linear(2*args.rnn_size,args.mlp_size))
-    self.ff2 = self.cuda(nn.Linear(args.mlp_size, nvocab))
+    self.ff1 = self.cuda(nn.Linear(2*args.w_enc_size,args.w_mlp_size))
+    self.ff2 = self.cuda(nn.Linear(args.w_mlp_size, nvocab))
 
     self.rnn_hidden = None
     #self.logprob = torch.nn.LogSoftmax()
@@ -50,8 +50,8 @@ class Analizer(Module):
 
 
   def init_weights(self,nvocab):
-    ff1_range = 1.0 / np.sqrt(2*self.args.rnn_size)
-    ff2_range = 1.0 / np.sqrt(self.args.mlp_size)
+    ff1_range = 1.0 / np.sqrt(2*self.args.w_enc_size)
+    ff2_range = 1.0 / np.sqrt(self.args.w_mlp_size)
     self.ff1.bias.data.zero_()
     self.ff1.weight.data.uniform_(-ff1_range, ff1_range)
     self.ff2.bias.data.zero_()
@@ -70,9 +70,9 @@ class Analizer(Module):
       # except:
       #   pdb.set_trace()
 
-      h_op = h_op.view(batch_size,-1,2,self.args.rnn_size)
-      fw_bw = [ h_op[:,-1,0,:].view(batch_size,1,self.args.rnn_size),
-                h_op[:,0,1,:].view(batch_size,1,self.args.rnn_size)]
+      h_op = h_op.view(batch_size,-1,2,self.args.op_enc_size)
+      fw_bw = [ h_op[:,-1,0,:].view(batch_size,1,self.args.op_enc_size),
+                h_op[:,0,1,:].view(batch_size,1,self.args.op_enc_size)]
       
       fw_bw = torch.cat(fw_bw,2) # on rnn_size axis --> [bs,1,2*size]
       w_emb.append(fw_bw)
@@ -103,10 +103,10 @@ class Analizer(Module):
   def init_hidden(self, bsz):
     weight = next(self.parameters())
     if self.args.rnn_type == 'LSTM':
-      self.rnn_hidden = [(self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
-                          self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) ),
-                         (self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
-                          self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) )]
+      self.rnn_hidden = [(self.cuda(weight.new_zeros(2,bsz,self.args.op_enc_size)),
+                          self.cuda(weight.new_zeros(2,bsz,self.args.op_enc_size)) ),
+                         (self.cuda(weight.new_zeros(2,bsz,self.args.w_enc_size)),
+                          self.cuda(weight.new_zeros(2,bsz,self.args.w_enc_size)) )]
                          
     else:
       self.rnn_hidden = [self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),

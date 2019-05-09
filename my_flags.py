@@ -52,6 +52,9 @@ def lemmatizer_arg_parser():
 def morph_analizer_arg_parser():
     p = ArgumentParser(add_help=False)
     p.add_argument("--op_aggr", help="Aggregation strat for op embeddings [rnn,cnn,sopa]", type=str, default="rnn")
+    p.add_argument("--op_enc_size", help="Size of OP encoder rnn cell", type=int, default=100)
+    p.add_argument("--w_enc_size", help="Size of word encoder rnn cell", type=int, default=100)
+    p.add_argument("--w_mlp_size", help="Size of MLP layer at word lvl", type=int, default=100)
     p.add_argument("--input_lem_model", help="Lemmatizer model name to load", type=str, default=None,required=True)
     # p.add_argument("--rnn_w_size", help="Size of word-lvl RNN cell", type=int, default=100)
 

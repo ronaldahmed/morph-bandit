@@ -27,6 +27,8 @@ def train(args):
   n_vocab = loader.get_vocab_size()
   n_feats = loader.get_feat_vocab_size()
 
+  print("vocab:",n_vocab," - feats:",n_feats)
+
   debug_print = int(100 / args.batch_size) + 1
   train_log_step_cnt = 0
   debug = True

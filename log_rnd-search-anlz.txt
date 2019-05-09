@@ -1,0 +1,181 @@
+{'batch_size': 100.0, 'clip': 0.12341173515316756, 'dropout': 0.02055544830458368, 'lr': 0.00018504675236553003, 'op_enc_size': 90.0, 'w_enc_size': 20.0, 'w_mlp_size': 250.0}                                                                                          
+  0%|                                                                      | 0/50 [00:00<?, ?it/s, best loss: ?]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.02055544830458368 and num_layers=1                                                                                                                                             
+  "num_layers={}".format(dropout, num_layers))                                                                                                                                                                                                                          
+
+
+-->
+4.78
+{'batch_size': 60.0, 'clip': 0.175807994416969, 'dropout': 0.006606084441508964, 'lr': 0.022361787212740732, 'op_enc_size': 70.0, 'w_enc_size': 20.0, 'w_mlp_size': 200.0}
+  2%|█▏                                                        | 1/50 [00:16<13:41, 16.77s/it, best loss: -4.78]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.006606084441508964 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+38.46
+{'batch_size': 30.0, 'clip': 0.054046978971967974, 'dropout': 0.05280242291040698, 'lr': 0.0031021993184779987, 'op_enc_size': 20.0, 'w_enc_size': 80.0, 'w_mlp_size': 250.0}
+  4%|██▎                                                      | 2/50 [00:30<12:43, 15.91s/it, best loss: -38.46]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.05280242291040698 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+40.41
+{'batch_size': 80.0, 'clip': 0.04820733125357439, 'dropout': 0.07014940786768632, 'lr': 0.0053642147155458135, 'op_enc_size': 20.0, 'w_enc_size': 70.0, 'w_mlp_size': 250.0}
+  6%|███▍                                                     | 3/50 [00:44<11:58, 15.30s/it, best loss: -40.41]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.07014940786768632 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+39.92
+{'batch_size': 90.0, 'clip': 0.06379065503309925, 'dropout': 0.08059461737030595, 'lr': 0.0003295312794201533, 'op_enc_size': 10.0, 'w_enc_size': 30.0, 'w_mlp_size': 150.0}
+  8%|████▌                                                    | 4/50 [00:58<11:23, 14.86s/it, best loss: -40.41]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.08059461737030595 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+3.07
+{'batch_size': 40.0, 'clip': 0.25123519851618853, 'dropout': 0.09231465123577381, 'lr': 0.02265878712908863, 'op_enc_size': 50.0, 'w_enc_size': 40.0, 'w_mlp_size': 50.0}
+ 10%|█████▋                                                   | 5/50 [01:12<10:52, 14.51s/it, best loss: -40.41]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.09231465123577381 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+34.99
+{'batch_size': 120.0, 'clip': 0.06620151216059808, 'dropout': 0.054168342756587544, 'lr': 0.010117245251098972, 'op_enc_size': 30.0, 'w_enc_size': 100.0, 'w_mlp_size': 100.0}
+ 12%|██████▊                                                  | 6/50 [01:25<10:29, 14.31s/it, best loss: -40.41]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.054168342756587544 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+38.74
+{'batch_size': 40.0, 'clip': 0.5419418916853616, 'dropout': 0.06180626521174132, 'lr': 0.005487593718286289, 'op_enc_size': 30.0, 'w_enc_size': 50.0, 'w_mlp_size': 100.0}
+ 14%|███████▉                                                 | 7/50 [01:39<10:12, 14.24s/it, best loss: -40.41]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.06180626521174132 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+42.71
+{'batch_size': 60.0, 'clip': 0.13415466903915735, 'dropout': 0.09363247816070068, 'lr': 0.0003015336767107344, 'op_enc_size': 30.0, 'w_enc_size': 60.0, 'w_mlp_size': 250.0}
+ 16%|█████████                                                | 8/50 [01:53<09:53, 14.13s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.09363247816070068 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+1.09
+{'batch_size': 120.0, 'clip': 0.06568831463163832, 'dropout': 0.09406555356700282, 'lr': 0.09494220448389026, 'op_enc_size': 50.0, 'w_enc_size': 70.0, 'w_mlp_size': 300.0}
+ 18%|██████████▎                                              | 9/50 [02:07<09:36, 14.07s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.09406555356700282 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+41.78
+{'batch_size': 90.0, 'clip': 0.030752233276786913, 'dropout': 0.016973442324490474, 'lr': 0.0014862499200602544, 'op_enc_size': 90.0, 'w_enc_size': 60.0, 'w_mlp_size': 250.0}
+ 20%|███████████▏                                            | 10/50 [02:23<09:43, 14.59s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.016973442324490474 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+36.86
+{'batch_size': 100.0, 'clip': 0.5565030279295592, 'dropout': 0.006345226879826283, 'lr': 0.007724763105121441, 'op_enc_size': 40.0, 'w_enc_size': 60.0, 'w_mlp_size': 100.0}
+ 22%|████████████▎                                           | 11/50 [02:39<09:41, 14.90s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.006345226879826283 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+41.53
+{'batch_size': 130.0, 'clip': 0.2054313402984909, 'dropout': 0.022632206779686737, 'lr': 0.0036457300353126814, 'op_enc_size': 90.0, 'w_enc_size': 50.0, 'w_mlp_size': 100.0}
+ 24%|█████████████▍                                          | 12/50 [02:55<09:45, 15.42s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.022632206779686737 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                        
+-->                                                                                                                                                                                                                                                                     
+40.17
+{'batch_size': 120.0, 'clip': 0.027550113247817754, 'dropout': 0.055195484149673305, 'lr': 0.020082590330581962, 'op_enc_size': 80.0, 'w_enc_size': 90.0, 'w_mlp_size': 200.0}
+ 26%|██████████████▌                                         | 13/50 [03:09<09:08, 14.83s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.055195484149673305 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+38.62
+{'batch_size': 110.0, 'clip': 0.1031941863656345, 'dropout': 0.019758471680555556, 'lr': 0.00019751898236484189, 'op_enc_size': 50.0, 'w_enc_size': 20.0, 'w_mlp_size': 250.0}
+ 28%|███████████████▋                                        | 14/50 [03:22<08:32, 14.23s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.019758471680555556 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+12.27
+{'batch_size': 110.0, 'clip': 0.6567984797213398, 'dropout': 0.05789557883580402, 'lr': 0.0007354591900658415, 'op_enc_size': 30.0, 'w_enc_size': 70.0, 'w_mlp_size': 300.0}
+ 30%|████████████████▊                                       | 15/50 [03:34<07:58, 13.67s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.05789557883580402 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+36.97
+{'batch_size': 50.0, 'clip': 0.033625018793265155, 'dropout': 0.07460243958401398, 'lr': 0.08395194430198934, 'op_enc_size': 80.0, 'w_enc_size': 80.0, 'w_mlp_size': 300.0}
+ 32%|█████████████████▉                                      | 16/50 [03:47<07:34, 13.36s/it, best loss: -42.71]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.07460243958401398 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+44.85
+{'batch_size': 40.0, 'clip': 0.38664772092347766, 'dropout': 0.07191061327716046, 'lr': 0.012123789360922501, 'op_enc_size': 10.0, 'w_enc_size': 40.0, 'w_mlp_size': 150.0}
+ 34%|███████████████████                                     | 17/50 [04:00<07:17, 13.26s/it, best loss: -44.85]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.07191061327716046 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+47.81
+{'batch_size': 60.0, 'clip': 0.4616367951059004, 'dropout': 0.03494751985537483, 'lr': 0.0009678655012110547, 'op_enc_size': 60.0, 'w_enc_size': 40.0, 'w_mlp_size': 200.0}
+ 36%|████████████████████▏                                   | 18/50 [04:12<06:55, 12.99s/it, best loss: -47.81]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.03494751985537483 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+36.67
+{'batch_size': 60.0, 'clip': 0.08840644422505359, 'dropout': 0.07259861319283029, 'lr': 0.029399301559696243, 'op_enc_size': 70.0, 'w_enc_size': 50.0, 'w_mlp_size': 250.0}
+ 38%|█████████████████████▎                                  | 19/50 [04:25<06:39, 12.90s/it, best loss: -47.81]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.07259861319283029 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+34.07
+{'batch_size': 10.0, 'clip': 0.9705632506224177, 'dropout': 0.0805808083807171, 'lr': 0.09839233415707939, 'op_enc_size': 70.0, 'w_enc_size': 100.0, 'w_mlp_size': 150.0}
+ 40%|██████████████████████▍                                 | 20/50 [04:38<06:27, 12.92s/it, best loss: -47.81]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.0805808083807171 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+41.72
+{'batch_size': 10.0, 'clip': 0.018469023914058105, 'dropout': 0.037739169725358006, 'lr': 0.05077959429041385, 'op_enc_size': 100.0, 'w_enc_size': 90.0, 'w_mlp_size': 50.0}
+ 42%|███████████████████████▌                                | 21/50 [04:51<06:14, 12.91s/it, best loss: -47.81]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.037739169725358006 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
+
+-->
+43.86
+{'batch_size': 30.0, 'clip': 0.34059934406941733, 'dropout': 0.08526477381379065, 'lr': 0.05347052456393545, 'op_enc_size': 100.0, 'w_enc_size': 40.0, 'w_mlp_size': 0.0}
+ 44%|████████████████████████▋                               | 22/50 [05:05<06:16, 13.46s/it, best loss: -47.81]/home/ronald/miniconda3/envs/morph/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last r
+ecurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.08526477381379065 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+
