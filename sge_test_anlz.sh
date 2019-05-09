@@ -33,5 +33,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 	-e models-anlz/$tb/log-$mode.err \
 	wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file
 	
+	# bash wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file
+	
 
 done

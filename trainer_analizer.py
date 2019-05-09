@@ -154,6 +154,9 @@ class TrainerAnalizer:
         pred_lem_to_dump.append(pred_lemmas)
         filtered_op_batch.append(filt_op_sent)
       #
+
+      # pdb.set_trace()
+
       #  rebatch op seqs
       padded = batch.pad_data_per_batch(filtered_op_batch,[np.arange(len(filtered_op_batch))])
       filtered_op_batch = batch.invert_axes(padded,np.arange(len(filtered_op_batch))) # Sx[ bs x W ]
@@ -169,6 +172,9 @@ class TrainerAnalizer:
       if max_data!=-1 and cnt > max_data:
         break
     #
+
+    # pdb.set_trace()
+
     filename = ""
     if   split=='train':
       filename = self.args.train_file

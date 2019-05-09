@@ -14,7 +14,7 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--train_file data/$tbname/train \
 	--test_file data/$tbname/test \
 	--epochs 20 \
-	--batch_size 128 \
+	--batch_size 24 \
 	--mlp_size 100 \
 	--emb_size 140 \
 	--learning_rate 0.00069 \
@@ -30,7 +30,7 @@ elif [ $mode == "dev" ]; then
 	--train_file data/$tbname/train \
 	--dev_file data/$tbname/dev \
 	--epochs 20 \
-	--batch_size 128 \
+	--batch_size 24 \
 	--mlp_size 100 \
 	--emb_size 140 \
 	--learning_rate 0.00069 \

@@ -103,7 +103,7 @@ def train(args):
     else:
       best_dev_loss_index += 1
       if best_dev_loss_index == args.patience:
-        print("Reached", patience, "iterations without improving dev loss. Breaking")
+        print("Reached", args.patience, "iterations without improving dev loss. Breaking")
         break
     if dev_acc > best_dev_acc:
       best_dev_acc = dev_acc
