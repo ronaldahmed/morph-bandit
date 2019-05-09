@@ -13,12 +13,12 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	python3 run_analizer.py --mode $mode \
 	--train_file data/$tbname/train \
 	--test_file data/$tbname/test \
-	--epochs 20 \
+	--epochs 100 \
 	--batch_size 24 \
 	--mlp_size 100 \
 	--emb_size 140 \
-	--learning_rate 0.00069 \
-	--dropout 0.19 \
+	--learning_rate 0.0001 \
+	--dropout 0.05 \
 	--scheduler \
 	--embedding_pth $emb_file \
 	--input_lem_model $lemmodel \
@@ -29,12 +29,12 @@ elif [ $mode == "dev" ]; then
 	python3 run_analizer.py --mode $mode \
 	--train_file data/$tbname/train \
 	--dev_file data/$tbname/dev \
-	--epochs 20 \
+	--epochs 100 \
 	--batch_size 24 \
 	--mlp_size 100 \
 	--emb_size 140 \
-	--learning_rate 0.00069 \
-	--dropout 0.19 \
+	--learning_rate 0.0001 \
+	--dropout 0.05 \
 	--scheduler \
 	--embedding_pth $emb_file \
 	--input_lem_model $lemmodel \
