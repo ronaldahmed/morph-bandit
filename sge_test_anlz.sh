@@ -11,17 +11,11 @@ for tb in $(cut -f 2 -d " " $batch); do
 	if [ $op_ep_seg == "0" ]; then
 		op_ep_seg="19"
 	fi
-	if [ $tb == "kpv_ikdp" ]; then
-		op_ep_seg="9"
-	fi
 
 	op_ep_anl=$(tail -1 models-anlz/$tb/log.out | cut -f 1)
 
 	if [ $op_ep_anl == "0" ]; then
 		op_ep_anl="19"
-	fi
-	if [ $tb == "kpv_lattice" ]; then
-		op_ep_anl="16"
 	fi
 
 	input_lem_model=models-segm/$tb/segm_"$op_ep_seg".pth
