@@ -28,11 +28,12 @@ def dump_conllu(filename,forms,lemmas=None,feats=None):
 
 
 class DataWrap:
-  def __init__(self,sents,feats,forms,lemmas):
+  def __init__(self,sents,feats,forms,lemmas,split):
     self.ops = sents
     self.feats = feats
     self.forms = forms
     self.lemmas = lemmas
+    self.split = split
 
   def get_num_instances(self,):
     return len(self.forms)
@@ -155,7 +156,7 @@ class DataLoaderAnalizer:
       else:
         label.append([self.vocab_feats.get_label_id(feat) for feat in feats.split(";")])
     #
-    return DataWrap(sents,labels,forms,lemmas)
+    return DataWrap(sents,labels,forms,lemmas,split)
 
 
 class BatchBase:
@@ -168,7 +169,8 @@ class BatchBase:
     self.cuda = to_cuda(gpu)
     N = len(self.sents)
     idx = list(range(N))
-    idx.sort(key=lambda x: len(self.sents[x]),reverse=True)
+    if data.split == "train":
+      idx.sort(key=lambda x: len(self.sents[x]),reverse=True)
     n_batches = (N//self.size) + int(N%self.size != 0)
     idx = self.right_pad(idx,n_batches*self.size,-1)
 
@@ -193,7 +195,7 @@ class BatchBase:
     if list_batch_ids is None:
       list_batch_ids = self.sorted_ids_per_batch
     for batch_ids in list_batch_ids:
-      max_sent_len = len(sents[batch_ids[0]]) # to pad sents
+      max_sent_len = max([ len(sents[x]) for x in batch_ids]) # to pad sents
       max_wop_len = 0
       for idx in batch_ids:
         max_wop_len = max(max_wop_len,max([len(w) for w in sents[idx]]))
@@ -214,7 +216,7 @@ class BatchBase:
     if list_batch_ids is None:
       list_batch_ids = self.sorted_ids_per_batch
     for batch_ids in list_batch_ids:
-      max_sent_len = len(self.sents[batch_ids[0]]) # to pad sents
+      max_sent_len = max([ len(labs[x]) for x in batch_ids]) # to pad sents
       for idx in batch_ids:
         labs[idx] = self.right_pad(labs[idx],max_sent_len,PAD_ID)
     return labs
