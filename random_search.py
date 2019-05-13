@@ -93,7 +93,7 @@ def random_search(args):
     'clip': hp.loguniform('clip', -4, 0),
     'emb_size': hp.quniform('emb_size', low=50, high=100,q=5),
     'mlp_size': hp.quniform('mlp_size', low=10, high=100,q=10),
-    'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)
+    'batch_size': hp.quniform('batch_size', low=10, high=32,q=3)
   }
   
   best = fmin(objective, space, algo=tpe.suggest, max_evals=10)
