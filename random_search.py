@@ -88,10 +88,10 @@ def random_search(args):
   ###############
 
   space = {
-    'lr': hp.loguniform('lr', -9, -1),
+    'lr': hp.loguniform('lr', -9, -3),
     'dropout': hp.uniform('dropout', 0, 0.2),
-    'clip': hp.loguniform('clip', -4, 1),
-    'emb_size': hp.quniform('emb_size', low=50, high=300,q=10),
+    'clip': hp.loguniform('clip', -4, 0),
+    'emb_size': hp.quniform('emb_size', low=50, high=100,q=5),
     'mlp_size': hp.quniform('mlp_size', low=10, high=100,q=10),
     'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)
   }
