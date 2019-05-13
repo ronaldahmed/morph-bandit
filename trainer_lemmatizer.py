@@ -156,7 +156,11 @@ class TrainerLemmatizer:
         for i in range(self.args.max_ops):
           output,hidden = self.model.forward(curr_tok,hidden)
           op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
-          op_idx = torch.multinomial(op_weights, 1)
+          try:
+            op_idx = torch.multinomial(op_weights, 1)
+          except:
+            pdb.set_trace()
+            
           curr_tok = op_idx
           pred_w.append( op_idx )
         #

@@ -6,8 +6,8 @@ from hyperopt import hp, fmin, tpe, space_eval
 from time import monotonic
 from my_flags import *
 from data_utils import *
-from model_analizer import Analizer
-from trainer import Trainer
+from model_lemmatizer import Lemmatizer
+from trainer_lemmatizer import TrainerLemmatizer as Trainer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import pdb
 
@@ -15,7 +15,7 @@ import pdb
 def random_search(args):
   def train_search(curr_args):
     # init trainer
-    model = Analizer(curr_args,n_vocab)
+    model = Lemmatizer(curr_args,n_vocab)
     trainer = Trainer(model,n_vocab,curr_args)
 
     # init local vars
@@ -56,15 +56,17 @@ def random_search(args):
   
   def objective(opt_params):
     exp_args = args
+    print("\n")
     print(opt_params)
 
     exp_args.learning_rate = opt_params["lr"]
     exp_args.dropout = opt_params["dropout"]
+    exp_args.clip = opt_params["clip"]
     exp_args.emb_size = int(opt_params["emb_size"])
     exp_args.mlp_size = int(opt_params["mlp_size"])
     exp_args.batch_size = int(opt_params["batch_size"])
     acc = train_search(exp_args)
-    print("\n-->",acc,sep=" ")
+    print("\n-->",acc)
 
     return -acc
   ##################################################
@@ -81,8 +83,9 @@ def random_search(args):
   ###############
 
   space = {
-    'lr': hp.loguniform('lr', -9, -2),
+    'lr': hp.loguniform('lr', -9, -1),
     'dropout': hp.uniform('dropout', 0, 0.2),
+    'clip': hp.loguniform('clip', -4, 1),
     'emb_size': hp.quniform('emb_size', low=50, high=300,q=20),
     'mlp_size': hp.quniform('mlp_size', low=100, high=300,q=10),
     'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)
@@ -97,7 +100,7 @@ def random_search(args):
   
 
 if __name__ == '__main__':
-  args = analizer_args()
+  args = lemmatizer_args()
   if args.seed != -1:
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)

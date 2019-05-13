@@ -1,6 +1,6 @@
 order_ = open("tbnames_order_tab.txt",'r').read().split("\n")
 to_map = {}
-for line in open("models/res.dev.csv"):
+for line in open("res.dev.csv"):
 	line = line.strip("\n")
 	if line=="": continue
 	tb,acc,edist = line.split(",")
