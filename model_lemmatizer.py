@@ -45,11 +45,7 @@ class Lemmatizer(Module):
 
   def forward(self, w, hidden):
     emb = self.emb(w)
-    try:
-      rnn_output, hidden = self.encoder(emb, hidden)
-    except:
-      pdb.set_trace()
-      
+    rnn_output, hidden = self.encoder(emb, hidden)
     rnn_output = self.drop(rnn_output) # only works when num_layers > 1
     rnn_shape = rnn_output.shape
     rnn_output = rnn_output.contiguous().view(rnn_shape[0]*rnn_shape[1],rnn_shape[2])

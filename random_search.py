@@ -34,7 +34,12 @@ def random_search(args):
       finish_iter_time = monotonic()
       train_loss /= train.get_num_instances()
       train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
-      dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
+      try:
+        dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
+      except:
+        print("\n nn diverged!!\n")
+        dev_acc,dev_dist = 0,-1
+        break
       print(  "\nEpoch {:>4,} train | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
             "           dev   | time: {:>9,.3f}m, loss: {:>12,.3f}, acc: {:>8,.3f}%, dist: {:>8,.3f}\n"
             .format(ep,
@@ -86,8 +91,8 @@ def random_search(args):
     'lr': hp.loguniform('lr', -9, -1),
     'dropout': hp.uniform('dropout', 0, 0.2),
     'clip': hp.loguniform('clip', -4, 1),
-    'emb_size': hp.quniform('emb_size', low=50, high=300,q=20),
-    'mlp_size': hp.quniform('mlp_size', low=100, high=300,q=10),
+    'emb_size': hp.quniform('emb_size', low=50, high=300,q=10),
+    'mlp_size': hp.quniform('mlp_size', low=10, high=100,q=10),
     'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)
   }
   
