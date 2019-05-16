@@ -95,17 +95,24 @@ class TrainerAnalizer:
     return loss.item()
 
 
-  def predict_batch(self,batch):
+  def predict_batch(self,batch,score=False):
     self.model.eval()
     batch_size = batch[0].shape[0]
     hidden = self.model.refactor_hidden(batch_size)
-    
+    probs = []
     with torch.no_grad():
-      pred,hidden = self.model.predict(batch,hidden)
+      if not score:
+        pred,hidden = self.model.predict(batch,hidden)
+      else:
+        output,hidden = self.model.forward(batch,hidden)
+        pred = self.model.argmax(output).view(batch_size,-1).data.cpu().numpy()
+        probs,_ = torch.nn.functional.softmax(output).max(1)
+        probs = probs.view(batch_size,-1).data.cpu().numpy()
+
+    if score:
+      return pred,probs
     return pred
 
-
-      #
 
 
   def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,covered=False):

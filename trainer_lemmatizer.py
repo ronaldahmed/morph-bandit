@@ -138,7 +138,7 @@ class TrainerLemmatizer:
   #   return preds
 
 
-  def predict_batch(self,batch,start=False):
+  def predict_batch(self,batch,start=False,score=False):
     """ Start with initial form and sample from LM until 
         reaching STOP or MAX_OPS
     """
@@ -147,24 +147,46 @@ class TrainerLemmatizer:
     hidden = self.flush_hidden(self.model.rnn_hidden)
     hidden = self.slice(hidden,batch_size)
     pred_batch = []
+    pred_score = []
     with torch.no_grad():
       for w in batch:
         hidden = self.repackage_hidden(hidden) # ([]
         curr_tok = w
         pred_w = []
+        pred_sc = []
         if start: pred_w.append(w)
         for i in range(self.args.max_ops):
           output,hidden = self.model.forward(curr_tok,hidden)
-          op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
-          op_idx = torch.multinomial(op_weights, 1)
+          logits = output.view(batch_size,-1)
+          op_weights = logits.div(self.args.temperature).exp()
+          # print("--> sum w weights: ",torch.sum(op_weights).data)
+          # if torch.sum(op_weights).data < (1e-12)*op_weights.shape[0]*op_weights.shape[1]:
+          #   print("-> found zeroes!!")
+          #   pred_w.append(fixed_var( self.cuda(torch.LongTensor(np.zeros([batch_size,1]))) ) )
+          #   break
+          op_idx = torch.multinomial(op_weights, 1) # [bs,1]
           curr_tok = op_idx
           pred_w.append( op_idx )
+
+          if score:
+            opw = torch.nn.functional.softmax(logits,1).cpu().numpy() # [bs x n_ops]
+            op_idx_ = op_idx.cpu().numpy()
+            sm_distr = np.zeros([batch_size,1])
+            for i in range(batch_size):
+              sm_distr[i,0] = opw[i,op_idx_[i,0]]
+            pred_sc.append(sm_distr)
+          #
         #
         pred_w = torch.cat(pred_w,1)
         pred_w = pred_w.cpu().numpy()
         pred_batch.append(pred_w)
+        if score:
+          pred_sc = np.hstack(pred_sc)
+          pred_score.append(pred_sc)
       #
 
+    if score:
+      return pred_batch,pred_score
     return pred_batch
 
 

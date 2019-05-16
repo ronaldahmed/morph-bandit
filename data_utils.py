@@ -5,6 +5,7 @@ from utils import oplabel_pat, apply_operations, \
                   to_cuda, fixed_var, \
                   PAD_ID, UNK_TOKEN, PAD_TOKEN
 import torch
+import copy
 
 
 def dump_conllu(filename,forms,lemmas=None,feats=None):
@@ -192,24 +193,25 @@ class BatchBase:
     return new_sents
 
   def pad_data_per_batch(self,sents,list_batch_ids=None):
+    new_sents = copy.deepcopy(sents)
     if list_batch_ids is None:
       list_batch_ids = self.sorted_ids_per_batch
     for batch_ids in list_batch_ids:
       max_sent_len = max([ len(sents[x]) for x in batch_ids]) # to pad sents
       max_wop_len = 0
       for idx in batch_ids:
-        max_wop_len = max(max_wop_len,max([len(w) for w in sents[idx]]))
+        max_wop_len = max(max_wop_len,max([len(w) for w in new_sents[idx]]))
 
       for idx in batch_ids:
         # pad the op sequence, sent still same len
-        new_sent = [self.right_pad(x,max_wop_len,PAD_ID) for x in sents[idx]]
-        sents[idx] = new_sent
+        new_sent = [self.right_pad(x,max_wop_len,PAD_ID) for x in new_sents[idx]]
+        new_sents[idx] = new_sent
 
       for idx in batch_ids:
-        sents[idx] = self.right_pad(sents[idx],max_sent_len,[PAD_ID]*max_wop_len)
+        new_sents[idx] = self.right_pad(new_sents[idx],max_sent_len,[PAD_ID]*max_wop_len)
       #
     #
-    return sents
+    return new_sents
 
 
   def pad_labels_per_batch(self,labs,list_batch_ids=None):
