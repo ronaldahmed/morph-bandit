@@ -223,16 +223,16 @@ class TrainerLemmatizer:
           #   aaaaSbbbb
           # if S is only cap and is in the middle --> replace
           # else                                   --> leave orig
-          k = form_str.find(SPACE_LABEL)
-          if k!=-1:
-            hypot = form_str[:k] + SPACE_LABEL.lower() + form_str[k+1:]
-            if form_str.lower() == hypot and k!=0 and k!=len(form_str)-1:
-              form_str = form_str.replace(SPACE_LABEL," ")
+          
+          # k = form_str.find(SPACE_LABEL)
+          # if k!=-1:
+          #   hypot = form_str[:k] + SPACE_LABEL.lower() + form_str[k+1:]
+          #   if form_str.lower() == hypot and k!=0 and k!=len(form_str)-1:
+          #     form_str = form_str.replace(SPACE_LABEL," ")
 
           if sum(w_op_seq)==0:
             pred_lemmas.append(form_str)
             continue
-            
           if stop_id in w_op_seq:
             _id = np.where(np.array(w_op_seq)==stop_id)[0][0]
             w_op_seq = w_op_seq[:_id+1]
