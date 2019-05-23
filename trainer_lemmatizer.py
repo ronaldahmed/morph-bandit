@@ -190,13 +190,15 @@ class TrainerLemmatizer:
     return pred_batch
 
 
-  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,covered=False):
+  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,
+                         covered=False, dump_ops=False):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
     forms_to_dump = []
     pred_lem_to_dump = []
     gold_lem_to_dump = []
+    ops_to_dump = []
 
     for op_seqs,forms,lemmas in batch.get_eval_batch():
       predicted = self.predict_batch(op_seqs)
@@ -211,14 +213,24 @@ class TrainerLemmatizer:
         #                         for x in forms[i]] )
         # gold_lem_to_dump.append( [data_vocabs.vocab_lemmas.get_label_name(x) \
         #                         for x in lemmas[i]] )
+        op_sent = []
         pred_lemmas = []
         len_sent = len(forms[i]) # forms and lemmas are not sent-padded
         for j in range(len_sent):
           w_op_seq = sent[j]
-          # form_str = data_vocabs.vocab_forms.get_label_name(forms[i][j])
-          form_str = forms[i][j].replace(SPACE_LABEL," ")
+          form_str = forms[i][j]
+          # original not likely to have a cap S in the middle of the tok
+          #   aaaaSbbbb
+          # if S is only cap and is in the middle --> replace
+          # else                                   --> leave orig
+          k = form_str.find(SPACE_LABEL)
+          if k!=-1:
+            hypot = form_str[:k] + SPACE_LABEL.lower() + form_str[k+1:]
+            if form_str.lower() == hypot and k!=0 and k!=len(form_str)-1:
+              form_str = form_str.replace(SPACE_LABEL," ")
+
           if sum(w_op_seq)==0:
-            pred_lemmas.append(form_str.lower())
+            pred_lemmas.append(form_str)
             continue
             
           if stop_id in w_op_seq:
@@ -226,15 +238,18 @@ class TrainerLemmatizer:
             w_op_seq = w_op_seq[:_id+1]
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
-          pred_lem,_ = apply_operations(form_str,optokens)
-          pred_lem = pred_lem.replace(SPACE_LABEL," ")
+          pred_lem,n_valid_ops = apply_operations(form_str,optokens)
+          # pred_lem = pred_lem.replace(SPACE_LABEL," ") # <-- this doesn't have any effect
           pred_lemmas.append(pred_lem)
+          if dump_ops:
+            op_sent.append(" ".join([x for x in optokens[:n_valid_ops] if not x.startswith("STOP") and not x.startswith("START")]) )
         #
+
         if len(pred_lemmas)==0:
           pdb.set_trace()
         pred_lem_to_dump.append(pred_lemmas)
+        ops_to_dump.append(op_sent)
       #
-      #pdb.set_trace()
 
       cnt += op_seqs[0].shape[0]
       if max_data!=-1 and cnt > max_data:
@@ -247,9 +262,13 @@ class TrainerLemmatizer:
       filename = self.args.dev_file
     elif split=='test':
       filename = self.args.test_file
+    filename += ".lem"
     
+    #pdb.set_trace()
+
+    ops_to_dump = ops_to_dump if dump_ops else None
     dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump)
-    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump)
+    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,ops=ops_to_dump)
 
     if covered:
       return -1,-1

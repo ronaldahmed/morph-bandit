@@ -19,6 +19,7 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--dropout 0.19 \
 	--scheduler \
 	--input_model $imodel \
+	--dump_ops \
 	--gpu
 
 elif [ $mode == "dev" ]; then
@@ -33,7 +34,7 @@ elif [ $mode == "dev" ]; then
 	--dropout 0.19 \
 	--scheduler \
 	--input_model $imodel \
+	--dump_ops \
 	--gpu
-
 
 fi

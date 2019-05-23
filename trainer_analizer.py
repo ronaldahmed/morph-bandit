@@ -115,7 +115,8 @@ class TrainerAnalizer:
 
 
 
-  def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,covered=False):
+  def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,
+                          covered=False, dump_ops=False):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
@@ -124,6 +125,7 @@ class TrainerAnalizer:
     pred_feats_to_dump = []
     gold_lem_to_dump = []
     gold_feats_to_dump = []
+    ops_to_dump = []
 
     for op_seqs,feats,forms,lemmas in batch.get_eval_batch():
       forms_to_dump.extend(forms)
@@ -139,10 +141,24 @@ class TrainerAnalizer:
         sent = predicted[i]
         pred_lemmas = []
         filt_op_sent = []
+        op_sent = [] # to dump
         len_sent = len(forms[i]) # forms and lemmas are not sent-padded
         for j in range(len_sent):
           w_op_seq = sent[j]
-          form_str = forms[i][j].replace(SPACE_LABEL," ")
+          # form_str = forms[i][j].replace(SPACE_LABEL," ")
+          form_str = forms[i][j]
+
+          # original not likely to have a cap S in the middle of the tok
+          #   aaaaSbbbb
+          # if S is only cap and is in the middle --> replace
+          # else                                   --> leave orig
+          
+          # k = form_str.find(SPACE_LABEL)
+          # if k!=-1:
+          #   hypot = form_str[:k] + SPACE_LABEL.lower() + form_str[k+1:]
+          #   if form_str.lower() == hypot and k!=0 and k!=len(form_str)-1:
+          #     form_str = form_str.replace(SPACE_LABEL," ")
+
           if sum(w_op_seq)==0:
             pred_lemmas.append(form_str.lower())
             continue
@@ -152,14 +168,22 @@ class TrainerAnalizer:
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
           pred_lem,op_len = apply_operations(form_str,optokens)
-          pred_lem = pred_lem.replace(SPACE_LABEL," ")
+          # pred_lem = pred_lem.replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
           filt_op_sent.append( w_op_seq[:op_len+1].tolist() ) # discarded the stop_id
+          if dump_ops:
+            op_sent.append(" ".join([x for x in optokens[1:op_len+1] if not x.startswith("STOP") and not x.startswith("START")]) )
+            # print("-----------------------------------")
+            # print(optokens)
+            # print(op_len)
+            # pdb.set_trace()
+
         #
         if len(pred_lemmas)==0:
           pdb.set_trace()
         pred_lem_to_dump.append(pred_lemmas)
         filtered_op_batch.append(filt_op_sent)
+        ops_to_dump.append(op_sent)
       #
 
       # pdb.set_trace()
@@ -190,8 +214,9 @@ class TrainerAnalizer:
     elif split=='test':
       filename = self.args.test_file
 
+    ops_to_dump = ops_to_dump if dump_ops else None
     dump_conllu(filename + ".anlz.conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
-    dump_conllu(filename + ".anlz.conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump)
+    dump_conllu(filename + ".anlz.conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump,ops=ops_to_dump)
 
     if covered:
       return MetricsWrap(-1,-1,-1,-1)

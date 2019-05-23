@@ -23,6 +23,7 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--embedding_pth $emb_file \
 	--input_lem_model $lemmodel \
 	--input_model $anlmodel \
+	--dump_ops \
 	--gpu
 
 elif [ $mode == "dev" ]; then
@@ -39,6 +40,7 @@ elif [ $mode == "dev" ]; then
 	--embedding_pth $emb_file \
 	--input_lem_model $lemmodel \
 	--input_model $anlmodel \
+	--dump_ops \
 	--gpu
 
 fi

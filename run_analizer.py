@@ -192,7 +192,8 @@ def test(args):
                                       dev_batch,
                                       loader,
                                       split=to_eval_split,
-                                      covered=(args.mode=="covered-test"))
+                                      covered=(args.mode=="covered-test"),
+                                      dump_ops=args.dump_ops)
   
   print("%s | lem_acc: %.4f, dist: %.4f, msd_acc: %.4f, msd_f1: %.4f" % 
                 (to_eval_split,

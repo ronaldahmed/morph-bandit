@@ -8,7 +8,7 @@ import torch
 import copy
 
 
-def dump_conllu(filename,forms,lemmas=None,feats=None):
+def dump_conllu(filename,forms,lemmas=None,feats=None,ops=None):
   nsents = len(forms)
   outfile = open(filename,'w')
   for idx_sent in range(nsents):
@@ -18,6 +18,7 @@ def dump_conllu(filename,forms,lemmas=None,feats=None):
       try:
         if lemmas!=None: cols[2] = lemmas[idx_sent][i]
         if feats!=None:  cols[5] = feats[idx_sent][i]
+        if ops!=None: cols[9] = ops[idx_sent][i]
       except:
         pdb.set_trace()
 
@@ -83,8 +84,12 @@ class DataLoaderAnalizer:
     for line in open(self.args.train_file,'r'):
       line = line.strip('\n')
       if line=='': continue
-      w,lem,feats,ops = line.split("\t")
-      op_seq = ops.split(" ")
+      # w,lem,feats,ops = line.split("\t")
+      comps = line.split("\t")
+      w,lem,feats = comps[:3]
+      op_seq = comps[3:]
+
+      # op_seq = ops.split(" ")
       for op in op_seq:
         if self.args.in_mode=="coarse":
           self.vocab_oplabel.add(op)
@@ -129,8 +134,11 @@ class DataLoaderAnalizer:
         lem_sent = []
         form_sent = []
         continue
-      w,lem,feats,ops = line.split("\t")
-      op_seq = ops.split(" ")
+      # w,lem,feats,ops = line.split("\t")
+      # op_seq = ops.split(" ")
+      comps = line.split("\t")
+      w,lem,feats = comps[:3]
+      op_seq = comps[3:]
       op_ids = []
       for op in op_seq:
         if self.args.in_mode=="coarse":

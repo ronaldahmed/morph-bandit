@@ -69,8 +69,8 @@ def train(args):
     train_loss /= train.get_num_instances()
 
     finish_iter_time = monotonic()
-    train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000)
-    dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev")
+    train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000,dump_ops=args.dump_ops)
+    dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev",dump_ops=args.dump_ops)
     # train_acc,train_dist = 0,0
     # dev_acc,dev_dist = 0,0
     
@@ -150,7 +150,8 @@ def test(args):
                                     dev_batch,
                                     loader,
                                     split=to_eval_split,
-                                    covered=(args.mode=="covered-test"))
+                                    covered=(args.mode=="covered-test"),
+                                    dump_ops=args.dump_ops)
   print("%s | acc: %.4f, dist: %.4f" % (to_eval_split,dev_acc,dev_dist))
   return
 
