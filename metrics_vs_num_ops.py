@@ -40,7 +40,7 @@ if __name__=="__main__":
   results = pd.read_csv("res-anlz.dev.csv")
   results.index = results["treebank"]
 
-  use_gold = True
+  use_gold = False
   filename = "dev" if use_gold else "dev.anlz.conllu.pred"
 
   data_to_plot = [] # [tbnames, lem_acc, edist,avg_nops]
@@ -49,6 +49,8 @@ if __name__=="__main__":
 
     for root,dirnames,_ in os.walk("data/"):
       for tbname in dirnames:
+        if tbname=="ru_syntagrus":
+          continue
         fn = os.path.join("data",tbname,filename)
         avg = 0
         if use_gold:
@@ -64,12 +66,12 @@ if __name__=="__main__":
   else:
     data_to_plot = eval(open("metrics_vs_nops.eval",'r').read())
 
-  # nops = data_to_plot[-1]
-  # plt.figure()
+  nops = data_to_plot[-1]
+  plt.figure()
   # plt.scatter(nops,data_to_plot[1],c="red",marker="o")
-  # plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
+  plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
 
-  # plt.show()
+  plt.show()
 
   
   print("------------>")
