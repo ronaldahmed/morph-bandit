@@ -25,7 +25,7 @@ def get_pred_ops(filename):
     line = line.strip("\n")
     if line=="":  continue
     comps = line.split("\t")
-    accum += len(comps[9].split(" ")) - 2
+    accum += len(comps[9].split(" "))
     count += 1
   return accum / count
 
@@ -66,12 +66,12 @@ if __name__=="__main__":
   else:
     data_to_plot = eval(open("metrics_vs_nops.eval",'r').read())
 
-  nops = data_to_plot[-1]
-  plt.figure()
+  # nops = data_to_plot[-1]
+  # plt.figure()
   # plt.scatter(nops,data_to_plot[1],c="red",marker="o")
-  plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
+  # plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
 
-  plt.show()
+  # plt.show()
 
   
   print("------------>")
