@@ -8,13 +8,17 @@ if __name__ == '__main__':
 
   # tbnames = open("tbnames_order_tab.txt",'r').read().strip("\n").split("\n")
   tbnames ="""
+ru_syntagrus
 fi_pud
 fr_sequoia
+fr_gsd
 kmr_mg
 ru_pud
 gl_treegal
+fi_tdt
 vi_vtb
 uk_iu
+lv_lvtb
 cs_pud
 sv_talbanken
 sv_pud
