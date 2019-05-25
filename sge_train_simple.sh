@@ -14,6 +14,6 @@ for tbname in $(cut -f 2 -d " " $batch); do
 		qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 		-o $basedir/$tbname/log-$seed.out \
 		-e $basedir/$tbname/log-$seed.err \
-		wraps/run_lemmatizer.sh $tbname train_simple $basedir/$tbname
+		wraps/run_lemmatizer.sh $tbname train_simple $basedir/$tbname $seed
 	done
 done
