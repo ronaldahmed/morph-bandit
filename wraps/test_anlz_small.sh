@@ -28,6 +28,8 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--input_lem_model $lemmodel \
 	--input_model $anlmodel \
 	--dump_ops \
+	--batch_size 5 \
+	--rel_prunning 0.3 \
 	--gpu
 
 elif [ $mode == "dev" ]; then
@@ -50,6 +52,8 @@ elif [ $mode == "dev" ]; then
 	--input_lem_model $lemmodel \
 	--input_model $anlmodel \
 	--dump_ops \
+	--batch_size 5 \
+	--rel_prunning 0.3 \
 	--gpu
 
 fi
