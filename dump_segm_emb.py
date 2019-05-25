@@ -5,9 +5,12 @@ import numpy as np
 
 if __name__ == '__main__':
   # args = analizer_args()
-
   # tbnames = open("tbnames_order_tab.txt",'r').read().strip("\n").split("\n")
-  tbnames ="""
+  tbnames = []
+  if len(sys.argv)>1:
+    tbnames = [sys.argv[1]]
+  else:
+    tbnames ="""
 ru_syntagrus
 fi_pud
 fr_sequoia
