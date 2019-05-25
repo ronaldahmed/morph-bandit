@@ -126,6 +126,7 @@ class TrainerAnalizer:
     gold_lem_to_dump = []
     gold_feats_to_dump = []
     ops_to_dump = []
+    # max_data = 3
 
     for op_seqs,feats,forms,lemmas in batch.get_eval_batch():
       forms_to_dump.extend(forms)
@@ -134,8 +135,8 @@ class TrainerAnalizer:
       filtered_op_batch = []             # bs x [ S x W ]
 
       # 1. predict operation sequence
-      predicted = trainer_lem.predict_batch(op_seqs,start=True) # Sx[ bs x W ]
-      predicted = batch.restore_batch(predicted)     # bs x [ SxW ]
+      predicted_orig = trainer_lem.predict_batch(op_seqs,start=True) # Sx[ bs x W ]
+      predicted = batch.restore_batch(predicted_orig)     # bs x [ SxW ]
       #    get op labels & apply oracle 
       for i,sent in enumerate(predicted):
         sent = predicted[i]
@@ -159,6 +160,7 @@ class TrainerAnalizer:
           #   if form_str.lower() == hypot and k!=0 and k!=len(form_str)-1:
           #     form_str = form_str.replace(SPACE_LABEL," ")
 
+
           if sum(w_op_seq)==0:
             pred_lemmas.append(form_str.lower())
             continue
@@ -168,6 +170,7 @@ class TrainerAnalizer:
           optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
                         for x in w_op_seq if x!=PAD_ID]
           pred_lem,op_len = apply_operations(form_str,optokens)
+
           # pred_lem = pred_lem.replace(SPACE_LABEL," ")
           pred_lemmas.append(pred_lem)
           filt_op_sent.append( w_op_seq[:op_len+1].tolist() ) # discarded the stop_id
@@ -186,8 +189,6 @@ class TrainerAnalizer:
         ops_to_dump.append(op_sent)
       #
 
-      # pdb.set_trace()
-
       #  rebatch op seqs
       padded = batch.pad_data_per_batch(filtered_op_batch,[np.arange(len(filtered_op_batch))])
       filtered_op_batch = batch.invert_axes(padded,np.arange(len(filtered_op_batch))) # Sx[ bs x W ]
@@ -202,7 +203,7 @@ class TrainerAnalizer:
       cnt += op_seqs[0].shape[0]
       if max_data!=-1 and cnt > max_data:
         break
-    #
+    #END-FOR-BATCH
 
     # pdb.set_trace()
 

@@ -148,6 +148,8 @@ def apply_operations(init_form,operations,debug=False):
           print("bad pos:",segment)
           pdb.set_trace()
 
+        assert pos>0 and pos<len(curr_tok)-1
+
         if   name==INS:
           curr_tok = curr_tok[:pos] + segment + curr_tok[pos:]
         elif name==DEL:

@@ -6,6 +6,7 @@ from torch.optim import Adam
 from time import monotonic
 from my_flags import *
 from data_utils import *
+from utils import STOP_LABEL
 from model_analizer import Analizer
 from model_lemmatizer import Lemmatizer
 from trainer_analizer import TrainerAnalizer
@@ -50,6 +51,7 @@ def train(args):
   trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
   trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
   trainer_lem.freeze_model()
+  trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
   # <-----------------
 
@@ -174,6 +176,7 @@ def test(args):
 
   trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
   trainer_lem.freeze_model()
+  trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
   # load analizer
   if args.input_model is None:
@@ -186,7 +189,7 @@ def test(args):
 
   analizer.load_state_dict(state_dict)
   trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
-  
+  start_time = monotonic()
   dev_metrics   = trainer_analizer.eval_metrics_batch(
                                       trainer_lem,
                                       dev_batch,
@@ -194,7 +197,7 @@ def test(args):
                                       split=to_eval_split,
                                       covered=(args.mode=="covered-test"),
                                       dump_ops=args.dump_ops)
-  
+  print("time: ",(monotonic() - start_time)/60.0)
   print("%s | lem_acc: %.4f, dist: %.4f, msd_acc: %.4f, msd_f1: %.4f" % 
                 (to_eval_split,
                   dev_metrics.lem_acc,

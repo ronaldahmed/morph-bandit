@@ -2,6 +2,7 @@ import sys, os
 import torch
 import numpy as np
 from torch.nn import Module, Parameter, NLLLoss, LSTM
+from torch.nn.functional import log_softmax
 from tensorboardX import SummaryWriter
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
@@ -17,6 +18,14 @@ import subprocess as sp
 
 import pdb
 
+class BeamNode:
+  def __init__(self,c_t,w_list,log_prob):
+    self._c = c_t
+    self._op_list = w_list
+    self._lprob = log_prob
+    self._finished = False
+
+
 class TrainerLemmatizer:
   def __init__(self,model,num_classes,args):
     self.args = args
@@ -28,6 +37,8 @@ class TrainerLemmatizer:
     self.cuda = to_cuda(args.gpu)
     self.writer = None
     self.scheduler = None
+    self.stop_id = -1
+    self.pad_id = PAD_ID
 
     if args.model_save_dir is not None:
         self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
@@ -65,11 +76,17 @@ class TrainerLemmatizer:
     else:
       return tuple(self.flush_hidden(v) for v in h)
 
-  def slice(self,h,bs):
+  def slice(self,h,init=0,end=-1):
     if isinstance(h, torch.Tensor):
-      return h[:,:bs,:]
+      return h[:,init:end,:]
     else:
-      return tuple(self.slice(v,bs) for v in h)
+      return tuple(self.slice(v,init,end) for v in h)
+
+  def concat_hidden(self,h):
+    if isinstance(h, torch.Tensor):
+      return torch.cat(h,1)
+    else:
+      return tuple(torch.cat([x[i] for x in h] ,1) for i in range(len(h[0])))
 
 
   def compute_loss(self,pred_w,gold_w,debug=0):
@@ -94,7 +111,7 @@ class TrainerLemmatizer:
     batch_size = gold_output[0].shape[0]
     #batch_size = len(gold_output[0])
     hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
+    hidden = self.slice(hidden,0,batch_size)
     total_loss = 0
     for w_seq,gold_w in zip(batch,gold_output):
       hidden = self.repackage_hidden(hidden) # ([]
@@ -112,7 +129,7 @@ class TrainerLemmatizer:
     self.model.eval()
     batch_size = gold_output[0].shape[0]
     hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
+    hidden = self.slice(hidden,0,batch_size)
     tloss = 0
     with torch.no_grad():
       for w_seq,gold_w in zip(batch,gold_output):
@@ -128,7 +145,7 @@ class TrainerLemmatizer:
   #   self.model.eval()
   #   batch_size = batch[0].shape[0]
   #   hidden = self.flush_hidden(self.model.rnn_hidden)
-  #   hidden = self.slice(hidden,batch_size)monotonic
+  #   hidden = self.slice(hidden,0,batch_size) #monotonic
   #   preds = []
   #   with torch.no_grad():
   #     for w in batch:
@@ -139,13 +156,23 @@ class TrainerLemmatizer:
 
 
   def predict_batch(self,batch,start=False,score=False):
+    """ redirects to decoding strategy implementations
+    """
+    if self.args.beam_size == -1:
+      return self.greedy_decoder(batch,start,score)
+    else:
+      return self.beam_search_decoder(batch,self.args.beam_size,start=start)
+
+
+
+  def greedy_decoder(self,batch,start=False,score=False):
     """ Start with initial form and sample from LM until 
         reaching STOP or MAX_OPS
     """
     self.model.eval()
     batch_size = batch[0].shape[0]
     hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
+    hidden = self.slice(hidden,0,batch_size)
     pred_batch = []
     pred_score = []
     with torch.no_grad():
@@ -190,11 +217,115 @@ class TrainerLemmatizer:
     return pred_batch
 
 
+  def relative_prunner(self,candidates):
+    """ candidates must be rev-sorted by log_prob """
+    thr = np.log(self.args.rel_prunning) + candidates[0]._lprob
+    filtered = [x for x in candidates if x._lprob >= thr ]
+    if len(filtered)==0:
+      pdb.set_trace()
+
+    return filtered
+
+
+
+  def beam_search_decoder(self,sent_batch,beam_size=5,start=False):
+    """ Implements beam search decoding
+      sent_batch: Sx[bs x 1]
+    """
+    self.model.eval()
+    batch_size = sent_batch[0].shape[0]
+    hidden = self.flush_hidden(self.model.rnn_hidden)
+    pred_batch = []
+    cnt = 0
+    with torch.no_grad():
+      for w in sent_batch:
+        hidden = self.repackage_hidden(hidden)
+        hidden_next = []
+        op_batch = []
+        for i in range(batch_size):
+          c_0 = self.slice(hidden,i,i+1)
+          w_0 = w[i,:]
+          node_0 = BeamNode(c_0,[w_0],0)
+          A_prev = [node_0]
+          A_next = []
+
+          all_finished = False
+          while not all_finished:
+            all_finished = True
+            n_to_exp = len([x for x in A_prev if not x._finished])
+            if n_to_exp==0:
+              A_next = A_prev
+              break
+
+            A_prev = [x for x in A_prev if not x._finished]
+            # make a synthetic batch made out of all nodes
+            w_t_1 = [node._op_list[-1].view(1,1) for node in A_prev]
+            c_t_1 = [node._c for node in A_prev]
+            
+            all_finished = False
+            c_t_1 = self.concat_hidden(c_t_1)
+            w_t_1 = torch.cat(w_t_1,0)
+
+            logit_t,c_t = self.model.forward(w_t_1,c_t_1)
+            lpd_w_t = log_softmax(logit_t,1)
+            scores,posts = torch.topk(lpd_w_t,beam_size,1)
+
+            scores = scores.cpu().numpy()
+            posts = posts.cpu().numpy()
+
+            for j in range(n_to_exp):
+              c_t_j = self.slice(c_t,j,j+1)
+              node = A_prev[j]
+              for k in range(beam_size):
+                lp_w_t = scores[j,k]
+                w_t = posts[j,k]
+                op_list = node._op_list + [self.cuda(torch.LongTensor([w_t]))]
+                cand_node = BeamNode(c_t_j,op_list,node._lprob + lp_w_t)
+                if any([w_t==self.stop_id,
+                        w_t==self.pad_id,
+                        len(cand_node._op_list)>=self.args.max_ops]) :
+                  cand_node._finished = True
+                A_next.append(cand_node)
+            #
+            
+            A_next.sort(reverse=True,key=lambda x:x._lprob)
+            A_prev = A_next[:beam_size]
+            if self.args.rel_prunning > 0.0:
+              A_prev = self.relative_prunner(A_prev)
+            A_next = []
+            # print([len(x._op_list) for x in A_prev])
+          #END-WHILE
+          
+          optm_op_seq = torch.cat(A_prev[0]._op_list,0).cpu().numpy().tolist()
+          hidden_next.append(A_prev[0]._c)
+          op_batch.append(optm_op_seq)
+        #END-FOR-BATCH
+        max_op_len = max([len(x) for x in op_batch])
+        for j in range(batch_size):
+          temp = np.array(op_batch[j] + [self.pad_id]*(max_op_len - len(op_batch[j])))
+          op_batch[j] = np.reshape(temp,[1,-1])
+        op_batch = np.vstack(op_batch)
+        if not start:
+          op_batch = op_batch[:,1:]
+
+        hidden = self.concat_hidden(hidden_next)
+        pred_batch.append(op_batch)
+
+        if cnt % 10 == 0:
+          print("->",cnt)
+        cnt += 1
+      #END-FOR-W_S
+    #
+    
+    return pred_batch
+
+
   def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,
                          covered=False, dump_ops=False):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
+    self.stop_id = stop_id
     forms_to_dump = []
     pred_lem_to_dump = []
     gold_lem_to_dump = []
@@ -202,17 +333,13 @@ class TrainerLemmatizer:
 
     for op_seqs,forms,lemmas in batch.get_eval_batch():
       predicted = self.predict_batch(op_seqs)
-      predicted = batch.restore_batch(predicted)
+      predicted = batch.restore_batch(predicted) # bs x [ SxW ]
 
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
       # get op labels & apply oracle 
       for i,sent in enumerate(predicted):
         sent = predicted[i]
-        # forms_to_dump.append( [data_vocabs.vocab_forms.get_label_name(x) \
-        #                         for x in forms[i]] )
-        # gold_lem_to_dump.append( [data_vocabs.vocab_lemmas.get_label_name(x) \
-        #                         for x in lemmas[i]] )
         op_sent = []
         pred_lemmas = []
         len_sent = len(forms[i]) # forms and lemmas are not sent-padded

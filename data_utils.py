@@ -206,17 +206,17 @@ class BatchBase:
       list_batch_ids = self.sorted_ids_per_batch
     for batch_ids in list_batch_ids:
       max_sent_len = max([ len(sents[x]) for x in batch_ids]) # to pad sents
-      max_wop_len = 0
-      for idx in batch_ids:
-        max_wop_len = max(max_wop_len,max([len(w) for w in new_sents[idx]]))
-
+      max_wop_lens = []
+      for i in range(max_sent_len):
+        max_wop_len = max( [ len(new_sents[x][i]) for x in batch_ids if len(new_sents[x])>i ] ) # at least one holds
+        max_wop_lens.append(max_wop_len)
+      #
+      
       for idx in batch_ids:
         # pad the op sequence, sent still same len
-        new_sent = [self.right_pad(x,max_wop_len,PAD_ID) for x in new_sents[idx]]
-        new_sents[idx] = new_sent
-
-      for idx in batch_ids:
-        new_sents[idx] = self.right_pad(new_sents[idx],max_sent_len,[PAD_ID]*max_wop_len)
+        new_sent = [self.right_pad(w,max_wop_lens[i],PAD_ID) for i,w in enumerate(new_sents[idx])]
+        extra_words = [[PAD_ID]*x for x in max_wop_lens[len(new_sent):]]
+        new_sents[idx] = new_sent + extra_words
       #
     #
     return new_sents

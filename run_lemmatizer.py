@@ -9,7 +9,7 @@ from data_utils import *
 from model_lemmatizer import Lemmatizer
 from trainer_lemmatizer import TrainerLemmatizer as Trainer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
-
+from utils import STOP_LABEL
 import pdb
 
 
@@ -30,7 +30,8 @@ def train(args):
   # init trainer
   model = Lemmatizer(args,n_vocab)
   trainer = Trainer(model,n_vocab,args)
-  
+  trainer.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
+
   # init local vars
   best_dev_loss = 100000000
   best_dev_loss_index = -1
@@ -146,6 +147,7 @@ def test(args):
   #   model.cuda(model)
   # init trainer
   trainer = Trainer(model,n_vocab,args)
+  trainer.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
   dev_acc  ,dev_dist   = trainer.eval_metrics_batch(
                                     dev_batch,
                                     loader,

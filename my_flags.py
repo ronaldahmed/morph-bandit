@@ -36,6 +36,8 @@ def general_arg_parser():
 
     p.add_argument("--max_ops", help="Maximum number of operations to generate during evaluation", type=int, default=15)
     p.add_argument('--temperature', type=float, default=1.0, help='temperature - higher will increase diversity')
+    p.add_argument("--beam_size", help="Maximum number of operations to generate during evaluation", type=int, default=-1)
+    p.add_argument("--rel_prunning", help="Maximum number of operations to generate during evaluation", type=float, default=0.0)
 
     return p
 
