@@ -1,8 +1,10 @@
 #!/bin/bash
 
 batch=$1
+beam_size="-1"
 
 mkdir -p models-anlz
+
 
 for tb in $(cut -f 2 -d " " $batch); do
 	echo $tb
@@ -23,6 +25,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=3G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 	-o models-anlz/$tb/log.out \
 	-e models-anlz/$tb/log.err \
-	wraps/run_analizer.sh $tb train $input_model $emb_file 42
+	wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42
 
 done

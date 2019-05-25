@@ -4,7 +4,8 @@ tbname=$1
 mode=$2
 imodel=$3
 emb_file=$4
-seed=$5
+beam_size=5
+seed=$6
 
 cd /home/acosta/morph-bandit/
 conda activate morph
@@ -27,6 +28,6 @@ python3 run_analizer.py --mode $mode \
 --input_lem_model $imodel \
 --model_save_dir models-anlz/$tbname \
 --scheduler \
---beam_size 5 \
+--beam_size $beam_size \
 --rel_prunning 0.3 \
 --gpu
