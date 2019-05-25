@@ -4,7 +4,7 @@ tbname=$1
 mode=$2
 imodel=$3
 emb_file=$4
-beam_size=5
+beam_size=$5
 seed=$6
 
 cd /home/acosta/morph-bandit/
