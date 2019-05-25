@@ -5,6 +5,7 @@ mode=$2
 lemmodel=$3
 anlmodel=$4
 emb_file=$5
+beam_size=$6
 
 cd /home/acosta/morph-bandit/
 conda activate morph
@@ -24,7 +25,7 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--input_lem_model $lemmodel \
 	--input_model $anlmodel \
 	--dump_ops \
-	--beam_size 5 \
+	--beam_size $beam_size \
 	--rel_prunning 0.3 \
 	--gpu
 
@@ -43,7 +44,7 @@ elif [ $mode == "dev" ]; then
 	--input_lem_model $lemmodel \
 	--input_model $anlmodel \
 	--dump_ops \
-	--beam_size 5 \
+	--beam_size $beam_size \
 	--rel_prunning 0.3 \
 	--gpu
 
