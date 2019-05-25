@@ -20,7 +20,7 @@ python3 run_analizer.py --mode train \
 --input_lem_model $imodel \
 --model_save_dir models-anlz/$tbname \
 --scheduler \
---batch_size 5 \
+--beam_size 5 \
 --rel_prunning 0.3 \
 --gpu
 
