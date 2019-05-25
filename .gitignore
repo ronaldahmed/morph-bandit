@@ -3,6 +3,7 @@ train-ops/
 models/
 models-segm/
 models-anlz/
+models-ens/
 CHARLES-MALTA-01-2/
 dicts/
 *.pyc

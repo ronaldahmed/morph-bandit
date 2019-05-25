@@ -321,7 +321,8 @@ class TrainerLemmatizer:
 
 
   def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,
-                         covered=False, dump_ops=False):
+                         covered=False, dump_ops=False,
+                         output_name=None):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
@@ -383,13 +384,16 @@ class TrainerLemmatizer:
         break
     #
     filename = ""
-    if   split=='train':
-      filename = self.args.train_file
-    elif split=='dev':
-      filename = self.args.dev_file
-    elif split=='test':
-      filename = self.args.test_file
-    filename += ".lem"
+    if output_name!=None:
+      filename = output_name
+    else:
+      if   split=='train':
+        filename = self.args.train_file
+      elif split=='dev':
+        filename = self.args.dev_file
+      elif split=='test':
+        filename = self.args.test_file
+      filename += ".lem"
     
     #pdb.set_trace()
 

@@ -1,4 +1,4 @@
-import sys
+import sys, os
 import torch
 import numpy as np
 from torch.nn import Module, Parameter, NLLLoss, LSTM
@@ -125,7 +125,8 @@ def train_simple(args):
   - does not save parameters
   - doesn't calc metrics/loss on the training set
   """
-
+  tbname = os.path.basename(os.path.dirname(args.train_file))
+  prefix_output_name = "models-ens/%s/lem-%d" % (tbname,args.seed)
   loader = DataLoaderAnalizer(args)
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
@@ -157,7 +158,9 @@ def train_simple(args):
       train_loss += loss
       train_log_step_cnt += 1
     #
-    dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev",dump_ops=False)
+    dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev",
+                            dump_ops=False,
+                            output_name=prefix_output_name)
     print("Ep: %d, %.4f, %.4f" % (ep,dev_acc,dev_dist))
     
     if dev_acc > best_dev_acc:
