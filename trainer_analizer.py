@@ -116,7 +116,7 @@ class TrainerAnalizer:
 
 
   def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,
-                          covered=False, dump_ops=False):
+                          covered=False, dump_ops=False, output_name=None):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
@@ -205,27 +205,29 @@ class TrainerAnalizer:
         break
     #END-FOR-BATCH
 
-    # pdb.set_trace()
-
     filename = ""
-    if   split=='train':
-      filename = self.args.train_file
-    elif split=='dev':
-      filename = self.args.dev_file
-    elif split=='test':
-      filename = self.args.test_file
+    if output_name!=None:
+      filename = output_name
+    else:
+      if   split=='train':
+        filename = self.args.train_file
+      elif split=='dev':
+        filename = self.args.dev_file
+      elif split=='test':
+        filename = self.args.test_file
+      filename += ".anlz"
 
     ops_to_dump = ops_to_dump if dump_ops else None
-    dump_conllu(filename + ".anlz.conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
-    dump_conllu(filename + ".anlz.conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump,ops=ops_to_dump)
+    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
+    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,feats=pred_feats_to_dump,ops=ops_to_dump)
 
     if covered:
       return MetricsWrap(-1,-1,-1,-1)
 
     else:
       pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
-                     "--reference", filename + ".anlz.conllu.gold",
-                     "--output"   , filename + ".anlz.conllu.pred",
+                     "--reference", filename + ".conllu.gold",
+                     "--output"   , filename + ".conllu.pred",
                     ], capture_output=True)
       output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
 

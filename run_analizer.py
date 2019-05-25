@@ -142,6 +142,102 @@ def train(args):
   print(best_ep,best_dev_acc,sep="\t")
 
 
+#################################################################################################################
+
+
+def train_simple(args):
+  """ Used for multi-seeding analysis
+  - does not save parameters
+  - doesn't calc metrics/loss on the training set
+  """
+  tbname = os.path.basename(os.path.dirname(args.train_file))
+  prefix_output_name = "models-ens/%s/anlz-%d" % (tbname,args.seed)
+
+  loader = DataLoaderAnalizer(args)
+  train = loader.load_data("train")
+  dev   = loader.load_data("dev")
+
+  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
+  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  n_vocab = loader.get_vocab_size()
+  n_feats = loader.get_feat_vocab_size()
+
+  debug_print = int(100 / args.batch_size) + 1
+  train_log_step_cnt = 0
+  debug = True
+
+  # init trainer
+  lemmatizer = Lemmatizer(args,n_vocab)
+  analizer = Analizer(args,n_feats)
+
+  # load lemmatizer
+  if args.input_lem_model is None:
+    print("Please specify lemmatizer model to load!")
+    return
+  if args.gpu:
+    state_dict = torch.load(args.input_lem_model)
+  else:
+    state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
+  lemmatizer.load_state_dict(state_dict)
+
+  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
+  trainer_lem.freeze_model()
+  trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
+
+  # <-----------------
+
+  # init local vars
+  best_dev_loss = 100000000
+  best_dev_loss_index = -1
+  best_dev_acc = -1
+  best_ep = -1
+  best_metrics = None
+
+  for ep in range(args.epochs):
+    train_loss = 0
+    i = 0
+    for sents,gold in train_batch.get_batch():
+      loss = trainer_analizer.train_batch(sents, gold, debug=False)
+
+    #
+    dev_loss = 0.0
+    for sents,gold in dev_batch.get_batch(shuffle=False):
+      dev_loss += trainer_analizer.eval_batch(sents,gold,debug=False)
+    dev_loss /= dev.get_num_instances()
+
+    dev_metrics   = trainer_analizer.eval_metrics_batch(trainer_lem,dev_batch,loader,split="dev",
+                        dump_ops=False,
+                        output_name=prefix_output_name)
+    dev_acc = dev_metrics.msd_f1
+    
+    if dev_acc > best_dev_acc:
+      best_dev_acc = dev_acc
+      best_ep = ep
+      best_metrics = dev_metrics
+
+    if trainer_analizer.scheduler != None:
+      trainer_analizer.scheduler.step(dev_loss)
+    print("Ep: %d | loss:%.4f | lem_acc:%.4f | lem_edist:%.4f | msd_acc:%.4f | msd_f1:%.4f" % 
+          (ep,dev_loss,
+            dev_metrics.lem_acc,
+            dev_metrics.lem_edist,
+            dev_metrics.msd_acc,
+            dev_metrics.msd_f1) )
+    #
+  #
+  print(best_ep,
+        best_metrics.lem_acc,
+        best_metrics.lem_edist,
+        best_metrics.msd_acc,
+        best_metrics.msd_f1,
+        sep="\t")
+
+
+
+
+
+#################################################################################################################
 
 def test(args):
   print("Loading data...")
@@ -216,6 +312,8 @@ def main(args):
 
   if args.mode == "train":
     train(args)
+  elif args.mode == "train_simple":
+    train_simple(args)
   else:
     test(args)
   

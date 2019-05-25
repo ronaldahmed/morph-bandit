@@ -222,7 +222,7 @@ def main(args):
 
   if args.mode == "train":
     train(args)
-  if args.mode == "train_simple":
+  elif args.mode == "train_simple":
     train_simple(args)
   else:
     test(args)

@@ -1,13 +1,16 @@
 #!/bin/bash
 
 tbname=$1
-imodel=$2
-emb_file=$3
+mode=$2
+imodel=$3
+emb_file=$4
+seed=$5
 
 cd /home/acosta/morph-bandit/
 conda activate morph
 
-python3 run_analizer.py --mode train \
+python3 run_analizer.py --mode $mode \
+--seed $seed \
 --train_file data/$tbname/train \
 --dev_file data/$tbname/dev \
 --epochs 100 \
