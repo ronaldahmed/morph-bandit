@@ -17,7 +17,7 @@ for tbname in $(cut -f 2 -d " " $batch); do
 	emb_file=models-segm/$tbname/emb.pth
 
 	for seed in $seeds; do
-		qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=3G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
+		qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=3G,mem_free=10G,act_mem_free=10G,h_data=20G -p -10 \
 		-o $basedir/$tbname/anlz-$seed-log.out \
 		-e $basedir/$tbname/anlz-$seed-log.err \
 		wraps/run_analizer.sh $tbname train_simple $input_model $emb_file $beam_size $seed
