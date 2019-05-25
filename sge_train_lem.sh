@@ -12,6 +12,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 	-o models-segm/$tb/log.out \
 	-e models-segm/$tb/log.err \
-	wraps/run_lemmatizer.sh $tb models-segm/$tb
+	wraps/run_lemmatizer.sh $tb train models-segm/$tb 42
 
 done

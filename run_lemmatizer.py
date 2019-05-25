@@ -118,6 +118,58 @@ def train(args):
   #
   print(best_ep,best_dev_acc,sep="\t")
 
+#################################################################################################################
+
+def train_simple(args):
+  """ Used for multi-seeding analysis
+  - does not save parameters
+  - doesn't calc metrics/loss on the training set
+  """
+
+  loader = DataLoaderAnalizer(args)
+  train = loader.load_data("train")
+  dev   = loader.load_data("dev")
+
+  train_batch = BatchSegm(train,args.batch_size,args.gpu)
+  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  n_vocab = loader.get_vocab_size()
+  debug_print = int(100 / args.batch_size) + 1
+  train_log_step_cnt = 0
+  debug = True
+
+  # init trainer
+  model = Lemmatizer(args,n_vocab)
+  trainer = Trainer(model,n_vocab,args)
+  trainer.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
+
+  # init local vars
+  best_dev_loss = 100000000
+  best_dev_loss_index = -1
+  best_dev_acc = -1
+  best_dev_ed = -1
+  best_ep = -1
+
+  for ep in range(args.epochs):
+    train_loss = 0
+    i = 0
+    for sents,gold in train_batch.get_batch():
+      loss = trainer.train_batch(sents, gold, debug=False)
+      train_loss += loss
+      train_log_step_cnt += 1
+    #
+    dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev",dump_ops=False)
+    print("Ep: %d, %.4f, %.4f" % (ep,dev_acc,dev_dist))
+    
+    if dev_acc > best_dev_acc:
+      best_dev_acc = dev_acc
+      best_dev_ed = dev_dist
+      best_ep = ep
+    #
+  #
+  print(best_ep,best_dev_acc,best_dev_ed,sep="\t")
+
+
+#################################################################################################################
 
 def test(args):
   print("Loading data...")
@@ -167,6 +219,8 @@ def main(args):
 
   if args.mode == "train":
     train(args)
+  if args.mode == "train_simple":
+    train_simple(args)
   else:
     test(args)
   

@@ -18,9 +18,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	input_lem_model=models-segm/$tb/segm_"$op_ep_seg".pth
 	input_anlz_model=models-anlz/$tb/anlz_"$op_ep_anl".pth
 	emb_file=models-segm/$tb/emb.pth
-
-	echo $input_lem_model
-	echo $input_anlz_model
 	
 	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 	-o models-anlz/$tb/log-$mode.out \
