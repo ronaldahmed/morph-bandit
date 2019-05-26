@@ -29,6 +29,6 @@ for tbname in tbnames:
 		for i in range(1,4):
 			metrics[tbname][i+1].append(res[i])
 	#
-	
-	print("%s,%s" % (tbname,",".join(["%.2f(%.2f)"%(np.mean(x),np.std(x)) for x in metrics[tbname]]) ) )
+	pdb.set_trace()	
+	print("%s,%s" % (tbname,",".join(["%.2f(%.2f)"%(np.mean(x),np.std(x)) for x in metrics[tbname]]) ), file=outfile)
 
