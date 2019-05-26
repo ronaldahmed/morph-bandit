@@ -26,9 +26,9 @@ for tbname in tbnames:
 		line = open(fn,"r").read().strip("\n").strip(" ").split("\n")[-1]
 		res = line.split("\t")
 		res = [float(x) for x in res[1:]]
-		for i in range(1,4):
-			metrics[tbname][i+1].append(res[i])
+		for i in range(4):
+			metrics[tbname][i+2].append(res[i])
 	#
-	pdb.set_trace()	
+	# pdb.set_trace()	
 	print("%s,%s" % (tbname,",".join(["%.2f(%.2f)"%(np.mean(x),np.std(x)) for x in metrics[tbname]]) ), file=outfile)
 
