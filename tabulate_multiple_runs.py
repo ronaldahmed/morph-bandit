@@ -14,7 +14,7 @@ metrics = {}
 print("tbname,lem_lacc,lem_edist,anlz_lacc,anlz_edist,m_acc,m_f1",file=outfile)
 
 for tbname in tbnames:
-	metrics[tbname] = [[]]*6
+	metrics[tbname] = [[] for _ in range(6)]
 	for fn in gb.glob("models-ens/"+tbname+"/lem-*-log.out"):
 		line = open(fn,"r").read().strip("\n").strip(" ").split("\n")[-1]
 		_,lacc,ed = line.split("\t")
