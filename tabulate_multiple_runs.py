@@ -1,6 +1,7 @@
 import os
 import sys
 import glob as gb
+import numpy as np
 import pdb
 
 tbnames = open("data/top-bot-n","r").read().strip("\n").strip(" ").split("\n")
@@ -29,5 +30,5 @@ for tbname in tbnames:
 			metrics[tbname][i+1].append(res[i])
 	#
 	
-	print("%s,%s" % (tbname,",".join(["%.2f(%.2f)"%(mean(x),std(x)) for x in metrics[tbname]]) ) )
+	print("%s,%s" % (tbname,",".join(["%.2f(%.2f)"%(np.mean(x),np.std(x)) for x in metrics[tbname]]) ) )
 
