@@ -45,6 +45,7 @@ if __name__=="__main__":
   
   use_gold = args.use_gold
   filename = "dev" if use_gold else "dev.anlz.conllu.pred"
+  print("->",filename)
 
   for root,dirnames,_ in os.walk("data/"):
     for tbname in dirnames:

@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 
 if __name__=="__main__":
   parser = argparse.ArgumentParser() 
-  parser.add_argument("--gold", "-r", type=str, help="CSV with metrics")
-  parser.add_argument("--pred", "-l", help="Load metrics",type=str)
+  parser.add_argument("--gold", "-g", type=str, help="CSV with metrics")
+  parser.add_argument("--pred", "-p", help="Load metrics",type=str)
   args = parser.parse_args()
 
   gold_data_to_plot = eval(open(args.gold,'r').read())
@@ -17,9 +17,12 @@ if __name__=="__main__":
   
   nops = gold_data_to_plot[-1]
   plt.figure()
-  plt.scatter(nops,data_to_plot[1],c="red",marker="o")
-  #plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
+  plt.scatter(nops,gold_data_to_plot[1],c=(1,0,0,0.8),marker="o",label="Gold sequences")
+  plt.scatter(nops,gold_data_to_plot[1],c=(0,0,1,0.8),,marker="x",label="Predicted sequences")
+  plt.legend()
   plt.grid("on")
+  plt.ylabel("Lemmata Accuracy")
+  plt.xlabel("Average number of actions")
   plt.show()
 
   
