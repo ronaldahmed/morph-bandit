@@ -41,8 +41,6 @@ if __name__=="__main__":
   results = pd.read_csv("experiments/res-anlz.dev.csv")
   results.index = results["treebank"]
 
-  filename = args.load
-
   data_to_plot = [] # [tbnames, lem_acc, edist,avg_nops]
   
   use_gold = args.use_gold
