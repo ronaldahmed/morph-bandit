@@ -37,7 +37,7 @@ if __name__=="__main__":
   parser.add_argument("--load", "-l", help="Load metrics",action="store_true")
   args = parser.parse_args()
 
-  results = pd.read_csv("res-anlz.dev.csv")
+  results = pd.read_csv("experiments/res-anlz.dev.csv")
   results.index = results["treebank"]
 
   use_gold = False
@@ -69,8 +69,8 @@ if __name__=="__main__":
   nops = data_to_plot[-1]
   plt.figure()
   plt.scatter(nops,data_to_plot[1],c="red",marker="o")
-  plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
-
+  #plt.scatter(nops,data_to_plot[2],c="blue",marker="s")
+  plt.grid("on")
   plt.show()
 
   
