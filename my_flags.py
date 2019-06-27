@@ -20,7 +20,9 @@ def general_arg_parser():
     p.add_argument("-r", "--scheduler", help="Use reduce learning rate on plateau schedule", action='store_true')
     
     p.add_argument("--in_mode", help="Input op token mode [coarse,grain]", type=str, default="coarse")
-    p.add_argument("--out_mode", help="Output feat label mode [coarse,grain]", type=str, default="coarse")
+    p.add_argument("--out_mode", help="Output feat label mode [coarse,grain] / deprecated", type=str, default="coarse")
+    p.add_argument("--tagger_mode","-tag_mode", help="Tagger mode [bundle,fine-seq,fine-factor,fine-matrix]", type=str, default="bundle")
+
     p.add_argument("--gpu", help="Use GPU", action='store_true')
     p.add_argument("--embedding_txt", help="Pretrained op-token embedding file [txt format]", type=str, default=None)
     p.add_argument("--embedding_pth", help="Pretrained op-token embedding file [pth format]", type=str, default=None)
@@ -55,10 +57,14 @@ def lemmatizer_arg_parser():
 def morph_analizer_arg_parser():
     p = ArgumentParser(add_help=False)
     p.add_argument("--op_aggr", help="Aggregation strat for op embeddings [rnn,cnn,sopa]", type=str, default="rnn")
+    p.add_argument("--op_repr", help="Representation strat for actions [fw_bw,self_att]", type=str, default="fw_bw")
     p.add_argument("--op_enc_size", help="Size of OP encoder rnn cell", type=int, default=100)
+    p.add_argument("--feat_enc_size", help="Size of feat decoder rnn cell", type=int, default=100)
+    p.add_argument("--feat_mlp_size", help="Size of MLP layer at feat lvl / feat decoder", type=int, default=100)
     p.add_argument("--w_enc_size", help="Size of word encoder rnn cell", type=int, default=100)
     p.add_argument("--w_mlp_size", help="Size of MLP layer at word lvl", type=int, default=100)
     p.add_argument("--input_lem_model", help="Lemmatizer model name to load", type=str, default=None,required=True)
+    
     # p.add_argument("--rnn_w_size", help="Size of word-lvl RNN cell", type=int, default=100)
 
     return p

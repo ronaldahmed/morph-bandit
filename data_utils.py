@@ -104,7 +104,7 @@ class DataLoaderAnalizer:
       #
       self.vocab_lemmas.add(lem)
       self.vocab_forms.add(w)
-      if self.args.out_mode=="coarse":
+      if self.args.out_mode=="coarse" or self.args.tagger_mode=="bundle":
         self.vocab_feats.add(feats)
       else:
         for feat in feats.split(";"):
@@ -160,7 +160,7 @@ class DataLoaderAnalizer:
       # form_sent.append(self.vocab_forms.get_label_id(w))
       lem_sent.append(lem)
       form_sent.append(w)
-      if self.args.out_mode=="coarse":
+      if self.args.out_mode=="coarse" or self.args.tagger_mode=="bundle":
         label.append(self.vocab_feats.get_label_id(feats))
       else:
         label.append([self.vocab_feats.get_label_id(feat) for feat in feats.split(";")])
@@ -169,7 +169,11 @@ class DataLoaderAnalizer:
 
 
 class BatchBase:
-  def __init__(self,data,batch_size,gpu=True):
+  def __init__(self,data,args):
+    batch_size = args.batch_size
+    gpu = args.gpu
+    self.in_mode = args.in_mode
+    self.tag_mode = args.tagger_mode
     self.size = batch_size
     self.stop_id = data.ops[0][-1][-1] # last token: STOP.
     self.sents = self.strip_stop(data.ops)
@@ -221,8 +225,11 @@ class BatchBase:
     #
     return new_sents
 
-
-  def pad_labels_per_batch(self,labs,list_batch_ids=None):
+  """
+  Handles Feature bundle tagging, i.e. one meta-tag per token
+  labs[i] = 'V;3p;Pl'
+  """
+  def pad_labels_bundle(self,labs,list_batch_ids=None):
     if list_batch_ids is None:
       list_batch_ids = self.sorted_ids_per_batch
     for batch_ids in list_batch_ids:
@@ -231,6 +238,15 @@ class BatchBase:
         labs[idx] = self.right_pad(labs[idx],max_sent_len,PAD_ID)
     return labs
 
+  """
+  Handles list of indiv features per token, e.g. for seq decoding of features
+  labs[i] = ['V','3p','Pl']
+  """
+  def pad_labels_per_batch(self,labs,list_batch_ids=None):
+    if   self.tag_mode == "bundle":
+      return self.pad_labels_bundle(labs,list_batch_ids)
+    elif self.tag_mode == "fine-seq":
+      return self.pad_data_per_batch(labs,list_batch_ids)
 
 
   def invert_axes(self,sequence,idxs,_eval=False):
@@ -272,8 +288,8 @@ class BatchBase:
 
 
 class BatchSegm(BatchBase):
-  def __init__(self, data, batch_size,gpu):
-    super(BatchSegm, self).__init__(data,batch_size,gpu)
+  def __init__(self, data, args):
+    super(BatchSegm, self).__init__(data,args)
     self.tgt_sents = [] # LM-like training
     self.build_gold_lm_seq()
     self.sents = self.pad_data_per_batch(self.sents)
@@ -312,8 +328,8 @@ class BatchSegm(BatchBase):
 
 
 class BatchAnalizer(BatchBase):
-  def __init__(self, data, batch_size, gpu):
-    super(BatchAnalizer, self).__init__(data,batch_size,gpu)
+  def __init__(self, data, args):
+    super(BatchAnalizer, self).__init__(data,args)
     self.sents = self.pad_data_per_batch(self.sents)
     self.labels = self.pad_labels_per_batch(data.feats)
 

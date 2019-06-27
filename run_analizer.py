@@ -23,8 +23,8 @@ def train(args):
   dev   = loader.load_data("dev")
 
   print("Init batch objs")
-  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
-  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args)
+  dev_batch   = BatchAnalizer(dev,args)
   n_vocab = loader.get_vocab_size()
   n_feats = loader.get_feat_vocab_size()
 
@@ -157,8 +157,8 @@ def train_simple(args):
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
 
-  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
-  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args)
+  dev_batch   = BatchAnalizer(dev,args)
   n_vocab = loader.get_vocab_size()
   n_feats = loader.get_feat_vocab_size()
 
@@ -247,8 +247,8 @@ def test(args):
   dev   = loader.load_data(to_eval_split)
 
   print("Init batch objs")
-  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
-  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args)
+  dev_batch   = BatchAnalizer(dev,args)
   n_vocab = loader.get_vocab_size()
   n_feats = loader.get_feat_vocab_size()
 
