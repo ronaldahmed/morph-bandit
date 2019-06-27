@@ -12,10 +12,15 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from collections import defaultdict, Counter
 from utils import STOP_LABEL, SPACE_LABEL
 
-import seaborn as sns
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+font = {'family' : 'serif',
+        'size'   : 14}
+matplotlib.rc('font', **font)
+
 
 import pdb
 
@@ -132,16 +137,15 @@ def get_pred_distribution(args,train_lem,train_anlz,loader,dev,op_mapper,ft_mapp
             p_op_ft[op_id,ft_ids] += op_sc * pred_ft_sc
         #
     #
-    for i in range(n_ops):
-      p_op_ft[i,:] = p_op_ft[i,:] / p_op_ft[i,:].sum() if p_op_ft[i,:].sum() > 0 else 0.0
+    # for i in range(n_ops):
+    #   p_op_ft[i,:] = p_op_ft[i,:] / p_op_ft[i,:].sum() if p_op_ft[i,:].sum() > 0 else 0.0
     
     return p_op_ft
 
 
 def plot_heatmaps(p_gold,p_pred,loader,op_mapper,ft_mapper):
-  matplotlib.rcParams.update({'font.size': 18})
 
-  sns.set()
+  # sns.set()
   oplab_index = ['']*len(op_mapper)
   ftlab_index = ['']*len(ft_mapper)
   
@@ -240,7 +244,7 @@ def main(args):
   ##########
 
   # 1. get filtered list of ops and individual features
-  op_filt,feat_filt = get_top_freq(loader,train,max_ops=30)
+  op_filt,feat_filt = get_top_freq(loader,train,max_ops=20,max_fts=30)
   op_mapper = {x:i for i,x in enumerate(op_filt)}
   ft_mapper = {x:i for i,x in enumerate(feat_filt)}
 
