@@ -20,8 +20,8 @@ def train(args):
   dev   = loader.load_data("dev")
 
   print("Init batch objs")
-  train_batch = BatchSegm(train,args.batch_size,args.gpu)
-  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  train_batch = BatchSegm(train,args)
+  dev_batch   = BatchSegm(dev,args)
   n_vocab = loader.get_vocab_size()
   debug_print = int(100 / args.batch_size) + 1
   train_log_step_cnt = 0
@@ -131,8 +131,8 @@ def train_simple(args):
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
 
-  train_batch = BatchSegm(train,args.batch_size,args.gpu)
-  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  train_batch = BatchSegm(train,args)
+  dev_batch   = BatchSegm(dev,args)
   n_vocab = loader.get_vocab_size()
   debug_print = int(100 / args.batch_size) + 1
   train_log_step_cnt = 0
@@ -182,8 +182,8 @@ def test(args):
   dev   = loader.load_data(to_eval_split)
 
   print("Init batch objs")
-  train_batch = BatchSegm(train,args.batch_size,args.gpu)
-  dev_batch   = BatchSegm(dev,args.batch_size,args.gpu)
+  train_batch = BatchSegm(train,args)
+  dev_batch   = BatchSegm(dev,args)
   n_vocab = loader.get_vocab_size()
   
   # init model
