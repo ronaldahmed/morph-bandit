@@ -3,7 +3,7 @@ import numpy as np
 import pdb
 from utils import oplabel_pat, apply_operations, \
                   to_cuda, fixed_var, \
-                  PAD_ID, UNK_TOKEN, PAD_TOKEN
+                  PAD_ID, UNK_TOKEN, PAD_TOKEN, EOS, SOS
 import torch
 import copy
 
@@ -78,6 +78,8 @@ class DataLoaderAnalizer:
       self.vocab_op_seg = init_labdict(self.vocab_op_seg)
       PAD_ID = self.vocab_op_name.get_label_id(PAD_TOKEN)
     self.vocab_feats  = init_labdict(self.vocab_feats)
+    sos_id = self.vocab_feats.add(SOS)
+    eos_id = self.vocab_feats.add(EOS)
     self.vocab_lemmas = init_labdict(self.vocab_lemmas)
     self.vocab_forms  = init_labdict(self.vocab_forms)
 
@@ -104,7 +106,7 @@ class DataLoaderAnalizer:
       #
       self.vocab_lemmas.add(lem)
       self.vocab_forms.add(w)
-      if self.args.out_mode=="coarse" or self.args.tagger_mode=="bundle":
+      if self.args.tagger_mode=="bundle":
         self.vocab_feats.add(feats)
       else:
         for feat in feats.split(";"):
@@ -160,10 +162,12 @@ class DataLoaderAnalizer:
       # form_sent.append(self.vocab_forms.get_label_id(w))
       lem_sent.append(lem)
       form_sent.append(w)
-      if self.args.out_mode=="coarse" or self.args.tagger_mode=="bundle":
+      if self.args.tagger_mode=="bundle":
         label.append(self.vocab_feats.get_label_id(feats))
       else:
-        label.append([self.vocab_feats.get_label_id(feat) for feat in feats.split(";")])
+        sos = self.vocab_feats.get_label_id(SOS)
+        eos = self.vocab_feats.get_label_id(EOS)
+        label.append([sos] + [self.vocab_feats.get_label_id(feat) for feat in feats.split(";")] + [eos])
     #
     return DataWrap(sents,labels,forms,lemmas,split)
 
@@ -327,7 +331,25 @@ class BatchSegm(BatchBase):
 
 
 
-class BatchAnalizer(BatchBase):
+# Wrapper to direct correct implementation
+class BatchAnalizer:
+  def __init__(self, data, args):
+    self.handler = ''
+    if   args.tagger_mode == "bundle":
+      self.handler = BatchAnalizerBundle(data,args)
+    elif args.tagger_mode == "fine-seq":
+      self.handler = BatchAnalizerSeq(data,args)
+
+  def get_batch(self,shuffle=True):
+    return self.handler.get_batch(shuffle=shuffle)
+
+  def get_eval_batch(self):
+    return self.handler.get_eval_batch()
+
+
+### Architecture specific batchers
+
+class BatchAnalizerBundle(BatchBase):
   def __init__(self, data, args):
     super(BatchAnalizer, self).__init__(data,args)
     self.sents = self.pad_data_per_batch(self.sents)
@@ -352,3 +374,48 @@ class BatchAnalizer(BatchBase):
       labels = self.cuda(fixed_var(
                     torch.LongTensor( np.array([self.labels[idx] for idx in batch_ids]) )))
       yield ops,labels,forms,lemmas
+
+
+
+class BatchAnalizerSeq(BatchBase):
+  def __init__(self, data, args):
+    super(BatchAnalizerSeq, self).__init__(data,args)
+    self.sents = self.pad_data_per_batch(self.sents)
+    src,tgt = self.build_gold_decoded_labels(data.feats)
+    self.input_labels = self.pad_labels_per_batch(src)
+    self.tgt_labels = self.pad_labels_per_batch(tgt)
+
+
+  def build_gold_decoded_labels(self,feats):
+    input_decoder = []
+    tgt_decoder = []
+    for sent in feats:
+      new_in_sent = []
+      new_tgt_sent = []
+      for bundle in sent:
+        new_in_sent.append(bundle[:-1])
+        new_tgt_sent.append(bundle[1:])
+      input_decoder.append(new_in_sent)
+      tgt_decoder.append(new_tgt_sent)
+    return input_decoder,tgt_decoder
+
+
+  def get_batch(self,shuffle=True):
+    if shuffle:
+      np.random.shuffle(self.sorted_ids_per_batch)
+    for batch_ids in self.sorted_ids_per_batch:
+      ops = self.invert_axes(self.sents,batch_ids)
+      src = self.invert_axes(self.input_labels,batch_ids)
+      tgt = self.invert_axes(self.tgt_labels,batch_ids)
+      yield ops,src,tgt
+
+
+  def get_eval_batch(self):
+    for _id,batch_ids in enumerate(self.sorted_ids_per_batch):
+      ops = self.invert_axes(self.sents,batch_ids,_eval=True)
+      forms = [self.forms[idx] for idx in batch_ids]
+      lemmas = [self.lemmas[idx] for idx in batch_ids]
+      src = self.invert_axes(self.input_labels,batch_ids)
+      tgt = self.invert_axes(self.tgt_labels,batch_ids)
+      
+      yield ops,src,tgt,forms,lemmas

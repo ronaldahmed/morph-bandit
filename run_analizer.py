@@ -7,11 +7,13 @@ from time import monotonic
 from my_flags import *
 from data_utils import *
 from utils import STOP_LABEL
-from model_analizer import Analizer
+from model_analizer import analizer as Analizer
 from model_lemmatizer import Lemmatizer
 from trainer_analizer import TrainerAnalizer
 from trainer_lemmatizer import TrainerLemmatizer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+
+
 
 import pdb
 
@@ -35,9 +37,9 @@ def train(args):
   debug = True
 
   # init trainer
-  lemmatizer = Lemmatizer(args,n_vocab)
+  lemmatizer = Lemmatizer(args,n_vocab)  
   analizer = Analizer(args,n_feats)
-
+  
   # load lemmatizer
   if args.input_lem_model is None:
     print("Please specify lemmatizer model to load!")
@@ -48,8 +50,9 @@ def train(args):
     state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
   lemmatizer.load_state_dict(state_dict)
 
-  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)  
   trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
+  
   trainer_lem.freeze_model()
   trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
@@ -65,8 +68,8 @@ def train(args):
     start_time = monotonic()
     train_loss = 0
     i = 0
-    for sents,gold in train_batch.get_batch():
-      loss = trainer_analizer.train_batch(sents, gold, debug=False)
+    for bundle in train_batch.get_batch():
+      loss = trainer_analizer.train_batch(bundle, debug=False)
       train_loss += loss
 
       if i % debug_print == (debug_print - 1):
@@ -79,8 +82,8 @@ def train(args):
     #
     dev_loss = 0.0
     i = 0
-    for sents,gold in dev_batch.get_batch(shuffle=False):
-      dev_loss += trainer_analizer.eval_batch(sents,gold,debug=False)
+    for bundle in dev_batch.get_batch(shuffle=False):
+      dev_loss += trainer_analizer.eval_batch(bundle,debug=False)
       if i % debug_print == (debug_print - 1):
           print(".", end="", flush=True)
       i += 1

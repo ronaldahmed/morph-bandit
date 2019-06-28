@@ -5,45 +5,49 @@ from torch import FloatTensor, LongTensor, cat, mm, norm, randn, zeros, ones
 from torch.autograd import Variable
 import torch.nn as nn
 from torch.nn import Module, Parameter, NLLLoss, LSTM, CrossEntropyLoss
+import torch.nn.functional as F
 from torch.nn.functional import sigmoid, log_softmax, relu
 from torch.nn.utils.rnn import pad_packed_sequence
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from utils import to_cuda, fixed_var
-from model_analyzer import Analizer
+from model_analizer import Analizer
 
 import pdb
 
 
 class AnalizerSeq(Analizer):
   def __init__(self,args,nvocab):
-    super(AnalizerSeq, self).__init__()
-    self.args = args
-    self.cuda = to_cuda(args.gpu)
-    self.drop = nn.Dropout(args.dropout)
-    self.emb = self.load_embeddings()
-    self.op_encoder = ""
+    super(AnalizerSeq, self).__init__(args,nvocab)
+    
 
+  def init_body(self,args,nvocab):
     # encoder: contexttualize actions w biLSTM / elmo / bert
     if args.op_aggr == "rnn":
       self.op_encoder = self.cuda(
         getattr(nn, args.rnn_type)(args.emb_size,args.op_enc_size,dropout=args.dropout,batch_first=True,bidirectional=True)
         )
-    
+    elif args.op_aggr=="cnn":
+      self.op_encoder = None # not implemented yet
+
     # encoding at the word token level
     self.word_encoder = self.cuda(
         getattr(nn, args.rnn_type)(2*args.op_enc_size,args.w_enc_size,dropout=args.dropout,batch_first=True,bidirectional=True)
         )
 
-    # decode features for each token
-    #   aggregate fwd & bwd
+    ## FEATURE DECODER
+    self.max_length = 20
+    self.dec_emb = self.cuda(nn.Embedding(self.nvocab, args.feat_dec_size))
+    self.attn = self.cuda(nn.Linear(args.op_enc_size * 4 + args.feat_dec_size, self.max_length))
+    self.attn_combine = self.cuda(nn.Linear(args.feat_dec_size * 2, args.feat_dec_size))
+    self.dropout = nn.Dropout(args.dropout)
     self.decoder = self.cuda(
         getattr(nn, args.rnn_type)(args.op_enc_size,args.feat_enc_size,dropout=args.dropout,batch_first=True,bidirectional=False)
         )
+    
+    self.out = self.cuda(nn.Linear(args.feat_dec_size, nvocab))
 
-    self.ff1 = self.cuda(nn.Linear(args.feat_enc_size,args.feat_mlp_size))
-    self.ff2 = self.cuda(nn.Linear(args.feat_mlp_size, nvocab))
-
+    
     self.rnn_hidden = None
     #self.logprob = torch.nn.LogSoftmax()
     self.init_weights(nvocab)
@@ -58,16 +62,21 @@ class AnalizerSeq(Analizer):
 
 
   def init_weights(self,nvocab):
-    ff1_range = 1.0 / np.sqrt(2*self.args.w_enc_size)
-    ff2_range = 1.0 / np.sqrt(self.args.w_mlp_size)
-    self.ff1.bias.data.zero_()
-    self.ff1.weight.data.uniform_(-ff1_range, ff1_range)
-    self.ff2.bias.data.zero_()
-    self.ff2.weight.data.uniform_(-ff2_range, ff2_range)
+    out_range = 1.0 / np.sqrt(2*self.args.feat_dec_size)
+    
+    self.out.bias.data.zero_()
+    self.out.weight.data.uniform_(-out_range, out_range)
+    
 
 
-  def forward(self, batch, hidden):
-    """ batch: Sx[bs x W] """
+  """
+  Hierarchical (two levels) encoder
+  1. biLSTM to encode actions
+  2. [fw,bw] of each action -> w_repr
+  3. biLSTM over w_repr to obtain h_w (introduces context into w repr)
+  4. h_action <- [op_fw;op_bw;hw_fw;hw_bw]
+  """
+  def encoder(self,batch, hidden):
     w_emb = []
     hidden_op,hidden_w = hidden
     batch_size = batch[0].shape[0]
@@ -83,12 +92,12 @@ class AnalizerSeq(Analizer):
         op_fw = h_op[:,:,0,:].view(batch_size,-1,self.args.op_enc_size)
         op_bw = h_op[:,:,1,:].view(batch_size,-1,self.args.op_enc_size)
         # append fw,bw for each time step
-        op_fw_bw = torch.cat([op_fw,op_bw],1)
+        op_fw_bw = torch.cat([op_fw,op_bw],2)
         op_fw_bw_seq.append(op_fw_bw)
 
         fw = h_op[:,-1,0,:].view(batch_size,1,self.args.op_enc_size)
         bw = h_op[:,0,1,:].view(batch_size,1,self.args.op_enc_size)
-        fw_bw = torch.cat(fw_bw,2) # on rnn_size axis --> [bs,1,2*size]
+        fw_bw = torch.cat([fw,bw],2) # on rnn_size axis --> [bs,1,2*size]
         w_emb.append(fw_bw)
 
       #elif self.args.op_repr == 'self_att':      
@@ -97,22 +106,58 @@ class AnalizerSeq(Analizer):
     h_w, hidden_w = self.word_encoder(w_seq,hidden_w) # h_w: [S,bs,2*size]
     h_w = h_w.view(batch_size,-1,2,self.args.w_enc_size)
 
+    hidw_fw = hidden_w[:,:,0,:].view(batch_size,-1,self.args.op_enc_size)
+    hidw_bw = hidden_w[:,:,1,:].view(batch_size,-1,self.args.op_enc_size)
+    encoder_hid_st = torch.cat([hidw_fw,hidw_bw],2)
+
+    ctx_seqs = []
+
     # construct repr seq for each wop
     for i,op_fb in enumerate(op_fw_bw_seq):
-      h_tok_fw = h_w[:,i,0,:].view(batch_size,1,-1)
-      h_tok_bw = h_w[:,i,1].view(batch_size,1,-1)
-      
-      # add [hw_f,fw_bw] to each op fw_bw
+      n_ops = op_fb.shape[1]
+      h_tok_fw = h_w[:,i,0,:].view(batch_size,1,-1).repeat(1,n_ops,1)
+      h_tok_bw = h_w[:,i,1,:].view(batch_size,1,-1).repeat(1,n_ops,1)
+      # seq of actions w0,a1,a2: encoded seq
+      ctx_action_seq = torch.cat([op_fb,h_tok_fw,h_tok_bw],2) # [fw,bw,w_fw,w_bw]
 
-      action_repr = torch.cat(op_fb)
+      yield ctx_action_seq,encoder_hid_st
 
 
-    rnn_shape = h_w.shape
-    sent_output = h_w.contiguous().view(rnn_shape[0]*rnn_shape[1],rnn_shape[2])
-    ff1 = self.drop(relu(self.ff1(sent_output)))
-    output_flat = self.ff2(ff1)
+  def attn_decoder(self,input,hidden,encoder_outputs):
+
+    pdb.set_trace()
     
-    return output_flat,[hidden_op,hidden_w]
+    embedded = self.embedding(input).view(1, 1, -1)
+    embedded = self.dropout(embedded)
+
+    attn_weights = F.softmax(
+        self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
+    attn_applied = torch.bmm(attn_weights.unsqueeze(0),
+                             encoder_outputs.unsqueeze(0))
+
+    output = torch.cat((embedded[0], attn_applied[0]), 1)
+    output = self.attn_combine(output).unsqueeze(0)
+
+    output = F.relu(output)
+    output, hidden = self.decoder(output, hidden)
+
+    # output = F.log_softmax(self.out(output[0]), dim=1)
+    return output, hidden, attn_weights
+
+
+  def forward(self, batch, dec_input, hidden):
+    """ batch: Sx[bs x W] """
+    dec_outputs = []
+    k = 0
+    for op_seq,enc_hid in self.encoder(batch,hidden):
+      output,hid,attn_w = self.attn_decoder(dec_input[k],enc_hid,op_seq)
+      dec_outputs.append(output)
+
+    #
+
+    pdb.set_trace()
+    
+    return dec_outputs
 
 
   def predict(self,batch,hidden):

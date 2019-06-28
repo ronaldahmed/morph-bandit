@@ -24,6 +24,8 @@ SPACE_LABEL = "S"
 # Special IDs
 UNK_TOKEN = "*UNK*"
 PAD_TOKEN = "*PAD*"
+SOS = "*SOS*" # start of sent
+EOS = "*EOS*" # end of sent
 PAD_ID = 0
 
 iso_mapper = {
@@ -84,6 +86,14 @@ def identity(x):
 
 def fixed_var(tensor):
   return tensor.detach()
+
+
+class MetricsWrap:
+  def __init__(self,acc,dist,msd_acc,msd_f1):
+    self.lem_acc = acc
+    self.lem_edist = dist
+    self.msd_acc = msd_acc
+    self.msd_f1 = msd_f1
 
 
 
