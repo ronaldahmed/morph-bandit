@@ -17,8 +17,9 @@ import pdb
 
 class AnalizerBundle(Module):
   def __init__(self,args,nvocab):
-    super(Analizer, self).__init__()
+    super(AnalizerBundle, self).__init__()
     self.args = args
+    self.nvocab = nvocab
     self.cuda = to_cuda(args.gpu)
     self.drop = nn.Dropout(args.dropout)
     self.emb = self.load_embeddings()

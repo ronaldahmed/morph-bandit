@@ -49,7 +49,6 @@ class TrainerAnalizerBundle:
           parameter.register_hook(clip_function)
 
 
-
   def compute_loss(self,pred_seq,gold_labs,debug=0):
     total_loss = []
     batch_size = gold_labs.shape[0]
@@ -110,7 +109,6 @@ class TrainerAnalizerBundle:
     return pred
 
 
-
   def eval_metrics_batch(self,trainer_lem,batch,data_vocabs,split='train',max_data=-1,
                           covered=False, dump_ops=False, output_name=None):
     """ eval lemmatizer using official script """
@@ -124,7 +122,12 @@ class TrainerAnalizerBundle:
     ops_to_dump = []
     # max_data = 3
 
-    for op_seqs,feats,forms,lemmas in batch.get_eval_batch():
+    for bundle in batch.get_eval_batch():
+      if   self.args.tagger_mode == 'bundle':
+        op_seqs,feats,forms,lemmas = bundle
+      elif self.args.tagger_mode == 'fine-seq':
+        op_seqs,feats,tgt_feats,forms,lemmas = bundle
+
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
       gold_feats_to_dump.extend([[data_vocabs.get_feat_label(x) for x in sent] for sent in feats])

@@ -227,7 +227,6 @@ class TrainerLemmatizer:
     return filtered
 
 
-
   def beam_search_decoder(self,sent_batch,beam_size=5,start=False):
     """ Implements beam search decoding
       sent_batch: Sx[bs x 1]

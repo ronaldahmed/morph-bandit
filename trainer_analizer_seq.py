@@ -1,5 +1,5 @@
 from trainer_analizer_bundle import TrainerAnalizerBundle
-from utils import MetricsWrap
+from utils import MetricsWrap, PAD_ID
 
 import pdb
 
@@ -15,7 +15,9 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
     mask = (gold_labs!=PAD_ID).float() # [bs,S]
     sum_mask = mask.sum(1)
     sum_mask[sum_mask==0] = 1
+
     gold_labs = gold_labs.view(-1)
+
     loss = self.loss_function(pred_seq,gold_labs)       # [bs*S]
     loss = ((loss.view(batch_size,-1)*mask).sum(1) / sum_mask).sum()  # [1]
     
@@ -29,11 +31,28 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
     batch_size = batch[0].shape[0]
     hidden = self.model.refactor_hidden(batch_size)
     self.optimizer.zero_grad()
-    pred_seq = self.model.forward(batch,input_dec,hidden)
+    pred_sent_seqs = self.model.forward(batch,input_dec,hidden)
+
     total_loss = 0
-    for dec_out,gold in zip(pred_seq,tgt_dec):
+    for dec_out,gold in zip(pred_sent_seqs,tgt_dec):
       total_loss += self.compute_loss(dec_out,gold)
+
     total_loss.backward()
     self.optimizer.step()
     
     return total_loss.item()
+
+
+  def eval_batch(self,bundle,debug=0):
+    self.model.eval()
+    batch, input_dec, tgt_dec = bundle
+    batch_size = batch[0].shape[0]
+    hidden = self.model.refactor_hidden(batch_size)
+    
+    with torch.no_grad():
+      pred_sent_seqs = self.model.forward(batch,input_dec,hidden)
+      total_loss = 0
+      for dec_out,gold in zip(pred_sent_seqs,tgt_dec):
+        total_loss += self.compute_loss(dec_out,gold).item()
+    return total_loss
+

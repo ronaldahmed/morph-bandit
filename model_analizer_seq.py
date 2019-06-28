@@ -11,12 +11,12 @@ from torch.nn.utils.rnn import pad_packed_sequence
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from utils import to_cuda, fixed_var
-from model_analizer import Analizer
+from model_analizer_bundle import AnalizerBundle
 
 import pdb
 
 
-class AnalizerSeq(Analizer):
+class AnalizerSeq(AnalizerBundle):
   def __init__(self,args,nvocab):
     super(AnalizerSeq, self).__init__(args,nvocab)
     
@@ -36,13 +36,14 @@ class AnalizerSeq(Analizer):
         )
 
     ## FEATURE DECODER
-    self.max_length = 20
-    self.dec_emb = self.cuda(nn.Embedding(self.nvocab, args.feat_dec_size))
-    self.attn = self.cuda(nn.Linear(args.op_enc_size * 4 + args.feat_dec_size, self.max_length))
-    self.attn_combine = self.cuda(nn.Linear(args.feat_dec_size * 2, args.feat_dec_size))
+    
+    self.h_enc_size = 4 * args.op_enc_size
+    self.dec_emb = self.cuda(nn.Embedding(nvocab, args.feat_dec_size))
+    self.attn = self.cuda(nn.Linear(self.h_enc_size,args.feat_dec_size))
+    self.attn_combine = self.cuda(nn.Linear(args.feat_dec_size + self.h_enc_size, args.feat_dec_size))
     self.dropout = nn.Dropout(args.dropout)
     self.decoder = self.cuda(
-        getattr(nn, args.rnn_type)(args.op_enc_size,args.feat_enc_size,dropout=args.dropout,batch_first=True,bidirectional=False)
+        getattr(nn, args.rnn_type)(args.op_enc_size,args.feat_dec_size,dropout=args.dropout,batch_first=True,bidirectional=False)
         )
     
     self.out = self.cuda(nn.Linear(args.feat_dec_size, nvocab))
@@ -106,9 +107,13 @@ class AnalizerSeq(Analizer):
     h_w, hidden_w = self.word_encoder(w_seq,hidden_w) # h_w: [S,bs,2*size]
     h_w = h_w.view(batch_size,-1,2,self.args.w_enc_size)
 
-    hidw_fw = hidden_w[:,:,0,:].view(batch_size,-1,self.args.op_enc_size)
-    hidw_bw = hidden_w[:,:,1,:].view(batch_size,-1,self.args.op_enc_size)
-    encoder_hid_st = torch.cat([hidw_fw,hidw_bw],2)
+
+    encoder_hid_st = ( torch.sum(hidden_w[0],0).view(1,batch_size,-1),
+                       torch.sum(hidden_w[1],0).view(1,batch_size,-1)
+                      )
+    # hidw_fw = hidden_w[:,:,0,:].view(batch_size,-1,self.args.op_enc_size)
+    # hidw_bw = hidden_w[:,:,1,:].view(batch_size,-1,self.args.op_enc_size)
+    # encoder_hid_st = torch.cat([hidw_fw,hidw_bw],2)
 
     ctx_seqs = []
 
@@ -123,26 +128,27 @@ class AnalizerSeq(Analizer):
       yield ctx_action_seq,encoder_hid_st
 
 
-  def attn_decoder(self,input,hidden,encoder_outputs):
-
-    pdb.set_trace()
-    
-    embedded = self.embedding(input).view(1, 1, -1)
+  """
+  Global attention - general (Luong et al 2016)
+  """
+  def attn_decoder(self,input,hidden,h_enc):
+    batch_size = input.shape[0]
+    embedded = self.dec_emb(input)
     embedded = self.dropout(embedded)
+    
+    h_t, hidden = self.decoder(embedded, hidden)
 
-    attn_weights = F.softmax(
-        self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
-    attn_applied = torch.bmm(attn_weights.unsqueeze(0),
-                             encoder_outputs.unsqueeze(0))
+    he_Wa = self.attn(h_enc.view(-1,self.h_enc_size)).view(batch_size,-1,self.args.feat_dec_size)
+    ht_Wa_he = torch.bmm(h_t,he_Wa.transpose(dim0=1,dim1=2))
+    score = F.softmax(ht_Wa_he,-1) # bs x dec_len x enc_len
+    c_attn = torch.bmm(score,h_enc)
+    comb = torch.cat([h_t,c_attn],2).view(-1,self.args.feat_dec_size + self.h_enc_size)
 
-    output = torch.cat((embedded[0], attn_applied[0]), 1)
-    output = self.attn_combine(output).unsqueeze(0)
+    ht_hat = self.attn_combine(comb)
+    ht_hat = F.relu(ht_hat)
+    output = self.out(ht_hat).view(-1,self.nvocab)
 
-    output = F.relu(output)
-    output, hidden = self.decoder(output, hidden)
-
-    # output = F.log_softmax(self.out(output[0]), dim=1)
-    return output, hidden, attn_weights
+    return output, hidden, score
 
 
   def forward(self, batch, dec_input, hidden):
@@ -152,10 +158,8 @@ class AnalizerSeq(Analizer):
     for op_seq,enc_hid in self.encoder(batch,hidden):
       output,hid,attn_w = self.attn_decoder(dec_input[k],enc_hid,op_seq)
       dec_outputs.append(output)
-
+      k += 1
     #
-
-    pdb.set_trace()
     
     return dec_outputs
 

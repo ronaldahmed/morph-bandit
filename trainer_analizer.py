@@ -1,30 +1,30 @@
 from trainer_analizer_bundle import TrainerAnalizerBundle
 from trainer_analizer_seq import TrainerAnalizerSeq
 
-class TrainerAnalizer:
-  def __init__(self,anlz_model,num_classes,args):
-    self.handler = ""
-    if   args.tagger_mode == "bundle":
-      self.handler = TrainerAnalizerBundle(anlz_model,num_classes,args)
-    elif args.tagger_mode == "fine-seq":
-      self.handler = TrainerAnalizerSeq(anlz_model,num_classes,args)
-    
 
-  @property
-  def scheduler(self):
-    return self.handler.scheduler
+def TrainerAnalizer(anlz_model,num_classes,args):
+  if   args.tagger_mode == "bundle":
+    return TrainerAnalizerBundle(anlz_model,num_classes,args)
 
-  def train_batch(self, bundle, debug=0):
-    return self.handler.train_batch(bundle, debug=debug)
+  elif args.tagger_mode == "fine-seq":
+    return TrainerAnalizerSeq(anlz_model,num_classes,args)
+  
 
-  def eval_batch(self,bundle,debug=0):
-    return self.handler.eval_batch(bundle,debug=debug)
+  # @property
+  # def scheduler(self):
+  #   return self.handler.scheduler
 
-  def eval_metrics_batch(self,**kwargs):
-    return self.handler.eval_metrics_batch(**kwargs)
+  # def train_batch(self, bundle, debug=0):
+  #   return self.handler.train_batch(bundle, debug=debug)
 
-  def save_model(self,ep):
-    return self.handler.save_model(ep)
+  # def eval_batch(self,bundle,debug=0):
+  #   return self.handler.eval_batch(bundle,debug=debug)
 
-  def update_summary(self,**kwargs):
-    return self.handler.update_summary(**kwargs)
+  # def eval_metrics_batch(self,**kwargs):
+  #   return self.handler.eval_metrics_batch(**kwargs)
+
+  # def save_model(self,ep):
+  #   return self.handler.save_model(ep)
+
+  # def update_summary(self,**kwargs):
+  #   return self.handler.update_summary(**kwargs)
