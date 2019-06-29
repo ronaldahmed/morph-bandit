@@ -131,6 +131,7 @@ class TrainerAnalizerBundle:
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
       gold_feats_to_dump.extend([[data_vocabs.get_feat_label(x) for x in sent] for sent in feats])
+      
       filtered_op_batch = []             # bs x [ S x W ]
 
       # 1. predict operation sequence

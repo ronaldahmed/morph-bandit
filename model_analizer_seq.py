@@ -19,9 +19,51 @@ import pdb
 class AnalizerSeq(AnalizerBundle):
   def __init__(self,args,nvocab):
     super(AnalizerSeq, self).__init__(args,nvocab)
-    
+    self.args = args
+    self.nvocab = nvocab
+    # self.cuda = to_cuda(args.gpu)
+    self.rnn_hidden = None
+    self.encoder = Encoder(args)
+    self.decoder = AttDecoder(args,nvocab)
+    self.init_hidden(args.batch_size)
 
   def init_body(self,args,nvocab):
+    return None
+
+  def forward(self, batch, dec_input, hidden):
+    """ batch: Sx[bs x W] """
+    encoder_output_hidden = self.encoder.forward(batch,hidden)
+    dec_outputs = []
+    k = 0
+    for op_seq,enc_hid in encoder_output_hidden:
+      output,hid,attn_w = self.decoder.forward(dec_input[k],enc_hid,op_seq)
+      dec_outputs.append(output)
+      k += 1
+    #
+    return dec_outputs
+
+
+  def init_hidden(self, bsz):
+    weight = next(self.encoder.parameters())
+    if self.args.rnn_type == 'LSTM':
+      self.rnn_hidden = [(self.cuda(weight.new_zeros(2,bsz,self.args.op_enc_size)),
+                          self.cuda(weight.new_zeros(2,bsz,self.args.op_enc_size)) ),
+                         (self.cuda(weight.new_zeros(2,bsz,self.args.w_enc_size)),
+                          self.cuda(weight.new_zeros(2,bsz,self.args.w_enc_size)) )]
+                         
+    else:
+      self.rnn_hidden = [self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
+                         self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) ]
+                        
+
+
+
+class Encoder(Module):
+  def __init__(self,args):
+    super(Encoder, self).__init__()
+    self.cuda = to_cuda(args.gpu)
+    self.emb = self.load_embeddings(args)
+    self.args = args
     # encoder: contexttualize actions w biLSTM / elmo / bert
     if args.op_aggr == "rnn":
       self.op_encoder = self.cuda(
@@ -35,40 +77,12 @@ class AnalizerSeq(AnalizerBundle):
         getattr(nn, args.rnn_type)(2*args.op_enc_size,args.w_enc_size,dropout=args.dropout,batch_first=True,bidirectional=True)
         )
 
-    ## FEATURE DECODER
-    
-    self.h_enc_size = 4 * args.op_enc_size
-    self.dec_emb = self.cuda(nn.Embedding(nvocab, args.feat_dec_size))
-    self.attn = self.cuda(nn.Linear(self.h_enc_size,args.feat_dec_size))
-    self.attn_combine = self.cuda(nn.Linear(args.feat_dec_size + self.h_enc_size, args.feat_dec_size))
-    self.dropout = nn.Dropout(args.dropout)
-    self.decoder = self.cuda(
-        getattr(nn, args.rnn_type)(args.op_enc_size,args.feat_dec_size,dropout=args.dropout,batch_first=True,bidirectional=False)
-        )
-    
-    self.out = self.cuda(nn.Linear(args.feat_dec_size, nvocab))
 
-    
-    self.rnn_hidden = None
-    #self.logprob = torch.nn.LogSoftmax()
-    self.init_weights(nvocab)
-    self.init_hidden(args.batch_size)
-
-
-  def load_embeddings(self,):
-    emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth).contiguous()) )
+  def load_embeddings(self,args):
+    emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth).contiguous()) )
     for param in emb.parameters():
       param.requires_grad = False
     return emb
-
-
-  def init_weights(self,nvocab):
-    out_range = 1.0 / np.sqrt(2*self.args.feat_dec_size)
-    
-    self.out.bias.data.zero_()
-    self.out.weight.data.uniform_(-out_range, out_range)
-    
-
 
   """
   Hierarchical (two levels) encoder
@@ -77,7 +91,7 @@ class AnalizerSeq(AnalizerBundle):
   3. biLSTM over w_repr to obtain h_w (introduces context into w repr)
   4. h_action <- [op_fw;op_bw;hw_fw;hw_bw]
   """
-  def encoder(self,batch, hidden):
+  def forward(self,batch,hidden):
     w_emb = []
     hidden_op,hidden_w = hidden
     batch_size = batch[0].shape[0]
@@ -115,7 +129,7 @@ class AnalizerSeq(AnalizerBundle):
     # hidw_bw = hidden_w[:,:,1,:].view(batch_size,-1,self.args.op_enc_size)
     # encoder_hid_st = torch.cat([hidw_fw,hidw_bw],2)
 
-    ctx_seqs = []
+    encoder_output = []
 
     # construct repr seq for each wop
     for i,op_fb in enumerate(op_fw_bw_seq):
@@ -125,13 +139,41 @@ class AnalizerSeq(AnalizerBundle):
       # seq of actions w0,a1,a2: encoded seq
       ctx_action_seq = torch.cat([op_fb,h_tok_fw,h_tok_bw],2) # [fw,bw,w_fw,w_bw]
 
-      yield ctx_action_seq,encoder_hid_st
+      encoder_output.append([ctx_action_seq,encoder_hid_st])
+    return encoder_output    
 
+
+
+class AttDecoder(Module):
+  def __init__(self,args,nvocab):
+    super(AttDecoder, self).__init__()
+    ## FEATURE DECODER
+    self.nvocab = nvocab
+    self.args = args
+    self.cuda = to_cuda(args.gpu)
+    self.h_enc_size = 4 * args.op_enc_size
+    self.dec_emb = self.cuda(nn.Embedding(nvocab, args.feat_dec_size))
+    self.attn = self.cuda(nn.Linear(self.h_enc_size,args.feat_dec_size))
+    self.attn_combine = self.cuda(nn.Linear(args.feat_dec_size + self.h_enc_size, args.feat_dec_size))
+    self.dropout = nn.Dropout(args.dropout)
+    self.decoder = self.cuda(
+        getattr(nn, args.rnn_type)(args.op_enc_size,args.feat_dec_size,dropout=args.dropout,batch_first=True,bidirectional=False)
+        )    
+    self.out = self.cuda(nn.Linear(args.feat_dec_size, nvocab))
+
+
+  def init_weights(self):
+    emb_range = 1.0 / np.sqrt(self.nvocab)
+    out_range = 1.0 / np.sqrt(2*self.args.feat_dec_size)
+    self.dec_emb.weight.data.uniform_(-emb_range, emb_range)
+    self.out.bias.data.zero_()
+    self.out.weight.data.uniform_(-out_range, out_range)
+    
 
   """
   Global attention - general (Luong et al 2016)
   """
-  def attn_decoder(self,input,hidden,h_enc):
+  def forward(self,input,hidden,h_enc):
     batch_size = input.shape[0]
     embedded = self.dec_emb(input)
     embedded = self.dropout(embedded)
@@ -149,77 +191,3 @@ class AnalizerSeq(AnalizerBundle):
     output = self.out(ht_hat).view(-1,self.nvocab)
 
     return output, hidden, score
-
-
-  def forward(self, batch, dec_input, hidden):
-    """ batch: Sx[bs x W] """
-    dec_outputs = []
-    k = 0
-    for op_seq,enc_hid in self.encoder(batch,hidden):
-      output,hid,attn_w = self.attn_decoder(dec_input[k],enc_hid,op_seq)
-      dec_outputs.append(output)
-      k += 1
-    #
-    
-    return dec_outputs
-
-
-  def predict(self,batch,hidden):
-    bs = batch[0].shape[0]
-    output,hidden = self.forward(batch,hidden)
-    pred = self.argmax(output).view(bs,-1).data.cpu().numpy()
-    return pred,hidden
-
-
-  def argmax(self,output):
-    """ only works for kxn tensors """
-    _, am = torch.max(output, 1)
-    return am
-
-
-  def init_hidden(self, bsz):
-    weight = next(self.parameters())
-    if self.args.rnn_type == 'LSTM':
-      self.rnn_hidden = [(self.cuda(weight.new_zeros(2,bsz,self.args.op_enc_size)),
-                          self.cuda(weight.new_zeros(2,bsz,self.args.op_enc_size)) ),
-                         (self.cuda(weight.new_zeros(2,bsz,self.args.w_enc_size)),
-                          self.cuda(weight.new_zeros(2,bsz,self.args.w_enc_size)) )]
-                         
-    else:
-      self.rnn_hidden = [self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)),
-                         self.cuda(weight.new_zeros(2,bsz,self.args.rnn_size)) ]
-                        
-
-  def repackage_tensors(self,h):
-    """Wraps hidden states in new Tensors, to detach them from their history."""
-    if isinstance(h, torch.Tensor):
-      return h.detach()
-    else:
-      return tuple(self.repackage_tensors(v) for v in h)
-
-  def flush_tensors(self,h):
-    if isinstance(h, torch.Tensor):
-      return h.data.zero_()
-    else:
-      return tuple(self.flush_tensors(v) for v in h)
-
-  def make_continuous(self,h):
-    if isinstance(h, torch.Tensor):
-      return h.contiguous()
-    else:
-      return tuple(self.make_continuous(v) for v in h)
-
-
-  def slice(self,h,bs):
-    if isinstance(h, torch.Tensor):
-      return h[:,:bs,:]
-    else:
-      return tuple(self.slice(v,bs) for v in h)
-
-
-  def refactor_hidden(self,batch_size):
-    hidden = self.flush_tensors(self.rnn_hidden)
-    hidden = self.slice(hidden,batch_size)
-    hidden = self.make_continuous(hidden)
-    hidden = self.repackage_tensors(hidden)
-    return hidden

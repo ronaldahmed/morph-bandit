@@ -21,13 +21,14 @@ class AnalizerBundle(Module):
     self.args = args
     self.nvocab = nvocab
     self.cuda = to_cuda(args.gpu)
-    self.drop = nn.Dropout(args.dropout)
-    self.emb = self.load_embeddings()
+    self.emb = ""
+    self.drop = ""
     self.op_encoder = ""
-
     self.init_body(args,nvocab)
 
   def init_body(self,args,nvocab):
+    self.emb = self.load_embeddings()
+    self.drop = nn.Dropout(args.dropout)
     if args.op_aggr == "rnn":
       self.op_encoder = self.cuda(
         getattr(nn, args.rnn_type)(args.emb_size,args.op_enc_size,dropout=args.dropout,batch_first=True,bidirectional=True)

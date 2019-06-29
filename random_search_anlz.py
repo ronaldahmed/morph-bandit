@@ -35,8 +35,9 @@ def random_search(args):
 
     trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
     trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
-    trainer_lem.freeze_model()
 
+    trainer_lem.freeze_model()
+    trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
     # init local vars
     best_dev_acc = -1
@@ -84,8 +85,8 @@ def random_search(args):
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
 
-  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
-  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args)
+  dev_batch   = BatchAnalizer(dev,args)
   n_vocab = loader.get_vocab_size()
   n_feats = loader.get_feat_vocab_size()
 
@@ -93,10 +94,9 @@ def random_search(args):
   ###############
 
   space = {
-    'lr': hp.loguniform('lr', -9, -2),
-    'clip': hp.loguniform('clip', -4, 0),
+    'lr': hp.loguniform('lr', -9, -1),
+    'clip': hp.loguniform('clip', -2, 0),
     'dropout': hp.uniform('dropout', 0, 0.1),
-    'op_enc_size': hp.quniform('op_enc_size', low=10, high=100,q=10),
     'w_enc_size': hp.quniform('w_enc_size', low=10, high=100,q=10),
     'w_mlp_size': hp.quniform('w_mlp_size', low=10, high=300,q=10),
     'batch_size': hp.quniform('batch_size', low=10, high=128,q=10)

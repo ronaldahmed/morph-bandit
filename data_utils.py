@@ -332,19 +332,11 @@ class BatchSegm(BatchBase):
 
 
 # Wrapper to direct correct implementation
-class BatchAnalizer:
-  def __init__(self, data, args):
-    self.handler = ''
-    if   args.tagger_mode == "bundle":
-      self.handler = BatchAnalizerBundle(data,args)
-    elif args.tagger_mode == "fine-seq":
-      self.handler = BatchAnalizerSeq(data,args)
-
-  def get_batch(self,shuffle=True):
-    return self.handler.get_batch(shuffle=shuffle)
-
-  def get_eval_batch(self):
-    return self.handler.get_eval_batch()
+def BatchAnalizer(data, args):
+  if   args.tagger_mode == "bundle":
+    return BatchAnalizerBundle(data,args)
+  elif args.tagger_mode == "fine-seq":
+    return BatchAnalizerSeq(data,args)
 
 
 ### Architecture specific batchers

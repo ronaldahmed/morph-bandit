@@ -192,7 +192,7 @@ class TrainerLemmatizer:
           #   pred_w.append(fixed_var( self.cuda(torch.LongTensor(np.zeros([batch_size,1]))) ) )
           #   break
           op_idx = torch.multinomial(op_weights, 1) # [bs,1]
-          curr_tok = op_idx
+          curr_tok = op_idx.detach()
           pred_w.append( op_idx )
 
           if score:
