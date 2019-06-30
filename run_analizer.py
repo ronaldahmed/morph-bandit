@@ -13,9 +13,8 @@ from trainer_analizer import TrainerAnalizer
 from trainer_lemmatizer import TrainerLemmatizer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
-
-
 import pdb
+
 
 
 def train(args):

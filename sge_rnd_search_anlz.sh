@@ -1,7 +1,7 @@
 #!/bin/bash
 
 tb=$1
-beam_size=5
+beam_size="-1"
 
 echo $tb
 

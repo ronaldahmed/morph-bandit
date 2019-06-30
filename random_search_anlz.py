@@ -51,13 +51,17 @@ def random_search(args):
         loss = trainer_analizer.train_batch(bundle, debug=False)
         train_loss += loss
         # if i>3: break
-        # i+=1
+        # if i % 50 == 0:
+        #   print("->",i)
+        i+=1
+
       #
       finish_iter_time = monotonic()
       train_loss /= train.get_num_instances()
       
       dev_metrics   = trainer_analizer.eval_metrics_batch(trainer_lem,dev_batch,loader,split="dev")
       dev_acc = dev_metrics.msd_f1
+      print("Epoch %d: dev msd f1 = %.3f" % (ep,dev_acc))
 
       if dev_acc > best_dev_acc:
         best_dev_acc = dev_acc

@@ -15,7 +15,7 @@ python3 random_search_anlz.py --mode train \
 --seed $seed \
 --train_file data/$tbname/train \
 --dev_file data/$tbname/dev \
---epochs 50 \
+--epochs 30 \
 --emb_size 140 \
 --embedding_pth $emb_file \
 --input_lem_model $imodel \
