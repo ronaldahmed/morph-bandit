@@ -33,8 +33,8 @@ class SharedTaskReader:
         self.op_seqs.append(actions)
         self.label_lid.append([labels.split(";"),lid])
 
-        if count % 1000 == 0:
-          print("->",count)
+        # if count % 1000 == 0:
+        #   print("->",count)
         count += 1
 
         if count > self.max_data:
@@ -60,8 +60,8 @@ class SharedTaskReader:
         lem,form,labels = line.split("\t")
         data.append([form,lem,labels])
         
-        if count % 1000 == 0:
-          print("->",count)
+        # if count % 1000 == 0:
+        #   print("->",count)
         count += 1
 
         if count > self.max_data:

@@ -123,11 +123,7 @@ class TrainerAnalizerBundle:
     # max_data = 3
 
     for bundle in batch.get_eval_batch():
-      if   self.args.tagger_mode == 'bundle':
-        op_seqs,feats,forms,lemmas = bundle
-      elif self.args.tagger_mode == 'fine-seq':
-        op_seqs,feats,tgt_feats,forms,lemmas = bundle
-
+      op_seqs,feats,forms,lemmas = bundle
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
       gold_feats_to_dump.extend([[data_vocabs.get_feat_label(x) for x in sent] for sent in feats])

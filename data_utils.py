@@ -19,10 +19,11 @@ def dump_conllu(filename,forms,lemmas=None,feats=None,ops=None):
         if lemmas!=None: cols[2] = lemmas[idx_sent][i]
         if feats!=None:  cols[5] = feats[idx_sent][i]
         if ops!=None: cols[9] = ops[idx_sent][i]
+        print("\t".join(cols),file=outfile)
+
       except:
         pdb.set_trace()
 
-      print("\t".join(cols),file=outfile)
     print("",file=outfile)
   #
   #print("\n%s written!" % filename)
@@ -183,6 +184,7 @@ class BatchBase:
     self.sents = self.strip_stop(data.ops)
     self.lemmas = data.lemmas
     self.forms = data.forms
+    self.feats = data.feats
     self.cuda = to_cuda(gpu)
     N = len(self.sents)
     idx = list(range(N))
@@ -343,7 +345,7 @@ def BatchAnalizer(data, args):
 
 class BatchAnalizerBundle(BatchBase):
   def __init__(self, data, args):
-    super(BatchAnalizer, self).__init__(data,args)
+    super(BatchAnalizerBundle, self).__init__(data,args)
     self.sents = self.pad_data_per_batch(self.sents)
     self.labels = self.pad_labels_per_batch(data.feats)
 
@@ -407,7 +409,8 @@ class BatchAnalizerSeq(BatchBase):
       ops = self.invert_axes(self.sents,batch_ids,_eval=True)
       forms = [self.forms[idx] for idx in batch_ids]
       lemmas = [self.lemmas[idx] for idx in batch_ids]
+      feats = [self.feats[idx] for idx in batch_ids]
       src = self.invert_axes(self.input_labels,batch_ids)
       tgt = self.invert_axes(self.tgt_labels,batch_ids)
       
-      yield ops,src,tgt,forms,lemmas
+      yield ops,forms,lemmas,feats

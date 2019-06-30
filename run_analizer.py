@@ -7,7 +7,7 @@ from time import monotonic
 from my_flags import *
 from data_utils import *
 from utils import STOP_LABEL
-from model_analizer import analizer as Analizer
+from model_analizer import Analizer
 from model_lemmatizer import Lemmatizer
 from trainer_analizer import TrainerAnalizer
 from trainer_lemmatizer import TrainerLemmatizer
@@ -79,7 +79,6 @@ def train(args):
       train_log_step_cnt += 1
 
       # if i>10: break
-      break
     #
     dev_loss = 0.0
     i = 0
@@ -90,7 +89,6 @@ def train(args):
       i += 1
 
       # if i>5: break
-      break
     #
     dev_loss /= dev.get_num_instances()
     train_loss /= train.get_num_instances()
@@ -104,7 +102,7 @@ def train(args):
                                     train_metrics=train_metrics,dev_metrics=dev_metrics)
 
     print(  "\nEpoch {:>4,} train | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.2f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
-            "           dev   | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.3f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
+            "           dev   | time: {:>4,.3f}m, loss: {:>8,.3f}, acc: {:>6,.2f}%, dist: {:>6,.3f}, msd_acc: {:>6,.2f}, msd_f1: {:>6,.2f}\n"
             .format(ep,
                     (finish_iter_time - start_time) / 60,
                     train_loss,

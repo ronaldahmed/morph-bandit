@@ -310,8 +310,8 @@ class TrainerLemmatizer:
         hidden = self.concat_hidden(hidden_next)
         pred_batch.append(op_batch)
 
-        if cnt % 10 == 0:
-          print("->",cnt)
+        # if cnt % 10 == 0:
+        #   print("->",cnt)
         cnt += 1
       #END-FOR-W_S
     #

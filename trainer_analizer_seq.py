@@ -9,8 +9,10 @@ from utils import to_cuda, \
                   PAD_ID, \
                   STOP_LABEL, \
                   SPACE_LABEL, \
-                  SOS, EOS
+                  SOS, EOS, \
+                  UNK_TOKEN, EMPTY
 from data_utils import dump_conllu
+import unicodedata
 import subprocess as sp
 import pdb
 
@@ -102,8 +104,11 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
     """ eval lemmatizer using official script """
     cnt = 0
     stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
-    sos_id = data_vocabs.vocab_oplabel.get_label_id(SOS)
-    eos_id = data_vocabs.vocab_oplabel.get_label_id(EOS)
+    sos_id = data_vocabs.vocab_feats.get_label_id(SOS)
+    eos_id = data_vocabs.vocab_feats.get_label_id(EOS)
+    unk_id = data_vocabs.vocab_feats.get_label_id(UNK_TOKEN)
+    empty_id = data_vocabs.vocab_feats.get_label_id(EMPTY)
+    nfeats = data_vocabs.get_feat_vocab_size()
 
     forms_to_dump = []
     pred_lem_to_dump = []
@@ -113,16 +118,15 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
     ops_to_dump = []
     # max_data = 3
 
-    for bundle in batch.get_eval_batch():
-      if   self.args.tagger_mode == 'bundle':
-        op_seqs,feats,forms,lemmas = bundle
-      elif self.args.tagger_mode == 'fine-seq':
-        op_seqs,feats,tgt_feats,forms,lemmas = bundle
+    for bundle in batch.get_eval_batch():  
+      op_seqs,forms,lemmas,feats = bundle
+      # feats is in [[bs x n_op] x S]
 
       forms_to_dump.extend(forms)
       gold_lem_to_dump.extend(lemmas)
-      gold_feats_to_dump.extend([[ ";".join([data_vocabs.get_feat_label(y) for y in x]) \
+      gold_feats_to_dump.extend([[ ";".join([data_vocabs.get_feat_label(y) for y in x[1:-1]]) \
                                               for x in sent] for sent in feats])
+
       filtered_op_batch = []             # bs x [ S x W ]
 
       # 1. predict operation sequence
@@ -170,17 +174,33 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
       pred_labels_seq = self.predict_batch(filtered_op_batch,[sos_id]) # [[bs x Feat] x S]
       bs = pred_labels_seq[0].shape[0]
 
+      ## cases to filter
+      # SOS, unk, empty, duplicates
+      ## stop criteria
+      # stop, EOS, PAD
+
       for i in range(bs):
         sent = []
         len_sent = len(forms[i])
         for j in range(len_sent):
+          if len(forms[i][j])==1 and \
+             unicodedata.category(forms[i][j]).startswith("P"):
+            sent.append(EMPTY)
+            continue
+
           feat_seq = []
+          feats_found = np.zeros(nfeats,dtype=bool)
           fs_ji = pred_labels_seq[j][i,:]
           for k in range(self.args.max_feat_seq):
-            if fs_ji[k] == sos_id: continue
+            if fs_ji[k] in [sos_id,unk_id,empty_id]:
+              continue
             if fs_ji[k] in [stop_id,eos_id,PAD_ID]:
               break
-            feat_seq.append(data_vocabs.get_feat_label(fs_ji[k]))
+            if not feats_found[fs_ji[k]]:
+              feat_seq.append(data_vocabs.get_feat_label(fs_ji[k]))
+              feats_found[fs_ji[k]] = True
+          if len(feat_seq)==0:
+            feat_seq = [EMPTY]
           sent.append(";".join(feat_seq))
         #
         pred_feats_to_dump.append(sent)

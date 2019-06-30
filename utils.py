@@ -26,6 +26,7 @@ UNK_TOKEN = "*UNK*"
 PAD_TOKEN = "*PAD*"
 SOS = "*SOS*" # start of sent
 EOS = "*EOS*" # end of sent
+EMPTY = "_" # end of sent
 PAD_ID = 0
 
 iso_mapper = {
