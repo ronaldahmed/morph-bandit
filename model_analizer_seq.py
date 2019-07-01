@@ -81,7 +81,7 @@ class Encoder(Module):
   def load_embeddings(self,args):
     emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth).contiguous()) )
     for param in emb.parameters():
-      param.requires_grad = False
+      param.requires_grad = True
     return emb
 
   """
