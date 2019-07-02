@@ -5,11 +5,10 @@ imodel=$2
 emb_file=$3
 beam_size=$4
 seed=$5
+tmode=$6
 
 cd /home/acosta/morph-bandit/
 conda activate morph
-
-
 
 python3 random_search_anlz.py --mode train \
 --seed $seed \
@@ -22,4 +21,5 @@ python3 random_search_anlz.py --mode train \
 --beam_size $beam_size \
 --rel_prunning 0.3 \
 --scheduler \
+--tagger_mode $tmode \
 --gpu

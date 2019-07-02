@@ -2,6 +2,7 @@
 
 tb=$1
 beam_size="-1"
+tmode="fine-seq"
 
 echo $tb
 
@@ -13,7 +14,7 @@ emb_file=models-segm/$tb/emb.pth
 qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=3G,mem_free=10G,act_mem_free=10G,h_data=15G -p -5 \
 -o models-anlz/$tb/log-rnd-search.out \
 -e models-anlz/$tb/log-rnd-search.err \
-wraps/random_search_anlz.sh $tb $input_model $emb_file $beam_size 42
+wraps/random_search_anlz.sh $tb $input_model $emb_file $beam_size 42 $tmode
 
 # bash wraps/random_search_anlz.sh $tb $input_model $emb_file $beam_size 42
 
