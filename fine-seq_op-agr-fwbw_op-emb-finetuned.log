@@ -1,0 +1,80 @@
+python3 run_analizer.py --mode train \                                                                         1 ↵
+--seed 42 \
+--train_file data/$tbname/train \
+--dev_file data/$tbname/dev \
+--epochs 10 \
+--batch_size 110 \
+--emb_size 140 \
+--learning_rate 0.01676 \
+--dropout 0.0636 \
+--embedding_pth $emb_file \
+--input_lem_model $imodel \
+--model_save_dir models-anlz/$tbname \
+--scheduler \
+--beam_size -1 \
+--rel_prunning 0.3 \
+--tagger_mode fine-seq \
+--gpu
+Namespace(batch_size=110, beam_size=-1, bias_scale_param=0.1, clip=None, debug=0, dev_file='data/es_ancora/dev', dropout=0.0636, dump_ops=False, emb_size=140, embedding_pth='models-segm/es_ancora/emb.pth', embedding_txt=None, epochs=10, eps_scale=None, feat_dec_si
+ze=100, feat_mlp_size=100, gpu=True, hidden_dim=100, in_mode='coarse', input_lem_model='models-segm/es_ancora/segm_7.pth', input_model=None, learning_rate=0.01676, max_feat_seq=15, max_ops=15, maxplus=False, maxtimes=False, mlp_hidden_dim=25, mlp_size=100, mode='t
+rain', model_save_dir='models-anlz/es_ancora', no_eps=False, no_sl=False, num_mlp_layers=2, op_aggr='rnn', op_enc_size=100, op_repr='fw_bw', out_mode='coarse', patience=30, patterns='5-50_4-50_3-50_2-50', pre_computed_patterns=None, pretrained_form_emb=None, rel_p
+running=0.3, rnn_size=100, rnn_type='LSTM', scheduler=True, seed=42, self_loop_scale=None, shared_sl=0, tagger_mode='fine-seq', temperature=1.0, test_file=None, test_hidden=False, train_file='data/es_ancora/train', use_rnn=False, w_enc_size=100, w_mlp_size=100, w$
+rd_dropout=0)
+Loading data...
+Init batch objs
+vocab: 35395  - feats: 45
+
+..................................................................................................................................................
+Epoch    0 train | time: 1.104m, loss:   19.866, acc:  86.19%, dist:  0.220, msd_acc:  48.14, msd_f1:  66.49
+           dev   | time: 2.596m, loss:    5.952, acc:  84.74%, dist:  0.240, msd_acc:  47.32, msd_f1:  64.90
+
+New best acc!
+New best dev!
+Saving model to models-anlz/es_ancora/anlz_fine-seq_0.pth
+..................................................................................................................................................
+Epoch    1 train | time: 1.071m, loss:    4.114, acc:  86.04%, dist:  0.220, msd_acc:  50.67, msd_f1:  68.89
+           dev   | time: 2.782m, loss:    4.570, acc:  84.82%, dist:  0.240, msd_acc:  49.01, msd_f1:  65.73
+
+New best acc!
+New best dev!
+Saving model to models-anlz/es_ancora/anlz_fine-seq_1.pth
+..................................................................................................................................................
+Epoch    2 train | time: 1.234m, loss:    3.095, acc:  85.97%, dist:  0.220, msd_acc:  51.22, msd_f1:  70.25
+           dev   | time: 2.968m, loss:    4.257, acc:  84.93%, dist:  0.240, msd_acc:  49.62, msd_f1:  67.64
+
+New best acc!
+New best dev!
+Saving model to models-anlz/es_ancora/anlz_fine-seq_2.pth
+..................................................................................................................................................
+Epoch    3 train | time: 1.176m, loss:    2.723, acc:  85.60%, dist:  0.230, msd_acc:  52.24, msd_f1:  71.28
+           dev   | time: 3.023m, loss:    4.271, acc:  84.92%, dist:  0.240, msd_acc:  49.89, msd_f1:  67.48
+
+..................................................................................................................................................
+Epoch    4 train | time: 1.176m, loss:    2.493, acc:  86.20%, dist:  0.220, msd_acc:  50.78, msd_f1:  71.08
+           dev   | time: 2.736m, loss:    4.570, acc:  84.77%, dist:  0.240, msd_acc:  49.23, msd_f1:  67.41
+
+..................................................................................................................................................
+Epoch    5 train | time: 1.001m, loss:    2.286, acc:  86.13%, dist:  0.220, msd_acc:  50.81, msd_f1:  72.03
+           dev   | time: 2.666m, loss:    4.927, acc:  84.81%, dist:  0.240, msd_acc:  49.02, msd_f1:  67.81
+
+New best acc!
+Saving model to models-anlz/es_ancora/anlz_fine-seq_5.pth
+..................................................................................................................................................
+Epoch    6 train | time: 0.999m, loss:    1.962, acc:  86.62%, dist:  0.210, msd_acc:  51.16, msd_f1:  72.10
+           dev   | time: 2.586m, loss:    4.952, acc:  84.79%, dist:  0.240, msd_acc:  49.02, msd_f1:  67.88
+
+New best acc!
+Saving model to models-anlz/es_ancora/anlz_fine-seq_6.pth
+..................................................................................................................................................
+Epoch    7 train | time: 1.042m, loss:    1.634, acc:  86.82%, dist:  0.210, msd_acc:  49.84, msd_f1:  69.40
+           dev   | time: 2.620m, loss:    5.467, acc:  84.80%, dist:  0.240, msd_acc:  47.96, msd_f1:  65.22
+
+..................................................................................................................................................
+Epoch    8 train | time: 1.094m, loss:    1.511, acc:  86.28%, dist:  0.220, msd_acc:  50.50, msd_f1:  71.65
+           dev   | time: 2.591m, loss:    6.247, acc:  84.86%, dist:  0.240, msd_acc:  47.03, msd_f1:  65.42
+
+..................................................................................................................................................
+Epoch    9 train | time: 1.128m, loss:    1.267, acc:  85.73%, dist:  0.220, msd_acc:  51.76, msd_f1:  70.98
+           dev   | time: 2.763m, loss:    5.675, acc:  84.76%, dist:  0.240, msd_acc:  50.08, msd_f1:  66.09
+
+6       67.88
