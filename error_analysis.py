@@ -17,8 +17,7 @@ def get_form_lemmas(filename):
     if line=='': continue
     comps = line.split('\t')
     if len(comps)<2: continue
-    comps[1] = comps[1].lower()
-    data.append(comps[1:3])
+    data.append(map(lambda x: x.lowe(), comps[1:3]))
   return data
 
 def get_form_lemma_mapper(tup_list):
