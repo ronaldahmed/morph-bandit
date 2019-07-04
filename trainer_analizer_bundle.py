@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from torch.nn import Module, Parameter, NLLLoss, LSTM
 from tensorboardX import SummaryWriter
-from torch.optim import Adam
+from torch.optim import Adam, Adadelta
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from time import monotonic
 from utils import to_cuda, \
@@ -24,7 +24,8 @@ class TrainerAnalizerBundle:
     self.args = args
     self.n_classes = num_classes
     self.model = anlz_model
-    self.optimizer = Adam(anlz_model.parameters(), lr=args.learning_rate)
+    # self.optimizer = Adam(anlz_model.parameters(), lr=args.learning_rate)
+    self.optimizer = Adadelta(anlz_model.parameters(), lr=args.learning_rate)
     self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
     self.cuda = to_cuda(args.gpu)
