@@ -9,8 +9,8 @@ import pdb
 if __name__ == '__main__':
   args = analizer_args()
 
-  # tbnames = [x.strip('\n').split(" ")[1] for x in open("data/tbnames-thesis","r") if x.strip("\n")!=""]
-  tbnames = ["es_ancora"]
+  tbnames = [x.strip('\n').split(" ")[1] for x in open("data/tbnames-thesis","r") if x.strip("\n")!=""]
+  # tbnames = ["es_ancora"]
   
   for tb in tbnames:
     print(tb)
@@ -26,17 +26,14 @@ if __name__ == '__main__':
     tb_args.dev_file = "data/"+tb+"/dev"
     loader = DataLoaderAnalizer(tb_args)
 
-    with open("models-segm/%s/emb.vec" % tb,"w") as outfile:
+    with open("l1-mono-emb/%s.vec" % tb,"w") as outfile:
       state_dict = torch.load(input_model,map_location='cpu')
       emb_matrix = state_dict["emb.weight"] # [vocab x emb_size]
       emb_matrix = emb_matrix.cpu().numpy()
-          
       vocab_size,esize = emb_matrix.shape
       for i in range(vocab_size):
         tok = loader.vocab_oplabel.get_label_name(i)
         emb = " ".join(["%.5f"%x for x in emb_matrix[i,:]])
         print(tok,emb,sep=" ",file=outfile)
-
-    print("-->")
 
 
