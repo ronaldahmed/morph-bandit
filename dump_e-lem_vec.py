@@ -26,7 +26,7 @@ if __name__ == '__main__':
     tb_args.dev_file = "data/"+tb+"/dev"
     loader = DataLoaderAnalizer(tb_args)
 
-    with open("models-segm/%s/emb.vec","w") as outfile:
+    with open("models-segm/%s/emb.vec" % tb,"w") as outfile:
       state_dict = torch.load(input_model,map_location='cpu')
       emb_matrix = state_dict["emb.weight"] # [vocab x emb_size]
       emb_matrix = emb_matrix.cpu().numpy()
