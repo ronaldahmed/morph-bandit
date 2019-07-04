@@ -44,7 +44,7 @@ def get_custom_acc(gold_tup,pred_tups,licited):
     if gw not in licited: continue
     acc += int(gl==pl)
     total += 1
-  return (1.0*acc) / total
+  return (100.0*acc) / total
 
 
 def error_ref_anlz_args():
@@ -80,8 +80,9 @@ if __name__ == '__main__':
   template_in = "data/%s/%s"
   template_out = "data/%s/%s.%s.conllu.%s"
 
+  print("treebank,model,ambiguous,unseen,seen-unamb")
+
   for tb in tbnames:
-    if tb != "es_ancora": continue
     print(":: ",tb)
     # build filenames
     exp_args = args
@@ -115,8 +116,6 @@ if __name__ == '__main__':
     src_amb_acc = get_custom_acc(gold_tups,src_tups,amb_forms)
     tgt_amb_acc = get_custom_acc(gold_tups,tgt_tups,amb_forms)
 
-    pdb.set_trace()
-
     # unseen: w.r.t. train
     unk_id = loader.vocab_oplabel.get_label_id(UNK_TOKEN)
     unseen_forms = set([x for x,y in gold_mapper.items() if loader.vocab_oplabel.get_label_id(reformat_action(x))==unk_id ])
@@ -128,13 +127,11 @@ if __name__ == '__main__':
     src_su_acc = get_custom_acc(gold_tups,src_tups,seen_unamb_forms)
     tgt_su_acc = get_custom_acc(gold_tups,tgt_tups,seen_unamb_forms)
 
-    print(src_amb_acc,tgt_amb_acc)
-    print(src_uns_acc,tgt_uns_acc)
-    print(src_su_acc,tgt_su_acc)
+    print(tb,args.src_ref,src_amb_acc,src_uns_acc,src_su_acc,sep=",")
+    print(tb,args.tgt_ref,tgt_amb_acc,tgt_uns_acc,tgt_su_acc,sep=",")
 
-
-    pdb.set_trace()
-
-    for w,lems in gold_mapper.items():
-      if len(lems)<2: continue
+    # print(src_amb_acc,tgt_amb_acc)
+    # print(src_uns_acc,tgt_uns_acc)
+    # print(src_su_acc,tgt_su_acc)
+    # pdb.set_trace()
 
