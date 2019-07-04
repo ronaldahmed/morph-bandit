@@ -106,6 +106,8 @@ if __name__ == '__main__':
     src_amb_acc = get_custom_acc(gold_tups,src_tups,amb_forms)
     tgt_amb_acc = get_custom_acc(gold_tups,tgt_tups,amb_forms)
 
+    pdb.set_trace()
+
     # unseen
     unk_id = loader.vocab_oplabel.get_label_id(UNK_TOKEN)
     unseen_forms = set([x for x,y in gold_mapper.items() if loader.vocab_oplabel.get_label_id(reformat_action(x))==unk_id ])
