@@ -97,8 +97,8 @@ if __name__ == '__main__':
     gold_mapper = get_form_lemma_mapper(gold_tups)
     src_mapper = get_form_lemma_mapper(src_tups)
     tgt_mapper = get_form_lemma_mapper(tgt_tups)
-    # all_keys = set([list(gold_mapper.keys()) + list(src_mapper.keys()) + list(tgt_mapper.keys())])
-    # joint_mapper = {x:gold_mapper[x] | src_mapper[x] | tgt_mapper[x] for x in all_keys}
+
+    pdb.set_trace()
 
     # ambiguous
     amb_forms = set([x for x,y in gold_mapper.items() if len(y)>1])
