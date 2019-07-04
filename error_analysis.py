@@ -30,8 +30,12 @@ def get_custom_acc(gold_tup,pred_tups,licited):
   acc = 0.0
   total = 0
   for gold,pred in zip(gold_tups,pred_tups):
-    gw,gl = gold
-    pw,pl = pred
+    try:
+      gw,gl = gold
+      pw,pl = pred
+    except:
+      pdb.set_trace()
+      
     if gw != pw:
       print("diff words!!",gw,pw)
       pdb.set_trace()
@@ -104,23 +108,21 @@ if __name__ == '__main__':
     joint_keys = set(list(train_mapper.keys()) + list(gold_mapper.keys()))
     joint_map = {x:train_mapper[x] | gold_mapper[x] for x in joint_keys}
 
-    pdb.set_trace()
-
-    # ambiguous
+    # ambiguous : train+dev
     amb_forms = set([x for x,y in joint_map.items() if len(y)>1])
     src_amb_acc = get_custom_acc(gold_tups,src_tups,amb_forms)
     tgt_amb_acc = get_custom_acc(gold_tups,tgt_tups,amb_forms)
 
     pdb.set_trace()
 
-    # unseen
+    # unseen: w.r.t. train
     unk_id = loader.vocab_oplabel.get_label_id(UNK_TOKEN)
     unseen_forms = set([x for x,y in gold_mapper.items() if loader.vocab_oplabel.get_label_id(reformat_action(x))==unk_id ])
     src_uns_acc = get_custom_acc(gold_tups,src_tups,unseen_forms)
     tgt_uns_acc = get_custom_acc(gold_tups,tgt_tups,unseen_forms)
 
     # seen unambiguous
-    seen_unamb_forms = set([x for x,y in gold_mapper.items() if len(y)==1 and x not in unseen_forms])
+    seen_unamb_forms = set([x for x,y in joint_map.items() if len(y)==1 and x not in unseen_forms])
     src_su_acc = get_custom_acc(gold_tups,src_tups,seen_unamb_forms)
     tgt_su_acc = get_custom_acc(gold_tups,tgt_tups,seen_unamb_forms)
 
