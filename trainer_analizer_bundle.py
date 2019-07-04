@@ -24,8 +24,8 @@ class TrainerAnalizerBundle:
     self.args = args
     self.n_classes = num_classes
     self.model = anlz_model
-    # self.optimizer = Adam(anlz_model.parameters(), lr=args.learning_rate)
-    self.optimizer = Adadelta(anlz_model.parameters(), lr=args.learning_rate)
+    self.optimizer = Adam(anlz_model.parameters(), lr=args.learning_rate)
+    # self.optimizer = Adadelta(anlz_model.parameters(), lr=args.learning_rate)
     self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
     self.cuda = to_cuda(args.gpu)
