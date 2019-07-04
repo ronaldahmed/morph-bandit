@@ -17,7 +17,9 @@ def get_form_lemmas(filename):
     if line=='': continue
     comps = line.split('\t')
     if len(comps)<2: continue
-    data.append(map(lambda x: x.lower(), comps[1:3]))
+    w = comps[1].lower()
+    l = comps[2].lower()
+    data.append([w,l])
   return data
 
 def get_form_lemma_mapper(tup_list):
@@ -35,7 +37,7 @@ def get_custom_acc(gold_tup,pred_tups,licited):
       pw,pl = pred
     except:
       pdb.set_trace()
-      
+
     if gw != pw:
       print("diff words!!",gw,pw)
       pdb.set_trace()
