@@ -82,6 +82,7 @@ if __name__ == '__main__':
     exp_args.train_file = template_in % (tb,"train")
     exp_args.dev_file = template_in % (tb,"dev")
     #
+    train_fn = template_out % (tb,"train",args.src_ref,"gold")
     gold_fn = template_out % (tb,"dev",args.src_ref,"gold")
     src_fn  = template_out % (tb,"dev",args.src_ref,"pred")
     tgt_fn  = template_out % (tb,"dev",args.tgt_ref,"pred")
@@ -90,18 +91,23 @@ if __name__ == '__main__':
     train = loader.load_data("train")
     dev   = loader.load_data("dev")
 
+    train_tups = get_form_lemmas(train_fn)
     gold_tups = get_form_lemmas(gold_fn)
     src_tups = get_form_lemmas(src_fn)
     tgt_tups = get_form_lemmas(tgt_fn)
 
+    train_mapper = get_form_lemma_mapper(train_tups)
     gold_mapper = get_form_lemma_mapper(gold_tups)
     src_mapper = get_form_lemma_mapper(src_tups)
     tgt_mapper = get_form_lemma_mapper(tgt_tups)
 
+    joint_keys = set([list(train_mapper.keys()) + list(gold_mapper.keys())])
+    joint_map = {x:train_mapper[x] | gold_mapper[x] for x in joint_keys}
+
     pdb.set_trace()
 
     # ambiguous
-    amb_forms = set([x for x,y in gold_mapper.items() if len(y)>1])
+    amb_forms = set([x for x,y in joint_map.items() if len(y)>1])
     src_amb_acc = get_custom_acc(gold_tups,src_tups,amb_forms)
     tgt_amb_acc = get_custom_acc(gold_tups,tgt_tups,amb_forms)
 
