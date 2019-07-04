@@ -101,7 +101,7 @@ if __name__ == '__main__':
     src_mapper = get_form_lemma_mapper(src_tups)
     tgt_mapper = get_form_lemma_mapper(tgt_tups)
 
-    joint_keys = set([list(train_mapper.keys()) + list(gold_mapper.keys())])
+    joint_keys = set(list(train_mapper.keys()) + list(gold_mapper.keys()))
     joint_map = {x:train_mapper[x] | gold_mapper[x] for x in joint_keys}
 
     pdb.set_trace()
