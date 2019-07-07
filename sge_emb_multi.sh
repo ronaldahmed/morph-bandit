@@ -3,14 +3,9 @@
 lsrc=$1
 src=$2
 
-cd /home/acosta/personal_work_ms/MUSE
+basefn="/home/acosta/morph-bandit/l1-multi-emb/log_$lsrc-es"
 
-src_emb="/home/acosta/morph-bandit/l1-mono-emb/$src.vec"
-tgt_emb="/home/acosta/morph-bandit/l1-mono-emb/es_ancora.vec"
-
-python unsupervised.py --src_lang $lsrc --tgt_lang es \
---src_emb $src_emb --tgt_emb $tgt_emb \
---n_refinement 5 \
---normalize_embeddings \
---seed 42 \
---cuda \
+qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
+-o $basefn.out \
+-e $basefn.err \
+wraps/run_muse_multi.sh $lsrc $src
