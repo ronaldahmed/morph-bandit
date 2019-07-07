@@ -4,6 +4,8 @@
 lsrc=$1
 src=$2
 
+conda activate morph
+
 cd /home/acosta/personal_work_ms/MUSE
 
 basedir="/home/acosta/morph-bandit/l1-multi-emb"
