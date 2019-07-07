@@ -4,6 +4,8 @@ models/
 models-segm/
 models-anlz/
 models-ens/
+l1-mono-emb/
+l1-multi-emb/
 CHARLES-MALTA-01-2/
 dicts/
 *.pyc
