@@ -21,4 +21,4 @@ python unsupervised.py --src_lang $lsrc --tgt_lang es \
 --exp_path $basedir \
 --exp_name "$lsrc-es" \
 --export pth \
---cuda
+--cuda True
