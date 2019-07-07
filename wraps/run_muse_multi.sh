@@ -16,7 +16,7 @@ python unsupervised.py --src_lang $lsrc --tgt_lang es \
 --src_emb $src_emb --tgt_emb $tgt_emb \
 --emb_dir 140 \
 --n_refinement 5 \
---normalize_embeddings \
+--normalize_embeddings center \
 --seed 42 \
 --exp_path $basedir \
 --exp_name "$lsrc-es" \
