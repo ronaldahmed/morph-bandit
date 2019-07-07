@@ -19,6 +19,6 @@ python unsupervised.py --src_lang $lsrc --tgt_lang es \
 --normalize_embeddings center \
 --seed 42 \
 --exp_path $basedir \
---exp_name "$lsrc-es" \
+--exp_name "$lsrc-es" --exp_id "$lsrc-es" \
 --export pth \
 --cuda True
