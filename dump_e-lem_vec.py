@@ -31,6 +31,7 @@ if __name__ == '__main__':
       emb_matrix = state_dict["emb.weight"] # [vocab x emb_size]
       emb_matrix = emb_matrix.cpu().numpy()
       vocab_size,esize = emb_matrix.shape
+      print(vocab_size,esize,sep=" ",file=outfile)
       for i in range(vocab_size):
         tok = loader.vocab_oplabel.get_label_name(i)
         emb = " ".join(["%.5f"%x for x in emb_matrix[i,:]])
