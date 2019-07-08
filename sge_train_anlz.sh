@@ -28,10 +28,11 @@ for tb in $(cut -f 2 -d " " $batch); do
 		emb_file=l1-multi-emb/"$lang_name"-es/"$lang_name"-es/vectors-"$lang_name".pth
 	fi
 
-	# qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
-	# -o models-anlz/$tb/log.out \
-	# -e models-anlz/$tb/log.err \
-	# wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $eval_mode $exp_id
-	bash wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $eval_mode $exp_id
+	qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
+	-o models-anlz/$tb/log-"$exp_id".out \
+	-e models-anlz/$tb/log-"$exp_id".err \
+	wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $eval_mode $exp_id
+	
+	# bash wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $eval_mode $exp_id
 
 done
