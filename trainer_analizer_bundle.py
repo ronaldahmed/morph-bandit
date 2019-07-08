@@ -15,7 +15,8 @@ from utils import to_cuda, \
                   SPACE_LABEL
 from data_utils import dump_conllu
 import subprocess as sp
-
+from sklearn.metrics import f1_score
+from sklearn.preprocessing import OneHotEncoder
 import pdb
 
 
@@ -221,17 +222,35 @@ class TrainerAnalizerBundle:
     if covered:
       return MetricsWrap(-1,-1,-1,-1)
 
-    else:
-      pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
-                     "--reference", filename + ".conllu.gold",
-                     "--output"   , filename + ".conllu.pred",
-                    ], capture_output=True)
-      output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
+    pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
+                   "--reference", filename + ".conllu.gold",
+                   "--output"   , filename + ".conllu.pred",
+                  ], capture_output=True)
+    output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
 
-      output_res = [float(x) for x in output_res]
-      res_wrap = MetricsWrap(output_res[0],output_res[1],output_res[2],output_res[3])
-      return res_wrap
+    output_res = [float(x) for x in output_res]
 
+    metrics = None
+    if self.args.eval_mode == "bundle":
+      metrics = MetricsWrap(output_res[0],output_res[1],output_res[2],output_res[3])
+
+    elif self.args.eval_mode == "fine":
+      nw = sum([len(x) for x in gold_feats_to_dump])
+      gold_ids = np.zeros([nw,data_vocabs.get_feat_vocab_size()])
+      pred_ids = np.zeros([nw,data_vocabs.get_feat_vocab_size()])
+      k = 0
+      for gold_feat_sent,pred_feat_sent in zip(gold_feats_to_dump,pred_feats_to_dump):
+        for gf,pf in zip(gold_feat_sent,pred_feat_sent):
+          gold_ids[k,[data_vocabs.vocab_feats.get_label_id(x) \
+                      for x in gf.split(";")]] = 1
+          pred_ids[k,[data_vocabs.vocab_feats.get_label_id(x) \
+                      for x in pf.split(";")]] = 1
+          k += 1
+      #
+      f1 = f1_score(gold_ids,pred_ids,average="micro")
+      metrics = MetricsWrap(output_res[0],output_res[1],output_res[2],f1)
+
+    return metrics
 
 
   def save_model(self,epoch):

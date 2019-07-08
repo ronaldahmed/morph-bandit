@@ -22,6 +22,8 @@ def general_arg_parser():
     p.add_argument("--in_mode", help="Input op token mode [coarse,grain]", type=str, default="coarse")
     p.add_argument("--out_mode", help="Output feat label mode [coarse,grain] / deprecated", type=str, default="coarse")
     p.add_argument("--tagger_mode","-tag_mode", help="Tagger mode [bundle,fine-seq,fine-factor,fine-matrix]", type=str, default="bundle")
+    p.add_argument("--eval_mode","-eval_mode", help="Evaluation mode [bundle,fine]", type=str, default="bundle")
+    p.add_argument("--exp_id","-exp_id", help="Experiment id [l1-a1,multi-zz]", type=str, default="l1-a1")
 
     p.add_argument("--gpu", help="Use GPU", action='store_true')
     p.add_argument("--embedding_txt", help="Pretrained op-token embedding file [txt format]", type=str, default=None)
