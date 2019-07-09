@@ -48,4 +48,4 @@ for i in range(nw):
 msd_acc = (100.0*acc) / nw
 f1 = 100.0*f1_score(gmat,pmat,average="micro") # average is pessimistic
 
-print("%.2f,%.2f" % (msd_acc,f1))
+print("%.2f %.2f" % (msd_acc,f1))
