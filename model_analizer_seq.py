@@ -67,8 +67,8 @@ class Encoder(Module):
   def __init__(self,args):
     super(Encoder, self).__init__()
     self.cuda = to_cuda(args.gpu)
-    self.emb = self.load_embeddings(args)
     self.args = args
+    self.emb = self.load_embeddings(args)
     # encoder: contexttualize actions w biLSTM / elmo / bert
     if args.op_aggr == "rnn":
       self.op_encoder = self.cuda(
@@ -84,7 +84,7 @@ class Encoder(Module):
 
 
   def load_embeddings(self,args):
-    if "models-segm" in self.args.embedding_pth:
+    if "models-segm" in args.embedding_pth:
       emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth).contiguous()) )
     else:
       emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth)["vectors"].contiguous()) )
