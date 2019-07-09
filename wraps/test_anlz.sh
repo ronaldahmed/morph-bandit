@@ -51,7 +51,7 @@ elif [ $mode == "dev" ]; then
 	--beam_size $beam_size \
 	--rel_prunning 0.3 \
 	--tagger_mode $tagger_mode \
-	--eval_mode $eval_mode \
+	--exp_id $exp_id \
 	--gpu
 
 fi
