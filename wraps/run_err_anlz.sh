@@ -10,7 +10,7 @@ python3 error_analysis.py --mode dev \
 --dev_file data/$tbname/dev \
 --embedding_pth foo \
 --input_lem_model foo \
---src_ref "lem" \
+--src_ref "anlz" \
 --tgt_ref "anlz.fine-seq"
 
 --tagger_mode "fine-seq"

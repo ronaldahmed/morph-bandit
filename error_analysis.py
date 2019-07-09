@@ -124,6 +124,4 @@ if __name__ == '__main__':
 
     pdb.set_trace()
 
-    for w,lems in gold_mapper.items():
-      if len(lems)<2: continue
-
+    print("->")
