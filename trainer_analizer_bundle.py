@@ -247,7 +247,7 @@ class TrainerAnalizerBundle:
                       for x in pf.split(";")]] = 1
           k += 1
       #
-      f1 = 100*f1_score(gold_ids,pred_ids,average="weighted")
+      f1 = 100*f1_score(gold_ids,pred_ids,average="micro")
       metrics = MetricsWrap(output_res[0],output_res[1],output_res[2],f1)
 
     return metrics
