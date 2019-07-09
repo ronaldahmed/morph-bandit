@@ -13,6 +13,11 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 from utils import to_cuda, fixed_var
 from model_analizer_bundle import AnalizerBundle
 
+import sys,os
+home = os.getenv("HOME")
+sys.path.append(os.path.join(home,"MUSE"))
+
+
 import pdb
 
 
@@ -79,7 +84,10 @@ class Encoder(Module):
 
 
   def load_embeddings(self,args):
-    emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth).contiguous()) )
+    if "models-segm" in self.args.embedding_pth:
+      emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth).contiguous()) )
+    else:
+      emb = self.cuda(nn.Embedding.from_pretrained(torch.load(args.embedding_pth)["vectors"].contiguous()) )
     for param in emb.parameters():
       param.requires_grad = True
     return emb

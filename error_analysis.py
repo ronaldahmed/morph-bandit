@@ -17,8 +17,9 @@ def get_form_lemmas(filename):
     if line=='': continue
     comps = line.split('\t')
     if len(comps)<2: continue
-    comps[1] = comps[1].lower()
-    data.append(comps[1:3])
+    w = comps[1].lower()
+    l = comps[2].lower()
+    data.append([w,l])
   return data
 
 def get_form_lemma_mapper(tup_list):
@@ -31,15 +32,19 @@ def get_custom_acc(gold_tup,pred_tups,licited):
   acc = 0.0
   total = 0
   for gold,pred in zip(gold_tups,pred_tups):
-    gw,gl = gold
-    pw,pl = pred
+    try:
+      gw,gl = gold
+      pw,pl = pred
+    except:
+      pdb.set_trace()
+
     if gw != pw:
       print("diff words!!",gw,pw)
       pdb.set_trace()
     if gw not in licited: continue
     acc += int(gl==pl)
     total += 1
-  return (1.0*acc) / total
+  return (100.0*acc) / total
 
 
 def error_ref_anlz_args():
@@ -75,14 +80,16 @@ if __name__ == '__main__':
   template_in = "data/%s/%s"
   template_out = "data/%s/%s.%s.conllu.%s"
 
+  print("treebank,model,ambiguous,unseen,seen-unamb")
+
   for tb in tbnames:
-    if tb != "es_ancora": continue
     print(":: ",tb)
     # build filenames
     exp_args = args
     exp_args.train_file = template_in % (tb,"train")
     exp_args.dev_file = template_in % (tb,"dev")
     #
+    train_fn = template_out % (tb,"train",args.src_ref,"gold")
     gold_fn = template_out % (tb,"dev",args.src_ref,"gold")
     src_fn  = template_out % (tb,"dev",args.src_ref,"pred")
     tgt_fn  = template_out % (tb,"dev",args.tgt_ref,"pred")
@@ -91,37 +98,40 @@ if __name__ == '__main__':
     train = loader.load_data("train")
     dev   = loader.load_data("dev")
 
+    train_tups = get_form_lemmas(train_fn)
     gold_tups = get_form_lemmas(gold_fn)
     src_tups = get_form_lemmas(src_fn)
     tgt_tups = get_form_lemmas(tgt_fn)
 
+    train_mapper = get_form_lemma_mapper(train_tups)
     gold_mapper = get_form_lemma_mapper(gold_tups)
     src_mapper = get_form_lemma_mapper(src_tups)
     tgt_mapper = get_form_lemma_mapper(tgt_tups)
-    # all_keys = set([list(gold_mapper.keys()) + list(src_mapper.keys()) + list(tgt_mapper.keys())])
-    # joint_mapper = {x:gold_mapper[x] | src_mapper[x] | tgt_mapper[x] for x in all_keys}
 
-    # ambiguous
-    amb_forms = set([x for x,y in gold_mapper.items() if len(y)>1])
+    joint_keys = set(list(train_mapper.keys()) + list(gold_mapper.keys()))
+    joint_map = {x:train_mapper[x] | gold_mapper[x] for x in joint_keys}
+
+    # ambiguous : train+dev
+    amb_forms = set([x for x,y in joint_map.items() if len(y)>1])
     src_amb_acc = get_custom_acc(gold_tups,src_tups,amb_forms)
     tgt_amb_acc = get_custom_acc(gold_tups,tgt_tups,amb_forms)
 
-    # unseen
+    # unseen: w.r.t. train
     unk_id = loader.vocab_oplabel.get_label_id(UNK_TOKEN)
     unseen_forms = set([x for x,y in gold_mapper.items() if loader.vocab_oplabel.get_label_id(reformat_action(x))==unk_id ])
     src_uns_acc = get_custom_acc(gold_tups,src_tups,unseen_forms)
     tgt_uns_acc = get_custom_acc(gold_tups,tgt_tups,unseen_forms)
 
     # seen unambiguous
-    seen_unamb_forms = set([x for x,y in gold_mapper.items() if len(y)==1 and x not in unseen_forms])
+    seen_unamb_forms = set([x for x,y in joint_map.items() if len(y)==1 and x not in unseen_forms])
     src_su_acc = get_custom_acc(gold_tups,src_tups,seen_unamb_forms)
     tgt_su_acc = get_custom_acc(gold_tups,tgt_tups,seen_unamb_forms)
 
-    print(src_amb_acc,tgt_amb_acc)
-    print(src_uns_acc,tgt_uns_acc)
-    print(src_su_acc,tgt_su_acc)
+    print(tb,args.src_ref,src_amb_acc,src_uns_acc,src_su_acc,sep=",")
+    print(tb,args.tgt_ref,tgt_amb_acc,tgt_uns_acc,tgt_su_acc,sep=",")
 
+    # print(src_amb_acc,tgt_amb_acc)
+    # print(src_uns_acc,tgt_uns_acc)
+    # print(src_su_acc,tgt_su_acc)
+    # pdb.set_trace()
 
-    pdb.set_trace()
-
-    print("->")
