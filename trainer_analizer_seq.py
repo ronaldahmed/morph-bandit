@@ -247,17 +247,22 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
       nw = sum([len(x) for x in gold_feats_to_dump])
       gold_ids = np.zeros([nw,data_vocabs.get_feat_vocab_size()])
       pred_ids = np.zeros([nw,data_vocabs.get_feat_vocab_size()])
+      msd_acc = 0.0
       k = 0
       for gold_feat_sent,pred_feat_sent in zip(gold_feats_to_dump,pred_feats_to_dump):
         for gf,pf in zip(gold_feat_sent,pred_feat_sent):
+          gsorted = gf.split(";").sort()
+          psorted = pf.split(";").sort()
           gold_ids[k,[data_vocabs.vocab_feats.get_label_id(x) \
-                      for x in gf.split(";")]] = 1
+                      for x in gsorted]] = 1
           pred_ids[k,[data_vocabs.vocab_feats.get_label_id(x) \
-                      for x in pf.split(";")]] = 1
+                      for x in psorted]] = 1
+          msd_acc += int(";".join(gsorted)==";".join(psorted))
           k += 1
       #
+      msd_acc = (100.0*msd_acc) / k
       f1 = f1_score(gold_ids,pred_ids,average="micro") # average is pessimistic
-      metrics = MetricsWrap(output_res[0],output_res[1],output_res[2],f1)
+      metrics = MetricsWrap(output_res[0],output_res[1],msd_acc,f1)
 
     return metrics
 
