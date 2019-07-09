@@ -35,7 +35,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 
 	if [ ${exp:0:2} == "l1" ]; then
 		emb_file=models-segm/$tb/emb.pth
-	elif [ ${exp:0:2} == "ml1" ]; then
+	elif [ ${exp:0:3} == "ml1" ]; then
 		if [ $lang_name == "es" ]; then
 			emb_file=l1-multi-emb/cs-es/cs-es/vectors-es.pth
 		else
