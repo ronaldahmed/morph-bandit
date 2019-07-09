@@ -5,7 +5,6 @@ exp=$2
 
 bsearch=-1
 tagger_mode="bundle"
-eval_mode="bundle"
 mode=dev  # dev, test, covered-test
 
 if [ ${exp: -2} == "a1" ]; then
@@ -47,7 +46,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 	qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 	-o models-anlz/$tb/log-$exp-$mode.out \
 	-e models-anlz/$tb/log-$exp-$mode.err \
-	wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file $bsearch $tagger_mode $eval_mode
+	wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file $bsearch $tagger_mode $exp
 	
 	# bash wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file
 done

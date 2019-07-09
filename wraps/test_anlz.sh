@@ -7,7 +7,7 @@ anlmodel=$4
 emb_file=$5
 beam_size=$6
 tagger_mode=$7
-eval_mode=$8
+exp_id=$8
 
 cd /home/acosta/morph-bandit/
 conda activate morph
@@ -29,8 +29,8 @@ if [ $mode == "covered-test" ]||[ $mode == "test" ]; then
 	--dump_ops \
 	--beam_size $beam_size \
 	--rel_prunning 0.3 \
-	--eval_mode $eval_mode \
 	--tagger_mode $tagger_mode \
+	--exp_id $exp_id \
 	--gpu
 
 elif [ $mode == "dev" ]; then
@@ -50,8 +50,8 @@ elif [ $mode == "dev" ]; then
 	--dump_ops \
 	--beam_size $beam_size \
 	--rel_prunning 0.3 \
-	--eval_mode $eval_mode \
 	--tagger_mode $tagger_mode \
+	--eval_mode $eval_mode \
 	--gpu
 
 fi
