@@ -8,9 +8,9 @@ tagger_mode="bundle"
 eval_mode="bundle"
 mode=dev  # dev, test, covered-test
 
-if [ ${exp:-2} == "a1" ]; then
+if [ ${exp: -2} == "a1" ]; then
 	tagger_mode="bundle"
-elif [ ${exp:-2} == "a2" ]; then
+elif [ ${exp: -2} == "a2" ]; then
 	tagger_mode="fine-seq"
 fi
 
