@@ -14,8 +14,6 @@ elif [ ${exp:-2} == "a2" ]; then
 	tagger_mode="fine-seq"
 fi
 
-mkdir -p models_pred
-
 for tb in $(cut -f 2 -d " " $batch); do
 	echo $tb
 	lang_name=${tb:0:2}
@@ -50,11 +48,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	-o models-anlz/$tb/log-$exp-$mode.out \
 	-e models-anlz/$tb/log-$exp-$mode.err \
 	wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file $bsearch $tagger_mode $eval_mode
-
-	# cp data/$tb/$mode.anlz.conllu.pred models_pred/$tb-um-$mode.conllu.$exp.pred
-	cp data/$tb/$mode.$exp.conllu.pred models_pred/$tb-um-$mode.conllu.$exp.pred
 	
 	# bash wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file
-	
-
 done
