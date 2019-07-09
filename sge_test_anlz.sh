@@ -18,7 +18,7 @@ mkdir -p models_pred
 
 for tb in $(cut -f 2 -d " " $batch); do
 	echo $tb
-	# bash wraps/run_analizer.sh $tb models-segm/$tb
+	
 	op_ep_seg=$(tail -1 models-segm/$tb/log.out | cut -f 1)
 	op_ep_anl=$(tail -1 models-anlz/$tb/log.out | cut -f 1)
 	# op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
