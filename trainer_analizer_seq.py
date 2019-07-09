@@ -261,7 +261,7 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
           k += 1
       #
       msd_acc = (100.0*msd_acc) / k
-      f1 = f1_score(gold_ids,pred_ids,average="micro") # average is pessimistic
+      f1 = 100*f1_score(gold_ids,pred_ids,average="micro") # average is pessimistic
       metrics = MetricsWrap(output_res[0],output_res[1],msd_acc,f1)
 
     return metrics
