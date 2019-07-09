@@ -222,7 +222,7 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
         filename = self.args.dev_file
       elif split=='test':
         filename = self.args.test_file
-      filename += ".anlz.fine-seq"
+      filename += "."+self.args.exp_id
 
     ops_to_dump = ops_to_dump if dump_ops else None
     dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump,feats=gold_feats_to_dump)
