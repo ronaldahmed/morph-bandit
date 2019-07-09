@@ -30,7 +30,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 		input_anlz_model=models-anlz/$tb/anlz_fine-seq_"$op_ep_anl".pth
 	else
 		op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
-		input_anlz_model=models-anlz/$tb/$exp_"$op_ep_anl".pth
+		input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
 	fi
 
 	if [ ${exp:0:2} == "l1" ]; then
