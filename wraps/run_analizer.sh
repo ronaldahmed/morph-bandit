@@ -7,7 +7,6 @@ emb_file=$4
 beam_size=$5
 seed=$6
 tagger_mode=$7
-eval_mode=$8
 exp_id=$9
 
 echo $emb_file
@@ -32,7 +31,6 @@ python3 run_analizer.py --mode $mode \
 --scheduler \
 --beam_size $beam_size \
 --rel_prunning 0.3 \
---eval_mode $eval_mode \
 --tagger_mode $tagger_mode \
 --exp_id $exp_id \
 --gpu
