@@ -100,6 +100,7 @@ class SharedTaskReader:
 
     train = self.read_conllu("2019/task2/%s/%s-um-train.conllu" % (uddir,tbname))
     dev   = self.read_conllu("2019/task2/%s/%s-um-dev.conllu" % (uddir,tbname))
-    test  = self.read_conllu("2019/task2/%s/%s-um-covered-test.conllu" % (uddir,tbname))
+    # test  = self.read_conllu("2019/task2/%s/%s-um-covered-test.conllu" % (uddir,tbname))
+    test  = self.read_conllu("../2019/task2/%s/%s-um-test.conllu" % (uddir,tbname))
 
     return train,dev,test

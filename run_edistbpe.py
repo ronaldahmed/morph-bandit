@@ -18,9 +18,9 @@ if __name__=="__main__":
 
   parser = argparse.ArgumentParser() 
   parser.add_argument("--tb", "-t", type=str, help="Treebank name")
-  parser.add_argument("--input", "-i", type=str, help="Conllu input file to encode")
-  parser.add_argument("--mode", "-m", type=str, help="Mode [train,encode]")
-  parser.add_argument("--vocab", "-v", type=str, help="Merge history filename")
+  # parser.add_argument("--input", "-i", type=str, help="Conllu input file to encode")
+  # parser.add_argument("--mode", "-m", type=str, help="Mode [train,encode]")
+  # parser.add_argument("--vocab", "-v", type=str, help="Merge history filename")
   args = parser.parse_args()
 
   reader = SharedTaskReader()
