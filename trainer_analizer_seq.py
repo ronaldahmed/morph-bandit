@@ -262,13 +262,3 @@ class TrainerAnalizerSeq(TrainerAnalizerBundle):
     return metrics
 
 
-  def save_model(self,epoch):
-    if self.args.model_save_dir is not None:
-      if not os.path.exists(self.args.model_save_dir):
-        os.makedirs(self.args.model_save_dir)
-
-      suff = '_fine-seq'
-
-      model_save_file = os.path.join(self.args.model_save_dir, "{}_{}.pth".format("anlz"+suff, epoch))
-      print("Saving model to", model_save_file)
-      torch.save(self.model.state_dict(), model_save_file)

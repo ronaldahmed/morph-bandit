@@ -2,12 +2,11 @@
 
 batch=$1
 beam_size="-1"
-exp_id="multi-l1-a1"
+exp_id="ml1-a1-bundle"
 tagger_mode="bundle"
+eval_mode="fine"
 
 mkdir -p models-anlz
-
-eval_mode="fine"
 
 if [ $exp_id == "l1-a2" ]; then
 	tagger_mode="fine-seq"
@@ -24,8 +23,12 @@ for tb in $(cut -f 2 -d " " $batch); do
 	emb_file=""
 	if [ $exp_id == "l1-a2" ]; then
 		emb_file=models-segm/$tb/emb.pth
-	elif [ $exp_id == "multi-l1-a1" ]; then
-		emb_file=l1-multi-emb/"$lang_name"-es/"$lang_name"-es/vectors-"$lang_name".pth
+	elif [ ${exp_id:0:6} == "ml1-a1" ]; then
+		if [ $lang_name == "es" ]; then
+			emb_file=l1-multi-emb/cs-es/cs-es/vectors-es.pth
+		else
+			emb_file=l1-multi-emb/"$lang_name"-es/"$lang_name"-es/vectors-"$lang_name".pth
+		fi
 	fi
 
 	qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \

@@ -12,7 +12,9 @@ from utils import to_cuda, fixed_var
 import numpy as np
 import pdb
 
-
+import sys,os
+home = os.getenv("HOME")
+sys.path.append(os.path.join(home,"MUSE"))
 
 
 class AnalizerBundle(Module):
@@ -50,9 +52,12 @@ class AnalizerBundle(Module):
 
 
   def load_embeddings(self,):
-    emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth).contiguous()) )
+    if "models-segm" in self.args.embedding_pth:
+      emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth).contiguous()) )
+    else:
+      emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth)["vectors"].contiguous()) )
     for param in emb.parameters():
-      param.requires_grad = False
+      param.requires_grad = True
     return emb
 
 
@@ -72,10 +77,7 @@ class AnalizerBundle(Module):
     batch_size = batch[0].shape[0]
     for w_op in batch:
       emb = self.emb(w_op)
-      # try:
       h_op,hidden_op  = self.op_encoder(emb,hidden_op) # h_op: [W,bs,2*size]
-      # except:
-      #   pdb.set_trace()
 
       h_op = h_op.view(batch_size,-1,2,self.args.op_enc_size)
       fw_bw = [ h_op[:,-1,0,:].view(batch_size,1,self.args.op_enc_size),

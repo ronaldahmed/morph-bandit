@@ -10,6 +10,9 @@ tagger_mode=$7
 eval_mode=$8
 exp_id=$9
 
+echo $emb_file
+echo $seed
+
 cd /home/acosta/morph-bandit/
 conda activate morph
 
