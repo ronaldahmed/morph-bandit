@@ -27,12 +27,13 @@ with open(outfile,'w') as outfile:
   for uddir,tb in tbnames:
     print(tb)
     gold_fn = "2019/task2/%s/%s-um-%s.conllu" % (uddir,tb,mode)
-    reference = read_conllu(Path(gold_fn))
 
     for exp in exps:
+      print("::",exp)
       pred_fn = "models_pred/%s-um-%s.conllu.%s.pred" % (tb,mode,exp)
       if not os.path.exists(pred_fn):
         continue
+      reference = read_conllu(Path(gold_fn))
       output = read_conllu(Path(pred_fn))
       results = manipulate_data(input_pairs(reference, output))
       print(tb,exp,*["{0:.2f}".format(v) for v in results],sep=",",file=outfile)
