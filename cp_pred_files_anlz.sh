@@ -1,8 +1,8 @@
 #!/bin/bash
 
 batch=$1
-exp=$2
-mode=$3
+mode=$2
+exp=$3
 mkdir -p models_pred
 
 for tb in $(cut -f 2 -d " " $batch); do
