@@ -79,10 +79,10 @@ class DataLoaderAnalizer:
       self.vocab_op_seg = init_labdict(self.vocab_op_seg)
       PAD_ID = self.vocab_op_name.get_label_id(PAD_TOKEN)
     self.vocab_feats  = init_labdict(self.vocab_feats)
-    ## deactivate when ml1-a1 ://
-    # if self.args.tagger_mode=="fine-seq":
-    sos_id = self.vocab_feats.add(SOS)
-    eos_id = self.vocab_feats.add(EOS)
+    ## deactivate for l1-a1 ://
+    if self.args.tagger_mode=="fine-seq":
+      sos_id = self.vocab_feats.add(SOS)
+      eos_id = self.vocab_feats.add(EOS)
     self.vocab_lemmas = init_labdict(self.vocab_lemmas)
     self.vocab_forms  = init_labdict(self.vocab_forms)
 
