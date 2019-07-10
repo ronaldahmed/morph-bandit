@@ -22,6 +22,7 @@ if len(sys.argv)>2:
 tbnames = [x.strip('\n').split(" ") for x in open("data/tbnames-thesis","r") if x.strip("\n")!=""]
 outfile = "experiments/%s-metrics-%s.thesis.csv" % (suff,mode)
 
+
 with open(outfile,'w') as outfile:
   print("tbname,exp,lem-acc,edist,m-acc,m-f1",file=outfile)
   for uddir,tb in tbnames:

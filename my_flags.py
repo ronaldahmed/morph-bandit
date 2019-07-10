@@ -50,6 +50,7 @@ def lemmatizer_arg_parser():
     """ CLI args related to training models. """
     p = ArgumentParser(add_help=False)
     p.add_argument("--dump_ops", help="Includes predicted operations in the MISC column of the conllu output file", action='store_true')
+    p.add_argument("--lem_opt", help="Optmizer to use [adam,adadelta]", type=str, default="adam")
     p.add_argument("-w", "--word_dropout", help="Use word dropout", type=float, default=0)
     p.add_argument("--mlp_size", help="Input embeddings size", type=int, default=100)
 
@@ -62,7 +63,7 @@ def morph_analizer_arg_parser():
     p.add_argument("--op_repr", help="Representation strat for actions [fw_bw,self_att]", type=str, default="fw_bw")
     p.add_argument("--op_enc_size", help="Size of OP encoder rnn cell", type=int, default=100)
     p.add_argument("--feat_dec_size", help="Size of feat decoder rnn cell", type=int, default=100)
-    p.add_argument("--max_feat_seq", help="Size of feat decoder rnn cell", type=int, default=25)
+    p.add_argument("--max_feat_seq", help="Size of feat decoder rnn cell", type=int, default=15)
     p.add_argument("--feat_mlp_size", help="Size of MLP layer at feat lvl / feat decoder", type=int, default=100)
     p.add_argument("--w_enc_size", help="Size of word encoder rnn cell", type=int, default=100)
     p.add_argument("--w_mlp_size", help="Size of MLP layer at word lvl", type=int, default=100)
