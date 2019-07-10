@@ -31,6 +31,8 @@ with open(outfile,'w') as outfile:
 
     for exp in exps:
       pred_fn = "models_pred/%s-um-%s.conllu.%s.pred" % (tb,mode,exp)
+      if not os.path.exists(pred_fn):
+        continue
       output = read_conllu(Path(pred_fn))
       results = manipulate_data(input_pairs(reference, output))
       print(tb,exp,*["{0:.2f}".format(v) for v in results],sep=",",file=outfile)
