@@ -26,7 +26,10 @@ with open(outfile,'w') as outfile:
   print("tbname,exp,lem-acc,edist,m-acc,m-f1",file=outfile)
   for uddir,tb in tbnames:
     print(tb)
-    gold_fn = "2019/task2/%s/%s-um-%s.conllu" % (uddir,tb,mode)
+    if mode=="test":
+      gold_fn = "../2019/task2/%s/%s-um-%s.conllu" % (uddir,tb,mode)
+    else:
+      gold_fn = "2019/task2/%s/%s-um-%s.conllu" % (uddir,tb,mode)
 
     for exp in exps:
       pred_fn = "models_pred/%s-um-%s.conllu.%s.pred" % (tb,mode,exp)
