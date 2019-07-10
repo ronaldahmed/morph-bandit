@@ -1,7 +1,8 @@
 #!/bin/bash
 
 batch=$1
-exp=$2
+mode=$2
+exp=$3
 
 bsearch=-1
 tagger_mode="bundle"
