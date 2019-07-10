@@ -6,7 +6,6 @@ exp=$3
 
 bsearch=-1
 tagger_mode="bundle"
-mode=dev  # dev, test, covered-test
 
 if [ ${exp: -2} == "a1" ]; then
 	tagger_mode="bundle"
