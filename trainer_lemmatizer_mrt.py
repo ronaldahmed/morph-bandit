@@ -1,20 +1,6 @@
-import sys, os
-import torch
-import numpy as np
-from torch.nn import Module, Parameter, NLLLoss, LSTM
-from torch.nn.functional import log_softmax
-from tensorboardX import SummaryWriter
-from torch.optim import Adam, Adadelta
-from torch.optim.lr_scheduler import ReduceLROnPlateau
-from time import monotonic
-from utils import to_cuda, \
-                  fixed_var, \
-                  apply_operations, \
-                  PAD_ID, \
-                  STOP_LABEL, \
-                  SPACE_LABEL
-from data_utils import dump_conllu
-import subprocess as sp
+import torch.nn.functional as F
+from trainer_lemmatizer import TrainerLemmatizer
+from collections import defaultdict
 
 import pdb
 
@@ -22,72 +8,79 @@ import pdb
 
 class TrainerLemmatizer:
   def __init__(self,model,num_classes,args):
-    self.args = args
-    self.n_classes = num_classes
-    self.model = model
-    self.enable_gradient_clipping()
-    self.cuda = to_cuda(args.gpu)
-    self.writer = None
-    self.scheduler = None
-    self.stop_id = -1
-    self.pad_id = PAD_ID
+    super(TrainerLemmatizer,self).__init__(model,num_classes,args)
+  
+  def init_loss_objective(self,):
+    self.loss_function = None
 
-    self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
-    if   args.lem_opt == "adam":
-      self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
-    elif args.lem_opt == "adadelta":
-      self.optimizer = Adadelta(model.parameters(), lr=args.learning_rate)
+    
+  def sample_action_space(self,input_w,pred_w,gold_w,hidden):
+    """
+    Get sampled space S(a) for posterior approximation
+    one S per w_0, batch_size S sets in total
+    - input_w: (w0 a1 a2) [bs x max_actions]
+    - gold_w: (a1 a2 STOP) [bs x max_actions]
+    - hidden: (c,st)
+    """
+    assert self.stop_id != -1
+    batch_size = gold_w.shape[0]
+    
+    # get prob of K sampled seqs
+    with torch.no_grad():
+      curr_tok = input_w[:,0]
+      tiled_pred_w = []
+      
+      output,hidden = self.model.forward(curr_tok,hidden)
+      op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
+      lprob = log_softmax(op_weights,1).detach()
+      curr_tok = torch.multinomial(op_weights, self.args.sample_space_size).detach() # [bs,1]
+      curr_tok = self.model.repeat_horizontal(curr_tok,self.args.sample_space_size)
+      seq_log_prob = self.model.repeat_horizontal(lprob,self.args.sample_space_size)
+      mask = (curr_tok!=self.stop_id)
 
-    if args.model_save_dir is not None:
-        self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
-    if args.scheduler:
-        self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', 0.1, 10, True)
+      tiled_hidden = self.model.repeat_horizontal(hidden,self.sample_space_size)
+
+      for i in range(self.args.max_ops):
+        output,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
+        logits = output.view(batch_size,-1)
+        op_weights = logits.div(self.args.temperature).exp()
+        curr_tok = torch.multinomial(op_weights, 1).detach() # [bs,1]
+        lprob = F.log_softmax(op_weights,1).gather(1,curr_tok) # get prob of sampled ops
+        lprob *= mask
+        seq_log_prob += lprob.detach()
+        mask *= (curr_tok!=self.stop_id)
+        tiled_pred_w.append(curr_tok)
+      #
+      tiled_pred_w = torch.cat(tiled_pred_w,1).cpu().numpy()
+      seq_log_prob = seq_log_prob.view(-1).cpu().numpy()
+      stop_mask = (tiled_pred_w==self.stop_id).cumsum(1)==0
+      batch_lprob = torch.zeros([batch_size,1],dtype=torch.float32).detach()
+      
+      # get lprob of gold sequence in batch
+      npred_ops = pred_w.shape[1]
+      gold_seq_lprob,_ = F.log_softmax(pred_w,2).max(2) # check shape, should be [bs x 1]
+      gold_seq_lprob = gold_seq_lprob.squeeze().cpu().numpy()
+      sample_set_sum_lprob = torch.zeros([batch_size,1],dtype=torch.float32).detach() # log sum_{s in S} p(s|...)
+
+      # account for duplicate sampled sequences, keep the highest prob
+      for i in range(batch_size):
+        samples = defaultdict(float)
+        for j in range(i*batch_size,(i+1)*batch_size + 1):
+          smp = tuple([x for x in tiled_pred_w[j, stop_mask[j,:]]])
+          samples[smp] = max(samples[smp],seq_log_prob[j])
+        # get log_probs of samples in set
+        s_lprobs = [x * self.alpha_q for x in samples.values()] + [self.alpha_q*gold_seq_lprob[i]]
+        s_lprobs = torch.FloatTensor(s_lprobs).detach()
+        sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
+      #
+    #
+    return sample_set_sum_lprob
 
 
-  def freeze_model(self):
-    for param in self.model.parameters():
-      param.requires_grad = False
 
-
-  ### Adapted from AllenNLP
-  def enable_gradient_clipping(self) -> None:
-    clip = self.args.clip
-    if clip is not None and clip > 0:
-      # Pylint is unable to tell that we're in the case that _grad_clipping is not None...
-      # pylint: disable=invalid-unary-operand-type
-      clip_function = lambda grad: grad.clamp(-clip, clip)
-      for parameter in self.model.parameters():
-        if parameter.requires_grad:
-          parameter.register_hook(clip_function)
-
-
-  def repackage_hidden(self,h):
-    """Wraps hidden states in new Tensors, to detach them from their history."""
-    if isinstance(h, torch.Tensor):
-      return h.detach()
-    else:
-      return tuple(self.repackage_hidden(v) for v in h)
-
-  def flush_hidden(self,h):
-    if isinstance(h, torch.Tensor):
-      return h.data.zero_()
-    else:
-      return tuple(self.flush_hidden(v) for v in h)
-
-  def slice(self,h,init=0,end=-1):
-    if isinstance(h, torch.Tensor):
-      return h[:,init:end,:]
-    else:
-      return tuple(self.slice(v,init,end) for v in h)
-
-  def concat_hidden(self,h):
-    if isinstance(h, torch.Tensor):
-      return torch.cat(h,1)
-    else:
-      return tuple(torch.cat([x[i] for x in h] ,1) for i in range(len(h[0])))
-
-
-  def compute_loss(self,pred_w,gold_w,debug=0):
+  def compute_loss(self,pred_w,gold_w,train=True):
+    if train:
+      self.model.eval()
     total_loss = []
     batch_size = gold_w.shape[0]
 
@@ -99,6 +92,9 @@ class TrainerLemmatizer:
     loss = self.loss_function(pred_w,gold_w)       # [bs*W]
     loss = ((loss.view(batch_size,-1)*mask).sum(1) / sum_mask).sum()  # [1]
     
+    if train:
+      self.model.train()
+
     return loss
 
       
@@ -113,9 +109,9 @@ class TrainerLemmatizer:
     total_loss = 0
     for w_seq,gold_w in zip(batch,gold_output):
       hidden = self.repackage_hidden(hidden) # ([]
+      loss = self.compute_loss(pred_w, gold_w, debug)
       self.optimizer.zero_grad()
       pred_w,hidden = self.model.forward(w_seq, hidden)
-      loss = self.compute_loss(pred_w, gold_w, debug)
       loss.backward()
       self.optimizer.step()
       total_loss += loss.item()
@@ -136,21 +132,6 @@ class TrainerLemmatizer:
         loss = self.compute_loss(output, gold_w, debug)
         tloss += loss.item()
     return tloss
-
-  # def predict_batch(self,batch):
-  #   """ previous version, uses gold input to gerate 1-op shifted seq [WRONG]
-  #   """
-  #   self.model.eval()
-  #   batch_size = batch[0].shape[0]
-  #   hidden = self.flush_hidden(self.model.rnn_hidden)
-  #   hidden = self.slice(hidden,0,batch_size) #monotonic
-  #   preds = []
-  #   with torch.no_grad():
-  #     for w in batch:
-  #       hidden = self.repackage_hidden(hidden) # ([]
-  #       pred,hidden = self.model.predict(w,hidden)
-  #       preds.append(pred)
-  #   return preds
 
 
   def predict_batch(self,batch,start=False,score=False):

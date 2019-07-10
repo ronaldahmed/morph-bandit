@@ -31,19 +31,30 @@ class TrainerLemmatizer:
     self.args = args
     self.n_classes = num_classes
     self.model = model
-    self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
-    self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
     self.enable_gradient_clipping()
     self.cuda = to_cuda(args.gpu)
     self.writer = None
     self.scheduler = None
+    self.optimizer = None
+    self.loss_function = None
     self.stop_id = -1
     self.pad_id = PAD_ID
+
+    if   args.lem_optm == "adam":
+      self.optimizer = Adam(model.parameters(), lr=args.learning_rate)
+    elif args.lem_optm == "adadelta":
+      self.optimizer = Adadelta(model.parameters(), lr=args.learning_rate)
 
     if args.model_save_dir is not None:
         self.writer = SummaryWriter(os.path.join(args.model_save_dir, "logs"))
     if args.scheduler:
         self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', 0.1, 10, True)
+
+    self.init_loss_objective()
+
+  def init_loss_objective(self,):
+    self.loss_function = torch.nn.CrossEntropyLoss(reduction='none')
+
 
 
   def freeze_model(self):
@@ -81,6 +92,14 @@ class TrainerLemmatizer:
       return h[:,init:end,:]
     else:
       return tuple(self.slice(v,init,end) for v in h)
+
+  def repeat_horizontal(self,h,x):
+    # x: num horizontal tiles (row), 
+    cols = h.shape[1]
+    if isinstance(h, torch.Tensor):
+      return h.repeat(1,x).view(-1,cols)
+    else:
+      return tuple(self.repeat(v,x,y) for v in h)
 
   def concat_hidden(self,h):
     if isinstance(h, torch.Tensor):
