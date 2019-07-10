@@ -35,9 +35,9 @@ for tb in $(cut -f 2 -d " " $batch); do
 	fi
 
 	qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
-	-o models-anlz/$tb/log-"$exp_id".out \
-	-e models-anlz/$tb/log-"$exp_id".err \
-	wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $exp_id
+	-o models-anlz/$tb/log-"$exp".out \
+	-e models-anlz/$tb/log-"$exp".err \
+	wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $exp
 	
 	# bash wraps/run_analizer.sh $tb train $input_model $emb_file $beam_size 42 $tagger_mode $exp_id
 

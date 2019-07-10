@@ -7,7 +7,7 @@ emb_file=$4
 beam_size=$5
 seed=$6
 tagger_mode=$7
-exp_id=$9
+exp_id=$8
 
 echo $emb_file
 echo $seed
