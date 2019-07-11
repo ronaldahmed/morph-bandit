@@ -193,10 +193,10 @@ def apply_operations(init_form,operations,debug=False,ignore_start=True):
       if debug:
         print("\t",op_token,"|",curr_tok)
     except AssertionError as e:
-      print(e)
+      # print(e)
       return curr_tok,cnt
     except Exception as e:
-      print("Unexpected error:", e)
+      # print("Unexpected error:", e)
       return curr_tok,cnt
     cnt += 1
   #
