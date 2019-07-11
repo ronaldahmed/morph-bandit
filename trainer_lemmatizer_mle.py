@@ -4,7 +4,7 @@ import numpy as np
 from torch.nn import Module, Parameter, NLLLoss, LSTM
 from torch.nn.functional import log_softmax
 from tensorboardX import SummaryWriter
-from torch.optim import Adam
+from torch.optim import Adam, Adadelta
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from time import monotonic
 from utils import to_cuda, \
