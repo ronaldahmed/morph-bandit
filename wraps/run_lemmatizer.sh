@@ -4,6 +4,8 @@ tbname=$1
 mode=$2
 mdir=$3
 seed=$4
+loss=$5
+exp_id=$6
 
 cd /home/acosta/morph-bandit/
 conda activate morph
@@ -20,5 +22,7 @@ python3 run_lemmatizer.py --mode $mode \
 --dropout 0.19 \
 --model_save_dir $mdir \
 --scheduler \
+--lem_loss $loss \
+--exp_id $exp_id \
 --gpu
 

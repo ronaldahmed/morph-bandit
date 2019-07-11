@@ -6,7 +6,6 @@ from torch.optim import Adam
 from time import monotonic
 from my_flags import *
 from data_utils import *
-from utils import STOP_LABEL
 from model_analizer import Analizer
 from model_lemmatizer import Lemmatizer
 from trainer_analizer import TrainerAnalizer
@@ -49,11 +48,10 @@ def train(args):
     state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
   lemmatizer.load_state_dict(state_dict)
 
-  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)  
+  trainer_lem = TrainerLemmatizer(lemmatizer,loader,args)  
   trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
   
   trainer_lem.freeze_model()
-  trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
   # <-----------------
 
@@ -182,10 +180,9 @@ def train_simple(args):
     state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
   lemmatizer.load_state_dict(state_dict)
 
-  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_lem = TrainerLemmatizer(lemmatizer,loader,args)
   trainer_analizer = TrainerAnalizer(analizer,n_feats,args)
   trainer_lem.freeze_model()
-  trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
   # <-----------------
 
@@ -272,9 +269,8 @@ def test(args):
     state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
   lemmatizer.load_state_dict(state_dict)
 
-  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_lem = TrainerLemmatizer(lemmatizer,loader,args)
   trainer_lem.freeze_model()
-  trainer_lem.stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
   # load analizer
   if args.input_model is None:

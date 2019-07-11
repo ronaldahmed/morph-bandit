@@ -1,99 +1,164 @@
+import torch
+import numpy as np
 import torch.nn.functional as F
-from trainer_lemmatizer import TrainerLemmatizer
+from trainer_lemmatizer_mle import TrainerLemmatizerMLE
 from collections import defaultdict
+
+from utils import apply_operations, \
+                  get_action_components, \
+                  PAD_ID, \
+                  STOP_LABEL, \
+                  SPACE_LABEL
+
+from evaluate_2019_task2 import distance
 
 import pdb
 
+EPS = 1e-32
 
-
-class TrainerLemmatizer:
-  def __init__(self,model,num_classes,args):
-    super(TrainerLemmatizer,self).__init__(model,num_classes,args)
+class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
+  def __init__(self,model,loader,args):
+    super(TrainerLemmatizerMRT,self).__init__(model,loader,args)
   
   def init_loss_objective(self,):
     self.loss_function = None
 
     
-  def sample_action_space(self,input_w,pred_w,gold_w,hidden):
+  def sample_action_space(self,pred_w0,hidden,gold_seq_lprob):
     """
     Get sampled space S(a) for posterior approximation
     one S per w_0, batch_size S sets in total
-    - input_w: (w0 a1 a2) [bs x max_actions]
+    - pred_w0: (w0) [bs x op_vocab]
     - gold_w: (a1 a2 STOP) [bs x max_actions]
     - hidden: (c,st)
+    - gold_seq_lprob: log_prob of gold action sequence [bs x 1]
     """
     assert self.stop_id != -1
-    batch_size = gold_w.shape[0]
+    batch_size = pred_w0.shape[0]
+    s_size = self.args.sample_space_size
     
     # get prob of K sampled seqs
     with torch.no_grad():
-      curr_tok = input_w[:,0]
-      tiled_pred_w = []
-      
-      output,hidden = self.model.forward(curr_tok,hidden)
-      op_weights = output.view(batch_size,-1).div(self.args.temperature).exp()
-      lprob = log_softmax(op_weights,1).detach()
-      curr_tok = torch.multinomial(op_weights, self.args.sample_space_size).detach() # [bs,1]
-      curr_tok = self.model.repeat_horizontal(curr_tok,self.args.sample_space_size)
-      seq_log_prob = self.model.repeat_horizontal(lprob,self.args.sample_space_size)
+      gold_seq_lprob = gold_seq_lprob.squeeze().detach().cpu().numpy()
+
+      op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature).exp()
+      lprob = F.log_softmax(op_weights,1)
+      curr_tok = torch.multinomial(op_weights, s_size) # [bs,1]
+      seq_log_prob = lprob.gather(1,curr_tok)
+
+      curr_tok = curr_tok.view(-1,1)
+      seq_log_prob = seq_log_prob.view(-1,1)
+      tiled_pred_ids = [curr_tok.cpu().numpy()]
+      tiled_hidden = self.repeat_hidden(hidden,s_size)
       mask = (curr_tok!=self.stop_id)
 
-      tiled_hidden = self.model.repeat_horizontal(hidden,self.sample_space_size)
-
-      for i in range(self.args.max_ops):
-        output,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
-        logits = output.view(batch_size,-1)
+      for i in range(self.args.max_ops-1):
+        logits,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
         op_weights = logits.div(self.args.temperature).exp()
-        curr_tok = torch.multinomial(op_weights, 1).detach() # [bs,1]
+        curr_tok = torch.multinomial(op_weights, 1).view(-1,1) # [bs,1]
         lprob = F.log_softmax(op_weights,1).gather(1,curr_tok) # get prob of sampled ops
-        lprob *= mask
-        seq_log_prob += lprob.detach()
+        lprob *= mask.type(torch.float32)
+        seq_log_prob += lprob
         mask *= (curr_tok!=self.stop_id)
-        tiled_pred_w.append(curr_tok)
+        tiled_pred_ids.append(curr_tok.cpu().numpy())
       #
-      tiled_pred_w = torch.cat(tiled_pred_w,1).cpu().numpy()
+      tiled_pred_ids = np.hstack(tiled_pred_ids)
       seq_log_prob = seq_log_prob.view(-1).cpu().numpy()
-      stop_mask = (tiled_pred_w==self.stop_id).cumsum(1)==0
-      batch_lprob = torch.zeros([batch_size,1],dtype=torch.float32).detach()
-      
-      # get lprob of gold sequence in batch
-      npred_ops = pred_w.shape[1]
-      gold_seq_lprob,_ = F.log_softmax(pred_w,2).max(2) # check shape, should be [bs x 1]
-      gold_seq_lprob = gold_seq_lprob.squeeze().cpu().numpy()
-      sample_set_sum_lprob = torch.zeros([batch_size,1],dtype=torch.float32).detach() # log sum_{s in S} p(s|...)
+      stop_mask = (tiled_pred_ids==self.stop_id).cumsum(1)==0
+      sample_set_sum_lprob = self.cuda(torch.zeros([batch_size,1],dtype=torch.float32)).detach() # log sum_{s in S} p(s|...)
 
       # account for duplicate sampled sequences, keep the highest prob
       for i in range(batch_size):
-        samples = defaultdict(float)
-        for j in range(i*batch_size,(i+1)*batch_size + 1):
-          smp = tuple([x for x in tiled_pred_w[j, stop_mask[j,:]]])
+        samples = defaultdict(lambda: -1000000.0)
+        for j in range(i*s_size,(i+1)*s_size):
+          try:
+            smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
+          except:
+            pdb.set_trace()
           samples[smp] = max(samples[smp],seq_log_prob[j])
         # get log_probs of samples in set
-        s_lprobs = [x * self.alpha_q for x in samples.values()] + [self.alpha_q*gold_seq_lprob[i]]
-        s_lprobs = torch.FloatTensor(s_lprobs).detach()
+        s_lprobs = [x * self.args.alpha_q for x in samples.values()] + [self.args.alpha_q*gold_seq_lprob[i]]
+        s_lprobs = self.cuda(torch.FloatTensor(s_lprobs)).detach()
         sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
       #
     #
     return sample_set_sum_lprob
 
 
+  def normalized_distance(self,str1,str2):
+    """ from 0:max(len_s1,len_s2) -> [-1,1] """
+    return (2.0 * distance(str1,str2) / max(len(str1),len(str2))) - 1.0
 
-  def compute_loss(self,pred_w,gold_w,train=True):
-    if train:
-      self.model.eval()
-    total_loss = []
-    batch_size = gold_w.shape[0]
 
-    mask = (gold_w!=PAD_ID).float() # [bs,W]
-    sum_mask = mask.sum(1)
-    sum_mask[sum_mask==0] = 1
-    #gold_w = self.cuda(fixed_var(gold_w.view(-1))) # [bs*W], pred_w: [bs*w,n_classes]
-    gold_w = gold_w.view(-1)
-    loss = self.loss_function(pred_w,gold_w)       # [bs*W]
-    loss = ((loss.view(batch_size,-1)*mask).sum(1) / sum_mask).sum()  # [1]
+  def calc_delta(self,input_w0,pred_ids,gold_ids,):
+    """
+    Calculate loss function Delta = f(accuracy,edit_distance)
+    - input_w0: (w0) [bs x 1]
+    - pred_ids: predicted action ids [bs x max_ops]
+    - gold_ids: gold/true action ids [bs x max_ops]
+    """
+    batch_size = input_w0.shape[0]
+    with torch.no_grad():
+      # input_w0 = input_w0.view(-1).cpu().numpy()
+      # pred_ids = pred_ids.cpu().numpy()
+      # gold_ids = gold_ids.cpu().numpy()
+
+      stop_mask = (pred_ids==self.stop_id).cumsum(1)==0
+      pad_mask = (gold_ids==self.pad_id).cumsum(1)==0
+
+      w0 = [self.loader.vocab_oplabel.get_label_name(x) for x in input_w0]
+      w0 = [get_action_components(x)[2] for x in w0]
+      delta = self.cuda(torch.zeros([batch_size,1],dtype=torch.float32)).detach()
+
+      for i in range(batch_size):
+        p_op = [self.loader.vocab_oplabel.get_label_name(x) \
+                          for x in pred_ids[i,stop_mask[i,:]] if x!=self.pad_id]
+        g_op = [self.loader.vocab_oplabel.get_label_name(x) \
+                          for x in gold_ids[i,pad_mask[i,:]]]
+        pred_lem,p_nvalid_ops = apply_operations(w0[i],p_op,ignore_start=False)
+        gold_lem,g_nvalid_ops = apply_operations(w0[i],g_op,ignore_start=False)
+
+        if g_nvalid_ops!=len(g_op)-1: # doesn't count STOP op
+          pdb.set_trace()
+        delta[i,0] = self.normalized_distance(pred_lem,gold_lem) - float(pred_lem==gold_lem)
+      #
+      # delta = torch.log(delta)
+      if any(torch.isnan(delta)):
+        pdb.set_trace()
+        print("-->")
+
+    return delta
+
+
+  def compute_loss(self,input_w0,pred_w,gold_w,hidden):
+    """ Implements Minimum Risk Loss
+    """
+    batch_size,max_ops = pred_w.shape[:2]
+    # get lprob of gold sequence in batch
+    pred_logp = F.log_softmax(pred_w,2)
+    pred_seq_lprob,pred_seq_ids = pred_logp.max(2) # [bs x max_ops]
+    stop_mask = pred_seq_ids==self.stop_id
+    stop_pos = max_ops - 1 - stop_mask.flip([1]).argmax(1)
+    stop_prob = (stop_mask.sum(1,keepdim=True)>0).type(torch.float32) * pred_seq_lprob.gather(1,stop_pos.view(-1,1))
     
-    if train:
-      self.model.train()
+    stop_mask = (stop_mask.cumsum(1)==0).type(torch.float32) # 111(valid)000(after stop)
+    pred_seq_lprob = (pred_seq_lprob*stop_mask).sum(1).view(-1,1)
+    pred_seq_lprob += stop_prob
+
+    gold_seq_lprob = pred_logp.gather(2,gold_w.view(batch_size,-1,1)).squeeze()
+    pad_mask = ((gold_w==self.pad_id).cumsum(1)==0).type(torch.float32)
+    gold_seq_lprob = (gold_seq_lprob*pad_mask).sum(1).view(-1,1)
+
+    # sum of p(a'|...) over sampled action 
+    sample_set_lprob = self.sample_action_space(pred_w[:,0,:].squeeze(),hidden,gold_seq_lprob)
+    # log(Delta(y,y^))
+    delta = self.calc_delta(input_w0,pred_seq_ids,gold_w)
+    # log(Q(y|...))
+    log_q_distr = self.args.alpha_q * pred_seq_lprob - sample_set_lprob # the propag anchor is lp(gold)
+
+    loss = (log_q_distr.exp() * delta).sum()
+    
+    if torch.isnan(loss): pdb.set_trace()
 
     return loss
 
@@ -108,10 +173,22 @@ class TrainerLemmatizer:
     hidden = self.slice(hidden,0,batch_size)
     total_loss = 0
     for w_seq,gold_w in zip(batch,gold_output):
+      nops = w_seq.shape[1]
       hidden = self.repackage_hidden(hidden) # ([]
-      loss = self.compute_loss(pred_w, gold_w, debug)
       self.optimizer.zero_grad()
-      pred_w,hidden = self.model.forward(w_seq, hidden)
+      # un pasito pa qui
+      pred_w0,hidden0 = self.model.forward(w_seq[:,0].view(-1,1), hidden)
+      pred_w0 = pred_w0.view(batch_size,-1,self.n_classes)
+      # un pasito pa lla
+      pred_w = []
+      if nops==1:
+        pred_w = pred_w0
+        hidden = hidden0
+      else:
+        pred_w1n,hidden = self.model.forward(w_seq[:,1:].view(batch_size,-1), hidden0)
+        pred_w1n = pred_w1n.view(batch_size,-1,self.n_classes)
+        pred_w = torch.cat([pred_w0,pred_w1n],1)
+      loss = self.compute_loss(w_seq[:,0].view(-1,1), pred_w, gold_w, hidden0)
       loss.backward()
       self.optimizer.step()
       total_loss += loss.item()
@@ -134,168 +211,6 @@ class TrainerLemmatizer:
     return tloss
 
 
-  def predict_batch(self,batch,start=False,score=False):
-    """ redirects to decoding strategy implementations
-    """
-    if self.args.beam_size == -1:
-      return self.greedy_decoder(batch,start,score)
-    else:
-      return self.beam_search_decoder(batch,self.args.beam_size,start=start)
-
-
-
-  def greedy_decoder(self,batch,start=False,score=False):
-    """ Start with initial form and sample from LM until 
-        reaching STOP or MAX_OPS
-    """
-    self.model.eval()
-    batch_size = batch[0].shape[0]
-    hidden = self.flush_hidden(self.model.rnn_hidden)
-    hidden = self.slice(hidden,0,batch_size)
-    pred_batch = []
-    pred_score = []
-    with torch.no_grad():
-      for w in batch:
-        hidden = self.repackage_hidden(hidden) # ([]
-        curr_tok = w
-        pred_w = []
-        pred_sc = []
-        if start: pred_w.append(w)
-        for i in range(self.args.max_ops):
-          output,hidden = self.model.forward(curr_tok,hidden)
-          logits = output.view(batch_size,-1)
-          op_weights = logits.div(self.args.temperature).exp()
-          # print("--> sum w weights: ",torch.sum(op_weights).data)
-          # if torch.sum(op_weights).data < (1e-12)*op_weights.shape[0]*op_weights.shape[1]:
-          #   print("-> found zeroes!!")
-          #   pred_w.append(fixed_var( self.cuda(torch.LongTensor(np.zeros([batch_size,1]))) ) )
-          #   break
-          op_idx = torch.multinomial(op_weights, 1) # [bs,1]
-          curr_tok = op_idx.detach()
-          pred_w.append( op_idx )
-
-          if score:
-            opw = torch.nn.functional.softmax(logits,1).cpu().numpy() # [bs x n_ops]
-            op_idx_ = op_idx.cpu().numpy()
-            sm_distr = np.zeros([batch_size,1])
-            for i in range(batch_size):
-              sm_distr[i,0] = opw[i,op_idx_[i,0]]
-            pred_sc.append(sm_distr)
-          #
-        #
-        pred_w = torch.cat(pred_w,1)
-        pred_w = pred_w.cpu().numpy()
-        pred_batch.append(pred_w)
-        if score:
-          pred_sc = np.hstack(pred_sc)
-          pred_score.append(pred_sc)
-      #
-
-    if score:
-      return pred_batch,pred_score
-    return pred_batch
-
-
-  def relative_prunner(self,candidates):
-    """ candidates must be rev-sorted by log_prob """
-    thr = np.log(self.args.rel_prunning) + candidates[0]._lprob
-    filtered = [x for x in candidates if x._lprob >= thr ]
-    if len(filtered)==0:
-      pdb.set_trace()
-
-    return filtered
-
-
-  def beam_search_decoder(self,sent_batch,beam_size=5,start=False):
-    """ Implements beam search decoding
-      sent_batch: Sx[bs x 1]
-    """
-    self.model.eval()
-    batch_size = sent_batch[0].shape[0]
-    hidden = self.flush_hidden(self.model.rnn_hidden)
-    pred_batch = []
-    cnt = 0
-    with torch.no_grad():
-      for w in sent_batch:
-        hidden = self.repackage_hidden(hidden)
-        hidden_next = []
-        op_batch = []
-        for i in range(batch_size):
-          c_0 = self.slice(hidden,i,i+1)
-          w_0 = w[i,:]
-          node_0 = BeamNode(c_0,[w_0],0)
-          A_prev = [node_0]
-          A_next = []
-
-          all_finished = False
-          while not all_finished:
-            all_finished = True
-            n_to_exp = len([x for x in A_prev if not x._finished])
-            if n_to_exp==0:
-              A_next = A_prev
-              break
-
-            A_prev = [x for x in A_prev if not x._finished]
-            # make a synthetic batch made out of all nodes
-            w_t_1 = [node._op_list[-1].view(1,1) for node in A_prev]
-            c_t_1 = [node._c for node in A_prev]
-            
-            all_finished = False
-            c_t_1 = self.concat_hidden(c_t_1)
-            w_t_1 = torch.cat(w_t_1,0)
-
-            logit_t,c_t = self.model.forward(w_t_1,c_t_1)
-            lpd_w_t = log_softmax(logit_t,1)
-            scores,posts = torch.topk(lpd_w_t,beam_size,1)
-
-            scores = scores.cpu().numpy()
-            posts = posts.cpu().numpy()
-
-            for j in range(n_to_exp):
-              c_t_j = self.slice(c_t,j,j+1)
-              node = A_prev[j]
-              for k in range(beam_size):
-                lp_w_t = scores[j,k]
-                w_t = posts[j,k]
-                op_list = node._op_list + [self.cuda(torch.LongTensor([w_t]))]
-                cand_node = BeamNode(c_t_j,op_list,node._lprob + lp_w_t)
-                if any([w_t==self.stop_id,
-                        w_t==self.pad_id,
-                        len(cand_node._op_list)>=self.args.max_ops]) :
-                  cand_node._finished = True
-                A_next.append(cand_node)
-            #
-            
-            A_next.sort(reverse=True,key=lambda x:x._lprob)
-            A_prev = A_next[:beam_size]
-            if self.args.rel_prunning > 0.0:
-              A_prev = self.relative_prunner(A_prev)
-            A_next = []
-            # print([len(x._op_list) for x in A_prev])
-          #END-WHILE
-          
-          optm_op_seq = torch.cat(A_prev[0]._op_list,0).cpu().numpy().tolist()
-          hidden_next.append(A_prev[0]._c)
-          op_batch.append(optm_op_seq)
-        #END-FOR-BATCH
-        max_op_len = max([len(x) for x in op_batch])
-        for j in range(batch_size):
-          temp = np.array(op_batch[j] + [self.pad_id]*(max_op_len - len(op_batch[j])))
-          op_batch[j] = np.reshape(temp,[1,-1])
-        op_batch = np.vstack(op_batch)
-        if not start:
-          op_batch = op_batch[:,1:]
-
-        hidden = self.concat_hidden(hidden_next)
-        pred_batch.append(op_batch)
-
-        # if cnt % 10 == 0:
-        #   print("->",cnt)
-        cnt += 1
-      #END-FOR-W_S
-    #
-    
-    return pred_batch
 
 
   def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,

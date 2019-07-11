@@ -51,6 +51,7 @@ def lemmatizer_arg_parser():
     p = ArgumentParser(add_help=False)
     p.add_argument("--dump_ops", help="Includes predicted operations in the MISC column of the conllu output file", action='store_true')
     p.add_argument("--lem_optm", help="Optmizer to use [adam,adadelta]", type=str, default="adam")
+    p.add_argument("--lem_loss", help="Loss function [mle,mrt]", type=str, default="mle")
     p.add_argument("-w", "--word_dropout", help="Use word dropout", type=float, default=0)
     p.add_argument("--mlp_size", help="Input embeddings size", type=int, default=100)
     # MRT

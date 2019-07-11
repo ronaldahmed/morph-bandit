@@ -1,4 +1,4 @@
-import os
+import os,sys
 import pickle
 import glob as gb
 import re
@@ -97,10 +97,20 @@ class MetricsWrap:
     self.msd_f1 = msd_f1
 
 
+def get_action_components(op_token):
+  match = oplabel_pat.match(op_token)
+  if match==None:
+    print("Operation token with bad format!!")
+    print("::: ",op_token," :::")
+    pdb.set_trace()
+  name = match.group("name")
+  pos = match.group("pos")
+  segment = match.group("seg")
+  return name,pos,segment
 
 ###############################################################################
 
-def apply_operations(init_form,operations,debug=False):
+def apply_operations(init_form,operations,debug=False,ignore_start=True):
   """ Apply sequence of operations on initial form """
   curr_tok = init_form.lower()
   if debug:
@@ -110,21 +120,16 @@ def apply_operations(init_form,operations,debug=False):
   for i,op_token in enumerate(operations):
     if op_token == UNK_TOKEN:
       return curr_tok,cnt
-    match = oplabel_pat.match(op_token)
-    if match==None:
-      print("Operation token with bad format!!")
-      print("::: ",op_token," :::")
-      pdb.set_trace()
-    name = match.group("name")
-    pos = match.group("pos")
-    segment = match.group("seg")
-    if name==START:
-      continue
+    name,pos,segment = get_action_components(op_token)
+
     if name==STOP:
       break
-
     try:
-      if   pos == PREF_POS:
+      if   pos==START:
+        if ignore_start: continue
+        else:
+          curr_tok = segment
+      elif pos == PREF_POS:
         if   name==INS:
           curr_tok = segment + curr_tok
         elif name==DEL:
@@ -159,7 +164,7 @@ def apply_operations(init_form,operations,debug=False):
           print("bad pos:",segment)
           pdb.set_trace()
 
-        assert pos>0 and pos<len(curr_tok)-1
+        assert pos>0 and pos<len(curr_tok)
 
         if   name==INS:
           curr_tok = curr_tok[:pos] + segment + curr_tok[pos:]
@@ -174,7 +179,11 @@ def apply_operations(init_form,operations,debug=False):
       #
       if debug:
         print("\t",op_token,"|",curr_tok)
-    except AssertionError:
+    except AssertionError as e:
+      print(e)
+      return curr_tok,cnt
+    except Exception as e:
+      print("Unexpected error:", e)
       return curr_tok,cnt
     cnt += 1
   #
