@@ -118,8 +118,12 @@ def apply_operations(init_form,operations,debug=False,ignore_start=True):
 
   cnt = 0
   for i,op_token in enumerate(operations):
-    if op_token == UNK_TOKEN:
+    if op_token==UNK_TOKEN:
       return curr_tok,cnt
+    # ignore PAD
+    if op_token==PAD_TOKEN:
+      continue
+
     name,pos,segment = get_action_components(op_token)
 
     if name==STOP:
