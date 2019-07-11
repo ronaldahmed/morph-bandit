@@ -103,7 +103,7 @@ def get_action_components(op_token):
     print("Operation token with bad format!!")
     print(":::"+op_token+":::")
     # pdb.set_trace()
-    raise
+    raise Exception
   name = match.group("name")
   pos = match.group("pos")
   segment = match.group("seg")
