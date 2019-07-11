@@ -1,8 +1,39 @@
 #!/bin/bash
 
-batch=$1
-exp=$2
+set -e
+
+batch="data/tbnames-thesis"
+exp="l1.mle"
 loss="mrt"
+loss="adam"
+
+while [ $# -gt 1 ]
+do
+key="$1"
+case $key in
+    -b|--task)
+    batch="$2"
+    shift # single-task
+    ;;
+    -e|--exp)
+    exp="$2"
+    shift # gpu 
+    ;;
+    -l|--loss)
+    loss="$2"
+    shift # pretrained model
+    ;;
+    -o|--optm)
+    optm="$2"
+    shift # pretrained model
+    ;;
+    *)
+            # unknown option
+    ;;
+esac
+shift
+done 
+
 
 if [ ${exp: -3} == "mle" ]; then
 	loss="mle"

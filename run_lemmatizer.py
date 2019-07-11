@@ -44,8 +44,6 @@ def train(args):
       loss = trainer.train_batch(sents, gold, debug=False)
       train_loss += loss
 
-      print("->",loss)
-
       if i % debug_print == (debug_print - 1):
         trainer.update_summary(train_log_step_cnt,train_loss=loss)
         print(".", end="", flush=True)

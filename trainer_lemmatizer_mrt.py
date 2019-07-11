@@ -119,8 +119,8 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
         pred_lem,p_nvalid_ops = apply_operations(w0[i],p_op,ignore_start=False)
         gold_lem,g_nvalid_ops = apply_operations(w0[i],g_op,ignore_start=False)
 
-        if g_nvalid_ops!=len(g_op)-1: # doesn't count STOP op
-          pdb.set_trace()
+        # if g_nvalid_ops!=len(g_op)-1: # doesn't count STOP op
+        #   pdb.set_trace()
         delta[i,0] = self.normalized_distance(pred_lem,gold_lem) - float(pred_lem==gold_lem)
       #
       # delta = torch.log(delta)
