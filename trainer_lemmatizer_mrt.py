@@ -106,8 +106,8 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
       stop_mask = (pred_ids==self.stop_id).cumsum(1)==0
       pad_mask = (gold_ids==self.pad_id).cumsum(1)==0
 
-      w0 = [self.loader.vocab_oplabel.get_label_name(x) for x in input_w0]
-      w0 = [get_action_components(x)[2] for x in w0]
+      w0 = [self.loader.vocab_oplabel.get_label_name(x) for x in input_w0 if x!=self.pad_id]
+      w0 = [get_action_components(x).segment for x in w0]
       delta = self.cuda(torch.zeros([batch_size,1],dtype=torch.float32)).detach()
 
       for i in range(batch_size):

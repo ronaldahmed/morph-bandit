@@ -46,6 +46,8 @@ iso_mapper = {
 
 oplabel_pat = re.compile("(?P<name>[a-zA-Z]+)[.](?P<pos>[_]?[0-9A-Z]+[_]?)-(?P<seg>.+)",re.UNICODE)
 
+ActionComponents = namedtuple("ActionComponents", ["name","pos","segment"])
+
 # Sopa sharing params
 SHARED_SL_PARAM_PER_STATE_PER_PATTERN = 1
 SHARED_SL_SINGLE_PARAM = 2
@@ -103,11 +105,11 @@ def get_action_components(op_token):
     print("Operation token with bad format!!")
     print(":::"+op_token+":::")
     # pdb.set_trace()
-    return None,None,None
+    return ActionComponents(None,None,None)
   name = match.group("name")
   pos = match.group("pos")
   segment = match.group("seg")
-  return name,pos,segment
+  return ActionComponents(name,pos,segment)
 
 ###############################################################################
 
@@ -125,7 +127,10 @@ def apply_operations(init_form,operations,debug=False,ignore_start=True):
     if op_token==PAD_TOKEN:
       continue
   
-    name,pos,segment = get_action_components(op_token)
+    action_comps = get_action_components(op_token)
+    name = action_comps.name
+    pos  = action_comps.pos
+    segment = action_comps.segment
     if name==None:
       pdb.set_trace()
 
