@@ -101,7 +101,7 @@ def get_action_components(op_token):
   match = oplabel_pat.match(op_token)
   if match==None:
     print("Operation token with bad format!!")
-    print("::: ",op_token," :::")
+    print(":::"+op_token+"_:::")
     pdb.set_trace()
   name = match.group("name")
   pos = match.group("pos")
