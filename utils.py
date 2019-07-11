@@ -103,7 +103,7 @@ def get_action_components(op_token):
     print("Operation token with bad format!!")
     print(":::"+op_token+":::")
     # pdb.set_trace()
-    raise Exception
+    return None,None,None
   name = match.group("name")
   pos = match.group("pos")
   segment = match.group("seg")
@@ -124,10 +124,9 @@ def apply_operations(init_form,operations,debug=False,ignore_start=True):
     # ignore PAD
     if op_token==PAD_TOKEN:
       continue
-
-    try:
-      name,pos,segment = get_action_components(op_token)
-    except:
+  
+    name,pos,segment = get_action_components(op_token)
+    if name==None:
       pdb.set_trace()
 
     if name==STOP:
