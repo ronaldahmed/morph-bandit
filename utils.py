@@ -103,8 +103,8 @@ class MetricsWrap:
 def get_action_components(op_token):
   match = oplabel_pat.match(op_token)
   if match==None:
-    print("Operation token with bad format!!")
-    print(":::"+op_token+":::")
+    # print("Operation token with bad format!!")
+    # print(":::"+op_token+":::")
     # pdb.set_trace()
     return ActionComponents(None,None,None)
   name = match.group("name")
