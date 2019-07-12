@@ -206,148 +206,18 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     with torch.no_grad():
       for w_seq,gold_w in zip(batch,gold_output):
         hidden = self.repackage_hidden(hidden) # ([]
-        output,hidden = self.model.forward(w_seq, hidden)
-        loss = self.compute_loss(output, gold_w, debug)
+        pred_w0,hidden0 = self.model.forward(w_seq[:,0].view(-1,1), hidden)
+        pred_w0 = pred_w0.view(batch_size,-1,self.n_classes)
+        # un pasito pa lla
+        pred_w = []
+        if nops==1:
+          pred_w = pred_w0
+          hidden = hidden0
+        else:
+          pred_w1n,hidden = self.model.forward(w_seq[:,1:].view(batch_size,-1), hidden0)
+          pred_w1n = pred_w1n.view(batch_size,-1,self.n_classes)
+          pred_w = torch.cat([pred_w0,pred_w1n],1)
+        loss = self.compute_loss(w_seq[:,0].view(-1,1), pred_w, gold_w, hidden0)
         tloss += loss.item()
     return tloss
-
-
-
-
-  def eval_metrics_batch(self,batch,data_vocabs,split='train',max_data=-1,
-                         covered=False, dump_ops=False,
-                         output_name=None):
-    """ eval lemmatizer using official script """
-    cnt = 0
-    stop_id = data_vocabs.vocab_oplabel.get_label_id(STOP_LABEL)
-    self.stop_id = stop_id
-    forms_to_dump = []
-    pred_lem_to_dump = []
-    gold_lem_to_dump = []
-    ops_to_dump = []
-
-    for op_seqs,forms,lemmas in batch.get_eval_batch():
-      predicted = self.predict_batch(op_seqs)
-      predicted = batch.restore_batch(predicted) # bs x [ SxW ]
-
-      forms_to_dump.extend(forms)
-      gold_lem_to_dump.extend(lemmas)
-      # get op labels & apply oracle 
-      for i,sent in enumerate(predicted):
-        sent = predicted[i]
-        op_sent = []
-        pred_lemmas = []
-        len_sent = len(forms[i]) # forms and lemmas are not sent-padded
-        for j in range(len_sent):
-          w_op_seq = sent[j]
-          form_str = forms[i][j]
-          # original not likely to have a cap S in the middle of the tok
-          #   aaaaSbbbb
-          # if S is only cap and is in the middle --> replace
-          # else                                   --> leave orig
-          
-          # k = form_str.find(SPACE_LABEL)
-          # if k!=-1:
-          #   hypot = form_str[:k] + SPACE_LABEL.lower() + form_str[k+1:]
-          #   if form_str.lower() == hypot and k!=0 and k!=len(form_str)-1:
-          #     form_str = form_str.replace(SPACE_LABEL," ")
-
-          if sum(w_op_seq)==0:
-            pred_lemmas.append(form_str)
-            continue
-          if stop_id in w_op_seq:
-            _id = np.where(np.array(w_op_seq)==stop_id)[0][0]
-            w_op_seq = w_op_seq[:_id+1]
-          optokens = [data_vocabs.vocab_oplabel.get_label_name(x) \
-                        for x in w_op_seq if x!=PAD_ID]
-          pred_lem,n_valid_ops = apply_operations(form_str,optokens)
-          # pred_lem = pred_lem.replace(SPACE_LABEL," ") # <-- this doesn't have any effect
-          pred_lemmas.append(pred_lem)
-          if dump_ops:
-            op_sent.append(" ".join([x for x in optokens[:n_valid_ops] if not x.startswith("STOP") and not x.startswith("START")]) )
-        #
-
-        if len(pred_lemmas)==0:
-          pdb.set_trace()
-        pred_lem_to_dump.append(pred_lemmas)
-        ops_to_dump.append(op_sent)
-      #
-
-      cnt += op_seqs[0].shape[0]
-      if max_data!=-1 and cnt > max_data:
-        break
-    #
-    filename = ""
-    if output_name!=None:
-      filename = output_name
-    else:
-      if   split=='train':
-        filename = self.args.train_file
-      elif split=='dev':
-        filename = self.args.dev_file
-      elif split=='test':
-        filename = self.args.test_file
-      filename += ".lem"
-    
-    #pdb.set_trace()
-
-    ops_to_dump = ops_to_dump if dump_ops else None
-    dump_conllu(filename + ".conllu.gold",forms=forms_to_dump,lemmas=gold_lem_to_dump)
-    dump_conllu(filename + ".conllu.pred",forms=forms_to_dump,lemmas=pred_lem_to_dump,ops=ops_to_dump)
-
-    if covered:
-      return -1,-1
-
-    else:
-      pobj = sp.run(["python3","2019/evaluation/evaluate_2019_task2.py",
-                     "--reference", filename + ".conllu.gold",
-                     "--output"   , filename + ".conllu.pred",
-                    ], capture_output=True)
-      output_res = pobj.stdout.decode().strip("\n").strip(" ").split("\t")  
-      output_res = [float(x) for x in output_res]
-      return output_res[:2]
-
-
-  def save_model(self,epoch):
-    if self.args.model_save_dir is not None:
-      if not os.path.exists(self.args.model_save_dir):
-        os.makedirs(self.args.model_save_dir)
-      model_save_file = os.path.join(self.args.model_save_dir, "{}_{}.pth".format("segm", epoch))
-      print("Saving model to", model_save_file)
-      torch.save(self.model.state_dict(), model_save_file)
-
-
-  def update_summary(self,
-                     step,
-                     train_loss,
-                     dev_loss=None,
-                     train_acc=None,
-                     dev_acc=None,
-                     train_dist=None,
-                     dev_dist=None
-                      ):
-    if self.writer is not None:
-      for name, param in self.model.named_parameters():
-        self.writer.add_scalar("parameter_mean/" + name,
-                          param.data.mean(),
-                          step)
-        self.writer.add_scalar("parameter_std/" + name, param.data.std(), step)
-        if param.grad is not None:
-            self.writer.add_scalar("gradient_mean/" + name,
-                              param.grad.data.mean(),
-                              step)
-            self.writer.add_scalar("gradient_std/" + name,
-                              param.grad.data.std(),
-                              step)
-
-      for var,name in zip([train_loss,dev_loss,train_acc,dev_acc,train_dist,dev_dist],
-                          ["loss/loss_train","loss/loss_dev",
-                          "acc/train_acc","acc/dev_acc","dist/train_dist","dist/dev_dist"]):
-        #if isinstance(dev_loss, torch.Tensor):
-        if var != None:
-          self.writer.add_scalar(name, var, step)
-    #
-
-
-
 

@@ -78,6 +78,21 @@ def morph_analizer_arg_parser():
     return p
 
 
+def multiling_arg_parser():
+    """ CLI args related to training models. """
+    p = ArgumentParser(add_help=False)
+    p.add_argument("--dump_ops", help="Includes predicted operations in the MISC column of the conllu output file", action='store_true')
+    p.add_argument("--lem_optm", help="Optmizer to use [adam,adadelta]", type=str, default="adam")
+    p.add_argument("--lem_loss", help="Loss function [mle,mrt]", type=str, default="mle")
+    p.add_argument("-w", "--word_dropout", help="Use word dropout", type=float, default=0)
+    p.add_argument("--mlp_size", help="Input embeddings size", type=int, default=100)
+    # MRT
+    p.add_argument("--sample_space_size", help="Sampled space size for MRT", type=int, default=100)
+    p.add_argument("--alpha_q", "-alpha_q", help="Sharpness param of Q (action prob dist over sampled space)", type=float, default=1.0)
+
+    return p
+
+
 def sopamlp_arg_parser():
     """ CLI args related to the MLP module """
     p = ArgumentParser(add_help=False)
