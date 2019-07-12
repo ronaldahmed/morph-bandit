@@ -14,6 +14,7 @@ sample_size="10"
 batch_size=128
 learning_rate="0.00069"
 dropout="0.19"
+input_model="-"
 
 while [ $# -gt 1 ]
 do
@@ -63,6 +64,10 @@ case $key in
     dropout="$2"
     shift # pretrained model
     ;;
+    -ilem|--ilem)
+    input_model="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
@@ -78,6 +83,7 @@ CUDA_LAUNCH_BLOCKING=1 python3 run_lemmatizer.py --mode $mode \
 --seed $seed \
 --train_file data/$tbname/train \
 --dev_file data/$tbname/dev \
+--input_model $input_model \
 --epochs 20 \
 --batch_size $batch_size \
 --mlp_size 100 \

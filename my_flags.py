@@ -29,7 +29,7 @@ def general_arg_parser():
     p.add_argument("--embedding_txt", help="Pretrained op-token embedding file [txt format]", type=str, default=None)
     p.add_argument("--embedding_pth", help="Pretrained op-token embedding file [pth format]", type=str, default=None)
     p.add_argument("--pretrained_form_emb", help="Pretrained word forms embedding file", type=str, default=None)
-    p.add_argument("--input_model", help="Model name to load", type=str, default=None)
+    p.add_argument("--input_model", help="Model name to load", type=str, default="-")
     p.add_argument("--model_save_dir", help="where to save the trained models and logs", type=str)
     
     p.add_argument("--dropout", help="Use dropout", type=float, default=0)

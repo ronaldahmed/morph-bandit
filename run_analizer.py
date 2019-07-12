@@ -39,7 +39,7 @@ def train(args):
   analizer = Analizer(args,n_feats)
   
   # load lemmatizer
-  if args.input_lem_model is None:
+  if args.input_lem_model == "-":
     print("Please specify lemmatizer model to load!")
     return
   if args.gpu:
@@ -171,7 +171,7 @@ def train_simple(args):
   analizer = Analizer(args,n_feats)
 
   # load lemmatizer
-  if args.input_lem_model is None:
+  if args.input_lem_model == "-":
     print("Please specify lemmatizer model to load!")
     return
   if args.gpu:
@@ -260,7 +260,7 @@ def test(args):
   analizer = Analizer(args,n_feats)
 
   # load lemmatizer
-  if args.input_lem_model is None:
+  if args.input_lem_model == "-":
     print("Please specify lemmatizer model to load!")
     return
   if args.gpu:

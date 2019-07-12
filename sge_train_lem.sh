@@ -8,6 +8,7 @@ loss="mrt" # "-"
 optm="adam"
 alpha_q="0.1"
 sample_size="10"
+batch_size="10" # 128 for MLE
 
 while [ $# -gt 1 ]
 do
@@ -56,13 +57,16 @@ fi
 for tb in $(cut -f 2 -d " " $batch); do
 	echo $tb
     outdir=""
+	input_model="-"
     if [ $loss == "mle" ];then
         outdir=models-segm/$tb
-    else
+    elif [ $loss == "mrt" ]
         outdir=models-segm/$tb/"$exp"_optm-"$optm"_alpha-"$alpha_q"_sample-"$sample_size"
+        op_ep=$(tail -1 models-segm/$tb/log.out | cut -f 1)
+		input_model=models-segm/$tb/segm_$op_ep.pth
     fi
 	mkdir -p $outdir
-	
+
     # 'gpu-troja.q'
     # bash \
 	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=8G,mem_free=8G,act_mem_free=8G,h_data=12G -p -1 \
@@ -71,6 +75,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	wraps/run_lemmatizer.sh \
     -tb $tb -m train --outdir $outdir --exp $exp \
     --loss $loss -optm $optm -a $alpha_q -s $sample_size \
-    -bs 20 -lr 0.0001 -dp 0 
+    -bs $batch_size -lr 0.0001 -dp 0 -ilem $input_model
 
 done

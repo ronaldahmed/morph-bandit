@@ -1,5 +1,5 @@
 from data_utils import DataLoaderAnalizer
-from utils import oplabel_pat, map_ud_folders \
+from utils import oplabel_pat, uploadObject \
                   to_cuda, fixed_var, \
                   PAD_ID, UNK_TOKEN, PAD_TOKEN, EOS, SOS
 import json
@@ -13,17 +13,30 @@ def load_set_conf(tbset):
   assert tbset in conf
   return conf[tbset]
 
+def loader_from_pickle(args):
+  filename = "data/%s-%s.loader.pickle" % (args.src_set,args.tgt)
+  if os.path.exists(filename):
+    return uploadObject(filename)
+  else:
+    return DataLoaderMLing(args)
+    
 
-class DataLoaderMLing(DataLoaderAnalizer):
+class DataLoaderMLing(object):
   def __init__(self,args):
-    super(DataLoaderMLing,self).__init__(args)
     special_tokens = [PAD_TOKEN,UNK_TOKEN]
     self.vocab_oplabel = LabelDictionary(label_names=special_tokens)
     self.vocab_feat_bundles = LabelDictionary(label_names=special_tokens)
     self.vocab_feats = LabelDictionary(label_names=special_tokens+[SOS,EOS])
+    self.vocab_lemmas = LabelDictionary()
+    self.vocab_forms = LabelDictionary()
     self.src_tbs = load_set_conf(args.src_set)
     self.tgt_tb = args.tgt
 
+  def get_vocab_size(self,):
+    return len(self.vocab_oplabel)
+
+  def get_feat_vocab_size(self,):
+    return len(self.vocab_feats)
 
   def vocabs_input_mode_toggle(self,fill_vocab=False):
     self.vocab_oplabel._add = fill_vocab
@@ -31,45 +44,51 @@ class DataLoaderMLing(DataLoaderAnalizer):
     self.vocab_feats._add = fill_vocab
 
 
-  def read_action_file(self,tbname, split,fill_vocab=False):  
+  def read_action_file(self,tbname,split,fill_vocab=False):  
     self.vocabs_input_mode_toggle(fill_vocab)
 
     lang = tbname[:2]
+    lid = lang + "_"
     filename = ACTION_FILE_TEMPLATE % (tbname,split)
-    sents,labels,lemmas,forms = [],[],[],[]
-    sent,label,lem_sent,form_sent = [],[],[],[]
+    sample = {
+      "forms" : [],
+      "lemmas": [],
+      "bundle_feat": [],
+      "fine_feat": [],
+      "actions":[],
+    }
+    data = []
     for line in open(filename,'r'):
       line = line.strip('\n')
       if line=='':
-        sents.append(sent)
-        labels.append(label)
-        forms.append(form_sent)
-        lemmas.append(lem_sent)
-        sent = []
-        label = []
-        lem_sent = []
-        form_sent = []
+        data.append(sample)
+        sample = {
+          "forms" : [],
+          "lemmas": [],
+          "bundle_feat": [],
+          "fine_feat": [],
+          "actions":[],
+        }   
         continue
-      # w,lem,feats,ops = line.split("\t")
-      # op_seq = ops.split(" ")
       comps = line.split("\t")
       w,lem,feats = comps[:3]
-      op_ids = [self.vocab_oplabel.add(op) for op in comps[3:]]
+      op_ids = [self.vocab_oplabel.add(lid + op) for op in comps[3:]]
+      w = lid + w
+      lem = lid + lem
+      sos = self.vocab_feats.get_label_id(SOS)
+      eos = self.vocab_feats.get_label_id(EOS)
       
-      sent.append(op_ids)
-      # lem_sent.append(self.vocab_lemmas.get_label_id(lem))
-      # form_sent.append(self.vocab_forms.get_label_id(w))
-      lem_sent.append(lem)
-      form_sent.append(w)
-      if self.args.tagger_mode=="bundle":
-        label.append(self.vocab_feats.get_label_id(feats))
-      else:
-        sos = self.vocab_feats.get_label_id(SOS)
-        eos = self.vocab_feats.get_label_id(EOS)
-        label.append([sos] + [self.vocab_feats.get_label_id(feat) for feat in feats.split(";")] + [eos])
+      sample["actions"].append(op_ids)
+      sample["lemmas"].append(self.vocab_lemmas.add(lem))
+      sample["forms"].append(self.vocab_forms.add(w))
+      sample["bundle_feat"].append(self.vocab_feat_bundles.add(feats))
+      sample["fine_feat"].append([sos] + [self.vocab_feats.add(feat) for feat in feats.split(";")] + [eos])
       #
 
     self.vocabs_input_mode_toggle(False)
+
+
+  def load_vocab(self):
 
 
   def load_data(self,fill_vocab=False):

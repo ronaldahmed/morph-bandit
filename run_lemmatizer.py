@@ -28,6 +28,16 @@ def train(args):
 
   # init trainer
   model = Lemmatizer(args,n_vocab)
+  # init model
+  model = Lemmatizer(args,n_vocab)
+  # load model
+  if args.input_model != "-":
+    print("Initialing with model "+ args.input_model+"...")
+    if args.gpu:
+      state_dict = torch.load(args.input_model)
+    else:
+      state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
+    model.load_state_dict(state_dict)
   trainer = Trainer(model,loader,args)
 
   # init local vars
@@ -186,7 +196,7 @@ def test(args):
   # init model
   model = Lemmatizer(args,n_vocab)
   # load model
-  if args.input_model is None:
+  if args.input_model == "-":
     print("Please specify model to load!")
     return
   if args.gpu:
