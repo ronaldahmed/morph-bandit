@@ -72,7 +72,7 @@ done
 
 
 cd $HOME/morph-bandit/
-# conda activate morph
+conda activate morph
 
 python3 run_lemmatizer.py --mode $mode \
 --seed $seed \
