@@ -48,7 +48,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
 
       curr_tok = curr_tok.view(-1,1)
       seq_log_prob = seq_log_prob.view(-1,1)
-      tiled_pred_ids = [curr_tok.cpu().numpy()]
+      tiled_pred_ids = [curr_tok.detach().cpu().numpy()]
       tiled_hidden = self.repeat_hidden(hidden,s_size)
       mask = (curr_tok!=self.stop_id)
 

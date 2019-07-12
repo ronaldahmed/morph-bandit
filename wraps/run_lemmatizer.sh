@@ -74,7 +74,7 @@ done
 cd $HOME/morph-bandit/
 conda activate morph
 
-python3 run_lemmatizer.py --mode $mode \
+CUDA_LAUNCH_BLOCKING=1 python3 run_lemmatizer.py --mode $mode \
 --seed $seed \
 --train_file data/$tbname/train \
 --dev_file data/$tbname/dev \
