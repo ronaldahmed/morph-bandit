@@ -81,8 +81,8 @@ def morph_analizer_arg_parser():
 def multiling_arg_parser():
     """ CLI args related to training models. """
     p = ArgumentParser(add_help=False)
-    p.add_argument("--train_tbs", help="Training treebank names", type=str, default="en_ewt,de_gsd,cs_pdt,ar_padt,tr_imst")
-    p.add_argument("--test_tbs", help="Training treebank names", type=str, default="es_ancora")
+    p.add_argument("--src_set", help="Set of source treebanks (comma separated)", type=str, default="thesis")
+    p.add_argument("--tgt", help="Target / test treebank", type=str, default="es_ancora")
 
     return p
 

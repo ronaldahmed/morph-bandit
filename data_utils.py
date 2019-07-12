@@ -1,7 +1,7 @@
 from label_dictionary import LabelDictionary
 import numpy as np
 import pdb
-from utils import oplabel_pat, apply_operations, \
+from utils import oplabel_pat, \
                   to_cuda, fixed_var, \
                   PAD_ID, UNK_TOKEN, PAD_TOKEN, EOS, SOS
 import torch

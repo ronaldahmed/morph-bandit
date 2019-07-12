@@ -43,7 +43,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
 
       op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature).exp()
       lprob = F.log_softmax(op_weights,1)
-      curr_tok = torch.multinomial(op_weights, s_size) # [bs,1]
+      curr_tok = torch.multinomial(op_weights, s_size).detach() # [bs,1]
       seq_log_prob = lprob.gather(1,curr_tok)
 
       curr_tok = curr_tok.view(-1,1)
@@ -55,7 +55,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
       for i in range(self.args.max_ops-1):
         logits,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
         op_weights = logits.div(self.args.temperature).exp()
-        curr_tok = torch.multinomial(op_weights, 1).view(-1,1) # [bs,1]
+        curr_tok = torch.multinomial(op_weights, 1).view(-1,1).detach() # [bs,1]
         lprob = F.log_softmax(op_weights,1).gather(1,curr_tok) # get prob of sampled ops
         lprob *= mask.type(torch.float32)
         seq_log_prob += lprob

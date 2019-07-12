@@ -50,7 +50,7 @@ def train(args):
       i += 1
       train_log_step_cnt += 1
 
-      #if i>10: break
+      # if i>10: break
       #break
     
     dev_loss = 0.0
