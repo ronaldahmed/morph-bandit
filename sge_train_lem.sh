@@ -64,10 +64,10 @@ for tb in $(cut -f 2 -d " " $batch); do
 	mkdir -p $outdir
 	
 
-	# qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
-	# -o models-segm/$tb/log-$exp.out \
-	# -e models-segm/$tb/log-$exp.err \
-    bash \
+    # bash \
+	qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
+	-o $outdir/log.out \
+	-e $outdir/log.err \
 	wraps/run_lemmatizer.sh \
     -tb $tb -m train --outdir $outdir --exp $exp \
     --loss $loss -optm $optm -a $alpha_q -s $sample_size \
