@@ -60,7 +60,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
         lprob *= mask.type(torch.float32)
         seq_log_prob += lprob
         mask *= (curr_tok!=self.stop_id)
-        tiled_pred_ids.append(curr_tok.cpu().numpy())
+        tiled_pred_ids.append(curr_tok.detach().cpu().numpy())
       #
       tiled_pred_ids = np.hstack(tiled_pred_ids)
       seq_log_prob = seq_log_prob.view(-1).cpu().numpy()
@@ -205,6 +205,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     tloss = 0
     with torch.no_grad():
       for w_seq,gold_w in zip(batch,gold_output):
+        nops = w_seq.shape[1]
         hidden = self.repackage_hidden(hidden) # ([]
         pred_w0,hidden0 = self.model.forward(w_seq[:,0].view(-1,1), hidden)
         pred_w0 = pred_w0.view(batch_size,-1,self.n_classes)
