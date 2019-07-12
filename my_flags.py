@@ -133,13 +133,13 @@ def soft_pattern_arg_parser():
 def lemmatizer_args():
   parser = ArgumentParser(description=__doc__,
                           formatter_class=ArgumentDefaultsHelpFormatter,
-                          parents=[soft_pattern_arg_parser(), lemmatizer_arg_parser(), general_arg_parser()])
+                          parents=[lemmatizer_arg_parser(), general_arg_parser()])
   return parser.parse_args()
 
 
 def analizer_args():
   parser = ArgumentParser(description=__doc__,
                           formatter_class=ArgumentDefaultsHelpFormatter,
-                          parents=[soft_pattern_arg_parser(), morph_analizer_arg_parser(), \
+                          parents=[morph_analizer_arg_parser(), \
                                    lemmatizer_arg_parser(),  general_arg_parser()])
   return parser.parse_args()
