@@ -69,7 +69,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 
     # 'gpu-troja.q'
     # bash \
-	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=8G,mem_free=8G,act_mem_free=8G,h_data=12G -p -1 \
+	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=8G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 	-o $outdir/log.out \
 	-e $outdir/log.err \
 	wraps/run_lemmatizer.sh \
