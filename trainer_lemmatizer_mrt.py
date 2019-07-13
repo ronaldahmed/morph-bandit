@@ -39,7 +39,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     
     # get prob of K sampled seqs
     with torch.no_grad():
-      gold_seq_lprob = gold_seq_lprob.squeeze()#.detach().cpu().numpy()
+      # gold_seq_lprob = gold_seq_lprob.squeeze()#.detach().cpu().numpy()
 
       op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature).exp()
       lprob = F.log_softmax(op_weights,1)
@@ -48,7 +48,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
 
       curr_tok = curr_tok.view(-1,1)
       seq_log_prob = seq_log_prob.view(-1,1)
-      tiled_pred_ids = [curr_tok.detach().cpu().numpy()]
+      # tiled_pred_ids = [curr_tok.detach().cpu().numpy()]
       tiled_hidden = self.repeat_hidden(hidden,s_size)
       mask = (curr_tok!=self.stop_id)
 
@@ -60,26 +60,35 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
         lprob *= mask.type(torch.float32)
         seq_log_prob += lprob
         mask *= (curr_tok!=self.stop_id)
-        tiled_pred_ids.append(curr_tok.detach().cpu().numpy())
+        # tiled_pred_ids.append(curr_tok.detach().cpu().numpy())
       #
-      tiled_pred_ids = np.hstack(tiled_pred_ids)
-      seq_log_prob = seq_log_prob.view(-1)
-      stop_mask = (tiled_pred_ids==self.stop_id).cumsum(1)==0
-      sample_set_sum_lprob = self.cuda(torch.zeros([batch_size,1],dtype=torch.float32)).detach() # log sum_{s in S} p(s|...)
 
-      # account for duplicate sampled sequences, keep the highest prob
-      for i in range(batch_size):
-        samples = {}
-        s_probs = (self.args.alpha_q*gold_seq_lprob[i]).exp()
-        for j in range(i*s_size,(i+1)*s_size):
-          smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
-          if smp in samples: continue
-          s_probs += (self.args.alpha_q * seq_log_prob[j]).exp() + EPS
-        # get log_probs of samples in set
-        # s_lprobs = self.cuda(torch.FloatTensor(s_lprobs)).detach()
-        # sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
-        sample_set_sum_lprob[i,0] = s_probs.log()
-      #
+      # don't account for duplicates, multinomial replacement set to false
+      sample_set_sum_lprob = self.args.alpha_q * torch.cat([seq_log_prob.view(-1,s_size),gold_seq_lprob.view(-1,1)],1)
+      sample_set_sum_lprob = (sample_set_sum_lprob.exp().sum(1)+EPS).log()
+
+      # pdb.set_trace()
+      # print("--->")
+
+      # # account for duplicate sampled sequences, keep the highest prob
+      # tiled_pred_ids = np.hstack(tiled_pred_ids)
+      # stop_mask = (tiled_pred_ids==self.stop_id).cumsum(1)==0 # 111(valid)000(after stop)
+      # seq_log_prob = seq_log_prob.view(-1)
+      # sample_set_sum_lprob = self.cuda(torch.zeros([batch_size,1],dtype=torch.float32)) # log sum_{s in S} p(s|...)
+      # for i in range(batch_size):
+      #   samples = set()
+      #   s_probs = (self.args.alpha_q*gold_seq_lprob[i]).exp()
+      #   for j in range(i*s_size,(i+1)*s_size):
+      #     smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
+      #     if smp in samples: continue
+      #     s_probs += (self.args.alpha_q * seq_log_prob[j]).exp() + EPS
+      #     samples.add(smp)
+      #   # get log_probs of samples in set
+      #   print(">>",len(samples))
+      #   pdb.set_trace()
+        
+      #   sample_set_sum_lprob[i,0] = s_probs.log()
+      # #
     #
     return sample_set_sum_lprob
 
