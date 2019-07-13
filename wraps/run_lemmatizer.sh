@@ -15,6 +15,7 @@ batch_size=128
 learning_rate="0.00069"
 dropout="0.19"
 input_model="-"
+clip="0"
 
 while [ $# -gt 1 ]
 do
@@ -68,6 +69,10 @@ case $key in
     input_model="$2"
     shift # pretrained model
     ;;
+    -c|--clip)
+    clip="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
@@ -90,6 +95,7 @@ CUDA_LAUNCH_BLOCKING=1 python3 run_lemmatizer.py --mode $mode \
 --emb_size 140 \
 --learning_rate $learning_rate \
 --dropout $dropout \
+--clip $clip \
 --model_save_dir $mdir \
 --scheduler \
 --lem_loss $loss \
