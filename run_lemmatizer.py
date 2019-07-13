@@ -26,8 +26,6 @@ def train(args):
   train_log_step_cnt = 0
   debug = True
 
-  # init trainer
-  model = Lemmatizer(args,n_vocab)
   # init model
   model = Lemmatizer(args,n_vocab)
   # load model
@@ -38,6 +36,7 @@ def train(args):
     else:
       state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
     model.load_state_dict(state_dict)
+  # init trainer
   trainer = Trainer(model,loader,args)
 
   # init local vars
