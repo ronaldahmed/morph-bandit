@@ -39,7 +39,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     
     # get prob of K sampled seqs
     with torch.no_grad():
-      gold_seq_lprob = gold_seq_lprob.squeeze().detach().cpu().numpy()
+      gold_seq_lprob = gold_seq_lprob.squeeze()#.detach().cpu().numpy()
 
       op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature).exp()
       lprob = F.log_softmax(op_weights,1)
@@ -76,7 +76,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
           if smp in samples: continue
           s_lprobs += self.args.alpha_q * seq_log_prob[j]
         # get log_probs of samples in set
-        s_lprobs = self.cuda(torch.FloatTensor(s_lprobs)).detach()
+        # s_lprobs = self.cuda(torch.FloatTensor(s_lprobs)).detach()
         sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
       #
     #
