@@ -69,12 +69,10 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
 
       # account for duplicate sampled sequences, keep the highest prob
       for i in range(batch_size):
-        samples = defaultdict(lambda: -1000000.0)
+        samples = {}
         for j in range(i*s_size,(i+1)*s_size):
-          try:
-            smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
-          except:
-            pdb.set_trace()
+          smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
+          if smp in samples: continue
           samples[smp] = max(samples[smp],seq_log_prob[j])
         # get log_probs of samples in set
         s_lprobs = [x * self.args.alpha_q for x in samples.values()] + [self.args.alpha_q*gold_seq_lprob[i]]
@@ -157,7 +155,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     # log(Q(y|...))
     log_q_distr = self.args.alpha_q * pred_seq_lprob - sample_set_lprob # the propag anchor is lp(gold)
 
-    loss = (log_q_distr.exp() * delta).sum()
+    loss = (log_q_distr.exp() * delta).mean()
     
     if torch.isnan(loss): pdb.set_trace()
 

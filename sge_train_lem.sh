@@ -7,7 +7,7 @@ exp="l1.mrt"
 loss="mrt" # "-"
 optm="adam"
 alpha_q="0.1"
-sample_size="10"
+sample_size="100"
 batch_size="10" # 128 for MLE
 
 while [ $# -gt 1 ]
@@ -69,7 +69,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 
     # 'gpu-troja.q'
     # bash \
-	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=8G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
+	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=8G,mem_free=12G,act_mem_free=12G,h_data=18G -p -10 \
 	-o $outdir/log.out \
 	-e $outdir/log.err \
 	wraps/run_lemmatizer.sh \
