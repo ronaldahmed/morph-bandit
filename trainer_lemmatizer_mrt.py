@@ -70,12 +70,12 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
       # account for duplicate sampled sequences, keep the highest prob
       for i in range(batch_size):
         samples = {}
+        s_lprobs = self.args.alpha_q*gold_seq_lprob[i]
         for j in range(i*s_size,(i+1)*s_size):
           smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
           if smp in samples: continue
-          samples[smp] = max(samples[smp],seq_log_prob[j])
+          s_lprobs += self.args.alpha_q * seq_log_prob[j]
         # get log_probs of samples in set
-        s_lprobs = [x * self.args.alpha_q for x in samples.values()] + [self.args.alpha_q*gold_seq_lprob[i]]
         s_lprobs = self.cuda(torch.FloatTensor(s_lprobs)).detach()
         sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
       #
