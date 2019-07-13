@@ -200,9 +200,8 @@ class BatchBase:
 
 
   def reset(self,):
-  """ reshuffle batch ids """
+    """ reshuffle batch ids """
     np.random.shuffle(self.sorted_ids_per_batch)
-
 
 
   def right_pad(self,xs, min_len, pad_element):
