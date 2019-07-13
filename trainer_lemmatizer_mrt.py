@@ -63,21 +63,22 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
         tiled_pred_ids.append(curr_tok.detach().cpu().numpy())
       #
       tiled_pred_ids = np.hstack(tiled_pred_ids)
-      seq_log_prob = seq_log_prob.view(-1).cpu().numpy()
+      seq_log_prob = seq_log_prob.view(-1)
       stop_mask = (tiled_pred_ids==self.stop_id).cumsum(1)==0
       sample_set_sum_lprob = self.cuda(torch.zeros([batch_size,1],dtype=torch.float32)).detach() # log sum_{s in S} p(s|...)
 
       # account for duplicate sampled sequences, keep the highest prob
       for i in range(batch_size):
         samples = {}
-        s_lprobs = self.args.alpha_q*gold_seq_lprob[i]
+        s_probs = (self.args.alpha_q*gold_seq_lprob[i]).exp()
         for j in range(i*s_size,(i+1)*s_size):
           smp = tuple([x for x in tiled_pred_ids[j, stop_mask[j,:]]])
           if smp in samples: continue
-          s_lprobs += self.args.alpha_q * seq_log_prob[j]
+          s_probs += (self.args.alpha_q * seq_log_prob[j]).exp() + EPS
         # get log_probs of samples in set
         # s_lprobs = self.cuda(torch.FloatTensor(s_lprobs)).detach()
-        sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
+        # sample_set_sum_lprob[i,0] = torch.logsumexp(s_lprobs,0)
+        sample_set_sum_lprob[i,0] = s_probs.log()
       #
     #
     return sample_set_sum_lprob

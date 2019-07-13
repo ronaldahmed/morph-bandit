@@ -460,9 +460,9 @@ class TrainerLemmatizerMLE:
             self.writer.add_scalar("gradient_std/" + name,
                               param.grad.data.std(),
                               step)
-            # self.writer.add_histogram("gradient_hist/" + name,
-            #                   param.grad,
-            #                   step)
+            self.writer.add_histogram("gradient_hist/" + name,
+                              param.grad,
+                              step)
 
       for var,name in zip([train_loss,dev_loss,train_acc,dev_acc,train_dist,dev_dist],
                           ["loss/loss_train","loss/loss_dev",

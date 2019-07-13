@@ -57,11 +57,11 @@ def train(args):
       if i % debug_print == (debug_print - 1):
         trainer.update_summary(train_log_step_cnt,train_loss=loss)
         print(".", end="", flush=True)
-      i += 1
       train_log_step_cnt += 1
-
+      
       if i>200: break
       #break
+      i += 1
     
     dev_loss = 0.0
     i = 0
