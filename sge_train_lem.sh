@@ -44,6 +44,10 @@ case $key in
     clip="$2"
     shift # pretrained model
     ;;
+    -bs|--bs)
+    batch_size="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
