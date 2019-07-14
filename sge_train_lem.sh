@@ -6,10 +6,11 @@ batch="data/tbnames-thesis"
 exp="l1.mrt"
 loss="mrt" # "-"
 optm="adam"
-alpha_q="0.1"
-sample_size="100"
+alpha_q="0.05"
+sample_size="20"
 batch_size="10" # 128 for MLE
 clip=0
+learning_rate="1e-4"
 
 while [ $# -gt 1 ]
 do
@@ -80,6 +81,6 @@ for tb in $(cut -f 2 -d " " $batch); do
 	wraps/run_lemmatizer.sh \
     -tb $tb -m train --outdir $outdir --exp $exp \
     --loss $loss -optm $optm -a $alpha_q -s $sample_size \
-    -bs $batch_size -lr 0.0001 -dp 0 -ilem $input_model -c $clip 
+    -bs $batch_size -lr $learning_rate -dp 0 -ilem $input_model -c $clip 
 
 done
