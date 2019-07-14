@@ -405,7 +405,7 @@ class TrainerLemmatizerMLE:
         filename = self.args.dev_file
       elif split=='test':
         filename = self.args.test_file
-      filename += ".lem"
+      filename += "." + self.args.exp_id
     
     #pdb.set_trace()
 

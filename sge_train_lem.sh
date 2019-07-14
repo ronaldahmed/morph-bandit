@@ -67,7 +67,7 @@ for tb in $(cut -f 2 -d " " $batch); do
     if [ $loss == "mle" ];then
         outdir=models-segm/$tb
     elif [ $loss == "mrt" ]; then
-        outdir=models-segm/$tb/"$exp"_optm-"$optm"_alpha-"$alpha_q"_sample-"$sample_size"_clip-"$clip"
+        outdir=models-segm/$tb/"$exp"_optm-"$optm"_alpha-"$alpha_q"_sample-"$sample_size"_clip-"$clip"_bs-"$batch_size"
         op_ep=$(tail -1 models-segm/$tb/log.out | cut -f 1)
 		input_model=models-segm/$tb/segm_$op_ep.pth
     fi
