@@ -65,7 +65,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
 
       # don't account for duplicates, multinomial replacement set to false
       sample_set_sum_lprob = self.args.alpha_q * torch.cat([seq_log_prob.view(-1,s_size),gold_seq_lprob.view(-1,1)],1)
-      sample_set_sum_lprob = (sample_set_sum_lprob.exp().sum(1)+EPS).log()
+      sample_set_sum_lprob = (sample_set_sum_lprob.exp().sum(1)+EPS).log().view(-1,1)
 
       # pdb.set_trace()
       # print("--->")
@@ -165,7 +165,16 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     # log(Q(y|...))
     log_q_distr = self.args.alpha_q * pred_seq_lprob - sample_set_lprob # the propag anchor is lp(gold)
 
-    loss = (log_q_distr.exp() * delta).mean()
+    loss = (log_q_distr.exp() * delta).sum()
+
+    # print("::gold : ",gold_seq_lprob.view(-1))
+    # print("::pred : ",pred_seq_lprob.view(-1))
+    # print(":: sample set sum: ",sample_set_lprob)
+    # print(":: q dist: ",log_q_distr.view(-1))
+    # print(":: loss",loss)
+    # print()
+    # pdb.set_trace()
+
     
     if torch.isnan(loss): pdb.set_trace()
 
