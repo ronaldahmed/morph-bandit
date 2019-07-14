@@ -58,7 +58,7 @@ def train(args):
         print(".", end="", flush=True)
       train_log_step_cnt += 1
       
-      if i>200: break
+      # if i>200: break
       #break
       i += 1
     
