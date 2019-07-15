@@ -16,6 +16,7 @@ learning_rate="0.00069"
 dropout="0.19"
 input_model="-"
 clip="0"
+temperature=10.0
 
 while [ $# -gt 1 ]
 do
@@ -103,5 +104,6 @@ CUDA_LAUNCH_BLOCKING=1 python3 run_lemmatizer.py --mode $mode \
 --alpha_q $alpha_q \
 --sample_space_size $sample_size \
 --lem_optm $optm \
+--temperature $temperature \
 --gpu
 
