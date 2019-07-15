@@ -26,8 +26,6 @@ def train(args):
   train_log_step_cnt = 0
   debug = True
 
-  # init trainer
-  model = Lemmatizer(args,n_vocab)
   # init model
   model = Lemmatizer(args,n_vocab)
   # load model
@@ -38,6 +36,7 @@ def train(args):
     else:
       state_dict = torch.load(args.input_model, map_location=lambda storage, loc: storage)
     model.load_state_dict(state_dict)
+  # init trainer
   trainer = Trainer(model,loader,args)
 
   # init local vars
@@ -57,11 +56,11 @@ def train(args):
       if i % debug_print == (debug_print - 1):
         trainer.update_summary(train_log_step_cnt,train_loss=loss)
         print(".", end="", flush=True)
-      i += 1
       train_log_step_cnt += 1
-
-      # if i>10: break
+      
+      # if i>200: break
       #break
+      i += 1
     
     dev_loss = 0.0
     i = 0
@@ -80,8 +79,6 @@ def train(args):
     finish_iter_time = monotonic()
     train_acc,train_dist = trainer.eval_metrics_batch(train_batch,loader,split="train",max_data=1000,dump_ops=args.dump_ops)
     dev_acc  ,dev_dist   = trainer.eval_metrics_batch(dev_batch, loader,split="dev",dump_ops=args.dump_ops)
-    # train_acc,train_dist = 0,0
-    # dev_acc,dev_dist = 0,0
     
     trainer.update_summary(train_log_step_cnt,train_loss,dev_loss,
                            train_acc,dev_acc,train_dist,dev_dist)
@@ -158,6 +155,7 @@ def train_simple(args):
   best_ep = -1
 
   for ep in range(args.epochs):
+    train_batch.reset()
     train_loss = 0
     i = 0
     for sents,gold in train_batch.get_batch():

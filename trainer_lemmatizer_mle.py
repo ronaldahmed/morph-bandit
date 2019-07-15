@@ -405,7 +405,7 @@ class TrainerLemmatizerMLE:
         filename = self.args.dev_file
       elif split=='test':
         filename = self.args.test_file
-      filename += ".lem"
+      filename += "." + self.args.exp_id
     
     #pdb.set_trace()
 
@@ -450,12 +450,18 @@ class TrainerLemmatizerMLE:
                           param.data.mean(),
                           step)
         self.writer.add_scalar("parameter_std/" + name, param.data.std(), step)
+        self.writer.add_histogram("parameter_hist/" + name,
+                              param.data,
+                              step)
         if param.grad is not None:
             self.writer.add_scalar("gradient_mean/" + name,
                               param.grad.data.mean(),
                               step)
             self.writer.add_scalar("gradient_std/" + name,
                               param.grad.data.std(),
+                              step)
+            self.writer.add_histogram("gradient_hist/" + name,
+                              param.grad,
                               step)
 
       for var,name in zip([train_loss,dev_loss,train_acc,dev_acc,train_dist,dev_dist],
