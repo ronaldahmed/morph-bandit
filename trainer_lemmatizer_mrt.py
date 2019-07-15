@@ -43,9 +43,9 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     with torch.no_grad():
       # gold_seq_lprob = gold_seq_lprob.squeeze()#.detach().cpu().numpy()
 
-      op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature).exp()
+      op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature)
       lprob = F.log_softmax(op_weights,1)
-      curr_tok = torch.multinomial(op_weights, s_size, replacement=True).detach() # [bs,1]
+      curr_tok = torch.multinomial(op_weights.exp(), s_size, replacement=True).detach() # [bs,1]
       seq_log_prob = lprob.gather(1,curr_tok)
 
       curr_tok = curr_tok.view(-1,1)
@@ -54,19 +54,20 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
       tiled_hidden = self.repeat_hidden(hidden,s_size)
       mask = (curr_tok!=self.stop_id)
 
-      # pdb.set_trace()
+      pdb.set_trace()
 
       for i in range(self.args.max_ops-1):
         logits,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
-        op_weights = logits.div(self.args.temperature).exp()
-        curr_tok = torch.multinomial(op_weights, 1).view(-1,1).detach() # [bs,1]
-        lprob = F.log_softmax(op_weights,1).gather(1,curr_tok) # get prob of sampled ops
+        op_weights = logits.div(self.args.temperature)
+        curr_tok = torch.multinomial(op_weights.exp(), 1).view(-1,1).detach() # [bs,1]
+        lprob = F.log_softmax(op_weights,1)
+        lprob = lprob.gather(1,curr_tok) # get prob of sampled ops
         lprob *= mask.type(torch.float32)
         seq_log_prob += lprob
         mask *= (curr_tok!=self.stop_id)
         tiled_pred_ids.append(curr_tok)
 
-        # pdb.set_trace()
+        pdb.set_trace()
       #
 
       # don't account for duplicates, multinomial replacement set to false
