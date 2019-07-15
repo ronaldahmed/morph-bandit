@@ -54,7 +54,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
       tiled_hidden = self.repeat_hidden(hidden,s_size)
       mask = (curr_tok!=self.stop_id)
 
-      pdb.set_trace()
+      # pdb.set_trace()
 
       for i in range(self.args.max_ops-1):
         logits,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
@@ -67,7 +67,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
         mask *= (curr_tok!=self.stop_id)
         tiled_pred_ids.append(curr_tok)
 
-        pdb.set_trace()
+        # pdb.set_trace()
       #
 
       # don't account for duplicates, multinomial replacement set to false
