@@ -74,6 +74,10 @@ case $key in
     clip="$2"
     shift # pretrained model
     ;;
+    -temp|--temp)
+    temperature="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
