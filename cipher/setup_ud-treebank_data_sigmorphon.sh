@@ -49,4 +49,4 @@ done < $BATCH
 
 
 grep -v "^#" $HOME/morph-bandit/shk/shp-um-test.conllu | grep -v "^\s*$" | \
-grep -vP "^[0-9]+-[0-9]+" > $data_dir/shk/test.conllu
+grep -vP "^[0-9]+-[0-9]+" > $data_dir/sk/test.conllu
