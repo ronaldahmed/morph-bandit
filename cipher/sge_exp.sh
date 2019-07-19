@@ -10,7 +10,7 @@ niters=500
 order=2
 
 cd $HOME/morph-bandit/cipher
-log_dir=$HOME/universal-lang-tools-playground
+log_dir=$HOME/universal-lang-tools-playground/logs
 
 qsub -cwd -l mem_free=15G,act_mem_free=15G,h_vmem=20G -p -10 \
 -o $log_dir/$rl$order-"$il"."$base".$nc.$niters.pipeline \
