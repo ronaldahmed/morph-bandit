@@ -46,7 +46,3 @@ while IFS=" " read -r uddir tbname; do
 	# cp $UD_DIR/$uddir/$tbname-um-train.conllu $data_dir/$tbname/train.conllu
   
 done < $BATCH
-
-
-grep -v "^#" $HOME/morph-bandit/shk/shp-um-test.conllu | grep -v "^\s*$" | \
-grep -vP "^[0-9]+-[0-9]+" > $data_dir/sk/test.conllu
