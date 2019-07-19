@@ -9,7 +9,7 @@ nj=20
 niters=500
 order=2
 
-cd $HOME/universal-lang-tools-playground
+cd $HOME/morph-bandit/cipher
 
 qsub -cwd -l mem_free=15G,act_mem_free=15G,h_vmem=20G -p -10 \
 -o logs/$rl$order-"$il"."$base".$nc.$niters.pipeline \
