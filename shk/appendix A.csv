@@ -1,0 +1,120 @@
+MSD Label,Description
+1,first person singular 
+2,second person singular
+3,third person singular 
+1p,first person plural 
+2p,second person plural 
+3p,third person plural 
+A,"transitive subject function, A-orientation "
+ABL,ablative
+ABS,absolutive
+ADJZ,adjectivizer
+ADV,adverbial-like
+ADVZ,adverbializer
+AGTZ,agentivizer 
+ALL,allative
+AND1,andative singular intransitive
+AND2,"andative nonsingular, singular transitive"
+ASSOC,associative 
+ATT,attenuative 
+AUG,augmentative 
+AUX,auxiliary 
+BEN,benefactive 
+CAUS,causative
+CHEZ,chezative
+ClREL,relative clause
+CMPL,completive aspect
+COM,comitative
+CONJ,conjunction
+CONTRST,contrast
+COP,copula
+DAT,dative
+DD,discourse discontinuity
+DEPREC,deprecatory
+DES,desiderative
+DIM,diminutive
+DIST,distal 
+DISTR,distributive
+DS,different subject
+DUB,dubitative
+EM,emphatic 
+EP,epenthesis 
+ERG,ergative 
+EV,direct evidential
+FDS,"following event, different subject"
+FEM,feminine
+FRUSTR,frustrative
+FSSS,"following event, same-subject, S-orientation"
+FSSA,"following event, same-subject, A-orientation"
+FUT,future
+GEN,genitive 
+HAB,habitual
+HAB.AGTZ,habitual agentivizer
+HSY,hearsay
+HSY2,shorter hearsay
+I,intransitive (subject orientation)
+IMP,imperative
+INC,incompletive aspect
+INF,infinitive
+INFR,inferential
+INST,instrumental
+INT,interrogative
+INTENS,intensifier
+INTERJ,interjection
+INTRSS,"interessive, complement of interest"
+LEAD,leading interrogative
+LIG,ligature
+LIM,limitative
+LOC,locative
+MAL,malefactive
+MASC,masculine
+MID,middle
+MNS,means
+NEG,negative
+NMLZ,nominalizer
+NOM,nominative
+n.SG,nonsingular
+O,object function
+OBL,oblique
+ONOM,onomatopoeia
+P,previous event
+PDCA,"previous event, discourse continuity, A orientation"
+PDCS,"previous event, discourse continuity, S orientation"
+PDSA,"previous event, different subjects, A orientation"
+PDSS,"previous event, different subjects, S orientation"
+P/J,prospective/jussive
+PL,plural
+PO>S/A,"previous event, dependent object is coreferential with matrix subject"
+POS1,possessive first person singular
+POS3,possessive third person singular
+PP1,incompletive participle
+PP2,completive participle
+PREF,prefix
+PREV,preventive
+PRIV,privative
+PROG,progressive
+PROP,proprietive
+PSSS,"previous event, same-subject, S-orientation"
+PSSA,"previous event, same-subject, A-orientation"
+PST1,earlier today past
+PST2,yesterday past
+PST3,several months/a few years ago past
+PST4,several years ago past
+REC,reciprocal
+REM,remote past
+S,"intransitive subject function, S orientation"
+S,simultaneous event (when preceding DS)
+SDSA,"simultaneous event, different subjects, A orientation"
+SDSS,"simultaneous event, different subjects, S orientation"
+SIML,similitive
+SPECL,speculative
+SSSS,"simultaneous event, same-subject, S-orientation"
+SSSA,"simultaneous event, same-subject, A-orientation"
+TEMP,temporal
+TRNZ,transitivizer
+VNMLZ,nominalizad verb
+VAL,valence-changing
+VBLZ,verbalizer
+VEN1,"venitive, singular intransitive"
+VEN2,"venitive nonsingular, singular transitive"
+VOC,vocative 
