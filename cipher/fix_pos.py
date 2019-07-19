@@ -14,6 +14,6 @@ for umpos,ch in um2char.items():
 outfile = open(outfn,'w')
 for line in open(infn,'r'):
 	for pat,ch in re_pats:
-		line = pat.subs(ch,line)
+		line = pat.sub(ch,line)
 	print(line,file=outfile)
 
