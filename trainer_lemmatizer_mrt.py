@@ -38,14 +38,14 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     assert self.stop_id != -1
     batch_size = pred_w0.shape[0]
     s_size = self.args.sample_space_size
-    
+   
     # get prob of K sampled seqs
     with torch.no_grad():
       # gold_seq_lprob = gold_seq_lprob.squeeze()#.detach().cpu().numpy()
 
       op_weights = pred_w0.view(batch_size,-1).div(self.args.temperature)
       lprob = F.log_softmax(op_weights,1)
-      curr_tok = torch.multinomial(op_weights.exp(), s_size, replacement=True).detach() # [bs,1]
+      curr_tok = torch.multinomial(op_weights.exp(), s_size, replacement=True).detach() # [bs,s_size]
       seq_log_prob = lprob.gather(1,curr_tok)
 
       curr_tok = curr_tok.view(-1,1)
@@ -57,7 +57,13 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
       # pdb.set_trace()
 
       for i in range(self.args.max_ops-1):
-        logits,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
+        if curr_tok.sum()==batch_size*s_size*self.pad_id:
+          break
+        try:
+          logits,tiled_hidden = self.model.forward(curr_tok,tiled_hidden)
+        except:
+          pdb.set_trace()
+
         op_weights = logits.div(self.args.temperature)
         curr_tok = torch.multinomial(op_weights.exp(), 1).view(-1,1).detach() # [bs,1]
         lprob = F.log_softmax(op_weights,1)
@@ -187,15 +193,18 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
     gold_seq_lprob = (gold_seq_lprob*pad_mask).sum(1).view(-1,1)
 
     # sum of p(a'|...) over sampled action 
-    sample_set_lprob,tiled_pred_ids = self.sample_action_space(pred_w[:,0,:].squeeze(),hidden,gold_seq_lprob)
+    sample_set_lprob,tiled_pred_ids = self.sample_action_space(pred_w[:,0,:].view(batch_size,-1),hidden,gold_seq_lprob)
 
     # Delta(y,y^)
     delta,repeated = self.calc_delta(input_w0,tiled_pred_ids,gold_w)
     sample_set_lprob *= self.args.alpha_q
 
     # mask out repeated / pads
-    q_non_norm_prob = (sample_set_lprob.exp() * repeated).view(batch_size,s_size)
-    q_non_norm_prob = torch.cat([q_non_norm_prob,(self.args.alpha_q * gold_seq_lprob).exp()],1)
+    try:
+      q_non_norm_prob = (sample_set_lprob.exp() * repeated).view(batch_size,s_size)
+      q_non_norm_prob = torch.cat([q_non_norm_prob,(self.args.alpha_q * gold_seq_lprob).exp()],1)
+    except:
+      pdb.set_trace()
 
     q_prob = q_non_norm_prob / q_non_norm_prob.sum(1).view(batch_size,-1)
 
@@ -244,6 +253,7 @@ class TrainerLemmatizerMRT(TrainerLemmatizerMLE):
         pred_w1n,hidden = self.model.forward(w_seq[:,1:].view(batch_size,-1), hidden0)
         pred_w1n = pred_w1n.view(batch_size,-1,self.n_classes)
         pred_w = torch.cat([pred_w0,pred_w1n],1)
+
       loss = self.compute_loss(w_seq[:,0].view(-1,1), pred_w, gold_w, hidden0)
       loss.backward()
       self.optimizer.step()
