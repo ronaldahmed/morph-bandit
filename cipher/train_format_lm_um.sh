@@ -6,12 +6,13 @@ UD_DIR="$HOME/ud-treebanks-v2.2"
 ORDER=2
 TAGSET="um"   # tagset code [ud,ut,um]
 LAN_CODES="en"
-BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-DATADIR=$BASEDIR/lm_data
-CODE_DIR="$BASEDIR/src/code"
+# BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+BASEDIR="$HOME/universal-lang-tools-playground"
+DATADIR=$BASEDIR/data
+CODE_DIR="."
 
 if [ -z "$CARMEL_DIR"]; then
-    CARMEL_DIR="/usr/local"
+    CARMEL_DIR="$HOME/universal-cipher-pos-tagging/src/carmel/build" 
 fi
 if [ -z "$SRILM_DIR" ]; then
     SRILM_DIR="$HOME/srilm-1.7.2"
@@ -71,10 +72,10 @@ for lang in "${LAN_CODES[@]}"; do
     mkdir -p $DATADIR/$lang
     
 
-    python3 conllu2txt.py -i $DATADIR/$lang/train.conllu$suf \
+    python3 conllu2txt.py -i $DATADIR/$lang/train.conllu$suf -lid \
     -m ch -c 5 -tb $TAGSET > $DATADIR/$lang/train.upos.ch
 
-    python3 conllu2txt.py -i $DATADIR/$lang/train.conllu$suf \
+    python3 conllu2txt.py -i $DATADIR/$lang/train.conllu$suf -lid \
     -m tag -c 5 -tb $TAGSET > $DATADIR/$lang/train.upos
 
     # run LM 
