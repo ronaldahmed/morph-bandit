@@ -29,12 +29,15 @@ grep -v "^#" $HOME/morph-bandit/shk/shp-um-test.conllu | grep -v "^\s*$" | \
 grep -vP "^[0-9]+-[0-9]+" > $DATADIR/$lang/test.conllu
 
 
-python3 src/code/conllu2txt.py -i $DATADIR/$lang/test.conllu -c 1 \
+python3 src/code/conllu2txt.py -i $DATADIR/$lang/test.conllu -c 1 -lid \
 > $DATADIR/$lang/test.raw
 
 src/code/replace-unicode-punctuation.perl < $DATADIR/$lang/test.raw > $DATADIR/$lang/test.clean
 
 python3 src/code/filter_lowfreq.py -i $DATADIR/$lang/test.clean -m eval -low $LOWER -t 1 -v $DATADIR/$lang/vocab.sk
+
+cp $DATADIR/$lang/test.clean.filt $DATADIR/$lang/test.true
+
 
 
 python3 src/code/conllu2txt.py -i $DATADIR/$lang/test.conllu \
