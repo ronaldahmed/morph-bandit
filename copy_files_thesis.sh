@@ -48,10 +48,10 @@ for tb in $(cut -f 2 -d " " $batch); do
         op_ep_anl=$(tail -1 models-anlz/$tb/log.out | cut -f 1)
         input_anlz_model=models-anlz/$tb/anlz_"$op_ep_anl".pth
     elif [ $exp == "l1-a2" ]; then
-        # op_ep_anl=$(tail -1 models-anlz/$tb/log-l1a2.out | cut -f 1)
-        # input_anlz_model=models-anlz/$tb/anlz_fine-seq_"$op_ep_anl".pth
-        op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
-        input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
+        op_ep_anl=$(tail -1 models-anlz/$tb/log-l1a2.out | cut -f 1)
+        input_anlz_model=models-anlz/$tb/anlz_fine-seq_"$op_ep_anl".pth
+        # op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
+        # input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
     else
         op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
         input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
