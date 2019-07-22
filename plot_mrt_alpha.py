@@ -41,7 +41,7 @@ if server_mode:
 		edist_d[a] = []
 
 		foldername = folder_name_template % (a,ss,bs)
-		fname = os.path.join(foldername,"log.out")
+		fname = os.path.join(root,foldername,"log.out")
 		for line in open(fname,'r'):
 			line = line.strip("\n")
 			if line=='': continue
