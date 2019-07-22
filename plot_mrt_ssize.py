@@ -39,7 +39,7 @@ if server_mode:
 	folders =[
 		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-10",
 		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-20_clip-0_bs-10",
-		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-50_clip-0_bs-10_temp-1",
+		"l1.mrt_optm-adadelta_alpha-0.001_sample-50_clip-0_bs-10_temp-1",
 	]
 
 	for s,foldername in zip(ssizes,folders):
