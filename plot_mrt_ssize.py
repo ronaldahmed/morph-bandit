@@ -36,14 +36,18 @@ edist_d = {}
 
 if server_mode:
 
-	for s in ssizes:
+	folders =[
+		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-10",
+		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-20_clip-0_bs-10",
+		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-50_clip-0_bs-10_temp-1",
+	]
+
+	for s,foldername in zip(ssizes,folders):
 		acc_d[s] = []
 		edist_d[s] = []
 
-		foldername = folder_name_template % (alpha,s,bs)
 		fname = os.path.join(root,foldername,"log.out")
-		if not os.path.exists(fname):
-			fname = fname.replace(".warm","")
+
 		for line in open(fname,'r'):
 			line = line.strip("\n")
 			if line=='': continue
