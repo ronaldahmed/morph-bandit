@@ -18,13 +18,13 @@ def uploadObject(obj_name):
 
 
 
-server_mode = True
+server_mode = False
 
 
 bs = 10
 ss = 20
 temp = 1
-alphas = ["0.05", "0.001", "0.0001", "0.00001"]
+alphas = ["0.05", "0.001", "0.0001"]#, "0.00001"]
 
 root = os.path.join("models-segm","es_ancora")
 folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%s_sample-%d_clip-0_bs-%d"
@@ -57,6 +57,8 @@ if server_mode:
 else:
 	acc_d,edist_d = uploadObject("mrt_alphas.pickle")
 
+	# pdb.set_trace()
+
 	import matplotlib
 	import matplotlib.pyplot as plt
 
@@ -67,15 +69,28 @@ else:
 
 
 	eps = np.arange(len(acc_d[alphas[0]]))
-	colors_d = dict(zip(alphas,['c','g','b','r']))
+	colors_d = dict(zip(alphas,['r','g','b']))
+	line_d = dict(zip(alphas,['--','-.','-']))
 
-	plt.figure(figsize=(12,8))
+	plt.figure(figsize=(16,8))
 	plt.subplot(121)
 	for a in alphas:
-		plt.plot(eps,acc_d[a],colors_d[a]+"-",label=r"$\alpha$="+a)
+		_len = min(7,len(acc_d[a]))
+		plt.plot(eps[:_len],acc_d[a][:_len],colors_d[a]+line_d[a],label=r"$\alpha$="+a)
 	plt.grid(True)
+	plt.xlabel("Epoch")
+	plt.ylabel("Lemmata Accuracy")
 
 	plt.subplot(122)
 	for a in alphas:
-		plt.plot(eps,edist_d[a],colors_d[a]+"-",label=r"$\alpha$="+a)
+		_len = min(7,len(edist_d[a]))
+		plt.plot(eps[:_len],edist_d[a][:_len],colors_d[a]+line_d[a],label=r"$\alpha$="+a)
 	plt.grid(True)
+	plt.xlabel("Epoch")
+	plt.ylabel("Levenshtein Distance")
+
+	plt.legend(loc='upper right',bbox_to_anchor=(1.5, 1))
+
+	plt.tight_layout()
+
+	plt.show()
