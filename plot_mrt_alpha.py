@@ -2,7 +2,7 @@ import numpy as np
 import os
 import re
 import pickle
-
+import pdb
 
 
 def saveObject(obj, name='model'):
@@ -29,7 +29,7 @@ alphas = ["0.05", "0.001", "0.0001", "0.00001"]
 root = os.path.join("models-segm","es_ancora")
 folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%s_sample-%d_clip-0_bs-%d"
 
-res_pat = re.compile(r'\s+dev.+acc:\s+(?P<acc>[.0-9]+[%]),\s+dist:\s+(?P<dist>[.0-9]+)')
+res_pat = re.compile(r'\s+dev.+acc:\s+(?P<acc>[.0-9]+)[%],\s+dist:\s+(?P<dist>[.0-9]+)')
 
 acc_d = {}
 edist_d = {}
@@ -47,8 +47,8 @@ if server_mode:
 			if line=='': continue
 			match = res_pat.search(line)
 			if match is None: continue
-			acc = float(match.groups("acc"))
-			edist = float(match.groups("dist"))
+			acc = float(match.group("acc"))
+			edist = float(match.group("dist"))
 			acc_d[a].append(acc)
 			edist_d[a].append(edist)
 	#
