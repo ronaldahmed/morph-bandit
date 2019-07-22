@@ -27,7 +27,7 @@ temp = 1
 ssizes = ["10", "20", "50"]
 
 root = os.path.join("models-segm","es_ancora")
-folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%s_sample-%d_clip-0_bs-%d"
+folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%s_sample-%s_clip-0_bs-%d"
 
 res_pat = re.compile(r'\s+dev.+acc:\s+(?P<acc>[.0-9]+)[%],\s+dist:\s+(?P<dist>[.0-9]+)')
 
