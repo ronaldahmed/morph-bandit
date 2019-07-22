@@ -36,7 +36,7 @@ edist_d = {}
 
 if server_mode:
 
-	for s in ssizes
+	for s in ssizes:
 		acc_d[s] = []
 		edist_d[s] = []
 
