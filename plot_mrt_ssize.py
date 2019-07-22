@@ -42,6 +42,8 @@ if server_mode:
 
 		foldername = folder_name_template % (alpha,s,bs)
 		fname = os.path.join(root,foldername,"log.out")
+		if not os.path.exists(fname):
+			fname = fname.replace(".warm","")
 		for line in open(fname,'r'):
 			line = line.strip("\n")
 			if line=='': continue
