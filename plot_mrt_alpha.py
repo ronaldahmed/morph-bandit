@@ -24,10 +24,10 @@ server_mode = True
 bs = 10
 ss = 20
 temp = 1
-alphas = [0.05, 0.001, 0.0001, 0.00001]
+alphas = ["0.05", "0.001", "0.0001", "0.00001"]
 
 root = os.path.join("models-segm","es_ancora")
-folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%f_sample-%d_clip-0_bs-%d"
+folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%s_sample-%d_clip-0_bs-%d"
 
 res_pat = re.compile(r'\s+dev.+acc:\s+(?P<acc>[.0-9]+[%]),\s+dist:\s+(?P<dist>[.0-9]+)')
 
@@ -72,10 +72,10 @@ else:
 	plt.figure(figsize=(12,8))
 	plt.subplot(121)
 	for a in alphas:
-		plt.plot(eps,acc_d[a],colors_d[a]+"-",label=r"$\alpha$="+str(a))
+		plt.plot(eps,acc_d[a],colors_d[a]+"-",label=r"$\alpha$="+a)
 	plt.grid(True)
 
 	plt.subplot(122)
 	for a in alphas:
-		plt.plot(eps,edist_d[a],colors_d[a]+"-",label=r"$\alpha$="+str(a))
+		plt.plot(eps,edist_d[a],colors_d[a]+"-",label=r"$\alpha$="+a)
 	plt.grid(True)
