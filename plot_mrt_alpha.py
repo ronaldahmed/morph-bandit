@@ -32,7 +32,7 @@ folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%f_sample-%d_clip-0_bs-%
 res_pat = re.compile(r'\s+dev.+acc:\s+(?P<acc>[.0-9]+[%]),\s+dist:\s+(?P<dist>[.0-9]+)')
 
 acc_d = {}
-edist_d {}
+edist_d = {}
 
 if server_mode:
 
