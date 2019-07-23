@@ -64,11 +64,13 @@ for tb in $(cut -f 2 -d " " $batch); do
 
     ####
     # mrt exps
-    expdir=models-segm/$tb/l1.mrt.warm_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5_temp-1
-    mkdir -p $TGT/$expdir
-    op_ep=$(tail -1 $expdir/log.out | cut -f 1)
-    mrt_model=$expdir/l1.mrt_"$op_ep"
+    if [ $exp == "l1.mrt" ]; then
+        expdir=models-segm/$tb/l1.mrt.warm_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5_temp-1
+        mkdir -p $TGT/$expdir
+        op_ep=$(tail -1 $expdir/log.out | cut -f 1)
+        mrt_model=$expdir/l1.mrt_"$op_ep".pth
 
-    cp $expdir/log.out $TGT/$expdir
-    cp $mrt_model $TGT/$expdir
+        cp $expdir/log.out $TGT/$expdir
+        cp $mrt_model $TGT/$expdir
+    fi
 done
