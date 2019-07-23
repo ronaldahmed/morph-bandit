@@ -12,6 +12,7 @@ batch_size="10" # 128 for MLE
 clip=0
 learning_rate="1e-4"
 temperature=10.0
+mode="dev"
 
 while [ $# -gt 1 ]
 do
@@ -53,6 +54,10 @@ case $key in
     temperature="$2"
     shift # pretrained model
     ;;
+    -mode|--mode)
+    mode="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
@@ -73,13 +78,18 @@ for tb in $(cut -f 2 -d " " $batch); do
 	
     outdir=""
 	input_model="-"
+
     if [ $loss == "mle" ];then
         outdir=models-segm/$tb
     elif [ $loss == "mrt" ]; then
         outdir=models-segm/$tb/"$exp".warm_optm-"$optm"_alpha-"$alpha_q"_sample-"$sample_size"_clip-"$clip"_bs-"$batch_size"_temp-$temperature
     fi
     op_ep=$(tail -1 $outdir/log.out | cut -f 1)
-	input_model=$outdir/segm_$op_ep.pth
+    if [ $loss == "mle" ];then
+		input_model=$outdir/segm_$op_ep.pth
+	elif [ $loss == "mrt" ]; then
+		input_model=$outdir/l1.mrt_$op_ep.pth
+	fi
 
 	
 	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=0,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
