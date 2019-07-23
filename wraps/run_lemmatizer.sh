@@ -17,6 +17,7 @@ dropout="0.19"
 input_model="-"
 clip="0"
 temperature=10.0
+beam_size=-1
 
 while [ $# -gt 1 ]
 do
@@ -78,6 +79,10 @@ case $key in
     temperature="$2"
     shift # pretrained model
     ;;
+    -beam|--beam)
+    beam_size="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
@@ -110,5 +115,7 @@ CUDA_LAUNCH_BLOCKING=1 python3 run_lemmatizer.py --mode $mode \
 --sample_space_size $sample_size \
 --lem_optm $optm \
 --temperature $temperature \
+--beam_size $beam_size \
+--rel_prunning 0.3 \
 --gpu
 
