@@ -93,6 +93,7 @@ CUDA_LAUNCH_BLOCKING=1 python3 run_lemmatizer.py --mode $mode \
 --seed $seed \
 --train_file data/$tbname/train \
 --dev_file data/$tbname/dev \
+--test_file data/$tbname/test \
 --input_model $input_model \
 --epochs 20 \
 --batch_size $batch_size \
