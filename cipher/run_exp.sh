@@ -9,8 +9,8 @@ base=$3
 nc=$4
 nj=$5
 mode=$6
+niters=$7
 
-niters=500
 order=2
 
 
