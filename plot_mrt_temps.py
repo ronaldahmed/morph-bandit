@@ -18,7 +18,7 @@ def uploadObject(obj_name):
 
 
 
-server_mode = False
+server_mode = True
 
 
 bs = 5
