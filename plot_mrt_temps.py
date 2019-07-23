@@ -24,7 +24,7 @@ server_mode = False
 bs = 5
 alpha = 1e-3
 temp = 1
-ssizes = ["10", "20", "50"]
+temps = ["1", "5", "10"]
 
 root = os.path.join("models-segm","es_ancora")
 folder_name_template = "l1.mrt.warm_optm-adadelta_alpha-%s_sample-%s_clip-0_bs-%d"
@@ -37,12 +37,12 @@ edist_d = {}
 if server_mode:
 
 	folders =[
-		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-10",
-		"l1.mrt.warm_optm-adadelta_alpha-0.001_sample-20_clip-0_bs-10",
-		"l1.mrt_optm-adadelta_alpha-0.001_sample-50_clip-0_bs-10_temp-1",
+		"l1.mrt.warm_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5",
+		"l1.mrt.warm_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5_temp-5",
+		"l1.mrt_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5_temp-10",
 	]
 
-	for s,foldername in zip(ssizes,folders):
+	for t,foldername in zip(temps,folders):
 		acc_d[s] = []
 		edist_d[s] = []
 
@@ -55,13 +55,13 @@ if server_mode:
 			if match is None: continue
 			acc = float(match.group("acc"))
 			edist = float(match.group("dist"))
-			acc_d[s].append(acc)
-			edist_d[s].append(edist)
+			acc_d[t].append(acc)
+			edist_d[t].append(edist)
 	#
-	saveObject([acc_d,edist_d],"mrt_ssizes")
+	saveObject([acc_d,edist_d],"mrt_temps")
 
 else:
-	acc_d,edist_d = uploadObject("mrt_ssizes.pickle")
+	acc_d,edist_d = uploadObject("mrt_temps.pickle")
 
 	# pdb.set_trace()
 
@@ -80,17 +80,17 @@ else:
 
 	plt.figure(figsize=(16,8))
 	plt.subplot(121)
-	for s in ssizes:
-		_len = min(7,len(acc_d[s]))
-		plt.plot(eps[:_len],acc_d[s][:_len],colors_d[s]+line_d[s],label=r"$|S(w^i)|$="+s)
+	for t in temps:
+		_len = min(7,len(acc_d[t]))
+		plt.plot(eps[:_len],acc_d[t][:_len],colors_d[t]+line_d[t],label=r"$\tau$="+t)
 	plt.grid(True)
 	plt.xlabel("Epoch")
 	plt.ylabel("Lemmata Accuracy")
 
 	plt.subplot(122)
-	for s in ssizes:
-		_len = min(7,len(edist_d[s]))
-		plt.plot(eps[:_len],edist_d[s][:_len],colors_d[s]+line_d[s],label=r"$|S(w^i)|$="+s)
+	for t in temps:
+		_len = min(7,len(edist_d[t]))
+		plt.plot(eps[:_len],edist_d[t][:_len],colors_d[t]+line_d[t],label=r"$tau$="+t)
 	plt.grid(True)
 	plt.xlabel("Epoch")
 	plt.ylabel("Levenshtein Distance")
