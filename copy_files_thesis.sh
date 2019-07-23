@@ -53,7 +53,7 @@ for tb in $(cut -f 2 -d " " $batch); do
         cp models-anlz/$tb/log-l1a2.out $TGT/models-anlz/$tb/log-l1-a2.out
         # op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
         # input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
-    else
+    elif [ $exp != "l1.mrt" ]
         op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
         input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
         cp models-anlz/$tb/log-$exp.out $TGT/models-anlz/$tb/log-$exp.out
