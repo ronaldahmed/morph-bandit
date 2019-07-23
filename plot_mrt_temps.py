@@ -43,8 +43,8 @@ if server_mode:
 	]
 
 	for t,foldername in zip(temps,folders):
-		acc_d[s] = []
-		edist_d[s] = []
+		acc_d[t] = []
+		edist_d[t] = []
 
 		fname = os.path.join(root,foldername,"log.out")
 
