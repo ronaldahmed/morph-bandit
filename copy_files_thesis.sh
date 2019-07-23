@@ -59,7 +59,7 @@ for tb in $(cut -f 2 -d " " $batch); do
         cp models-anlz/$tb/log-$exp.out $TGT/models-anlz/$tb/log-$exp.out
     fi
 
-    cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log.out
+    # cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log.out
     cp $input_anlz_model $TGT/$input_anlz_model
 
     ####
