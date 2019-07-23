@@ -1,26 +1,96 @@
 #!/bin/bash
 
-batch=$1
-mode=$2  # dev, test, covered-test
+set -e
+
+batch="data/tbnames-thesis"
+exp="l1.mrt"
+loss="mrt" # "-"
+optm="adam"
+alpha_q="0.05"
+sample_size="20"
+batch_size="10" # 128 for MLE
+clip=0
+learning_rate="1e-4"
+temperature=10.0
+
+while [ $# -gt 1 ]
+do
+key="$1"
+case $key in
+    -b|--batch)
+    batch="$2"
+    shift # single-task
+    ;;
+    -e|--exp)
+    exp="$2"
+    shift # gpu 
+    ;;
+    -l|--loss)
+    loss="$2"
+    shift # pretrained model
+    ;;
+    -o|--optm)
+    optm="$2"
+    shift # pretrained model
+    ;;
+    -a|--alpha_q)
+    alpha_q="$2"
+    shift # pretrained model
+    ;;
+    -s|--sample)
+    sample_size="$2"
+    shift # pretrained model
+    ;;
+    -c|--clip)
+    clip="$2"
+    shift # pretrained model
+    ;;
+    -bs|--bs)
+    batch_size="$2"
+    shift # pretrained model
+    ;;
+    -temp|--temp)
+    temperature="$2"
+    shift # pretrained model
+    ;;
+    *)
+            # unknown option
+    ;;
+esac
+shift
+done 
+
+if [ $loss == "-" ]; then
+    if [ ${exp: -3} == "mle" ]; then
+    	loss="mle"
+    elif [ ${exp: -3} == "mrt" ]; then
+    	loss="mrt"
+    fi
+fi
 
 for tb in $(cut -f 2 -d " " $batch); do
 	echo $tb
-	# bash wraps/run_analizer.sh $tb models-segm/$tb
-	op_ep=$(tail -1 models-segm/$tb/log.out | cut -f 1)
-
-	if [ $op_ep == "0" ]; then
-		op_ep="19"
-	fi
-	# if [ $tb == "kpv_ikdp" ]; then
-	# 	op_ep="9"
-	# fi
-
-	input_model=models-segm/$tb/segm_$op_ep.pth
 	
-	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=1,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
-	-o models-segm/$tb/log-$mode.out \
-	-e models-segm/$tb/log-$mode.err \
-	wraps/test_lemm.sh $tb $mode $input_model
+    outdir=""
+	input_model="-"
+    if [ $loss == "mle" ];then
+        outdir=models-segm/$tb
+    elif [ $loss == "mrt" ]; then
+        outdir=models-segm/$tb/"$exp".warm_optm-"$optm"_alpha-"$alpha_q"_sample-"$sample_size"_clip-"$clip"_bs-"$batch_size"_temp-$temperature
+    fi
+    op_ep=$(tail -1 $outdir/log.out | cut -f 1)
+	input_model=$outdir/segm_$op_ep.pth
+
+	
+	qsub -q 'gpu*' -cwd -l gpu=1,gpu_cc_min3.5=0,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
+	-o $outdir/log-$mode.out \
+	-e $outdir/log-$mode.err \
+	wraps/run_lemmatizer.sh \
+    -tb $tb -m $mode --outdir $outdir --exp $exp \
+    --loss $loss -optm $optm -a $alpha_q -s $sample_size \
+    -bs $batch_size -lr $learning_rate -dp 0 -ilem $input_model -c $clip \
+    -temp $temperature
+	# wraps/test_lemm.sh $tb $mode $input_model
 	
 	# bash wraps/test_lemm.sh $tb $mode $input_model
 

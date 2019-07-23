@@ -18,7 +18,7 @@ def uploadObject(obj_name):
 
 
 
-server_mode = True
+server_mode = False
 
 
 bs = 5
@@ -74,14 +74,14 @@ else:
 	matplotlib.rc('font', **font)
 
 
-	eps = np.arange(len(acc_d[ssizes[0]]))
-	colors_d = dict(zip(ssizes,['r','b','g']))
-	line_d = dict(zip(ssizes,['--','-','-.']))
+	eps = np.arange(len(acc_d[temps[0]]))
+	colors_d = dict(zip(temps,['b','r','g']))
+	line_d = dict(zip(temps,['-','--','-.']))
 
 	plt.figure(figsize=(16,8))
 	plt.subplot(121)
 	for t in temps:
-		_len = min(7,len(acc_d[t]))
+		_len = min(6,len(acc_d[t]))
 		plt.plot(eps[:_len],acc_d[t][:_len],colors_d[t]+line_d[t],label=r"$\tau$="+t)
 	plt.grid(True)
 	plt.xlabel("Epoch")
@@ -89,7 +89,7 @@ else:
 
 	plt.subplot(122)
 	for t in temps:
-		_len = min(7,len(edist_d[t]))
+		_len = min(6,len(edist_d[t]))
 		plt.plot(eps[:_len],edist_d[t][:_len],colors_d[t]+line_d[t],label=r"$tau$="+t)
 	plt.grid(True)
 	plt.xlabel("Epoch")
