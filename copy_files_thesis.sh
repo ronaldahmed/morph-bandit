@@ -41,7 +41,7 @@ for tb in $(cut -f 2 -d " " $batch); do
         fi
         mkdir -p $TGT/l1-multi-emb/"$lang_name"-es/"$lang_name"-es/
     fi
-    cp $emb_file $TGT/"$emb_file"
+    cp ${emb_file} $TGT/"$emb_file"
 
     if [ $exp == "l1-a1" ]; then
         op_ep_anl=$(tail -1 models-anlz/$tb/log.out | cut -f 1)
@@ -60,7 +60,9 @@ for tb in $(cut -f 2 -d " " $batch); do
     fi
 
     # cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log.out
-    cp ${input_anlz_model} ${TGT}/${input_anlz_model}
+    if [ $exp != "l1.mrt" ]; then
+        cp ${input_anlz_model} ${TGT}/${input_anlz_model}
+    fi
 
     ####
     # mrt exps
