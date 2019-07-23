@@ -244,7 +244,7 @@ def main(args):
   ##########
 
   # 1. get filtered list of ops and individual features
-  op_filt,feat_filt = get_top_freq(loader,train,max_ops=20,max_fts=30)
+  op_filt,feat_filt = get_top_freq(loader,train,max_ops=50,max_fts=50)
   op_mapper = {x:i for i,x in enumerate(op_filt)}
   ft_mapper = {x:i for i,x in enumerate(feat_filt)}
 
@@ -260,7 +260,6 @@ def main(args):
 
   # pdb.set_trace()
   
-
 
 if __name__ == '__main__':
   args = analizer_args()

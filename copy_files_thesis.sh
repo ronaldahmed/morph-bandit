@@ -5,7 +5,6 @@ exp=$1
 batch="data/tbnames-thesis"
 
 
-
 TGT=$HOME/personal_work_ms/thesis-files
 loss="mle"
 
@@ -60,6 +59,13 @@ for tb in $(cut -f 2 -d " " $batch); do
     cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log.out
     cp $input_anlz_model $TGT/$input_anlz_model
 
+    ####
+    # mrt exps
+    expdir=models-segm/$tb/l1.mrt.warm_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5_temp-1
+    mkdir -p $TGT/$expdir
+    op_ep=$(tail -1 $expdir/log.out | cut -f 1)
+    mrt_model=$expdir/l1.mrt_"$op_ep"
 
-
+    cp $expdir/log.out $TGT/$expdir
+    cp $mrt_model $TGT/$expdir
 done
