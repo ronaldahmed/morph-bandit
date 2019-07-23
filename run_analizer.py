@@ -269,6 +269,9 @@ def test(args):
     state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
   lemmatizer.load_state_dict(state_dict)
 
+  ## load multi-ling emb for lemmatization as well
+  ##
+
   trainer_lem = TrainerLemmatizer(lemmatizer,loader,args)
   trainer_lem.freeze_model()
 

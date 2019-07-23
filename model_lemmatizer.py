@@ -43,6 +43,18 @@ class Lemmatizer(Module):
     self.ff2.weight.data.uniform_(-ff2_range, ff2_range)
 
 
+  # # replace mono-lingual embeddings loaded along the pretrained model 
+  # # with multi-ling embeddings
+  # def replace_embeddings(self,):
+  #   if "models-segm" in self.args.embedding_pth:
+  #     emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth).contiguous()) )
+  #   else:
+  #     emb = self.cuda(nn.Embedding.from_pretrained(torch.load(self.args.embedding_pth)["vectors"].contiguous()) )
+  #   for param in emb.parameters():
+  #     param.requires_grad = True
+
+
+
   def forward(self, w, hidden):
     emb = self.emb(w)
     rnn_output, hidden = self.encoder(emb, hidden)

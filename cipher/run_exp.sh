@@ -15,4 +15,4 @@ order=2
 
 
 python3 run_pipeline.py -il $il -rl $rl -b $base -it $niters -rc $nj -lm $order \
--nc $nc -j $nj -m $mode > logs/$rl$order-"$il"."$base".$nc.$niters.pipeline 2> logs/$rl$order-"$il"."$base".$nc.$niters.err
+-nc $nc -j $nj -m $mode -test_data um > logs/$rl$order-"$il"."$base".$nc.$niters.pipeline 2> logs/$rl$order-"$il"."$base".$nc.$niters.err
