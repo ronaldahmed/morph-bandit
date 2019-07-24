@@ -49,7 +49,7 @@ if __name__ == '__main__':
       wforms = get_vocab_from_vec(tb)
       dump_multi_vec(wforms,tb,outfn)
 
-      sys.exit(0)
+    sys.exit(0)
   else:
     args = analizer_args()
     print(args)
