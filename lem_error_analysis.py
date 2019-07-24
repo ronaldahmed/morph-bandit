@@ -7,6 +7,18 @@ from utils import START, UNK_TOKEN, map_ud_folders, test_punct
 from data_utils import *
 import pdb
 
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+font = {'family' : 'serif',
+        'serif': 'Times',
+        'size'   : 11}
+matplotlib.rc('font', **font)
+
+
+
 # no sentence distinction
 # just list of (form,lemma) tuples
 # file is CONLLU format
@@ -61,8 +73,10 @@ def error_anlz_args():
   return p.parse_args()
 
 
-def reformat_action(word):
-  return "%s.%s-%s" % (START,START,word.lower())
+def build_annot(data):
+  src_acc,tgt_acc,ntoks = data
+  return "%.2f\n%.2f\n%.1fk" % (src_acc,tgt_acc,ntoks/1000.0)
+
 
 
 if __name__ == '__main__':
@@ -82,14 +96,20 @@ if __name__ == '__main__':
   exp_temp = "../thesis-files/models_pred/%s-um-%s.conllu.%s.pred"
   gold_temp = "2019/task2/%s/%s-um-%s.conllu"
 
+  cases = ["Ambiguous","Unseen","Seen\nUnambiguous","All"]
+
+  id2tb = dict(enumerate(tbnames))
+  id2case = dict(enumerate(cases))
+
+  src_matrix = np.zeros([len(tbnames),len(id2case)])
+  tgt_matrix = np.zeros([len(tbnames),len(id2case)])
+  rel_matrix = np.zeros([len(tbnames),len(id2case)])
+  ntoks_matrix = np.zeros([len(tbnames),len(id2case)])
+  an_txt = []
 
   print("treebank,model,ambiguous,unseen,seen-unamb")
 
-  id2tb = dict(enumerate(tbnames))
-  id2case = dict(enumerate(["Ambiguous","Unseen","Seen Unambiguous","All"]))
-
-
-  for tb in tbnames:
+  for tb_id,tb in enumerate(tbnames):
     uddir = tb2ud[tb]
     # print(":: ",uddir,tb)
     # build filenames
@@ -116,18 +136,18 @@ if __name__ == '__main__':
     joint_map = {x:train_mapper.get(x,set()) | gold_mapper.get(x,set()) for x in joint_keys}
 
     # ambiguous : train+dev
-    amb_forms = set([x for x,y in joint_map.items() if len(y)>1])
+    # amb_forms = set([x for x,y in joint_map.items() if len(y)>1])
+    amb_forms = set([x for x,y in train_mapper.items() if len(y)>1 and x in gold_mapper])
     src_amb_acc = get_custom_acc(gold_tups,src_tups,amb_forms)
     tgt_amb_acc = get_custom_acc(gold_tups,tgt_tups,amb_forms)
 
     # unseen: w.r.t. train
     unseen_forms = set([x for x,y in gold_mapper.items() if x not in train_mapper])
-
     src_uns_acc = get_custom_acc(gold_tups,src_tups,unseen_forms)
     tgt_uns_acc = get_custom_acc(gold_tups,tgt_tups,unseen_forms)
 
     # seen unambiguous
-    seen_unamb_forms = set([x for x,y in joint_map.items() if len(y)==1 and x not in unseen_forms])
+    seen_unamb_forms = set([x for x,y in train_mapper.items() if len(y)==1 and x in gold_mapper])
     src_su_acc = get_custom_acc(gold_tups,src_tups,seen_unamb_forms)
     tgt_su_acc = get_custom_acc(gold_tups,tgt_tups,seen_unamb_forms)
 
@@ -135,11 +155,38 @@ if __name__ == '__main__':
     src_all_acc = get_custom_acc(gold_tups,src_tups)
     tgt_all_acc = get_custom_acc(gold_tups,tgt_tups)
 
-    print(tb,args.src_exp,src_amb_acc,src_uns_acc,src_su_acc,src_all_acc,sep=",")
-    print(tb,args.tgt_exp,tgt_amb_acc,tgt_uns_acc,tgt_su_acc,tgt_all_acc,sep=",")
+    print(tb,args.src_exp,src_amb_acc,src_uns_acc,src_su_acc,src_all_acc,sep="  ")
+    print(tb,args.tgt_exp,tgt_amb_acc,tgt_uns_acc,tgt_su_acc,tgt_all_acc,sep="  ")
+    print(tb,len(amb_forms),len(unseen_forms),len(seen_unamb_forms),len(src_tups),sep="  ")
+    print()
 
-    # print(src_amb_acc,tgt_amb_acc)
-    # print(src_uns_acc,tgt_uns_acc)
-    # print(src_su_acc,tgt_su_acc)
+    src_matrix[tb_id,:] = [src_amb_acc,src_uns_acc,src_su_acc,src_all_acc]
+    tgt_matrix[tb_id,:] = [tgt_amb_acc,tgt_uns_acc,tgt_su_acc,tgt_all_acc]
+    rel_matrix[tb_id,:] = 100.0*(tgt_matrix[tb_id,:] - src_matrix[tb_id,:]) / src_matrix[tb_id,:]
+    ntoks_matrix[tb_id,:] = [len(amb_forms),len(unseen_forms),len(seen_unamb_forms),len(src_tups)]
+
+    txt = list(map(build_annot,zip(src_matrix[tb_id,:],tgt_matrix[tb_id,:],ntoks_matrix[tb_id,:])))
+    an_txt.append(txt)
     # pdb.set_trace()
+  #
 
+  # build annotation text
+  
+  an_txt = np.array(an_txt).T
+
+  # pdb.set_trace()
+
+  lang_names = [x[:2] for x in tbnames]
+  ## plot heatmap
+
+  grid_kws = {"width_ratios": [20,1], "wspace": .1, "hspace": .1}
+  f, (a0,cax) = plt.subplots(nrows=1,ncols=2,gridspec_kw=grid_kws)
+
+  rel_df = pd.DataFrame(data=rel_matrix.T,columns=lang_names,index=cases)
+  sns.heatmap(rel_df,xticklabels=True, yticklabels=True,
+              cmap="Spectral",
+              annot=an_txt, fmt='',
+              ax=a0,cbar_ax=cax,
+              )
+  plt.tight_layout()
+  plt.show()
