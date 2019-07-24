@@ -21,7 +21,7 @@ else
 	emb_file=../thesis-files/l1-multi-emb/"$lang_name"-es/"$lang_name"-es/vectors-"$lang_name".pth
 fi
 
-python get_weighted_coorcrr_baselines.py \
+python3 get_weighted_coocrr_bselines.py \
 --mode dev \
 --seed 42 \
 --train_file data/$tb/train \
@@ -33,7 +33,8 @@ python get_weighted_coorcrr_baselines.py \
 --learning_rate 0.0001 \
 --dropout 0.05 \
 --embedding_pth $emb_file \
---input_lem_model $input_lem_model \
+--input_lem_model ${input_lem_model} \
+--input_model ${input_anlz_model} \
 --tagger_mode bundle \
 --exp_id $exp \
 --gpu

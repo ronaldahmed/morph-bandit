@@ -10,7 +10,7 @@ from trainer_analizer import TrainerAnalizer
 from trainer_lemmatizer import TrainerLemmatizer
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from collections import defaultdict, Counter
-from utils import STOP_LABEL, SPACE_LABEL
+from utils import STOP_LABEL, SPACE_LABEL, apply_operations
 
 import pandas as pd
 import matplotlib
@@ -18,7 +18,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 font = {'family' : 'serif',
-        'size'   : 14}
+        'serif': 'Times',
+        'size'   : 11}
 matplotlib.rc('font', **font)
 
 
@@ -66,7 +67,7 @@ def get_pred_distribution(args,train_lem,train_anlz,loader,dev,op_mapper,ft_mapp
   n_ops = len(op_mapper)
   p_op_ft = np.zeros([n_ops,len(ft_mapper)],dtype=float)
 
-  batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  batch   = BatchAnalizer(dev,args)
   stop_id = loader.vocab_oplabel.get_label_id(STOP_LABEL)
 
   # similar to evaluation / decoding on eval_metrics_batch
@@ -137,8 +138,8 @@ def get_pred_distribution(args,train_lem,train_anlz,loader,dev,op_mapper,ft_mapp
             p_op_ft[op_id,ft_ids] += op_sc * pred_ft_sc
         #
     #
-    # for i in range(n_ops):
-    #   p_op_ft[i,:] = p_op_ft[i,:] / p_op_ft[i,:].sum() if p_op_ft[i,:].sum() > 0 else 0.0
+    for i in range(n_ops):
+      p_op_ft[i,:] = p_op_ft[i,:] / p_op_ft[i,:].sum() if p_op_ft[i,:].sum() > 0 else 0.0
     
     return p_op_ft
 
@@ -207,8 +208,8 @@ def main(args):
   dev   = loader.load_data("dev")
 
   print("Init batch objs")
-  train_batch = BatchAnalizer(train,args.batch_size,args.gpu)
-  dev_batch   = BatchAnalizer(dev,args.batch_size,args.gpu)
+  train_batch = BatchAnalizer(train,args)
+  dev_batch   = BatchAnalizer(dev,args)
   n_vocab = loader.get_vocab_size()
   n_feats = loader.get_feat_vocab_size()
 
@@ -227,7 +228,7 @@ def main(args):
     state_dict = torch.load(args.input_lem_model, map_location=lambda storage, loc: storage)
   lemmatizer.load_state_dict(state_dict)
 
-  trainer_lem = TrainerLemmatizer(lemmatizer,n_vocab,args)
+  trainer_lem = TrainerLemmatizer(lemmatizer,loader,args)
   trainer_lem.freeze_model()
 
   # load analizer
