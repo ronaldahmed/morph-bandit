@@ -26,10 +26,10 @@ def dump_multi_vec(wforms,tbname,outfn):
   mfn = "../thesis-files/l1-multi-emb/%s-es/%s-es/vectors-%s.pth" % (lid,lid,lid)
   emb_mtx = torch.load(mfn,map_location='cpu').cpu().numpy()
   assert emb_mtx.shape[0] == len(wforms)
-  print(emb_mtx.shape[0],emb_mtx.shape[1],sep=" ",file=outfile)
+  print(*emb_mtx.shape,sep=" ", file=outfile)
   for idx,form in enumerate(wforms):
     str_emb = " ".join([str(x) for x in emb_mtx[idx,:]])
-    print(form,str_emb,sep=" ",file=outfile)
+    print(form,str_emb,sep=" ", file=outfile)
   return
 
 
