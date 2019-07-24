@@ -48,7 +48,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 	qsub -q 'gpu-troja.q' -cwd -l gpu=1,gpu_cc_min3.5=0,gpu_ram=4G,mem_free=10G,act_mem_free=10G,h_data=15G -p -10 \
 	-o models-anlz/$tb/log-$exp-$mode.out \
 	-e models-anlz/$tb/log-$exp-$mode.err \
-	wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" "$emb_file" $bsearch $tagger_mode $exp
+	wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" "$emb_file" $bsearch "$tagger_mode" $exp
 	
 	# bash wraps/test_anlz.sh $tb $mode "$input_lem_model" "$input_anlz_model" $emb_file
 done
