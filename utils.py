@@ -4,6 +4,7 @@ import glob as gb
 import re
 import pdb
 import torch
+import unicodedata
 from collections import Counter, namedtuple
 
 # label names
@@ -90,6 +91,13 @@ def identity(x):
 
 def fixed_var(tensor):
   return tensor.detach()
+
+
+def test_punct(token):
+  for c in token:
+    if unicodedata.category(c)[0] != 'P':
+      return False
+  return True
 
 
 class MetricsWrap:

@@ -3,7 +3,7 @@ import argparse
 from collections import Counter, defaultdict
 from my_flags import *
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
-from utils import START, UNK_TOKEN, map_ud_folders
+from utils import START, UNK_TOKEN, map_ud_folders, test_punct
 from data_utils import *
 import pdb
 
@@ -17,8 +17,8 @@ def get_form_lemmas(filename):
     if line=='' or line.startswith("#"): continue
     comps = line.split('\t')
     if len(comps)<2: continue
-    w = comps[1].lower()
-    l = comps[2].lower()
+    w = comps[1]
+    l = comps[2]
     data.append([w,l])
   return data
 
@@ -30,7 +30,7 @@ def get_form_lemma_mapper(tup_list):
     form_lemms_map[w].add(lm)
   return form_lemms_map
 
-def get_custom_acc(gold_tup,pred_tups,licited):
+def get_custom_acc(gold_tup,pred_tups,licited=set()):
   acc = 0.0
   total = 0
   for gold,pred in zip(gold_tups,pred_tups):
@@ -43,9 +43,14 @@ def get_custom_acc(gold_tup,pred_tups,licited):
     if gw != pw:
       print("diff words!!",gw,pw)
       pdb.set_trace()
-    if gw not in licited: continue
+    if len(licited)!=0:
+      if gw not in licited: continue
+    # if test_punct(gw): continue
     acc += int(gl==pl)
     total += 1
+
+  # pdb.set_trace()
+  # print("-->")
   return (100.0*acc) / total
 
 
@@ -79,6 +84,10 @@ if __name__ == '__main__':
 
 
   print("treebank,model,ambiguous,unseen,seen-unamb")
+
+  id2tb = dict(enumerate(tbnames))
+  id2case = dict(enumerate(["Ambiguous","Unseen","Seen Unambiguous","All"]))
+
 
   for tb in tbnames:
     uddir = tb2ud[tb]
@@ -122,8 +131,12 @@ if __name__ == '__main__':
     src_su_acc = get_custom_acc(gold_tups,src_tups,seen_unamb_forms)
     tgt_su_acc = get_custom_acc(gold_tups,tgt_tups,seen_unamb_forms)
 
-    print(tb,args.src_exp,src_amb_acc,src_uns_acc,src_su_acc,sep=",")
-    print(tb,args.tgt_exp,tgt_amb_acc,tgt_uns_acc,tgt_su_acc,sep=",")
+    # all
+    src_all_acc = get_custom_acc(gold_tups,src_tups)
+    tgt_all_acc = get_custom_acc(gold_tups,tgt_tups)
+
+    print(tb,args.src_exp,src_amb_acc,src_uns_acc,src_su_acc,src_all_acc,sep=",")
+    print(tb,args.tgt_exp,tgt_amb_acc,tgt_uns_acc,tgt_su_acc,tgt_all_acc,sep=",")
 
     # print(src_amb_acc,tgt_amb_acc)
     # print(src_uns_acc,tgt_uns_acc)
