@@ -24,7 +24,7 @@ def dump_multi_vec(wforms,tbname,outfn):
   lid = tbname[:2]
   outfile = open(outfn,'w')
   mfn = "../thesis-files/l1-multi-emb/%s-es/%s-es/vectors-%s.pth" % (lid,lid,lid)
-  emb_mtx = torch.load(mfn,map_location='cpu').cpu().numpy()
+  emb_mtx = torch.load(mfn,map_location='cpu')["vectors"].contiguous().cpu().numpy()
   assert emb_mtx.shape[0] == len(wforms)
   print(*emb_mtx.shape,sep=" ", file=outfile)
   for idx,form in enumerate(wforms):
