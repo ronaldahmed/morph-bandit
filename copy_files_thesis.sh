@@ -5,7 +5,6 @@ exp=$1
 batch="data/tbnames-thesis"
 
 
-
 TGT=$HOME/personal_work_ms/thesis-files
 loss="mle"
 
@@ -42,24 +41,38 @@ for tb in $(cut -f 2 -d " " $batch); do
         fi
         mkdir -p $TGT/l1-multi-emb/"$lang_name"-es/"$lang_name"-es/
     fi
-    cp $emb_file $TGT/$emb_file
+    cp ${emb_file} $TGT/"$emb_file"
 
     if [ $exp == "l1-a1" ]; then
         op_ep_anl=$(tail -1 models-anlz/$tb/log.out | cut -f 1)
         input_anlz_model=models-anlz/$tb/anlz_"$op_ep_anl".pth
+        cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log-l1-a1.out
     elif [ $exp == "l1-a2" ]; then
         op_ep_anl=$(tail -1 models-anlz/$tb/log-l1a2.out | cut -f 1)
         input_anlz_model=models-anlz/$tb/anlz_fine-seq_"$op_ep_anl".pth
+        cp models-anlz/$tb/log-l1a2.out $TGT/models-anlz/$tb/log-l1-a2.out
         # op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
         # input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
-    else
+    elif [ $exp != "l1.mrt" ]; then
         op_ep_anl=$(tail -1 models-anlz/$tb/log-$exp.out | cut -f 1)
         input_anlz_model=models-anlz/$tb/"$exp"_"$op_ep_anl".pth
+        cp models-anlz/$tb/log-"$exp".out $TGT/models-anlz/$tb/log-"$exp".out
     fi
 
-    cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log.out
-    cp $input_anlz_model $TGT/$input_anlz_model
+    # cp models-anlz/$tb/log.out $TGT/models-anlz/$tb/log.out
+    if [ $exp != "l1.mrt" ]; then
+        cp ${input_anlz_model} ${TGT}/${input_anlz_model}
+    fi
 
+    ####
+    # mrt exps
+    if [ $exp == "l1.mrt" ]; then
+        expdir=models-segm/$tb/l1.mrt.warm_optm-adadelta_alpha-0.0001_sample-20_clip-0_bs-5_temp-1
+        mkdir -p $TGT/$expdir
+        op_ep=$(tail -1 $expdir/log.out | cut -f 1)
+        mrt_model=$expdir/l1.mrt_"$op_ep".pth
 
-
+        cp $expdir/log.out $TGT/$expdir
+        cp ${mrt_model} $TGT/$expdir
+    fi
 done

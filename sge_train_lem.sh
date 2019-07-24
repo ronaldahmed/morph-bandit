@@ -11,7 +11,8 @@ sample_size="20"
 batch_size="10" # 128 for MLE
 clip=0
 learning_rate="1e-4"
-temperature=10.0
+temperature=1.0
+dropout=0
 
 while [ $# -gt 1 ]
 do
@@ -53,6 +54,14 @@ case $key in
     temperature="$2"
     shift # pretrained model
     ;;
+    -lr|--lr)
+    learning_rate="$2"
+    shift # pretrained model
+    ;;
+    -drp|--drp)
+    dropout="$2"
+    shift # pretrained model
+    ;;
     *)
             # unknown option
     ;;
@@ -90,7 +99,7 @@ for tb in $(cut -f 2 -d " " $batch); do
 	wraps/run_lemmatizer.sh \
     -tb $tb -m train --outdir $outdir --exp $exp \
     --loss $loss -optm $optm -a $alpha_q -s $sample_size \
-    -bs $batch_size -lr $learning_rate -dp 0 -ilem $input_model -c $clip \
+    -bs $batch_size -lr $learning_rate -dp $dropout -ilem $input_model -c $clip \
     -temp $temperature
 
 done
