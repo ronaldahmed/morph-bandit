@@ -12,8 +12,9 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from collections import defaultdict, Counter
 from utils import STOP_LABEL, SPACE_LABEL, apply_operations
 
-from gensim.models import Word2Vec
+from gensim.models import Word2Vec, KeyedVectors
 
+import pdb
 
 def get_vocab_from_vec(tbname):
   fn = "../thesis-files/l1-mono-emb/"+tbname+".vec"
@@ -33,9 +34,26 @@ def dump_multi_vec(wforms,tbname,outfn):
   return
 
 
+def get_action_queries(vocab,ending):
+  res = []
+  for w in vocab:
+    if w.endswith(ending):
+      res.append(w)
+  return res
+
+
+def get_neighbors(a_emb,model,top=20):
+  return model.most_similar(positive=[a_emb],negative=[],topn=top)
+
+
+def print_res(lid,cand):
+  print("\t",lid)
+  for l,s in cand:
+    print("\t\t%20s\t%.4f" % (l,s) )
+
 
 if __name__ == '__main__':
-  prepro = True
+  prepro = False
   tbnames = [
     "es_ancora",
     "cs_pdt",
@@ -51,35 +69,36 @@ if __name__ == '__main__':
 
     sys.exit(0)
   else:
-    args = analizer_args()
-    print(args)
+    # args = analizer_args()
+    # print(args)
     w2vmodel = {}
     for tb in tbnames:
       print("::",tb)
       infn = "../thesis-files/l1-multi-emb/"+tb+".vec"
-      model = Word2Vec.load_word2vec_format(infn)
+      model = KeyedVectors.load_word2vec_format(infn)
       w2vmodel[tb] = model
     #
 
+    src_model = w2vmodel["es_ancora"]
+    queries = [
+      get_action_queries(src_model.vocab.keys(),"A_-s"),  # Pl
+      get_action_queries(src_model.vocab.keys(),"A_-ía"), # PST
+      get_action_queries(src_model.vocab.keys(),"_A-i"),  # Neg
+      # get_action_queries(w2vmodel["es_ancora"].vocab.keys(),"A_-ando"),
+      # get_action_queries(w2vmodel["es_ancora"].vocab.keys(),"A_-ndo"),
+    ]
+    for qry in queries:
+      for action in qry:
+        emb = src_model[action]
+        cs_nb = get_neighbors(emb,w2vmodel["cs_pdt"])
+        en_nb = get_neighbors(emb,w2vmodel["en_ewt"])
+        es_nb = get_neighbors(emb,w2vmodel["es_ancora"])
+
+        print(":: ",action)
+        for lid,cand in zip(["es","en","cs"],[es_nb,en_nb,cs_nb]):
+          print_res(lid,cand)
+
+        pdb.set_trace()
 
 
-
-
-  if args.seed != -1:
-    torch.manual_seed(args.seed)
-    np.random.seed(args.seed)
-
-  input_temp = "data/%s/%s"
-  emb_temp = "../thesis-files/l1-multi-emb/%s-es/%s-es/vectors-%s.pth"
-
-
-  for tb in tbnames:
-    exp_args = args
-    exp_args["train_file"] = input_temp % (tb,"train")
-    lid = tb[:2]
-    emb_fn = emb_temp % (lid,lid,lid)
-
-    loader = DataLoaderAnalizer(exp_args)
-    train = loader.load_data("train")
-
-
+    print("-->")
