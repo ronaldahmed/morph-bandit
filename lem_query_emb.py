@@ -42,15 +42,54 @@ def get_action_queries(vocab,ending):
   return res
 
 
-def get_neighbors(a_emb,model,top=20):
-  return model.most_similar(positive=[a_emb],negative=[],topn=top)
+def get_neighbors(a_emb,model,ops_by_tuple,nmorphs=10,nstarts=10):
+  def get_ex(actions):
+    res = []
+    ex_thr = 5
+    for m,_ in actions:
+      cnt = 0
+      res.append([])
+      for (w,l),ops in ops_by_tuple.items():
+        if m in ops:
+          res[-1].append(w+","+l)
+          cnt += 1
+        if cnt>ex_thr-1: break
+    return res
+
+  cands = model.most_similar(positive=[a_emb],negative=[],topn=300)
+  morphs = [x for x in cands if not x[0].startswith("START")][:nmorphs]
+  starts = [x for x in cands if x[0].startswith("START")][:nstarts]
+  ex_morphs = get_ex(morphs)
+  ex_starts = get_ex(starts)
+
+  return starts,morphs,ex_starts,ex_morphs
 
 
 def print_res(lid,cand):
   print("\t",lid)
-  for l,s in cand:
-    print("\t\t%20s\t%.4f" % (l,s) )
+  ss,mm,es,em = cand
+  for (l,s),ex in zip(mm,em):
+    print("\t\t%20s (%.2f) | %s" % (l,s,"  ".join(ex)) )
 
+  for (l,s),ex in zip(ss,es):
+    print("\t\t%20s (%.2f) | %s" % (l,s,"  ".join(ex)) )
+
+
+def load_train_tuples(tb):
+  filename = "data/"+tb+"/train"
+  tups = {}
+  for line in open(filename,'r'):
+    line = line.strip('\n')
+    if line=="": continue
+    comps = line.split("\t")
+    w,lem,feats = comps[:3]
+    op_seq = comps[3:]
+    _key = tuple([w,lem])
+    if _key not in tups:
+      tups[_key] = op_seq
+  return tups
+
+##################################################################################3
 
 if __name__ == '__main__':
   prepro = False
@@ -72,33 +111,41 @@ if __name__ == '__main__':
     # args = analizer_args()
     # print(args)
     w2vmodel = {}
+    op_by_tuple = {}
     for tb in tbnames:
       print("::",tb)
       infn = "../thesis-files/l1-multi-emb/"+tb+".vec"
       model = KeyedVectors.load_word2vec_format(infn)
       w2vmodel[tb] = model
+      op_by_tuple[tb] = load_train_tuples(tb)
     #
 
-    src_model = w2vmodel["es_ancora"]
     queries = [
-      get_action_queries(src_model.vocab.keys(),"A_-s"),  # Pl
-      get_action_queries(src_model.vocab.keys(),"A_-ía"), # PST
-      get_action_queries(src_model.vocab.keys(),"_A-i"),  # Neg
+      ("A_-s","es_ancora"),  # Pl
+      ("A_-y","cs_pdt"),  # Pl
+      ("A_-ía","es_ancora"), # PST
+      ("A_-ed","en_ewt"), # PST
+      ("_A-i","es_ancora"),  # Neg
+      ("_A-in","es_ancora"),  # Neg
+      ("_A-im","es_ancora"),  # Neg
+      ("_A-dis","es_ancora"),  # Neg
+      ("A_-ne","cs_pdt"),  # Neg
       # get_action_queries(w2vmodel["es_ancora"].vocab.keys(),"A_-ando"),
       # get_action_queries(w2vmodel["es_ancora"].vocab.keys(),"A_-ndo"),
     ]
-    for qry in queries:
-      for action in qry:
+    for qry_pat,tb in queries:
+      src_model = w2vmodel[tb]
+      for action in get_action_queries(src_model.vocab.keys(),qry_pat):
         emb = src_model[action]
-        cs_nb = get_neighbors(emb,w2vmodel["cs_pdt"])
-        en_nb = get_neighbors(emb,w2vmodel["en_ewt"])
-        es_nb = get_neighbors(emb,w2vmodel["es_ancora"])
+        cs_nb = get_neighbors(emb,w2vmodel["cs_pdt"],op_by_tuple["cs_pdt"])
+        en_nb = get_neighbors(emb,w2vmodel["en_ewt"],op_by_tuple["en_ewt"])
+        es_nb = get_neighbors(emb,w2vmodel["es_ancora"],op_by_tuple["es_ancora"])
 
-        print(":: ",action)
+        print(":: ",tb,"--",action)
         for lid,cand in zip(["es","en","cs"],[es_nb,en_nb,cs_nb]):
           print_res(lid,cand)
 
-        pdb.set_trace()
+        # pdb.set_trace()
 
 
     print("-->")
