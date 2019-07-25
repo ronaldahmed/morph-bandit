@@ -56,11 +56,31 @@ def get_neighbors(a_emb,model,ops_by_tuple,nmorphs=10,nstarts=10):
         if cnt>ex_thr-1: break
     return res
 
-  cands = model.most_similar(positive=[a_emb],negative=[],topn=300)
-  morphs = [x for x in cands if not x[0].startswith("START")][:nmorphs]
-  starts = [x for x in cands if x[0].startswith("START")][:nstarts]
+  scores = model.most_similar(positive=[a_emb],negative=[],topn=None)
+  i_scores = list(enumerate(scores))
+  i_scores.sort(key=lambda x: x[1],reverse=True)
+  morphs = []
+  starts = []
+  for idx,sc in i_scores:
+    w = model.index2word[idx]
+    if w.startswith("START") and len(starts) < nstarts:
+      starts.append([w,sc])
+    if not w.startswith("START") and len(morphs) < nmorphs:
+      morphs.append([w,sc])
+    if len(starts)>=nstarts and len(morphs)>=nmorphs:
+      break
+
+  # try:
+  #   morphs = [x for x in cands if not x[0].startswith("START")][:nmorphs]
+  # except:
+  #   pdb.set_trace()
+  # starts = [x for x in cands if x[0].startswith("START")][:nstarts]
+  
+  # pdb.set_trace()
+
   ex_morphs = get_ex(morphs)
   ex_starts = get_ex(starts)
+
 
   return starts,morphs,ex_starts,ex_morphs
 
@@ -129,7 +149,9 @@ if __name__ == '__main__':
       ("_A-in","es_ancora"),  # Neg
       ("_A-im","es_ancora"),  # Neg
       ("_A-dis","es_ancora"),  # Neg
-      ("A_-ne","cs_pdt"),  # Neg
+      ("_A-ne","cs_pdt"),  # Neg
+      ("A_-ing","en_ewt"), # PST
+      ("A_-ing","en_ewt"), # PST
       # get_action_queries(w2vmodel["es_ancora"].vocab.keys(),"A_-ando"),
       # get_action_queries(w2vmodel["es_ancora"].vocab.keys(),"A_-ndo"),
     ]
@@ -137,9 +159,9 @@ if __name__ == '__main__':
       src_model = w2vmodel[tb]
       for action in get_action_queries(src_model.vocab.keys(),qry_pat):
         emb = src_model[action]
+        es_nb = get_neighbors(emb,w2vmodel["es_ancora"],op_by_tuple["es_ancora"])
         cs_nb = get_neighbors(emb,w2vmodel["cs_pdt"],op_by_tuple["cs_pdt"])
         en_nb = get_neighbors(emb,w2vmodel["en_ewt"],op_by_tuple["en_ewt"])
-        es_nb = get_neighbors(emb,w2vmodel["es_ancora"],op_by_tuple["es_ancora"])
 
         print(":: ",tb,"--",action)
         for lid,cand in zip(["es","en","cs"],[es_nb,en_nb,cs_nb]):
