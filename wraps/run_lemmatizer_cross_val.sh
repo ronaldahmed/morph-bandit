@@ -106,9 +106,6 @@ exp_id=lem.${loss}.${fold}
 if [ $loss == "mrt" ]; then
     op_ep=$(tail -1 models-segm/$tbname/fold.${fold}/log | cut -f 1)
     input_model=models-segm/$tbname/fold.${fold}/${exp_id}_${op_ep}.pth
-    echo $op_ep
-
-    exit 1
 fi
 
 
