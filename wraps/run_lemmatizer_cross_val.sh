@@ -37,10 +37,6 @@ case $key in
     mdir="$2"
     shift # single-task
     ;;
-    -e|--exp)
-    exp_id="$2"
-    shift # gpu 
-    ;;
     -l|--loss)
     loss="$2"
     shift # pretrained model
@@ -104,6 +100,8 @@ done
 cd ..
 
 mkdir -p $mdir/fold.${fold}
+
+exp_id=lem.${loss}.${fold}
 
 CUDA_VISIBLE_DEVICES=${GPU} python3 run_lemmatizer.py --mode $mode \
 --seed $seed \
