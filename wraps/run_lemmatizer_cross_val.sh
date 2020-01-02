@@ -126,5 +126,5 @@ CUDA_VISIBLE_DEVICES=${GPU} python3 run_lemmatizer.py --mode $mode \
 --temperature $temperature \
 --beam_size $beam_size \
 --rel_prunning 0.3 \
---gpu
+--gpu > $mdir/fold.${fold}/log 2> $mdir/fold.${fold}/err
 
