@@ -11,7 +11,7 @@ exp_id="l1.mrt"
 loss="mrt" # "-"
 optm="adam"
 alpha_q="0.1"
-sample_size="10"
+sample_size="20"
 batch_size=128
 learning_rate="0.00069"
 dropout="0.19"
@@ -126,5 +126,5 @@ CUDA_VISIBLE_DEVICES=${GPU} python3 run_lemmatizer.py --mode $mode \
 --temperature $temperature \
 --beam_size $beam_size \
 --rel_prunning 0.3 \
---gpu > $mdir/fold.${fold}/log 2> $mdir/fold.${fold}/err
+--gpu > $mdir/fold.${fold}/${exp_id}.log 2> $mdir/fold.${fold}/${exp_id}.err
 
