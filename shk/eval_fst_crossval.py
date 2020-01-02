@@ -65,7 +65,7 @@ if __name__ == "__main__":
     output_res = [float(x) for x in output_res]
 
     print("Fold",k)
-    print(output_res)
+    print(output_res[:2])
     
     
 
