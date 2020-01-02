@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="¿ Tsoabaonki pishta aká iki !" translation="¿Quiénes hicieron la fiesta?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="Tsoabaonki" posTag="Palabra Interrogativa" subPosTag="" token="Tsoabaonki">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="pishta" lemmaPred="pishta" posTag="Nombre" subPosTag="Contable" token="pishta"/>
+        <word id="3" lemma="ati" lemmaPred="pishta" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="pishta" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="1" text="¿ Tsoaboki ja pishtanko beá iki ?" translation="¿Quiénes intervinieron en esta fiesta?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="pishta" posTag="Palabra Interrogativa" subPosTag="" token="Tsoaboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ja" lemmaPred="pishta" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="3" lemma="pishta" lemmaPred="pishtanko" posTag="Nombre" subPosTag="Contable" token="pishtanko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="béti" lemmaPred="pishtanko" posTag="Verbo" subPosTag="Transitivo" token="beá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Tsonki kina xoon aká iki ?" translation="¿Quién tocaba la quena?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="iki" posTag="Palabra Interrogativa" subPosTag="" token="Tsonki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="kina" lemmaPred="iki" posTag="Nombre" subPosTag="Contable" token="kina"/>
+        <word id="3" lemma="xoon" lemmaPred="xoon" posTag="Onomatopeya" subPosTag="" token="xoon"/>
+        <word id="4" lemma="ati" lemmaPred="xoon" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="xoon" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Iikanainbiki tsoa jatoki joá iki ?" translation="Mientras hacían fiesta ¿quién vino?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="iiti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="Iikanainbiki">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ain" type="Clít. concord. de particip."/>
+            <affix order="3" text="bi" type="Clít. de posición libre"/>
+            <affix order="4" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="tsoa" lemmaPred="Iikanainbiki" posTag="Palabra Interrogativa" subPosTag="" token="tsoa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jato" lemmaPred="jatoki" posTag="Pronombre" subPosTag="Personal" token="jatoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="joti" lemmaPred="jatoki" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="jatoki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jawerakiki jato maxokan aká iki ?" translation="¿Qué les dijo el zorro?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jaweraki" lemmaPred="jatoki" posTag="Palabra Interrogativa" subPosTag="" token="Jawerakiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jato" lemmaPred="maxokan" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="3" lemma="maxó" lemmaPred="maxokan" posTag="Nombre" subPosTag="Contable" token="maxokan">
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="ati" lemmaPred="maxokan" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="maxokan" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

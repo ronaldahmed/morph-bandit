@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Iso betan joni iní" translation="El hombre y el mono maquisapa">
+        <word id="0" lemma="iso" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Iso"/>
+        <word id="1" lemma="betan" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="joni" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="3" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Wetsa netenronki joni kaa iki kachio ." translation="Cierto día un hombre se fue al monte y con mucha suerte halló una manada de maquisapas que comían frutas.">
+        <word id="0" lemma="wetsa" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Wetsa"/>
+        <word id="1" lemma="nete" lemmaPred="netenronki" posTag="Nombre" subPosTag="Contable" token="netenronki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="joni" lemmaPred="netenronki" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="3" lemma="kati" lemmaPred="kaa" posTag="Verbo" subPosTag="Intransitivo" token="kaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="kaa" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="kachio" lemmaPred="kaa" posTag="Adverbio" subPosTag="Locación" token="kachio"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskaatananki , iso ishton wenítanna , jiwi bochiki neeta iki , bonko meran jikii ." translation="Luego, el mono se levantó rápidamente, se subió a un árbol y se perdió en el follaje.">
+        <word id="0" lemma="jaskaatanan" lemmaPred="Jaskaatananki" posTag="Conjunción" subPosTag="Coordinante" token="Jaskaatananki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="iso" lemmaPred="Jaskaatananki" posTag="Nombre" subPosTag="Contable" token="iso"/>
+        <word id="3" lemma="ishton" lemmaPred="Jaskaatananki" posTag="Adverbio" subPosTag="Manera" token="ishton"/>
+        <word id="4" lemma="weníti" lemmaPred="wenítanna" posTag="Verbo" subPosTag="Intransitivo" token="wenítana">
+            <affix order="1" text="tan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jiwi" lemmaPred="wenítanna" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="7" lemma="bochiki" lemmaPred="wenítanna" posTag="Postposición" subPosTag="" token="bochiki"/>
+        <word id="8" lemma="néeti" lemmaPred="wenítanna" posTag="Verbo" subPosTag="Intransitivo" token="neeta">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" lemmaPred="wenítanna" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="bonko" lemmaPred="wenítanna" posTag="Nombre" subPosTag="Contable" token="bonko"/>
+        <word id="12" lemma="meran" lemmaPred="wenítanna" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="13" lemma="jikiti" lemmaPred="jikii" posTag="Verbo" subPosTag="Intransitivo" token="jikii">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskataxki iso jabata iki , jonin reteamabi ." translation="Y el pobre hombre se quedó sin dedo.">
+        <word id="0" lemma="Jaskatax" lemmaPred="jikii" posTag="Adverbio" subPosTag="Manera" token="Jaskataxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="iso" lemmaPred="jikii" posTag="Nombre" subPosTag="Contable" token="iso"/>
+        <word id="2" lemma="jabáti" lemmaPred="jikii" posTag="Verbo" subPosTag="Intransitivo" token="jabata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="joni" lemmaPred="iki" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="réteti" lemmaPred="reteamabi" posTag="Verbo" subPosTag="Transitivo" token="reteamabi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Sufijo verbal"/>
+            <affix order="3" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainoaxki joni moa joá iki , jawen xobon , ikaxbi metotiomares ." translation="Después, adolorido y triste, regresó otra vez a su casa.">
+        <word id="0" lemma="jainoax" lemmaPred="reteamabi" posTag="Conjunción" subPosTag="Coordinante" token="Jainoaxki">
+            <affix order="1" text="ki" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="joni" lemmaPred="joninra" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="2" lemma="moa" lemmaPred="joninra" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="joti" lemmaPred="joninra" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jawen" lemmaPred="iki" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="7" lemma="xobo" lemmaPred="iki" posTag="Nombre" subPosTag="Contable" token="xobon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="ikaxbi" lemmaPred="ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="ikaxbi"/>
+        <word id="10" lemma="metoti" lemmaPred="metotiomares" posTag="Nombre" subPosTag="Contable" token="metotiomares">
+            <affix order="1" text="oma" type="Clít. nominal"/>
+            <affix order="2" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

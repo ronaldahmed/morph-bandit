@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jonin ino paráni" translation="El tigre que fue engañado por un hombre">
+        <word id="0" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="2" lemma="paranti" posTag="Verbo" subPosTag="Transitivo" token="paráni">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Min cuaderno meran wishawe , pichika jiwin jane ." translation="Escribe en tu cuaderno los nombres de cinco árboles.">
+        <word id="0" lemma="mia" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" lemmaPred="" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wishati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="pichika" lemmaPred="" posTag="Numeral" subPosTag="" token="pichika"/>
+        <word id="6" lemma="jiwi" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jane" lemmaPred="jane" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainxonribi wishawe , pichika baná jawékinin jane , ikaxbi jiwima ." translation="Escribe los nombres de cinco plantas que no son árboles.">
+        <word id="0" lemma="jainxon" lemmaPred="jane" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="wishati" lemmaPred="jane" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="pichika" lemmaPred="jane" posTag="Numeral" subPosTag="" token="pichika"/>
+        <word id="4" lemma="baná" lemmaPred="jane" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="5" lemma="jawéki" lemmaPred="jane" posTag="Nombre" subPosTag="Contable" token="jawékinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jane" lemmaPred="jane" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="Ikaxbi" lemmaPred="ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="ikaxbi"/>
+        <word id="9" lemma="jiwi" lemmaPred="jiwima" posTag="Nombre" subPosTag="Contable" token="jiwima">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Kimisha baná jawékira Perúainoaxpari xoxoa iki ." translation="Tres plantas del reino vegetal son oriundas del Perú.">
+        <word id="0" lemma="kimisha" lemmaPred="jiwima" posTag="Numeral" subPosTag="" token="Kimisha"/>
+        <word id="1" lemma="baná" lemmaPred="jiwima" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="2" lemma="jawéki" lemmaPred="jawékira" posTag="Nombre" subPosTag="Contable" token="jawékira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="Perú" lemmaPred="Perúainoaxpari" posTag="Nombre Propio" subPosTag="" token="Perúainoaxpari">
+            <affix order="1" text="ainoax" type="Clít. nominal"/>
+            <affix order="2" text="pari" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="xoxoti" lemmaPred="xoxoa" posTag="Verbo" subPosTag="Intransitivo" token="xoxoa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="xoxoa" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaa baná jawékibo iki , xeki , papa quinuaribi ." translation="Estas plantas son el maíz, la papa y la quinua.">
+        <word id="0" lemma="ja" lemmaPred="xoxoa" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="baná" lemmaPred="xoxoa" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="2" lemma="jawéki" lemmaPred="xoxoa" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="xoxoa" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="xeki" lemmaPred="Perúainoax" posTag="Nombre" subPosTag="No contable" token="xeki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="papa" lemmaPred="xeki" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="8" lemma="quinua" lemmaPred="quinuaribi" posTag="Nombre" subPosTag="Contable" token="quinuaribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa xeki , papa , quinua , jaa jawéki xoxoi peokoota iki Perúainoax ." translation="El maíz, la papa y la quinua crecieron primeramente en el Perú.">
+        <word id="0" lemma="ja" lemmaPred="quinuaribi" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="xeki" lemmaPred="quinuaribi" posTag="Nombre" subPosTag="No contable" token="xeki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="papa" lemmaPred="quinuaribi" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="quinua" lemmaPred="quinuaribi" posTag="Nombre" subPosTag="No contable" token="quinua"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="ja" lemmaPred="quinuaribi" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="8" lemma="jawéki" lemmaPred="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="9" lemma="xoxoti" lemmaPred="xoxoiki" posTag="Verbo" subPosTag="Intransitivo" token="xoxoi">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="peokooti" lemmaPred="xoxoiki" posTag="Verbo" subPosTag="Intransitivo" token="peokoota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="iki" lemmaPred="xoxoiki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="12" lemma="Perú" lemmaPred="Perúainoax" posTag="Nombre Propio" subPosTag="" token="Perúainoax">
+            <affix order="1" text="ainoax" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

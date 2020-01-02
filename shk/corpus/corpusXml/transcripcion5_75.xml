@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="3 agostotian , 1492 baritia , Colón Españanimeax pishita iki jabicho pacha rabé chonka jonia . Jaa kimisha vapóroya pishita iki . Jawen jane iká iki , Santa María , Kene , Ainbo bake ." translation="El 3 de agosto de 1492, Colón con ciento veinte marineros salió de España en las tres carabelas, La Santa María, La Pinta, y La Niña.">
+        <word id="0" lemma="3" posTag="Numeral" subPosTag="" token="3"/>
+        <word id="1" lemma="agosto" lemmaPred="agostotian" posTag="Nombre Propio" subPosTag="" token="agostotian">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="1492" posTag="Numeral" subPosTag="" token="1492"/>
+        <word id="4" lemma="báritia" lemmaPred="agostotian" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="Colón" lemmaPred="agostotian" posTag="Nombre Propio" subPosTag="" token="Colón"/>
+        <word id="7" lemma="España" lemmaPred="Españanimeax" posTag="Nombre Propio" subPosTag="" token="Españanimeax">
+            <affix order="1" text="nimeax" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="pishíti" lemmaPred="pishita" posTag="Verbo" subPosTag="Intransitivo" token="pishita">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" lemmaPred="pishita" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="jábicho" lemmaPred="pishita" posTag="Numeral" subPosTag="" token="jabicho"/>
+        <word id="11" lemma="pácha" lemmaPred="pacha" posTag="Numeral" subPosTag="" token="pacha"/>
+        <word id="12" lemma="rabé" lemmaPred="pacha" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="13" lemma="chonka" lemmaPred="pacha" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="14" lemma="joni" lemmaPred="pacha" posTag="Nombre" subPosTag="Contable" token="jonia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="16" lemma="ja" lemmaPred="pacha" posTag="Pronombre" subPosTag="Demostrativo" token="Ja"/>
+        <word id="17" lemma="kimisha " lemmaPred="pacha" posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="18" lemma="vapóro" lemmaPred="vapóroya" posTag="Nombre" subPosTag="Contable" token="vapóroya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="19" lemma="pishíti" lemmaPred="pishita" posTag="Verbo" subPosTag="Intransitivo" token="pishita">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="20" lemma="iki" lemmaPred="pishita" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="21" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="22" lemma="jawen" lemmaPred="pishita" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="23" lemma="jane" lemmaPred="pishita" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="24" lemma="iki" lemmaPred="pishita" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="25" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="26" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="27" lemma="Santa" lemmaPred="Santa" posTag="Nombre Propio" subPosTag="" token="Santa"/>
+        <word id="28" lemma="María" lemmaPred="María" posTag="Nombre Propio" subPosTag="" token="María"/>
+        <word id="29" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="30" lemma="Kene" lemmaPred="Kene" posTag="Nombre Propio" subPosTag="" token="Kene"/>
+        <word id="31" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="32" lemma="ainbo" lemmaPred="Kene" posTag="Nombre" subPosTag="Contable" token="Ainbo"/>
+        <word id="33" lemma="bake" lemmaPred="Kene" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="34" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="12 octubretian , 1942 baritia , nokota iki wetsa main ." translation="El 12 de octubre de 1492 llegaron a una tierra.">
+        <word id="0" lemma="12" posTag="Numeral" subPosTag="" token="12"/>
+        <word id="1" lemma="octubre" lemmaPred="octubretian" posTag="Nombre Propio" subPosTag="" token="octubretian">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="1942" posTag="Numeral" subPosTag="" token="1942"/>
+        <word id="4" lemma="báritia" lemmaPred="octubretian" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="nokoti" lemmaPred="octubretian" posTag="Verbo" subPosTag="Intransitivo" token="nokota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="octubretian" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="wétsa" lemmaPred="octubretian" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="9" lemma="mái" lemmaPred="octubretian" posTag="Nombre" subPosTag="Contable" token="main">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Onanyamakana iki , non aninasi América iká . Shinankana iki : Moára noa bari joai naman nokóbirake ixon . Indianrai noa nokóbirake ixon ." translation="No sabían que era nuestro continente la América; más bien creían que habían llegado más al este, a la India.">
+        <word id="0" lemma="onánti" lemmaPred="octubretian" posTag="Verbo" subPosTag="Transitivo" token="Onanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="octubretian" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="non" lemmaPred="octubretian" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="4" lemma="aninasi" lemmaPred="aninasi" posTag="Nombre" subPosTag="Contable" token="aninasi"/>
+        <word id="5" lemma="América" lemmaPred="aninasi" posTag="Nombre Propio" subPosTag="" token="América"/>
+        <word id="6" lemma="iki" lemmaPred="aninasi" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="shinánti" lemmaPred="aninasi" posTag="Verbo" subPosTag="Transitivo" token="Shinankana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" lemmaPred="aninasi" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="11" lemma="moa" lemmaPred="Moára" posTag="Adverbio" subPosTag="Tiempo" token="Moára">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="12" lemma="noa" lemmaPred="Moára" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="13" lemma="bari" lemmaPred="Moára" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="14" lemma="joti" lemmaPred="Moára" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="15" lemma="naman" lemmaPred="nokóbirake" posTag="Postposición" subPosTag="" token="naman"/>
+        <word id="16" lemma="nokóti" lemmaPred="nokóbirake" posTag="Verbo" subPosTag="Intransitivo" token="nokóbirake">
+            <affix order="1" text="bira" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="17" lemma="iki" lemmaPred="nokóbirake" posTag="Verbo Auxiliar" subPosTag="" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="18" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="19" lemma="India" lemmaPred="Indianrai" posTag="Nombre Propio" subPosTag="" token="Indianra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="20" lemma="noa" lemmaPred="Indianrai" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="21" lemma="nokóti" lemmaPred="nokóbirake" posTag="Verbo" subPosTag="Intransitivo" token="nokóbirake">
+            <affix order="1" text="bira" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="22" lemma="iki" lemmaPred="nokóbirake" posTag="Verbo Auxiliar" subPosTag="" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="23" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskáaxon nato maimea jonibo nokoxon , janekana iki india joni akin ." translation="Por eso llamaron &quot;indios&quot; a las gentes que encontraron en esta tierra.">
+        <word id="0" lemma="jaskáaxon" lemmaPred="nokóbirake" posTag="Conjunción" subPosTag="Coordinante" token="Jaskáaxon"/>
+        <word id="1" lemma="nato" lemmaPred="nokóbirake" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="2" lemma="mai" lemmaPred="nokóbirake" posTag="Nombre" subPosTag="No contable" token="maimea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="joni" lemmaPred="nokóbirake" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="nokóti" lemmaPred="nokoxon" posTag="Verbo" subPosTag="Intransitivo" token="nokoxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="janeti" lemmaPred="janekana" posTag="Verbo" subPosTag="Transitivo" token="janekana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="janekana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="India" lemmaPred="india" posTag="Nombre Propio" subPosTag="" token="India"/>
+        <word id="9" lemma="joni" lemmaPred="india" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="10" lemma="ati" lemmaPred="india" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nonra moa onanke , Colón Indiain nokotama . Jaskara ixonbi , nekea joni areskanai , Indio akin ." translation="Aunque sabemos ahora que Colón no llegó a la India, todavía los hijos de la gente que Colón encontró en esta tierra llevan el nombre de indios.">
+        <word id="0" lemma="noa" lemmaPred="Nonra" posTag="Pronombre" subPosTag="Personal" token="Nonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="moa" lemmaPred="Nonra" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="2" lemma="onanti" lemmaPred="Nonra" posTag="Verbo" subPosTag="Transitivo" token="onanke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="Colón" lemmaPred="Nonra" posTag="Nombre Propio" subPosTag="" token="Colón"/>
+        <word id="5" lemma="India" lemmaPred="Indiain" posTag="Nombre Propio" subPosTag="" token="Indiain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="nokóti" lemmaPred="nokotama" posTag="Verbo" subPosTag="Intransitivo" token="nokotama">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="jaskara" lemmaPred="nokotama" posTag="Adjetivo" subPosTag="Calificativo" token="Jaskara"/>
+        <word id="9" lemma="ixonbi" lemmaPred="nokotama" posTag="Conjunción" subPosTag="Coordinante" token="ixonbi"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="nekea" lemmaPred="nekeati" posTag="Adverbio" subPosTag="Locación" token="nekea"/>
+        <word id="12" lemma="joni" lemmaPred="nekeati" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="13" lemma="áresti" lemmaPred="areskanai" posTag="Verbo" subPosTag="Transitivo" token="areskanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="Indio" lemmaPred="Indio" posTag="Nombre" subPosTag="Contable" token="Indio"/>
+        <word id="16" lemma="ati" lemmaPred="Indio" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

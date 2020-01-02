@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jawen rayosanki jaweaka iki ?" translation="¿En qué lo convirtió el yerno al Inca?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawen" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="2" lemma="rayos" lemmaPred="rayosanki" posTag="Nombre" subPosTag="Contable" token="rayosanki">
+            <affix order="1" text="an" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jaweati" lemmaPred="jaweaka" posTag="Verbo" subPosTag="Transitivo" token="jaweaka">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="jaweaka" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jaa joni joai iki non maestro ." translation="Viene nuestro maestro.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="2" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="maestro"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Buenos días , ¡ bakebo !" translation="Buenos días, alumnos.">
+        <word id="0" lemma="buenos" posTag="Adjetivo" subPosTag="Calificativo" token="Buenos"/>
+        <word id="1" lemma="días" posTag="Nombre" subPosTag="Contable" token="días"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="4" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="2" text="¿ Jaweatiki non rarebo non akinti iki ?" translation="¿Por qué ayudamos a nuestros parientes?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="rárebo" posTag="Nombre" subPosTag="Contable" token="rárebo"/>
+        <word id="4" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="akinti" posTag="Verbo" subPosTag="Transitivo" token="akinti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jaweatiki non shiroatima iki non rarebo ?" translation="¿Por qué respetamos a nuestros parientes?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="shíroati" posTag="Verbo" subPosTag="Transitivo" token="shiroatima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="rárebo" posTag="Nombre" subPosTag="Contable" token="rarebo"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jaweatiki non rarebo non noiti iki ?" translation="¿Por qué queremos a nuestros parientes?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="rárebo" posTag="Nombre" subPosTag="Contable" token="rarebo"/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="noiti" posTag="Verbo" subPosTag="Transitivo" token="noiti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

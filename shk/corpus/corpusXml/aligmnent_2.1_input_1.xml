@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Wítaxanra ea chéxai" translation="La pierna me duele">
+        <word id="0" lemma="witax" posTag="Nombre" subPosTag="Contable" token="Wítaxanra">
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+            <affix order="1" text="an" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="2" lemma="chexati" posTag="Verbo" subPosTag="Intransitivo" token="chéxai">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Anakan bákeronki iki tónkobires" translation="Dicen que el hijo del demonio de la catahua tiene protuberancias en todo el cuerpo">
+        <word id="0" lemma="Anakan" posTag="Nombre Propio" subPosTag="" token="Anakan"/>
+        <word id="1" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bákeronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="tonko" posTag="Nombre" subPosTag="Contable" token="tónkobires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Néte xábatai mánaananra chíikan yóotai" translation="Mientras espera el amanecer, se calienta junto al fuego">
+        <word id="0" lemma="néte" posTag="Nombre" subPosTag="Contable" token="Néte"/>
+        <word id="1" lemma="xabati" posTag="Verbo" subPosTag="Intransitivo" token="xábatai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="manati" posTag="Verbo" subPosTag="Transitivo" token="mánaananra">
+            <affix order="1" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="chii" posTag="Nombre" subPosTag="Contable" token="chíikan">
+            <affix order="1" text="kan" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="yooti" posTag="Verbo" subPosTag="Transitivo" token="yóotai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Ja átapa rabéra reteananai" translation="Esas dos gallinas están peleándose">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="átapa"/>
+        <word id="2" lemma="rabe" posTag="Numeral" subPosTag="" token="rabéra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="reteananai">
+            <affix order="2" text="ai#2" type="Sufijo verbal"/>
+            <affix order="1" text="anan#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Jónibora mashá iki bíananankana iki" translation="Al realizar la danza típica, los hombres se juntaron">
+        <word id="0" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="Jónibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="masha" posTag="Nombre" subPosTag="Contable" token="mashá"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bíananankana">
+            <affix order="1" text="ananan" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a+iki" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+    </sentence>
+</corpus>

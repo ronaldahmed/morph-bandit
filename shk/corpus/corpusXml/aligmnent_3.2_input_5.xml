@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Atapanra kéntikan tsíwai" translation="La gallina pone huevos en la olla de barro.">
+        <word id="0" lemma="Atapa" posTag="Nombre" subPosTag="Contable" token="Atapanra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="kéntikan" posTag="Nombre" subPosTag="Contable" token="kéntikan"/>
+        <word id="2" lemma="tsíwati" posTag="Verbo" subPosTag="Transitivo" token="tsíwai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

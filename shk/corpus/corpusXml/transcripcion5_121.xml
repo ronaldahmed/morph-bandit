@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Min aíbata joi jakiribi aríbawe , 42 peinko peoxon hasta 45 pei kaman ." translation="Repasa las páginas de la quinta unidad de La Patria.">
+        <word id="0" lemma="mia" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="aíbata">
+            <affix order="1" text="ibat" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="joi" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="3" lemma="jakiribi" lemmaPred="kaman" posTag="Adverbio" subPosTag="Tiempo" token="jakiribi"/>
+        <word id="4" lemma="ati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="aríbawe">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="42" posTag="Numeral" subPosTag="" token="42"/>
+        <word id="7" lemma="pei" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="peinko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="peoti" lemmaPred="kaman" posTag="Verbo" subPosTag="Transitivo" token="peoxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="hasta" lemmaPred="hasta" posTag="Símbolo" subPosTag="" token="hasta"/>
+        <word id="10" lemma="45" posTag="Numeral" subPosTag="" token="45"/>
+        <word id="11" lemma="pei" lemmaPred="hasta" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="12" lemma="kaman" lemmaPred="kaman" posTag="Postposición" subPosTag="" token="kaman"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Ishton yoyo awe , nato kirika , jatíbi jawen pei ." translation="Lee rápidamente todas las páginas de este libro.">
+        <word id="0" lemma="ishto" lemmaPred="kaman" posTag="Adjetivo" subPosTag="Calificativo" token="Ishton">
+            <affix order="1" text="n" type="Sufijo nominal"/>
+        </word>
+        <word id="1" lemma="yoyo" lemmaPred="kaman" posTag="Interjección" subPosTag="" token="yoyo"/>
+        <word id="2" lemma="ati" lemmaPred="kaman" posTag="Verbo" subPosTag="Transitivo" token="awe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="nato" lemmaPred="kaman" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="5" lemma="kirika" lemmaPred="kaman" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="Jatíbi" lemmaPred="kaman" posTag="Adjetivo" subPosTag="Calificativo" token="jatíbi"/>
+        <word id="8" lemma="jawen" lemmaPred="kaman" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="9" lemma="pei" lemmaPred="kaman" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

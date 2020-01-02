@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Maira mayatai , jan ramayakatinin ." translation="La tierra gira sobre su eje.">
+        <word id="0" lemma="mai" lemmaPred="Maira" posTag="Nombre" subPosTag="Contable" token="Maira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="mayáti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="mayatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="ja" lemmaPred="jan" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ramayakati" lemmaPred="ramayakatinin" posTag="Nombre" subPosTag="Contable" token="ramayakati">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Maira netetiibi westíora mayatai ." translation="La tierra gira sobre su eje una vez cada día.">
+        <word id="0" lemma="mai" lemmaPred="Maira" posTag="Nombre" subPosTag="Contable" token="Maira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="nete" lemmaPred="netetiibi" posTag="Nombre" subPosTag="Contable" token="netetiibi">
+            <affix order="1" text="tiibi" type="Sufijo nominal"/>
+        </word>
+        <word id="2" lemma="westíora" lemmaPred="westíora" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="3" lemma="mayáti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="mayatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Maira rabé chonka chosko hora westíorai mayatai ." translation="La tierra gira sobre su eje una vez cada veinticuatro horas.">
+        <word id="0" lemma="mai" lemmaPred="Maira" posTag="Nombre" subPosTag="Contable" token="Maira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="rabé" lemmaPred="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="2" lemma="chonka" lemmaPred="chonka" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="3" lemma="chosko" lemmaPred="chosko" posTag="Numeral" subPosTag="" token="chosko"/>
+        <word id="4" lemma="hora" lemmaPred="hora" posTag="Nombre" subPosTag="Contable" token="hora"/>
+        <word id="5" lemma="westíora" lemmaPred="westíorai" posTag="Numeral" subPosTag="" token="westíorai">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="mayáti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="mayatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskara ikax iki , neten chonka rabé hora ; yamé , chonka rabéribi iki ." translation="Por eso, tenemos doce horas de día y doce horas de noche.">
+        <word id="0" lemma="Jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="ikax" lemmaPred="ikax" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="nete" lemmaPred="neten" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="chonka" lemmaPred="chonka" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="6" lemma="rabé" lemmaPred="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="7" lemma="hora" lemmaPred="hora" posTag="Nombre" subPosTag="Contable" token="hora"/>
+        <word id="8" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="9" lemma="yamé" lemmaPred="yamé" posTag="Nombre" subPosTag="Contable" token="yamé"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="chonka" lemmaPred="chonka" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="12" lemma="rabé" lemmaPred="rabéribi" posTag="Numeral" subPosTag="" token="rabéribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="13" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Maira ikai , bari ratani mayati ." translation="La tierra se mueve alrededor del sol.">
+        <word id="0" lemma="mai" lemmaPred="Maira" posTag="Nombre" subPosTag="Contable" token="Maira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="ikti" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="4" lemma="ratanti" lemmaPred="ratani" posTag="Verbo" subPosTag="Intransitivo" token="ratani">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="mayáti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="mayati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

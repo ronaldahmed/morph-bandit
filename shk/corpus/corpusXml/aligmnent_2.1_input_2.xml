@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Nokon pápara jawen pátoron betan yómetsoananke kónxaman" translation="Mi padre y su patrón se robaban madera mutuamente">
+        <word id="0" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="papa" posTag="Nombre" subPosTag="Contable" token="pápara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="pataron" posTag="Nombre" subPosTag="Contable" token="pátoron"/>
+        <word id="4" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="5" lemma="yómetsoti" posTag="Verbo" subPosTag="Transitivo" token="yómetsoananke">
+            <affix order="1" text="anan#2" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="kónxan" posTag="Nombre" subPosTag="Contable" token="kónxaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Nokon papánra áni inó reteke" translation="Mi papá mató a un tigre grande">
+        <word id="0" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="papá" posTag="Nombre" subPosTag="Contable" token="papánra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="áni" posTag="Adjetivo" subPosTag="Calificativo" token="áni"/>
+        <word id="3" lemma="ino" posTag="Nombre" subPosTag="Contable" token="inó"/>
+        <word id="4" lemma="réteti" posTag="Verbo" subPosTag="Transitivo" token="reteke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Títashokonbichora jawen bába ániake" translation="La abuelita, sola, crió a su nieto">
+        <word id="0" lemma="Títashoko" posTag="Nombre" subPosTag="Contable" token="Títashokonbichora">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+            <affix order="2" text="bicho" type="Clít. de posición libre"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="2" lemma="baba" posTag="Nombre" subPosTag="Contable" token="bába"/>
+        <word id="3" lemma="aniati" posTag="Verbo" subPosTag="Transitivo" token="ániake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="xobo ániati" translation="ampliar la casa">
+        <word id="0" lemma="xóbo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="1" lemma="aniati" posTag="Verbo" subPosTag="Transitivo" token="ániati"/>
+    </sentence>
+    <sentence id="4" text="Jawen ánibaon pótaara báke mawáke" translation="El muchacho murió abandonado por sus padres">
+        <word id="0" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="anibo" posTag="Nombre" subPosTag="Contable" token="ánibaon">
+            <affix order="1" text="baon#1" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="potati" posTag="Verbo" subPosTag="Transitivo" token="pótaara">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="báke" posTag="Nombre" subPosTag="Contable" token="báke"/>
+        <word id="4" lemma="mawáti" posTag="Verbo" subPosTag="Intransitivo" token="mawáke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

@@ -18,6 +18,8 @@ def train(args):
   train = loader.load_data("train")
   dev   = loader.load_data("dev")
 
+  print("vocabaction size:",*loader.get_action_space_size())
+
   print("Init batch objs")
   train_batch = BatchSegm(train,args)
   dev_batch   = BatchSegm(dev,args)

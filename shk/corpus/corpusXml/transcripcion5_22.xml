@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Reteananti Bandera naponbekon iki Escudo Peruano ." translation="En el centro de la bandera de guerra está el escudo peruano.">
+        <word id="0" lemma="réteti" posTag="Verbo" subPosTag="Transitivo" token="Reteananti">
+            <affix order="1" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="bandera" posTag="Nombre" subPosTag="Contable" token="Bandera"/>
+        <word id="2" lemma="napónbekon" posTag="Adverbio" subPosTag="Locación" token="naponbekon"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="escudo" posTag="Nombre" subPosTag="Contable" token="Escudo"/>
+        <word id="5" lemma="peruano" posTag="Adjetivo" subPosTag="Calificativo" token="Peruano"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Min cuaderno meran , noa Peruanoboan Bandera keskáakin wishawe ." translation="Dibuja en tu cuaderno la bandera nacional del Perú.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="5" lemma="peruano" posTag="Adjetivo" subPosTag="Calificativo" token="Peruanoboan">
+            <affix order="1" text="boan" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="bandera" posTag="Nombre" subPosTag="Contable" token="Bandera"/>
+        <word id="7" lemma="keskáakin" posTag="Postposición" subPosTag="" token="keskáakin"/>
+        <word id="8" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Min aíbata joi jakiribi aríbawe , 10 peinko peoxon hasta 13 pei kaman ." translation="Repasa las páginas de la tercera unidad de La Localidad.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aíbata">
+            <affix order="1" text="iba" type="Sufijo verbal"/>
+            <affix order="2" text="ta" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jói" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="3" lemma="jakiribi" posTag="Adverbio" subPosTag="Tiempo" token="jakiribi"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aríbawe">
+            <affix order="1" text="iba" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="10" posTag="Numeral" subPosTag="" token="10"/>
+        <word id="7" lemma="péi" posTag="Nombre" subPosTag="Contable" token="peinko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="peoti" posTag="Verbo" subPosTag="Transitivo" token="peoxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="hasta" posTag="Postposición" subPosTag="" token="hasta"/>
+        <word id="10" lemma="13" posTag="Numeral" subPosTag="" token="13"/>
+        <word id="11" lemma="péi" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="12" lemma="kaman" posTag="Postposición" subPosTag="" token="kaman"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Himno Nacionalnin bewawe ." translation="Canta el himno nacional.">
+        <word id="0" lemma="himno" posTag="Nombre" subPosTag="Contable" token="Himno"/>
+        <word id="1" lemma="nacional" posTag="Adjetivo" subPosTag="Calificativo" token="Nacionalnin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="béwati" posTag="Verbo" subPosTag="Transitivo" token="bewawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kosi betan Panchitan waiai ." translation="Pepe y Paca hacen una chacra.">
+        <word id="0" lemma="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosi"/>
+        <word id="1" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="Pan" posTag="Nombre Propio" subPosTag="" token="Panchitan">
+            <affix order="1" text="chi" type="Clít. de posición libre"/>
+            <affix order="2" text="tan" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="wai ati" posTag="Verbo" subPosTag="Transitivo" token="waiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

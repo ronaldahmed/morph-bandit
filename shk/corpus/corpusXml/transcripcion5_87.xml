@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jawen bero iki beshéshoko , arroz keská ." translation="La semilla de la quinua es menuda como el arroz.">
+        <word id="0" lemma="jawen" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="bero" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="bero"/>
+        <word id="2" lemma="iki" lemmaPred="arroz" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="beshé" lemmaPred="arroz" posTag="Adjetivo" subPosTag="Calificativo" token="beshéshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="arroz" lemmaPred="arroz" posTag="Nombre" subPosTag="Contable" token="arroz"/>
+        <word id="6" lemma="keská" lemmaPred="arroz" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jawen bero iki jayá betenti , jayá bataati jayá pitiati ." translation="Las semillas se usan en la sopa, para hacer postres y otras comidas.">
+        <word id="0" lemma="jawen" lemmaPred="arroz" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="bero" lemmaPred="arroz" posTag="Nombre" subPosTag="Contable" token="bero"/>
+        <word id="2" token="iki"/>
+        <word id="3" token="jayá"/>
+        <word id="4" token="betenti"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" token="jayá"/>
+        <word id="7" token="bataati"/>
+        <word id="8" token="jayá"/>
+        <word id="9" token="pitiati"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainxon jawen beroribi iki xeatiati ." translation="También sirven para hacer una bebida.">
+        <word id="0" lemma="jainxon" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="jawen" lemmaPred="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="2" lemma="bero" lemmaPred="beroribi" posTag="Nombre" subPosTag="Contable" token="beroribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="beroribi" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="xeatiati" lemmaPred="xeatiati" posTag="Verbo" subPosTag="Transitivo" token="xeatiati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaa quinua iki jakon baná jawéki , xoxoai jawéki ." translation="La quinua es una planta buena del reino vegetal.">
+        <word id="0" lemma="ja" lemmaPred="xeatiati" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="quinua" lemmaPred="xeatiati" posTag="Nombre" subPosTag="No contable" token="quinua"/>
+        <word id="2" lemma="iki" lemmaPred="xeatiati" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="jakon" lemmaPred="xeatiati" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="baná" lemmaPred="xeatiati" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="5" lemma="jawéki" lemmaPred="xeatiati" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="xoxoti" lemmaPred="xeatiati" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jawéki" lemmaPred="xeatiati" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Min cuaderno meran wishawe chonka pichika , iamaax chonka , baná jawékibaon jane , nato paronxon non piai jawékibaon jane ." translation="Escribe en tu cuaderno los nombres de diez o quince plantas de la selva, de las que sacamos alimentos vegetales.">
+        <word id="0" lemma="mia" lemmaPred="xeatiati" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" lemmaPred="xeatiati" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" lemmaPred="xeatiati" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wishati" lemmaPred="xeatiati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="chonka" lemmaPred="xeatiati" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="5" lemma="pichika" lemmaPred="xeatiati" posTag="Numeral" subPosTag="" token="pichika"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="iamati" lemmaPred="iamaax" posTag="Verbo" subPosTag="Intransitivo" token="iamaax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="chonka" lemmaPred="iamaax" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="baná" lemmaPred="iamaax" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="11" lemma="jawéki" lemmaPred="jawékibaon" posTag="Nombre" subPosTag="Contable" token="jawékibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="jane" lemmaPred="jawékibaon" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="nato" lemmaPred="jawékibaon" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="15" token="paronxon"/>
+        <word id="16" lemma="noa" lemmaPred="paronxon" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="17" lemma="piti" lemmaPred="paronxon" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="18" lemma="jawéki" lemmaPred="paronxon" posTag="Nombre" subPosTag="Contable" token="jawékibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="19" lemma="jane" lemmaPred="paronxon" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

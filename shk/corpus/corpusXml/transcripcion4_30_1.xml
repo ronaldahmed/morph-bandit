@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Bari pikóketian non onanke moa nete beá ¡ bake !" translation="&quot;Hijito, cuando sale el sol sabemos que es de día.&quot;">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Bari"/>
+        <word id="1" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikóketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="3" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="5" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="6" lemma="béti" posTag="Verbo" subPosTag="Transitivo" token="beá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="8" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="9" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="1" text="Bari pikóyamapainon riki ." translation="Mejor sería si no saliese el sol.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Bari"/>
+        <word id="1" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikóyamapainon">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="painon" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="riki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Pikotaxxa xanayora iki ." translation="Hace mucho calor.">
+        <word id="0" token="Pikotaxxa"/>
+        <word id="1" lemma="xana" posTag="Onomatopeya" subPosTag="" token="xanayoraERROR"/>
+        <word id="2" token="iki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Iamarake ¡ bake !" translation="No, hijo.">
+        <word id="0" lemma="yama" posTag="Onomatopeya" subPosTag="" token="IamarakeERROR"/>
+        <word id="1" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="2" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="3" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="4" text="Barin noa xanaanai , noa neteaxonai ." translation="El sol nos da calor y luz.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Barin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="xánaati" posTag="Verbo" subPosTag="Transitivo" token="xanaanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="5" lemma="néteti" posTag="Verbo" subPosTag="Intransitivo" token="neteaxonai">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="xon" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

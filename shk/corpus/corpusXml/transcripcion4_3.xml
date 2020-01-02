@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Memiokea mekemanki jawe yatana ?" translation="¿Qué hay en la mano izquierda?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Memio" lemmaPred="Memiokea" posTag="Adverbio" subPosTag="Locación" token="Memiokea">
+            <affix order="1" text="kea" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="meken" lemmaPred="mekayaokea" posTag="Nombre" subPosTag="Parte del cuerpo" token="mekemanki">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jawe" lemmaPred="mekemanki" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="4" lemma="yatanti" lemmaPred="yatana" posTag="Verbo" subPosTag="Transitivo" token="yatana">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Wetsa iki mekayaokea meken ." translation="La otra es la mano derecha.">
+        <word id="0" lemma="wetsa" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="wetsa"/>
+        <word id="1" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="mekayao" lemmaPred="mekayaokea" posTag="Adverbio" subPosTag="Locación" token="mekayaokea">
+            <affix order="1" text="kea" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="meken" lemmaPred="mekayaokea" posTag="Nombre" subPosTag="Parte del cuerpo" token="meken"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa mekayaokea meken min oinyamai ." translation="No se ve la mano derecha.">
+        <word id="0" lemma="ja" lemmaPred="mekayaokea" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="mekayao" lemmaPred="mekayaokea" posTag="Adverbio" subPosTag="Locación" token="mekayaokea">
+            <affix order="1" text="kea" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="meken" lemmaPred="mekayaokea" posTag="Nombre" subPosTag="Parte del cuerpo" token="meken"/>
+        <word id="3" lemma="mia" lemmaPred="mekayaokea" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ointi" lemmaPred="oinyamai" posTag="Verbo" subPosTag="Transitivo" token="oinyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Jaweranorin jaa mekayaokea meken ?" translation="¿Dónde está la mano derecha?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerano" lemmaPred="oinyamai" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranorin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ja" lemmaPred="oinyamai" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="mekayao" lemmaPred="oinyamai" posTag="Adverbio" subPosTag="Locación" token="mekayaokea">
+            <affix order="1" text="kea" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="meken" lemmaPred="oinyamai" posTag="Nombre" subPosTag="Parte del cuerpo" token="meken"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jaa mekayaokea mekenki banka pekáo iki ?" translation="¿Está la mano derecha detrás del banco?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="ja" lemmaPred="oinyamai" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="mekayao" lemmaPred="oinyamai" posTag="Adverbio" subPosTag="Locación" token="mekayaokea">
+            <affix order="1" text="kea" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="meken" lemmaPred="mekenki" posTag="Nombre" subPosTag="Parte del cuerpo" token="mekenki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" token="banka"/>
+        <word id="5" lemma="pekao" lemmaPred="banka" posTag="Postposición" subPosTag="" token="pekáo"/>
+        <word id="6" lemma="iki" lemmaPred="banka" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="5" text="¿ Jaa mekayaokea mekenki mesan iki ?" translation="¿Está la mano derecha encima de la mesa?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jaa"/>
+        <word id="2" token="mekayaokea"/>
+        <word id="3" token="mekenki"/>
+        <word id="4" token="mesan"/>
+        <word id="5" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="6" text="¿ Jaa mekenki Perú tsekakana mapa bebon iki ?" translation="¿Está la mano derecha delante del mapa del Perú?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jaa"/>
+        <word id="2" token="mekenki"/>
+        <word id="3" token="Perú"/>
+        <word id="4" token="tsekakana"/>
+        <word id="5" token="mapa"/>
+        <word id="6" token="bebon"/>
+        <word id="7" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="7" text="Nokon kirika meran riki ." translation="Está debajo de mi libro.">
+        <word id="0" token="Nokon"/>
+        <word id="1" token="kirika"/>
+        <word id="2" token="meran"/>
+        <word id="3" token="riki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="8" text="¿ Jainoaxki jawe iki nokon memiokea mekeman ?" translation="Pero, ¿qué hay en la mano izquierda?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jainoaxki"/>
+        <word id="2" token="jawe"/>
+        <word id="3" token="iki"/>
+        <word id="4" token="nokon"/>
+        <word id="5" token="memiokea"/>
+        <word id="6" token="mekeman"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="9" text="Oinnon onanta ." translation="¡Adivina!">
+        <word id="0" token="Oinnon"/>
+        <word id="1" token="onanta"/>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

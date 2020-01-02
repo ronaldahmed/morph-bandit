@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Rama jaa jawékibo wetsankoribi xoxoai ." translation="Ahora estas plantas crecen también en otros países.">
+        <word id="0" lemma="rama" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="ja" lemmaPred="" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="2" lemma="jawéki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="wetsa" lemmaPred="wetsankoribi" posTag="Adjetivo" subPosTag="Calificativo" token="wetsankoribi">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="xoxoti" lemmaPred="xoxoai" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Xoxoai , Perú jonibaon jato baná menia , beroribi jato menia ." translation="Crecen en estos países porque el Perú les ha dado las primeros plantas y semillas.">
+        <word id="0" lemma="xoxoti" lemmaPred="Baritiatiibi" posTag="Verbo" subPosTag="Intransitivo" token="Xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="Perú" lemmaPred="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="3" lemma="joni" lemmaPred="jonibaon" posTag="Nombre" subPosTag="Contable" token="jonibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jato" lemmaPred="jonibaon" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="5" lemma="baná" lemmaPred="baná" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="6" lemma="meniti" lemmaPred="meniati" posTag="Verbo" subPosTag="Transitivo" token="menia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="bero" lemmaPred="beroribi" posTag="Nombre" subPosTag="Contable" token="beroribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="jato" lemmaPred="beroribi" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="10" lemma="meniti" lemmaPred="beroribi" posTag="Verbo" subPosTag="Transitivo" token="menia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Quinua iki baná jawéki , manamanres jakoni xoxoai ." translation="La quinua es una planta que crece mejor en la sierra.">
+        <word id="0" lemma="quinua" lemmaPred="Quinua" posTag="Nombre" subPosTag="No contable" token="Quinua"/>
+        <word id="1" lemma="iki" lemmaPred="Quinua" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="baná" lemmaPred="Quinua" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="3" lemma="jawéki" lemmaPred="Quinua" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="manan" lemmaPred="manamanres" posTag="Nombre" subPosTag="Contable" token="manamanres">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="jakonti" lemmaPred="manamanres" posTag="Verbo" subPosTag="Intransitivo" token="jakoni">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="xoxoti" lemmaPred="manamanres" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jawen pei bená pikanai , repollo akai keskáakin ." translation="Las hojas tiernas se comen como espinaca.">
+        <word id="0" lemma="jawen" lemmaPred="manamanres" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="pei" lemmaPred="manamanres" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="2" lemma="bená" lemmaPred="bená" posTag="Adjetivo" subPosTag="Calificativo" token="bená"/>
+        <word id="3" lemma="piti" lemmaPred="pikanai" posTag="Verbo" subPosTag="Transitivo" token="pikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="repollo" lemmaPred="repollo" posTag="Nombre" subPosTag="Contable" token="repollo"/>
+        <word id="6" lemma="ati" lemmaPred="repollo" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="keskáati" lemmaPred="repollo" posTag="Verbo" subPosTag="Transitivo" token="keskáakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Baritiatiibi icha bimiai ." translation="La quinua da muchas semillas cada año.">
+        <word id="0" lemma="baritia" lemmaPred="Baritiatiibi" posTag="Nombre" subPosTag="Contable" token="Baritiatiibi">
+            <affix order="1" text="tiibi" type="Sufijo nominal"/>
+        </word>
+        <word id="1" lemma="icha" lemmaPred="Baritiatiibi" posTag="Adjetivo" subPosTag="Calificativo" token="icha"/>
+        <word id="2" lemma="bimiti" lemmaPred="Baritiatiibi" posTag="Verbo" subPosTag="Intransitivo" token="bimiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

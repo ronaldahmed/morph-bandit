@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Cristóbal Colón iká iki jawékioma joni ." translation="Pero Cristóbal Colón era un hombre muy pobre.">
+        <word id="0" lemma="Cristóbal" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Cristóbal"/>
+        <word id="1" lemma="Colón" lemmaPred="Colón" posTag="Nombre Propio" subPosTag="" token="Colón"/>
+        <word id="2" lemma="iki" lemmaPred="Colón" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="Colón" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="jawéki" lemmaPred="jawékioma" posTag="Nombre" subPosTag="Contable" token="jawékioma">
+            <affix order="1" text="oma" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="joni" lemmaPred="jawékioma" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jawen shinanyares iká iki , jainoax jawen bakeribi , Diego ." translation="Casi no tenía nada más que su idea y su hijo, Diego.">
+        <word id="0" lemma="jawen" lemmaPred="jawékioma" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="shinán" lemmaPred="shinanyares" posTag="Nombre" subPosTag="Contable" token="shinanyares">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+            <affix order="2" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="shinanyares" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="shinanyares" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jainoax" lemmaPred="shinanyares" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="6" lemma="jawen" lemmaPred="shinanyares" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="7" lemma="bake" lemmaPred="bakeribi" posTag="Nombre" subPosTag="Contable" token="bakeribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="Diego" lemmaPred="Diego" posTag="Nombre Propio" subPosTag="" token="Diego"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jan vapor maroti atipanyamake , jan kati ." translation="No podía comprar una carabela en que viajar.">
+        <word id="0" lemma="ja" lemmaPred="Diego" posTag="Pronombre" subPosTag="Personal" token="Jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="vapor" lemmaPred="vaporki" posTag="Nombre" subPosTag="Contable" token="vapor"/>
+        <word id="2" lemma="maroti" lemmaPred="maroxon" posTag="Verbo" subPosTag="Transitivo" token="maroti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="átipanti" lemmaPred="atipanyamake" posTag="Verbo" subPosTag="Intransitivo" token="atipanyamake">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ja" lemmaPred="atipanyamake" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="kati" lemmaPred="kati" posTag="Verbo" subPosTag="Intransitivo" token="kati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Tsoabi keenyamakana iki vapor maroxonti ; jansoi riki ixon ." translation="Nadie le quiso comprar un carabela porque creían que él era un loco.">
+        <word id="0" lemma="tsoabi" lemmaPred="Tsoabi" posTag="Pronombre" subPosTag="Indefinido" token="Tsoabi"/>
+        <word id="1" lemma="keenti" lemmaPred="keenyamakana" posTag="Verbo" subPosTag="Intransitivo" token="keenyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="keenyamakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="vapor" lemmaPred="keenyamakana" posTag="Nombre" subPosTag="Contable" token="vapor"/>
+        <word id="4" lemma="maroti" lemmaPred="maroxonti" posTag="Verbo" subPosTag="Transitivo" token="maroxonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="jánsoti" lemmaPred="jansoi" posTag="Verbo" subPosTag="Intransitivo" token="jansoi">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="riki" lemmaPred="jansoi" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="8" lemma="iki" lemmaPred="jansoi" posTag="Verbo Auxiliar" subPosTag="" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ikeanaxmabi wetsa ainbaon kimisha vapor menia iki . Jaa ainbo iká iki España apo , jawen jane Isabel . Jainxon kakin piti , menia iki ." translation="Al fin, la Reina Isabel de España le compró tres carabelas y comida para el viaje.">
+        <word id="0" lemma="iki" lemmaPred="Ikeanaxmabi" posTag="Verbo" subPosTag="Copulativo" token="Ikeanaxmabi">
+            <affix order="1" text="kean" type="Sufijo verbal"/>
+            <affix order="2" text="ax" type="Clít. concord. de particip."/>
+            <affix order="3" text="ma" type="Sufijo verbal"/>
+            <affix order="4" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="wétsa" lemmaPred="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="2" lemma="ainbo" lemmaPred="wetsa" posTag="Nombre" subPosTag="Contable" token="ainbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="kimisha " lemmaPred="wetsa" posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="4" lemma="vapor" lemmaPred="wetsa" posTag="Nombre" subPosTag="Contable" token="vapor"/>
+        <word id="5" lemma="meniti" lemmaPred="Ikeanaxmabi" posTag="Verbo" subPosTag="Transitivo" token="menia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="Ikeanaxmabi" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="ja" lemmaPred="meniati" posTag="Pronombre" subPosTag="Demostrativo" token="Ja"/>
+        <word id="9" lemma="ainbo" lemmaPred="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="10" lemma="iki" lemmaPred="ainbo" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="iki" lemmaPred="ainbo" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="12" lemma="España" lemmaPred="ainbo" posTag="Nombre Propio" subPosTag="" token="España"/>
+        <word id="13" lemma="apo" lemmaPred="ainbo" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="jawen" lemmaPred="ainbo" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="16" lemma="jane" lemmaPred="ainbo" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="17" lemma="Isabel" lemmaPred="Isabel" posTag="Nombre Propio" subPosTag="" token="Isabel"/>
+        <word id="18" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="19" lemma="jainxon " lemmaPred="Isabel" posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="20" lemma="kakin" lemmaPred="kakin" posTag="Nombre" subPosTag="Contable" token="kakin"/>
+        <word id="21" lemma="piti" lemmaPred="kakin" posTag="Verbo" subPosTag="Transitivo" token="piti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="22" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="23" lemma="meniti" lemmaPred="meniati" posTag="Verbo" subPosTag="Transitivo" token="menia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="24" lemma="iki" lemmaPred="meniati" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="25" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

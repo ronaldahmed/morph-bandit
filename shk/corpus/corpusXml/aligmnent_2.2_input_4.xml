@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Titán yámikentira moa árake , ján táshi nápota ikax" translation="La olla de mamá se picó porque pusieron sal en ella.">
+        <word id="0" lemma="titá" posTag="Nombre" subPosTag="Contable" token="Titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yámikenti" posTag="Nombre" subPosTag="Contable" token="yámikentira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="árati" posTag="Verbo" subPosTag="Transitivo" token="árake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ján" posTag="Pronombre" subPosTag="Personal" token="ján"/>
+        <word id="6" lemma="táshi" posTag="Nombre" subPosTag="No contable" token="táshi"/>
+        <word id="7" lemma="nápoti" posTag="Verbo" subPosTag="Transitivo" token="nápota"/>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikax">
+            <affix order="1" text="ax#1" type="Clít. concord. de particip."/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Moa áraketianra nato yamín moa tsóa téeyamai" translation="Como ya se oxidó, nadie trabaja con esta hacha.">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moa"/>
+        <word id="1" lemma="árati" posTag="Verbo" subPosTag="Intransitivo" token="áraketianra">
+            <affix order="1" text="ketian" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="3" lemma="yamí" posTag="Nombre" subPosTag="Contable" token="yamín"/>
+        <word id="4" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="5" lemma="tsóa" posTag="Pronombre" subPosTag="Enfático" token="tsóa"/>
+        <word id="6" lemma="téeti" posTag="Verbo" subPosTag="Transitivo" token="téeyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Nato jawékibora áresti iki" translation="Estas cosas son permitidas.">
+        <word id="0" lemma="nato" posTag="Pronombre" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="áresti" posTag="Verbo" subPosTag="Transitivo" token="áresti"/>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+    </sentence>
+    <sentence id="3" text="En arós sako pápiara éaareske" translation="El saco de arroz que cargué me venció.">
+        <word id="0" lemma="En" posTag="Pronombre" subPosTag="Personal" token="En"/>
+        <word id="1" lemma="arós" posTag="Nombre" subPosTag="No contable" token="arós"/>
+        <word id="2" lemma="sako" posTag="Nombre" subPosTag="Contable" token="sako"/>
+        <word id="3" lemma="pápiti" posTag="Verbo" subPosTag="Transitivo" token="pápiara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="aresti" posTag="Verbo" subPosTag="Transitivo" token="éaareske">
+            <affix order="1" text="ea" type="Prefijo"/>
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Ja jónira moa yósiora iki Jákopira míaareske" translation="Aquel hombre ya es mayor Por eso te ha vencido.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jónira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="yósio" posTag="Nombre" subPosTag="Contable" token="yósiora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+        <word id="5" lemma="Jákopi" posTag="Adverbio" subPosTag="Manera" token="Jákopira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="aresti" posTag="Verbo" subPosTag="Transitivo" token="míaareske">
+            <affix order="1" text="mia" type="Prefijo"/>
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

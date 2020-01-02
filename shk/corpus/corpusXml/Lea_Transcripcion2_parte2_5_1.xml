@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Joninki ja roo icha meraxon jawekeskáa iki ?" translation="¿Qué hizo el hombre al hallar los cotomonos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Joninki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="ja"/>
+        <word id="3" lemma="roo" posTag="Nombre" subPosTag="Contable" token="roo"/>
+        <word id="4" lemma="ícha" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="5" lemma="mérati" posTag="Verbo" subPosTag="Transitivo" token="meraxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="jawekeskáati" posTag="Verbo" subPosTag="Transitivo" token="jawekeskáa"/>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Xawe ainbaon jawen bene potani" translation="La mujer charapa que huyó de su esposo">
+        <word id="0" lemma="xawe" posTag="Nombre" subPosTag="Contable" token="Xawe"/>
+        <word id="1" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="bene" posTag="Nombre" subPosTag="Contable" token="bene"/>
+        <word id="4" lemma="pótati" posTag="Verbo" subPosTag="Transitivo" token="potani">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Westíora joni ronki ikátiai xawe ainbo awinhaa ." translation="Había una vez, un hombre que tenía por esposa a una charapa (aunque no sabía que lo era).">
+        <word id="0" token="Westíora"/>
+        <word id="1" token="joni"/>
+        <word id="2" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="3" token="ikátiai"/>
+        <word id="4" token="xawe"/>
+        <word id="5" token="ainbo"/>
+        <word id="6" token="awinhaa"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Ja ainbo ronki ikátiai metsáshoko ainbo itan kinkinbieres teeyaribiki ." translation="Aquella mujer era muy simpática y muy trabajadora.">
+        <word id="0" token="Ja"/>
+        <word id="1" token="ainbo"/>
+        <word id="2" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="3" token="ikátiai"/>
+        <word id="4" token="metsáshoko"/>
+        <word id="5" token="ainbo"/>
+        <word id="6" token="itan"/>
+        <word id="7" token="kinkinbieres"/>
+        <word id="8" token="teeyaribiki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ja ainboki ikátiai , jawen bene piti benai kaa pekáoki , wai oroi kaí ." translation="Aquella mujer tenía el hábito de ir siempre a cultivar la chacra después de que su esposo había ido a pescar.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainboki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="bene" posTag="Nombre" subPosTag="Contable" token="bene"/>
+        <word id="6" lemma="piti" posTag="Nombre" subPosTag="No contable" token="piti"/>
+        <word id="7" lemma="benati" posTag="Verbo" subPosTag="Transitivo" token="benai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="pekáo" posTag="Conjunción" subPosTag="Coordinante" token="pekáoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="wái" posTag="Nombre" subPosTag="Contable" token="wai"/>
+        <word id="12" lemma="óroti" posTag="Verbo" subPosTag="Transitivo" token="oroi">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaí">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Petroleo xeni xeaxon akanai kerosene , gasolinabo" translation="Del petróleo se hace el kerosene y la gasolina.">
+        <word id="0" lemma="petroleo" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="Petroleo"/>
+        <word id="1" lemma="xeni" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="xeni"/>
+        <word id="2" lemma="xeati" lemmaPred="xeaxon" posTag="Verbo" subPosTag="Transitivo" token="xeaxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="ati" lemmaPred="gasolinabo" posTag="Verbo" subPosTag="Transitivo" token="akanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="kerosene" lemmaPred="xeaxon" posTag="Nombre" subPosTag="No contable" token="kerosene"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="gasolina" lemmaPred="gasolinabo" posTag="Nombre" subPosTag="No contable" token="gasolinabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Jake icha petroleo ani paro keská , Perúain ." translation="En la costa del Perú hay mucho petróleo.">
+        <word id="0" lemma="jati" lemmaPred="xeaxon" posTag="Verbo" subPosTag="Intransitivo" token="Jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="ícha" lemmaPred="xeaxon" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="2" lemma="petroleo" lemmaPred="xeaxon" posTag="Nombre" subPosTag="No contable" token="petroleo"/>
+        <word id="3" lemma="ani" lemmaPred="xeaxon" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="4" lemma="paro" lemmaPred="xeaxon" posTag="Nombre" subPosTag="Contable" token="paro"/>
+        <word id="5" lemma="keska" lemmaPred="xeaxon" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="Perú" lemmaPred="xeaxon" posTag="Nombre Propio" subPosTag="" token="Perúain">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainxonribi icha petroleo tsekakanai non paromea , Pachitea meranoa , Janexanayainoa ." translation="También se saca mucho petróleo de la selva, de un lugar llamado Ganso Azul.">
+        <word id="0" lemma="jainxon" lemmaPred="xeaxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ícha" lemmaPred="xeaxon" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="2" lemma="petroleo" lemmaPred="xeaxon" posTag="Nombre" subPosTag="No contable" token="petroleo"/>
+        <word id="3" lemma="tsekati" lemmaPred="tsekakanai" posTag="Verbo" subPosTag="Transitivo" token="tsekakanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="non" lemmaPred="tsekakanai" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="5" lemma="paro" lemmaPred="paromea" posTag="Nombre" subPosTag="Contable" token="paromea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="Pachitea" lemmaPred="Pachitea" posTag="Nombre Propio" subPosTag="" token="Pachitea"/>
+        <word id="8" lemma="meran" lemmaPred="Pachitea" posTag="Postposición" subPosTag="" token="meranoa">
+            <affix order="1" text="oa" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="Jenexana" lemmaPred="Janexanayainoa" posTag="Nombre Propio" subPosTag="" token="Jenexanainoa">
+            <affix order="1" text="ainoa" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Shinankanai , icha petroleora nato paron jabirake ixon . Ikaxbi nokokanamapari iki ." translation="Se cree que hay bastante petróleo en la selva pero no se lo ha encontrado todavía.">
+        <word id="0" lemma="shinánti" lemmaPred="Shinankanai" posTag="Verbo" subPosTag="Transitivo" token="Shinankanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="ícha" lemmaPred="Shinankanai" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="3" lemma="petroleo" lemmaPred="petroleora" posTag="Nombre" subPosTag="No contable" token="petroleora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="nato" lemmaPred="petroleora" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="5" lemma="paro" lemmaPred="paron" posTag="Nombre" subPosTag="Contable" token="paron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jati" lemmaPred="jabirake" posTag="Verbo" subPosTag="Intransitivo" token="jabirake">
+            <affix order="1" text="bira" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="jabirake" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="9" lemma="ikaxbi" lemmaPred="jabirake" posTag="Conjunción" subPosTag="Coordinante" token="Ikaxbi"/>
+        <word id="10" lemma="nókoti" lemmaPred="nokokanamapari" posTag="Verbo" subPosTag="Transitivo" token="nokokanamapari">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ama" type="Sufijo verbal"/>
+            <affix order="3" text="pari" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="iki" lemmaPred="nokokanamapari" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Paro chapatatiibi benakanai petroleo ." translation="Están buscando el petróleo de la selva.">
+        <word id="0" lemma="paro" lemmaPred="jabirake" posTag="Nombre" subPosTag="Contable" token="Paro"/>
+        <word id="1" lemma="chapáti" lemmaPred="chapatatiibi" posTag="Verbo" subPosTag="Intransitivo" token="chapatatiibi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="tiibi" type="Sufijo nominal"/>
+        </word>
+        <word id="2" lemma="benati" lemmaPred="benakanai" posTag="Verbo" subPosTag="Transitivo" token="benakanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="petroleo" lemmaPred="benakanai" posTag="Nombre" subPosTag="No contable" token="petroleo"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

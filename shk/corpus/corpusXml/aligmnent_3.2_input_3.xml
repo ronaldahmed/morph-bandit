@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Pápashokonra axéya aká píti pixón kinánke" translation="El abuelito vomitó al ingerir comida preparada con culantro.">
+        <word id="0" lemma="Pápashoko" posTag="Nombre" subPosTag="Contable" token="Pápashokonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="axéya" posTag="Nombre" subPosTag="Contable" token="axéya"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká"/>
+        <word id="3" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="píti"/>
+        <word id="4" lemma="píti" posTag="Verbo" subPosTag="Intransitivo" token="pixón">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="kinánti" posTag="Verbo" subPosTag="Transitivo" token="kinánke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Ja jónibaonra jaton axé jénekashamai" translation="Esta gente no quiere dejar su costumbre.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jónibaonra">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jaton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="axé" posTag="Nombre" subPosTag="Contable" token="axé"/>
+        <word id="4" lemma="jéneti" posTag="Verbo" subPosTag="Transitivo" token="jénekashamai">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="yama" type="Sufijo verbal"/>
+            <affix order="3" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Axeamiston jato pirótanin áxeaara bákebaon jénekashamai" translation="Porque el maestro los ha acostumbrado a jugar con la pelota, los niños no quieren dejar de jugar con ella.">
+        <word id="0" lemma="Axeamis" posTag="Nombre" subPosTag="Contable" token="Axeamiston">
+            <affix order="1" text="ton" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="2" lemma="Piróta" posTag="Nombre" subPosTag="Contable" token="pirótanin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="áxeaati" posTag="Verbo" subPosTag="Transitivo" token="áxeaara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="báke" posTag="Nombre" subPosTag="Contable" token="bákebaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="jéneti" posTag="Verbo" subPosTag="Transitivo" token="jénekashamai">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="yama" type="Sufijo verbal"/>
+            <affix order="3" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Jánra kírika ákaibo áxeai" translation="Él enseña a los alumnos.">
+        <word id="0" lemma="Ján" posTag="Pronombre" subPosTag="Personal" token="Jánra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="kirika" posTag="Nombre" subPosTag="Contable" token="kírika"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="ákaibo">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="áxeati" posTag="Verbo" subPosTag="Transitivo" token="áxeai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Eabicho íitira moa áxea iki" translation="Ya estoy acostumbrado a estar solo.">
+        <word id="0" lemma="E" posTag="Pronombre" subPosTag="Personal" token="Eabicho">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bicho" type="Sufijo nominal"/>
+        </word>
+        <word id="1" lemma="íiti" posTag="Verbo" subPosTag="Intransitivo" token="íitira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="áxeati" posTag="Verbo" subPosTag="Transitivo" token="áxea"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+    </sentence>
+</corpus>

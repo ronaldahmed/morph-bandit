@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Kikinshaman akin onanwe jaa oxen janebo ." translation="Aprende de memoria los nombre de los meses del año.">
+        <word id="0" lemma="kikin" lemmaPred="Kikinshaman" posTag="Adjetivo" subPosTag="Calificativo" token="Kikinshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" lemmaPred="onanwe" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="onanti" lemmaPred="onanwe" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="ja" lemmaPred="jaa" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="4" lemma="oxe" lemmaPred="oxen" posTag="Nombre" subPosTag="Contable" token="oxen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="jane" lemmaPred="janebo" posTag="Nombre" subPosTag="Contable" token="janebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Min cuaderno meran wishawe jaa oxen janebo , shinantaananres , oinxonmabi ." translation="Escribe de memoria los meses en tu cuaderno.">
+        <word id="0" lemma="mia" lemmaPred="Min" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" lemmaPred="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" lemmaPred="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wishati" lemmaPred="wishawe" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="ja" lemmaPred="jaa" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="5" lemma="oxe" lemmaPred="oxen" posTag="Nombre" subPosTag="Contable" token="oxen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jane" lemmaPred="janebo" posTag="Nombre" subPosTag="Contable" token="janebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="shinanti" lemmaPred="shinantaananres" posTag="Verbo" subPosTag="Transitivo" token="shinantaananres">
+            <affix order="1" text="taanan" type="Clít. concord. de particip."/>
+            <affix order="2" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="ointi" lemmaPred="oinxonmabi" posTag="Verbo" subPosTag="Transitivo" token="oinxonmabi">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+            <affix order="3" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="¿ Jawerato oxeboki baritian ikaibo iki ?" translation="¿Cuáles son los meses del verano?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="Jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="oxe" lemmaPred="oxeboki" posTag="Nombre" subPosTag="Contable" token="oxeboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="baritia" lemmaPred="baritian" posTag="Nombre" subPosTag="Contable" token="baritian">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="ikaibo" posTag="Verbo" subPosTag="Copulativo" token="ikaibo">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jaweratoki jenetianbiribi ikaibo iki ?" translation="¿Cuáles son los meses del invierno?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawerato" lemmaPred="Jaweratoki" posTag="Palabra Interrogativa" subPosTag="" token="Jaweratoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jenetia" lemmaPred="jenetianbiribi" posTag="Nombre" subPosTag="Contable" token="jenetianbiribi">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="ikaibo" posTag="Verbo" subPosTag="Copulativo" token="ikaibo">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Mai iki toron , pelota keská ." translation="La tierra es redonda como una pelota.">
+        <word id="0" lemma="Mai" lemmaPred="Mai" posTag="Nombre" subPosTag="Contable" token="Mai"/>
+        <word id="1" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="toró" lemmaPred="toro" posTag="Nombre" subPosTag="Contable" token="toron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="pelota" lemmaPred="pelota" posTag="Nombre" subPosTag="Contable" token="pelota"/>
+        <word id="5" lemma="keská" lemmaPred="keská" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Perú tekíbo iki :" translation="Los límites del Perú  son los siguientes:">
+        <word id="0" lemma="Perú" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="1" lemma="tekí" lemmaPred="tekíbo" posTag="Nombre" subPosTag="Contable" token="tekíbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="tekíbo" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="1" text="nete tsisenenao : Ecuador , Colombia ." translation="Por el norte: con Ecuador y colombia.">
+        <word id="0" lemma="nete" lemmaPred="tekíbo" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="1" lemma="senenti" lemmaPred="tsisenenao" posTag="Verbo" subPosTag="Intransitivo" token="tsisenenao">
+            <affix order="1" text="tsi" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="3" lemma="Ecuador" lemmaPred="Ecuador" posTag="Nombre Propio" subPosTag="" token="Ecuador"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="Colombia" lemmaPred="Colombia" posTag="Nombre Propio" subPosTag="" token="Colombia"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="bari pikotaiori : Brasil , Bolivia ." translation="Por el este: con Brasil y Bolivia.">
+        <word id="0" lemma="bari" lemmaPred="Colombia" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="1" lemma="pikóti" lemmaPred="pikotaiori" posTag="Verbo" subPosTag="Intransitivo" token="pikotaiori">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="3" lemma="Brasil" lemmaPred="Brasil" posTag="Nombre Propio" subPosTag="" token="Brasil"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="Bolivia" lemmaPred="Bolivia" posTag="Nombre Propio" subPosTag="" token="Bolivia"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="nete resenenao : Chile ." translation="Por el sur: con Chile.">
+        <word id="0" lemma="nete" lemmaPred="Bolivia" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="1" lemma="senenti" lemmaPred="Bolivia" posTag="Verbo" subPosTag="Intransitivo" token="resenenao">
+            <affix order="1" text="re" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="3" lemma="Chile" lemmaPred="Chile" posTag="Nombre Propio" subPosTag="" token="Chile"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="bari kaiori : Aniparo Pacífico ." translation="Por el oeste: con el Océano Pacífico.">
+        <word id="0" lemma="bari" lemmaPred="Chile" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="1" lemma="kati" lemmaPred="Chile" posTag="Verbo" subPosTag="Intransitivo" token="kaiori">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Sufijo nominal"/>
+        </word>
+        <word id="2" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="3" lemma="Aniparo" lemmaPred="Aniparo" posTag="Nombre" subPosTag="No contable" token="Aniparo"/>
+        <word id="4" lemma="Pacífico" lemmaPred="Pacífico" posTag="Nombre Propio" subPosTag="" token="Pacífico"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

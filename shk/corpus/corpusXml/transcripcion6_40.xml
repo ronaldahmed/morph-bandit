@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Ja aataitianki chosko bakeranonki joá iki , neexon bimpish kokoi ." translation="En ese momento llegaron cuatro jóvenes para comer el fruto de aquel árbol, y se subieron.">
+        <word id="0" token="Ja"/>
+        <word id="1" token="aataitianki"/>
+        <word id="2" lemma="chosko" lemmaPred="chosko" posTag="Numeral" subPosTag="" token="chosko"/>
+        <word id="3" lemma="bakeranon" lemmaPred="bakeranonki" posTag="Nombre" subPosTag="Contable" token="bakeranonki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="joti" lemmaPred="bakeranonki" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="bakeranonki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="neeti" lemmaPred="neexon" posTag="Verbo" subPosTag="Intransitivo" token="neexon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="bimpish" lemmaPred="neexon" posTag="Nombre" subPosTag="Contable" token="bimpish"/>
+        <word id="9" lemma="kokoti" lemmaPred="kokoi" posTag="Verbo" subPosTag="Transitivo" token="kokoi">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainoaki bimpish bimin , awá tsakakana iki , manxonbinaki ." translation="Mientras que la sachavaca permanecía en su canoa, uno de los jóvenes le golpeó en la cabeza al dejar caer al propósito una guayaba.">
+        <word id="0" lemma="jainoa" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="Jainoaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bimpish" lemmaPred="kokoi" posTag="Nombre" subPosTag="Contable" token="bimpish"/>
+        <word id="2" lemma="bimi" lemmaPred="bimin" posTag="Nombre" subPosTag="Contable" token="bimin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="awá" lemmaPred="bimin" posTag="Nombre" subPosTag="Contable" token="awá"/>
+        <word id="5" lemma="tsakati" lemmaPred="tsakakana" posTag="Verbo" subPosTag="Transitivo" token="tsakakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="tsakakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="manxonbina" lemmaPred="manxonbinaki" posTag="Nombre" subPosTag="Parte del cuerpo" token="manxonbinaki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatian sináxon awakan , bimpish jamata iki , jaskaa bimpish xonoa iki ." translation="Entonces la sachavaca enojada pateó el tronco de guayaba (en donde estaban los jóvenes) y aquel árbol se quedó convertido en una gran lupuna.">
+        <word id="0" lemma="jatian" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="Jatian"/>
+        <word id="1" lemma="sináti" lemmaPred="manxonbinaki" posTag="Verbo" subPosTag="Intransitivo" token="sináxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="awa" lemmaPred="bimpish" posTag="Nombre" subPosTag="Contable" token="awakan">
+            <affix order="1" text="kan" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="bimpish" lemmaPred="bimpish" posTag="Nombre" subPosTag="Contable" token="bimpish"/>
+        <word id="5" lemma="jamáti" lemmaPred="jamata" posTag="Verbo" subPosTag="Transitivo" token="jamata">
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="jamata" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="jaskáa" lemmaPred="xonoá" posTag="Adverbio" subPosTag="Manera" token="jaskaa"/>
+        <word id="9" lemma="bimpish" lemmaPred="jamata" posTag="Nombre" subPosTag="Contable" token="bimpish"/>
+        <word id="10" lemma="xonoti" lemmaPred="xonoá" posTag="Verbo" subPosTag="Intransitivo" token="xonoa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="iki" lemmaPred="xonoá" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskatax , jonibo bochiki baneta iki , pakéti atipanyamaax ." translation="Y los cuatro jóvenes se quedaron arriba y les era muy difícil bajar de allí.">
+        <word id="0" lemma="jaskatax" lemmaPred="jamata" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="joni" lemmaPred="jamata" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bochiki" lemmaPred="jamata" posTag="Adverbio" subPosTag="Locación" token="bochiki"/>
+        <word id="4" lemma="banéti" lemmaPred="jamata" posTag="Verbo" subPosTag="Intransitivo" token="baneta">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="jamata" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="pakéti" lemmaPred="pakéti" posTag="Verbo" subPosTag="Intransitivo" token="pakéti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="atipanti" lemmaPred="atipanyamaax" posTag="Verbo" subPosTag="Transitivo" token="atipanyamaax">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainxon xono pei tsekakana iki , jayá pakéti ." translation="Pasaba el tiempo y no sabían cómo bajar.">
+        <word id="0" lemma="jainxon" lemmaPred="Jainxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="xono" lemmaPred="xono" posTag="Nombre" subPosTag="Contable" token="xono"/>
+        <word id="2" lemma="pei" lemmaPred="xono" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="3" lemma="tsekati" lemmaPred="tsekakana" posTag="Verbo" subPosTag="Transitivo" token="tsekakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="tsekakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ja" lemmaPred="tsekakana" posTag="Pronombre" subPosTag="Demostrativo" token="jayá">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="pakéti" lemmaPred="tsekakana" posTag="Verbo" subPosTag="Intransitivo" token="pakéti">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

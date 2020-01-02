@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Maín yakáxonra titán jawen witáx ashtá ake" translation="Al sentarse en el suelo, mamá cruzó sus piernas.">
+        <word id="0" lemma="Maín" posTag="Nombre" subPosTag="No contable" token="Maín"/>
+        <word id="1" lemma="yakáti" posTag="Verbo" subPosTag="Transitivo" token="yakáxonra">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="titá" posTag="Nombre" subPosTag="Contable" token="titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="Jawen" posTag="Adverbio" subPosTag="Tiempo" token="jawen"/>
+        <word id="4" lemma="witáx" posTag="Nombre" subPosTag="Parte del cuerpo" token="witáx"/>
+        <word id="5" lemma="ashtáati" posTag="Verbo" subPosTag="Transitivo" token="ashtá"/>
+        <word id="6" lemma="ati" posTag="Verbo Auxiliar" subPosTag="" token="ake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Non ápo nokóketian óinaxa noa kikínbiresi rároke" translation="Nos alegramos mucho cuando vimos llegar a nuestro presidente.">
+        <word id="0" lemma="non" posTag="Pronombre" subPosTag="Personal" token="Non"/>
+        <word id="1" lemma="ápo" posTag="Nombre" subPosTag="Contable" token="ápo"/>
+        <word id="2" lemma="nokóti" posTag="Verbo" subPosTag="Intransitivo" token="nokóketian">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+            <affix order="4" text="n" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="óinti" posTag="Verbo" subPosTag="Transitivo" token="óinaxa">
+            <affix order="1" text="ax" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="5" lemma="kikinbires" posTag="Adverbio" subPosTag="Cantidad" token="kikínbiresi"/>
+        <word id="6" lemma="rároti" posTag="Verbo" subPosTag="Transitivo" token="rároke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Níma oínxonra , Josíkan kénai" translation="Al ver a Nima, José lo llama.">
+        <word id="0" lemma="Níma" posTag="Nombre Propio" subPosTag="" token="Níma"/>
+        <word id="1" lemma="oínti" posTag="Verbo" subPosTag="Transitivo" token="oínxonra">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="Josíkan" posTag="Nombre Propio" subPosTag="" token="Josíkan">
+            <affix order="1" text="kan" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="kénati" posTag="Verbo" subPosTag="Transitivo" token="kénai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Bóchiki tsamáxonki ninkákana iki" translation="Se amontonaron arriba y escucharon.">
+        <word id="0" lemma="Bóchiki" posTag="Adverbio" subPosTag="Locación" token="Bóchiki"/>
+        <word id="1" lemma="tsamáti" posTag="Verbo" subPosTag="Transitivo" token="tsamáxonki">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ninkáti" posTag="Verbo" subPosTag="Intransitivo" token="ninkákana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+    </sentence>
+    <sentence id="4" text="-¿ Jaweranoaxki mia joá ? -Onoaxa ea jóke" translation="-¿De dónde has venido? -Desde allá he venido.">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerano" posTag="Adverbio" subPosTag="Cantidad" token="Jaweranoaxki">
+            <affix order="1" text="ax" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="mi" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="5" lemma="Ono" posTag="Adverbio" subPosTag="Locación" token="Onoaxa">
+            <affix order="1" text="ax" type="Sufijo nominal"/>
+            <affix order="2" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="e" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="jóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

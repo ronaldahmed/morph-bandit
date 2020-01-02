@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaa bainra noa taen kai . Papíxonra non jawékibo non boai ." translation="Andamos a pie y llevamos nuestras cosas sobre la espalda.">
+        <word id="0" lemma="ja" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Jaa"/>
+        <word id="1" lemma="bain" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="bainra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="3" lemma="taen" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="taen"/>
+        <word id="4" lemma="káti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="6" lemma="papiti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="Papíxonra">
+            <affix order="1" text="xon#2" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="7" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="8" lemma="jaweki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="10" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Ani baira yamatanike ." translation="Hay poco caminos anchos.">
+        <word id="0" lemma="áni" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="Ani"/>
+        <word id="1" lemma="bai" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="yama" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="yamatanike">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa ani bainra noa ochó kaí , carron ." translation="En ellos viajamos en carros.">
+        <word id="0" lemma="ja" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Jaa"/>
+        <word id="1" lemma="áni" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="2" lemma="bain" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="bainra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="4" lemma="ocho" lemmaPred="" posTag="Adverbio" subPosTag="Locación" token="ochó"/>
+        <word id="5" lemma="kati" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kaí">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="carro" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="carron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Carronra non boai caucho , jatíbi jawéki bichi , marotibo . Konxan kaxkeaboribira non boai ." translation="Ellos llevan nuestros productos como el caucho y las pieles para ser vendidos.">
+        <word id="0" lemma="Carro" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Carronra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="caucho" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="caucho"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jatibi" lemmaPred="" posTag="Adjetivo" subPosTag="Cuantificador" token="jatíbi"/>
+        <word id="6" lemma="jaweki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="7" lemma="bichi" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="bichi"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma=",marati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="marotibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="konchan" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Konxan"/>
+        <word id="12" lemma="kaxketi" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="kaxkeaboribira">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+            <affix order="4" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="13" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="14" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainxonra non boai paranta . Nií meranoa non liman boai ." translation="Llevan también madera y plátanos de la selva a Lima.">
+        <word id="0" lemma="Jainxon" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="Jainxonra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="paránta" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="paranta"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="nii" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Nií"/>
+        <word id="6" lemma="meran" lemmaPred="" posTag="Postposición" subPosTag="" token="meranoa">
+            <affix order="1" text="noa" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="8" lemma="Lima" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Liman">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

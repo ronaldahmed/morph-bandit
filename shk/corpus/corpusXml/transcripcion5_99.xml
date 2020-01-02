@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jaa vapóronin boai icha joni , icha jawéki ochó jemameabo ." translation="Llevan muchos pasajeros y bultos de países lejanos.">
+        <word id="0" lemma="ja" lemmaPred="" posTag="Determinante" subPosTag="Demostrativo" token="Ja">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="vapóro" lemmaPred="vapóronin" posTag="Nombre" subPosTag="Contable" token="vapóronin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="boti" lemmaPred="vapóronin" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="icha" lemmaPred="vapóronin" posTag="Adjetivo" subPosTag="Calificativo" token="icha"/>
+        <word id="4" lemma="joni" lemmaPred="vapóronin" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="icha" lemmaPred="vapóronin" posTag="Adjetivo" subPosTag="Calificativo" token="icha"/>
+        <word id="7" lemma="jawéki" lemmaPred="vapóronin" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="8" lemma="ochó" lemmaPred="ochó" posTag="Adverbio" subPosTag="Locación" token="ochó"/>
+        <word id="9" lemma="jema" lemmaPred="jemameabo" posTag="Nombre" subPosTag="Contable" token="jemameabo">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Aniparon joai jawékiati jawéki ani vapóronin . Joai Norte Américameax , Europanimeax , Asianimeax , Australasianimeax , Áfricameaxibi joai ." translation="Por los buques de mar vienen productos al Perú de Norte América, de Europa, de Asia, de Oceanía y de África.">
+        <word id="0" lemma="Aniparo" lemmaPred="benawe" posTag="Nombre" subPosTag="Contable" token="Aniparon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="joti" lemmaPred="benawe" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jawékiati" lemmaPred="benawe" posTag="Verbo" subPosTag="Transitivo" token="jawékiati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jawéki" lemmaPred="benawe" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="ani" lemmaPred="benawe" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="5" lemma="vapóro" lemmaPred="benawe" posTag="Nombre" subPosTag="Contable" token="vapóronin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="joti" lemmaPred="benawe" posTag="Verbo" subPosTag="Intransitivo" token="Joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="Norte" lemmaPred="Norte" posTag="Nombre Propio" subPosTag="" token="Norte"/>
+        <word id="9" lemma="América" lemmaPred="Américameax" posTag="Nombre Propio" subPosTag="" token="Américameax">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="Europa" lemmaPred="Europanimeax" posTag="Nombre Propio" subPosTag="" token="Europanimeax">
+            <affix order="1" text="nimeax" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" lemma="Asia" lemmaPred="Asianimeax" posTag="Nombre Propio" subPosTag="" token="Asianimeax">
+            <affix order="1" text="nimeax" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="Australasia" lemmaPred="Australasianimeax" posTag="Nombre Propio" subPosTag="" token="Australasianimeax">
+            <affix order="1" text="nimeax" type="Clít. nominal"/>
+        </word>
+        <word id="16" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="17" lemma="África" lemmaPred="Áfricameaxibi" posTag="Nombre Propio" subPosTag="" token="Áfricameaxibi">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+            <affix order="1" text="ibi" type="Clít. de posición libre"/>
+        </word>
+        <word id="18" lemma="joti" lemmaPred="Áfricameaxibi" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Kebénokotimaakin onanwe , aninasin jane ." translation="Aprende de memoria los nombres de los continentes del mundo.">
+        <word id="0" lemma="Kebénokotimaati" lemmaPred="Kebénokotimaakin" posTag="Verbo" subPosTag="Transitivo" token="Kebénokotimaakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="onanti" lemmaPred="Kebénokotimaakin" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="aninasi" lemmaPred="aninasin" posTag="Nombre" subPosTag="Contable" token="aninasin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jane" lemmaPred="aninasin" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaábo iki , Norte América , Sudamérica , África , Asia , Australasia , Europa , jainoax Antártica maibo ." translation="Son: América, África, Oceanía, Europa y las tierras Antárticas.">
+        <word id="0" lemma="ja" lemmaPred="Kebénokotimaakin" posTag="Pronombre" subPosTag="Personal" token="Jaábo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="Kebénokotimaakin" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="Norte" lemmaPred="Kebénokotimaakin" posTag="Nombre Propio" subPosTag="" token="Norte"/>
+        <word id="4" lemma="América" lemmaPred="Kebénokotimaakin" posTag="Nombre Propio" subPosTag="" token="América"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="Sudamérica" lemmaPred="Sudamérica" posTag="Nombre Propio" subPosTag="" token="Sudamérica"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="África" lemmaPred="África" posTag="Nombre Propio" subPosTag="" token="África"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="Asiá" lemmaPred="Asiá" posTag="Nombre Propio" subPosTag="" token="Asia"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="Australasia" lemmaPred="Australasia" posTag="Nombre Propio" subPosTag="" token="Australasia"/>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="Europa" lemmaPred="Australasia" posTag="Nombre Propio" subPosTag="" token="Europa"/>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" lemma="jainoax" lemmaPred="Australasia" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="17" lemma="Antártica" lemmaPred="Antártica" posTag="Nombre Propio" subPosTag="" token="Antártica"/>
+        <word id="18" lemma="mai" lemmaPred="maibo" posTag="Nombre" subPosTag="No contable" token="maibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Mapamea oinxon aninasibo benawe ." translation="Busca en el mapa los continentes.">
+        <word id="0" lemma="Mapa" lemmaPred="Mapamea" posTag="Nombre" subPosTag="Contable" token="Mapamea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ointi" lemmaPred="oinxon" posTag="Verbo" subPosTag="Transitivo" token="oinxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="aninasi" lemmaPred="aninasibo" posTag="Nombre" subPosTag="Contable" token="aninasibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="benati" lemmaPred="benawe" posTag="Verbo" subPosTag="Transitivo" token="benawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

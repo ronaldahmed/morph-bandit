@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Jaweatimain noa keenti iki ochítinin ?" translation="¿Para qué sirve el perro?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatimain">
+            <affix order="1" text="main" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="3" lemma="kéenti" posTag="Verbo" subPosTag="Transitivo" token="keenti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="ochíti" posTag="Nombre" subPosTag="Contable" token="ochítinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Ochíti iki piti benai ." translation="El perro busca mitayo.">
+        <word id="0" lemma="ochíti" posTag="Nombre" subPosTag="Contable" token="Ochíti"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="piti" posTag="Nombre" subPosTag="No contable" token="piti"/>
+        <word id="3" lemma="benati" posTag="Verbo" subPosTag="Transitivo" token="benai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Ochíti iki mecha ." translation="Los perros son buenos cazadores.">
+        <word id="0" lemma="ochíti" posTag="Nombre" subPosTag="Contable" token="Ochíti"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="mécha" posTag="Adjetivo" subPosTag="Calificativo" token="mecha"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Non ochíti non jakonwakin cuídanai ." translation="Cuidamos bien a nuestro perro.">
+        <word id="0" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="Non"/>
+        <word id="1" lemma="ochíti" posTag="Nombre" subPosTag="Contable" token="ochíti"/>
+        <word id="2" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="3" lemma="jakonhati" posTag="Verbo" subPosTag="Transitivo" token="jakonhakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="cuídanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Non xenamatima iki ." translation="No lo dejamos agusanar.">
+        <word id="0" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="Non"/>
+        <word id="1" lemma="xenati" posTag="Verbo" subPosTag="Intransitivo" token="xenamatima">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+            <affix order="3" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

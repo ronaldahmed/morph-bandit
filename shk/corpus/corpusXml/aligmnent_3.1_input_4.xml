@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Ashakanronki aínbo chópa axonike" translation="Cuentan que cierta vez el sapo ashá hizo ropa para una mujer.">
+        <word id="0" lemma="Asha" posTag="Nombre" subPosTag="Contable" token="Ashakanronki">
+            <affix order="1" text="kan" type="Clít. nominal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="aínbo" posTag="Nombre" subPosTag="Contable" token="aínbo"/>
+        <word id="2" lemma="chópa" posTag="Nombre" subPosTag="Contable" token="chópa"/>
+        <word id="3" lemma="axonti" posTag="Verbo" subPosTag="Transitivo" token="axonike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Jainra asháninka jóni joai" translation="Allí viene un asháninka.">
+        <word id="0" lemma="Jain" posTag="Adverbio" subPosTag="Locación" token="Jainra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="asháninka" posTag="Nombre" subPosTag="Contable" token="asháninka"/>
+        <word id="2" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="3" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Nato aínbo áshpara kikínbires íshto iki , bénbo niai keskati níai ikax" translation="Esta mujer de piernas torcidas es muy rápida porque camina como hombre.">
+        <word id="0" lemma="nato" posTag="Pronombre" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="aínbo" posTag="Nombre" subPosTag="Contable" token="aínbo"/>
+        <word id="2" lemma="áshpara" posTag="Adjetivo" subPosTag="Calificativo" token="áshpara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="kikinbires" posTag="Adverbio" subPosTag="Cantidad" token="kikínbires"/>
+        <word id="4" lemma="íshto" posTag="Adjetivo" subPosTag="Calificativo" token="íshto"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="bénbo" posTag="Nombre" subPosTag="Contable" token="bénbo"/>
+        <word id="8" lemma="niti" posTag="Verbo" subPosTag="Intransitivo" token="niai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="keskati" posTag="Verbo" subPosTag="Transitivo" token="keskati"/>
+        <word id="10" lemma="níti" posTag="Verbo" subPosTag="Intransitivo" token="níai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="ikax" posTag="Verbo Auxiliar" subPosTag="" token="ikax"/>
+    </sentence>
+    <sentence id="3" text="Kapón anonxonra papán kochi ashpánke" translation="Papá le abrió las piernas al chancho para caparlo.">
+        <word id="0" lemma="Kapanti" posTag="Verbo" subPosTag="Transitivo" token="Kapón"/>
+        <word id="1" lemma="anonxon" posTag="Adverbio" subPosTag="Tiempo" token="anonxonra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="Papá" posTag="Nombre" subPosTag="Contable" token="papán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="kochi" posTag="Nombre" subPosTag="Contable" token="kochi"/>
+        <word id="4" lemma="ashpánti" posTag="Verbo" subPosTag="Transitivo" token="ashpánke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Raínsh ikaxa ea ashpáke" translation="Al resbalarme, me quedé con las piernas abiertas.">
+        <word id="0" lemma="Raínshiti" posTag="Verbo" subPosTag="Intransitivo" token="Raínsh"/>
+        <word id="1" lemma="ik" posTag="Verbo" subPosTag="Intransitivo" token="ikaxa">
+            <affix order="1" text="ax" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="3" lemma="ashpáti" posTag="Verbo" subPosTag="Intransitivo" token="ashpáke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

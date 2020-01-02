@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Shirinkanin teetai joni betan roobo iní" translation="El shiringero y el cotomono">
+        <word id="0" lemma="shirínka" posTag="Nombre" subPosTag="Contable" token="Shirinkanin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="téeti" posTag="Verbo" subPosTag="Intransitivo" token="teetai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="3" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="4" lemma="roo" posTag="Nombre" subPosTag="Contable" token="roobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Westíora joni ronki iká iki shirinkanin teeti kaí , jawen awin betan ." translation="Una vez se fue un hombre con su esposa a trabajar en la shiringa.">
+        <word id="0" lemma="westíora" posTag="Adverbio" subPosTag="Tiempo" token="Westíora"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joniERROR"/>
+        <word id="2" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="3" token="iká"/>
+        <word id="4" token="iki"/>
+        <word id="5" token="shirinkanin"/>
+        <word id="6" token="teeti"/>
+        <word id="7" token="kaí"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" token="jawen"/>
+        <word id="10" token="awin"/>
+        <word id="11" token="betan"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatian ronki aká iki jawen awinki ja jonin yoikin : &quot; Atsa xeatiawe non paeshaman xeanon , &quot; akin aká iki ." translation="Al llegar al sitio donde trabajaba, ordenó a su esposa: &quot;Haz un masato de yuca medio fermentado para que tomemos juntos.&quot;">
+        <word id="0" token="Jatian"/>
+        <word id="1" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="2" token="aká"/>
+        <word id="3" token="iki"/>
+        <word id="4" token="jawen"/>
+        <word id="5" token="awinki"/>
+        <word id="6" token="ja"/>
+        <word id="7" token="jonin"/>
+        <word id="8" token="yoikin"/>
+        <word id="9" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="10" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="11" token="Atsa"/>
+        <word id="12" token="xeatiawe"/>
+        <word id="13" token="non"/>
+        <word id="14" token="paeshaman"/>
+        <word id="15" token="xeanon"/>
+        <word id="16" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="17" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="18" token="akin"/>
+        <word id="19" token="aká"/>
+        <word id="20" token="iki"/>
+        <word id="21" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskáa ronki aká iki jawen awinin xeati akin ." translation="Entonces la mujer se puso a prepararlo.">
+        <word id="0" token="Jaskáa"/>
+        <word id="1" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="2" token="aká"/>
+        <word id="3" token="iki"/>
+        <word id="4" token="jawen"/>
+        <word id="5" token="awinin"/>
+        <word id="6" token="xeati"/>
+        <word id="7" token="akin"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskataxki xeati paea iki , chosko nete pekáo ." translation="Después de cuatro días, el masato estaba bien fermentado.">
+        <word id="0" lemma="jáskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskataxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="xéati" posTag="Nombre" subPosTag="Contable" token="xeati"/>
+        <word id="2" lemma="páeti" posTag="Verbo" subPosTag="Intransitivo" token="paea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="chosko" posTag="Numeral" subPosTag="" token="chosko"/>
+        <word id="6" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="7" lemma="pekáo" posTag="Postposición" subPosTag="" token="pekáo"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

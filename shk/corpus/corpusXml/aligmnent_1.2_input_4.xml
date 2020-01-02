@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Máioshiain kaíra jóni réokooke táxa tsákaax" translation="Mientras iba a Pucallpa, el hombre chocó con una palizada y su canoa se volcó">
+        <word id="0" lemma="Máioshiain" posTag="Nombre Propio" subPosTag="" token="Máioshiain"/>
+        <word id="1" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaíra">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="3" lemma="réokooti" posTag="Verbo" subPosTag="Transitivo" token="réokooke">
+            <affix order="1" text="ke" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="táxa" posTag="Nombre" subPosTag="Contable" token="táxa"/>
+        <word id="5" lemma="tsákati" posTag="Verbo" subPosTag="Intransitivo" token="tsákaax">
+            <affix order="1" text="ax" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Contámanain yamébi kaíra noa Tiróntainoax néteke" translation="Viajando de noche a Contamana, amanecimos en Tiruntán">
+        <word id="0" lemma="Contámanain" posTag="Nombre Propio" subPosTag="" token="Contámanain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yame" posTag="Nombre" subPosTag="Contable" token="yamébi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaíra">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="4" lemma="Tiróntainoax" posTag="Nombre Propio" subPosTag="" token="Tiróntainoax">
+            <affix order="1" text="noa" type="Clít. nominal"/>
+            <affix order="2" text="x" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="néteti" posTag="Verbo" subPosTag="Intransitivo" token="néteke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Jóni Iparianko káitianra , jawen bonánti yómetsoakanke" translation="Cuando el hombre fue a Iparía, le robaron su maletín">
+        <word id="0" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="Jóni"/>
+        <word id="1" lemma="Iparianko" posTag="Nombre Propio" subPosTag="" token="Iparianko">
+            <affix order="1" text="nko" type="Sufijo nominal"/>
+        </word>
+        <word id="2" lemma="káiti" posTag="Verbo" subPosTag="Intransitivo" token="káitianra">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="n" type="Sufijo verbal"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="Jawen" posTag="Pronombre" subPosTag="Personal" token="jawen"/>
+        <word id="5" lemma="bonánti" posTag="Nombre" subPosTag="Contable" token="bonánti"/>
+        <word id="6" lemma="yómetsoati" posTag="Verbo" subPosTag="Transitivo" token="yómetsoakanke">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Rámara pápa Iquitoain iki" translation="Ahora papá está en Iquitos">
+        <word id="0" lemma="Rámara" posTag="Adverbio" subPosTag="Tiempo" token="Rámara"/>
+        <word id="1" lemma="pápa" posTag="Nombre" subPosTag="Contable" token="pápa"/>
+        <word id="2" lemma="Iquito" posTag="Nombre Propio" subPosTag="" token="Iquitoain">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+    </sentence>
+    <sentence id="4" text="Rámara títa Caconko iki" translation="Ahora mamá está en Caco">
+        <word id="0" lemma="Rámara" posTag="Adverbio" subPosTag="Tiempo" token="Rámara"/>
+        <word id="1" lemma="títa" posTag="Nombre" subPosTag="Contable" token="títa"/>
+        <word id="2" lemma="Caco" posTag="Nombre Propio" subPosTag="" token="Caconko">
+            <affix order="1" text="nko" type="Sufijo nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+    </sentence>
+</corpus>

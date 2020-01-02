@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Non xetan beshéakin nakai , jawékiakin ." translation="Con los dientes masticamos bien el alimento.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="xeta" posTag="Nombre" subPosTag="Parte del cuerpo" token="xetan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="beshéati" posTag="Verbo" subPosTag="Transitivo" token="beshéakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="nakati" posTag="Verbo" subPosTag="Transitivo" token="nakai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawékiati" posTag="Verbo" subPosTag="Transitivo" token="jawékiakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweatiki non nakai , jawékiakin ?" translation="¿Para qué masticamos el alimento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="nakati" posTag="Verbo" subPosTag="Transitivo" token="nakai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawékiati" posTag="Verbo" subPosTag="Transitivo" token="jawékiakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Nonra beshéakin nakai , non poko meran jakoni payónon ixon . Jaskara ikax non poko ani icha teéyoratima iki ." translation="Masticamos bien el alimento para ayudar la digestión y para que el estómago no tenga que trabajar mucho.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Nonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="beshéati" posTag="Verbo" subPosTag="Transitivo" token="beshéakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="nakati" posTag="Verbo" subPosTag="Transitivo" token="nakai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="poko" posTag="Nombre" subPosTag="Parte del cuerpo" token="poko"/>
+        <word id="6" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="7" lemma="jakonti" posTag="Verbo" subPosTag="Intransitivo" token="jakoni">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="payoti" posTag="Verbo" subPosTag="Intransitivo" token="payonon">
+            <affix order="1" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="12" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="poko" posTag="Nombre" subPosTag="Parte del cuerpo" token="poko"/>
+        <word id="15" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="16" lemma="icha" posTag="Adjetivo" subPosTag="Calificativo" token="icha"/>
+        <word id="17" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teeyoratima">
+            <affix order="1" text="yora" type="Clít. de posición libre"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+            <affix order="3" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="18" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskara ikax , non beshéakin jawékiaa , non yora jakonai ." translation="La comida bien masticada alimenta bien el cuerpo.">
+        <word id="0" lemma="jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="beshéati" posTag="Verbo" subPosTag="Transitivo" token="beshéakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="jawékiati" posTag="Verbo" subPosTag="Transitivo" token="jawékiaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="yora" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="9" lemma="jakonti" posTag="Verbo" subPosTag="Intransitivo" token="jakonai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskara ikax , non poko meran jakoni payotai , non beshéakin nakaa ." translation="El estómago y los intestinos pueden digerir mejor la comida bien masticada.">
+        <word id="0" lemma="jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="poko" posTag="Nombre" subPosTag="Parte del cuerpo" token="poko"/>
+        <word id="5" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="6" lemma="jakonti" posTag="Verbo" subPosTag="Intransitivo" token="jakoni">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="payoti" posTag="Verbo" subPosTag="Transitivo" token="payotai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="beshéati" posTag="Verbo" subPosTag="Transitivo" token="beshéakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="nakati" posTag="Verbo" subPosTag="Transitivo" token="nakaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

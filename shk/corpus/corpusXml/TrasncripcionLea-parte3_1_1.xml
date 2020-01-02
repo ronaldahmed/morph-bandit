@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Jasin" translation="Paujil">
+        <word id="0" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasin"/>
+    </sentence>
+    <sentence id="1" text="Jasin riki maxko ." translation="El paujil es pequeño.">
+        <word id="0" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasin"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="maxko" posTag="Adjetivo" subPosTag="Calificativo" token="maxko"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Bimira jasiman piai ." translation="El paujil come frutas.">
+        <word id="0" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="Bimira"/>
+        <word id="1" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="jasiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Bimira jan piai ." translation="Come frutas.">
+        <word id="0" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="Bimira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jasin riki wiso . Jasiman witax riki joshin ." translation="Es negro y sus piernas son rojas.">
+        <word id="0" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasin"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="wiso" posTag="Adjetivo" subPosTag="Calificativo" token="wiso"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="4" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="witax" posTag="Nombre" subPosTag="Contable" token="witax"/>
+        <word id="6" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="7" lemma="joshin" posTag="Adjetivo" subPosTag="Calificativo" token="joshin"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

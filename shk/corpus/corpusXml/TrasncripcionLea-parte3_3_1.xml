@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jaweki nexnexen piai ?" translation="¿Qué come el shansho?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jaweki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="nexnex" posTag="Nombre" subPosTag="Contable" token="nexnexen">
+            <affix order="1" text="en" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jawekeskárin nexnexen bachi ?" translation="¿Cómo son los huevos del shansho?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeská" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskárin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="nexnex" posTag="Nombre" subPosTag="Contable" token="nexnexen">
+            <affix order="1" text="en" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bachi" posTag="Nombre" subPosTag="Contable" token="bachi"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jawekeskarainki bachiai ?" translation="¿Dónde pone sus huevos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskarain" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskarainki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="bachiati" posTag="Verbo" subPosTag="Intransitivo" token="bachiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Make" translation="Paña (Piraña)">
+        <word id="0" lemma="make" posTag="Nombre" subPosTag="Contable" token="Make"/>
+    </sentence>
+    <sentence id="4" text="Make riki anima ." translation="La paña no es muy grande.">
+        <word id="0" lemma="make" posTag="Nombre" subPosTag="Contable" token="Make"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="anima">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jaskara iketian , yantan bari jikiamapainon riki ." translation="Sería mejor entonces que no entrase el sol de noche.">
+        <word id="0" lemma="jáskara" posTag="Conjunción" subPosTag="Coordinante" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="yantan" posTag="Adverbio" subPosTag="Tiempo" token="yantan"/>
+        <word id="4" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="5" lemma="jikiti" posTag="Verbo" subPosTag="Intransitivo" token="jikiamapainon">
+            <affix order="1" text="ama" type="Sufijo verbal"/>
+            <affix order="2" text="painon" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Iamarake ." translation="Eso no.">
+        <word id="0" lemma="Iamarake" lemmaPred="Iamarake" posTag="Interjección" subPosTag="" token="Iamarake"/>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Aa ¡ papa !" translation="Ay papacito.">
+        <word id="0" lemma="aa" posTag="Interjección" subPosTag="" token="Aa"/>
+        <word id="1" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="2" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="3" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="3" text="Rama neten hen jisára bari ochómashoko iki ." translation="Me parece que el sol está más cerquita hoy.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jisá" lemmaPred="jisára" posTag="Nombre" subPosTag="Contable" token="jisára">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="5" lemma="ochoma" posTag="Adverbio" subPosTag="Locación" token="ochómashoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Oyarakinra ea xoike ." translation="Me quema tanto.">
+        <word id="0" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="Ayorakinra">
+            <affix order="1" text="yora" type="Clít. de segunda posición"/>
+            <affix order="2" text="kin" type="Sufijo verbal"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="xoiti" posTag="Verbo" subPosTag="Transitivo" token="xoike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

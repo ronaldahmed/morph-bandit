@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Rikanki jonin yapa ainbo biní" translation="El pescador y la sirena">
+        <word id="0" lemma="rica" posTag="Nombre" subPosTag="Contable" token="Rikanki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="yapa" posTag="Nombre" subPosTag="Contable" token="yapa"/>
+        <word id="3" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="4" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="biní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Jonin janeronki iká iki Juan ." translation="Había un hombre llamado Juan.">
+        <word id="0" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jane" posTag="Nombre" subPosTag="Contable" token="janeronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="Juan" posTag="Nombre Propio" subPosTag="" token="Juan"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jawen awinronki iká iki María ." translation="El nombre de su esposa era María.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="awin" posTag="Nombre" subPosTag="Contable" token="awinronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="María" posTag="Nombre Propio" subPosTag="" token="María"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jatian ja bake betan jawen paparonki ikátai rikan yomerai ." translation="El muchacho y el papá eran rederos.">
+        <word id="0" lemma="jatian" posTag="Adverbio" subPosTag="Tiempo" token="Jatian"/>
+        <word id="1" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="2" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="3" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="papa" posTag="Nombre" subPosTag="Contable" token="paparonki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikátai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="rika" posTag="Nombre" subPosTag="Contable" token="rikan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="yomerati" posTag="Verbo" subPosTag="Transitivo" token="yomerai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Westíora yaméki kabékona iki rikani ." translation="Una noche se fueron a redar.">
+        <word id="0" lemma="westiora" posTag="Determinante" subPosTag="Demostrativo" token="Westíora"/>
+        <word id="1" lemma="yamé" posTag="Nombre" subPosTag="Contable" token="yaméki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kabékona">
+            <affix order="1" text="bekon" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="ricanti" posTag="Verbo" subPosTag="Transitivo" token="rikani">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

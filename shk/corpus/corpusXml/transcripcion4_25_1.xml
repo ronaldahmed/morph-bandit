@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Atapa , nonon : jaábo akanai : kene meran iká jawéki akin ." translation="La gallina y el pato también se llaman aves de corral.">
+        <word id="0" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="Atapa"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="nonon" posTag="Nombre" subPosTag="Contable" token="nonon"/>
+        <word id="3" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="4" lemma="jaa" posTag="Pronombre" subPosTag="Personal" token="jaábo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="akanti" posTag="Verbo" subPosTag="Transitivo" token="akanai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="7" lemma="kene" posTag="Nombre" subPosTag="Contable" token="kene"/>
+        <word id="8" lemma="meran" posTag="Adverbio" subPosTag="Locación" token="meran"/>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="11" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jatíbi jaa jawékibo non ináai ." translation="Criamos todos estos animales.">
+        <word id="0" lemma="jatibi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbi"/>
+        <word id="1" lemma="jaa" posTag="Verbo" subPosTag="Transitivo" token="jaa"/>
+        <word id="2" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="4" lemma="inati" posTag="Verbo" subPosTag="Transitivo" token="ináai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskara jawékibo keenai , nopatax itin ." translation="Tienen deseos de vivir cerca de nosotros.">
+        <word id="0" lemma="jaskara" posTag="Determinante" subPosTag="Demostrativo" token="Jaskara"/>
+        <word id="1" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="keenti" posTag="Verbo" subPosTag="Transitivo" token="keenai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="nopa" posTag="Adverbio" subPosTag="Locación" token="nopatax">
+            <affix order="2" text="ax" type="Clít. concord. de particip."/>
+            <affix order="1" text="t" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="itin" posTag="Nombre" subPosTag="Contable" token="itin"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Rama atapa onannon akanwe , jawe keskárin ixon ." translation="Vamos a estudiar la gallina.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="atapa"/>
+        <word id="2" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onannon">
+            <affix order="1" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="akanti" posTag="Verbo" subPosTag="Transitivo" token="akanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="Jáwekeska" posTag="Conjunción" subPosTag="Subordinanate" token="jawekeska">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="keskárinERROR" posTag="Símbolo" subPosTag="" token="keskárinERROR"/>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Jaweatimain noa keenti iki , atapanin ?" translation="¿Para qué nos sirve la gallina?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatimain">
+            <affix order="1" text="main" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Determinante" subPosTag="Posesivo" token="noa"/>
+        <word id="3" lemma="keenti" posTag="Verbo" subPosTag="Transitivo" token="keenti"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="atapanin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

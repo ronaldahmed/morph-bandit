@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Machíto arara papán rásoke" translation="Papá raspó el óxido del machete.">
+        <word id="0" lemma="Machíto" posTag="Nombre" subPosTag="Contable" token="Machíto"/>
+        <word id="1" lemma="ara" posTag="Adjetivo" subPosTag="Calificativo" token="arara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="Papá" posTag="Nombre" subPosTag="Contable" token="papán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="rásoti" posTag="Verbo" subPosTag="Transitivo" token="rásoke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Nato bakénra jawen titán tasón pekake , rabón axon" translation="Este muchacho agujereó el tazón de su mamá con un clavo.">
+        <word id="0" lemma="nato" posTag="Pronombre" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="baké" posTag="Nombre" subPosTag="Contable" token="bakénra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="Jawen" posTag="Adverbio" subPosTag="Tiempo" token="jawen"/>
+        <word id="3" lemma="titá" posTag="Nombre" subPosTag="Contable" token="titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="tasón" posTag="Nombre" subPosTag="Contable" token="tasón"/>
+        <word id="5" lemma="pekati" posTag="Verbo" subPosTag="Transitivo" token="pekake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="rabón" posTag="Nombre" subPosTag="Contable" token="rabón"/>
+        <word id="8" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axon">
+            <affix order="1" text="xon#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="1 , 2 , 3 riki arábibaon nómiro" translation="1, 2, 3, son numerales arábigos.">
+        <word id="0" lemma="1" posTag="Numeral" subPosTag="" token="1"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="2" posTag="Numeral" subPosTag="" token="2"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="3" posTag="Numeral" subPosTag="" token="3"/>
+        <word id="5" lemma="riki" posTag="Verbo" subPosTag="Intransitivo" token="riki"/>
+        <word id="6" lemma="arábi" posTag="Nombre" subPosTag="Contable" token="arábibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="nómiro" posTag="Nombre" subPosTag="Contable" token="nómiro"/>
+    </sentence>
+    <sentence id="3" text="Máioshiainra meskó arámpiri jáke Nokon papánra jáinoa ícha béke jato máromati" translation="En Pucallpa hay diferentes clases de alambres Ee allí mi padre trajo muchos para vender.">
+        <word id="0" lemma="Máioshiainra" posTag="Nombre Propio" subPosTag="" token="Máioshiainra">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="2" lemma="arámpiri" posTag="Nombre" subPosTag="Contable" token="arámpiri"/>
+        <word id="3" lemma="játi" posTag="Verbo" subPosTag="Intransitivo" token="jáke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="5" lemma="papá" posTag="Nombre" subPosTag="Contable" token="papánra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="jáinoa" posTag="Adverbio" subPosTag="Locación" token="jáinoa"/>
+        <word id="7" lemma="ícha" posTag="Adjetivo" subPosTag="Cuantificador" token="ícha"/>
+        <word id="8" lemma="béti" posTag="Verbo" subPosTag="Transitivo" token="béke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="10" lemma="máromati" posTag="Verbo" subPosTag="Transitivo" token="máromati"/>
+    </sentence>
+    <sentence id="4" text="Rabe jiwín katáxonra nato kínimeranoa en chíchika bíke" translation="Saqué el cuchillo de este hueco sujetándolo con dos palitos.">
+        <word id="0" lemma="rabé" posTag="Adjetivo" subPosTag="Cuantificador" token="Rabe"/>
+        <word id="1" lemma="jiwí" posTag="Nombre" subPosTag="Contable" token="jiwín">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="katá" posTag="Verbo" subPosTag="Transitivo" token="katáxonra">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="4" lemma="kínimeran" posTag="Nombre" subPosTag="Contable" token="kínimeranoa">
+            <affix order="1" text="o" type="Clít. nominal"/>
+            <affix order="2" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="En" posTag="Pronombre" subPosTag="Personal" token="en"/>
+        <word id="6" lemma="chíchika" posTag="Nombre" subPosTag="Contable" token="chíchika"/>
+        <word id="7" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bíke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

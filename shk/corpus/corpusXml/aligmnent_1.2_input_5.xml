@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Rabe baritiara ea ike teeti Jepeiain" translation="Dos años he trabajado en Yarinacocha">
+        <word id="0" lemma="Rabé" posTag="Numeral" subPosTag="" token="Rabe"/>
+        <word id="1" lemma="baritia" posTag="Nombre" subPosTag="Contable" token="baritiara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="3" lemma="ike" posTag="Verbo Auxiliar" subPosTag="" token="ike"/>
+        <word id="4" lemma="teeti" posTag="Verbo" subPosTag="Transitivo" token="teeti"/>
+        <word id="5" lemma="Jepeiain" posTag="Nombre Propio" subPosTag="" token="Jepeiain"/>
+    </sentence>
+    <sentence id="1" text="Básibiresa pápa Róaboyanko téeke" translation="Durante mucho tiempo mi padre trabajó en Roaboya">
+        <word id="0" lemma="Básibiresa" posTag="Adverbio" subPosTag="Tiempo" token="Básibiresa"/>
+        <word id="1" lemma="pápa" posTag="Nombre" subPosTag="Contable" token="pápa"/>
+        <word id="2" lemma="Róaboya" posTag="Nombre Propio" subPosTag="" token="Róaboyanko">
+            <affix order="1" text="nko" type="Sufijo nominal"/>
+        </word>
+        <word id="3" lemma="téeti" posTag="Verbo" subPosTag="Transitivo" token="téeke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Kokánronki Xánayainoa witábo níchina oínkatitai" translation="Cuentan que en Shanaya mi tío veía postes prendidos en el agua">
+        <word id="0" lemma="Koká" posTag="Nombre" subPosTag="Contable" token="Kokánronki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="Xánayainoa" posTag="Nombre Propio" subPosTag="" token="Xánayainoa">
+            <affix order="1" text="noa" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="witábo" posTag="Nombre" subPosTag="Contable" token="witábo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="níchinti" posTag="Verbo" subPosTag="Transitivo" token="níchina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="oínkatitai" posTag="Verbo" subPosTag="Intransitivo" token="oínkatitai"/>
+    </sentence>
+    <sentence id="3" text="Róoyainxonra nokon kokán xóbo ayantanke" translation="Estando en Roya mi tío construyó una casa">
+        <word id="0" lemma="Róoya" posTag="Nombre Propio" subPosTag="" token="Róoyainxonra">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+            <affix order="2" text="n" type="Clít. nominal"/>
+            <affix order="3" text="xon" type="Sufijo verbal"/>
+            <affix order="4" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="2" lemma="koká" posTag="Nombre" subPosTag="Contable" token="kokán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="xóbo" posTag="Nombre" subPosTag="Contable" token="xóbo"/>
+        <word id="4" lemma="ayantanti" posTag="Verbo" subPosTag="Transitivo" token="ayantanke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

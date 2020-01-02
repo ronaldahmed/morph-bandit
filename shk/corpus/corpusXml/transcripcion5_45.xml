@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jatíbi jawéki non nato neten oinabo iki , kimisha jawéki keská ; bakeai jawékibo , xoxoai jawékibo , iresa jawékibo ." translation="Todas las cosas que vemos en el mundo pertenecen a estos tres reinos: animal, vegetal y mineral.">
+        <word id="0" lemma="jatíbi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbi"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="2" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="3" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="4" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="oínti" posTag="Verbo" subPosTag="Transitivo" token="oinabo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="kimisha " posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="9" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="10" lemma="keska" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="11" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="12" lemma="bakeati" posTag="Verbo" subPosTag="Transitivo" token="bakeaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="xóxoti" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="16" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="17" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="18" lemma="iti" posTag="Verbo" subPosTag="Intransitivo" token="iresa">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="19" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jatíbi jiria jawéki janbix koshiai iki , bakeai jawéki ." translation="Lo que vive y se mueve de por sí, es del reino animal.">
+        <word id="0" lemma="jatíbi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbi"/>
+        <word id="1" lemma="jíria" posTag="Adjetivo" subPosTag="Calificativo" token="jiria"/>
+        <word id="2" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="3" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="janbix">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bix" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="kóshiti" posTag="Verbo" subPosTag="Intransitivo" token="koshiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="bakeati" posTag="Verbo" subPosTag="Transitivo" token="bakeaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Bakeai jawékira rabé iki ." translation="Hay dos clases de animales.">
+        <word id="0" lemma="bakeati" posTag="Verbo" subPosTag="Transitivo" token="Bakeaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jake jonin kaíati jawéki , jainoax nií meran iká jawéki ." translation="Hay animales domésticos y animales silvestres.">
+        <word id="0" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="Jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="6" lemma="níi" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="7" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa nií meranoa jawékibo keenai , nií meranbiribi itin ." translation="A los animales silvestres les gusta más vivir en el monte.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="níi" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meranoa">
+            <affix order="1" text="oa" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="níi" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="7" lemma="meran" posTag="Postposición" subPosTag="" token="meranbiribi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="itin">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

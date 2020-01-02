@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Akáma . ¿ Minki jawe keská shinanai ?" translation="&quot;Bueno, ¿cóme te parece a ti?">
+        <word id="0" token="Akáma"/>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="2" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="3" token="Minki"/>
+        <word id="4" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jaweERROR"/>
+        <word id="5" lemma="keska" posTag="Onomatopeya" subPosTag="" token="keská"/>
+        <word id="6" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Nato kotonra ea bakish bixonwibake ; ikí iká iki Juan ." translation="Me compró esta camisa ayer,&quot; le contestó Juan.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="kotón" posTag="Nombre" subPosTag="Contable" token="kotonra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bakísh" posTag="Adverbio" subPosTag="Tiempo" token="bakish"/>
+        <word id="4" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bixonibake">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="iba" type="Sufijo verbal"/>
+            <affix order="3" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikí"/>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="Juan" posTag="Nombre Propio" subPosTag="" token="Juan"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="¿ Jawekeskáshaman axonmein onantihiki ?" translation="&quot;¿Cómo es posible?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeská" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskáshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axonmein">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="mein" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="onanti iki" posTag="Onomatopeya" subPosTag="" token="onantihikiERROR"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Minki shinanyamai , &quot; Jonibo betan yoyo ixon , non onanyamaa jawékibo non onanai &quot; ?" translation="¿No te acuerdas de 'Hablando se entiende la gente'?&quot;">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Minki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="shinánti" posTag="Verbo" subPosTag="Transitivo" token="shinanyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="5" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="7" lemma="yoyo" posTag="Onomatopeya" subPosTag="" token="yoyo"/>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="11" lemma="onánti" posTag="Verbo" subPosTag="Transitivo" token="onanyamaa">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="14" lemma="onánti" posTag="Verbo" subPosTag="Transitivo" token="onanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="15" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="16" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Min chio betan tsiniwe , jawen mekenshoko toponboax ." translation="Puedes jugar este con tus hermanitos, contando sus dedos.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="chio" posTag="Nombre" subPosTag="Contable" token="chio"/>
+        <word id="2" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="3" lemma="tsíniti" posTag="Verbo" subPosTag="Intransitivo" token="tsiniwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="mekén" posTag="Nombre" subPosTag="Contable" token="mekenshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" token="toponboax"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

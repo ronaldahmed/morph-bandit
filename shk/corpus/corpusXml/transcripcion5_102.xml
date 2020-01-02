@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaweranorin nato mapan ixon benawe ." translation="¿Dónde están en el mapa?">
+        <word id="0" lemma="Jawerano" lemmaPred="Jaweranorin" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranorin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="nato" lemmaPred="Jaweranorin" posTag="Adjetivo" subPosTag="Calificativo" token="nato"/>
+        <word id="2" lemma="mapa" lemmaPred="mapan" posTag="Nombre" subPosTag="Contable" token="mapan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="mapan" posTag="Verbo" subPosTag="Copulativo" token="ixon"/>
+        <word id="4" lemma="benati" lemmaPred="mapan" posTag="Verbo" subPosTag="Transitivo" token="benawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jawerato pontérin min escuelankoniax ?" translation="¿Hacia qué dirección de tu escuela están?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="Jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="ponté" lemmaPred="pontérin" posTag="Adverbio" subPosTag="Manera" token="pontérin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="mia" lemmaPred="pontérin" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="escuela" lemmaPred="escuelankoniax" posTag="Nombre" subPosTag="Contable" token="escuelankoniax">
+            <affix order="1" text="nkoniax" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jawerato aninasinrin España ?" translation="¿En qué continente está España?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="pontérin" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="aninasi" lemmaPred="aninasinrin" posTag="Nombre" subPosTag="Contable" token="aninasinrin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="España" lemmaPred="aninasinrin" posTag="Nombre Propio" subPosTag="" token="España"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Nií merameax noa mainribi kai ." translation="En la selva viajamos también por tierra.">
+        <word id="0" lemma="nií" lemmaPred="aninasinrin" posTag="Nombre" subPosTag="Contable" token="Nií"/>
+        <word id="1" lemma="meran" lemmaPred="merameax" posTag="Postposición" subPosTag="" token="merameax">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="merameax" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="main" lemmaPred="mainribi" posTag="Nombre" subPosTag="No contable" token="mainribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="kati" lemmaPred="mainribi" posTag="Verbo" subPosTag="Intransitivo" token="kai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nií meran bai jake ." translation="Hay trochas por el monte.">
+        <word id="0" lemma="nií" lemmaPred="mainribi" posTag="Nombre" subPosTag="Contable" token="Nií"/>
+        <word id="1" lemma="meran" lemmaPred="mainribi" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="2" lemma="baí" lemmaPred="baí" posTag="Nombre" subPosTag="Contable" token="bai"/>
+        <word id="3" lemma="jati" lemmaPred="baí" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

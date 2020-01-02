@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jainxon non lápiz , non kirika , jaábo non cuídanti iki ." translation="Cuidamos nuestros lápices y cuadernos.">
+        <word id="0" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="2" lemma="lápiz" posTag="Nombre" subPosTag="Contable" token="lápiz"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="5" lemma="kírika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaábo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="9" lemma="cuídanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jakon bakebaon jawen xobon iká jawékibo , escuela meran iká jawékiboribi jakonwakin cuídanai ." translation="Los alumnos buenos cuidan bien las cosas de su propia casa y de la escuela.">
+        <word id="0" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="Jakon"/>
+        <word id="1" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="xobo" posTag="Nombre" subPosTag="Contable" token="xobon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="8" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="jakonhati" posTag="Verbo" subPosTag="Transitivo" token="jakonhakin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="cuídanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Min maestro kirika yokáwe . Yokáxon min kirika pexkan awe ." translation="Pide papel a tu maestro y forra tus libros.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="maestro"/>
+        <word id="2" lemma="kírika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="3" lemma="yokáti" posTag="Verbo" subPosTag="Transitivo" token="yokáwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="yokáti" posTag="Verbo" subPosTag="Transitivo" token="Yokáxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="kírika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="8" lemma="pexkán" posTag="Nombre" subPosTag="Contable" token="pexkan"/>
+        <word id="9" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="awe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Jawetii neteki boai , jabicho semananin ?" translation="¿Cuántos días hay en una semana?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwetii" posTag="Palabra Interrogativa" subPosTag="" token="Jawetii"/>
+        <word id="2" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neteki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jábicho" posTag="Numeral" subPosTag="" token="jabicho"/>
+        <word id="6" lemma="semana" posTag="Nombre" subPosTag="Contable" token="semananin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Min kirika meran wishawe , jaa neten janebo , semananin boai neten janebo ." translation="Escribe en tu cuaderno los nombres de los días de la semana.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="kírika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="játi" posTag="Verbo" subPosTag="Intransitivo" token="jaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jane" posTag="Nombre" subPosTag="Contable" token="janebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="semana" posTag="Nombre" subPosTag="Contable" token="semananin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="jane" posTag="Nombre" subPosTag="Contable" token="janebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

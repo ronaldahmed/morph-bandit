@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Amakiri wákanawa ákaitianra jóni kétokan mápoke" translation="Cuando el hombre picaba gamitanas en una mijanada, un derrumbe en el barranco lo tapó">
+        <word id="0" lemma="Amakiri" posTag="Nombre" subPosTag="Contable" token="Amakiri"/>
+        <word id="1" lemma="wákanawa" posTag="Nombre" subPosTag="No contable" token="wákanawa"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="ákaitianra">
+            <affix order="1" text="aitian" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="4" lemma="kéto" posTag="Nombre" subPosTag="Contable" token="kétokan">
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="mápoti" posTag="Verbo" subPosTag="Intransitivo" token="mápoke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Inkanra jato yoiya iki :  - nato warapo xeayamaparikanwe ea joai kaman ." translation="El Inca les dijo: -No tomen este guarapo hasta que yo venga">
+        <word id="0" lemma="Inkanra" posTag="Nombre" subPosTag="Contable" token="Inkanra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="2" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiya">
+            <affix order="1" text="ya" type="Sufijo nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="5" lemma="error" posTag="Puntuación" subPosTag="" token="error"/>
+        <word id="6" lemma="-" posTag="Puntuación" subPosTag="" token="-"/>
+        <word id="7" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="8" lemma="warapo" posTag="Nombre" subPosTag="Contable" token="warapo"/>
+        <word id="9" lemma="xeati" posTag="Verbo" subPosTag="Transitivo" token="xeayamaparikanwe">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="pari" type="Clít. de posición libre"/>
+            <affix order="3" text="kan" type="Sufijo verbal"/>
+            <affix order="4" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="11" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="kaman" posTag="Postposición" subPosTag="" token="kaman"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Moátianronki jonínki amén mápoa iki rikánkin" translation="Hace mucho tiempo un hombre cogió un ronsoco al tarrafear">
+        <word id="0" lemma="Moátian" posTag="Adverbio" subPosTag="Tiempo" token="Moátianronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jonínki" posTag="Nombre" subPosTag="Contable" token="jonínki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="amén" posTag="Nombre" subPosTag="Contable" token="amén"/>
+        <word id="3" lemma="mápoti" posTag="Verbo" subPosTag="Transitivo" token="mápoa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+        <word id="5" lemma="rikánti" posTag="Verbo" subPosTag="Transitivo" token="rikánkin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Aménwaka jóniboronki wasten raonmisti axeyababo iki" translation="Los amahuaca tienen la costumbre de hechizar con pócimas vegetales">
+        <word id="0" lemma="Aménwaka" posTag="Nombre Propio" subPosTag="" token="Aménwaka"/>
+        <word id="1" lemma="jóniboronki" posTag="Nombre" subPosTag="Contable" token="jóniboronki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="wasten" posTag="Nombre" subPosTag="Contable" token="wasten"/>
+        <word id="3" lemma="raonti" posTag="Verbo" subPosTag="Transitivo" token="raonmisti">
+            <affix order="1" text="mis" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="axe" posTag="Nombre" subPosTag="Contable" token="axeyababo"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+    </sentence>
+    <sentence id="4" text="Améntamo jónibora moa shipibo jonibo betan kikini meskokana iki" translation="Los hombres améntamo ya están bien mezclados con los shipibo">
+        <word id="0" lemma="Améntamo" posTag="Nombre" subPosTag="Contable" token="Améntamo"/>
+        <word id="1" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jónibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="shipibo" posTag="Nombre" subPosTag="Contable" token="shipibo"/>
+        <word id="4" lemma="jonibo" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="6" lemma="kikin" posTag="Adverbio" subPosTag="Cantidad" token="kikini">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="meskoti" posTag="Verbo" subPosTag="Transitivo" token="meskokana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+    </sentence>
+</corpus>

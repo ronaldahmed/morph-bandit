@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Joni betan ino iní" translation="El hombre y el tigre">
+        <word id="0" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Joni"/>
+        <word id="1" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Onanyamaxonbi , jonin ninia iki ." translation="El hombre siguió jalando.">
+        <word id="0" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="Onanyamaxonbi">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="xon" type="Clít. concord. de particip."/>
+            <affix order="3" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="niniti" posTag="Verbo" subPosTag="Transitivo" token="ninia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatian ronki iká iki joni : &quot; ¿ Jaweakimein ikai nato ino jaskati ? &quot;" translation="El hombre se preguntó a sí mismo: &quot;¿Por qué razón estará subiendo al árbol?&quot;">
+        <word id="0" lemma="jatian" posTag="Adverbio" subPosTag="Tiempo" token="JatianERROR"/>
+        <word id="1" lemma="ronki" posTag="Símbolo" subPosTag="" token="ronkiERROR"/>
+        <word id="2" token="iká"/>
+        <word id="3" token="iki"/>
+        <word id="4" token="joni"/>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="6" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="7" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="8" token="Jaweakimein"/>
+        <word id="9" token="ikai"/>
+        <word id="10" token="nato"/>
+        <word id="11" token="ino"/>
+        <word id="12" token="jaskati"/>
+        <word id="13" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="14" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+    </sentence>
+    <sentence id="3" text="Jonin rikanni" translation="El hombre que tarrafeaba">
+        <word id="0" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="rikánti" posTag="Verbo" subPosTag="Transitivo" token="rikanni">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Nishbin joni" translation="El hombre avispa">
+        <word id="0" lemma="nishbín" posTag="Nombre" subPosTag="Contable" token="Nishbin"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+    </sentence>
+</corpus>

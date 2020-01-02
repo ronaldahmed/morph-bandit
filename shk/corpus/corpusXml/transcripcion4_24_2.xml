@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Mishora non kaíati jawéki iki ." translation="El gato es un animal doméstico.">
+        <word id="0" lemma="misho" posTag="Nombre" subPosTag="Contable" token="Mishora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Kochira non kaíati jawé iki ." translation="El chancho es un animal doméstico.">
+        <word id="0" lemma="kochi" posTag="Nombre" subPosTag="Contable" token="Kochira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Wakara non kaíati jawé iki ." translation="La vaca es un animal doméstico.">
+        <word id="0" lemma="waka" posTag="Nombre" subPosTag="Contable" token="Wakara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Atapara non kaíati jawé iki ." translation="La gallina es una ave doméstica.">
+        <word id="0" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="Atapara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nononribirai non kaíati jawé iki ." translation="El pato también es una ave doméstica.">
+        <word id="0" lemma="nonon" posTag="Nombre" subPosTag="Contable" token="Nononribirai">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="2" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

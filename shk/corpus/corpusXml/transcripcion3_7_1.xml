@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jawen akintiki ja joni yoia iki ?" translation="¿Qué promesa hizo ella al hombre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="2" lemma="akinti" posTag="Nombre" subPosTag="Contable" token="akintiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="4" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="5" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweranoki jaton bake kaa iki ?" translation="¿A dónde se fue el hijo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawerano" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jaton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="4" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Mananxawe betan nonon rabe iní" translation="El motelo y los dos patos">
+        <word id="0" lemma="mananxawe" posTag="Nombre" subPosTag="Contable" token="Mananxawe"/>
+        <word id="1" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="nonon" posTag="Nombre" subPosTag="Contable" token="nonon"/>
+        <word id="3" lemma="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Moatianronki westíora ian kexa jakátiai westíora mananxawe betan rabé nonon ." translation="Hace mucho tiempo un motelo vivía con dos patos en una cochita.">
+        <word id="0" lemma="moatian" posTag="Adverbio" subPosTag="Tiempo" token="Moatianronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="westíora" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="2" lemma="ian" posTag="Nombre" subPosTag="Contable" token="ian"/>
+        <word id="3" lemma="kexá" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="4" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jakátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="westíora" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="6" lemma="mananxawe" posTag="Nombre" subPosTag="Contable" token="mananxawe"/>
+        <word id="7" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="8" lemma="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="9" lemma="nonon" posTag="Nombre" subPosTag="Contable" token="nonon"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainoax meskó tsinitiboribi jato onanmakatiai ." translation="También les enseñaba cómo hacer ejercicios físicos y cómo jugar.">
+        <word id="0" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="2" lemma="tsiniti" posTag="Nombre" subPosTag="Contable" token="tsinitiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="4" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanmakatiai">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="kati" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

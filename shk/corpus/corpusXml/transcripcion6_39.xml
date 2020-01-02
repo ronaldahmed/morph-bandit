@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jawekeskaaxonki moatian jawékiati akátikanai ?" translation="Antiguamente, ¿cómo preparaban sus alimentos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskaxon" lemmaPred="tatenike" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskaaxonki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moátian" lemmaPred="moatian" posTag="Adverbio" subPosTag="Tiempo" token="moatian"/>
+        <word id="3" token="jawékiati"/>
+        <word id="4" lemma="ati" lemmaPred="akátikanai" posTag="Verbo" subPosTag="Transitivo" token="akatikanai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Tsoaki Inkan chií biti yonokana iki ?" translation="¿A quién le ordenaron que trajera el tizón del Inca?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="akátikanai" posTag="Palabra Interrogativa" subPosTag="" token="Tsoaki">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="inka" lemmaPred="akátikanai" posTag="Nombre" subPosTag="Contable" token="Inkan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="chii" lemmaPred="akátikanai" posTag="Nombre" subPosTag="Contable" token="chii"/>
+        <word id="4" lemma="biti" lemmaPred="akátikanai" posTag="Verbo" subPosTag="Transitivo" token="biti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="yonoti" lemmaPred="yonokana" posTag="Verbo" subPosTag="Transitivo" token="yonokana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="yonokana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jaweatinki Inkan oí kexto bemaa iki ?" translation="¿Por qué el Inca hizo caer una furiosa lluvia?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" lemmaPred="yonokana" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatinki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="inka" lemmaPred="yonokana" posTag="Nombre" subPosTag="Contable" token="Inkan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="oi" lemmaPred="oí" posTag="Nombre" subPosTag="No contable" token="oi"/>
+        <word id="4" lemma="kextó" lemmaPred="oí" posTag="Adjetivo" subPosTag="Calificativo" token="kexto"/>
+        <word id="5" lemma="bemati" lemmaPred="bemaati" posTag="Verbo" subPosTag="Transitivo" token="bemaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="bemaati" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Awá betan chosko bakeranon iní" translation="La sachavaca y los cuatro jóvenes">
+        <word id="0" lemma="awá" lemmaPred="bemaati" posTag="Nombre" subPosTag="Contable" token="Awá"/>
+        <word id="1" lemma="betan" lemmaPred="bemaati" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="chosko" lemmaPred="bemaati" posTag="Numeral" subPosTag="" token="chosko"/>
+        <word id="3" lemma="bakeranon" lemmaPred="bemaati" posTag="Nombre" subPosTag="Contable" token="bakeranon"/>
+        <word id="4" lemma="iki" lemmaPred="bemaati" posTag="Verbo" subPosTag="Copulativo" token="ini">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Awakanronki bimpish namanxon , jawen nonti tatenike ." translation="Cierta vez una sachavaca labraba su canoa con una azuela bajoel árbol de antaguayaba (de fruto comestible).">
+        <word id="0" lemma="Awá" lemmaPred="bemaati" posTag="Nombre" subPosTag="Contable" token="Awakanronki">
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bimpish" lemmaPred="bimpish" posTag="Nombre" subPosTag="Contable" token="bimpish"/>
+        <word id="2" token="namanxon"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jawen" lemmaPred="namanxon" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="nonti" lemmaPred="namanxon" posTag="Nombre" subPosTag="Contable" token="nonti"/>
+        <word id="6" lemma="tateti" lemmaPred="tatenike" posTag="Verbo" subPosTag="Transitivo" token="tatenike">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

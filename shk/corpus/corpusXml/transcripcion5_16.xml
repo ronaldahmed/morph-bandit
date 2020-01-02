@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Jainoax San Martín Chilenko joá iki ." translation="Después vino a Chile.">
+        <word id="0" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="2" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martín"/>
+        <word id="3" lemma="Chile" posTag="Nombre Propio" subPosTag="" token="Chilenko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Chilenkoniaribi Españolon apo ikonwamakaskanai jonibo potaribikana iki ." translation="También en Chile venció a los que querían que Chile obedeciera al rey de España.">
+        <word id="0" lemma="Chile" posTag="Nombre Propio" subPosTag="" token="Chilenkoniaribi">
+            <affix order="1" text="nkonia" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="español" posTag="Adjetivo" subPosTag="Calificativo" token="Españolbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="3" lemma="ikonhati" posTag="Verbo" subPosTag="Transitivo" token="ikonwamakaskanai">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+            <affix order="2" text="kas" type="Sufijo verbal"/>
+            <affix order="3" text="kan" type="Sufijo verbal"/>
+            <affix order="4" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="pótati" posTag="Verbo" subPosTag="Transitivo" token="potaribikana">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="San Martiman onana iki , Perú xabaori pikotamapari ." translation="San Martín sabía que el Perú todavía no estaba libre.">
+        <word id="0" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="1" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onana"/>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="6" lemma="xabá" posTag="Nombre" subPosTag="Contable" token="xabaori">
+            <affix order="1" text="o" type="Clít. nominal"/>
+            <affix order="2" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="píkoti" posTag="Verbo" subPosTag="Transitivo" token="pikotamapari">
+            <affix order="1" text="ama" type="Sufijo verbal"/>
+            <affix order="2" text="pari" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Joá iki Peruanobo akini , Españolon apo ikonwamakaskanai jonibo potai ." translation="Vino a ayudar al Perú a vencer a los que querían que el Perú obedeciera al rey de España.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="2" lemma="peruano" posTag="Adjetivo" subPosTag="Calificativo" token="Peruanobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="akinti" posTag="Verbo" subPosTag="Transitivo" token="akini">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="español" posTag="Adjetivo" subPosTag="Calificativo" token="Españolbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="7" lemma="ikonhati" posTag="Verbo" subPosTag="Transitivo" token="ikonhamakaskanai">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+            <affix order="2" text="kas" type="Sufijo verbal"/>
+            <affix order="3" text="kan" type="Sufijo verbal"/>
+            <affix order="4" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="pótati" posTag="Verbo" subPosTag="Transitivo" token="potai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="San Martín Perúain joá iki , icha bukeya , jainoax icha sontároyaribi ." translation="San Martín vino al Perú con muchos buques y muchos soldados.">
+        <word id="0" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="1" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martín"/>
+        <word id="2" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perúain">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ícha" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="7" lemma="buke" posTag="Nombre" subPosTag="Contable" token="bukeya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="10" lemma="ícha" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="11" lemma="sontáro" posTag="Nombre" subPosTag="Contable" token="sontároyaribi">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

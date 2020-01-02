@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Jawe yoii ikárin nato konto ?" translation="¿De qué trata este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jawe"/>
+        <word id="2" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoii">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikárin">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="nato"/>
+        <word id="5" lemma="kointo" posTag="Nombre" subPosTag="Contable" token="kointo"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Kawan kawanniki , ja koshi joni jawerano nokota iki ?" translation="¿A dónde llegó el hombre poderoso?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="kawanti" posTag="Verbo" subPosTag="Intransitivo" token="Kawan"/>
+        <word id="2" lemma="kawanti" posTag="Verbo" subPosTag="Intransitivo" token="kawanniki">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="5" lemma="koshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="6" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="7" lemma="jawerano" posTag="Palabra Interrogativa" subPosTag="" token="jawerano"/>
+        <word id="8" lemma="nokóti" posTag="Verbo" subPosTag="Intransitivo" token="nokota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jain nokóketianki , jawekeskáakana iki ?" translation="Luego, ¿qué le hicieron al hombre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jain" posTag="Conjunción" subPosTag="Coordinante" token="Jain"/>
+        <word id="2" lemma="nokóti" posTag="Verbo" subPosTag="Intransitivo" token="nokóketianki">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+            <affix order="2" text="tian" type="Clít. nominal"/>
+            <affix order="3" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jawekeskaati" posTag="Verbo" subPosTag="Transitivo" token="jawekeskáakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Moa basi iikinki , jawerano bakeranon raankana iki ?" translation="¿Qué le dijeron al joven después de mucho tiempo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moa"/>
+        <word id="2" lemma="basi" posTag="Adverbio" subPosTag="Manera" token="basi"/>
+        <word id="3" lemma="iiti" posTag="Verbo" subPosTag="Intransitivo" token="iikinki">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawerano" posTag="Palabra Interrogativa" subPosTag="" token="jawerano"/>
+        <word id="6" lemma="bákeranon" posTag="Nombre" subPosTag="Contable" token="bakeranon"/>
+        <word id="7" lemma="raanti" posTag="Verbo" subPosTag="Intransitivo" token="raankana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Nato kaintoninki jawe keská noa onanmai ?" translation="¿Cuál es la enseñanza de este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="Nato"/>
+        <word id="2" lemma="kointo" posTag="Nombre" subPosTag="Contable" token="kointoninki">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="4" lemma="keská" posTag="Postposición" subPosTag="" token="keskáERROR"/>
+        <word id="5" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanmai">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

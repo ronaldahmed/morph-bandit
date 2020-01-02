@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Miamein keentima iki , jaa texeashoko kopí payon ?" translation="¿No le podría dar otro pañuelo en vez del reintegro?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Miamein">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="mein" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keentima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="téxeati" posTag="Verbo" subPosTag="Transitivo" token="texeashoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="kopí" posTag="Adjetivo" subPosTag="Calificativo" token="kopí"/>
+        <word id="8" lemma="payon" posTag="Nombre" subPosTag="Contable" token="payon"/>
+        <word id="9" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Ibánon , eara keenyamai . Koríkiressa ea keenai ." translation="Gracias, prefiero el dinero.">
+        <word id="0" lemma="Ibanon" posTag="Interjección" subPosTag="" token="Ibanon"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="koríki" lemmaPred="Koríkiressa" posTag="Nombre" subPosTag="No contable" token="Koríkiressa">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="1" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Ikonrake , natoriki ." translation="Está bien. Aquí lo tiene.">
+        <word id="0" lemma="ikonrake" posTag="Interjección" subPosTag="" token="Ikonrake"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="nato riki" posTag="Símbolo" subPosTag="" token="natorikiERROR"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Iráke ." translation="Muchas gracias.">
+        <word id="0" lemma="iráke" posTag="Interjección" subPosTag="" token="Iráke"/>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Moára ea kai ." translation="Buenas tardes.">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moára">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

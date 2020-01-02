@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Aniparo kexára oi beyamai ." translation="No llueve en la costa.">
+        <word id="0" lemma="Aniparo" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="Aniparo"/>
+        <word id="1" lemma="kexá" lemmaPred="kexára" posTag="Postposición" subPosTag="" token="kexára">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="oi" lemmaPred="oi" posTag="Nombre" subPosTag="No contable" token="oi"/>
+        <word id="3" lemma="beti" lemmaPred="beyamai" posTag="Verbo" subPosTag="Intransitivo" token="beyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaráke weanshokobo , nenkéma ." translation="Hay ríos cortos y chicos.">
+        <word id="0" lemma="Jati" lemmaPred="beyamai" posTag="Verbo" subPosTag="Intransitivo" token="Jaráke">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="wean" lemmaPred="weanshokobo" posTag="Nombre" subPosTag="Contable" token="weanshokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="nenkéma" lemmaPred="nenkéma" posTag="Adjetivo" subPosTag="Calificativo" token="nenkéma"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Aniparo kexá iki mashires ." translation="Mucho de la costa parece ser pura arena.">
+        <word id="0" lemma="Aniparo" lemmaPred="nenkéma" posTag="Nombre" subPosTag="No contable" token="Aniparo"/>
+        <word id="1" lemma="kexá" lemmaPred="nenkéma" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="2" lemma="iki" lemmaPred="nenkéma" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="mashi" lemmaPred="mashires" posTag="Nombre" subPosTag="No contable" token="mashires">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Weamamea jene bixon , mai mecháakanai , jain jawékixoxonon ixon ." translation="Se riega la tierra con el agua de los ríos para hacer crecer las plantas.">
+        <word id="0" lemma="Weamamea" lemmaPred="Weamamea" posTag="Símbolo" subPosTag="" token="Weamamea"/>
+        <word id="1" lemma="jene" lemmaPred="Weamamea" posTag="Nombre" subPosTag="Contable" token="jene"/>
+        <word id="2" lemma="biti" lemmaPred="bixon" posTag="Verbo" subPosTag="Intransitivo" token="bixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="mai" lemmaPred="bixon" posTag="Nombre" subPosTag="No contable" token="mai"/>
+        <word id="5" lemma="mecháati" lemmaPred="mecháakanai" posTag="Verbo" subPosTag="Intransitivo" token="mecháakanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="jain" lemmaPred="mecháakanai" posTag="Conjunción" subPosTag="Coordinante" token="jain"/>
+        <word id="8" lemma="jaweki xoxonon" lemmaPred="jawékixoxonon" posTag="Símbolo" subPosTag="" token="jawékixoxononERROR"/>
+        <word id="9" lemma="iki" lemmaPred="jawékixoxonon" posTag="Verbo" subPosTag="Copulativo" token="ixon"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Niíra ichama iki . Wean kexáres niíshoko charóke ." translation="Hay pocos árboles fuera de los que crecen en las riberas de los ríos.">
+        <word id="0" lemma="Nií" lemmaPred="Niíra" posTag="Nombre" subPosTag="No contable" token="Niíra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ichama" lemmaPred="Niíra" posTag="Adjetivo" subPosTag="Calificativo" token="ichama">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="Niíra" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="4" lemma="Wean" lemmaPred="Wean" posTag="Nombre" subPosTag="Contable" token="Wean"/>
+        <word id="5" lemma="kexáres" lemmaPred="kexáres" posTag="Postposición" subPosTag="" token="kexáres">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="nií" lemmaPred="niíshoko" posTag="Nombre" subPosTag="No contable" token="niíshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="charóti" lemmaPred="charóke" posTag="Verbo" subPosTag="Intransitivo" token="charóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

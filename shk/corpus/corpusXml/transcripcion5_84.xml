@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jatíbi jaa jawékibo jiriabo iki , janbix koshiaibo ." translation="Todo estos viven y se mueven de por sí.">
+        <word id="0" lemma="Jatíbi" lemmaPred="Jatíbi" posTag="Adjetivo" subPosTag="Indefinido" token="Jatíbi"/>
+        <word id="1" lemma="ja" lemmaPred="Jatíbi" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="2" lemma="jawéki" lemmaPred="Jatíbi" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jiria" lemmaPred="jiriabo" posTag="Adjetivo" subPosTag="Calificativo" token="jiriabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="jiriabo" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" token="janbix"/>
+        <word id="7" token="koshiaibo"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaskara iketianra non onanke , bakeai jawékibo ." translation="Así sabemos que son del reino animal.">
+        <word id="0" lemma="jaskara" lemmaPred="janbix" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iki" lemmaPred="iketia" posTag="Verbo" subPosTag="Copulativo" token="iketianra">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+            <affix order="2" text="ra" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="iketia" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="onanti" lemmaPred="onanke" posTag="Verbo" subPosTag="Transitivo" token="onanke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="bakeati" lemmaPred="bakeai" posTag="Verbo" subPosTag="Transitivo" token="bakeai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="jawéki" lemmaPred="bakeai" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa jiria ikaxbi janbix koshiamai iki , xoxoai jawékibo ." translation="Lo que tiene vida pero no se mueve de por sí, es del reino vegetal.">
+        <word id="0" lemma="ja" lemmaPred="bakeai" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="jiria" lemmaPred="jiriati" posTag="Adjetivo" subPosTag="Calificativo" token="jiria"/>
+        <word id="2" lemma="Ikaxbi" lemmaPred="jiriati" posTag="Conjunción" subPosTag="Coordinante" token="ikaxbi"/>
+        <word id="3" token="janbix"/>
+        <word id="4" token="koshiamai"/>
+        <word id="5" lemma="iki" lemmaPred="koshiamai" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="xoxoti" lemmaPred="koshiamai" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jawéki" lemmaPred="koshiamai" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jatíbi baná jawékibo iki xoxoai jawékibo ." translation="Todas las plantas pertenecen al reino vegetal.">
+        <word id="0" lemma="Jatíbi" lemmaPred="Jatíbi" posTag="Adjetivo" subPosTag="Indefinido" token="Jatíbi"/>
+        <word id="1" lemma="baná" lemmaPred="Jatíbi" posTag="Adjetivo" subPosTag="Calificativo" token="baná"/>
+        <word id="2" lemma="jawéki" lemmaPred="Jatíbi" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="Jatíbi" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="xoxoti" lemmaPred="Jatíbi" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="jawéki" lemmaPred="Jatíbi" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ani jiwiboribi iki xoxoairibi ." translation="Los árboles también pertenecen al reino vegetal.">
+        <word id="0" lemma="ani" lemmaPred="Jatíbi" posTag="Adjetivo" subPosTag="Calificativo" token="Ani"/>
+        <word id="1" lemma="jiwi" lemmaPred="jiwiboribi" posTag="Nombre" subPosTag="Contable" token="jiwiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="jiwiboribi" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="xoxoti" lemmaPred="xoxoairibi" posTag="Verbo" subPosTag="Intransitivo" token="xoxoairibi">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

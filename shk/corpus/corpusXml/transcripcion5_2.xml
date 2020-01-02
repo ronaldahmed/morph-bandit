@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="bari joaiori" translation="Norte">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="1" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joaiori">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Clít. nominal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="nete resenenao" translation="Este">
+        <word id="0" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="1" lemma="résenena" posTag="Nombre" subPosTag="Contable" token="resenenao">
+            <affix order="1" text="o" type="Clít. nominal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="nete tsisenenao" translation="Oeste">
+        <word id="0" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="1" lemma="tsisenen" posTag="Nombre" subPosTag="Contable" token="tsiseneno">
+            <affix order="1" text="o" type="Clít. nominal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="bari kaiori" translation="Sur">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="1" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaiori">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Sufijo nominal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Bari joaioriki jainoax bari pikotai . Bari kaioriki jain bari jikiai ." translation="Este u oriente es el sitio por donde sale el sol; oeste u occidente, el sitio por donde se oculta.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Bari"/>
+        <word id="1" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joaioriki">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Clít. nominal"/>
+            <affix order="4" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="3" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="4" lemma="pikoti" posTag="Verbo" subPosTag="Intransitivo" token="pikotai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="6" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Bari"/>
+        <word id="7" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaioriki">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Clít. nominal"/>
+            <affix order="4" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="jain" posTag="Conjunción" subPosTag="Coordinante" token="jain"/>
+        <word id="9" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="10" lemma="jikiti" posTag="Verbo" subPosTag="Intransitivo" token="jikiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

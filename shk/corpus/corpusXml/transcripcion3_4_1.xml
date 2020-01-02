@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Moa meshotax pakéketian yawishan piá iki ." translation="El tigre se quemó y cayó asado, y la carachupa se lo comió.">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moa"/>
+        <word id="1" lemma="meshoti" posTag="Verbo" subPosTag="Intransitivo" token="meshotax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="pakéti" posTag="Verbo" subPosTag="Intransitivo" token="pakéketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="yawish" posTag="Nombre" subPosTag="Contable" token="yawishan">
+            <affix order="1" text="an" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Tsoabo ikáki yoiai nato kontonin ?" translation="¿De qué trata este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" posTag="Palabra Interrogativa" subPosTag="" token="Tsoabo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikáki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="nato"/>
+        <word id="5" lemma="kointo" posTag="Nombre" subPosTag="Contable" token="kointonin">
+            <affix order="1" text="nin" type="Sufijo nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Yawishanki , jaweraki ino parana iki ?" translation="¿Cómo engañó la carachupa al tigre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="yawish" posTag="Nombre" subPosTag="Contable" token="Yawishanki">
+            <affix order="1" text="an" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jaweraki" posTag="Palabra Interrogativa" subPosTag="" token="jaweraki"/>
+        <word id="4" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="5" lemma="paranti" posTag="Verbo" subPosTag="Transitivo" token="parana">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jainxonki yawishen jaweraki paranribia iki ?" translation="¿Cómo le siguió engañando después?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jainxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="yawish" posTag="Nombre" subPosTag="Contable" token="yawishen">
+            <affix order="1" text="en" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jaweraki" posTag="Palabra Interrogativa" subPosTag="" token="jaweraki"/>
+        <word id="4" lemma="paranti" posTag="Verbo" subPosTag="Transitivo" token="paranribia">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jawekeskataxki ino mawata iki ?" translation="¿Cómo murió el tigre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskatax" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskataxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="3" lemma="mawati" posTag="Verbo" subPosTag="Intransitivo" token="mawata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

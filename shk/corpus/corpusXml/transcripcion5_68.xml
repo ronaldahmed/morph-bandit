@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Australia iki nasi ani ." translation="Australia es una isla grande.">
+        <word id="0" lemma="Australia" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Australia"/>
+        <word id="1" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="nasi" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="nasi"/>
+        <word id="3" lemma="áni" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweranorin ?" translation="¿Dónde está?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerano" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranorin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Nete tsisenenainbi , jainoax nete resenenainribi , jain riki Antártica maibo ." translation="El polo norte y el polo sur están en las tierras Antarticas.">
+        <word id="0" lemma="néte" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Nete"/>
+        <word id="1" lemma="tsisenen" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="tsisenenainbi">
+            <affix order="1" text="ain#1" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jainoax" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="4" lemma="néte" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="5" lemma="resenen" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="resenenainribi">
+            <affix order="1" text="ain#1" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="jain" lemmaPred="" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="8" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="riki">
+            <affix order="-1" text="r" type="Clít. de segunda posición"/>
+        </word>
+        <word id="9" lemma="Antártica" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Antártica"/>
+        <word id="10" lemma="mai" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="maibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaábo benawe ." translation="Búscalas.">
+        <word id="0" lemma="jaabo" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Jaábo"/>
+        <word id="1" lemma="benati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="benawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Europa betan Asia iki benkexonana ." translation="Asia y Europa están juntos.">
+        <word id="0" lemma="Europa" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Europa"/>
+        <word id="1" lemma="betan" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="Asia" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Asia"/>
+        <word id="3" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="benkex" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="benkexonana">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="a" type="Clít. nominal"/>
+            <affix order="3" text="na#2" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Non chioshokobo non oinai ." translation="Cuidamos a nuestros hermanitos.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="chío" posTag="Nombre" subPosTag="Contable" token="chíoshokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Non anibo non jawéki akinai ." translation="Ayudamos a nuestros padres.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="anibo" posTag="Nombre" subPosTag="No contable" token="anibo"/>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akinai">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainxon non yoxanshokobo non jawéki akinti iki ." translation="Ayudamos a los ancianos también.">
+        <word id="0" lemma="jainxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="yoxan" posTag="Nombre" subPosTag="Contable" token="yoxanshokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="5" lemma="akinti" posTag="Verbo" subPosTag="Transitivo" token="akinti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Isinaibo non jawéki bixonai , non jawéki boxonribiai ." translation="Llevamos y traemos por los enfermos.">
+        <word id="0" lemma="isínti" posTag="Verbo" subPosTag="Intransitivo" token="Isinaibo">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="3" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bixonai">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="7" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="boxonribiai">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Non escuela meran iká jawékiboribi non cuídanai ." translation="Cuidamos también el mobiliario de nuestra escuela.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="cuidanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

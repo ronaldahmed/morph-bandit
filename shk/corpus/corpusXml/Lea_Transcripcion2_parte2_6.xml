@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Ainbaonki jaweraki jawen bene akátiai ?" translation="¿Qué le decía siempre la mujer a su esposo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="Ainbaonki">
+            <affix order="1" text="baon" type="Sufijo nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jaweraki" posTag="Palabra Interrogativa" subPosTag="" token="jaweraki"/>
+        <word id="3" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="4" lemma="bene" posTag="Nombre" subPosTag="Contable" token="bene"/>
+        <word id="5" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

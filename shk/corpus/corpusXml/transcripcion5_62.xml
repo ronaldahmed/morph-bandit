@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Inca Huayna Cápac iketian , jawen jonibo ichabires ika iki , wetsabo iketian iká iki jatíma ." translation="El imperio de los Incas fue más grande durante la vida del Inca Huayna Cápac.">
+        <word id="0" lemma="inca" posTag="Nombre" subPosTag="Contable" token="Inca"/>
+        <word id="1" lemma="Huayna" posTag="Nombre Propio" subPosTag="" token="Huayna"/>
+        <word id="2" lemma="Cápac" posTag="Nombre Propio" subPosTag="" token="Cápac"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="icha" posTag="Adjetivo" subPosTag="Calificativo" token="ichabires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ika">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="wetsa" lemmaPred="wetsabo" posTag="Adjetivo" subPosTag="Calificativo" token="wetsabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="15" lemma="jatí" lemmaPred="jatíma" posTag="Adverbio" subPosTag="Cantidad" token="jatíma">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Huayna Cápac Ecuadoroain kaá iki , jatíbi jawen sontároya ; Shyri jonibo betan reteanani ." translation="Salió Huayna Cápac con su ejercito al Ecuador para pelear contra el pueblo de los Shyris.">
+        <word id="0" lemma="Huayna" posTag="Nombre Propio" subPosTag="" token="Huayna"/>
+        <word id="1" lemma="Cápac" posTag="Nombre Propio" subPosTag="" token="Cápac"/>
+        <word id="2" lemma="Ecuadoro" posTag="Nombre Propio" subPosTag="" token="Ecuadoroain">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jatibi" posTag="Adjetivo" subPosTag="Calificativo" token="jatibi"/>
+        <word id="7" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="8" lemma="sontaro" posTag="Nombre" subPosTag="Contable" token="sontaroya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="10" lemma="Shyri" posTag="Nombre Propio" subPosTag="" token="Shyri"/>
+        <word id="11" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="betan" posTag="Postposición" subPosTag="" token="betan"/>
+        <word id="13" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="reteanani">
+            <affix order="1" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa reteananaitian , mawata iki Shiribaon apo . Jaa mawáketian , jawen sontárobaon , Pacha jikimakana iki , apo iti . Jaa Pacha ika iki , jaa mawataton bake ." translation="Murió el rey de los Shyris en una batalla y sus soldados proclamaron por reina a Pacha la hija la hija del difunto rey.">
+        <word id="0" lemma="ja" lemmaPred="reteananaitian" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="reteti" lemmaPred="reteananaitian" posTag="Verbo" subPosTag="Transitivo" token="reteananaitian">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="mawati" lemmaPred="reteananaitian" posTag="Verbo" subPosTag="Intransitivo" token="mawata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="Shiri" lemmaPred="Shiribaon" posTag="Nombre Propio" subPosTag="" token="Shiribaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="apo" lemmaPred="Shiribaon" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="ja" lemmaPred="Shiribaon" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="mawati" lemmaPred="Shiribaon" posTag="Verbo" subPosTag="Intransitivo" token="mawáketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="jawen" lemmaPred="Shiribaon" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="12" lemma="sontáro" lemmaPred="sontárobaon" posTag="Nombre" subPosTag="Contable" token="sontárobaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="Pacha" lemmaPred="Pacha" posTag="Nombre Propio" subPosTag="" token="Pacha"/>
+        <word id="15" lemma="jikiti" lemmaPred="Pacha" posTag="Verbo" subPosTag="Intransitivo" token="jikimakana">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="16" lemma="iki" lemmaPred="Pacha" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="17" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="18" lemma="apo" lemmaPred="Pacha" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="19" lemma="iti" lemmaPred="Pacha" posTag="Verbo" subPosTag="Copulativo" token="iti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="21" lemma="ja" lemmaPred="Pacha" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="22" lemma="Pacha" lemmaPred="Pacha" posTag="Nombre Propio" subPosTag="" token="Pacha"/>
+        <word id="23" lemma="iki" lemmaPred="Pacha" posTag="Verbo" subPosTag="Copulativo" token="ika">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="24" lemma="iki" lemmaPred="Pacha" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="25" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="26" lemma="ja" lemmaPred="Pacha" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="27" lemma="mawati" lemmaPred="mawataton" posTag="Verbo" subPosTag="Intransitivo" token="mawataton">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ton" type="Clít. nominal"/>
+        </word>
+        <word id="28" lemma="bake" lemmaPred="mawataton" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="29" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaa ainbo betan Huayna Cápac jaátian wanoa iki ." translation="Se casó Huayna Cápac con Pacha y así llegó a ser el rey de los Shyris.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="2" lemma="betan" posTag="Postposición" subPosTag="" token="betan"/>
+        <word id="3" lemma="Huayna" posTag="Nombre Propio" subPosTag="" token="Huayna"/>
+        <word id="4" lemma="Cápac" posTag="Nombre Propio" subPosTag="" token="Cápac"/>
+        <word id="5" lemma="jatian" posTag="Adverbio" subPosTag="Tiempo" token="jatian"/>
+        <word id="6" lemma="wanoti" posTag="Verbo" subPosTag="Intransitivo" token="wanoa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskatax jaa rabé joni raeanana iki ." translation="Hubo paz entre los dos pueblos.">
+        <word id="0" lemma="jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="2" lemma="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="3" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="4" lemma="raeti" posTag="Verbo" subPosTag="Intransitivo" token="raeanana">
+            <affix order="1" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Moátianronki westíora bákeki ápasawan bónike" translation="Cuentan que antiguamente el ápasawa se llevó a un niño.">
+        <word id="0" lemma="Moátian" posTag="Adverbio" subPosTag="Tiempo" token="Moátianronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="westíora" posTag="Determinante" subPosTag="Cuantificador" token="westíora"/>
+        <word id="2" lemma="báke" posTag="Nombre" subPosTag="Contable" token="bákeki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ápasawa" posTag="Nombre" subPosTag="Contable" token="ápasawan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="bóti" posTag="Verbo" subPosTag="Transitivo" token="bónike">
+            <affix order="1" text="ni" type="Clít. de segunda posición"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Jóni bénotaronki moátian ápashironki píkonike" translation="Cuentan que antiguamente la iguana rescató a un hombre que se había extraviado.">
+        <word id="0" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="Jóni"/>
+        <word id="1" lemma="bénoti" posTag="Verbo" subPosTag="Intransitivo" token="bénotaronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moátian" posTag="Adverbio" subPosTag="Tiempo" token="moátian"/>
+        <word id="3" lemma="ápashiro" posTag="Nombre" subPosTag="Contable" token="ápashironki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="píkoti" posTag="Verbo" subPosTag="Transitivo" token="píkonike">
+            <affix order="1" text="ni" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="¿ Jáwe jánerin mia ? ¿ Min ápichirocan ?" translation="¿Cómo se llama usted? ¿Su apellido?.">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jáwe" posTag="Pronombre" subPosTag="Personal" token="Jáwe"/>
+        <word id="2" lemma="jáne" posTag="Nombre" subPosTag="Contable" token="jánerin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="5" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="6" lemma="mi" posTag="Determinante" subPosTag="Posesivo" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="ápichiro" posTag="Nombre" subPosTag="Contable" token="ápichirokan">
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+        </word>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Non ápo píkokanketianra noara reteananai" translation="Si destituyen a nuestro presidente, haremos una guerra.">
+        <word id="0" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="Non"/>
+        <word id="1" lemma="ápo" posTag="Nombre" subPosTag="Contable" token="ápo"/>
+        <word id="2" lemma="píkoti" posTag="Verbo" subPosTag="Transitivo" token="píkokanketianra">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+            <affix order="3" text="ti" type="Sufijo verbal"/>
+            <affix order="4" text="an" type="Sufijo verbal"/>
+            <affix order="5" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="reteanan" posTag="Verbo" subPosTag="Transitivo" token="reteananai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Ispányorobaon ápo" translation="El rey de España.">
+        <word id="0" lemma="Ispányaro" posTag="Nombre" subPosTag="Contable" token="Ispányorobaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ápo" posTag="Nombre" subPosTag="Contable" token="ápo"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Rama noa tson yanka yonotima iketian , vivankanwe ." translation="¡Viva la libertad!">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="tson" posTag="Adjetivo" subPosTag="Calificativo" token="tson"/>
+        <word id="3" lemma="yanka" posTag="Adverbio" subPosTag="Manera" token="yanka"/>
+        <word id="4" lemma="yonóti" posTag="Verbo" subPosTag="Intransitivo" token="yonotima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="vivanti" posTag="Verbo" subPosTag="Intransitivo" token="vivankanwe">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Rama non shinamanbi noa teéti iketian , vivankanwe ." translation="¡Viva la independencia!">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="2" lemma="shinán" posTag="Nombre" subPosTag="No contable" token="shinamanbi">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="4" lemma="téeti" posTag="Verbo" subPosTag="Intransitivo" token="teéti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="vivanti" posTag="Verbo" subPosTag="Intransitivo" token="vivankanwe">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskara joi San Martiman yoiketian , noa Peruanobo jake , tson yanka yonotima , non shinamanbi noa teéti ." translation="Desde el momento en que San Martín dijo esas palabras, el Perú ha estado libre e independiente.">
+        <word id="0" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="Jaskara"/>
+        <word id="1" lemma="jói" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="2" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="3" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="7" lemma="peruano" posTag="Adjetivo" subPosTag="Calificativo" token="Peruanobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="tson" posTag="Adjetivo" subPosTag="Calificativo" token="tson"/>
+        <word id="11" lemma="yanka" posTag="Adverbio" subPosTag="Manera" token="yanka"/>
+        <word id="12" lemma="yonóti" posTag="Verbo" subPosTag="Intransitivo" token="yonotima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="15" lemma="shinán" posTag="Nombre" subPosTag="No contable" token="shinamanbi">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="16" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="17" lemma="téeti" posTag="Verbo" subPosTag="Intransitivo" token="teéti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="18" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskara ikaxa , noa Peruanobobiribi , non apo jake ." translation="Desde entonces los peruanos tenemos nuestro gobierno propio.">
+        <word id="0" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikaxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="4" lemma="peruano" posTag="Adjetivo" subPosTag="Calificativo" token="Peruanobobiribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="7" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="8" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jawetianbi non wetsa jemamea apobo non ikonwatimai iki ." translation="No tenemos que obedecer al gobierno de ningún otro país.">
+        <word id="0" lemma="jawetianbi" posTag="Adverbio" subPosTag="Tiempo" token="Jawetianbi"/>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="2" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="3" lemma="jema" posTag="Nombre" subPosTag="Contable" token="jemamea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="6" lemma="ikonhati" posTag="Verbo" subPosTag="Transitivo" token="ikonhatimai">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Ja piaki iká iki jawen xeta ; ja payonbiribi iká iki jawen texo iti ." translation="El pañuelo colorado iba a convertirse en el cuello rojo del mashaco, y la flecha larga iba a ser el pico largo que tiene esa ave.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="pia" posTag="Nombre" subPosTag="Contable" token="piaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="xeta" posTag="Nombre" subPosTag="Parte del cuerpo" token="xeta"/>
+        <word id="6" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="7" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="ja"/>
+        <word id="8" lemma="payon" posTag="Nombre" subPosTag="Contable" token="payonbiribi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="12" lemma="texo" posTag="Nombre" subPosTag="Parte del cuerpo" token="texo"/>
+        <word id="13" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

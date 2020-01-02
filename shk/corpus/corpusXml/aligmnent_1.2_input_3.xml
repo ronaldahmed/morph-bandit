@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Moátianronki jonínki xáwe ainbo awín anike" translation="Cuentan que una vez un hombre tomó por esposa a una charapa convertida en mujer">
+        <word id="0" lemma="Moátian" posTag="Adverbio" subPosTag="Tiempo" token="Moátianronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jonínki" posTag="Nombre" subPosTag="Contable" token="jonínki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="xáwe" posTag="Nombre" subPosTag="Contable" token="xáwe"/>
+        <word id="3" lemma="aínbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="4" lemma="awín" posTag="Nombre" subPosTag="Contable" token="awín"/>
+        <word id="5" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="anike">
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Moara néteai" translation="Ya se hace de día">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="néteai" posTag="Nombre" subPosTag="Contable" token="néteai"/>
+    </sentence>
+    <sentence id="2" text="Bakísha ea kái" translation="Voy a ir mañana">
+        <word id="0" lemma="Bakísha" posTag="Nombre" subPosTag="Contable" token="Bakísha"/>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="2" lemma="káti" posTag="Verbo" subPosTag="Intransitivo" token="kái">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Isáshokobo riki nóyai yoinabo" translation="Los pajaritos son animales voladores">
+        <word id="0" lemma="Isáshoko" posTag="Nombre" subPosTag="Contable" token="Isáshokobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Transitivo" token="riki"/>
+        <word id="2" lemma="nóyati" posTag="Verbo" subPosTag="Intransitivo" token="nóyai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="yoinabo" posTag="Nombre" subPosTag="Contable" token="yoinabo"/>
+    </sentence>
+    <sentence id="4" text="Icha binónra en píke , pórokan chéxanon kaman" translation="He comido aguajes hasta que me ha dolido el estómago">
+        <word id="0" lemma="Icha" posTag="Adjetivo" subPosTag="Calificativo" token="Icha"/>
+        <word id="1" lemma="binón" posTag="Nombre" subPosTag="Contable" token="binónra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="En" posTag="Pronombre" subPosTag="Personal" token="en"/>
+        <word id="3" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="píke">
+            <affix order="1" text="ke" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="pórokan" posTag="Nombre" subPosTag="Contable" token="pórokan"/>
+        <word id="6" lemma="chéxati" posTag="Verbo" subPosTag="Transitivo" token="chéxanon">
+            <affix order="1" text="non" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="kaman" posTag="Nombre" subPosTag="Contable" token="kaman"/>
+    </sentence>
+</corpus>

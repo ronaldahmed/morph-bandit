@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Kokán awínra aríari piósma iki" translation="La mujer de mi tío nunca ha comido ashara.">
+        <word id="0" lemma="koká" posTag="Nombre" subPosTag="Contable" token="Kokán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="awín" posTag="Nombre" subPosTag="Contable" token="awínra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="aríari" posTag="Nombre" subPosTag="Contable" token="aríari"/>
+        <word id="3" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piósma">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+    </sentence>
+    <sentence id="1" text="Nócho píkasironki áriwa kéotai" translation="Dicen que el tarahuí canta cuando quiere comer churos.">
+        <word id="0" lemma="Nócho" posTag="Nombre" subPosTag="Contable" token="Nócho"/>
+        <word id="1" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="píkasironki">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Sufijo verbal"/>
+            <affix order="3" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="áriwa" posTag="Nombre" subPosTag="Contable" token="áriwa"/>
+        <word id="3" lemma="kéoti" posTag="Verbo" subPosTag="Intransitivo" token="kéotai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Arimanboronki áni jónibo iki" translation="Dicen que los alemanes son gente de estatura alta.">
+        <word id="0" lemma="Ariman" posTag="Nombre" subPosTag="Contable" token="Arimanboronki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="áni" posTag="Adjetivo" subPosTag="Calificativo" token="áni"/>
+        <word id="2" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jónibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+    </sentence>
+    <sentence id="3" text="Nonra jawekiai meskó yóina namibo itanribi bánakanbo" translation="Nos alimentamos con la carne de varios animales y con algunas plantas.">
+        <word id="0" lemma="No" posTag="Pronombre" subPosTag="Personal" token="Nonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jawekiati" posTag="Verbo" subPosTag="Transitivo" token="jawekiai"/>
+        <word id="2" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="3" lemma="yóina" posTag="Nombre" subPosTag="Contable" token="yóina"/>
+        <word id="4" lemma="nami" posTag="Nombre" subPosTag="Contable" token="namibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="itan" posTag="Conjunción" subPosTag="Coordinante" token="itanribi">
+            <affix order="1" text="ribi" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="bánakan" posTag="Nombre" subPosTag="Contable" token="bánakanbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="kímisha weá arínaya meskóti" translation="mezclar con tres medidas de harina.">
+        <word id="0" lemma="kímisha" posTag="Adjetivo" subPosTag="Cuantificador" token="kímisha"/>
+        <word id="1" lemma="weá" posTag="Nombre" subPosTag="Contable" token="weá"/>
+        <word id="2" lemma="arínaya" posTag="Nombre" subPosTag="No contable" token="arínaya">
+            <affix order="1" text="ya" type="Sufijo nominal"/>
+        </word>
+        <word id="3" lemma="meskóti" posTag="Verbo" subPosTag="Transitivo" token="meskóti"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Jaweatiki bichi ikanai ?" translation="¿Para qué sirven los cueros?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáweati" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="bichi" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="bichi"/>
+        <word id="3" lemma="iki" lemmaPred="ikanai" posTag="Verbo" subPosTag="Copulativo" token="ikanai">
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweatiki oro bikanai ; joxo koríki , oanshin koríki ?" translation="¿Para qué se usan el oro, la plata y el cobre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáweati" lemmaPred="ikanai" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="oro" lemmaPred="oró" posTag="Nombre" subPosTag="No contable" token="oro"/>
+        <word id="3" lemma="biti" lemmaPred="oró" posTag="Verbo" subPosTag="Transitivo" token="bikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="5" lemma="joxo" lemmaPred="joxo" posTag="Adjetivo" subPosTag="Calificativo" token="joxo"/>
+        <word id="6" lemma="koríki" lemmaPred="korí" posTag="Nombre" subPosTag="Contable" token="koríki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="panshin" lemmaPred="oanshin" posTag="Nombre" subPosTag="No contable" token="panshin"/>
+        <word id="9" lemma="koríki" lemmaPred="oanshin" posTag="Nombre" subPosTag="Contable" token="koríki"/>
+        <word id="10" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Nií meranoa ichabires jawéki bikanai : caucho , konxan , paranta ." translation="Los principales productos de la selva son: el caucho, la madera, los plátanos.">
+        <word id="0" lemma="níi" lemmaPred="oanshin" posTag="Nombre" subPosTag="Contable" token="Nií"/>
+        <word id="1" lemma="meran" lemmaPred="oanshin" posTag="Postposición" subPosTag="" token="meranoa">
+            <affix order="1" text="oa" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="icha" lemmaPred="ichabires" posTag="Adverbio" subPosTag="Cantidad" token="ichabires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="jawéki" lemmaPred="ichabires" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="biti" lemmaPred="ichabires" posTag="Verbo" subPosTag="Transitivo" token="bikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="6" lemma="caucho" lemmaPred="ichabires" posTag="Nombre" subPosTag="No contable" token="caucho"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="konxán" lemmaPred="konxan" posTag="Nombre" subPosTag="No contable" token="konxan"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="paranta" lemmaPred="konxan" posTag="Nombre" subPosTag="Contable" token="paranta"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wetsa maimea jawékira wetsa main bokanai ." translation="Los productos de cada región se llevan a las otras regiones.">
+        <word id="0" lemma="wétsa" lemmaPred="konxan" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="1" lemma="mai" lemmaPred="maimeabo" posTag="Nombre" subPosTag="Contable" token="maimea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jawéki" lemmaPred="maimea" posTag="Nombre" subPosTag="Contable" token="jawékira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="wétsa" lemmaPred="maimea" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="4" lemma="mái" lemmaPred="maimeabo" posTag="Nombre" subPosTag="Contable" token="main">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="boti" lemmaPred="bokanai" posTag="Verbo" subPosTag="Transitivo" token="bokanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskáaxon wetsa maimea jonibaon wetsa maimeabo jawéki axonai ." translation="Cada región ayuda a las otras regiones.">
+        <word id="0" lemma="jaskáaxon" lemmaPred="bokanai" posTag="Conjunción" subPosTag="Coordinante" token="Jaskáaxon"/>
+        <word id="1" lemma="wétsa" lemmaPred="bokanai" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="2" lemma="mai" lemmaPred="bokanai" posTag="Nombre" subPosTag="No contable" token="maimea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="joni" lemmaPred="bokanai" posTag="Nombre" subPosTag="Contable" token="jonibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="wétsa" lemmaPred="bokanai" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="5" lemma="mai" lemmaPred="maimeabo" posTag="Nombre" subPosTag="Contable" token="maimeabo">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jawéki" lemmaPred="maimeabo" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="7" lemma="ati" lemmaPred="axonai" posTag="Verbo" subPosTag="Transitivo" token="axonai">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

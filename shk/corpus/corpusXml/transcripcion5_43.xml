@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Wetsa tsosáshokobaon noa xeostametai ." translation="Algunos pedacitos quedan entre los dientes.">
+        <word id="0" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="1" lemma="tsosá" posTag="Nombre" subPosTag="Contable" token="tsosáshokobaon">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="3" lemma="óstameeti" posTag="Verbo" subPosTag="Intransitivo" token="xeostameetai">
+            <affix order="1" text="xe" type="Prefijo"/>
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa tsosáshokobo benetax jain paeai , non xeta ramiai ." translation="Esta comida que queda en la boca hace un ácido que ataca los dientes.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="tsosá" posTag="Nombre" subPosTag="Contable" token="tsosáshokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="banéti" posTag="Verbo" subPosTag="Intransitivo" token="banetax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="jain" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="4" lemma="páeti" posTag="Verbo" subPosTag="Intransitivo" token="paeai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="7" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="8" lemma="ramíti" posTag="Verbo" subPosTag="Intransitivo" token="ramiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Iíkin jaa paen non xeta kiniai ." translation="El ácido después de un tiempo hace caries en los dientes.">
+        <word id="0" lemma="íiti" posTag="Verbo" subPosTag="Intransitivo" token="Iíkin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="páe" posTag="Nombre" subPosTag="No contable" token="paen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="4" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="5" lemma="kíniati" posTag="Verbo" subPosTag="Transitivo" token="kiniaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Xeta pekéxon noa chexai . Jaa chexaitian , xeta akai jonin noa tsekaxonti iki , moa ani mapekeetayosi iketian ." translation="Las caries nos da dolor después de un tiempo y el dentista tiene que sacar este diente que tiene hueco.">
+        <word id="0" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="Xeta"/>
+        <word id="1" lemma="pekéti" posTag="Verbo" subPosTag="Intransitivo" token="pekéxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="3" lemma="chéxati" posTag="Verbo" subPosTag="Transitivo" token="chexai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="chéxati" posTag="Verbo" subPosTag="Transitivo" token="chexaitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="9" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="12" lemma="tsékati" posTag="Verbo" subPosTag="Transitivo" token="tsekaxonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="16" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="17" lemma="m" posTag="Onomatopeya" subPosTag="" token="mapekeetayosiERROR"/>
+        <word id="18" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kini naxbatamatianbi , xeta akai jonin benxoati atipanke , boyaxon ." translation="Antes de que el hueco sea grande, el dentista puede salvar el diente empastándolo.">
+        <word id="0" lemma="kini" posTag="Nombre" subPosTag="Contable" token="Kini"/>
+        <word id="1" lemma="naxbáti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="naxbatamatianbi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+            <affix order="3" text="tian" type="Clít. nominal"/>
+            <affix order="4" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="bénxoati" posTag="Verbo" subPosTag="Transitivo" token="benxoati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="átipanti" posTag="Verbo" subPosTag="Intransitivo" token="atipanke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="bóyati" posTag="Verbo" subPosTag="Transitivo" token="boyaxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

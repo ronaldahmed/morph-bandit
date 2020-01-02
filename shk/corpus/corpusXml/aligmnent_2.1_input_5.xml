@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jiwi aó bimi píaitianra papán ámakiri cháchike" translation="Papá picó la gamitana mientras ésta comía los frutos del árbol ojé">
+        <word id="0" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="Jiwi"/>
+        <word id="1" lemma="ao" posTag="Nombre" subPosTag="Contable" token="aó"/>
+        <word id="2" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="bimi"/>
+        <word id="3" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="píaitianra">
+            <affix order="1" text="aitian" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="Papá" posTag="Nombre" subPosTag="Contable" token="papán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="amakiri" posTag="Nombre" subPosTag="Contable" token="ámakiri"/>
+        <word id="6" lemma="chachiti" posTag="Verbo" subPosTag="Intransitivo" token="cháchike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Apacharan jiwi bénai kaaxa nokon pápa benóke" translation="Mi papá se fue a buscar el árbol apacharama y se extravió">
+        <word id="0" lemma="apacharan" posTag="Nombre" subPosTag="Contable" token="Apacharan"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="2" lemma="benati" posTag="Verbo" subPosTag="Transitivo" token="bénai">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaaxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="5" lemma="pápa" posTag="Nombre" subPosTag="Contable" token="pápa"/>
+        <word id="6" lemma="benoti" posTag="Verbo" subPosTag="Intransitivo" token="benóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Abionimeara jóni ísinai íchaxon pakekanke" translation="Entre varios bajaron a un hombre enfermo del avión">
+        <word id="0" lemma="abion" posTag="Nombre" subPosTag="Contable" token="Abionimeara">
+            <affix order="2" text="mea" type="Clít. nominal"/>
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="2" lemma="isinti" posTag="Verbo" subPosTag="Intransitivo" token="ísinai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="icha" posTag="Adverbio" subPosTag="Cantidad" token="íchaxon">
+            <affix order="1" text="xon#1" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="paketi" posTag="Verbo" subPosTag="Transitivo" token="pakekanke">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

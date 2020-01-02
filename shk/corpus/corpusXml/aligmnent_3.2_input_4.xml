@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Eara min jói áxekasai" translation="Quiero aprender tu idioma.">
+        <word id="0" lemma="E" posTag="Pronombre" subPosTag="Personal" token="Eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="mi" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jói" posTag="Nombre" subPosTag="Contable" token="jói"/>
+        <word id="3" lemma="áxeti" posTag="Verbo" subPosTag="Intransitivo" token="áxekasai">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Nato bákera yoitima iki" translation="Este niño es un rebelde.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="báke" posTag="Nombre" subPosTag="Contable" token="bákera">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="yoitima" posTag="Adjetivo" subPosTag="Calificativo" token="yoitima"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+    </sentence>
+    <sentence id="2" text="Axo yoshin ronki kóshi jóni iki , rashíko jóni keska , wíso" translation="Dicen que el demonio de la capirona es un hombre fuerte, parecido a un brasileño negro.">
+        <word id="0" lemma="Axo" posTag="Nombre" subPosTag="Contable" token="Axo"/>
+        <word id="1" lemma="yoshi" posTag="Nombre" subPosTag="Contable" token="yoshin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ronki" posTag="Clítico" subPosTag="De segunda posición" token="ronki"/>
+        <word id="3" lemma="kóshi" posTag="Adjetivo" subPosTag="Calificativo" token="kóshi"/>
+        <word id="4" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="rashíko" posTag="Nombre" subPosTag="Contable" token="rashíko"/>
+        <word id="8" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="9" lemma="keska" posTag="Adjetivo" subPosTag="Calificativo" token="keska"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="wíso" posTag="Adjetivo" subPosTag="Calificativo" token="wíso"/>
+    </sentence>
+    <sentence id="3" text="Jawen báke sontáro kátanax jóketianra epán átapa réteke" translation="El tío mató una gallina cuando su hijo se fue al ejército y regresó.">
+        <word id="0" lemma="Jawen" posTag="Adverbio" subPosTag="Tiempo" token="Jawen"/>
+        <word id="1" lemma="báke" posTag="Nombre" subPosTag="Contable" token="báke"/>
+        <word id="2" lemma="sontáro" posTag="Nombre" subPosTag="Contable" token="sontáro"/>
+        <word id="3" lemma="káti" posTag="Verbo" subPosTag="Intransitivo" token="kátanax">
+            <affix order="1" text="tan" type="Sufijo verbal"/>
+            <affix order="2" text="ax" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="jóketianra">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+            <affix order="2" text="tian" type="Clít. nominal"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="epá" posTag="Nombre" subPosTag="Contable" token="epán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="átapa"/>
+        <word id="7" lemma="réteti" posTag="Verbo" subPosTag="Transitivo" token="réteke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Atapa kéotainra ea jishténwanke" translation="Esta mañana me desperté al cantar el gallo.">
+        <word id="0" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="Atapa"/>
+        <word id="1" lemma="kéotain" posTag="Nombre" subPosTag="Contable" token="kéotainra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="3" lemma="jishténti" posTag="Verbo" subPosTag="Intransitivo" token="jishténwanke">
+            <affix order="1" text="wan" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

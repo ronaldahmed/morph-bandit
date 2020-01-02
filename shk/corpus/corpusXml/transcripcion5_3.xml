@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Mekayao mekeman non bari Joaio metoxon non memi mekeman non bari Kaio metoketian , jatian noa bechiti iki nete Tsisenenao , noa pechiti iki nete Resenenao ." translation="Si con el brazo derecho señalamos el este y con el brazo izquierdo el oeste, el norte quedará al frente y el sur a la espalda.">
+        <word id="0" lemma="mekayao" lemmaPred="Mekayao" posTag="Adverbio" subPosTag="Locación" token="Mekayao"/>
+        <word id="1" lemma="meken" posTag="Nombre" subPosTag="Parte del cuerpo" token="mekeman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="4" lemma="joti" lemmaPred="Joaio" posTag="Verbo" subPosTag="Intransitivo" token="Joaio">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="metoti" lemmaPred="Mekayao" posTag="Verbo" subPosTag="Transitivo" token="metoxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="noa" lemmaPred="memi" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="memio" lemmaPred="memi" posTag="Adverbio" subPosTag="Locación" token="memio"/>
+        <word id="8" lemma="meken" lemmaPred="mekemán" posTag="Nombre" subPosTag="Parte del cuerpo" token="mekeman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="11" lemma="kati" lemmaPred="Kaio" posTag="Verbo" subPosTag="Intransitivo" token="Kaio">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="1" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="metoti" lemmaPred="metoketian" posTag="Verbo" subPosTag="Transitivo" token="metoketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="jatian" lemmaPred="jatian" posTag="Conjunción" subPosTag="Coordinante" token="jatian"/>
+        <word id="15" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="16" lemma="bechiti" lemmaPred="bechiti" posTag="Verbo" subPosTag="Transitivo" token="bechiti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="17" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="18" lemma="nete" lemmaPred="neté" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="19" lemma="senenti" lemmaPred="Resenenao" posTag="Verbo" subPosTag="Intransitivo" token="Tsisenenao">
+            <affix order="1" text="tsi" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="20" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="21" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="22" lemma="pechiti" lemmaPred="pechiti" posTag="Verbo" subPosTag="Intransitivo" token="pechiti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="23" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="24" lemma="nete" lemmaPred="neté" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="25" lemma="senenti" lemmaPred="Resenenao" posTag="Verbo" subPosTag="Intransitivo" token="Resenenao">
+            <affix order="1" text="re" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="26" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Kikinshaman akin onanwe , chosko jaa pontébo : bari joaio , bari kaio , nete tsisenenao , nete resenenao ." translation="Aprende de memoria los cuatro puntos cardinales: el este, el oeste, el norte, el sur.">
+        <word id="0" lemma="kikin" lemmaPred="Kikinshaman" posTag="Adjetivo" subPosTag="Calificativo" token="Kikinshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" lemmaPred="akin" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="onanti" lemmaPred="onanwe" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="chosko" lemmaPred="chosko" posTag="Numeral" subPosTag="" token="chosko"/>
+        <word id="5" lemma="ja" lemmaPred="jaa" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="6" lemma="ponté" lemmaPred="pontébo" posTag="Nombre" subPosTag="Contable" token="pontébo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="8" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="9" lemma="joti" lemmaPred="joaio" posTag="Verbo" subPosTag="Intransitivo" token="joaio">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="12" lemma="kati" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kaio">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="neté" lemmaPred="neté" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="15" lemma="senenti" lemmaPred="tsisenenao" posTag="Verbo" subPosTag="Intransitivo" token="tsisenenao">
+            <affix order="1" text="tsi" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="16" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="17" lemma="neté" lemmaPred="neté" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="18" lemma="senenti" lemmaPred="resenenao" posTag="Verbo" subPosTag="Intransitivo" token="resenenao">
+            <affix order="1" text="re" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Bari pikotai onantima iketian , brújulanres non onanti iki ." translation="Cuando no podemos ver el sol podemos saber las direcciones por una brújula.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Bari"/>
+        <word id="1" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikótai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onantima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="brújula" posTag="Nombre" subPosTag="Contable" token="brújulanres">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaa brújula iki xomóshashoko , jan akai jatíbitian nete tsisenenao metokin ." translation="La brújula tiene una aguja que siempre señala el norte.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="brújula" posTag="Nombre" subPosTag="Contable" token="brújula"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="xomox" posTag="Nombre" subPosTag="Contable" token="xomoxyashoko">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+            <affix order="2" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jan" lemmaPred="jan" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="ati" lemmaPred="akaí" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="jatíbi" posTag="Adjetivo" subPosTag="Indefinido" token="jatíbitian">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="9" lemma="senenti" lemmaPred="tsisenenao" posTag="Verbo" subPosTag="Intransitivo" token="tsisenenao">
+            <affix order="1" text="tsi" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="metoti" lemmaPred="metokin" posTag="Verbo" subPosTag="Transitivo" token="metokin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Jawerato pontérin Ikíto ?" translation="¿En qué dirección queda Iquitos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="ponté" posTag="Nombre" subPosTag="Contable" token="pontérin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="Ikíto" posTag="Nombre Propio" subPosTag="" token="Ikíto"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

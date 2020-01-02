@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jakonshamanbires en shinanai ." translation="¡Qué sano me siento!">
+        <word id="0" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="Jakonshamanbires">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jawerato bake keskáribirin mia ?" translation="¿Cómo cuál de estos alumnos eres tú?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="3" lemma="keska" posTag="Postposición" subPosTag="" token="keskáribirin">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Joxo payon min borosiko meran benxoawe , jan mia resoikiti ; okokasi jan jampóti ." translation="Siempre lleva en el bolsillo un pañuelo limpiecito, con que limpiarte la nariz, o cuando tienes tos para cubrir la boca.">
+        <word id="0" lemma="joxo" posTag="Adjetivo" subPosTag="Calificativo" token="Joxo"/>
+        <word id="1" lemma="payon" posTag="Nombre" subPosTag="Contable" token="payon"/>
+        <word id="2" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="borosiko" posTag="Nombre" subPosTag="Contable" token="borosiko"/>
+        <word id="4" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="5" lemma="benxoati" posTag="Verbo" subPosTag="Transitivo" token="benxoawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia"/>
+        <word id="9" lemma="soikiiti" posTag="Verbo" subPosTag="Intransitivo" token="resoikiiti">
+            <affix order="1" text="re" type="Prefijo"/>
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="11" lemma="okoti" posTag="Verbo" subPosTag="Intransitivo" token="okokasi">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="12" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="jampóti" posTag="Verbo" subPosTag="Transitivo" token="jampóti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Netetiibira maestron bakebo yoiai :" translation="El maestro dice a los alumnos cada día:">
+        <word id="0" lemma="nete" posTag="Nombre" subPosTag="Contable" token="Netetiibira">
+            <affix order="1" text="tiibi" type="Sufijo nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="maestron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="4" text="Nato bakebo en oinbanon , benxokaatarin ixon ." translation="Voy a ver si están mis alumnos bien aseados.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinbanon">
+            <affix order="1" text="banon" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="benxokaati" posTag="Verbo" subPosTag="Intransitivo" token="benxokaatarin">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

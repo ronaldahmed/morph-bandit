@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Kaimiton bimi riki beroya ." translation="La fruta del caimito tiene semillas.">
+        <word id="0" lemma="kaimito" posTag="Nombre" subPosTag="Contable" token="Kaimiton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="bimi"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="bero" posTag="Nombre" subPosTag="Contable" token="beroya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jawen bimi riki beroya ." translation="Su fruta tiene semilla.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="bimi"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="bero" posTag="Nombre" subPosTag="Contable" token="beroya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatibi bakera jawen bimi kokotinin kennai ." translation="A todos los niños les gusta comer su fruta.">
+        <word id="0" lemma="jatibi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatibi"/>
+        <word id="1" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakera">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="bimi"/>
+        <word id="4" lemma="kókoti" posTag="Verbo" subPosTag="Transitivo" token="kokotinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="kéenti" posTag="Verbo" subPosTag="Intransitivo" token="kennai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Jawetio anirin jawen jiwi ?" translation="¿De qué tamaño es su árbol?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawetio" posTag="Palabra Interrogativa" subPosTag="" token="Jawetio"/>
+        <word id="2" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="anirin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="4" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jawetio anirin isonxoman jawen jiwi ?" translation="¿De qué tamaño es el árbol del sapote?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawetio" posTag="Palabra Interrogativa" subPosTag="" token="Jawetio"/>
+        <word id="2" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="anirin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="isonxoma" posTag="Nombre" subPosTag="Contable" token="isonxoman">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

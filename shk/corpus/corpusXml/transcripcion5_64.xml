@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jaskatax Españolobo jikia iki , jaa mai ibo ikí ." translation="Así llegaron los españoles a ser los señores del país.">
+        <word id="0" lemma="jaskatax" lemmaPred="" posTag="Adverbio" subPosTag="Manera" token="Jaskatax"/>
+        <word id="1" lemma="español" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Españolobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jikiti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="jikia"/>
+        <word id="3" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ja" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="jaa"/>
+        <word id="6" lemma="mai" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="7" lemma="ibo" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="ibo"/>
+        <word id="8" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="ikí"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaskatax jonibo iká iki España jemameabaon iboa , hasta San Martín nokotai kaman ." translation="Los pueblos estaban bajo el poder de España hasta la llegada de San Martín.">
+        <word id="0" lemma="jaskatax" lemmaPred="" posTag="Adverbio" subPosTag="Manera" token="Jaskatax"/>
+        <word id="1" lemma="jonibo" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="España" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="España"/>
+        <word id="5" lemma="jema" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jemameabaon">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+            <affix order="2" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="ibo" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="iboa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="hasta (prestamo)" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="hasta"/>
+        <word id="9" lemma="San" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="San"/>
+        <word id="10" lemma="Martín" lemmaPred="" posTag="Nombre Propio" subPosTag="" token="Martín"/>
+        <word id="11" lemma="nokoti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="nokotai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="kaman" lemmaPred="" posTag="Postposición" subPosTag="" token="kaman"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Noa jan katibo , jan non jawéki botibo iki kimisha jawéki : jenen kati , main kati , niwen kati ." translation="Hay tres maneras de viajar y llevar nuestras cosas: por el agua, por la tierra y por el aire.">
+        <word id="0" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Noa"/>
+        <word id="1" lemma="ján" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="jan"/>
+        <word id="2" lemma="kati" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="katibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="ján" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="jan"/>
+        <word id="5" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="6" lemma="jaweki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="7" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="botibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="kímisha" lemmaPred="" posTag="Adjetivo" subPosTag="Cuantificador" token="kimisha"/>
+        <word id="10" lemma="jaweki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="11" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="12" lemma="jene" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="jenen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="kati" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kati"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="Maín" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="main"/>
+        <word id="16" lemma="kati" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kati"/>
+        <word id="17" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="18" lemma=",niwen" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="niwen"/>
+        <word id="19" lemma="kati" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kati"/>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Non neten noa ochó kai , paron , weanbaon ." translation="En la selva viajamos por los ríos.">
+        <word id="0" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="Non"/>
+        <word id="1" lemma="neten" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="neten"/>
+        <word id="2" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="3" lemma="ocho" lemmaPred="" posTag="Adverbio" subPosTag="Locación" token="ochó"/>
+        <word id="4" lemma="káti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="paro" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="paron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="wean" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="weanbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Noa kai jiwi nontiaatonin , tapamanribi ." translation="Viajamos en canoas de madera y en balsas.">
+        <word id="0" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Noa"/>
+        <word id="1" lemma="káti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="kai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jiwi" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="3" lemma="nontiaa" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="nontiaatonin">
+            <affix order="1" text="tonin" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="tapaman" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="tapamanribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

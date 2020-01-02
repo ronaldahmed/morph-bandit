@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jatian ja xeabaini ronki kabékona iki , jawen awin betan , shirinka bepon tsekai ; jainbi jaton xeati mapobainni ." translation="Luego de tomar un poco de masato, lo guardaron bien tapado y se fueron al trabajo.">
+        <word id="0" lemma="jatian" posTag="Postposición" subPosTag="" token="Jatian"/>
+        <word id="1" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="ja"/>
+        <word id="2" lemma="xéati" posTag="Verbo" subPosTag="Transitivo" token="xeabaini">
+            <affix order="1" text="bain" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="4" token="kabékona"/>
+        <word id="5" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" token="jawen"/>
+        <word id="8" token="awin"/>
+        <word id="9" token="betan"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" token="shirinka"/>
+        <word id="12" token="bepon"/>
+        <word id="13" token="tsekai"/>
+        <word id="14" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="15" token="jainbi"/>
+        <word id="16" token="jaton"/>
+        <word id="17" token="xeati"/>
+        <word id="18" token="mapobainni"/>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jatian moa yantanaitian jokin ninkákana ronki iká iki , ja jonin xobonko saa iki , korati ." translation="Al atardecer, regresaron de su trabajo al campamento.">
+        <word id="0" token="Jatian"/>
+        <word id="1" token="moa"/>
+        <word id="2" token="yantanaitian"/>
+        <word id="3" token="jokin"/>
+        <word id="4" token="ninkákana"/>
+        <word id="5" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="6" token="iká"/>
+        <word id="7" token="iki"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" token="ja"/>
+        <word id="10" token="jonin"/>
+        <word id="11" token="xobonko"/>
+        <word id="12" token="saa"/>
+        <word id="13" token="iki"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" token="korati"/>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatian : &quot; ¿ jawemeinki ? &quot; ixon , ishto joxon oinna ronki iká iki roo tsamati , jawen xeatinin paennabo ." translation="Acercándose oyeron gritos y no sabían quién estaba gritando.">
+        <word id="0" token="Jatian"/>
+        <word id="1" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="2" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="3" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="4" token="jawemeinki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="6" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="7" token="ixon"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" token="ishto"/>
+        <word id="10" token="joxon"/>
+        <word id="11" token="oinna"/>
+        <word id="12" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="13" token="iká"/>
+        <word id="14" token="iki"/>
+        <word id="15" token="roo"/>
+        <word id="16" token="tsamati"/>
+        <word id="17" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="18" token="jawen"/>
+        <word id="19" token="xeatinin"/>
+        <word id="20" token="paennabo"/>
+        <word id="21" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskataxxonki moa boti atipanyamakana iki ." translation="Entonces los monos, al ver que venían, hicieron todo lo posible para escapar pero no pudieron.">
+        <word id="0" lemma="jáskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskataxxonki">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="2" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="boti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="átipanti" posTag="Verbo" subPosTag="Intransitivo" token="atipanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jatíribi roo ronki iká iki , jawen xeati kentí meran napokotax , maékasibi , rainshki rainshki ikí ." translation="Algunos cayeron en la misma tinaja de masato.">
+        <word id="0" token="Jatíribi"/>
+        <word id="1" token="roo"/>
+        <word id="2" lemma="ronki" posTag="Palabra Interrogativa" subPosTag="" token="ronkiERROR"/>
+        <word id="3" token="iká"/>
+        <word id="4" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" token="jawen"/>
+        <word id="7" token="xeati"/>
+        <word id="8" token="kentí"/>
+        <word id="9" token="meran"/>
+        <word id="10" token="napokotax"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" token="maékasibi"/>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" token="rainshki"/>
+        <word id="15" token="rainshki"/>
+        <word id="16" token="ikí"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

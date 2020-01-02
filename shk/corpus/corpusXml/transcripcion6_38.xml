@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaskáaxon , boxon , koman tanon perakana , jainoax keteta iki ." translation="Cuando la mujer lo hubo visto corrió a atraparlo; pero el pájaro voló velozmente escapando de entre sus manos y se fue a posar en un árbol de shihuahuaco seco, al que comenzó a quemarlo.">
+        <word id="0" lemma="jaskáaxon" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="Jaskáaxon"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" token="boxon"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="koman" lemmaPred="boxon" posTag="Nombre" subPosTag="Contable" token="koman"/>
+        <word id="5" lemma="tano" lemmaPred="boxon" posTag="Adjetivo" subPosTag="Calificativo" token="tanon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="perakanti" lemmaPred="perakana" posTag="Verbo" subPosTag="Transitivo" token="perakana">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="jainoax" lemmaPred="perakana" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="9" lemma="ketéti" lemmaPred="keteta" posTag="Verbo" subPosTag="Intransitivo" token="keteta">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" lemmaPred="keteta" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainoaki Yoáshiko Inkan , niweabaya oí kexto bemaa iki , ja chií nokaati shinankin ." translation="Entonces el Yoáshica Inca viendo lo que se quemaba hizo caer una furiosa lluvia, para que apagara al fuego.">
+        <word id="0" token="Jainoaki"/>
+        <word id="1" token="Yoáshiko"/>
+        <word id="2" token="Inkan"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="niweabaya"/>
+        <word id="5" token="oí"/>
+        <word id="6" token="kexto"/>
+        <word id="7" token="bemaa"/>
+        <word id="8" token="iki"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" token="ja"/>
+        <word id="11" token="chií"/>
+        <word id="12" token="nokaati"/>
+        <word id="13" token="shinankin"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainoaki beskonman nato poinkosko , xete , ishmin , jaabo kenaa iki , jan chií otaakinti ." translation="Pero el chiriclés, viendo que se venían lluvias y tempestades, invitó al gallinazo, renahui y cóndor para que ayudasen a proteger el fuego que ardía.">
+        <word id="0" token="Jainoaki"/>
+        <word id="1" token="beskonman"/>
+        <word id="2" token="nato"/>
+        <word id="3" token="poinkosko"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="xete"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" token="ishmin"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" token="jaabo"/>
+        <word id="10" token="kenaa"/>
+        <word id="11" token="iki"/>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" token="jan"/>
+        <word id="14" token="chií"/>
+        <word id="15" token="otaakinti"/>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskatax bexonki , jaabaon chií otaakana iki ." translation="Y sobre aquel fuego ardiente extendieron sus alas aquellas aves.">
+        <word id="0" token="Jaskatax"/>
+        <word id="1" token="bexonki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" token="jaabaon"/>
+        <word id="4" token="chií"/>
+        <word id="5" token="otaakana"/>
+        <word id="6" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Moa oí nesea pekáo , ja koman tano ketetax , chií tinina iki ." translation="Por estas valientes aves no pudo apagarse el fuego.">
+        <word id="0" token="Moa"/>
+        <word id="1" token="oí"/>
+        <word id="2" token="nesea"/>
+        <word id="3" token="pekáo"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="ja"/>
+        <word id="6" token="koman"/>
+        <word id="7" token="tano"/>
+        <word id="8" token="ketetax"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" token="chií"/>
+        <word id="11" token="tinina"/>
+        <word id="12" token="iki"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

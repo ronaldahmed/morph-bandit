@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jabicho mayatatonressa ikai , kimisha pacha sokota chonka pichika nete seneni ." translation="Se mueve alrededor del sol una vez cada año.">
+        <word id="0" lemma="ja" lemmaPred="Jabicho" posTag="Pronombre" subPosTag="Personal" token="Jabicho">
+            <affix order="1" text="bicho" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="mayáti" lemmaPred="mayatatonressa" posTag="Verbo" subPosTag="Intransitivo" token="mayatatonresa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ton" type="Clít. nominal"/>
+            <affix order="3" text="res" type="Clít. de posición libre"/>
+            <affix order="4" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="ikti" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="kimisha" lemmaPred="kimisha" posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="5" lemma="pacha" lemmaPred="pacha" posTag="Numeral" subPosTag="" token="pacha"/>
+        <word id="6" lemma="sokota" lemmaPred="sokota" posTag="Numeral" subPosTag="" token="sokota"/>
+        <word id="7" lemma="chonka" lemmaPred="chonka" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="8" lemma="pichika" lemmaPred="pichika" posTag="Numeral" subPosTag="" token="pichika"/>
+        <word id="9" lemma="nete" lemmaPred="neté" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="10" lemma="senenti" lemmaPred="seneni" posTag="Verbo" subPosTag="Intransitivo" token="seneni">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa bari ratani mai mayatai kopí , jake baritia , jenetia ." translation="La tierra se mueve alrededor del sol una vez cada trescientos sesenta y cinco días.">
+        <word id="0" lemma="Ja" lemmaPred="Jaa" posTag="Determinante" subPosTag="Demostrativo" token="Ja">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="2" lemma="ratanti" lemmaPred="ratani" posTag="Verbo" subPosTag="Intransitivo" token="ratani">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="mai" lemmaPred="mai" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="4" lemma="mayáti" lemmaPred="mayatai" posTag="Verbo" subPosTag="Intransitivo" token="mayatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="kopí" lemmaPred="kopí" posTag="Conjunción" subPosTag="Subordinanate" token="kopí"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="jati" lemmaPred="ratani" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="baritia" lemmaPred="baritia" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="jenetia" lemmaPred="jenetia" posTag="Nombre" subPosTag="Contable" token="jenetia"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Oxera ikai , mai ratani mayati ." translation="Tenemos verano e invierno porque la tierra se mueve alrededor del sol.">
+        <word id="0" lemma="oxe" lemmaPred="Oxera" posTag="Nombre" subPosTag="Contable" token="Oxera">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="ikti" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="mai" lemmaPred="mai" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="4" lemma="ratanti" lemmaPred="ratani" posTag="Verbo" subPosTag="Intransitivo" token="ratani">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="mayáti" lemmaPred="mayatatonressa" posTag="Verbo" subPosTag="Intransitivo" token="mayati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jabicho mayatatonressa ikai , rabé chonka posaka nete seneni ." translation="La luna se mueve alrededor de la tierra. La luna se mueve alrededor de la tierra una vez cada veintiocho días.">
+        <word id="0" lemma="ja" lemmaPred="Jabicho" posTag="Pronombre" subPosTag="Personal" token="Jabicho">
+            <affix order="1" text="bicho" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="mayáti" lemmaPred="mayatatonressa" posTag="Verbo" subPosTag="Intransitivo" token="mayatatonresa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ton" type="Clít. nominal"/>
+            <affix order="3" text="res" type="Clít. de posición libre"/>
+            <affix order="4" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="ikti" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="rabé" lemmaPred="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="5" lemma="chonka" lemmaPred="chonka" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="6" lemma="posaka" lemmaPred="posaka" posTag="Nombre" subPosTag="Contable" token="posaka"/>
+        <word id="7" lemma="nete" lemmaPred="neté" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="8" lemma="seneni" lemmaPred="seneni" posTag="Verbo" subPosTag="Intransitivo" token="seneni">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskara ikaxa , oxe torotax rakatai ." translation="Por eso tenemos luna creciente y luna menguante.">
+        <word id="0" lemma="jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iki" lemmaPred="ikaxa" posTag="Verbo" subPosTag="Copulativo" token="ikaxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="oxe" lemmaPred="oxe" posTag="Nombre" subPosTag="Contable" token="oxe"/>
+        <word id="4" lemma="toróti" lemmaPred="torotax" posTag="Verbo" subPosTag="Intransitivo" token="torotax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="rakáti" lemmaPred="rakatai" posTag="Verbo" subPosTag="Intransitivo" token="rakatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

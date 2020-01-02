@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Inonra piai nami ." translation="El tigre come carne.">
+        <word id="0" lemma="ino" posTag="Nombre" subPosTag="Contable" token="Inonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="nami" posTag="Nombre" subPosTag="No contable" token="nami"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Shinora jinaya iki . Jawen jinanra jiwin paniai . Panixonra wetsa jawékibires yatanai ." translation="El mono tiene rabo. Con su rabo se cuelga de los árboles. Colgándose, coge cualquier cosa.">
+        <word id="0" lemma="shino" posTag="Nombre" subPosTag="Contable" token="Shinora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jina" posTag="Nombre" subPosTag="Parte del cuerpo" token="jinaya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="5" lemma="jina" posTag="Nombre" subPosTag="Parte del cuerpo" token="jinanra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="pániti" posTag="Verbo" subPosTag="Intransitivo" token="paniai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="9" lemma="pániti" posTag="Verbo" subPosTag="Intransitivo" token="Panixonra">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="10" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="11" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="12" lemma="yatanti" posTag="Verbo" subPosTag="Transitivo" token="yatanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jara jiwin netai ." translation="Sube a los árboles.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="néeti" posTag="Verbo" subPosTag="Transitivo" token="netai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Mishora jiwin netai ." translation="El gato sube a los árboles.">
+        <word id="0" lemma="misho" posTag="Nombre" subPosTag="Contable" token="Mishora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="néeti" posTag="Verbo" subPosTag="Transitivo" token="netai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Xoken xeta riki nenké ." translation="El pico del tucán es largo.">
+        <word id="0" lemma="xoke" posTag="Nombre" subPosTag="Contable" token="Xoken">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="xeta" posTag="Nombre" subPosTag="Parte del cuerpo" token="xeta"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="nenké" posTag="Adjetivo" subPosTag="Calificativo" token="nenké"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

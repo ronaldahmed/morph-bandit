@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Minki oinyamaa nato naí koin boanai ?" translation="¿No has visto como se mueven las nubes?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="min" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Minki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ointi" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="oinyamaa">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="nato" lemmaPred="" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="4" lemma="nai" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="naí"/>
+        <word id="5" lemma="koin" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="koin"/>
+        <word id="6" lemma="boanti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="boanai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaáki jaweranoax niwe beai ?" translation="¿Y de dónde viene el viento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jaáki"/>
+        <word id="2" lemma="jaweranoa" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="jaweranoax">
+            <affix order="1" text="x" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="niwe" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="niwe"/>
+        <word id="4" lemma="beti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="beai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Mai mayákinra niweai wetsatianbo ." translation="El movimiento de la tierra alrededor de su eje hace algunos vientos.">
+        <word id="0" lemma="mai" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Mai"/>
+        <word id="1" lemma="mayati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="mayákinra">
+            <affix order="1" text="kin#1" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" token="niweai"/>
+        <word id="3" lemma="wetsa" lemmaPred="" posTag="Adjetivo" subPosTag="Indefinido" token="wetsatianbo">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jainoaxibira matsi niwe , xananko boí niweai ." translation="También el movimiento del aire frío hacia donde está el aire caliente hace otros vientos.">
+        <word id="0" lemma="Jainoax" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="Jainoaxibira">
+            <affix order="1" text="bira" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="matsi" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="matsi"/>
+        <word id="2" lemma="niwe" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="niwe"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="xana" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="xananko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="boti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="boí">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="niwe" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="niweai">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ishtomashoko niwe beketian , non yoiai matsi payábeirana ." translation="Este movimiento suave se llama brisa.">
+        <word id="0" lemma="Ishtoma" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="Ishtomashoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="niwe" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="niwe"/>
+        <word id="2" lemma="beti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="beketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="non" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="5" lemma="yoiti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="matsi" lemmaPred="" posTag="Nombre" subPosTag="No contable" token="matsi"/>
+        <word id="7" lemma="paya" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="payábeirana">
+            <affix order="1" text="beira" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

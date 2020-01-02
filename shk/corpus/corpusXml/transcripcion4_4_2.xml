@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Escuela tapo namanki jawe jaá ?" translation="¿Qué está debajo de nuestra escuela?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="Escuela"/>
+        <word id="2" lemma="tapo" posTag="Nombre" subPosTag="Contable" token="tapo"/>
+        <word id="3" lemma="naman" posTag="Postposición" subPosTag="" token="namanki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="5" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Escuela xobo manan oki jawe jaá ?" translation="¿Qué está encima de nuestra escuela?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="Escuela"/>
+        <word id="2" lemma="xobo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="3" lemma="manaon" posTag="Símbolo" subPosTag="" token="manaonERROR"/>
+        <word id="4" lemma="oki" lemmaPred="oki" posTag="Símbolo" subPosTag="" token="okiERROR"/>
+        <word id="5" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="6" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Escuelaki chiponki jaríbaa ?" translation="¿Hay una escuela río abajo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="Escuelaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="chiponki" posTag="Adverbio" subPosTag="Locación" token="chiponki"/>
+        <word id="3" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaríbaa">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Escuela reboki jaríbaa ?" translation="¿Hay una escuela río arriba?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="Escuela"/>
+        <word id="2" lemma="reboki" posTag="Adverbio" subPosTag="Locación" token="reboki"/>
+        <word id="3" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaríbaa">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Min escuelaki pei xobo iki ?" translation="¿Tiene la escuela un techo de hojas?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="4" lemma="xobo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

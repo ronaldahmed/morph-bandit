@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Ja riki joshin ." translation="Es color rojo.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="joshin" posTag="Adjetivo" subPosTag="Calificativo" token="joshin"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Make riki joshin ." translation="La piraña es roja.">
+        <word id="0" lemma="make" posTag="Nombre" subPosTag="Contable" token="Make"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="joshin" posTag="Adjetivo" subPosTag="Calificativo" token="joshin"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Ja make riki xeta kensho nami piai ikax ." translation="Esa piraña tiene dientes muy afilados porque es carnívora.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="make" posTag="Nombre" subPosTag="Contable" token="make"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="4" lemma="kensho" posTag="Adjetivo" subPosTag="Calificativo" token="kensho"/>
+        <word id="5" lemma="nami" posTag="Nombre" subPosTag="Contable" token="nami"/>
+        <word id="6" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Ja riki xeta kensho nami piai ikax ." translation="Tiene dientes muy afilados porque es carnívora.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="3" lemma="kensho" posTag="Adjetivo" subPosTag="Calificativo" token="kensho"/>
+        <word id="4" lemma="nami" posTag="Nombre" subPosTag="Contable" token="nami"/>
+        <word id="5" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jatíribi yapabora ikai jaki raketi ." translation="Algunos peces le tienen miedo.">
+        <word id="0" lemma="jati" posTag="Adjetivo" subPosTag="Indefinido" token="Jatíribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="yapa" posTag="Nombre" subPosTag="Contable" token="yapabora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="raketi" posTag="Verbo" subPosTag="Intransitivo" token="raketi">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

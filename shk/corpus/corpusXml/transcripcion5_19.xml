@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Rama noa xabáori pikota iki ." translation="Somos libres.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="xabá" posTag="Nombre" subPosTag="Contable" token="xabáori">
+            <affix order="1" text="o" type="Clít. nominal"/>
+            <affix order="2" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="28 de julio de 1821 iketian , San Martiman yoia iki , non shinamanbi noa teéti ." translation="el 28 de julio de 1821, San Martín dijo que el Perú era independiente.">
+        <word id="0" lemma="28" posTag="Numeral" subPosTag="" token="28"/>
+        <word id="1" lemma="de" posTag="Símbolo" subPosTag="" token="de"/>
+        <word id="2" lemma="julio" posTag="Nombre Propio" subPosTag="" token="julio"/>
+        <word id="3" lemma="de" posTag="Símbolo" subPosTag="" token="de"/>
+        <word id="4" lemma="1821" posTag="Numeral" subPosTag="" token="1821"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="8" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="13" lemma="shinán" posTag="Nombre" subPosTag="No contable" token="shinamanbi">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="14" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="15" lemma="téeti" posTag="Verbo" subPosTag="Intransitivo" token="teéti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskara iketianra 28 netetiibi non shinanai non Jema xabakaata nete . Jaa non Jema iki Perú ." translation="Ahora cada 28 de julio, celebramos la independencia de la patria, el Perú.">
+        <word id="0" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketianra">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="28" posTag="Numeral" subPosTag="" token="28"/>
+        <word id="3" lemma="nete" posTag="Nombre" subPosTag="Contable" token="netetiibi">
+            <affix order="1" text="tiibi" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="5" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="7" lemma="jema" posTag="Nombre" subPosTag="Contable" token="Jema"/>
+        <word id="8" lemma="xabáti" posTag="Verbo" subPosTag="Intransitivo" token="xabakaata">
+            <affix order="1" text="kaat" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="13" lemma="jema" posTag="Nombre" subPosTag="Contable" token="Jema"/>
+        <word id="14" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="15" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskara iketianra non 28 nete akai , non Jema shinanti nete ." translation="Entonces el 28 de julio se llama el Día de la Patria.">
+        <word id="0" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketianra">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="3" lemma="28" posTag="Numeral" subPosTag="" token="28"/>
+        <word id="4" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="5" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="8" lemma="jema" posTag="Nombre" subPosTag="Contable" token="Jema"/>
+        <word id="9" lemma="shinánti" posTag="Verbo" subPosTag="Transitivo" token="shinanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="28 neten Perú pikota iki , xabáori jakonbires ." translation="El 28 de julio es el día en que nació el Perú libre e independiente.">
+        <word id="0" lemma="28" posTag="Numeral" subPosTag="" token="28"/>
+        <word id="1" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="3" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="xabá" posTag="Nombre" subPosTag="Contable" token="xabáori">
+            <affix order="1" text="o" type="Clít. nominal"/>
+            <affix order="2" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

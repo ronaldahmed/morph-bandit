@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Rama jiwi biáakin anon akanwe ." translation="Vamos a dibujar árboles.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="jíwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="2" lemma="biti ati" posTag="Onomatopeya" subPosTag="" token="biáakinERROR"/>
+        <word id="3" token="anon"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akanwe">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Wetsa jiwibora neskara iki - kimisha paróya keskátani ." translation="Algunos árboles parecen así - más o menos como un triángulo.">
+        <word id="0" lemma="wétsa" posTag="Adjetivo" subPosTag="Cuantificador" token="Wetsa"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="neskara" posTag="Postposición" subPosTag="" token="neskara"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="-" posTag="Puntuación" subPosTag="" token="-"/>
+        <word id="5" lemma="kimisha " posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="6" lemma="paróya" posTag="Adjetivo" subPosTag="Calificativo" token="paróya"/>
+        <word id="7" lemma="keska" posTag="Postposición" subPosTag="" token="keskátani">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Wetsa jiwibora neskara iki - ranenkeya paróya keskátani ." translation="Algunos árboles parecen así - más o menos como un rectángulo.">
+        <word id="0" lemma="wétsa" posTag="Adjetivo" subPosTag="Cuantificador" token="Wetsa"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="neskara" posTag="Postposición" subPosTag="" token="neskara"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="-" posTag="Puntuación" subPosTag="" token="-"/>
+        <word id="5" lemma="ranénke" posTag="Nombre" subPosTag="Contable" token="ranenkeya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="paróya" posTag="Adjetivo" subPosTag="Calificativo" token="paróya"/>
+        <word id="7" lemma="keska" posTag="Postposición" subPosTag="" token="keskátani">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wetsa jiwibora neskara iki - ranenkeya toró keskátani ." translation="Algunos árboles parecen así - más o menos como una elipse.">
+        <word id="0" lemma="wétsa" posTag="Adjetivo" subPosTag="Cuantificador" token="Wetsa"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="neskara" posTag="Postposición" subPosTag="" token="neskara"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="-" posTag="Puntuación" subPosTag="" token="-"/>
+        <word id="5" lemma="ranénke" posTag="Nombre" subPosTag="Contable" token="ranenkeya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="toró" posTag="Nombre" subPosTag="Contable" token="toró"/>
+        <word id="7" lemma="keska" posTag="Postposición" subPosTag="" token="keskátani">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Benawe mescó jiwibo ." translation="Busca un árbol de cada forma.">
+        <word id="0" lemma="bénati" posTag="Verbo" subPosTag="Transitivo" token="Benawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="2" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

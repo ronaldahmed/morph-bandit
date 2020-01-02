@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Jawen xawi wai akanaitianki jawen wai kexá jawe aká iki ?" translation="¿Qué hizo para defender su cañaveral?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawen" lemmaPred="" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="2" lemma="xawi" lemmaPred="xawi" posTag="Nombre" subPosTag="Contable" token="xawi"/>
+        <word id="3" lemma="wai" lemmaPred="wai" posTag="Nombre" subPosTag="Contable" token="wai"/>
+        <word id="4" lemma="ati" lemmaPred="akanaitianki" posTag="Verbo" subPosTag="Transitivo" token="akanaitianki">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="aitian" type="Clít. concord. de particip."/>
+            <affix order="3" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="jawen" lemmaPred="akanaitianki" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="wai" lemmaPred="wai" posTag="Nombre" subPosTag="Contable" token="wai"/>
+        <word id="7" lemma="kexá" lemmaPred="kexá" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="8" lemma="jawe" lemmaPred="kexá" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="9" lemma="ati" lemmaPred="kexá" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" lemmaPred="yoinaa" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweraki ixonki jato yoinaa iki ?" translation="¿Qué palabras usó el yerno al convertirlos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweraki" lemmaPred="akanaitianki" posTag="Palabra Interrogativa" subPosTag="" token="Jaweraki"/>
+        <word id="2" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="ixonki">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jato" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="4" lemma="yoinaati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="yoinaa">
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="yoinaa" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jawerakiki aká iki ?" translation="¿Qué le dijo el tigre al hombre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jaweraki" lemmaPred="Jawerakiki" posTag="Palabra Interrogativa" subPosTag="" token="Jawerakiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ati" lemmaPred="Jawerakiki" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="Jawerakiki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Ja wetsaboki jaweaka iki ?" translation="¿En qué los convirtió a los otros?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="ja" lemmaPred="Jawerakiki" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="2" lemma="wetsa" lemmaPred="wetsaboki" posTag="Adjetivo" subPosTag="Indefinido" token="wetsaboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jaweati" lemmaPred="wetsaboki" posTag="Verbo" subPosTag="Transitivo" token="jaweaka">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="wetsaboki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jaweyaki ikátiai ?" translation="¿Qué tenía el hombre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawe" lemmaPred="Jaweyaki" posTag="Palabra Interrogativa" subPosTag="" token="Jaweyaki">
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iti" lemmaPred="Jaweyaki" posTag="Verbo" subPosTag="Transitivo" token="ikátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

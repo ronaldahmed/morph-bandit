@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaskatax bakeranon koráka iní" translation="El joven que llegó a ser curaca">
+        <word id="0" lemma="Jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="bakeranon" posTag="Nombre" subPosTag="Contable" token="bakeranon"/>
+        <word id="2" lemma="koráka" posTag="Nombre" subPosTag="Contable" token="koráka"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Jatian inon ja joni ikonhaxon , jawen rabé mekenbi ja chopeta meran niaa iki ." translation="El tigre creyendo lo que el hombre le dijo, metió sus dos manos en la abertura que había hecho con las cuñas.">
+        <word id="0" lemma="jatian" posTag="Conjunción" subPosTag="Coordinante" token="Jatian"/>
+        <word id="1" lemma="ino" posTag="Nombre" subPosTag="Contable" token="inon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="3" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="4" lemma="ikonhati" posTag="Verbo" subPosTag="Transitivo" token="ikonhaxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="7" lemma="rabé" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="8" lemma="meken" posTag="Nombre" subPosTag="Parte del cuerpo" token="mekenbi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="10" lemma="chopéti" posTag="Verbo" subPosTag="Intransitivo" token="chopeta">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="12" lemma="niati" posTag="Verbo" subPosTag="Transitivo" token="niaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatian jawen rayos tanaaki teetanima aboa iki , shinan koshima ikax . Ja jawen rayos Inkaki kaa iki axani jawen awin betan ." translation="Un día el suegro se fue con su esposa y otros a pescar con barbasco.">
+        <word id="0" lemma="jatian" posTag="Conjunción" subPosTag="Coordinante" token="Jatian"/>
+        <word id="1" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="2" lemma="rayos" posTag="Nombre" subPosTag="Contable" token="rayos"/>
+        <word id="3" lemma="tanati" posTag="Verbo" subPosTag="Transitivo" token="tanaaki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teetanima">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="aboati" posTag="Verbo" subPosTag="Transitivo" token="aboa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="shinan" posTag="Nombre" subPosTag="Contable" token="shinan"/>
+        <word id="9" lemma="koshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshima">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="10" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="12" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="13" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="14" lemma="rayos" posTag="Nombre" subPosTag="Contable" token="rayos"/>
+        <word id="15" lemma="Inka" posTag="Nombre" subPosTag="Contable" token="Inkaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="16" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="17" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="18" lemma="axanti" posTag="Verbo" subPosTag="Transitivo" token="axani">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="19" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="20" lemma="awin" posTag="Nombre" subPosTag="Contable" token="awin"/>
+        <word id="21" lemma="betan" posTag="Postposición" subPosTag="" token="betan"/>
+        <word id="22" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jato ninkatax moa neteshokoax kaa iki ." translation="Al escucharlos, se escondió y fue silenciosamente a verlos.">
+        <word id="0" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="Jato"/>
+        <word id="1" lemma="ninkati" posTag="Verbo" subPosTag="Transitivo" token="ninkatax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="netéti" posTag="Verbo" subPosTag="Intransitivo" token="netéshokoax">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jeneyamaitian benkex aríbaa iki timakin . Jatian jainbi taxnáribia iki ." translation="Al ver que no lo soltaba, le dio otro puñetazo con la mano derecha y se quedaron pegadas en la brea las dos manos del mono.">
+        <word id="0" lemma="jeneti" posTag="Verbo" subPosTag="Transitivo" token="Jeneyamaitian">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="benkex" posTag="Nombre" subPosTag="Contable" token="benkex"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aribaa">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="timati" posTag="Verbo" subPosTag="Transitivo" token="timakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="6" lemma="jatian" posTag="Conjunción" subPosTag="Coordinante" token="Jatian"/>
+        <word id="7" lemma="jain" posTag="Adverbio" subPosTag="Locación" token="jainbi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="taxnáti" posTag="Verbo" subPosTag="Intransitivo" token="taxnáribia">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

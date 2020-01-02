@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Jawen xeta riki nenké ." translation="Su pico es largo.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="nenké" posTag="Adjetivo" subPosTag="Calificativo" token="nenké"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Wiso riki xoke . Jainoax jawen texonko joshin ." translation="El tucán es negro. Luego tiene el cuello rojo.">
+        <word id="0" lemma="wiso" posTag="Adjetivo" subPosTag="Calificativo" token="Wiso"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="xoke" posTag="Nombre" subPosTag="Contable" token="xoke"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="4" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="texo" posTag="Nombre" subPosTag="Contable" token="texonko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="joshin" posTag="Adjetivo" subPosTag="Calificativo" token="joshin"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Xoke riki jankosh ." translation="El tucán grita mucho.">
+        <word id="0" lemma="xoke" posTag="Nombre" subPosTag="Contable" token="Xoke"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="jankosh" posTag="Adjetivo" subPosTag="Calificativo" token="jankosh"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jara riki jankosh ." translation="Grita mucho.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="jankosh" posTag="Adjetivo" subPosTag="Calificativo" token="jankosh"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ponsenra jiwin paniai ." translation="El pelejo se cuelga de los árboles.">
+        <word id="0" lemma="ponsen" posTag="Nombre" subPosTag="Contable" token="Ponsenra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="pániti" posTag="Verbo" subPosTag="Intransitivo" token="paniai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

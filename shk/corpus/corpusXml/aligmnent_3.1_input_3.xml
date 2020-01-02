@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Titán chómo áspara kochín tóeke" translation="El chancho rompió la tinaja grande de mamá.">
+        <word id="0" lemma="titá" posTag="Nombre" subPosTag="Contable" token="Titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="chómo" posTag="Nombre" subPosTag="Contable" token="chómo"/>
+        <word id="2" lemma="áspa" posTag="Adjetivo" subPosTag="Calificativo" token="áspara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="kochí" posTag="Nombre" subPosTag="Contable" token="kochín">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="tóeti" posTag="Verbo" subPosTag="Transitivo" token="tóeke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Pácha kaman topónwe" translation="Cuenta hasta cien.">
+        <word id="0" lemma="Pácha" posTag="Adjetivo" subPosTag="Cuantificador" token="Pácha"/>
+        <word id="1" lemma="kaman" posTag="Nombre" subPosTag="Contable" token="kaman"/>
+        <word id="2" lemma="topónti" posTag="Verbo" subPosTag="Transitivo" token="topónwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Titán yomán xeira icha iki" translation="El ovillo de mamá está lleno de hilo.">
+        <word id="0" lemma="titá" posTag="Nombre" subPosTag="Contable" token="Titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yomán" posTag="Nombre" subPosTag="Contable" token="yomán"/>
+        <word id="2" lemma="xei" posTag="Nombre" subPosTag="No contable" token="xeira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ícha" posTag="Adjetivo" subPosTag="Cuantificador" token="icha"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+    </sentence>
+    <sentence id="3" text="Westíora íwira titán rabé néte xeiai" translation="Mamá llena un huso hilando dos días.">
+        <word id="0" lemma="westíora" posTag="Adjetivo" subPosTag="Cuantificador" token="Westíora"/>
+        <word id="1" lemma="íwi" posTag="Nombre" subPosTag="Contable" token="íwira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="titá" posTag="Nombre" subPosTag="Contable" token="titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="rabé" posTag="Adjetivo" subPosTag="Cuantificador" token="rabé"/>
+        <word id="4" lemma="néte" posTag="Nombre" subPosTag="Contable" token="néte"/>
+        <word id="5" lemma="xeiti" posTag="Verbo" subPosTag="Transitivo" token="xeiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Moa ichaira xeitaxa titán íwi sekéke" translation="Se quebró el huso de mamá porque se llenó de hilo.">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moa"/>
+        <word id="1" lemma="icha" posTag="Adjetivo" subPosTag="Cuantificador" token="ichaira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="xeiti" posTag="Verbo" subPosTag="Transitivo" token="xeitaxa">
+            <affix order="1" text="t" type="Sufijo verbal"/>
+            <affix order="2" text="ax" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="titá" posTag="Nombre" subPosTag="Contable" token="titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="íwi" posTag="Nombre" subPosTag="Contable" token="íwi"/>
+        <word id="5" lemma="sekéti" posTag="Verbo" subPosTag="Intransitivo" token="sekéke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

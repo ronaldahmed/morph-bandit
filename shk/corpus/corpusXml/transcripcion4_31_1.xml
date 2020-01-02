@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Ochóbires iketian , anítama keskáshoko non oinai ." translation="Como está tan lejos de nosostros no nos parece muy grande tampoco.">
+        <word id="0" lemma="ochó" posTag="Adverbio" subPosTag="Locación" token="Ochóbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="anítama" posTag="Adjetivo" subPosTag="Calificativo" token="anítama"/>
+        <word id="4" lemma="keska" posTag="Postposición" subPosTag="" token="keskáshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="6" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Baná jawékibora keenbirati iki , jatíbitianbires yamé itin ." translation="Seguramente al las plantas les gustaría si fuese noche todo el tiempo.">
+        <word id="0" lemma="baná" posTag="Nombre" subPosTag="Contable" token="Baná"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenbirati">
+            <affix order="1" text="bira" type="Clít. de posición libre"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jatíbitian" posTag="Adverbio" subPosTag="Tiempo" token="jatíbitianbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="yamé" posTag="Adverbio" subPosTag="Tiempo" token="yamé"/>
+        <word id="7" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="itin">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaábora matsires keenai ." translation="Les gusta la frescura.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaábora">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="mátsi" posTag="Nombre" subPosTag="No contable" token="matsires">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Baná jawékiboribi barin keenai ." translation="A las plantas les gusta el sol también.">
+        <word id="0" lemma="baná" posTag="Nombre" subPosTag="Contable" token="Baná"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="bari" posTag="Nombre" subPosTag="Contable" token="barin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Oinwe , oa paro kexá jiwi xoxoabo ." translation="Mira, como crecen los árboles en el borde del río.">
+        <word id="0" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="Oinwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="oa" posTag="Pronombre" subPosTag="Demostrativo" token="oa"/>
+        <word id="3" lemma="paro" posTag="Nombre" subPosTag="Contable" token="paro"/>
+        <word id="4" lemma="kexá" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="5" lemma="jíwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="6" lemma="xóxoti" posTag="Verbo" subPosTag="Intransitivo" token="xoxoabo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

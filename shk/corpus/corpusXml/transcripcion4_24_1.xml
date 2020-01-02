@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Wetsa peibo jakonhiki yoá ati ." translation="Algunas hojas son buenas para cocinar.">
+        <word id="0" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="1" lemma="pei" posTag="Nombre" subPosTag="Contable" token="peibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jakon iki" posTag="Símbolo" subPosTag="" token="jakonhikiERROR"/>
+        <word id="3" lemma="yoa" posTag="Nombre" subPosTag="Contable" token="yoá"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="ati"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Wetsa peibo iki , jakonwakin xobo xewatibiribi ." translation="Otras se usan para hacer buenos techos.">
+        <word id="0" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="1" lemma="pei" posTag="Nombre" subPosTag="Contable" token="peibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jakon akin" posTag="Símbolo" subPosTag="" token="jakonwakinERROR"/>
+        <word id="5" lemma="xóbo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="6" lemma="xewati" posTag="Verbo" subPosTag="Transitivo" token="xewatibiribi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="¿ Jawekeskárin non kaíati jawékibo ?" translation="¿Qué son animales domésticos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskárin">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+            <affix order="2" text="ska" type="Clít. nominal"/>
+            <affix order="3" text="rin" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non"/>
+        <word id="3" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Non kaíati jawékibo iki non xobo ochámabicho ikai jawékibo ." translation="Los animales domésticos son los que se encuentran solamente cerca de nuestras casas.">
+        <word id="0" lemma="non" posTag="Pronombre" subPosTag="Personal" token="Non"/>
+        <word id="1" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non"/>
+        <word id="5" lemma="xóbo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="6" lemma="ochoma" posTag="Adverbio" subPosTag="Locación" token="ochomabicho">
+            <affix order="1" text="bicho" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="íki" posTag="Verbo" subPosTag="Transitivo" token="ikai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ochítira non kaíati jawéki iki ." translation="El perro es un animal doméstico.">
+        <word id="0" lemma="ochiti" posTag="Nombre" subPosTag="Contable" token="Ochítira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non"/>
+        <word id="2" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

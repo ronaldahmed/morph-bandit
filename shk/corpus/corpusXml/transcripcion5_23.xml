@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jakon jaweki banai ." translation="Siembran plantas buenas.">
+        <word id="0" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="Jakon"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jaweki"/>
+        <word id="2" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa iká jaweki meskó banai ." translation="Siembran varias partes de las plantas.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jaweki"/>
+        <word id="3" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="4" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Atsa taxo banai ." translation="Siembran el tallo de yuca.">
+        <word id="0" lemma="atsa" posTag="Nombre" subPosTag="Contable" token="Atsa"/>
+        <word id="1" lemma="taxo" posTag="Nombre" subPosTag="Contable" token="taxo"/>
+        <word id="2" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Xeki bero banai ." translation="Siembran la semilla del maíz.">
+        <word id="0" lemma="xéki" posTag="Nombre" subPosTag="Contable" token="Xeki"/>
+        <word id="1" lemma="bero" posTag="Nombre" subPosTag="Contable" token="bero"/>
+        <word id="2" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kari tapon banai ." translation="Siembran la raíz del camote.">
+        <word id="0" lemma="kári" posTag="Nombre" subPosTag="Contable" token="Kari"/>
+        <word id="1" lemma="tapón" posTag="Nombre" subPosTag="Contable" token="tapon"/>
+        <word id="2" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

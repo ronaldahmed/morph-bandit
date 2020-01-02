@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Kimisha paróya keská jiwi meraxon , jaa keskáakin awé wishakin ." translation="Dibuja el árbol que se parece más o menos a un triángulo.">
+        <word id="0" lemma="kimisha" posTag="Numeral" subPosTag="" token="Kimisha"/>
+        <word id="1" lemma="paró" posTag="Nombre" subPosTag="Contable" token="paróya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="keská" lemmaPred="" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="3" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="4" token="meraxon"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="keskáati" posTag="Verbo" subPosTag="Transitivo" token="keskáakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="awé">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa jiwi aká naman jawen jane wishawe ." translation="Escribe su nombre abajo.">
+        <word id="0" lemma="ja" lemmaPred="meraxon" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="naman" lemmaPred="naman" posTag="Adverbio" subPosTag="Locación" token="naman"/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="jane" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="6" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="¿ Jawekeskárin jawen pei ?" translation="¿Cómo es su hoja?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeská" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskárin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Ranenkeyatani jiwibo meraxon , jaábo keskáakin wishawe , wetsa paróyatani , wetsa torótani ." translation="Dibuja los árboles que se parecen a un rectángulo y una elipse.">
+        <word id="0" token="Ranenkeyatani"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" token="meraxon"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="jaábo"/>
+        <word id="5" lemma="keskáati" posTag="Verbo" subPosTag="Transitivo" token="keskáakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="9" lemma="paró" posTag="Nombre" subPosTag="Contable" token="paróyatani">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+            <affix order="2" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="12" lemma="toró" posTag="Nombre" subPosTag="Contable" token="torótani">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa jiwi akábo naman jawen jane wishawe ." translation="Escribe sus nombres abajo.">
+        <word id="0" lemma="ja" lemmaPred="naman" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akábo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="naman" lemmaPred="naman" posTag="Adverbio" subPosTag="Locación" token="naman"/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="jane" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="6" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

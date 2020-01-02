@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="América main iki rama Perú akanai . Jain ikátiai jonibo , ani paro kexá , manaman , nií meran ." translation="En la parte de América que ahora es el Perú había gente en la costa, en la sierra y en la selva.">
+        <word id="0" lemma="América" lemmaPred="América" posTag="Nombre Propio" subPosTag="" token="América"/>
+        <word id="1" lemma="mái" lemmaPred="maí" posTag="Nombre" subPosTag="No contable" token="main">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="maí" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="rama" lemmaPred="maí" posTag="Adverbio" subPosTag="Tiempo" token="rama"/>
+        <word id="4" lemma="Perú" lemmaPred="maí" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="5" lemma="ati" lemmaPred="maí" posTag="Verbo" subPosTag="Transitivo" token="akanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="jain" lemmaPred="maí" posTag="Adverbio" subPosTag="Locación" token="Jain"/>
+        <word id="8" lemma="iki" lemmaPred="maí" posTag="Verbo" subPosTag="Copulativo" token="ikátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="joni" lemmaPred="maí" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="ani" lemmaPred="maí" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="12" lemma="paro" lemmaPred="maí" posTag="Nombre" subPosTag="Contable" token="paro"/>
+        <word id="13" lemma="kexá" lemmaPred="maí" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="manán" lemmaPred="manamán" posTag="Nombre" subPosTag="Contable" token="manaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="16" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="17" lemma="níi" lemmaPred="manamán" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="18" lemma="meran" lemmaPred="manamán" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Iíkin Europain iká jonibaon nikata iki , Américain Cristóbal Colón nokota , Américo Vespucioribi nokota , wetsaboribi onani boax nokota ." translation="Después, la gente de Europa tuvo noticia de América por Cristóbal Colón, por América Vespucio y otras exploradores.">
+        <word id="0" lemma="íiti" lemmaPred="Iíkin" posTag="Verbo" subPosTag="Intransitivo" token="Iíkin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="Europa" lemmaPred="Europain" posTag="Nombre Propio" subPosTag="" token="Europain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="Europain" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="joni" lemmaPred="Europain" posTag="Nombre" subPosTag="Contable" token="jonibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ninkáti" lemmaPred="nikata" posTag="Verbo" subPosTag="Transitivo" token="ninkata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="nikata" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="América" lemmaPred="Américai" posTag="Nombre Propio" subPosTag="" token="Américain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="Cristóbal" lemmaPred="Cristóbal" posTag="Nombre Propio" subPosTag="" token="Cristóbal"/>
+        <word id="9" lemma="Colón" lemmaPred="Colón" posTag="Nombre Propio" subPosTag="" token="Colón"/>
+        <word id="10" lemma="nokoti" lemmaPred="nokota" posTag="Verbo" subPosTag="Intransitivo" token="nokota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="Américo" lemmaPred="Américo" posTag="Nombre Propio" subPosTag="" token="Américo"/>
+        <word id="13" lemma="Vespucioribi" lemmaPred="Vespucioribi" posTag="Nombre Propio" subPosTag="" token="Vespucioribi"/>
+        <word id="14" lemma="nokoti" lemmaPred="nokota" posTag="Verbo" subPosTag="Intransitivo" token="nokota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" lemma="wetsa" lemmaPred="wetsaboribi" posTag="Nombre" subPosTag="Contable" token="wetsaboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="17" lemma="onanti" lemmaPred="onani" posTag="Verbo" subPosTag="Transitivo" token="onani">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="18" lemma="kati" lemmaPred="boax" posTag="Verbo" subPosTag="Intransitivo" token="boax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="19" lemma="nokoti" lemmaPred="nokota" posTag="Verbo" subPosTag="Intransitivo" token="nokota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainoax Pizarro joá iki , jawen joniboyabi . Europanimeax joá iki , España janekana jemameax ." translation="Más tarde vinieron Pizarro y sus ayudantes, de Europa, de un país llamado España.">
+        <word id="0" lemma="jainoax" lemmaPred="boax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" lemma="Pizarro" lemmaPred="Pizarro" posTag="Nombre Propio" subPosTag="" token="Pizarro"/>
+        <word id="2" lemma="joti" lemmaPred="Pizarro" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="Pizarro" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawen" lemmaPred="Pizarro" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="joni" lemmaPred="joniboyabi" posTag="Nombre" subPosTag="Contable" token="joniboyabi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ya" type="Clít. nominal"/>
+            <affix order="3" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="Europa" lemmaPred="Europanimeax" posTag="Nombre Propio" subPosTag="" token="Europainmeax">
+            <affix order="1" text="in" type="Clít. nominal"/>
+            <affix order="2" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="joti" lemmaPred="Europanimeax" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" lemmaPred="Europanimeax" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="España" lemmaPred="España" posTag="Nombre Propio" subPosTag="" token="España"/>
+        <word id="13" lemma="janeti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="janekana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="jema" lemmaPred="jemameax" posTag="Nombre" subPosTag="Contable" token="jemameax">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Joxon rama Perú akanai mai iboakana iki . Jainxon nekea jonibo onanmakana iki Españolobaon axébo ." translation="Tomaron lo que es ahora el Perú, y enseñaron a la gente las costumbres de España.">
+        <word id="0" token="Joxon"/>
+        <word id="1" lemma="rama" lemmaPred="rama" posTag="Adverbio" subPosTag="Tiempo" token="rama"/>
+        <word id="2" lemma="Perú" lemmaPred="rama" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="3" lemma="ati" lemmaPred="rama" posTag="Verbo" subPosTag="Transitivo" token="akanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="mai" lemmaPred="mai" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="5" token="iboakana"/>
+        <word id="6" lemma="iki" lemmaPred="nekeati" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="jainxon " lemmaPred="iboakana" posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="9" token="nekea"/>
+        <word id="10" lemma="joni" lemmaPred="nekeati" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="onanti" lemmaPred="onanmakana" posTag="Verbo" subPosTag="Transitivo" token="onanmakana">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="iki" lemmaPred="onanmakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="13" lemma="Español" lemmaPred="Españolobaon" posTag="Adjetivo" subPosTag="Calificativo" token="Españolbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="axé" lemmaPred="axébo" posTag="Nombre" subPosTag="Contable" token="axébo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nato semananin ninkáwe , jakáaxon Perú mai bichinkanni , min maestro mia yoiaitian ." translation="Escucha esta semana cuando tu maestro cuenta la historia de la conquista del Perú.">
+        <word id="0" lemma="nato" lemmaPred="onanmakana" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="semana" lemmaPred="onanmakana" posTag="Nombre" subPosTag="Contable" token="semananin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ninkáti" lemmaPred="onanmakana" posTag="Verbo" subPosTag="Transitivo" token="ninkáwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jaskáaxon" lemmaPred="jakáaxon" posTag="Conjunción" subPosTag="Coordinante" token="jaskáaxon"/>
+        <word id="5" lemma="Perú" lemmaPred="jakáaxon" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="6" lemma="mai" lemmaPred="jakáaxon" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="7" lemma="bichinti" lemmaPred="bichinkanni" posTag="Verbo" subPosTag="Transitivo" token="bichinkanni">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ni" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="mia" lemmaPred="bichinkanni" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="maestro" lemmaPred="bichinkanni" posTag="Nombre" subPosTag="Contable" token="maestro"/>
+        <word id="11" lemma="mia" lemmaPred="bichinkanni" posTag="Pronombre" subPosTag="Personal" token="mia"/>
+        <word id="12" lemma="yóiti" lemmaPred="bichinkanni" posTag="Verbo" subPosTag="Transitivo" token="yoiaitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

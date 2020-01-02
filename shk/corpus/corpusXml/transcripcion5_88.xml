@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jatíbi jawéki , nato neten jaá jawékibo , jirioma ikax , iresa jawékibo iki ." translation="Todas las cosas de la naturaleza que no tienen vida pertenecen al reino mineral.">
+        <word id="0" lemma="jatíbi" lemmaPred="" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbi"/>
+        <word id="1" lemma="jawéki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="nato" lemmaPred="" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="4" lemma="nete" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="ja" lemmaPred="" posTag="Pronombre" subPosTag="Demostrativo" token="ja"/>
+        <word id="6" lemma="jawéki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="jirioma" lemmaPred="jirioma" posTag="Adjetivo" subPosTag="Calificativo" token="jirioma"/>
+        <word id="9" lemma="iki" lemmaPred="jirioma" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="iti" lemmaPred="jirioma" posTag="Verbo" subPosTag="Intransitivo" token="iresa">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="jawéki" lemmaPred="jirioma" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="iki" lemmaPred="jirioma" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Mai , makan , mashi ; jaábo iki iresa jawékibo ." translation="La tierra, las piedras y la arena pertenecen al reino mineral.">
+        <word id="0" lemma="mai" lemmaPred="jirioma" posTag="Nombre" subPosTag="Contable" token="Mai"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="makán" lemmaPred="jirioma" posTag="Nombre" subPosTag="Contable" token="makan"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="máshi" lemmaPred="mashi" posTag="Nombre" subPosTag="No contable" token="mashi"/>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="ja" lemmaPred="mashi" posTag="Pronombre" subPosTag="Personal" token="jaábo">
+            <affix order="2" text="bo" type="Clít. nominal"/>
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="mashi" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="8" lemma="iti" lemmaPred="mashi" posTag="Verbo" subPosTag="Intransitivo" token="iresa">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="jawéki" lemmaPred="mashi" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jene , ompax ; jaá iki iresa jawékiboribi ." translation="El agua pertenece al reino mineral.">
+        <word id="0" lemma="jene" lemmaPred="mashi" posTag="Nombre" subPosTag="No contable" token="Jene"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="ompax" lemmaPred="mashi" posTag="Nombre" subPosTag="No contable" token="ompax"/>
+        <word id="3" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="4" lemma="ja" lemmaPred="jaá" posTag="Pronombre" subPosTag="Personal" token="jaá">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="jaá" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="iti" lemmaPred="jaá" posTag="Verbo" subPosTag="Intransitivo" token="iresa">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="jawéki" lemmaPred="jaá" posTag="Nombre" subPosTag="Contable" token="jawékiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Tashi iki , iresa jawéki ." translation="La sal pertenece al reino mineral.">
+        <word id="0" lemma="tashi" lemmaPred="Tashi" posTag="Nombre" subPosTag="No contable" token="Tashi"/>
+        <word id="1" lemma="iki" lemmaPred="Tashi" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="iti" lemmaPred="Tashi" posTag="Verbo" subPosTag="Intransitivo" token="iresa">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="jawéki" lemmaPred="Tashi" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kerosene , gasolinaribi iki iresaribi ." translation="El kerosene y la gasolina pertenecen al reino mineral.">
+        <word id="0" lemma="kerosene" lemmaPred="Kerosene" posTag="Nombre" subPosTag="No contable" token="Kerosene"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="gasolina" lemmaPred="gasolinaribi" posTag="Nombre" subPosTag="No contable" token="gasolinaribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="gasolinaribi" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="iti" lemmaPred="iresaribi" posTag="Verbo" subPosTag="Intransitivo" token="iresaribi">
+            <affix order="1" text="res" type="Clít. de segunda posición"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

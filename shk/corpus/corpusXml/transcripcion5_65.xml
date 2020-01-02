@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Paron jake kaskobo . Jaa parobo iki , Napo , Noon Paro , Amazonas ." translation="En los ríos grandes como el Napo, el Ucayali y el Amazonas hay botes.">
+        <word id="0" lemma="paro" posTag="Nombre" subPosTag="Contable" token="Paron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="játi" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="kasko" posTag="Nombre" subPosTag="Contable" token="kaskobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="4" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="Jaa"/>
+        <word id="5" lemma="paro" posTag="Nombre" subPosTag="Contable" token="parobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="Napo" posTag="Nombre Propio" subPosTag="" token="Napo"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="noon" posTag="Determinante" subPosTag="Posesivo" token="Noon"/>
+        <word id="11" lemma="Noon Paro" posTag="Nombre Propio" subPosTag="" token="Paro"/>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" lemma="Amazonas" posTag="Nombre Propio" subPosTag="" token="Amazonas"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainoax jaríbake , vapórobo , motórobo . Jaábo iki kasko xewina anibo ." translation="Hay también buques y barcos que son más grandes que los botes.">
+        <word id="0" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" token="jaríbake"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="vaporo" posTag="Nombre" subPosTag="Contable" token="vapórobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="motoro" posTag="Nombre" subPosTag="Contable" token="motórobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="jaabo" posTag="Pronombre" subPosTag="Personal" token="Jaábo"/>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="kasko" posTag="Nombre" subPosTag="Contable" token="kasko"/>
+        <word id="10" lemma="xewinti" posTag="Verbo" subPosTag="Transitivo" token="xewina"/>
+        <word id="11" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="anibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa vapórobo , jaa motórobo , jaábo iki koshi maquinayabo ." translation="Buques y barcos tienen motores poderosos.">
+        <word id="0" lemma="jaa" posTag="Pronombre" subPosTag="Personal" token="Jaa"/>
+        <word id="1" lemma="vaporo" posTag="Nombre" subPosTag="Contable" token="vapórobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jaa" posTag="Pronombre" subPosTag="Personal" token="jaa"/>
+        <word id="4" lemma="motoro" posTag="Nombre" subPosTag="Contable" token="motórobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jaabo" posTag="Pronombre" subPosTag="Personal" token="jaábo"/>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="kóshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="9" lemma="maquina" posTag="Nombre" subPosTag="Contable" token="maquinayabo">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaábaon icha joni boai , ani jawékibo ." translation="Llevan muchas personas y bultos grandes.">
+        <word id="0" lemma="jaabaon" posTag="Pronombre" subPosTag="Personal" token="Jaábaon"/>
+        <word id="1" lemma="ícha" posTag="Adjetivo" subPosTag="Cuantificador" token="icha"/>
+        <word id="2" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="3" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="áni" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="6" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Aniparon jake ani vapórobo ; jawen máquina koshi , ishto niai ." translation="En el mar hay buques muy grandes que tienen motores poderosos y andan muy rápido.">
+        <word id="0" lemma="Aniparon" posTag="Nombre" subPosTag="No contable" token="Aniparon"/>
+        <word id="1" lemma="játi" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="áni" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="3" lemma="vaporo" posTag="Nombre" subPosTag="Contable" token="vapórobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="5" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="máquina" posTag="Nombre" subPosTag="Contable" token="máquina"/>
+        <word id="7" lemma="kóshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="íshto" posTag="Adverbio" subPosTag="Manera" token="ishto"/>
+        <word id="10" lemma="níti" posTag="Verbo" subPosTag="Intransitivo" token="niai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

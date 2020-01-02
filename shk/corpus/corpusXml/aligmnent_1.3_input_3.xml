@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jan tóo akainko káxa , ea ráketai" translation="Tengo miedo de ir donde él está disparando">
+        <word id="0" lemma="Jan" posTag="Pronombre" subPosTag="Personal" token="Jan"/>
+        <word id="1" lemma="tóoati" posTag="Verbo" subPosTag="Intransitivo" token="tóo"/>
+        <word id="2" lemma="akainko" posTag="Adverbio" subPosTag="Locación" token="akainko"/>
+        <word id="3" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="káxa">
+            <affix order="1" text="x" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="6" lemma="ráketi" posTag="Verbo" subPosTag="Intransitivo" token="ráketai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Jonínronki jawen awínwetsa paénxon wéxatinin tsewe anike" translation="Cuentan que una vez un hombre borracho cortó la cabeza de su cuñada con un cuchillo wéxati">
+        <word id="0" lemma="Joní" posTag="Nombre" subPosTag="Contable" token="Jonínronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="2" lemma="awínwetsa" posTag="Nombre" subPosTag="Contable" token="awínwetsa"/>
+        <word id="3" lemma="paénti" posTag="Verbo" subPosTag="Intransitivo" token="paénxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="wéxati" posTag="Verbo" subPosTag="Transitivo" token="wéxatinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="tsewe" posTag="Nombre" subPosTag="Contable" token="tsewe"/>
+        <word id="6" lemma="anike" posTag="Verbo" subPosTag="Transitivo" token="anike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Papán píaitianra , Jósekan átapa bénake" translation="Mientras papá comía, José buscaba su gallina">
+        <word id="0" lemma="Papá" posTag="Nombre" subPosTag="Contable" token="Papán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="píaitianra">
+            <affix order="1" text="aitian" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="Jóse" posTag="Nombre Propio" subPosTag="" token="Jósekan">
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="átapa"/>
+        <word id="5" lemma="béna" posTag="Verbo" subPosTag="Transitivo" token="bénake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Ajíntinra tíi ati ákai jawen káibo kénakin" translation="El agente  toca la bocina para llamar a sus paisanos">
+        <word id="0" lemma="Ajínti" posTag="Nombre" subPosTag="Contable" token="Ajíntinra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="tíi" posTag="Onomatopeya" subPosTag="" token="tíi"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="ati"/>
+        <word id="3" lemma="ati" posTag="Verbo Auxiliar" subPosTag="" token="ákai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="káibo" posTag="Nombre" subPosTag="Contable" token="káibo"/>
+        <word id="6" lemma="kénati" posTag="Verbo" subPosTag="Transitivo" token="kénakin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Jenényoshiman amákaronkiki nato ronón ewa" translation="Dicen que la boa es la hamaca de los yacurunas">
+        <word id="0" lemma="Jenényoshin" posTag="Nombre" subPosTag="Contable" token="Jenényoshiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="amaka" posTag="Nombre" subPosTag="Contable" token="amákaronkiki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="3" lemma="rono" posTag="Nombre" subPosTag="Contable" token="ronón">
+            <affix order="1" text="n" type="Sufijo nominal"/>
+        </word>
+        <word id="4" lemma="ewa" posTag="Adjetivo" subPosTag="Calificativo" token="ewa"/>
+    </sentence>
+</corpus>

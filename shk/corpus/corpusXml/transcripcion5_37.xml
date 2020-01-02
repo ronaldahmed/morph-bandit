@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jaskataxa bake animenyamai , jakon jawékiati amayamakana ." translation="No crecen mucho porque les falta buen alimento.">
+        <word id="0" lemma="jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="2" lemma="aniti" posTag="Verbo" subPosTag="Intransitivo" token="animenyamai">
+            <affix order="1" text="men" type="Sufijo verbal"/>
+            <affix order="2" text="yama" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="5" lemma="jawékiati" posTag="Verbo" subPosTag="Transitivo" token="jawékiati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="amati" posTag="Verbo" subPosTag="Transitivo" token="amayamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Netetiibi non xeati iki , westíora litro inonbires , ompax ." translation="Todos los días necesitamos tomar por lo menos un litro de agua.">
+        <word id="0" lemma="néte" posTag="Nombre" subPosTag="Contable" token="Netetiibi">
+            <affix order="1" text="tiibi" type="Sufijo nominal"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="xeati" posTag="Verbo" subPosTag="Transitivo" token="xeati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="westíora" posTag="Determinante" subPosTag="Demostrativo" token="westíora"/>
+        <word id="6" lemma="litro" posTag="Nombre" subPosTag="Contable" token="litro"/>
+        <word id="7" lemma="inonbires" posTag="Adverbio" subPosTag="Manera" token="inonbires"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="ompax" posTag="Nombre" subPosTag="No contable" token="ompax"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Non xeati iki jakon ompaxbicho ." translation="Debemos tomar solamente agua pura.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="xeati" posTag="Verbo" subPosTag="Transitivo" token="xeati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="ompax" posTag="Nombre" subPosTag="No contable" token="ompaxbicho">
+            <affix order="1" text="bicho" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wetsatianbo non oinai jakon keská , ikaxbi jakonma iki , chabésha ikaxbi beshéshoko jishtima ." translation="Muchas veces el agua que parece ser pura contiene microbios.">
+        <word id="0" lemma="wetsa" posTag="Nombre" subPosTag="Contable" token="Wetsatianbo">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="keská" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikaxbi">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonma">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="chami" posTag="Nombre" subPosTag="Contable" token="chamiya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikaxbi">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="12" lemma="beshé" posTag="Nombre" subPosTag="Contable" token="beshéshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="13" lemma="jishti" posTag="Adjetivo" subPosTag="Calificativo" token="jishtima">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa chabexshokon noa isin meniai ." translation="Muchas veces el agua que parece ser pura tiene bastantes animalitos que pueden hacernos enfermar.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="chami" posTag="Nombre" subPosTag="Contable" token="chamishokon">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="isin" posTag="Nombre" subPosTag="Contable" token="isin"/>
+        <word id="4" lemma="meniti" posTag="Verbo" subPosTag="Transitivo" token="meniai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

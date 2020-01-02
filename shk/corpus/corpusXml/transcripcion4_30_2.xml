@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Barira jakon iki ." translation="El sol es muy bueno.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Barira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jawekeskáaxonmain noa barin xanaai , noa neteaxonai ?" translation="&quot;¿Cómo nos da calor y luz?&quot;">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskáaxon" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskáaxonmain">
+            <affix order="1" text="main" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="3" lemma="bari" posTag="Nombre" subPosTag="Contable" token="barin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="xánati" posTag="Verbo" subPosTag="Intransitivo" token="xanaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="7" lemma="néteti" posTag="Verbo" subPosTag="Intransitivo" token="neteaxonai">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="xon" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Jaa baririki ani tonkoyosi , chiíbires ." translation="El sol es una bola grande de fuego.">
+        <word id="0" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="Jaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="bari" posTag="Nombre" subPosTag="Contable" token="baririkiERROR"/>
+        <word id="2" token="ani"/>
+        <word id="3" token="tonkoyosi"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="chiíbires"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaáriki anibires ." translation="Es muy grande.">
+        <word id="0" lemma="ja" posTag="Onomatopeya" subPosTag="" token="JaárikiERROR"/>
+        <word id="1" token="anibires"/>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa bari chiíbires ixonbi ¿ jawekeskáakinki noa keyokin menoyamai ?" translation="&quot;Si el sol es fuego, ¿por qué no nos quema del todo?&quot;">
+        <word id="0" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="Jaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="2" lemma="chíi" posTag="Nombre" subPosTag="No contable" token="chiíbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="ixonbi" posTag="Conjunción" subPosTag="Coordinante" token="ixonbi"/>
+        <word id="4" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="5" lemma="jawekeskaati" posTag="Verbo" subPosTag="Transitivo" token="jawekeskáakinki">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="7" lemma="kéyokin" posTag="Adverbio" subPosTag="Manera" token="keyokin"/>
+        <word id="8" lemma="ménoti" posTag="Verbo" subPosTag="Transitivo" token="menoyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

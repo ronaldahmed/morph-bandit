@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Nexnexninra bimi piamai ." translation="El shansho no come frutas.">
+        <word id="0" lemma="nexnex" posTag="Nombre" subPosTag="Contable" token="Nexnexninra">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="bimi"/>
+        <word id="2" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piamai">
+            <affix order="1" text="ama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jawen piti riki bokon xama ." translation="Come cogollo de cetico.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="piti" posTag="Nombre" subPosTag="No contable" token="piti"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="bokon" posTag="Nombre" subPosTag="Contable" token="bokon"/>
+        <word id="4" lemma="xama" posTag="Nombre" subPosTag="Contable" token="xama"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Nexnex riki noyai ." translation="El shansho vuela.">
+        <word id="0" lemma="nexnex" posTag="Nombre" subPosTag="Contable" token="Nexnex"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="noyati" posTag="Verbo" subPosTag="Intransitivo" token="noyai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Janra bachiai jiwi bochiki ." translation="Pone sus huevos en árboles altos.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Janra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bachiati" posTag="Verbo" subPosTag="Intransitivo" token="bachiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="3" lemma="bochiki" posTag="Postposición" subPosTag="Espacial" token="bochiki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jawen bachi riki sese ." translation="Sus huevos son manchados.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="bachi" posTag="Nombre" subPosTag="Contable" token="bachi"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="sese" posTag="Adjetivo" subPosTag="Calificativo" token="sese"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

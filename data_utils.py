@@ -58,6 +58,11 @@ class DataLoaderAnalizer:
   def get_vocab_size(self,):
     return len(self.vocab_oplabel)
 
+  def get_action_space_size(self):
+    n = len(self.vocab_oplabel)
+    m = [x for x in range(n) if not self.vocab_oplabel.get_label_name(x).startswith("START")]
+    return n-len(m)-2,len(m) - 2
+
   def get_feat_vocab_size(self,):
     return len(self.vocab_feats)
 

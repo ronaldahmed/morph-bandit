@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jainoaki jonin mextea iki . Mextea , kaaxxonki iká iki naman paketi ." translation="En ese momento el hombre cortó las manos del tigre y lo hizo caer.">
+        <word id="0" lemma="jainoax" posTag="Adverbio" subPosTag="Tiempo" token="Jainoaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jonin" posTag="Nombre" subPosTag="Contable" token="jonin"/>
+        <word id="2" lemma="mexteti" posTag="Verbo" subPosTag="Transitivo" token="mextea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="mexteti" posTag="Verbo" subPosTag="Transitivo" token="Mextea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaaxonki">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="onki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="namán" posTag="Adverbio" subPosTag="Cantidad" token="naman"/>
+        <word id="11" lemma="paketi" posTag="Verbo" subPosTag="Transitivo" token="paketi">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaskataxxonki iká iki chaxo ishtoi peokooti ." translation="El venado comenzó a correr a toda velocidad.">
+        <word id="0" lemma="jaskatax" posTag="Adverbio" subPosTag="Manera" token="Jaskataxxonki">
+            <affix order="1" text="xonki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="chaxo" posTag="Nombre" subPosTag="Contable" token="chaxo"/>
+        <word id="4" lemma="ishto" posTag="Adjetivo" subPosTag="Calificativo" token="ishtoi">
+            <affix order="1" text="i" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="peokooti" posTag="Verbo" subPosTag="Intransitivo" token="peokooti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Joníbenatian ino betan wasa iní" translation="El tigre y el mono frailecito">
+        <word id="0" lemma="joníbena" posTag="Adverbio" subPosTag="Tiempo" token="Joníbenatian">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="2" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="3" lemma="wasa" posTag="Nombre" subPosTag="Contable" token="wasa"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Joaxki , jayá choronox jakonshamani jawen tae naman yakata iki ." translation="El tigre siguió subiendo hasta que se sentó debajo de los pies del hombre preparándose para brincar sobre él.">
+        <word id="0" lemma="joati" posTag="Verbo" subPosTag="Intransitivo" token="Joaxki">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="jayá" posTag="Adverbio" subPosTag="Tiempo" token="jayá"/>
+        <word id="3" lemma="choronti" posTag="Verbo" subPosTag="Intransitivo" token="choronox">
+            <affix order="1" text="nox" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonshamani">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+            <affix order="2" text="i" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="tae" posTag="Nombre" subPosTag="Contable" token="tae"/>
+        <word id="7" lemma="namán" posTag="Postposición" subPosTag="" token="naman"/>
+        <word id="8" lemma="yakati" posTag="Verbo" subPosTag="Intransitivo" token="yakata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Mananxawe betan chaxo iní" translation="El motelo y el venado">
+        <word id="0" lemma="mananxawe" posTag="Nombre" subPosTag="Contable" token="Mananxawe"/>
+        <word id="1" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="chaxo" posTag="Nombre" subPosTag="Contable" token="chaxo"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

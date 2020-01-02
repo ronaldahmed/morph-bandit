@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Natoriki non escuela ." translation="Esta es nuestra escuela.">
+        <word id="0" lemma="nato" posTag="Símbolo" subPosTag="" token="NatorikiERROR"/>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Non escuelankoxon non onanai ." translation="Aprendemos en nuestra escuela.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelankoxon">
+            <affix order="1" text="nkoxon" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Non onanai , yoyoati , wishati , toponti . Jaábora non onanai , non escuelankoxon ." translation="Aprendemos a leer, a escribir y a contar en nuestra escuela.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="yoyoati" posTag="Verbo" subPosTag="Transitivo" token="yoyoati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="toponti" posTag="Verbo" subPosTag="Transitivo" token="toponti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="9" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jabora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="10" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai"/>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelankoxon">
+            <affix order="1" text="nkoxon" type="Clít. nominal"/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Non onanai jakon bake iti , non jema cuídannoxon ." translation="Aprendemos cómo ser buenos hijos de la Patria.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai"/>
+        <word id="2" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="3" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="4" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jema" posTag="Nombre" subPosTag="Contable" token="jema"/>
+        <word id="8" lemma="koiranti" posTag="Verbo" subPosTag="Transitivo" token="koiranoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kikinyakin onanwe , joi benotimaakin : Jonibo betan yoyo ixon , non onanyamaa jawékibo non onanai ." translation="Aprende de memoria: &quot;Hablando se entiende la gente.&quot;">
+        <word id="0" lemma="Kikin akin" posTag="Símbolo" subPosTag="" token="KikinyakinERROR"/>
+        <word id="1" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="joi" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="4" lemma="benoti" lemmaPred="benotimaaki" posTag="Verbo" subPosTag="Transitivo" token="benotimaakinERROR"/>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="6" lemma="joni" posTag="Nombre" subPosTag="Contable" token="Jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="betan" posTag="Postposición" subPosTag="" token="betan"/>
+        <word id="8" lemma="yoyo" posTag="Onomatopeya" subPosTag="" token="yoyo"/>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanyamaa">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="15" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai"/>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

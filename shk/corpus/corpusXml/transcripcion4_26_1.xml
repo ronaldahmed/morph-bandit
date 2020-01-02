@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Komanhewa jake nií meran ." translation="La perdiz vive en el monte.">
+        <word id="0" lemma="komanhewa" posTag="Nombre" subPosTag="Contable" token="Komanhewa"/>
+        <word id="1" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="níi" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="3" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaá iki non ináaxon kaíayosma ." translation="No es una ave doméstica.">
+        <word id="0" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="Jaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="2" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="3" lemma="ináati" posTag="Verbo" subPosTag="Transitivo" token="ináaxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíayosma">
+            <affix order="1" text="yosma" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Ponkioskoribira non kaíayamai ." translation="Tampoco es el gallinazo una ave doméstica.">
+        <word id="0" lemma="poinkosko" posTag="Nombre" subPosTag="Contable" token="Poinkoskoribira">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="2" lemma="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíayamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Min cuadernonin awé , atapa bené keskáakin , y atapa awin keskáakinribi ." translation="Dibuja un gallo y una gallina en tu cuaderno.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuadernonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="awé">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="atapa"/>
+        <word id="5" lemma="béne" posTag="Nombre" subPosTag="Contable" token="bené"/>
+        <word id="6" lemma="keskáakin" posTag="Conjunción" subPosTag="Coordinante" token="keskáakin"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="y" posTag="Conjunción" subPosTag="Coordinante" token="y"/>
+        <word id="9" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="atapa"/>
+        <word id="10" lemma="awin" posTag="Nombre" subPosTag="Contable" token="awin"/>
+        <word id="11" lemma="keskáakin" posTag="Conjunción" subPosTag="Coordinante" token="keskáakinribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ochíti onannon akanwe , jawe keskáarin ixon ." translation="Estudiamos el perro.">
+        <word id="0" lemma="ochíti" posTag="Nombre" subPosTag="Contable" token="Ochíti"/>
+        <word id="1" token="onannon"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akanwe">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe ERROR"/>
+        <word id="5" lemma="kask" posTag="Onomatopeya" subPosTag="" token="keskáarin ERROR"/>
+        <word id="6" token="ixon"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

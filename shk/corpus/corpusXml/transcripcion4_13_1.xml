@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jakoni boexeketaborin ixon ." translation="Veré si están bien peinados.">
+        <word id="0" lemma="jakonti" lemmaPred="Jakoni" posTag="Verbo" subPosTag="Intransitivo" token="Jakoni">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="boexeketi" lemmaPred="boexeketaborin" posTag="Verbo" subPosTag="Intransitivo" token="boexeketaborin">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+            <affix order="3" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="En oinbanon , jawen texo , jakonrin ixon ." translation="Veré si están limpios: la cara, las orejas, y el cuello.">
+        <word id="0" lemma="ea" lemmaPred="En" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ointi" lemmaPred="oinbanon" posTag="Verbo" subPosTag="Transitivo" token="oinbanon">
+            <affix order="1" text="banon" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jawen" lemmaPred="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="4" lemma="texo" lemmaPred="texo" posTag="Nombre" subPosTag="Parte del cuerpo" token="texo"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jakon" lemmaPred="jakonrin" posTag="Adjetivo" subPosTag="Calificativo" token="jakonrin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="7" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Chopa patsataki sawekana ixon ." translation="Veré si llevan ropa limpia.">
+        <word id="0" lemma="chopa" lemmaPred="Chopa" posTag="Nombre" subPosTag="Contable" token="Chopa"/>
+        <word id="1" lemma="patsáti" lemmaPred="patsataki" posTag="Verbo" subPosTag="Transitivo" token="patsataki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="sawéti" lemmaPred="sawekana" posTag="Verbo" subPosTag="Transitivo" token="sawekana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaton joxo payonki jaá ixon , jan resoikiti , okokasi jan jamoóti ." translation="Veré si tienen pañuelos limpios con que limpiar la nariz, y cubrir la boca cuando tienen tos.">
+        <word id="0" lemma="jato" lemmaPred="Jaton" posTag="Pronombre" subPosTag="Personal" token="Jaton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="joxo" lemmaPred="joxo" posTag="Adjetivo" subPosTag="Calificativo" token="joxo"/>
+        <word id="2" lemma="payon" lemmaPred="payonki" posTag="Nombre" subPosTag="Contable" token="payonki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jati" lemmaPred="jaá" posTag="Verbo" subPosTag="Intransitivo" token="jaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ja" lemmaPred="jan" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="resoikiti" lemmaPred="resoikiti" posTag="Verbo" subPosTag="Intransitivo" token="resoikiti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="okoti" lemmaPred="okokasi" posTag="Verbo" subPosTag="Intransitivo" token="okokasi">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="ja" lemmaPred="jan" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="jamoóti" lemmaPred="jamoóti" posTag="Verbo" subPosTag="Intransitivo" token="jamoóti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="En oinbanon , payomanki resoikikanai ixon ." translation="Veré si usan los pañuelos para limpiarse la nariz.">
+        <word id="0" lemma="ea" lemmaPred="En" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ointi" lemmaPred="oinbanon" posTag="Verbo" subPosTag="Transitivo" token="oinbanon">
+            <affix order="1" text="banon" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="payon" lemmaPred="payomanki" posTag="Nombre" subPosTag="Contable" token="payomanki">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="resoikiti" lemmaPred="resoikikanai" posTag="Verbo" subPosTag="Intransitivo" token="resoikikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

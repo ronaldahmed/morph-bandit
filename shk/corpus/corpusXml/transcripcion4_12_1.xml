@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jainxon en jakon chopa sawea iki ." translation="Me vestí ropa limpia.">
+        <word id="0" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="3" lemma="chopa" posTag="Nombre" subPosTag="No contable" token="chopa"/>
+        <word id="4" lemma="sáweti" posTag="Verbo" subPosTag="Transitivo" token="sawea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainoax ea boexeketa iki nokon boexetinbi ." translation="Me peiné con mi propio peine.">
+        <word id="0" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="boéxeketi" posTag="Verbo" subPosTag="Intransitivo" token="boexeketa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="nokon"/>
+        <word id="5" lemma="boéxeti" posTag="Nombre" subPosTag="Contable" token="boexetinbi">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainxon nokon mentsis en tawea iki ." translation="Me limpié las uñas.">
+        <word id="0" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="nokon"/>
+        <word id="2" lemma="mentsís" posTag="Nombre" subPosTag="Contable" token="mentsis"/>
+        <word id="3" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="weati" posTag="Verbo" subPosTag="Transitivo" token="taweaa">
+            <affix order="1" text="ta" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Yamékiri en potókinshaman xeaa iki ." translation="Romé un buen desayuno.">
+        <word id="0" lemma="yamékiri" posTag="Adverbio" subPosTag="Tiempo" token="Yamékiri"/>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="potóti" posTag="Verbo" subPosTag="Intransitivo" token="potókinshaman">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+            <affix order="2" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="xéati" posTag="Verbo" subPosTag="Intransitivo" token="xeaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ea manokoxota iki , cepillonin ; nokon xeta chokai , ompax bexnaman ." translation="Me limpié los dientes con un cepillo y agua limpia.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="mánokoxoti" posTag="Verbo" subPosTag="Intransitivo" token="manokoxota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="cepillo" posTag="Nombre" subPosTag="Contable" token="cepillonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="nokon"/>
+        <word id="7" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xeta"/>
+        <word id="8" lemma="chokati" posTag="Verbo" subPosTag="Transitivo" token="chokai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="ompax" posTag="Nombre" subPosTag="No contable" token="ompax"/>
+        <word id="11" lemma="bexnan" posTag="Adjetivo" subPosTag="Calificativo" token="bexnaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

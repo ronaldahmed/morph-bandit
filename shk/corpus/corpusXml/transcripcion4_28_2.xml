@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Min cuaderno meran wishawe , min tita axonti jawékishokobo ." translation="En tu cuaderno escibe las cosas que puedes hacer para ayudar a tu mamá.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="tita" posTag="Nombre" subPosTag="Contable" token="tita"/>
+        <word id="7" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékishokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Wishawe , min papa axonti jawékishokobo ." translation="Escribe las cosas que puedes hacer para ayudar a tu papá.">
+        <word id="0" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékishokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Wishawe , min papaisi , min titayoxan axonti jawékishokobo ." translation="Escribe las cosas que puedes hacer para ayudar a tus abuelos.">
+        <word id="0" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papaisi">
+            <affix order="1" text="isi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="titayoxan" posTag="Nombre" subPosTag="Contable" token="titayoxan"/>
+        <word id="7" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékishokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Min cuaderno meran wishawe , min jochi , min chipi , axonti jawékishokobo ." translation="En tu cuaderno escribe las cosas que puedes hacer para ayudar a tus hermanos mayores.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jochi" posTag="Nombre" subPosTag="Contable" token="jochi"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="chípi" posTag="Nombre" subPosTag="Contable" token="chipi"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékishokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Wishawe , min chiobo axonti jawékishokobo ." translation="Escribe las cosas que puedes hacer para tus hermanos menores.">
+        <word id="0" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="chio" posTag="Nombre" subPosTag="Contable" token="chiobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axonti">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékishokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

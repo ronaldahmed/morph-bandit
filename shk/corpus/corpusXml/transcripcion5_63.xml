@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Jáatian Huayna Cápacnin aká iki bakeakin . Jawen jane iká iki Atahualpa ." translation="Huayna Cápac tuvo un hijo que se llamó Atahualpa.">
+        <word id="0" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="Jáatian">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="Huayna" posTag="Nombre Propio" subPosTag="" token="Huayna"/>
+        <word id="2" lemma="Capac" posTag="Nombre Propio" subPosTag="" token="Cápacnin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakeakin">
+            <affix order="2" text="kin" type="Clít. concord. de particip."/>
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="8" lemma="jane" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="11" lemma="Atahualpa" posTag="Nombre Propio" subPosTag="" token="Atahualpa"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Huayna Cápacnin aká iki , Atahualpa Shyribaon jeman iti potakin . Jawen rekenen bake Huáscar , aká iki nete resenenao iti potakin , Cuzco jeman ; jaa bake rabé iká iki reteanani ." translation="Huayna Cápac dejó a Atahualpa el pueblo de los Shyris y a Huáscar, su primer hijo, el imperio del sur cuya capital era el Cuzco; los dos hermanos se pelearon.">
+        <word id="0" lemma="Huayna" posTag="Nombre Propio" subPosTag="" token="Huayna"/>
+        <word id="1" lemma="Capac" posTag="Nombre Propio" subPosTag="" token="Cápacnin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="Atahualpa" posTag="Nombre Propio" subPosTag="" token="Atahualpa"/>
+        <word id="6" lemma="Shyri" posTag="Nombre Propio" subPosTag="" token="Shyribaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jeman" posTag="Nombre" subPosTag="Contable" token="jeman">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="iti" posTag="Verbo Auxiliar" subPosTag="" token="iti"/>
+        <word id="9" lemma="potati" posTag="Verbo" subPosTag="Intransitivo" token="potakin">
+            <affix order="1" text="kin#2" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="12" lemma="reken" posTag="Adjetivo" subPosTag="Calificativo" token="rekenen">
+            <affix order="1" text="en" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="báke" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="14" lemma="Huáscar" posTag="Nombre Propio" subPosTag="" token="Huáscar"/>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="17" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="18" lemma="néte" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="19" lemma="resenena" posTag="Nombre" subPosTag="Contable" token="resenenao">
+            <affix order="1" text="o" type="Clít. nominal"/>
+        </word>
+        <word id="20" lemma="iti" posTag="Verbo Auxiliar" subPosTag="" token="iti"/>
+        <word id="21" lemma="potati" posTag="Verbo" subPosTag="Intransitivo" token="potakin">
+            <affix order="1" text="kin#2" type="Clít. concord. de particip."/>
+        </word>
+        <word id="22" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="23" lemma="Cuzco" posTag="Nombre Propio" subPosTag="" token="Cuzco"/>
+        <word id="24" lemma="jeman" posTag="Nombre" subPosTag="Contable" token="jeman">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="25" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="26" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaa"/>
+        <word id="27" lemma="báke" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="28" lemma="rabé" posTag="Adjetivo" subPosTag="Cuantificador" token="rabé"/>
+        <word id="29" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="30" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="31" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="reteanani">
+            <affix order="1" text="ana#2" type="Sufijo verbal"/>
+            <affix order="2" text="ni" type="Sufijo verbal"/>
+        </word>
+        <word id="32" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jáatian Huáscar iká iki mawati" translation="Huáscar fue muerto.">
+        <word id="0" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="Jáatian">
+            <affix order="1" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="Huáscar" posTag="Nombre Propio" subPosTag="" token="Huáscar"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="mawati" posTag="Verbo" subPosTag="Transitivo" token="mawati"/>
+    </sentence>
+    <sentence id="3" text="Jaskataitian iká iki Españolobo nokoti ." translation="En ese momento llegaron los españoles.">
+        <word id="0" lemma="jaskata" posTag="Adverbio" subPosTag="Tiempo" token="Jaskataitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="español" posTag="Nombre" subPosTag="Contable" token="Españolobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="nokoti" posTag="Verbo" subPosTag="Intransitivo" token="nokoti"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nokóxon Atahualpa retekana iki ." translation="Dieron muerte a Atahualpa.">
+        <word id="0" lemma="nokoti" posTag="Verbo" subPosTag="Transitivo" token="Nokóxon">
+            <affix order="1" text="xon#2" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="Atahualpa" posTag="Nombre Propio" subPosTag="" token="Atahualpa"/>
+        <word id="2" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="retekana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a + iki" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

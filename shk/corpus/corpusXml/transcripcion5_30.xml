@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Rama min shinanti iki , wetsa neten yapan keenribikin ." translation="Hay que pensar en otro día cuando quieras tener pejes otra vez.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="mi" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanti"/>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="6" lemma="neten" posTag="Nombre" subPosTag="Contable" token="neten"/>
+        <word id="7" lemma="yapan" posTag="Nombre" subPosTag="Contable" token="yapan"/>
+        <word id="8" lemma="keenti" posTag="Verbo" subPosTag="Transitivo" token="keenribikin">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="kin#2" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainxonra guardian mia xepoti iki ." translation="También la guardia te puede castigar.">
+        <word id="0" lemma="Jainxon" posTag="Adverbio" subPosTag="Tiempo" token="Jainxonra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="guardia" posTag="Nombre" subPosTag="Contable" token="guardian">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="mi" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="xepoti" posTag="Verbo" subPosTag="Transitivo" token="xepoti"/>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Ikonrake ¡ chai ! iká iki Kosi ." translation="Tienes razón, amigo, le contestó Pepe.">
+        <word id="0" lemma="ikonti" posTag="Nombre" subPosTag="Contable" token="Ikonrake"/>
+        <word id="1" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="2" lemma="chai" posTag="Nombre" subPosTag="Contable" token="chai"/>
+        <word id="3" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosi"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaá kopíra en axonkashosma iki , nin paron , nin iaman , nin weamanbi ." translation="Por eso nunca uso barbasco en los ríos ni en las cochas, ni en las quebradas.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="Jaá"/>
+        <word id="1" lemma="kopi" posTag="Conjunción" subPosTag="Coordinante" token="kopíra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="En" posTag="Pronombre" subPosTag="Personal" token="en"/>
+        <word id="3" lemma="axonti" posTag="Verbo" subPosTag="Transitivo" token="axonkashosma">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="osma" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ni (préstamo)" posTag="Conjunción" subPosTag="Coordinante" token="nin"/>
+        <word id="7" lemma="paro" posTag="Nombre" subPosTag="Contable" token="paron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="ni (préstamo)" posTag="Conjunción" subPosTag="Coordinante" token="nin"/>
+        <word id="10" lemma="iama" posTag="Nombre" subPosTag="Contable" token="iaman">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="ni (préstamo)" posTag="Conjunción" subPosTag="Coordinante" token="nin"/>
+        <word id="13" lemma="weaman" posTag="Nombre" subPosTag="Contable" token="weamanbi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ikaxbi nokon warawasko ea maroai wetsa mákinain . Jainxon koshi raoakanai , noa ramiai jawékishokobo reteti , bií , onan ." translation="Vendo mi barbasco a una fábrica que hace un líquido fuerte para matar los insectos malos.">
+        <word id="0" lemma="ikaxbi" posTag="Adverbio" subPosTag="Manera" token="Ikaxbi"/>
+        <word id="1" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="2" lemma="warawasko" posTag="Nombre" subPosTag="Contable" token="warawasko"/>
+        <word id="3" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="4" lemma="maroti" posTag="Verbo" subPosTag="Transitivo" token="maroai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="6" lemma="makina" posTag="Nombre" subPosTag="Contable" token="mákinain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="joinxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="9" lemma="kóshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="10" token="raoakanai"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="13" lemma="ramiti" posTag="Verbo" subPosTag="Intransitivo" token="ramiai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékishokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="15" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="reteti"/>
+        <word id="16" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="17" lemma="bii" posTag="Nombre" subPosTag="Contable" token="bií"/>
+        <word id="18" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="19" lemma="onon" posTag="Símbolo" subPosTag="" token="onanERROR"/>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

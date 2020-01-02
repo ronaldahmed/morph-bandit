@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Nato kaintoninki jawe keská noa onanmai ?" translation="¿Qué nos enseña este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="nato" lemmaPred="" posTag="Pronombre" subPosTag="Demostrativo" token="Nato"/>
+        <word id="2" lemma="kointo" lemmaPred="kaintoninki" posTag="Nombre" subPosTag="Contable" token="kointoninki">
+            <affix order="1" text="ni" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jawe" lemmaPred="kaintoninki" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="4" lemma="keská" lemmaPred="kaintoninki" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="5" lemma="noa" lemmaPred="kaintoninki" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="onanti" lemmaPred="kaintoninki" posTag="Verbo" subPosTag="Transitivo" token="onanmai">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Tsoaboanki ino piá iki ?" translation="¿Quiénes comieron al tigre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="Tsoaboanki" posTag="Palabra Interrogativa" subPosTag="" token="tsoaboanki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="3" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ino" lemmaPred="Tsoaboanki" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="3" lemma="piti" lemmaPred="Tsoaboanki" posTag="Verbo" subPosTag="Transitivo" token="piá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="Tsoaboanki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Tsoabo ikáki yoiai nato kointonin ?" translation="¿De quiénes habla este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="Tsoaboanki" posTag="Palabra Interrogativa" subPosTag="" token="Tsoabo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="Tsoaboanki" posTag="Verbo" subPosTag="Copulativo" token="ikáki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="yoiti" lemmaPred="Tsoaboanki" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="nato" lemmaPred="Tsoaboanki" posTag="Pronombre" subPosTag="Demostrativo" token="nato"/>
+        <word id="5" lemma="kointo" lemmaPred="Tsoaboanki" posTag="Nombre" subPosTag="Contable" token="kointonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Tsoaki bebon koshi shinanya iká iki ?" translation="¿Quién tenía más poder?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="Tsoaboanki" posTag="Palabra Interrogativa" subPosTag="" token="Tsoaki">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="bebón" lemmaPred="bebón" posTag="Adverbio" subPosTag="Cantidad" token="bebon"/>
+        <word id="3" lemma="koshi" lemmaPred="koshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="4" lemma="shinan" lemmaPred="shinanya" posTag="Adjetivo" subPosTag="Calificativo" token="shinanya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="shinanya" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="shinanya" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Tsoaki ja tarampanin iká iki ?" translation="¿Quién cayó en la trampa?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="Tsoaki" posTag="Palabra Interrogativa" subPosTag="" token="Tsoaki">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ja" lemmaPred="tarampanin" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="3" lemma="tarampanin" lemmaPred="tarampanin" posTag="Nombre" subPosTag="Contable" token="tarampanin"/>
+        <word id="4" lemma="iki" lemmaPred="tarampanin" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

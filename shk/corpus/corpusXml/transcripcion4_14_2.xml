@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="namankiri ikábo : kishi , witax , tae ." translation="inferiores: muslo, pierna y pie.">
+        <word id="0" lemma="naman" lemmaPred="namankiri" posTag="Adverbio" subPosTag="Locación" token="namankiri">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+            <affix order="2" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="ikábo" posTag="Verbo" subPosTag="Copulativo" token="ikábo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="3" lemma="kishi" lemmaPred="kishi" posTag="Nombre" subPosTag="Parte del cuerpo" token="kishi"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="witax" lemmaPred="witax" posTag="Nombre" subPosTag="Parte del cuerpo" token="witax"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="tae" lemmaPred="tae" posTag="Nombre" subPosTag="Parte del cuerpo" token="tae"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainoax noa jaríbake , non bero , non pabíki , non rekin , non jana ." translation="Tenemos también los ojos, las orejas, la nariz, y la lengua.">
+        <word id="0" lemma="jainoax" lemmaPred="Jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jati" lemmaPred="jaríbake" posTag="Verbo" subPosTag="Intransitivo" token="jaríbake">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="bero" lemmaPred="bero" posTag="Nombre" subPosTag="Parte del cuerpo" token="bero"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="pabíki" lemmaPred="jana" posTag="Nombre" subPosTag="Parte del cuerpo" token="pabíki"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="rekin" lemmaPred="rekin" posTag="Nombre" subPosTag="Parte del cuerpo" token="rekin"/>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="jana" lemmaPred="jana" posTag="Nombre" subPosTag="Parte del cuerpo" token="jana"/>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainoaxribi noa jaríbake , non poko ani , non beshé poko , non jointi , non bonxan ." translation="Además tenemos el estómago, los intestinos, el corazón y los pulmones.">
+        <word id="0" lemma="jainoax" lemmaPred="Jainoaxribi" posTag="Conjunción" subPosTag="Coordinante" token="Jainoaxribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jati" lemmaPred="jaríbake" posTag="Verbo" subPosTag="Intransitivo" token="jaríbake">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="poko" lemmaPred="poko" posTag="Nombre" subPosTag="Parte del cuerpo" token="poko"/>
+        <word id="6" lemma="ani" lemmaPred="ani" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="beshé" lemmaPred="beshé" posTag="Adjetivo" subPosTag="Calificativo" token="beshé"/>
+        <word id="10" lemma="poko" lemmaPred="poko" posTag="Nombre" subPosTag="Parte del cuerpo" token="poko"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="jointi" lemmaPred="jointi" posTag="Nombre" subPosTag="Parte del cuerpo" token="jointi"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="16" lemma="bonxan" lemmaPred="bonxan" posTag="Nombre" subPosTag="Parte del cuerpo" token="bonxan"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nato joni jain tsakaabo oinxon , min cuadernonin wishapakewe , jain tsakaabo ; jawen númeroyabi ." translation="Escribe en tu cuaderno las palabras que indican las partes del cuerpo según los números abajo.">
+        <word id="0" lemma="Nato" lemmaPred="Nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="joni" lemmaPred="joninra" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="2" lemma="jain" lemmaPred="jaí" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="3" lemma="tsakati" lemmaPred="tsakaabo" posTag="Verbo" subPosTag="Transitivo" token="tsakaabo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ointi" lemmaPred="oinxon" posTag="Verbo" subPosTag="Transitivo" token="oinxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="mia" lemmaPred="min" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="cuaderno" lemmaPred="cuadernonin" posTag="Nombre" subPosTag="Contable" token="cuadernonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="wishati" lemmaPred="wishapakewe" posTag="Verbo" subPosTag="Transitivo" token="wishapakewe">
+            <affix order="1" text="pake" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="jain" lemmaPred="jaí" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="11" lemma="tsakati" lemmaPred="tsakaabo" posTag="Verbo" subPosTag="Transitivo" token="tsakaabo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="13" lemma="jawen" lemmaPred="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="14" lemma="número" lemmaPred="númeroyabiti" posTag="Nombre" subPosTag="Contable" token="númeroyabi">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Iahiki , jakonmabire ." translation="Los piojos son muy malos.">
+        <word id="0" lemma="Iahiki" lemmaPred="Iahiki" posTag="Símbolo" subPosTag="" token="IahikiERROR"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="jakon" lemmaPred="jakonmabire" posTag="Adjetivo" subPosTag="Calificativo" token="jakonmabires">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

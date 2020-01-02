@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="¿ Jaweranoaxmein nato koin beai ?" translation="¿De dónde vienen las nubes?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweranoax" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranoaxmein">
+            <affix order="1" text="mein" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="nato"/>
+        <word id="3" lemma="koin" posTag="Nombre" subPosTag="Contable" token="koin"/>
+        <word id="4" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="beai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Barinbira akai koinyakin ." translation="Del poder del sol mismo.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Barinbira">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bira" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="koin" posTag="Nombre" subPosTag="Contable" token="koinyakin"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa koin tokoax wishin bos iki keyatai , matsinko ." translation="Esta neblina liviana sube al cielo donde hace más frío.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="koin" posTag="Nombre" subPosTag="Contable" token="koin"/>
+        <word id="2" lemma="tokoti" posTag="Verbo" subPosTag="Intransitivo" token="tokoax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="wishnin" posTag="Símbolo" subPosTag="" token="wishninERROR"/>
+        <word id="4" lemma="bos" lemmaPred="bos" posTag="Símbolo" subPosTag="" token="bos"/>
+        <word id="5" lemma="iki" lemmaPred="bos" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="keyáti" lemmaPred="keyatai" posTag="Verbo" subPosTag="Intransitivo" token="keyatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="matsi" lemmaPred="matsinko" posTag="Nombre" subPosTag="No contable" token="matsinko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Eripanon ¡ papa ! Miara jakonbires maestro iki ." translation="Ay, papá, ¡qué buen maestro eres tú!">
+        <word id="0" lemma="eri" posTag="Interjección" subPosTag="" token="Eripanon">
+            <affix order="1" text="panon" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="2" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="3" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="4" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Miara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="maestro"/>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

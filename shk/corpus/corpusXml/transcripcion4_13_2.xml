@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="En oinbanon , janxbataxxeski okokanai ikí ixon , o payoman jampotaxki okokanai ikí ixon ." translation="Veré si tosen con la boca abierta o cubierta por el pañuelo.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinbanon">
+            <affix order="1" text="banon" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" token="janxbataxxeski"/>
+        <word id="4" lemma="okoti" posTag="Verbo" subPosTag="Intransitivo" token="okokanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" token="ikí"/>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="o" posTag="Conjunción" subPosTag="Coordinante" token="o"/>
+        <word id="9" lemma="payon" posTag="Nombre" subPosTag="Contable" token="payoman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="10" token="jampotaxki"/>
+        <word id="11" lemma="okoti" posTag="Verbo" subPosTag="Intransitivo" token="okokanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="12" token="ikí"/>
+        <word id="13" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Non yora iki kimisha jawékia :" translation="Nuestros cuerpos se componden de tres partes principales:">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yora" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="kimisha" posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="4" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="2" text="Wetsa iki , non mapo ." translation="Una parte se llama la cabeza.">
+        <word id="0" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="Wetsa"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="mapo" posTag="Nombre" subPosTag="Contable" token="mapo"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wetsaiki , non yorabi ." translation="Una parte se llama el tronco.">
+        <word id="0" lemma="wetsa" posTag="Símbolo" subPosTag="" token="WetsaikiERROR"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="yora" posTag="Nombre" subPosTag="Contable" token="yorabi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Wetsa iki , non yora chapatabo ." translation="Una parte se llama las extremidades.">
+        <word id="0" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="Wetsa"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="yora" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="5" lemma="chapata" posTag="Nombre" subPosTag="Contable" token="chapatabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jawe janeki ikana iki ?" translation="¿Cómo se llamaban el hombre y su esposa?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jawe"/>
+        <word id="2" lemma="jane" posTag="Nombre" subPosTag="Contable" token="janeki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jawen teetaiki iká iki ja papa betan jawen bake ?" translation="¿Qué ocupación tenían el padre y el hijo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="2" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teetaiki">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="6" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="7" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="8" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="9" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="10" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Rikankinki jawe bikana iki ?" translation="¿Qué agarraron al echar la red en el agua?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="rikanti" posTag="Verbo" subPosTag="Transitivo" token="Rikankinki">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="3" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bikana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jawekeska jisáki iká iki ja bikana ?" translation="¿Cómo era el ser extraño?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeska" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeska"/>
+        <word id="2" lemma="jisá" posTag="Nombre" subPosTag="Contable" token="jisáki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="6" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bikana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Ja ainbaonki jawe jawéki joni yokata iki ?" translation="¿Qué pidió la sirena al hombre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="2" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbaonki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="4" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="5" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="6" lemma="yokáti" posTag="Verbo" subPosTag="Transitivo" token="yokata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

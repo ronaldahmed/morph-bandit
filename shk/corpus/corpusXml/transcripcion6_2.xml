@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Tsonki peskea iki ?" translation="¿Quién le quebró las alas?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tso" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Tsonki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="pesketi" lemmaPred="peskea" posTag="Verbo" subPosTag="Transitivo" token="peskea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="peskea" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweatinki Inkan peskea iki ?" translation="¿Por qué le quebró las alas el Inca?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweati" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatinki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="inka" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="Inkan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="pesketi" lemmaPred="peskea" posTag="Verbo" subPosTag="Transitivo" token="peskea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="peskea" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Joni betan wasabo iní" translation="El hombre y los monos">
+        <word id="0" lemma="joni" lemmaPred="peskea" posTag="Nombre" subPosTag="Contable" token="Joni"/>
+        <word id="1" lemma="betan" lemmaPred="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="wasa" lemmaPred="wasabo" posTag="Nombre" subPosTag="Contable" token="wasabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="iní" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Jaskaaxon , jonin mishkia iki , jawen nonti ochóchaa kaxon , taxan peníanan ." translation="Después el hombre se puso a anzuelar, sentado sobre la palizada, más o menos poco distante de su canoa.">
+        <word id="0" lemma="jaskáaxon" lemmaPred="iní" posTag="Conjunción" subPosTag="Coordinante" token="Jaskaaxon"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="joni" lemmaPred="jonin" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="míshkti" lemmaPred="mishkia" posTag="Verbo" subPosTag="Transitivo" token="mishkia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="mishkia" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jawen" lemmaPred="mishkia" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="7" lemma="nonti" lemmaPred="nonti" posTag="Nombre" subPosTag="Contable" token="nonti"/>
+        <word id="8" lemma="ochóti" lemmaPred="ochóchaa" posTag="Verbo" subPosTag="Intransitivo" token="ochóchaa">
+            <affix order="1" text="chaa" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="kati" lemmaPred="ochóchaa" posTag="Verbo" subPosTag="Intransitivo" token="kaxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="taxa" lemmaPred="taxan" posTag="Nombre" subPosTag="Contable" token="taxan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="peníti" lemmaPred="peníanan" posTag="Verbo" subPosTag="Intransitivo" token="peníanan">
+            <affix order="1" text="anan" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Tsoa ikáki yoiai nato kointonen ?" translation="¿De qué trata esta narración?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="peníanan" posTag="Palabra Interrogativa" subPosTag="" token="Tsoa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="ikáki" posTag="Verbo" subPosTag="Copulativo" token="ikáki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="yoiti" lemmaPred="ikáki" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="nato" lemmaPred="ikáki" posTag="Pronombre" subPosTag="Demostrativo" token="nato"/>
+        <word id="5" lemma="kointo" lemmaPred="kointonen" posTag="Nombre" subPosTag="Contable" token="kointonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

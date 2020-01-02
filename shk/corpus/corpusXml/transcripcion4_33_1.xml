@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Minki beyamabiresa ?" translation="¿No has traido ni el uno ni el otro?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Minki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="beti" posTag="Verbo" subPosTag="Transitivo" token="beyamabiresa">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Bueno , rama awé maitakin nato pei amichaa bixon ." translation="Entonces hazte una gorrita de estas hojas grandes.">
+        <word id="0" lemma="bueno" posTag="Interjección" subPosTag="" token="Bueno"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="rama"/>
+        <word id="3" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="awé">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="maitiati" posTag="Verbo" subPosTag="Intransitivo" token="maitiakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="nato"/>
+        <word id="6" lemma="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="7" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="anichaa">
+            <affix order="1" text="chaa" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="biti" posTag="Verbo" subPosTag="Intransitivo" token="bixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Iráke ¡ papa !" translation="Gracias, papá.">
+        <word id="0" lemma="iráke" posTag="Interjección" subPosTag="" token="Iráke"/>
+        <word id="1" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="2" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papa"/>
+        <word id="3" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="3" text="Moára ea keenyamai ." translation="Pero ya no las necesito.">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moára">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="keenti" posTag="Verbo" subPosTag="Intransitivo" token="keenyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Barira naí koiman bepoke ." translation="El sol está detrás de una nube grande.">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Barira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="nai" posTag="Nombre" subPosTag="No contable" token="naí"/>
+        <word id="2" lemma="koin" posTag="Nombre" subPosTag="Contable" token="koiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bepoti" posTag="Verbo" subPosTag="Transitivo" token="bepoke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

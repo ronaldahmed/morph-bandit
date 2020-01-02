@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Min escuelaki tawa chikéya iki ?" translation="¿Tiene la escuela paredes de caña?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="tawa" posTag="Nombre" subPosTag="Contable" token="tawa"/>
+        <word id="4" lemma="chiké" posTag="Nombre" subPosTag="Contable" token="chikéya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaa escuela meranki bakebo jaá ?" translation="¿Hay alumnos en la escuela?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="ja" lemmaPred="kebénokotiaakin" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="2" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="3" lemma="meran" posTag="Postposición" subPosTag="" token="meranki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Kikinshaman akin onanwe mia kebénokotiaakin :" translation="Aprende de memoria:">
+        <word id="0" lemma="kikin" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="Kikinshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="4" token="kebénokotiaakin"/>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="3" text="¿ Miarin ? ¿ Miaki jawe keskátanin iki ?" translation="Hola, amigo, ¿qué tal?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Miarin">
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="3" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="4" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Miaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="6" lemma="keskátanin" posTag="Símbolo" subPosTag="" token="keskátaninERROR"/>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jawe keskárin mia ?" translation="¿Cómo estás tú?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jawe"/>
+        <word id="2" lemma="keskárin" posTag="Símbolo" subPosTag="" token="keskárinERROR"/>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="pei" translation="la hoja">
+        <word id="0" lemma="péi" posTag="Nombre" subPosTag="Contable" token="pei"/>
+    </sentence>
+    <sentence id="1" text="jiwi" translation="el tallo">
+        <word id="0" lemma="jíwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+    </sentence>
+    <sentence id="2" text="Baná jawékibo iki taponya , jiwia , peia , joaya , y bimia ." translation="La planta tiene raíz, tallo, hojas, flores y frutos.">
+        <word id="0" lemma="baná" posTag="Nombre" subPosTag="Contable" token="Baná"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="tapón" posTag="Nombre" subPosTag="Contable" token="taponya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jíwi" posTag="Nombre" subPosTag="Contable" token="jiwia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="péi" posTag="Nombre" subPosTag="Contable" token="peia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="jóa" posTag="Nombre" subPosTag="Contable" token="joaya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="y" posTag="Conjunción" subPosTag="Coordinante" token="y"/>
+        <word id="12" lemma="bími" posTag="Nombre" subPosTag="Contable" token="bimia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Baná jawékibo , jainoax jiwi niábo ; ¿ jawen jaweboki non biai ?" translation="¿Qué productos se puedan sacar de las plantas y de los árboles?">
+        <word id="0" lemma="baná" posTag="Nombre" subPosTag="Contable" token="Baná"/>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jainoax" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="4" lemma="jíwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="5" token="niábo"/>
+        <word id="6" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="7" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="8" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="9" lemma="jáwe" posTag="Palabra Interrogativa" subPosTag="" token="jaweboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="10" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="11" lemma="bíti" posTag="Verbo" subPosTag="Transitivo" token="biai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Min shinaman yoiwe , jawen jaweboki jaá ixon ." translation="Di de memoria las partes de la planta.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="shinán" posTag="Nombre" subPosTag="Contable" token="shinaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="yóiti" posTag="Verbo" subPosTag="Transitivo" token="yoiwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="5" lemma="jáwe" posTag="Palabra Interrogativa" subPosTag="" token="jaweboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

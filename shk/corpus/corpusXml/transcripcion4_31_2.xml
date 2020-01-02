@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaa jiwibo paroori nantáke , barin tenainko ." translation="Se voltean las ramas hacia el río donde hay más luz.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="paro" posTag="Nombre" subPosTag="Contable" token="paroori">
+            <affix order="1" text="o" type="Clít. nominal"/>
+            <affix order="2" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="nantáti" posTag="Verbo" subPosTag="Intransitivo" token="nantáke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="bari" posTag="Nombre" subPosTag="Contable" token="barin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="ténati" posTag="Verbo" subPosTag="Intransitivo" token="tenainko">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jawekeskatiki jaskatai ? ¡ Papá !" translation="¿Por qué? papá.">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwekeskati" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jaskáti" posTag="Verbo" subPosTag="Intransitivo" token="jaskatai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="4" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="5" lemma="papa" posTag="Nombre" subPosTag="Contable" token="Papá"/>
+        <word id="6" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="2" text="Jiwira niamai , ni teéyama , ni kirika onanyamai ." translation="Ellos no andan, ni trabajan, ni estudian.">
+        <word id="0" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="Jiwira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="níti" posTag="Verbo" subPosTag="Intransitivo" token="niamai">
+            <affix order="1" text="ama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="4" lemma="téeti" posTag="Verbo" subPosTag="Intransitivo" token="teéyama">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="7" lemma="kírika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="8" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jeeen , enra moa onanke ." translation="Ah, eso ya sé.">
+        <word id="0" lemma="jeeen" posTag="Interjección" subPosTag="" token="Jeeen"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="enra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="4" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jawen tapomanra mai meranoa tsitsiai , jene , jainxon jawen jawékiatibiribi ." translation="Chupan alimentos y agua de la tierra por sus raíces.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="tapón" posTag="Nombre" subPosTag="Contable" token="tapomanra">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="mai" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="3" lemma="meran" posTag="Postposición" subPosTag="" token="meranoa">
+            <affix order="1" text="oa" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="tsítsiti" posTag="Verbo" subPosTag="Transitivo" token="tsitsiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jene" posTag="Nombre" subPosTag="No contable" token="jene"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="jainxon"/>
+        <word id="9" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="10" lemma="jawékiati" posTag="Verbo" subPosTag="Transitivo" token="jawékiatibiribi">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

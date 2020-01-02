@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaskara ompax non ati iki , kobinyakin , jawen chabex mawánon ixon ." translation="Cuando hervimos el agua, los animalitos mueren.">
+        <word id="0" lemma="jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="ompax" lemmaPred="ompax" posTag="Nombre" subPosTag="No contable" token="ompax"/>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ati" lemmaPred="ati" posTag="Verbo" subPosTag="Transitivo" token="ati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="kobinhati" lemmaPred="kobinyakin" posTag="Verbo" subPosTag="Transitivo" token="kobinhakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="jawen" lemmaPred="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="9" lemma="chabex" lemmaPred="chabex" posTag="Nombre" subPosTag="Contable" token="chabex"/>
+        <word id="10" lemma="mawáti" lemmaPred="mawánon" posTag="Verbo" subPosTag="Intransitivo" token="mawánon">
+            <affix order="1" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaskára iketian , jakon iki , ompax kobinyaxon matsiatson xeati ." translation="Es entonces una buena idea tener agua hervida para tomar.">
+        <word id="0" lemma="jaskara" lemmaPred="Jaskára" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iketian" lemmaPred="iketian" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jakon" lemmaPred="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ompax" lemmaPred="ompax" posTag="Nombre" subPosTag="No contable" token="ompax"/>
+        <word id="7" lemma="kobinhati" lemmaPred="kobinyaxon" posTag="Verbo" subPosTag="Transitivo" token="kobinhaxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="matsi" lemmaPred="matsiatson" posTag="Nombre" subPosTag="Contable" token="matsiaton">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ton" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="xeati" lemmaPred="xeati" posTag="Verbo" subPosTag="Transitivo" token="xeati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="¡ Kosi ! Eara moa paxkinyorabireske ." translation="Oye pepe, estoy tan cansado.">
+        <word id="0" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="1" lemma="Kosi" lemmaPred="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosi"/>
+        <word id="2" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="3" lemma="ea" lemmaPred="Eara" posTag="Pronombre" subPosTag="Personal" token="Eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="moa" lemmaPred="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="5" lemma="paxkinti" lemmaPred="paxkinyorabireske" posTag="Verbo" subPosTag="Intransitivo" token="paxkinyorabireske">
+            <affix order="1" text="yora" type="Clít. de posición libre"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+            <affix order="3" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Empari koka pibánon ." translation="Voy a tomar coca.">
+        <word id="0" lemma="ea" lemmaPred="Empari" posTag="Pronombre" subPosTag="Personal" token="enpari">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="pari" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="koka" lemmaPred="koka" posTag="Nombre" subPosTag="Contable" token="koka"/>
+        <word id="2" lemma="piti" lemmaPred="pibánon" posTag="Verbo" subPosTag="Transitivo" token="pibanon">
+            <affix order="1" text="banon" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ikonrake . Tantiparinon awé , ¡ Lukase !" translation="Bueno, Lucas, descansemos.">
+        <word id="0" lemma="Ikonrake" lemmaPred="Ikonrake" posTag="Interjección" subPosTag="" token="Ikonrake"/>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="2" lemma="tantiti" lemmaPred="Tantiparinon" posTag="Verbo" subPosTag="Intransitivo" token="Tantiparinon">
+            <affix order="1" text="pari" type="Clít. de posición libre"/>
+            <affix order="2" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="ati" lemmaPred="awé" posTag="Verbo" subPosTag="Transitivo" token="awé">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="6" lemma="Lukase" lemmaPred="Lukase" posTag="Nombre Propio" subPosTag="" token="Lukase"/>
+        <word id="7" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+</corpus>

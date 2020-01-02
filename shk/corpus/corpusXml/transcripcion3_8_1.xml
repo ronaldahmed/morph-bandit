@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jatian mananxawen , jawetianbi noyayosma ixon oinna jakonyora iká iki ." translation="El motelo se consideraba como el único motelo que había volado, y notó que volar era muy bueno.">
+        <word id="0" lemma="jatian" posTag="Conjunción" subPosTag="Coordinante" token="Jatian"/>
+        <word id="1" lemma="mananxawe" posTag="Nombre" subPosTag="Contable" token="mananxawen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jawetianbi" posTag="Adverbio" subPosTag="Tiempo" token="jawetianbi"/>
+        <word id="4" lemma="noyati" posTag="Verbo" subPosTag="Intransitivo" token="noyayosma">
+            <affix order="1" text="yosma" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonyora">
+            <affix order="1" text="yora" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jatian bakebo ratékana iki , jato patax pakéketian ." translation="Entonces los niños se asustaron al ver al motelo caído cerca a ellos.">
+        <word id="0" lemma="jatian" posTag="Conjunción" subPosTag="Coordinante" token="Jatian"/>
+        <word id="1" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ratéti" posTag="Verbo" subPosTag="Intransitivo" token="ratékana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="6" lemma="patax" posTag="Postposición" subPosTag="" token="patax"/>
+        <word id="7" lemma="pakéti" posTag="Verbo" subPosTag="Intransitivo" token="pakéketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskatax jainres mananxawe , keyónike jawen yoyo ikas kopí , paketax ." translation="Pero no pudo decir nada y así murió el motelo por ser tan hablador.">
+        <word id="0" lemma="jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="jain" posTag="Adverbio" subPosTag="Locación" token="jainres">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="mananxawe" posTag="Nombre" subPosTag="Contable" token="mananxawe"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="keyóti" posTag="Verbo" subPosTag="Intransitivo" token="keyónike">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="yoyo" posTag="Onomatopeya" subPosTag="" token="yoyo"/>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikas">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="kopí" posTag="Conjunción" subPosTag="Subordinante" token="kopí"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="pakéti" posTag="Verbo" subPosTag="Intransitivo" token="paketax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Tsoabo iká yoiarin nato kointonin ?" translation="¿Quiénes intervienen en el cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Tsoa" posTag="Palabra Interrogativa" subPosTag="" token="Tsoabo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiarin">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="5" lemma="kointo" posTag="Nombre" subPosTag="Contable" token="kointonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Wetsa netenki jato betan raenanai jaweraki akana iki ?" translation="¿Qué dijeron los patos un día a su amigo motelo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="Wetsa"/>
+        <word id="2" lemma="nete" posTag="Nombre" subPosTag="Contable" token="netenki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="4" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="5" lemma="raenanti" posTag="Verbo" subPosTag="Intransitivo" token="raenanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="jaweraki" posTag="Palabra Interrogativa" subPosTag="" token="jaweraki"/>
+        <word id="7" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jaweki jasiman piai ?" translation="¿Qué come el paujil?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jaweki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="jasiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweskarainki bachiai ?" translation="¿Dónde pone sus huevos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jaweskarain" posTag="Palabra Interrogativa" subPosTag="" token="Jaweskarainki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="bachiati" posTag="Verbo" subPosTag="Intransitivo" token="bachiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Nexnex" translation="Shansho (hoazín)">
+        <word id="0" lemma="nexnex" posTag="Nombre" subPosTag="Contable" token="Nexnex"/>
+    </sentence>
+    <sentence id="3" text="Nato riki nexnex ." translation="Este es el shansho.">
+        <word id="0" lemma="nato" posTag="Pronombre" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="nexnex" posTag="Nombre" subPosTag="Contable" token="nexnex"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Janra bimi piamai ." translation="Él no come frutas.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Janra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bimi" posTag="Nombre" subPosTag="Contable" token="bimi"/>
+        <word id="2" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piamai">
+            <affix order="1" text="ama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="¿ Jawerato pontérin Lima ?" translation="¿Lima?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="Jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="ponté" lemmaPred="pontérin" posTag="Nombre" subPosTag="Contable" token="pontérin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="Lima" lemmaPred="Lima" posTag="Nombre Propio" subPosTag="" token="Lima"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jawerato pontérin Maioshinya ?" translation="¿Pucallpa?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="Jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="ponté" lemmaPred="pontérin" posTag="Nombre" subPosTag="Contable" token="pontérin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="Maioshinya" lemmaPred="Maioshinya" posTag="Nombre Propio" subPosTag="" token="Maioshinya"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jainoaxki jawe janeribi iki bari pikotiaori ?" translation="¿Qué otro nombre tiene el este?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jainoax" lemmaPred="Jainoaxki" posTag="Conjunción" subPosTag="Coordinante" token="Jainoaxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jawe" lemmaPred="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="3" lemma="jane" lemmaPred="janeribi" posTag="Nombre" subPosTag="Contable" token="janeribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="6" lemma="pikóti" lemmaPred="pikotiaori" posTag="Verbo" subPosTag="Intransitivo" token="pikotaori">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jainoaxki jawe janeribi iki bari jikiaiori ?" translation="¿Qué otro nombre tiene el oeste?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jainoax" lemmaPred="Jainoaxki" posTag="Conjunción" subPosTag="Coordinante" token="Jainoaxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jawe" lemmaPred="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="3" lemma="jane" lemmaPred="janeribi" posTag="Nombre" subPosTag="Contable" token="janeribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="5" lemma="bari" lemmaPred="bari" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="6" lemma="jikiti" lemmaPred="jikiaiori" posTag="Verbo" subPosTag="Intransitivo" token="jikiaiori">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jawetii oxeki jabicho baritia ikai ?" translation="¿Cuántos meses hay en un año?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawetii" lemmaPred="Jawetii" posTag="Palabra Interrogativa" subPosTag="" token="Jawetii"/>
+        <word id="2" lemma="oxe" lemmaPred="oxekí" posTag="Nombre" subPosTag="Contable" token="oxeki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ja" lemmaPred="jabicho" posTag="Pronombre" subPosTag="Personal" token="jabicho">
+            <affix order="1" text="bicho" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="baritia" lemmaPred="baritia" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="5" lemma="iki" lemmaPred="ikti" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

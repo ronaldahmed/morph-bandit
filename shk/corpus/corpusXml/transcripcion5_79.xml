@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaa non kaíati jawékibo , non xobo ochóma itinbiribi keenai ." translation="A los animales domésticos les gusta más vivir cerca de nuestras casas.">
+        <word id="0" lemma="Ja" lemmaPred="kaíati" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="kaíati" lemmaPred="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jawéki" lemmaPred="jawékibo" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="xobo" lemmaPred="xobo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="7" lemma="ochóma" lemmaPred="ochóma" posTag="Adverbio" subPosTag="Locación" token="ochóma"/>
+        <word id="8" lemma="iti" lemmaPred="itinbiribi" posTag="Nombre" subPosTag="Contable" token="itinbiribi">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="keenti" lemmaPred="keenai" posTag="Verbo" subPosTag="Intransitivo" token="keenai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Llama iki Perúainxon kaíakanai jawéki ." translation="La llama es un animal doméstico del Perú.">
+        <word id="0" lemma="Llama" lemmaPred="Llama" posTag="Nombre" subPosTag="Contable" token="Llama"/>
+        <word id="1" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="Perú" lemmaPred="Perúainxon" posTag="Nombre Propio" subPosTag="" token="Perúainxon">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="kaíati" lemmaPred="kaíakanai" posTag="Verbo" subPosTag="Transitivo" token="kaíakanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="jawéki" lemmaPred="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa llama jake matsinkobiribi , bochiki ." translation="Vive en lugares altos y fríos.">
+        <word id="0" lemma="Ja" lemmaPred="Jaa" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="llama" lemmaPred="llama" posTag="Nombre" subPosTag="Contable" token="llama"/>
+        <word id="2" lemma="jati" lemmaPred="jake" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="matsi" lemmaPred="matsinkobiribi" posTag="Nombre" subPosTag="No contable" token="matsinkobiribi">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="bochiki" lemmaPred="bochiki" posTag="Postposición" subPosTag="" token="bochiki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jake manan aninkobo ." translation="Viven en la sierra.">
+        <word id="0" lemma="jati" lemmaPred="Jake" posTag="Verbo" subPosTag="Intransitivo" token="Jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="manan" lemmaPred="manan" posTag="Nombre" subPosTag="Contable" token="manan"/>
+        <word id="2" lemma="ani" lemmaPred="aninko" posTag="Adjetivo" subPosTag="Calificativo" token="aninkobo">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa llama keenai manan ani matsinkobiribi itin ." translation="A la llama le gusta el frío de la sierra.">
+        <word id="0" lemma="Ja" lemmaPred="Jaa" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="llama" lemmaPred="llama" posTag="Nombre" subPosTag="Contable" token="llama"/>
+        <word id="2" lemma="keenti" lemmaPred="keenai" posTag="Verbo" subPosTag="Intransitivo" token="keenai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="manan" lemmaPred="manan" posTag="Nombre" subPosTag="Contable" token="manan"/>
+        <word id="4" lemma="ani" lemmaPred="ani" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="5" lemma="matsi" lemmaPred="matsinkobiribi" posTag="Nombre" subPosTag="No contable" token="matsinkobiribi">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="iti" lemmaPred="itinnra" posTag="Nombre" subPosTag="Contable" token="itin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

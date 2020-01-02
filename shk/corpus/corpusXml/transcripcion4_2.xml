@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jawéboki jaá , non escuela meran ?" translation="¿Qué cosas hay en nuestra escuela?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jawéboki"/>
+        <word id="2" token="jaá"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="non"/>
+        <word id="5" token="escuela"/>
+        <word id="6" token="meran"/>
+        <word id="7" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Non escuela meran jake banka ." translation="En nuestra escuela hay bancos.">
+        <word id="0" token="Non"/>
+        <word id="1" token="escuela"/>
+        <word id="2" token="meran"/>
+        <word id="3" token="jake"/>
+        <word id="4" token="banka"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Non escuela meran jake mesa ." translation="En nuestra escuela hay mesas.">
+        <word id="0" token="Non"/>
+        <word id="1" token="escuela"/>
+        <word id="2" token="meran"/>
+        <word id="3" token="jake"/>
+        <word id="4" token="mesa"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jainoax mapa jaríbake , Perú tsekakana ." translation="Hay un mapa del Perú.">
+        <word id="0" token="Jainoax"/>
+        <word id="1" token="mapa"/>
+        <word id="2" token="jaríbake"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="Perú"/>
+        <word id="5" token="tsekakana"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainoax pizarra jaríbake , wiso ." translation="Hay una pizarra negra.">
+        <word id="0" token="Jainoax"/>
+        <word id="1" token="pizarra"/>
+        <word id="2" token="jaríbake"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="wiso"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="5" text="Jainoax jaríbake maestron yakáti ." translation="Hay también la silla del maestro.">
+        <word id="0" token="Jainoax"/>
+        <word id="1" token="jaríbake"/>
+        <word id="2" token="maestron"/>
+        <word id="3" token="yakáti"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="6" text="¿ Jawéborin jaa jawékibo ?" translation="¿Qué son estas cosas?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jawéborin"/>
+        <word id="2" token="jaa"/>
+        <word id="3" token="jawékibo"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="7" text="Jaábo iki , non escuelashoko meran iká jawékibo ." translation="Estas cosas son el mobilario de nuestra escuelita.">
+        <word id="0" token="Jaábo"/>
+        <word id="1" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" token="non"/>
+        <word id="4" token="escuelashoko"/>
+        <word id="5" token="meran"/>
+        <word id="6" token="iká"/>
+        <word id="7" token="jawékibo"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="8" text="Onanta , jaweki yatana ixon ." translation="¿Qué tiene en la mano?">
+        <word id="0" token="Onanta"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" token="jaweki"/>
+        <word id="3" token="yatana"/>
+        <word id="4" token="ixon"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="9" text="Nato iki memiokea meken ." translation="Esta es la mano izquierda.">
+        <word id="0" token="Nato"/>
+        <word id="1" token="iki"/>
+        <word id="2" token="memiokea"/>
+        <word id="3" token="meken"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

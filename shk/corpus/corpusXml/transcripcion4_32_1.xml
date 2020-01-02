@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="En jen . Jaskara riki ¡ bake !" translation="Sí, es verdad.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jen" posTag="Adverbio" subPosTag="Manera" token="jen"/>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="3" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="Jaskara"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="5" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="6" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="7" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="1" text="Jaábo bixon , baná jawékibaon jawen jawékiatibi akai ." translation="Con la luz del sol y el aire las plantas hacen su propia comida.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaábo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="bíti" posTag="Verbo" subPosTag="Transitivo" token="bixon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="baná" posTag="Nombre" subPosTag="Contable" token="baná"/>
+        <word id="4" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="jawékiati" posTag="Verbo" subPosTag="Transitivo" token="jawékiatibi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Apoo ." translation="¡Qué curiosa!">
+        <word id="0" lemma="apoo" posTag="Interjección" subPosTag="" token="Apoo"/>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Barin neteaki piai ." translation="¡Comer la luz del sol!">
+        <word id="0" lemma="bari" posTag="Nombre" subPosTag="Contable" token="Barin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="néteti" posTag="Verbo" subPosTag="Intransitivo" token="neteaki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Jawekeska noemein iki ?" translation="¿Qué sabor debe tener?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwekeska" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeska"/>
+        <word id="2" lemma="noé" posTag="Adjetivo" subPosTag="Calificativo" token="noemein">
+            <affix order="1" text="mein" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

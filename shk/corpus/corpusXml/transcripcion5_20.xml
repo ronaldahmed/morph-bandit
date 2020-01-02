@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="San Martín pikóni baritia onanwe ." translation="Aprende el año en que nació San Martín.">
+        <word id="0" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="1" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martín"/>
+        <word id="2" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikóni">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="báritia" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="4" lemma="onánti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Perú xabáori pikota nete onanwe ; jaa baritiaribi onanwe ." translation="Aprende el año y el día en que nació la libertad del Perú.">
+        <word id="0" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="1" lemma="xabá" posTag="Nombre" subPosTag="Contable" token="xabáori">
+            <affix order="1" text="o" type="Clít. nominal"/>
+            <affix order="2" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="4" lemma="onánti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="baritia" posTag="Nombre" subPosTag="Contable" token="baritiaribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="onánti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Kikinshaman akin onanwe , San Martiman joi , Perú jakobires iti joi ." translation="Aprende de memoria las palabras con que San Martín proclamó la independencia del Perú.">
+        <word id="0" lemma="kikín" posTag="Adverbio" subPosTag="Manera" token="Kikinshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="onánti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="5" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jói" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="9" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakobires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="10" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="11" lemma="jói" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nato Escudo iki , jaa oinxon non shinanti , Perúain jatí jawéki iká ." translation="El escudo es para hacernos recordar las riquezas del Perú.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="escudo" posTag="Nombre" subPosTag="Contable" token="Escudo"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="7" lemma="shinánti" posTag="Verbo" subPosTag="Transitivo" token="shinanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perúain">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="jatí" posTag="Adjetivo" subPosTag="Cuantificador" token="jatí"/>
+        <word id="11" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="12" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Peruanon Escudo iki kimisha xabáya . Wetsa iki yankon , jain vicuña ikábiribi . Wetsa iki joxo , jain kina jiwi ikábiribi . Wetsa iki joshin , jain koríkinin tita ikábiribi , koríki reokooya ." translation="El escudo peruano tiene tres campos: uno celeste que lleva una vicuña, otro blanco que lleva el árbol de la quina, otro rojo que lleva una cornucopia derramando monedas.">
+        <word id="0" lemma="peruano" posTag="Adjetivo" subPosTag="Calificativo" token="Peruanon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="escudo" posTag="Nombre" subPosTag="Contable" token="Escudo"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="kimisha " posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="4" lemma="xabá" posTag="Nombre" subPosTag="Contable" token="xabáya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="6" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="8" lemma="yankón" posTag="Adjetivo" subPosTag="Calificativo" token="yankon"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="jain" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="11" lemma="vicuña" posTag="Nombre" subPosTag="Contable" token="vicuña"/>
+        <word id="12" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikábiribi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="14" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="15" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="16" lemma="joxo" posTag="Adjetivo" subPosTag="Calificativo" token="joxo"/>
+        <word id="17" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="18" lemma="jain" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="19" lemma="kina" posTag="Nombre" subPosTag="Contable" token="kina"/>
+        <word id="20" lemma="jíwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="21" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikábiribi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="22" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="23" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="24" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="25" lemma="joshín" posTag="Adjetivo" subPosTag="Calificativo" token="joshin"/>
+        <word id="26" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="27" lemma="jain" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="28" lemma="koríki" posTag="Nombre" subPosTag="Contable" token="koríkinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="29" lemma="tita" posTag="Nombre" subPosTag="Contable" token="tita"/>
+        <word id="30" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikábiribi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="31" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="32" lemma="koríki" posTag="Nombre" subPosTag="Contable" token="koríki"/>
+        <word id="33" lemma="réokooya" posTag="Adjetivo" subPosTag="Calificativo" token="reokooya"/>
+        <word id="34" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

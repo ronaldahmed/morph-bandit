@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="En mia akónkin yóiabira , mia jóyamaibake" translation="Aunque te hablé sinceramente, no viniste ayer">
+        <word id="0" lemma="En" posTag="Pronombre" subPosTag="Personal" token="En"/>
+        <word id="1" lemma="mi" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="akonkin" posTag="Adverbio" subPosTag="Manera" token="akónkin"/>
+        <word id="3" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yóiabira">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="mi" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="jóyamaibake">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="iba#2" type="Sufijo verbal"/>
+            <affix order="3" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Akónteman jiwi xáteara sirán aká keska íkai" translation="Cuando el cornegacho come un palo, deja una marca como el corte de un serrucho">
+        <word id="0" lemma="Akóntema" posTag="Nombre" subPosTag="Contable" token="Akónteman">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="2" lemma="xateti" posTag="Verbo" subPosTag="Transitivo" token="xáteara">
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="sira" posTag="Nombre" subPosTag="Contable" token="sirán">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká"/>
+        <word id="5" lemma="keska" posTag="Adjetivo" subPosTag="Calificativo" token="keska"/>
+        <word id="6" lemma="íki" posTag="Verbo" subPosTag="Transitivo" token="íkai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Akoronronki máshi keska páro napon píkotai" translation="Dicen que la yacumama se aparece en medio de el río y que parece una playa">
+        <word id="0" lemma="Akoron" posTag="Nombre" subPosTag="Contable" token="Akoronronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="máshi" posTag="Nombre" subPosTag="Contable" token="máshi"/>
+        <word id="2" lemma="keska" posTag="Postposición" subPosTag="" token="keska"/>
+        <word id="3" lemma="paro" posTag="Nombre" subPosTag="Contable" token="páro"/>
+        <word id="4" lemma="napon" posTag="Postposición" subPosTag="" token="napon"/>
+        <word id="5" lemma="pikoti" posTag="Verbo" subPosTag="Intransitivo" token="píkotai">
+            <affix order="1" text="t" type="Sufijo verbal"/>
+            <affix order="2" text="ai#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Wapóro keskaribironki ákoron yamé píkotai" translation="Dicen que la yacumama también aparece de noche en forma de una lancha">
+        <word id="0" lemma="waporo" posTag="Nombre" subPosTag="Contable" token="Wapóro"/>
+        <word id="1" lemma="keskati" posTag="Verbo" subPosTag="Transitivo" token="keskaribironki">
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="akoron" posTag="Nombre" subPosTag="Contable" token="ákoron"/>
+        <word id="3" lemma="yamé" posTag="Nombre" subPosTag="Contable" token="yamé"/>
+        <word id="4" lemma="pikoti" posTag="Verbo" subPosTag="Intransitivo" token="píkotai">
+            <affix order="1" text="t" type="Sufijo verbal"/>
+            <affix order="2" text="ai#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Nato jónira moa xoá iká iki ; rámara moa óshike ísinax" translation="Antes este hombre era gordo, pero se enfermó y adelgazó">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jónira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="3" lemma="xoa" posTag="Adjetivo" subPosTag="Calificativo" token="xoá"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="7" lemma="Rámara" posTag="Adverbio" subPosTag="Tiempo" token="rámara"/>
+        <word id="8" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="9" lemma="óshiti" posTag="Verbo" subPosTag="Intransitivo" token="óshike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="isinti" posTag="Verbo" subPosTag="Intransitivo" token="ísinax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+    </sentence>
+</corpus>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Ichaxon non tapán níniabira nóaareske" translation="Aunque jalamos la balsa entre varios, nos venció.">
+        <word id="0" lemma="icha" posTag="Adjetivo" subPosTag="Cuantificador" token="Ichaxon">
+            <affix order="1" text="xon#1" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non"/>
+        <word id="2" lemma="tapán" posTag="Nombre" subPosTag="Contable" token="tapán"/>
+        <word id="3" lemma="níniti" posTag="Verbo" subPosTag="Transitivo" token="níniabira">
+            <affix order="1" text="bira" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="aresti" posTag="Verbo" subPosTag="Transitivo" token="nóaareske">
+            <affix order="1" text="noa" type="Prefijo"/>
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Maton jéneketianra , mátoareske" translation="Como ustedes dejaron de esforzarse, les ha vencido.">
+        <word id="0" lemma="Maton" posTag="Pronombre" subPosTag="Personal" token="Maton"/>
+        <word id="1" lemma="jéne" posTag="Verbo" subPosTag="Intransitivo" token="jéneketianra">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Clít. nominal"/>
+            <affix order="4" text="n" type="Sufijo verbal"/>
+            <affix order="5" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="aresti" posTag="Verbo" subPosTag="Transitivo" token="mátoareske">
+            <affix order="1" text="mao" type="Prefijo"/>
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Pirótanin tsínikin non játoaresara sinákanke" translation="Se enojaron porque les vencimos jugando pelota.">
+        <word id="0" lemma="Piróta" posTag="Nombre" subPosTag="Contable" token="Pirótanin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="tsíniti" posTag="Verbo" subPosTag="Transitivo" token="tsínikin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non"/>
+        <word id="3" lemma="aresti" posTag="Verbo" subPosTag="Transitivo" token="játoaresara">
+            <affix order="1" text="jato" type="Prefijo"/>
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="sináti" posTag="Verbo" subPosTag="Intransitivo" token="sinákanke">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="En boéxeti benaabi , moa nokon poishokon boá iká iki ." translation="Busqué al peine pero mi hermanita lo había llevado.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="boéxeti" posTag="Nombre" subPosTag="Contable" token="boéxeti"/>
+        <word id="2" lemma="bénati" posTag="Verbo" subPosTag="Transitivo" token="benaabi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="5" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="nokon"/>
+        <word id="6" lemma="pói" posTag="Nombre" subPosTag="Contable" token="poishokon">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Nokon koton noshita en oina iki . Ikaxbi nokon titan ea onaxonti atipanyamaa iki ." translation="Vi que la camisa estaba arrancada pero mi mamá no tenía tiempo de remendarla.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="Nokon"/>
+        <word id="1" lemma="kotón" posTag="Nombre" subPosTag="Contable" token="koton"/>
+        <word id="2" lemma="nóshiti" posTag="Verbo" subPosTag="Transitivo" token="noshita">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="Ikaxbi"/>
+        <word id="8" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="nokon"/>
+        <word id="9" lemma="tita" posTag="Nombre" subPosTag="Contable" token="titan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="ónati" posTag="Verbo" subPosTag="Transitivo" token="onaxonti">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="atipanti" posTag="Verbo" subPosTag="Intransitivo" token="atipanyamaa">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Nokon mentsis keras iketian nokon borosiko meran en niaa iki ." translation="Debo dejar las manos en los bolsillos porque las uñas están sucias.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="Nokon"/>
+        <word id="1" lemma="mentsís" posTag="Nombre" subPosTag="Contable" token="mentsis"/>
+        <word id="2" lemma="kerás" posTag="Adjetivo" subPosTag="Calificativo" token="keras"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="nokon"/>
+        <word id="5" lemma="borosiko" posTag="Nombre" subPosTag="Contable" token="borosiko"/>
+        <word id="6" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="7" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="níati" posTag="Verbo" subPosTag="Transitivo" token="niaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Enra jakonmatanai shinanai ." translation="Me siento un poco enfermo.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Enra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonmatanai">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Eara keenyamai maestron ointinin ." translation="No quiero que me vea el maestro.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="kéenti" posTag="Verbo" subPosTag="Intransitivo" token="keenyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="maestron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="ointinin">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

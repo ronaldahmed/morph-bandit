@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Nokon wetsa , nokon poi ; jaábo betan noa noianake ." translation="Nosotros los hermanos y las hermanas nos queremos los unos a los otros.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="wetsa" posTag="Nombre" subPosTag="Contable" token="wetsa"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="4" lemma="pói" posTag="Nombre" subPosTag="Contable" token="pói"/>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaábo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="8" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="noiti" posTag="Verbo" subPosTag="Transitivo" token="noianake">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Noa iki jaa rarebobires ." translation="Somos una familia.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="jaa" posTag="Nombre" subPosTag="Contable" token="jaa"/>
+        <word id="3" lemma="rárebo" posTag="Nombre" subPosTag="Contable" token="rarebobires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskara ikax noa noiananke ." translation="Por lo tanto nos queremos los unos a los otros.">
+        <word id="0" lemma="jáskara" posTag="Conjunción" subPosTag="Coordinante" token="Jaskara"/>
+        <word id="1" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="noiti" posTag="Verbo" subPosTag="Transitivo" token="noiananke">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Kikinshaman akin onanwe :" translation="Aprende de memoria:">
+        <word id="0" lemma="kikín" posTag="Adverbio" subPosTag="Manera" token="Kikinshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="4" text="¡ Titaachi ! Mia jiwi iketianmain , min bake ikax min poyaman ea isatax yakáti iki ." translation="Mamita, si tú fueses árbol, tu hijito en tus ramas quisiera ser pájaro.">
+        <word id="0" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="1" lemma="tita" posTag="Nombre" subPosTag="Contable" token="Titaachi">
+            <affix order="1" text="chi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketianmain">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+            <affix order="2" text="main" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="min" posTag="Determinante" subPosTag="Posesivo" token="min"/>
+        <word id="8" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="min" posTag="Determinante" subPosTag="Posesivo" token="min"/>
+        <word id="11" lemma="poyan" posTag="Nombre" subPosTag="Contable" token="poyaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="isáti" posTag="Verbo" subPosTag="Intransitivo" token="isatax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="14" lemma="yakáti" posTag="Verbo" subPosTag="Intransitivo" token="yakáti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="15" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="16" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

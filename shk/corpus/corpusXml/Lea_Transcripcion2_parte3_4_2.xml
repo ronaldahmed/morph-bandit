@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Joaxki iká iki jaton peota taponanmanki tanítoshiti ." translation="Luego vino a sentarse debajo del emponado.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joaxki">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jaton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="peota" posTag="Nombre" subPosTag="Contable" token="peota"/>
+        <word id="5" lemma="tapon" posTag="Símbolo" subPosTag="" token="tapon nanmankiERROR"/>
+        <word id="6" token="tanítoshiti"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Ja tanítoshiketian ronki aká iki , ja ainbaonki aros xanaki beshíakin ." translation="En ese momento la mujer arrojó una olla de arroz caliente sobre el animal extraño, hasta que lo mató.">
+        <word id="0" token="Ja"/>
+        <word id="1" token="tanítoshiketian"/>
+        <word id="2" lemma="ronki" posTag="Símbolo" subPosTag="" token="ronkiERROR"/>
+        <word id="3" token="aká"/>
+        <word id="4" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" token="ja"/>
+        <word id="7" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbaonki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="8" token="aros"/>
+        <word id="9" token="xanaki"/>
+        <word id="10" token="beshíakin"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskáaxonki ainbaonki wiso ino retea iki ." translation="De esa forma la mujer mató a un yana-puma.">
+        <word id="0" lemma="jaskaaxon" posTag="Conjunción" subPosTag="Coordinante" token="Jaskáaxonki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbaonki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="wiso" posTag="Adjetivo" subPosTag="Calificativo" token="wiso"/>
+        <word id="3" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="4" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="retea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskataxki ja ainbo nokokanaki winipaketa iki , ja awana shinanax ." translation="Al verlos, la mujer lloró recordando el susto que había pasado.">
+        <word id="0" lemma="jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskataxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="ja"/>
+        <word id="2" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="3" lemma="nokoti" posTag="Verbo" subPosTag="Transitivo" token="nokokanaki">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+            <affix order="3" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="winiti" posTag="Verbo" subPosTag="Intransitivo" token="winipaketa">
+            <affix order="1" text="paket" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="ja"/>
+        <word id="8" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="awana">
+            <affix order="1" text="wan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="shinanti" posTag="Verbo" subPosTag="Intransitivo" token="shinanax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Tsoabo ikáki yoiai nato kointonin ?" translation="¿De qué trata este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" posTag="Palabra Interrogativa" subPosTag="" token="Tsoabo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikáki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="5" lemma="kointo" posTag="Nombre" subPosTag="Contable" token="kointonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

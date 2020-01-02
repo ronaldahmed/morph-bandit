@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Ramara non akonshaman akin chibanai , rekena baritia ." translation="Estamos en el primer año avanzado.">
+        <word id="0" lemma="rama" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="Ramara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jakon" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="jakonshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="ati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="chibanti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="chibanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," lemmaPred="" posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="rekenti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="rekena">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="baritia" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Ramara non akonshaman akin chibanai , rekena baritia , moa kirika onankin ." translation="Estamos en el primer año avanzado de primaria.">
+        <word id="0" lemma="rama" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="Ramara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jakon" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="jakonshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="ati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="chibanti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="chibanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," lemmaPred="" posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="rekenti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="rekena">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="baritia" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="8" lemma="," lemmaPred="" posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="moa" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="10" lemma="kirika" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="11" lemma="onanti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="onankin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Nato baritianra noa Castellanonin yoyo ikai ." translation="Este año hablaremos más castellano.">
+        <word id="0" lemma="nato" lemmaPred="" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="baritia" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baritianra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="castellano" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="castellanonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="yoyo" lemmaPred="" posTag="Onomatopeya" subPosTag="" token="yoyo"/>
+        <word id="5" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." lemmaPred="" posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nato baritianra jakonchaabiresi noa Castellanonin yoyo ikai , wetsa baritian iká keskáma ." translation="Los alumnos hablaremos más castellano que el año pasado.">
+        <word id="0" lemma="nato" lemmaPred="" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="baritia" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baritianra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jakon" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="jakonchaabiresi">
+            <affix order="1" text="chaa" type="Clít. de posición libre"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+            <affix order="3" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="castellano" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="castellanonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="yoyo" lemmaPred="" posTag="Onomatopeya" subPosTag="" token="yoyo"/>
+        <word id="6" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="," lemmaPred="" posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="wetsa" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="9" lemma="baritia" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baritian">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="keská" lemmaPred="" posTag="Postposición" subPosTag="" token="keskáma">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="12" lemma="." lemmaPred="" posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nonra akonshaman akin onanai , moa rekena baritia chibankin ." translation="Somos alumnos del primer año avanzado de primaria.">
+        <word id="0" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Nonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jakon" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="jakonshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="onanti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="onanai"/>
+        <word id="4" lemma="," lemmaPred="" posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="moa" lemmaPred="" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="6" lemma="rekenti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="rekena">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="baritia" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="8" lemma="chibanti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="chibankin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." lemmaPred="" posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

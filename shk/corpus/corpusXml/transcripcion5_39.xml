@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="¿ Jawe keskáakinki min jawékiayamai ?" translation="Pero ¿por qué no comes algo?">
+        <word id="0" lemma="¿" lemmaPred="" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" token="Jawe"/>
+        <word id="2" lemma="keskáakin" lemmaPred="keskáakinki" posTag="Símbolo" subPosTag="" token="keskáakinkiERROR"/>
+        <word id="3" token="min"/>
+        <word id="4" token="jawékiayamai"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Kokapari akí iitibora en piti benati atipanyamake ." translation="Porque me llevó tanto tiempo hacer la coca que no he tenido tiempo para buscar comida.">
+        <word id="0" lemma="koka" lemmaPred="Kokapari" posTag="Nombre" subPosTag="Contable" token="Kokapari">
+            <affix order="1" text="pari" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" token="akí"/>
+        <word id="2" token="iitibora"/>
+        <word id="3" lemma="ea" lemmaPred="Kokapari" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="piti" lemmaPred="piti" posTag="Nombre" subPosTag="Contable" token="piti"/>
+        <word id="5" lemma="benati" lemmaPred="benati" posTag="Verbo" subPosTag="Transitivo" token="benati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="atipanti" lemmaPred="atipanyamake" posTag="Verbo" subPosTag="Transitivo" token="atipanyamake">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Koka akaxa ea pikastima iki ." translation="Con coca no tendré hambre.">
+        <word id="0" lemma="koka" lemmaPred="Koka" posTag="Nombre" subPosTag="Contable" token="Koka"/>
+        <word id="1" lemma="ati" lemmaPred="akaxá" posTag="Verbo" subPosTag="Transitivo" token="akaxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ea" lemmaPred="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="piti" lemmaPred="pikastima" posTag="Verbo" subPosTag="Transitivo" token="pikastima">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+            <affix order="3" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="En mia ninkáibake yamé basi mia pei chachii iitaitian , moa ea jawetianbiresbira rakáwana ." translation="Sí, te oí machucar las hojas bien tarde anoche cuando yo ya me había acostado.">
+        <word id="0" lemma="ea" lemmaPred="En" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="mia" lemmaPred="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ninkáti" lemmaPred="ninkáibake" posTag="Verbo" subPosTag="Transitivo" token="ninkáibake">
+            <affix order="1" text="iba" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="yamé" lemmaPred="yamé" posTag="Nombre" subPosTag="Contable" token="yamé"/>
+        <word id="4" lemma="basi" lemmaPred="basi" posTag="Adverbio" subPosTag="Tiempo" token="basi"/>
+        <word id="5" lemma="mia" lemmaPred="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="pei" lemmaPred="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="7" lemma="chachiti" lemmaPred="chachii" posTag="Verbo" subPosTag="Transitivo" token="chachii">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="iiti" lemmaPred="iitaitian" posTag="Verbo" subPosTag="Copulativo" token="iitaitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="moa" lemmaPred="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="11" lemma="ea" lemmaPred="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="12" token="jawetianbiresbira"/>
+        <word id="13" token="rakáwana"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kokanran mia jawe koshibi meniti atipanyamake . Chexaitian mia tantimaresai ." translation="Pero la coca no tiene nada de alimento; es una droga.">
+        <word id="0" token="Kokanran"/>
+        <word id="1" token="mia"/>
+        <word id="2" token="jawe"/>
+        <word id="3" token="koshibi"/>
+        <word id="4" token="meniti"/>
+        <word id="5" token="atipanyamake"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" token="Chexaitian"/>
+        <word id="8" token="mia"/>
+        <word id="9" token="tantimaresai"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

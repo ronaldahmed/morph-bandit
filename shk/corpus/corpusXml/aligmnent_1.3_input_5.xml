@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Aínbaonra jawen chitónti ámikan pókoai" translation="La mujer tiñe su pampanilla con el tinte de cagüena">
+        <word id="0" lemma="Aínbo" posTag="Nombre" subPosTag="Contable" token="Aínbaonra">
+            <affix order="1" text="on" type="Clít. de posición libre"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="Jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="2" lemma="chitónti" posTag="Nombre" subPosTag="Contable" token="chitónti"/>
+        <word id="3" lemma="ámikan" posTag="Nombre" subPosTag="Contable" token="ámikan"/>
+        <word id="4" lemma="pókoti" posTag="Verbo" subPosTag="Transitivo" token="pókoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Imirianra ámikan ewa ícha yóikanai" translation="Dicen que en Imiría abundan las itaúbas">
+        <word id="0" lemma="Imiria" posTag="Nombre" subPosTag="Contable" token="Imirianra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ámikan" posTag="Nombre" subPosTag="Contable" token="ámikan"/>
+        <word id="2" lemma="ewa" posTag="Adjetivo" subPosTag="Calificativo" token="ewa"/>
+        <word id="3" lemma="ícha" posTag="Adjetivo" subPosTag="Cuantificador" token="ícha"/>
+        <word id="4" lemma="yóiti" posTag="Verbo" subPosTag="Transitivo" token="yóikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Nato kakataibo jonira chiponkiax joke" translation="Este hombre kakataibo ha llegado de río abajo">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="kakataibo" posTag="Nombre" subPosTag="Contable" token="kakataibo"/>
+        <word id="2" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="chiponki" posTag="Adverbio" subPosTag="Locación" token="chiponkiax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="joke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

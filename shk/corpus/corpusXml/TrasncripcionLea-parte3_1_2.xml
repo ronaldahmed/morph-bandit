@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Jasin riki piti ." translation="Es comestible.">
+        <word id="0" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasin"/>
+        <word id="1" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="piti" posTag="Nombre" subPosTag="No contable" token="piti"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jasinra niai main ." translation="El paujil anda por el suelo.">
+        <word id="0" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasinra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="niti" posTag="Verbo" subPosTag="Intransitivo" token="niai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="mai" posTag="Nombre" subPosTag="Contable" token="main">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaara niai main ." translation="Anda por el suelo.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="niti" posTag="Verbo" subPosTag="Intransitivo" token="niai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="mai" posTag="Nombre" subPosTag="Contable" token="main">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jasiman bero riki maxkoshoko ." translation="Los ojos del paujil son muy pequeños.">
+        <word id="0" lemma="jasin" posTag="Nombre" subPosTag="Contable" token="Jasiman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="bero" posTag="Nombre" subPosTag="Contable" token="bero"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="maxko" posTag="Adjetivo" subPosTag="Calificativo" token="maxkoshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jawen bero riki maxkoshoko ." translation="Sus ojos son muy pequeños.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="bero" posTag="Nombre" subPosTag="Contable" token="bero"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="maxko" posTag="Adjetivo" subPosTag="Calificativo" token="maxkoshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

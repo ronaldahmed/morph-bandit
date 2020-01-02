@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Nato bakénra jawen titán chómo ríshkikin tan arike" translation="Este niño golpeó la tinaja de su mamá, haciéndola sonar de súbito.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="baké" posTag="Nombre" subPosTag="Contable" token="bakénra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="Jawen" posTag="Adverbio" subPosTag="Tiempo" token="jawen"/>
+        <word id="3" lemma="titá" posTag="Nombre" subPosTag="Contable" token="titán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="chómo" posTag="Nombre" subPosTag="Contable" token="chómo"/>
+        <word id="5" lemma="ríshkiti" posTag="Verbo" subPosTag="Transitivo" token="ríshkikin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="tan" posTag="Onomatopeya" subPosTag="" token="tan"/>
+        <word id="7" lemma="ariti" posTag="Verbo" subPosTag="Transitivo" token="arike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Aínbaonronki arós kobína xanánki wíso ino rachíxon rétenike" translation="Cuentan que en la antigüedad una mujer mató a un yanapuma arrojándole arroz cocido y caliente.">
+        <word id="0" lemma="aínbo" posTag="Nombre" subPosTag="Contable" token="Aínbaonronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="arós" posTag="Nombre" subPosTag="No contable" token="arós"/>
+        <word id="2" lemma="kobínti" posTag="Adjetivo" subPosTag="Calificativo" token="kobína"/>
+        <word id="3" lemma="xanán" posTag="Adjetivo" subPosTag="Calificativo" token="xanánki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="wíso" posTag="Adjetivo" subPosTag="Calificativo" token="wíso"/>
+        <word id="5" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="6" lemma="rachí" posTag="Verbo" subPosTag="Transitivo" token="rachíxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="réteti" posTag="Verbo" subPosTag="Transitivo" token="rétenike">
+            <affix order="1" text="ni" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Moátianronki asápaninki chorónkin jóni rétenike" translation="Cuentan que en la antigüedad un paco mató a un hombre saltándole encima desde el agua.">
+        <word id="0" lemma="Moátian" posTag="Adverbio" subPosTag="Tiempo" token="Moátianronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="asápa" posTag="Nombre" subPosTag="Contable" token="asápaninki">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="chorónti" posTag="Verbo" subPosTag="Intransitivo" token="chorónkin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="4" lemma="réteti" posTag="Verbo" subPosTag="Transitivo" token="rétenike">
+            <affix order="1" text="ni" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="xeni botíria" translation="una botella de aceite.">
+        <word id="0" lemma="xeni" posTag="Nombre" subPosTag="Contable" token="xeni"/>
+        <word id="1" lemma="botíria" posTag="Nombre" subPosTag="Contable" token="botíria"/>
+    </sentence>
+    <sentence id="4" text="Asókarora bátaira iki" translation="El azúcar es muy dulce.">
+        <word id="0" lemma="Asókaro" posTag="Nombre" subPosTag="No contable" token="Asókarora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="báta" posTag="Adjetivo" subPosTag="Calificativo" token="bátaira">
+            <affix order="1" text="ira" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="iki"/>
+    </sentence>
+</corpus>

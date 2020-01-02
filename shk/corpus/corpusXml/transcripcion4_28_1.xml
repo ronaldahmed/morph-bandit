@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Nato meken ani mapo , bachin maroke ." translation="Este dedo compró un huevo.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="mekén" posTag="Nombre" subPosTag="Contable" token="meken"/>
+        <word id="2" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="3" lemma="mapo" posTag="Nombre" subPosTag="Contable" token="mapo"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="bachi" posTag="Nombre" subPosTag="Contable" token="bachin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="mároti" posTag="Verbo" subPosTag="Transitivo" token="maroke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Nato metotinin joake ." translation="Este lo cocinó.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="métotinin" posTag="Nombre" subPosTag="Contable" token="metotinin"/>
+        <word id="2" lemma="jóati" posTag="Verbo" subPosTag="Transitivo" token="joake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Naton tashin ake ." translation="Este le echó sal.">
+        <word id="0" lemma="nato" posTag="Pronombre" subPosTag="Demostrativo" token="Naton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="tashín" posTag="Nombre" subPosTag="No contable" token="tashin"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Copulativo" token="ake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Naton tanake ." translation="Este lo probó.">
+        <word id="0" lemma="nato" posTag="Pronombre" subPosTag="Demostrativo" token="Naton">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="tánati" posTag="Verbo" subPosTag="Transitivo" token="tanake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nato meken chinitaton pike ." translation="Y este lo comió.">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="mekén" posTag="Nombre" subPosTag="Contable" token="mekenERROR"/>
+        <word id="2" lemma="chi" posTag="Onomatopeya" subPosTag="" token="chinitatonERROR"/>
+        <word id="3" token="pike"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

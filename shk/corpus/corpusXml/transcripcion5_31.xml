@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaa warawasko bixon jakon rao akanai ." translation="Del barbasco se puede hacer un insecticida bueno.">
+        <word id="0" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="Jaa"/>
+        <word id="1" lemma="warawasko" posTag="Nombre" subPosTag="Contable" token="warawasko"/>
+        <word id="2" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bixon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="raoaka" posTag="Símbolo" subPosTag="" token="raoakaERROR"/>
+        <word id="5" lemma="akanti" posTag="Símbolo" subPosTag="" token="akanaiERROR"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa kopíra warawasko banaax ea maroai ." translation="Por esta razón siembro y vendo el barbasco.">
+        <word id="0" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="Jaa"/>
+        <word id="1" lemma="kopi" posTag="Conjunción" subPosTag="Coordinante" token="kopíra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="warawasko" posTag="Nombre" subPosTag="Contable" token="warawasko"/>
+        <word id="3" lemma="banati" posTag="Verbo" subPosTag="Transitivo" token="banaax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="5" lemma="maroti" posTag="Verbo" subPosTag="Transitivo" token="maroai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Min cuaderno meran jaa keskáakin wishawe , min yoyo awana xoxoai jawékibo ." translation="En tu cuaderno dibuja las plantas cuyos nombres has leído en este cuento.">
+        <word id="0" lemma="mi" posTag="Determinante" subPosTag="Posesivo" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Adverbio" subPosTag="Locación" token="meran"/>
+        <word id="3" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="jaa"/>
+        <word id="4" lemma="keskati" posTag="Verbo" subPosTag="Transitivo" token="keskáakin">
+            <affix order="1" text="kin#2" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="mi" posTag="Determinante" subPosTag="Posesivo" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="yoyoawana" posTag="Símbolo" subPosTag="" token="yoyoERROR"/>
+        <word id="9" lemma="YOYOAWANA" posTag="Símbolo" subPosTag="" token="awanaERROR"/>
+        <word id="10" lemma="xoxoti" posTag="Verbo" subPosTag="Intransitivo" token="xoxoai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Jawekeskáaxonki non yomerai iki nií meranoa jawékibo ?" translation="¿Cómo cazamos los animales silvestres?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawekeská" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskáaxonki">
+            <affix order="1" text="xon#1" type="Clít. concord. de particip."/>
+            <affix order="1" text="ki#1" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="3" lemma="yomerati" posTag="Verbo" subPosTag="Transitivo" token="yomerai">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="nii" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="6" lemma="meran" posTag="Postposición" subPosTag="" token="meranoa">
+            <affix order="1" text="noa" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Min cuaderno meran wishawe , jawekeskaratonki non akai iki ixon ." translation="Escribe en tu cuaderno lo que usamos para cazar los animales silvestres.">
+        <word id="0" lemma="mi" posTag="Determinante" subPosTag="Posesivo" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Adverbio" subPosTag="Locación" token="meran"/>
+        <word id="3" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jawekeska" posTag="Adverbio" subPosTag="Manera" token="jawekeskaratonki">
+            <affix order="2" text="ton" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="7" token="akai"/>
+        <word id="8" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" token="ixon"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

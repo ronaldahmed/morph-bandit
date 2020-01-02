@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Atapara noa keenai piti ." translation="La gallina nos sirve de comida.">
+        <word id="0" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="Atapara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="2" lemma="keenti" posTag="Verbo" subPosTag="Transitivo" token="keenai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="piti"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Atapaninribi bachiai ." translation="La gallina también pone huevos.">
+        <word id="0" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="Atapaninribi">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="bachi ati" posTag="Verbo" subPosTag="Transitivo" token="bachiai"/>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa bachi iki jakon piti ." translation="Los huevos son buenos para comer.">
+        <word id="0" lemma="jaa" posTag="Verbo" subPosTag="Transitivo" token="Jaa"/>
+        <word id="1" lemma="bachi" posTag="Nombre" subPosTag="Contable" token="bachi"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="piti"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Atapaninra xena piai , non baná ramiai xenabo ." translation="La gallina come los insectos que dañan las plantas de nuestras chacras.">
+        <word id="0" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="Atapaninra">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="xena" posTag="Nombre" subPosTag="Contable" token="xena"/>
+        <word id="2" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="5" lemma="bana" posTag="Nombre" subPosTag="Contable" token="baná"/>
+        <word id="6" lemma="ramiti" posTag="Verbo" subPosTag="Intransitivo" token="ramiai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="xena" posTag="Nombre" subPosTag="Contable" token="xenabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Koman ewaki non ináaxon kaíai ." translation="¿Es la perdiz una ave doméstica?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Koman ewa" posTag="Nombre" subPosTag="Contable" token="Koman">
+            <affix order="1" text="ki#1" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="koman ewaki" posTag="Nombre" subPosTag="Contable" token="ewakI"/>
+        <word id="3" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="non"/>
+        <word id="4" lemma="inaati" posTag="Verbo" subPosTag="Transitivo" token="ináaxon">
+            <affix order="1" text="xon#2" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="kaiti" posTag="Verbo" subPosTag="Transitivo" token="kaíai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

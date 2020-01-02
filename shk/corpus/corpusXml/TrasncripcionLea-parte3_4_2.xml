@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+	<lastSentence>0</lastSentence>
+    <sentence id="0" text="Ikaxbi payari riki joxo ." translation="Sin embargo la arahuana es blanca.">
+        <word id="0" lemma="ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="Ikaxbi"/>
+        <word id="1" lemma="payari" posTag="Nombre" subPosTag="Contable" token="payari"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="joxo" posTag="Adjetivo" subPosTag="Calificativo" token="joxo"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jawen jana riki xakiti keská ." translation="Su lengua es como un rallo.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="jana" posTag="Nombre" subPosTag="Contable" token="jana"/>
+        <word id="2" lemma="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="3" lemma="xakiti" posTag="Nombre" subPosTag="Contable" token="xakiti"/>
+        <word id="4" lemma="keská" posTag="Postposición" subPosTag="Espacial" token="keská"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Ja riki pian tsakati ." translation="Se pesca con flecha.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="riki" posTag="Verbo Auxiliar" subPosTag="" token="riki"/>
+        <word id="2" lemma="pia" posTag="Nombre" subPosTag="Contable" token="pian">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="tsakati" posTag="Verbo" subPosTag="Transitivo" token="tsakati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Ikaxbira ja maxko iki . Wametio anima ." translation="Sin embargo es pequeña. No como el paiche.">
+        <word id="0" lemma="ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="Ikaxbira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="ja"/>
+        <word id="2" lemma="maxko" posTag="Adjetivo" subPosTag="Calificativo" token="maxko"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="wame" posTag="Nombre" subPosTag="Contable" token="Wametio">
+            <affix order="1" text="tio" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="anima">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Jawenki payari yomerati iki ?" translation="¿Con qué se pesca la arahuana?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="Jawenki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="payari" posTag="Nombre" subPosTag="Contable" token="payari"/>
+        <word id="3" lemma="yomerati" posTag="Verbo" subPosTag="Transitivo" token="yomerati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

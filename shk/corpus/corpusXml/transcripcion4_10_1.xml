@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Nokon titara hen wai orokiinai ." translation="Ayudo a mi mamá a cultivar la chacra.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="tita" posTag="Nombre" subPosTag="Contable" token="titara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ERROR" posTag="Símbolo" subPosTag="" token="henERROR"/>
+        <word id="3" lemma="wai" posTag="Nombre" subPosTag="Contable" token="wai"/>
+        <word id="4" lemma="oroti" posTag="Verbo" subPosTag="Transitivo" token="orokiinai">
+            <affix order="1" text="kiin" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Nokon paparibi en yomerakinai ." translation="Ayudo a mi papá a buscar peje.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="papa" posTag="Nombre" subPosTag="Contable" token="paparibi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="yómerati" posTag="Verbo" subPosTag="Transitivo" token="yomerakinai">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Non maestro teetai non escuela meran ." translation="El maestro trabaja en nuestra escuela.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="maestro"/>
+        <word id="2" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teetai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="5" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Earibi teetai , escuela meran ." translation="Yo trabajo en la escuela también.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Earibi">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teetai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="4" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="En onanai jakon bake pikónoxon , non jema servinti ." translation="Aprendo a ser buen hijo de la Patria.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="En">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="3" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="4" lemma="pikoti" posTag="Verbo" subPosTag="Transitivo" token="pikónoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jema" posTag="Nombre" subPosTag="Contable" token="jema"/>
+        <word id="8" lemma="servinti" posTag="Adjetivo" subPosTag="Calificativo" token="servinti"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

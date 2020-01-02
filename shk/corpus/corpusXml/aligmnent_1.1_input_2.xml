@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Papán piára sarámpinin ikax áko banéke" translation="El sobrino de papá, tuvo sarampión y se adelgazó">
+        <word id="0" lemma="Papá" posTag="Nombre" subPosTag="Contable" token="Papán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="pia" posTag="Nombre" subPosTag="Contable" token="piára">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="sarampi" posTag="Nombre" subPosTag="No contable" token="sarámpinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikax">
+            <affix order="1" text="ax#1" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="áko" posTag="Adjetivo" subPosTag="Calificativo" token="áko"/>
+        <word id="5" lemma="baneti" posTag="Verbo" subPosTag="Transitivo" token="banéke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Ipo máwatax áko bánetara poínkoskon píai" translation="El gallinazo come las carachamas muertas y resecas">
+        <word id="0" lemma="ipo" posTag="Nombre" subPosTag="Contable" token="Ipo"/>
+        <word id="1" lemma="mawati" posTag="Verbo" subPosTag="Transitivo" token="máwatax">
+            <affix order="1" text="t" type="Sufijo verbal"/>
+            <affix order="2" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="áko" posTag="Adjetivo" subPosTag="Calificativo" token="áko"/>
+        <word id="3" lemma="baneti" posTag="Verbo" subPosTag="Transitivo" token="bánetara">
+            <affix order="1" text="ta" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="poínkosko" posTag="Nombre" subPosTag="Contable" token="poínkoskon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="píai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Káchio kakínra ochítinin manánxawe áko mérake , moa inón piá . ja biáxa pápa rároke jíria íti shínanax" translation="Al ir al monte, el perro encontró un motelo vacío que un tigre había comido; y al cogerlo, papá se alegró, al pensar que todavía estaba vivo">
+        <word id="0" lemma="káchio" posTag="Adverbio" subPosTag="Locación" token="Káchio"/>
+        <word id="1" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kakínra">
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+            <affix order="1" text="kin#2" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="ochiti" posTag="Nombre" subPosTag="Contable" token="ochítinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="manánxawe" posTag="Nombre" subPosTag="Contable" token="manánxawe"/>
+        <word id="4" lemma="áko" posTag="Adjetivo" subPosTag="Calificativo" token="áko"/>
+        <word id="5" lemma="merati" posTag="Verbo" subPosTag="Transitivo" token="mérake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="8" lemma="ino" posTag="Nombre" subPosTag="Contable" token="inón">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piá">
+            <affix order="1" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="ja"/>
+        <word id="12" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="biáxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a#4" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="pápa" posTag="Nombre" subPosTag="Contable" token="pápa"/>
+        <word id="14" lemma="rároti" posTag="Verbo" subPosTag="Transitivo" token="rároke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="15" lemma="jíria" posTag="Adjetivo" subPosTag="Calificativo" token="jíria"/>
+        <word id="16" lemma="iti" posTag="Verbo" subPosTag="Intransitivo" token="íti"/>
+        <word id="17" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shínanax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Nato aínbora jakóma shinánya iki ; paránta ákora ea menike" translation="Esta mujer es mala, porque me dió un plátano sin pulpa">
+        <word id="0" lemma="nato" posTag="Determinante" subPosTag="Demostrativo" token="Nato"/>
+        <word id="1" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="aínbora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jakoma" posTag="Adjetivo" subPosTag="Calificativo" token="jakóma"/>
+        <word id="3" lemma="shinan" posTag="Adjetivo" subPosTag="Calificativo" token="shinánya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" lemma="paránta" posTag="Nombre" subPosTag="Contable" token="paránta"/>
+        <word id="7" lemma="ako" posTag="Nombre" subPosTag="Contable" token="ákora">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="8" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="9" lemma="méniti" posTag="Verbo" subPosTag="Transitivo" token="menike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Noa akómpanan nátexara xetán jími béai" translation="Cuando la cascabel nos muerde, nos sale sangre por las encías">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Noa"/>
+        <word id="1" lemma="akompana" posTag="Nombre" subPosTag="Contable" token="akómpanan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="natexti" posTag="Verbo" subPosTag="Transitivo" token="nátexara">
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+            <affix order="1" text="a#4" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="xeta" posTag="Nombre" subPosTag="Contable" token="xetán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jími" posTag="Nombre" subPosTag="No contable" token="jími"/>
+        <word id="5" lemma="beti" posTag="Verbo" subPosTag="Transitivo" token="béai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

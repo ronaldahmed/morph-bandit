@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Joyamarai Teniente ." translation="No viene el Teniente Gobernador.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joyamarai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="teniente" posTag="Nombre" subPosTag="Contable" token="Teniente"/>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Escuela oiniki wetsa apo joyamai ?" translation="¿Viene el Inspector de Educación Pública?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="iskoira" posTag="Nombre" subPosTag="Contable" token="Iskoira"/>
+        <word id="2" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oiniki">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="wetsa" posTag="Determinante" subPosTag="Cuantificador" token="wetsa"/>
+        <word id="4" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="5" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Joyamarai escuela oini ." translation="No viene el Inspector de Educación Pública.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joyamarai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="2" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oini">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Non jema koshiaa joniki joyamai ?" translation="¿Viene el jefe del pueblo?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Posesivo" token="Non"/>
+        <word id="2" lemma="jema" posTag="Nombre" subPosTag="Contable" token="jema"/>
+        <word id="3" lemma="koshiati" posTag="Verbo" subPosTag="Transitivo" token="koshiaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joniki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Joyamarai ." translation="No viene.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joyamarai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

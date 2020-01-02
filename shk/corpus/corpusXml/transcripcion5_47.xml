@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaára matsin iamai , kextó rania ikax ." translation="No siente el frío porque tiene mucha lana.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaára">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="matsi" posTag="Nombre" subPosTag="No contable" token="matsin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iti" posTag="Verbo" subPosTag="Transitivo" token="iamai">
+            <affix order="1" text="áma" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="kextó" posTag="Adjetivo" subPosTag="Calificativo" token="kextó"/>
+        <word id="5" lemma="rani" posTag="Nombre" subPosTag="No contable" token="rania">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa llama iki jakon jawéki ." translation="La llama es un animal útil.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="llama" posTag="Nombre" subPosTag="Contable" token="llama"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="4" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jawen ibonra biai jawen xoma , jawen nami , jawen bichi ." translation="Su dueño aprovecha su leche, su carne y su cuero.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="ibo" posTag="Nombre" subPosTag="Contable" token="ibonra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="bíti" posTag="Verbo" subPosTag="Transitivo" token="biai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="4" lemma="xoma" posTag="Nombre" subPosTag="Contable" token="xoma"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="7" lemma="nami" posTag="Nombre" subPosTag="No contable" token="nami"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="10" lemma="bichi" posTag="Nombre" subPosTag="No contable" token="bichi"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jainxonribi biai jawen rani , jaa risbíanoxon , sabánoanoxon y tariati ." translation="Da también lana de la que su dueño hace sogas, frazadas y ropa.">
+        <word id="0" lemma="jainxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="bíti" posTag="Verbo" subPosTag="Transitivo" token="biai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="rani" posTag="Nombre" subPosTag="No contable" token="rani"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="risbíati" posTag="Verbo" subPosTag="Transitivo" token="risbíanoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="sabánoati" posTag="Verbo" subPosTag="Transitivo" token="sabánoanoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="y" posTag="Conjunción" subPosTag="Coordinante" token="y"/>
+        <word id="10" lemma="tariati" posTag="Verbo" subPosTag="Transitivo" token="tariati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainxonribi jaa ibon iwe jawékibo boxonai ." translation="Además la llama sirve a su dueño porque lleva cargas.">
+        <word id="0" lemma="jainxon" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="ibo" posTag="Nombre" subPosTag="Contable" token="ibon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boxonai">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

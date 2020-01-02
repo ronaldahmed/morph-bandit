@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jawetianbi non wetsa jonibires osantima iki ; ni jakonmai yoyo itima iki ." translation="Nunca nos reímos de otra persona, ni hablamos mal de ella.">
+        <word id="0" lemma="jáwetianbi" posTag="Adverbio" subPosTag="Tiempo" token="Jawetianbi"/>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="3" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="osanti" posTag="Verbo" subPosTag="Transitivo" token="osantima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="7" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="8" lemma="jakonmaati" lemmaPred="jakonmai" posTag="Verbo" subPosTag="Transitivo" token="jakonmaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="yoyo" posTag="Interjección" subPosTag="" token="yoyo"/>
+        <word id="10" lemma="iti" lemmaPred="itima" posTag="Verbo" subPosTag="Copulativo" token="itima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="iki" lemmaPred="itima" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Wetsa joni betan iíkin , noa kanoxompari non yoiti iki : Ea kapan ikí ." translation="Cuando debemos irnos decimos &quot;Permiso&quot; a las otras personas con quienes estamos.">
+        <word id="0" lemma="wetsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="2" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="3" lemma="iíti" posTag="Verbo" subPosTag="Copulativo" token="iíkin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="kati" lemmaPred="kanoxompari" posTag="Verbo" subPosTag="Intransitivo" token="kanoxompari">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+            <affix order="2" text="pari" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="10" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="11" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="kati" lemmaPred="kapan" posTag="Verbo" subPosTag="Intransitivo" token="kapan">
+            <affix order="1" text="pan" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="iki" lemmaPred="kapan" posTag="Verbo Auxiliar" subPosTag="" token="ikí">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Kikinshaman akin esé onanwe ." translation="Practica estas reglas de cortesía con otros.">
+        <word id="0" lemma="kikín" posTag="Adverbio" subPosTag="Manera" token="Kikinshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="esé" posTag="Nombre" subPosTag="Contable" token="esé"/>
+        <word id="3" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Min kaibaon mi esearibi onanwe ." translation="También practicas las reglas de cortesía de tu tribu.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="kaibo" posTag="Nombre" subPosTag="Contable" token="kaibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="mi" lemmaPred="mi" posTag="Pronombre" subPosTag="Personal" token="mi"/>
+        <word id="3" lemma="eseti" lemmaPred="esearibi" posTag="Verbo" subPosTag="Transitivo" token="esearibi">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Noara akinananai ." translation="Nos ayudamos unos a otros.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Noara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="akinti" posTag="Verbo" subPosTag="Transitivo" token="akinananai">
+            <affix order="1" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

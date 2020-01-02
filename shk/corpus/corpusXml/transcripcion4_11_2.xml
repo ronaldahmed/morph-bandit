@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Jawerato bakeboki iká ? :" translation="¿Cuáles alumnos dicen?:">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakeboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="1" text="Yantanmabishoko ea rakáibake ." translation="Anoche me acosté temprano.">
+        <word id="0" lemma="yantan" posTag="Adverbio" subPosTag="Tiempo" token="Yantanmabishoko">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="rakati" posTag="Verbo" subPosTag="Intransitivo" token="rakáibake">
+            <affix order="1" text="iba" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Rama yamékirishaman ea jishtenke ." translation="Entonces esta mañana me levanté temprano.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Rama"/>
+        <word id="1" lemma="yamekiri" posTag="Adverbio" subPosTag="Tiempo" token="yamékirishaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jishténti" posTag="Verbo" subPosTag="Transitivo" token="jishtenke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaboman ea nashitanke , jenen ." translation="Me bañé con jabón y agua.">
+        <word id="0" lemma="jabón" posTag="Nombre" subPosTag="No contable" token="Jaboman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="náshiti" posTag="Verbo" subPosTag="Transitivo" token="nashitanke">
+            <affix order="1" text="tan" type="Clít. nominal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jene" posTag="Nombre" subPosTag="No contable" token="jenen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ikí senenax ea chopan rasoikike ." translation="Me sequé con una toalla.">
+        <word id="0" lemma="iki" posTag="Conjunción" subPosTag="Coordinante" token="Ikí"/>
+        <word id="1" lemma="senenti" posTag="Verbo" subPosTag="Intransitivo" token="senenax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="chopa" posTag="Nombre" subPosTag="Contable" token="chopan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="rásoikiiti" posTag="Verbo" subPosTag="Intransitivo" token="rasoikike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

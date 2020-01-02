@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="¿ Jawekeskáaxonki jonin jawen awin pimakatitai ?" translation="¿Cómo mantenía a su esposa?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskaxon" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskáaxonki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="4" lemma="awin" posTag="Nombre" subPosTag="Contable" token="awin"/>
+        <word id="5" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="pimakatitai">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="katit" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jawekeska jisáki ainbo joá iki , jaaiba merati ?" translation="¿Cuál era la apariencia de la visitante?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeska" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeska"/>
+        <word id="2" lemma="jisá" posTag="Nombre" subPosTag="Contable" token="jisáki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="4" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaaiba">
+            <affix order="1" text="iba" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="meráti" posTag="Verbo" subPosTag="Transitivo" token="meráti">
+            <affix order="1" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Moa jokinki jawekeska beisa jonin jawen awin oina iki ?" translation="¿Cómo era la apariencia de la mujer cuando su esposo la vio?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moa"/>
+        <word id="2" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="jokinki">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jawekeska" posTag="Palabra Interrogativa" subPosTag="" token="jawekeska"/>
+        <word id="4" lemma="beísti" posTag="Verbo" subPosTag="Transitivo" token="beisa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="7" lemma="awin" posTag="Nombre" subPosTag="Contable" token="awin"/>
+        <word id="8" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jawekeskati popo keotainki ainbaon rakáxon ninkata iki ?" translation="¿Cómo cantaba la lechuza mientras la mujer estaba acostada?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwekeskati" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskati"/>
+        <word id="2" lemma="popo" posTag="Nombre" subPosTag="Contable" token="popo"/>
+        <word id="3" lemma="keoti" posTag="Verbo" subPosTag="Intransitivo" token="keotainki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ain" type="Clít. concord. de particip."/>
+            <affix order="3" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="rakáti" posTag="Verbo" subPosTag="Intransitivo" token="rakáxon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="ninkáti" posTag="Verbo" subPosTag="Transitivo" token="ninkata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jaweranoki awá kaa iki ?" translation="¿A dónde se iba la sachavaca?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwerano" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="awá" posTag="Nombre" subPosTag="Contable" token="awá"/>
+        <word id="3" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

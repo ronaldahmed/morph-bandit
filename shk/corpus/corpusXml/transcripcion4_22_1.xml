@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="atsa" translation="la yuca">
+        <word id="0" lemma="atsa" posTag="Nombre" subPosTag="Contable" token="atsa"/>
+    </sentence>
+    <sentence id="1" text="poroto" translation="el frejol">
+        <word id="0" lemma="poroto" posTag="Nombre" subPosTag="Contable" token="poroto"/>
+    </sentence>
+    <sentence id="2" text="kari" translation="el camote">
+        <word id="0" lemma="kari" posTag="Nombre" subPosTag="Contable" token="kari"/>
+    </sentence>
+    <sentence id="3" text="Wetsaboribi jake , min jaá keskáakin ati ." translation="Hay también otras que se puede dibujar.">
+        <word id="0" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="Wetsaboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="jati" posTag="Verbo" subPosTag="Copulativo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" token="jaá"/>
+        <word id="5" token="keskáakin"/>
+        <word id="6" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="ati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Ani jiwi pei bitanwe , wainkonia , manish meranoaribi ." translation="Recoge hojas de árboles de la chacra y del bosque.">
+        <word id="0" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="Ani"/>
+        <word id="1" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="2" lemma="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="3" lemma="biti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="bitanwe">
+            <affix order="1" text="tan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="wai" posTag="Nombre" subPosTag="Contable" token="wainkonia">
+            <affix order="1" text="nkonia" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="manish" lemmaPred="manish" posTag="Nombre" subPosTag="Contable" token="manish"/>
+        <word id="8" lemma="meran" posTag="Postposición" subPosTag="" token="meranoaribi">
+            <affix order="1" text="oa" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Natoriki non escuela , noa apon menia ." translation="Esta es la escuela que nos ha dado el gobierno.">
+        <word id="0" lemma="nato" posTag="Símbolo" subPosTag="" token="NatorikiERROR"/>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="meniti" posTag="Verbo" subPosTag="Transitivo" token="menia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Nato escuela iki non papabaon noa axona ." translation="Esta es la escuela que nos han hecho nuestros padres.">
+        <word id="0" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="Nato"/>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papabaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="axona">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Nato escuelankoxon non onanai , jakon bake inoxon , non nete cuídannoxon ." translation="Esta es la escuela en que aprendemos a ser buenos hijos de la Patria.">
+        <word id="0" lemma="nato" posTag="Adjetivo" subPosTag="Calificativo" token="Nato"/>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelankoxon">
+            <affix order="1" text="nkoxon" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="6" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="inoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="11" lemma="cuidanti" posTag="Verbo" subPosTag="Transitivo" token="cuidannoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Non escuelara non jawetianbi manishmatima iki ." translation="Vamos a tenerla bien limpia.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jáwetianbi" posTag="Adverbio" subPosTag="Tiempo" token="jáwetianbi"/>
+        <word id="4" lemma="manishti" posTag="Verbo" subPosTag="Intransitivo" token="manishmatima">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo nominal"/>
+            <affix order="3" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Wasnonbo soanon akanwe ." translation="Sacaremos las telarañas.">
+        <word id="0" lemma="wasnon" posTag="Nombre" subPosTag="No contable" token="Wasnonbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="soati" posTag="Verbo" subPosTag="Transitivo" token="soanon">
+            <affix order="1" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akanwe">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

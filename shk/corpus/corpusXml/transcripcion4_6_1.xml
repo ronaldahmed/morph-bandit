@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Mia jakiribi oinberibai jonox ." translation="Hasta luego.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jakiribi" posTag="Adverbio" subPosTag="Tiempo" token="jakiribi"/>
+        <word id="2" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinberibai">
+            <affix order="1" text="be" type="Sufijo verbal"/>
+            <affix order="2" text="riba" type="Clít. de posición libre"/>
+            <affix order="3" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="jonox">
+            <affix order="1" text="nox" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Min kirika meran wishawe , mibé raeananaibaon jane ." translation="Escribe en tu cuaderno los nombres de tus amigos.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="kirika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mibé">
+            <affix order="1" text="be" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="raeananti" posTag="Verbo" subPosTag="Intransitivo" token="raeananaibaon">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+            <affix order="2" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jane" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="¡ Chama ! ¿ Presidenteki joyamai ?" translation="Oye, amigo, ¿viene el Presidente?">
+        <word id="0" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="1" lemma="chama" posTag="Nombre" subPosTag="Contable" token="Chama"/>
+        <word id="2" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="3" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="4" lemma="presidente" posTag="Nombre" subPosTag="Contable" token="Presidenteki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo nominal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Joyamarai Presidente ." translation="No viene el Presidente.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joyamarai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="presidente" posTag="Nombre" subPosTag="Contable" token="Presidente"/>
+        <word id="2" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Tenienteki joyamai ?" translation="¿Viene el Teniente Gobernador?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="teniente" posTag="Nombre" subPosTag="Contable" token="Tenienteki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo nominal"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Jawekeskatiki ochó katin rakékatitai ?" translation="¿Por qué tenía miedo de viajar lejos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskati" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ochó" lemmaPred="" posTag="Adverbio" subPosTag="Locación" token="ochó"/>
+        <word id="3" lemma="kati" lemmaPred="katin" posTag="Verbo" subPosTag="Intransitivo" token="katin">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="rakéti" lemmaPred="rakékatitai" posTag="Verbo" subPosTag="Intransitivo" token="rakékatitai">
+            <affix order="1" text="katit" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Jawekeskataxki ainbo mawata iki ?" translation="¿Cómo murió aquella pobre mujer?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskatax" lemmaPred="rakékatitai" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskataxki">
+            <affix order="1" text="ki" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ainbo" lemmaPred="ainbo" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="3" lemma="mawati" lemmaPred="mawata" posTag="Verbo" subPosTag="Intransitivo" token="mawata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="mawata" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Isábaon pishtanko maxó iní" translation="El zorro en la fiesta de los pajarillos">
+        <word id="0" lemma="isá" lemmaPred="Isábaon" posTag="Nombre" subPosTag="Contable" token="Isábaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="pishta" lemmaPred="Isábaon" posTag="Nombre" subPosTag="Contable" token="pishtanko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="maxó" lemmaPred="Isábaon" posTag="Nombre" subPosTag="Contable" token="maxó"/>
+        <word id="3" lemma="iki" lemmaPred="Isábaon" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Isábaonronki aká iki , westíora ani pishtaki ." translation="Cierta vez los pájaros hicieron una gran fiesta en el campo.">
+        <word id="0" lemma="isá" lemmaPred="Isábaonronki" posTag="Nombre" subPosTag="Contable" token="Isábaonronki">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ati" lemmaPred="Isábaonronki" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="westiora" lemmaPred="westíora" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="5" lemma="ani" lemmaPred="westíora" posTag="Determinante" subPosTag="Cuantificador" token="ani"/>
+        <word id="6" lemma="pishta" lemmaPred="pishtaki" posTag="Nombre" subPosTag="Contable" token="pishtaki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jainki tsinkíkana iki , jatíbi , jainoax meskó isábo ." translation="A esta fiesta asistieron pájaros de toda especie y de todas partes.">
+        <word id="0" lemma="jain" lemmaPred="Jainki" posTag="Adverbio" subPosTag="Locación" token="Jainki">
+            <affix order="1" text="ki" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="tsinkíti" lemmaPred="tsinkíkana" posTag="Verbo" subPosTag="Intransitivo" token="tsinkíkana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="tsinkíkana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jatíbi" lemmaPred="tsinkíkana" posTag="Adjetivo" subPosTag="Calificativo" token="jatíbi"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="jainoax" lemmaPred="tsinkíkana" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="7" lemma="meskó" lemmaPred="tsinkíkana" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="8" lemma="isá" lemmaPred="isábo" posTag="Nombre" subPosTag="Contable" token="isábo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="¿ Jawekeskárin jawen pei ?" translation="¿Cómo son su hojas?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeská" lemmaPred="Jawekeskárin" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskárin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jawen" lemmaPred="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="pei" lemmaPred="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Wainkonia jawéki peishoko bitanwe ." translation="Recoge de la chacra hojas de plantas pequeñas.">
+        <word id="0" lemma="wai" lemmaPred="Wainkonia" posTag="Nombre" subPosTag="Contable" token="Wainkonia">
+            <affix order="1" text="nkonia" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jawéki" lemmaPred="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="2" lemma="pei" lemmaPred="peishoko" posTag="Nombre" subPosTag="Contable" token="peishoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="biti" lemmaPred="bitanwe" posTag="Verbo" subPosTag="Transitivo" token="bitanwe">
+            <affix order="1" text="tan" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa pei keskáakin min cuadernonin awé . Jawen janebo wishawe ." translation="En tu cuaderno dibuja estas hojas y escribe sus nombres.">
+        <word id="0" lemma="Ja" lemmaPred="Jaa" posTag="Determinante" subPosTag="Demostrativo" token="Ja">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="pei" lemmaPred="pei" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="2" lemma="keskáati" lemmaPred="keskáakin" posTag="Verbo" subPosTag="Transitivo" token="keskáakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="mia" lemmaPred="min" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="cuaderno" lemmaPred="awé" posTag="Nombre" subPosTag="Contable" token="cuadernonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="ati" lemmaPred="awé" posTag="Verbo" subPosTag="Transitivo" token="awé">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="jawen" lemmaPred="Jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="8" lemma="jane" lemmaPred="janebo" posTag="Nombre" subPosTag="Contable" token="janebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="wishati" lemmaPred="wishawe" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Neskáakin" translation="Así">
+        <word id="0" lemma="Neskáakin" lemmaPred="Neskáakin" posTag="Adverbio" subPosTag="Manera" token="Neskáakin"/>
+    </sentence>
+    <sentence id="4" text="tama" translation="el maní">
+        <word id="0" lemma="tama" lemmaPred="tama" posTag="Nombre" subPosTag="Contable" token="tama"/>
+    </sentence>
+</corpus>

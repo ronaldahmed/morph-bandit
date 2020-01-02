@@ -1,4 +1,4 @@
-from utils import shp2ud_tagset,\
+from utils_shk import shp2ud_tagset,\
                   morph_code,\
                   subpos_code,\
                   clean_lemma

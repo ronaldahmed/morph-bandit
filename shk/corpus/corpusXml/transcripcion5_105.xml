@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaríbarake avión , main paketaishoko ; kampon paketai ." translation="Hay también aviones chicos que pueden aterrizar en una pista.">
+        <word id="0" token="Jaríbarake"/>
+        <word id="1" token="avión"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" token="main"/>
+        <word id="4" token="paketaishoko"/>
+        <word id="5" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="6" token="kampon"/>
+        <word id="7" token="paketai"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaráke avión rabé motóroya ; Limameax Iquítoain kai . Karái wetsa jemankoboribi . Kaax banéribiai ." translation="Hay aviones grandes de dos motores que vuelan de Lima a Iquitos y a otras partes de la selva, y regresan.">
+        <word id="0" token="Jaráke"/>
+        <word id="1" token="avión"/>
+        <word id="2" token="rabé"/>
+        <word id="3" token="motóroya"/>
+        <word id="4" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="5" token="Limameax"/>
+        <word id="6" token="Iquítoain"/>
+        <word id="7" token="kai"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="9" token="Karái"/>
+        <word id="10" token="wetsa"/>
+        <word id="11" token="jemankoboribi"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="13" token="Kaax"/>
+        <word id="14" token="banéribiai"/>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Bokanai joni , kirika , jawéki bomakanabo ." translation="Llevan pasajeros, cartas y carga.">
+        <word id="0" token="Bokanai"/>
+        <word id="1" token="joni"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" token="kirika"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="jawéki"/>
+        <word id="6" token="bomakanabo"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaráke anibires aviónbo , icha joni boai , icha kirika , icha jawékibo boai . Ochó jemamea wetsa jeman boai , ochóbires ." translation="Hay aviones muy grandes que llevan muchos pasajeros, cartas y bultos de un país a otro muy lejano.">
+        <word id="0" token="Jaráke"/>
+        <word id="1" token="anibires"/>
+        <word id="2" token="aviónbo"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="icha"/>
+        <word id="5" token="joni"/>
+        <word id="6" token="boai"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" token="icha"/>
+        <word id="9" token="kirika"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" token="icha"/>
+        <word id="12" token="jawékibo"/>
+        <word id="13" token="boai"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="15" token="Ochó"/>
+        <word id="16" token="jemamea"/>
+        <word id="17" token="wetsa"/>
+        <word id="18" token="jeman"/>
+        <word id="19" token="boai"/>
+        <word id="20" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="21" token="ochóbires"/>
+        <word id="22" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Moatian Europanimea jonibaon , onanyamanike , jaskara netera jake ixon , Perúra jake ikí ixon onanyamakana iki . Américain iká jemaboribi onanyamakana iki ." translation="Hace muchos años que los de Europa nos sabían que existía el Perú ni tampoco los otros países de la América.">
+        <word id="0" token="Moatian"/>
+        <word id="1" token="Europanimea"/>
+        <word id="2" token="jonibaon"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="onanyamanike"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" token="jaskara"/>
+        <word id="7" token="netera"/>
+        <word id="8" token="jake"/>
+        <word id="9" token="ixon"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" token="Perúra"/>
+        <word id="12" token="jake"/>
+        <word id="13" token="ikí"/>
+        <word id="14" token="ixon"/>
+        <word id="15" token="onanyamakana"/>
+        <word id="16" token="iki"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="18" token="Américain"/>
+        <word id="19" token="iká"/>
+        <word id="20" token="jemaboribi"/>
+        <word id="21" token="onanyamakana"/>
+        <word id="22" token="iki"/>
+        <word id="23" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

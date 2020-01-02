@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Papán ronón ewa réteibatara moa ákoa iki" translation="La boa que papá mató el otro día ya se resecó">
+        <word id="0" lemma="Papá" posTag="Nombre" subPosTag="Contable" token="Papán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="rono" posTag="Nombre" subPosTag="Contable" token="ronón">
+            <affix order="1" text="n" type="Sufijo nominal"/>
+        </word>
+        <word id="2" lemma="ewa" posTag="Adjetivo" subPosTag="Calificativo" token="ewa"/>
+        <word id="3" lemma="reteti" posTag="Verbo" subPosTag="Transitivo" token="réteibatara">
+            <affix order="1" text="iba#2" type="Sufijo verbal"/>
+            <affix order="2" text="ta" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="5" lemma="akoti" posTag="Verbo" subPosTag="Intransitivo" token="ákoa">
+            <affix order="1" text="a+iki" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+    </sentence>
+    <sentence id="1" text="xéna píaitianra nokon wetsán ákotiri tsákake" translation="Mientras el pajarito ácotiri comía gusanos, mi hermano lo hirió con una flecha">
+        <word id="0" lemma="xena" posTag="Nombre" subPosTag="Contable" token="xéna"/>
+        <word id="1" lemma="píti" posTag="Verbo" subPosTag="Transitivo" token="píaitianra">
+            <affix order="1" text="aitian" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="3" lemma="watsa" posTag="Nombre" subPosTag="Contable" token="wetsán">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="akotiri" posTag="Nombre" subPosTag="Contable" token="ákotiri"/>
+        <word id="5" lemma="tsakati" posTag="Verbo" subPosTag="Transitivo" token="tsákake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Eara oránshi xéax aé ike" translation="Eructé al tomar una gaseosa">
+        <word id="0" lemma="E" posTag="Pronombre" subPosTag="Personal" token="Eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="oranshi" posTag="Nombre" subPosTag="Contable" token="oránshi"/>
+        <word id="2" lemma="xeati" posTag="Verbo" subPosTag="Intransitivo" token="xéax">
+            <affix order="1" text="x" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="aeiti" posTag="Verbo" subPosTag="Intransitivo" token="aé">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="ikeERROR" posTag="Verbo Auxiliar" subPosTag="" token="ike"/>
+    </sentence>
+    <sentence id="3" text="Mananxawen yoiya iki :  - eara aé ikai ino pisi" translation="Dijo el motelo: -Mi aliento apestaba a tigre cuando eructé">
+        <word id="0" lemma="mananxawe" posTag="Nombre" subPosTag="Contable" token="Mananxawen">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoiya">
+            <affix order="1" text="ya" type="Sufijo nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="-" posTag="Puntuación" subPosTag="" token="-"/>
+        <word id="6" lemma="E" posTag="Pronombre" subPosTag="Personal" token="eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="7" lemma="aeiti" posTag="Verbo" subPosTag="Intransitivo" token="aé"/>
+        <word id="8" lemma="íki" posTag="Verbo" subPosTag="Transitivo" token="ikai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="10" lemma="piriti" posTag="Verbo" subPosTag="Intransitivo" token="pisi"/>
+    </sentence>
+</corpus>

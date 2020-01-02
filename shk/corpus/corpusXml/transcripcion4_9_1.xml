@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¡ Titaachi ! Mia paro ixon , mia jiwi ixon , min ea tepinkeanke , min poyaman akátiai keskáakin ." translation="Mamita, si fueses un río o fueses un árbol, tú me acunarías igual en tus brazos.">
+        <word id="0" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="1" lemma="tita" posTag="Nombre" subPosTag="Contable" token="Titaachi">
+            <affix order="1" text="chi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="paro" posTag="Nombre" subPosTag="Contable" token="paro"/>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ixon"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="13" token="tepinkeanke"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="16" lemma="poyan" posTag="Nombre" subPosTag="Contable" token="poyaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="17" lemma="ati" lemmaPred="tepinkeanke" posTag="Verbo" subPosTag="Transitivo" token="akátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="18" lemma="keskaati" lemmaPred="keskáakin" posTag="Verbo" subPosTag="Transitivo" token="keskáakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Noa teetai" translation="Trabajamos">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teetai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Nokon tita teetai , non xobon ." translation="Mi mamá trabaja en nuestro hogar.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="tita" posTag="Nombre" subPosTag="Contable" token="tita"/>
+        <word id="2" lemma="teeti" posTag="Verbo" subPosTag="Intransitivo" token="teetai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="xobo" posTag="Nombre" subPosTag="Contable" token="xobon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nokon titan , bakebo cuídanai ." translation="Mi mamá cuida a los niños.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="tita" posTag="Nombre" subPosTag="Contable" token="titan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="cuidanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nokon titan noa pitiaxonai ." translation="Mi mamá prepara nuestra comida.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="Nokon"/>
+        <word id="1" lemma="tita" posTag="Nombre" subPosTag="Contable" token="titan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="piti" posTag="Símbolo" subPosTag="" token="pitiaxonaiERROR"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

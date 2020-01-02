@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Kankan jaweki banai ?" translation="¿Qué parte de la piña siembran?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="kankán" posTag="Nombre" subPosTag="Contable" token="Kankan"/>
+        <word id="2" lemma="jawe" posTag="Palabra Interrogativa" subPosTag="" token="jaweki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Jawen wainkoribi jake , poa , sio , tumbo , chikiraya , tama , cebolla , yochi ." translation="En su chacra también tienen sachapapa, dale-dale, tumbo, chiclayos, maní, cebollas, y ají.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="wai" posTag="Nombre" subPosTag="Contable" token="wainkoribi">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="póa" posTag="Nombre" subPosTag="Contable" token="poa"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="sio" posTag="Nombre" subPosTag="Contable" token="sio"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="tumbo" posTag="Nombre" subPosTag="Contable" token="tumbo"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="chikiraya" posTag="Nombre" subPosTag="Contable" token="chikiraya"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="táma" posTag="Nombre" subPosTag="Contable" token="tama"/>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="cebolla" posTag="Nombre" subPosTag="Contable" token="cebolla"/>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" lemma="yochi" posTag="Nombre" subPosTag="Contable" token="yochi"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jawen wainkoribi jake , jakon jiwibo ." translation="Tendrán muchos árboles buenos en su chacra.">
+        <word id="0" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="Jawen"/>
+        <word id="1" lemma="wai" posTag="Nombre" subPosTag="Contable" token="wainkoribi">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="5" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jainxon banake , mankoa , wanin , naranxa , pocha , paranta ." translation="Han sembrado mango, pijuayo, naranjo, papaya, y plátano.">
+        <word id="0" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="mánkoa" posTag="Nombre" subPosTag="Contable" token="mankoa"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="wanín" posTag="Nombre" subPosTag="Contable" token="wanin"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="naranxa" posTag="Nombre" subPosTag="Contable" token="naranxa"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="pocha" posTag="Nombre" subPosTag="Contable" token="pocha"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="paranta" posTag="Nombre" subPosTag="Contable" token="paranta"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kosi , Pancha , jaábaon wai jakon iti iki ." translation="Pepe y Paca tendrán una chacra buena.">
+        <word id="0" lemma="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosi"/>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="Pancha" posTag="Nombre Propio" subPosTag="" token="Pancha"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaábaon">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="wái" posTag="Nombre" subPosTag="Contable" token="wai"/>
+        <word id="6" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="7" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jaweranoki ja mai paketa iki ?" translation="¿Dónde cayó el terreno?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawerano" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="3" lemma="mai" posTag="Nombre" subPosTag="Contable" token="mai"/>
+        <word id="4" lemma="pakéti" lemmaPred="" posTag="Verbo" subPosTag="Intransitivo" token="paketa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" lemmaPred="" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

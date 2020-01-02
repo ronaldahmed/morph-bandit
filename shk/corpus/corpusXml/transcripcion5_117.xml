@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaskatax noa axonanankanai , non jemameax , Perúainoax ." translation="Todos nos ayudamos los unos a los otros en nuestra patria, el Perú.">
+        <word id="0" lemma="jaskatax" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="ati" lemmaPred="axonanankanai" posTag="Verbo" subPosTag="Transitivo" token="axonanankanai">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+            <affix order="2" text="anan" type="Sufijo verbal"/>
+            <affix order="3" text="kan" type="Sufijo verbal"/>
+            <affix order="4" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="non" lemmaPred="axonanankanai" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="5" lemma="jema" lemmaPred="axonanankanai" posTag="Nombre" subPosTag="Contable" token="jemameax">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="Perú" lemmaPred="axonanankanai" posTag="Nombre Propio" subPosTag="" token="Perúainoax">
+            <affix order="1" text="ainoax" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Perú iki kimisha ani maia : Aniparo kexá , Ani manaman , jainoax nií naman , noinbi manish naman ." translation="Las tres regiones del Perú son: la costa, la sierra, y la selva o montaña.">
+        <word id="0" lemma="Perú" lemmaPred="axonanankanai" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="1" lemma="iki" lemmaPred="axonanankanai" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="kimisha " lemmaPred="axonanankanai" posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="3" lemma="ani" lemmaPred="axonanankanai" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="4" lemma="mai" lemmaPred="maia" posTag="Nombre" subPosTag="Contable" token="maia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="6" lemma="aniparo" lemmaPred="Aniparo" posTag="Nombre" subPosTag="No contable" token="Aniparo"/>
+        <word id="7" lemma="kexá" lemmaPred="Aniparo" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="ani" lemmaPred="Aniparo" posTag="Adjetivo" subPosTag="Calificativo" token="Ani"/>
+        <word id="10" lemma="manán" lemmaPred="Aniparo" posTag="Nombre" subPosTag="Contable" token="manaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="jainoax" lemmaPred="Aniparo" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="13" lemma="níi" lemmaPred="Aniparo" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="14" lemma="naman" lemmaPred="Aniparo" posTag="Postposición" subPosTag="" token="naman"/>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" lemma="noinbi" lemmaPred="noinbi" posTag="Conjunción" subPosTag="Coordinante" token="noinbi"/>
+        <word id="17" lemma="manish" lemmaPred="manish" posTag="Nombre" subPosTag="Contable" token="manish"/>
+        <word id="18" lemma="naman" lemmaPred="manish" posTag="Postposición" subPosTag="" token="naman"/>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Noara jake nií meran ." translation="Nosotros vivimos en la selva.">
+        <word id="0" lemma="Noa" lemmaPred="Noara" posTag="Pronombre" subPosTag="Personal" token="Noara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jati" lemmaPred="Noara" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="níi" lemmaPred="Noara" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="3" lemma="meran" lemmaPred="Noara" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nií meranra jake icha parobo , ani weanbo , nií ani , manish , jainoax yoina jawékibo ." translation="En la selva hay muchos ríos grandes, mucho monte o bosque y muchos animales silvestres.">
+        <word id="0" lemma="níi" lemmaPred="Noara" posTag="Nombre" subPosTag="Contable" token="Nií"/>
+        <word id="1" lemma="meran" lemmaPred="meran" posTag="Postposición" subPosTag="" token="meranra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jati" lemmaPred="meran" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="ícha" lemmaPred="icha" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="4" lemma="paro" lemmaPred="parobo" posTag="Nombre" subPosTag="Contable" token="parobo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="ani" lemmaPred="parobo" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="7" lemma="wean" lemmaPred="weanbo" posTag="Nombre" subPosTag="Contable" token="weanbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="níi" lemmaPred="weanbo" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="10" lemma="ani" lemmaPred="weanbo" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="manish" lemmaPred="weanbo" posTag="Nombre" subPosTag="Contable" token="manish"/>
+        <word id="13" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="14" lemma="jainoax" lemmaPred="weanbo" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="15" lemma="yointi" lemmaPred="yoina" posTag="Verbo" subPosTag="Transitivo" token="yoina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="16" lemma="jawéki" lemmaPred="yoina" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Nií meranra ikai xana , shokores matsi ." translation="Hace mucho calor y poco frío en la selva.">
+        <word id="0" lemma="níi" lemmaPred="yoina" posTag="Nombre" subPosTag="Contable" token="Nií"/>
+        <word id="1" lemma="meran" lemmaPred="yoina" posTag="Postposición" subPosTag="" token="meranra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="yoina" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="xana" lemmaPred="yoina" posTag="Nombre" subPosTag="No contable" token="xana"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="shokores" lemmaPred="shokores" posTag="Adverbio" subPosTag="Cantidad" token="shokores"/>
+        <word id="6" lemma="matsi" lemmaPred="shokores" posTag="Nombre" subPosTag="No contable" token="matsi"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -11,24 +11,25 @@ numbers = re.compile("[0-9]+")
 ud_tagset = [
   "ADJ",
   "ADV",
-  "CONJ",
+  "CCONJ",
+  "SCONJ",
   "DET",
   "INTJ",
   "NOUN",
   "PROPN",
   "NUM",
-  "ONOM",
-  "INTW",
-  "POSTP",
+  "ADP",
   "PRON",
   "PUNCT",
   "SYM",
   "VERB",
   "AUX",
+  "X",
+  "PART",
 ]
 
 ## clitConcPart: VERB, ADV
-## clitFreePos: VERB, CONJ, ADJ, NOUN
+## clitFreePos: VERB, CCONJ, ADJ, NOUN
 
 # as seen in tagged sentences
 morph_code = {
@@ -69,12 +70,12 @@ subpos_code ={
 
 # as seen in dictionary
 dictpos2udmorph = {
-  "conj." : "CONJ",
+  "conj." : "CCONJ",
   "pf. modif." : "PREF",
   "sf. pos." : "POS1",
   "adj." : "ADJ",
-  "posp." : "POSTP",
-  "posp. conj." : "POSTP",
+  "posp." : "ADP",
+  "posp. conj." : "SCONJ",
   "s." : "NOUN",
   "sf. de part." : "+clit",
   "adv." : "ADV",
@@ -89,10 +90,10 @@ dictpos2udmorph = {
   "v. t." : "VERB[T]",
   "sf. modif." : "ADV",
   "sf. de tiempo" : "ADV",
-  "sf. posp." : "POSTP",
+  "sf. posp." : "ADP",
   "sf. vbl." : "+NOUN",
   "sf. de derivación vbl." : "VBLZ",
-  "sf. conj." : "CONJ",
+  "sf. conj." : "CCONJ",
   "sf. neg." : "NEG",
   "sf. honor." : "VOC",
   "sf. de v." : "+VERB",
@@ -109,15 +110,15 @@ dictpos2udmorph = {
 def shp2ud_tagset( pos ):
   if pos == "Adjetivo" : return "ADJ"
   if pos == "Adverbio" : return "ADV"
-  if pos == "Conjunción" : return "CONJ"
+  if pos == "Conjunción" : return "CCONJ"
   if pos == "Determinante" : return "DET"
   if pos == "Interjección" : return "INTJ"
   if pos == "Nombre" : return "NOUN"
   if pos == "Nombre Propio" : return "PROPN"
   if pos == "Numeral" : return "NUM"
-  if pos == "Onomatopeya" : return "ONOM"
-  if pos == "Palabra Interrogativa" : return "INTW"
-  if pos == "Postposición" : return "POSTP"
+  if pos == "Onomatopeya" : return "X"
+  if pos == "Palabra Interrogativa" : return "PART"
+  if pos == "Postposición" : return "ADP"
   if pos == "Pronombre" : return "PRON"
   if pos == "Puntuación" : return "PUNCT"
   if pos == "Símbolo" : return "SYM"

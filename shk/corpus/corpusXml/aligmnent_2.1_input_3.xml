@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Anijema oínyosma ikáxa , Rimán káx nokon epán báke ratéke" translation="El hijo de mi tío paterno se fue a Lima y se admiró porque nunca había visto una ciudad grande">
+        <word id="0" lemma="Anijema" posTag="Nombre" subPosTag="Contable" token="Anijema"/>
+        <word id="1" lemma="oiti" posTag="Verbo" subPosTag="Transitivo" token="oínyosma">
+            <affix order="2" text="yosma" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikáxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a#3" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="Rima" posTag="Nombre Propio" subPosTag="" token="Rimán">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="káx">
+            <affix order="1" text="x" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="Nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="7" lemma="epá" posTag="Nombre" subPosTag="Contable" token="epán">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="báke" posTag="Nombre" subPosTag="Contable" token="báke"/>
+        <word id="9" lemma="rateti" posTag="Verbo" subPosTag="Transitivo" token="ratéke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Ánima átapara awápanin bóke" translation="El tigrillo se llevó una pequeña gallina">
+        <word id="0" lemma="anima" posTag="Adjetivo" subPosTag="Calificativo" token="Ánima"/>
+        <word id="1" lemma="atapa" posTag="Nombre" subPosTag="Contable" token="átapara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="awapa" posTag="Nombre" subPosTag="Contable" token="awápanin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="bóti" posTag="Verbo" subPosTag="Transitivo" token="bóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Perú riki kímisha áni máiya : ániparo kexa Máshiya Mai ; napon riki Ánimananya Mai ; néke iki Maníshbo Níiaya Mai" translation="El Perú tiene tres regiones: a la orilla del mar está la Costa; en el centro, la Sierra; y aquí está la Selva">
+        <word id="0" lemma="Perú" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="riki">
+            <affix order="-1" text="r" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="kímisha" posTag="Adjetivo" subPosTag="Cuantificador" token="kímisha"/>
+        <word id="3" lemma="áni" posTag="Adjetivo" subPosTag="Calificativo" token="áni"/>
+        <word id="4" lemma="mai" posTag="Nombre" subPosTag="Contable" token="máiya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="6" lemma="aniparo" posTag="Nombre" subPosTag="Contable" token="ániparo"/>
+        <word id="7" lemma="kexa" posTag="Nombre" subPosTag="Contable" token="kexa"/>
+        <word id="8" lemma="mashi" posTag="Nombre" subPosTag="Contable" token="Máshiya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="mai" posTag="Nombre" subPosTag="Contable" token="Mai"/>
+        <word id="10" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="11" lemma="napo" posTag="Nombre" subPosTag="Contable" token="napon">
+            <affix order="1" text="n#1" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="iki" posTag="Verbo" subPosTag="Intransitivo" token="riki">
+            <affix order="-1" text="r" type="Clít. de segunda posición"/>
+        </word>
+        <word id="13" lemma="animaran" posTag="Nombre" subPosTag="Contable" token="Ánimananya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="mai" posTag="Nombre" subPosTag="Contable" token="Mai"/>
+        <word id="15" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="16" lemma="neke" posTag="Adverbio" subPosTag="Locación" token="néke"/>
+        <word id="17" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="18" lemma="manish" posTag="Nombre" subPosTag="Contable" token="Maníshbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="19" lemma="niiya" posTag="Nombre" subPosTag="Contable" token="Níiaya"/>
+        <word id="20" lemma="mai" posTag="Nombre" subPosTag="Contable" token="Mai"/>
+    </sentence>
+    <sentence id="3" text="Aniparomea béchomanra westíora aínbo bóke" translation="Las olas del mar se llevaron a una mujer">
+        <word id="0" lemma="Aniparo" posTag="Nombre" subPosTag="No contable" token="Aniparomea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="becho" posTag="Nombre" subPosTag="Contable" token="béchomanra">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="westíora" posTag="Adjetivo" subPosTag="Cuantificador" token="westíora"/>
+        <word id="3" lemma="aínbo" posTag="Nombre" subPosTag="Contable" token="aínbo"/>
+        <word id="4" lemma="bóti" posTag="Verbo" subPosTag="Transitivo" token="bóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Aniparoronki táshi iki" translation="Dicen que el mar es salado">
+        <word id="0" lemma="aniparo" posTag="Nombre" subPosTag="Contable" token="Aniparoronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="táshi" posTag="Nombre" subPosTag="No contable" token="táshi"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+    </sentence>
+</corpus>

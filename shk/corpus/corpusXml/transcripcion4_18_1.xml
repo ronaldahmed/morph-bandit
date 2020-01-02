@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Jaa jawékibo iki mesa , bankabo , escuela meran iká jawékibo ." translation="&quot;El mobiliario&quot; significa las mesas y los bancos de nuestra escuela.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jaa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="mesa" posTag="Nombre" subPosTag="Contable" token="mesa"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="banka" posTag="Nombre" subPosTag="Contable" token="bankabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuela"/>
+        <word id="8" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="9" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iká"/>
+        <word id="10" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Ni jawetianbi non lápizin wishatima iki , ni chichikaninbi ." translation="No los marcamos lápiz ni con cuchillo.">
+        <word id="0" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="Ni"/>
+        <word id="1" lemma="jáwetianbi" posTag="Adverbio" subPosTag="Tiempo" token="jawetianbi"/>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="rapís" posTag="Nombre" subPosTag="Contable" token="rapís">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="wishati" posTag="Verbo" subPosTag="Transitivo" token="wishatima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="8" lemma="chíchika" posTag="Nombre" subPosTag="Contable" token="chichikaninbi">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Non tsomaa jawékiboribi non cuídanti iki ." translation="Cuidamos también los útiles de nuestra escuela.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="tsomati" posTag="Verbo" subPosTag="Transitivo" token="tsomaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jaweki" posTag="Nombre" subPosTag="Contable" token="jawékiboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="cuídanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Kirika anox noa mechokiitax mesoikitai ." translation="Nos lavamos y nos secamos las manos antes de usar los libros.">
+        <word id="0" lemma="kirika" posTag="Nombre" subPosTag="Contable" token="Kirika"/>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="anox">
+            <affix order="1" text="nox" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="mechokiiti" posTag="Verbo" subPosTag="Intransitivo" token="mechokiitax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="soikiti" lemmaPred="mesoikitai" posTag="Verbo" subPosTag="Intransitivo" token="mesoikitai">
+            <affix order="1" text="me" type="Prefijo"/>
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Non kirikabo benxoai , non chioshokobaon meétimanko ." translation="Guardamos los libros donde nuestros hermanitos no puedan agarrarlos.">
+        <word id="0" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="kirika" posTag="Nombre" subPosTag="Contable" token="kirikabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="benxoati" posTag="Verbo" subPosTag="Transitivo" token="benxoaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="chio" posTag="Nombre" subPosTag="Contable" token="chioshokobaon">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="meeti" posTag="Verbo" subPosTag="Transitivo" token="meetimanko">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+            <affix order="3" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

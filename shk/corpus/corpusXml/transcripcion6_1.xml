@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Mananxawe betan Inka iní" translation="El motelo y el Inca">
+        <word id="0" lemma="mananxawe" lemmaPred="Mananxawe" posTag="Nombre" subPosTag="Contable" token="Mananxawe"/>
+        <word id="1" lemma="betan" lemmaPred="Mananxawe" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="2" lemma="Inka" lemmaPred="Mananxawe" posTag="Nombre Propio" subPosTag="" token="Inka"/>
+        <word id="3" lemma="iki" lemmaPred="iní" posTag="Verbo" subPosTag="Copulativo" token="iní">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Mananxaweronki moatian ipaonike , peiya , kikinbires ishto joni ." translation="En tiempos remotos el motelo tenía alas y era el más veloz de todos los animales.">
+        <word id="0" lemma="mananxawe" lemmaPred="Mananxaweronki" posTag="Nombre" subPosTag="Contable" token="Mananxaweronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="moátian" lemmaPred="Mananxaweronki" posTag="Adverbio" subPosTag="Tiempo" token="moatian"/>
+        <word id="2" lemma="iti" lemmaPred="Mananxaweronki" posTag="Verbo" subPosTag="Intransitivo" token="ipaonike">
+            <affix order="1" text="paoni" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="pei" lemmaPred="peiya" posTag="Nombre" subPosTag="Contable" token="peiya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="kikin" lemmaPred="ramakamabi" posTag="Adverbio" subPosTag="Manera" token="kikinbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="ishto" lemmaPred="joninra" posTag="Adjetivo" subPosTag="Calificativo" token="ishto"/>
+        <word id="8" lemma="joni" lemmaPred="joninra" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaskatax iníronkiki , ramakamabi , mananxawe yosma , ishtomashoko niai ." translation="Desde entonces el motelo camina muy despacio y es muy débil.">
+        <word id="0" lemma="jaskatax" lemmaPred="joninra" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="iki" lemmaPred="iníronkiki" posTag="Verbo" subPosTag="Copulativo" token="iníronkiki">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+            <affix order="2" text="ronkiki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="rama" lemmaPred="ramakamabi" posTag="Adverbio" subPosTag="Tiempo" token="ramakamanbiERROR"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="mananxawe" lemmaPred="ramakamabi" posTag="Nombre" subPosTag="Contable" token="mananxawe"/>
+        <word id="6" lemma="yosma" lemmaPred="ramakamabi" posTag="Adjetivo" subPosTag="Calificativo" token="yosma"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="ishtoma" lemmaPred="ramakamabi" posTag="Nombre" subPosTag="No contable" token="ishtomashoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="9" lemma="niti" lemmaPred="ramakamabi" posTag="Verbo" subPosTag="Intransitivo" token="niai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Tsoaboki yoiai nato kointonin ?" translation="¿Quiénes intervienen en este cuento?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="tsoa" lemmaPred="moatian" posTag="Palabra Interrogativa" subPosTag="" token="Tsoaboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="yoiti" lemmaPred="moatian" posTag="Verbo" subPosTag="Transitivo" token="yoiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="nato" lemmaPred="moatian" posTag="Pronombre" subPosTag="Demostrativo" token="nato"/>
+        <word id="4" lemma="kointo" lemmaPred="moatian" posTag="Nombre" subPosTag="Contable" token="kointonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Jawekeskaki moatian mananxawe ikátiai ?" translation="¿Cómo era el motelo en tiempos remotos?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeska" lemmaPred="iníronkiki" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="moátian" lemmaPred="moatian" posTag="Adverbio" subPosTag="Tiempo" token="moatian"/>
+        <word id="3" lemma="mananxawe" lemmaPred="moatian" posTag="Nombre" subPosTag="Contable" token="mananxawe"/>
+        <word id="4" lemma="iti" lemmaPred="moatian" posTag="Verbo" subPosTag="Transitivo" token="ikátiai">
+            <affix order="1" text="kati" type="Sufijo verbal"/>
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

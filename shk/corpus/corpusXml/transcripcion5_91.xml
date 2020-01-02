@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jaweratonki jaa petroleo merai , janra akinti iki non Perú , non Jema ." translation="El que halla un lugar donde hay petróleo puede ayudar a la patria.">
+        <word id="0" lemma="Jawerato" lemmaPred="Jaweratonki" posTag="Palabra Interrogativa" subPosTag="" token="Jaweratonki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="ja" lemmaPred="Jaweratonki" posTag="Pronombre" subPosTag="Demostrativo" token="ja"/>
+        <word id="2" lemma="petroleo" lemmaPred="Jaweratonki" posTag="Nombre" subPosTag="No contable" token="petroleo"/>
+        <word id="3" lemma="merati" lemmaPred="merai" posTag="Verbo" subPosTag="Transitivo" token="merai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ja" lemmaPred="janra" posTag="Pronombre" subPosTag="Personal" token="janra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="akínti" lemmaPred="akinti" posTag="Verbo" subPosTag="Transitivo" token="akinti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="akinti" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="non" lemmaPred="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="9" lemma="Perú" lemmaPred="non" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="non" lemmaPred="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="12" lemma="jema" lemmaPred="non" posTag="Nombre" subPosTag="Contable" token="Jema"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Ichaakinronki petroleo nokokanai , wiso xenixeni ikai mainko , jainoaxribi wiso xenixeni ikai iaman , jene pisi poatainkoribi ." translation="Se dice que muchas veces se encuentra el petróleo en lugares donde la tierra y las cochas son grasientas y negras, o cerca de las aguas que siempre tienen olor malo.">
+        <word id="0" lemma="Ichaati" lemmaPred="Ichaakinronki" posTag="Verbo" subPosTag="Transitivo" token="Ichaakinronki">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+            <affix order="2" text="ronki" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="petroleo" lemmaPred="Ichaakinronki" posTag="Nombre" subPosTag="No contable" token="petroleo"/>
+        <word id="2" lemma="nókoti" lemmaPred="nokokanai" posTag="Verbo" subPosTag="Intransitivo" token="nokokanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="wiso" lemmaPred="wiso" posTag="Adjetivo" subPosTag="Calificativo" token="wiso"/>
+        <word id="5" lemma="xenixeni" lemmaPred="xenixeni" posTag="Adjetivo" subPosTag="Calificativo" token="xenixeni"/>
+        <word id="6" lemma="iki" lemmaPred="xenixeni" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="mai" lemmaPred="mai" posTag="Nombre" subPosTag="Contable" token="mainko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="jainoax" lemmaPred="jainoaxribi" posTag="Conjunción" subPosTag="Coordinante" token="jainoaxribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="10" lemma="wiso" lemmaPred="wiso" posTag="Adjetivo" subPosTag="Calificativo" token="wiso"/>
+        <word id="11" lemma="xenixeni" lemmaPred="xenixeni" posTag="Adjetivo" subPosTag="Calificativo" token="xenixeni"/>
+        <word id="12" lemma="iki" lemmaPred="xenixeni" posTag="Verbo" subPosTag="Copulativo" token="ikai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="13" lemma="ian" lemmaPred="iaman" posTag="Nombre" subPosTag="Contable" token="iaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" lemma="jene" lemmaPred="iaman" posTag="Nombre" subPosTag="No contable" token="jene"/>
+        <word id="16" lemma="pisi" lemmaPred="pisi" posTag="Nombre" subPosTag="No contable" token="pisi"/>
+        <word id="17" lemma="póati" lemmaPred="poatainkoribi" posTag="Verbo" subPosTag="Intransitivo" token="poatainkoribi">
+            <affix order="1" text="ainko" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="18" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Min aíbata joi jakiribi aríbawe , 24 peinko peoxon hasta 30 pei kaman ." translation="Repasa las páginas de la primera unidad de La Patria.">
+        <word id="0" lemma="mia" lemmaPred="poatainkoribi" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ati" lemmaPred="poatainkoribi" posTag="Verbo" subPosTag="Transitivo" token="aíbata">
+            <affix order="1" text="iba" type="Sufijo verbal"/>
+            <affix order="2" text="ta" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jói" lemmaPred="poatainkoribi" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="3" lemma="jakiribi" lemmaPred="poatainkoribi" posTag="Adverbio" subPosTag="Tiempo" token="jakiribi"/>
+        <word id="4" lemma="ati" lemmaPred="poatainkoribi" posTag="Verbo" subPosTag="Transitivo" token="aríbawe">
+            <affix order="1" text="iba" type="Sufijo verbal"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="24" posTag="Numeral" subPosTag="" token="24"/>
+        <word id="7" lemma="péi" lemmaPred="poatainkoribi" posTag="Nombre" subPosTag="Contable" token="peinko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="peoti" lemmaPred="peoxon" posTag="Verbo" subPosTag="Transitivo" token="peoxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="hasta" lemmaPred="peoxon" posTag="Símbolo" subPosTag="" token="hasta"/>
+        <word id="10" lemma="30" posTag="Numeral" subPosTag="" token="30"/>
+        <word id="11" lemma="péi" lemmaPred="peoxon" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="12" lemma="kaman" lemmaPred="peoxon" posTag="Postposición" subPosTag="" token="kaman"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Américainoaxa Europa iki ochóbires . Jatíbi ani nasi bari joai naman narakaabo iki ochóbires ." translation="Europa y todos los continentes del este quedan muy lejos de América.">
+        <word id="0" lemma="América" lemmaPred="Américainoaxa" posTag="Nombre Propio" subPosTag="" token="Américainoax">
+            <affix order="1" text="ainoax" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="Europa" lemmaPred="Europa" posTag="Nombre Propio" subPosTag="" token="Europa"/>
+        <word id="2" lemma="iki" lemmaPred="Europa" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="ochó" lemmaPred="Europa" posTag="Adverbio" subPosTag="Locación" token="ochóbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="5" lemma="jatíbi" lemmaPred="Europa" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbi"/>
+        <word id="6" lemma="ani" lemmaPred="Europa" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="7" lemma="nasi" lemmaPred="nasi" posTag="Nombre" subPosTag="Contable" token="nasi"/>
+        <word id="8" lemma="bari" lemmaPred="nasi" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="9" lemma="joti" lemmaPred="joti" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="naman" lemmaPred="joti" posTag="Postposición" subPosTag="" token="naman"/>
+        <word id="11" lemma="nárakati" lemmaPred="Américainoaxa" posTag="Verbo" subPosTag="Intransitivo" token="narakaabo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="12" lemma="iki" lemmaPred="narakaabo" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="13" lemma="ochó" lemmaPred="narakaabo" posTag="Adverbio" subPosTag="Locación" token="ochóbires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Icha baritiabires Europain iká jonibaon shinana iki , Perú yamaa keská , Américain iká jemaboribi yamaa keská . Jainra icha jonibo iki ikí ixon onanyamakana iki ." translation="Hace muchos años Europa y el resto del mundo no sabían del Perú ni de los otros países de la América, tampoco sabían que aquí había mucha gente.">
+        <word id="0" lemma="ícha" lemmaPred="narakaabo" posTag="Adverbio" subPosTag="Cantidad" token="Icha"/>
+        <word id="1" lemma="báritia" lemmaPred="baritiabires" posTag="Nombre" subPosTag="Contable" token="baritiabires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="Europa" lemmaPred="baritiabires" posTag="Nombre Propio" subPosTag="" token="Europain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="baritiabires" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="joni" lemmaPred="baritiabires" posTag="Nombre" subPosTag="Contable" token="jonibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="shinánti" lemmaPred="shinana" posTag="Verbo" subPosTag="Transitivo" token="shinana">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="Perú" lemmaPred="iki" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="9" lemma="yámati" lemmaPred="yamaa" posTag="Verbo" subPosTag="Intransitivo" token="yamaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="keska" lemmaPred="yamaa" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" lemma="América" lemmaPred="yamaa" posTag="Nombre Propio" subPosTag="" token="Américain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="13" lemma="iki" lemmaPred="yamaa" posTag="Verbo" subPosTag="Copulativo" token="iká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="14" lemma="jema" lemmaPred="jemaboribi" posTag="Nombre" subPosTag="Contable" token="jemaboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="15" lemma="yámati" lemmaPred="yamaa" posTag="Verbo" subPosTag="Intransitivo" token="yamaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="16" lemma="keska" lemmaPred="yamaa" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="18" lemma="Jain" lemmaPred="Jainrá" posTag="Adverbio" subPosTag="Locación" token="Jainra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="19" lemma="ícha" lemmaPred="Jainrá" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="20" lemma="joni" lemmaPred="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="21" lemma="iki" lemmaPred="joni" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="22" lemma="iki" lemmaPred="joni" posTag="Verbo" subPosTag="Copulativo" token="ikí"/>
+        <word id="23" lemma="iki" lemmaPred="joni" posTag="Verbo Auxiliar" subPosTag="" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="24" lemma="onánti" lemmaPred="onanyamakana" posTag="Verbo" subPosTag="Transitivo" token="onanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="25" lemma="iki" lemmaPred="onanyamakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="26" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

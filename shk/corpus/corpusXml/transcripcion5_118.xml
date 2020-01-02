@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Ani manamanra matsibires iki ." translation="En la sierra hace mucho frío.">
+        <word id="0" lemma="ani" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="Ani"/>
+        <word id="1" lemma="manan" lemmaPred="manamanra" posTag="Nombre" subPosTag="Contable" token="manamanra">
+            <affix order="1" text="man" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="matsi" lemmaPred="matsibires" posTag="Nombre" subPosTag="No contable" token="matsibires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="matsibires" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Icha makan iki jain , nií ichama ." translation="Hay muchas piedras y hay pocos árboles.">
+        <word id="0" lemma="icha" lemmaPred="matsibires" posTag="Adjetivo" subPosTag="Calificativo" token="Icha"/>
+        <word id="1" lemma="makan" lemmaPred="matsibires" posTag="Nombre" subPosTag="Contable" token="makan"/>
+        <word id="2" lemma="iki" lemmaPred="matsibires" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="jain" lemmaPred="matsibires" posTag="Adverbio" subPosTag="Locación" token="jain"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="nií" lemmaPred="matsibires" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="6" lemma="ichama" lemmaPred="ichama" posTag="Adjetivo" subPosTag="Calificativo" token="ichama">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaráke ani manan , keyábires ." translation="Hay cerros muy altos en toda la sierra.">
+        <word id="0" lemma="Jati" lemmaPred="Jaráke" posTag="Verbo" subPosTag="Intransitivo" token="Jaráke">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="ani" lemmaPred="Jaráke" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="2" lemma="Manan" lemmaPred="Jaráke" posTag="Nombre" subPosTag="Contable" token="manan"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="keyá" lemmaPred="keyábires" posTag="Adjetivo" subPosTag="Calificativo" token="keyábires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaa manaman jane iki , Andes Manan ." translation="El nombre de estos cerros es la &quot;Cordillera de los Andes&quot;.">
+        <word id="0" lemma="ja" lemmaPred="keyábires" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="manán" lemmaPred="keyábires" posTag="Nombre" subPosTag="Contable" token="manaman">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jane" lemmaPred="keyábires" posTag="Nombre" subPosTag="Contable" token="jane"/>
+        <word id="3" lemma="iki" lemmaPred="keyábires" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="Andes" lemmaPred="Andes" posTag="Nombre Propio" subPosTag="" token="Andes"/>
+        <word id="6" lemma="Manan" lemmaPred="Andes" posTag="Nombre" subPosTag="Contable" token="Manan"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Aniparo kexá iki matsi wetsa oxebaon . Wetsa oxen iki xana ." translation="En la costa hace frío durante algunos meses y hace calor en otros meses.">
+        <word id="0" lemma="Aniparo" lemmaPred="Aniparo" posTag="Nombre" subPosTag="No contable" token="Aniparo"/>
+        <word id="1" lemma="kexá" lemmaPred="Aniparo" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="2" lemma="iki" lemmaPred="Aniparo" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="matsi" lemmaPred="matsi" posTag="Nombre" subPosTag="No contable" token="matsi"/>
+        <word id="4" lemma="wetsa" lemmaPred="matsi" posTag="Nombre" subPosTag="Contable" token="wetsa"/>
+        <word id="5" lemma="oxe" lemmaPred="oxebaon" posTag="Nombre" subPosTag="Contable" token="oxebaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="7" lemma="wetsa" lemmaPred="oxebaon" posTag="Nombre" subPosTag="Contable" token="Wetsa"/>
+        <word id="8" lemma="oxe" lemmaPred="oxen" posTag="Nombre" subPosTag="Contable" token="oxen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="iki" lemmaPred="oxen" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="10" lemma="xana" lemmaPred="xana" posTag="Nombre" subPosTag="No contable" token="xana"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

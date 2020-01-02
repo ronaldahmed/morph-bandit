@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Onanyamakana iki nete toron , pelota keská . Shinankana iki , panchá , tabla keská ." translation="No sabían que el mundo es redondo como una pelota sino como una tabla.">
+        <word id="0" lemma="onanti" lemmaPred="Onanyamakana" posTag="Verbo" subPosTag="Transitivo" token="Onanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="Onanyamakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="2" lemma="nete" lemmaPred="Onanyamakana" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="3" lemma="toró" lemmaPred="Onanyamakana" posTag="Nombre" subPosTag="Contable" token="toron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="pelota" lemmaPred="Onanyamakana" posTag="Nombre" subPosTag="Contable" token="pelota"/>
+        <word id="6" lemma="keská" lemmaPred="Onanyamakana" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="shinanti" lemmaPred="Shinankana" posTag="Verbo" subPosTag="Transitivo" token="Shinankana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="iki" lemmaPred="Shinankana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" token="panchá"/>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" lemma="tabla" lemmaPred="tabla" posTag="Nombre" subPosTag="Contable" token="tabla"/>
+        <word id="14" lemma="keská" lemmaPred="tabla" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Onanyamakana iki , jawekeskataxki ea pakéyamaax ea neten rawatiki ikí ixon onanyamakana iki ." translation="No sabían que se puede pasar al otro lado del mundo sin caerse.">
+        <word id="0" lemma="onanti" lemmaPred="tabla" posTag="Verbo" subPosTag="Transitivo" token="Onanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="tabla" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jawekeskatax" lemmaPred="jawekeskataxki" posTag="Adverbio" subPosTag="Manera" token="jawekeskataxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="ea" lemmaPred="pakéyamaax" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="pakéti" lemmaPred="pakéyamaax" posTag="Verbo" subPosTag="Intransitivo" token="pakéyamaax">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="ea" lemmaPred="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="nete" lemmaPred="ea" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" token="rawatiki"/>
+        <word id="9" token="ikí"/>
+        <word id="10" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="onanti" lemmaPred="ikí" posTag="Verbo" subPosTag="Transitivo" token="onanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Onanyamakana iki nato nete toron , kexáoma ." translation="No sabía que la Tierra es redonde y que no tiene un borde.">
+        <word id="0" lemma="onanti" lemmaPred="jawekeskataxki" posTag="Verbo" subPosTag="Transitivo" token="Onanyamakana">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="jawekeskataxki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="2" lemma="nato" lemmaPred="jawekeskataxki" posTag="Determinante" subPosTag="Demostrativo" token="nato"/>
+        <word id="3" lemma="nete" lemmaPred="jawekeskataxki" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="4" lemma="toró" lemmaPred="jawekeskataxki" posTag="Nombre" subPosTag="Contable" token="toron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="kexá" lemmaPred="kexáoma" posTag="Nombre" subPosTag="Contable" token="kexáoma">
+            <affix order="1" text="oma" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Iká iki wetsa joni , Cristóbal Colón . Jan shinana iki , nato nete toron ." translation="Había un hombre, Cristóbal Colón, que creía que la Tierra era redonda.">
+        <word id="0" token="Iká"/>
+        <word id="1" token="iki"/>
+        <word id="2" token="wetsa"/>
+        <word id="3" token="joni"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="Cristóbal"/>
+        <word id="6" token="Colón"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" token="Jan"/>
+        <word id="9" token="shinana"/>
+        <word id="10" token="iki"/>
+        <word id="11" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="12" token="nato"/>
+        <word id="13" token="nete"/>
+        <word id="14" token="toron"/>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jan shinana iki , bari kaiori kaax bari joaiori pikotax mayáti . Mayatax joax , jainribi nokóti ." translation="Creía que se podía navegar hacia el oeste y siguiendo así llegar al este, al mismo punto de donde se salió.">
+        <word id="0" lemma="ja" lemmaPred="kexáoma" posTag="Pronombre" subPosTag="Personal" token="Jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="shinanti" lemmaPred="kexáoma" posTag="Verbo" subPosTag="Transitivo" token="shinana">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="kexáoma" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="bari" lemmaPred="kexáoma" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="5" token="kaiori"/>
+        <word id="6" lemma="kati" lemmaPred="kaiori" posTag="Verbo" subPosTag="Intransitivo" token="kaax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="bari" lemmaPred="kaiori" posTag="Nombre" subPosTag="Contable" token="bari"/>
+        <word id="8" token="joaiori"/>
+        <word id="9" token="pikotax"/>
+        <word id="10" token="mayáti"/>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="12" token="Mayatax"/>
+        <word id="13" token="joax"/>
+        <word id="14" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="15" token="jainribi"/>
+        <word id="16" token="nokóti"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

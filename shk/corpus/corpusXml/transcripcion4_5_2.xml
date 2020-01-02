@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Eara jakonbirestani iki ." translation="Estoy muy bien, gracias.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Eara">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonbirestani">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+            <affix order="2" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Min papaki jaskábirestani iitai ?" translation="¿Cómo está tu familia?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="papa" posTag="Nombre" subPosTag="Contable" token="papaki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="jaská" posTag="Adverbio" subPosTag="Manera" token="jaskábirestani">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+            <affix order="2" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iiti" posTag="Verbo" subPosTag="Intransitivo" token="iitai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jatíbiki isinkonama ?" translation="¿Todos están bien?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jatibi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="isinti" posTag="Verbo" subPosTag="Intransitivo" token="isinkonama">
+            <affix order="1" text="kon" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+            <affix order="3" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Ikáma . Jatíbira koshibirestani ikanai ." translation="Toda mi familia está bien, gracias.">
+        <word id="0" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="Ikáma">
+            <affix order="1" text="ama" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="2" lemma="jatibi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="koshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshibirestani">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+            <affix order="2" text="tani" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jenjen . Karíbaparibanon ." translation="Bueno, ya tengo que irme.">
+        <word id="0" lemma="jenjen" posTag="Interjección" subPosTag="" token="Jenjen"/>
+        <word id="1" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="2" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="Karíbaparibanon">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="pari" type="Clít. de posición libre"/>
+            <affix order="3" text="banon" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Iíkin moa ikonwakana iki , ikon riki Barin bake ixon . Jaskara iketian non axonresti iki , jatíbi jawéki noa ati yoia , ikí ikana iki ." translation="Al fin creían que eran realmente hijos del sol y por lo tanto debían hacer todo lo que se les mandaba.">
+        <word id="0" lemma="íki" lemmaPred="Iíkin" posTag="Verbo" subPosTag="Intransitivo" token="Iíkin">
+            <affix order="1" text="kin#2" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="moa" lemmaPred="Iíkin" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="2" lemma="ikonwati" lemmaPred="ikonwakana" posTag="Verbo" subPosTag="Transitivo" token="ikonwakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ikon" lemmaPred="ikonwakana" posTag="Nombre" subPosTag="Contable" token="ikon"/>
+        <word id="6" lemma="riki" lemmaPred="ikonwakana" posTag="Verbo" subPosTag="Intransitivo" token="riki"/>
+        <word id="7" lemma="bari" lemmaPred="ikonnra" posTag="Nombre" subPosTag="Contable" token="Barin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="báke" lemmaPred="bake" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="9" lemma="iki" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="jaskara" lemmaPred="ixon" posTag="Determinante" subPosTag="Demostrativo" token="Jaskara"/>
+        <word id="12" token="iketian"/>
+        <word id="13" token="non"/>
+        <word id="14" lemma="axonti" lemmaPred="axonresti" posTag="Verbo" subPosTag="Transitivo" token="axonresti">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="15" token="iki"/>
+        <word id="16" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="17" token="jatíbi"/>
+        <word id="18" token="jawéki"/>
+        <word id="19" token="noa"/>
+        <word id="20" token="ati"/>
+        <word id="21" token="yoia"/>
+        <word id="22" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="23" token="ikí"/>
+        <word id="24" token="ikana"/>
+        <word id="25" token="iki"/>
+        <word id="26" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaskáaxon Incaakin janekana iki , jaa Manco Cápac . Inca iki non joinbiribi aká : Mai Hibo ." translation="El pueblo entonces proclamó a Manco Cápac &quot;Inca&quot; que significa &quot;Señor de la Tierra.&quot;">
+        <word id="0" token="Jaskáaxon"/>
+        <word id="1" token="Incaakin"/>
+        <word id="2" token="janekana"/>
+        <word id="3" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="jaa"/>
+        <word id="6" token="Manco"/>
+        <word id="7" token="Cápac"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="9" token="Inca"/>
+        <word id="10" token="iki"/>
+        <word id="11" token="non"/>
+        <word id="12" token="joinbiribi"/>
+        <word id="13" token="aká"/>
+        <word id="14" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="15" token="Mai"/>
+        <word id="16" token="Hibo"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Manco Cápacnin aká iki , ani jemaakin , Incabaon jain jato ikinnoxon . Jaa jeman jane iki Cuzco ." translation="Manco Cápac fundó la capital del imperio de los incas, la cual se llama el Cuzco.">
+        <word id="0" token="Manco"/>
+        <word id="1" token="Cápacnin"/>
+        <word id="2" token="aká"/>
+        <word id="3" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" token="ani"/>
+        <word id="6" token="jemaakin"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" token="Incabaon"/>
+        <word id="9" token="jain"/>
+        <word id="10" token="jato"/>
+        <word id="11" token="ikinnoxon"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="13" token="Jaa"/>
+        <word id="14" token="jeman"/>
+        <word id="15" token="jane"/>
+        <word id="16" token="iki"/>
+        <word id="17" token="Cuzco"/>
+        <word id="18" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaátian Manco Cápacnin jato yoia iki : Inca mawáketian jawen reken bake jikimanoxikanwe Inca iti , jawen papan toan . Jaskáakin jato yoia iki ." translation="Declaró Manco Cápac que a la muerte del Inca su hijo mayor fuese nombrado Inca en lugar de él.">
+        <word id="0" token="Jaátian"/>
+        <word id="1" token="Manco"/>
+        <word id="2" token="Cápacnin"/>
+        <word id="3" token="jato"/>
+        <word id="4" token="yoia"/>
+        <word id="5" token="iki"/>
+        <word id="6" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="7" token="Inca"/>
+        <word id="8" token="mawáketian"/>
+        <word id="9" token="jawen"/>
+        <word id="10" token="reken"/>
+        <word id="11" token="bake"/>
+        <word id="12" token="jikimanoxikanwe"/>
+        <word id="13" token="Inca"/>
+        <word id="14" token="iti"/>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" token="jawen"/>
+        <word id="17" token="papan"/>
+        <word id="18" token="toan"/>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="20" token="Jaskáakin"/>
+        <word id="21" token="jato"/>
+        <word id="22" token="yoia"/>
+        <word id="23" token="iki"/>
+        <word id="24" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa Inca ipaonike , chonka chosko ." translation="Los Incas fuerons catorce.">
+        <word id="0" token="Jaa"/>
+        <word id="1" token="Inca"/>
+        <word id="2" token="ipaonike"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="chonka"/>
+        <word id="5" token="chosko"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

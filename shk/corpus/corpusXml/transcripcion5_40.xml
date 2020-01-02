@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Koka pixon min yora koshi keská min shinanai . Ikaxbi jaskarama iki ." translation="Cuando tomas coca, tu cuerpo se siente fuerte pero no lo está.">
+        <word id="0" lemma="koka" lemmaPred="Koka" posTag="Nombre" subPosTag="Contable" token="Koka"/>
+        <word id="1" lemma="piti" lemmaPred="pixonki" posTag="Nombre" subPosTag="Contable" token="pixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="mia" lemmaPred="min" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="yora" lemmaPred="yora" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="4" lemma="koshi" lemmaPred="koshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="5" lemma="keská" lemmaPred="keská" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="6" lemma="mia" lemmaPred="min" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="shinanti" lemmaPred="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="9" lemma="Ikaxbi" lemmaPred="Ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="Ikaxbi"/>
+        <word id="10" lemma="jaskara" lemmaPred="jaskarama" posTag="Adverbio" subPosTag="Manera" token="jaskarama">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="iki" lemmaPred="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Min pikáshamakinbimin jawékiarestiki , min yora koshiti ." translation="Aunque no sientes hambre, tu cuerpo todavía necesita buen alimento.">
+        <word id="0" lemma="mia" lemmaPred="Min" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="piti" lemmaPred="pikáshamakinbimin" posTag="Símbolo" subPosTag="" token="pikáshamakinbiminERROR">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="yama" type="Sufijo verbal"/>
+        </word>
+        <word id="2" token="jawékiarestiki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="min" lemmaPred="min" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="yora" lemmaPred="yora" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="6" lemma="koshiti" lemmaPred="koshiti" posTag="Verbo" subPosTag="Intransitivo" token="koshiti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Min jakonwakin jawékiayamaibi min teéxon minbira isin merati iki ." translation="Trabajar sin alimentarse bien te puede hacer mucho daño.">
+        <word id="0" lemma="min" lemmaPred="Min" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jakonhati" lemmaPred="jakonwakin" posTag="Verbo" subPosTag="Intransitivo" token="jakonhakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="jawékiati" lemmaPred="jawékiayamaibi" posTag="Verbo" subPosTag="Transitivo" token="jawékiayamaibi">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+            <affix order="3" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="min" lemmaPred="min" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" token="teéxon"/>
+        <word id="5" lemma="mia" lemmaPred="minbira" posTag="Pronombre" subPosTag="Personal" token="minbira">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bira" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" token="isin"/>
+        <word id="7" lemma="merati" lemmaPred="merati" posTag="Verbo" subPosTag="Transitivo" token="merati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jaskara ixon , pikaskin icha pinoxon awe . Mia paxkinax mia iti iki tantii ." translation="Mejor será que comas algo cuando tengas hambre  y descanses un rato cuando estés cansado.">
+        <word id="0" lemma="Jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="piti" lemmaPred="pikaskí" posTag="Verbo" subPosTag="Transitivo" token="pikaskin">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" token="icha"/>
+        <word id="5" token="pinoxon"/>
+        <word id="6" lemma="ati" lemmaPred="awe" posTag="Verbo" subPosTag="Transitivo" token="awe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="mia" lemmaPred="Mia" posTag="Pronombre" subPosTag="Personal" token="Mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="9" token="paxkinax"/>
+        <word id="10" lemma="mia" lemmaPred="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="iti" lemmaPred="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="12" token="iki"/>
+        <word id="13" token="tantii"/>
+        <word id="14" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskatira mia baritiabo jati iki . Jaskatax mia mas koshi iti iki . Jaskara ikaxa mia isintan isintantima iki ." translation="Así vas a vivir más años, vas a ser más fuerte y no vas a enfermarte tan a menudo.">
+        <word id="0" token="Jaskatira"/>
+        <word id="1" lemma="mia" lemmaPred="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="baritia" lemmaPred="baritiabo" posTag="Nombre" subPosTag="Contable" token="baritiabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" token="jati"/>
+        <word id="4" token="iki"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="6" lemma="Jaskatax" lemmaPred="Jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="7" lemma="mia" lemmaPred="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="mas" lemmaPred="mas" posTag="Símbolo" subPosTag="" token="mas"/>
+        <word id="9" lemma="koshi" lemmaPred="koshi" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="10" lemma="iti" lemmaPred="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="11" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="13" lemma="Jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="14" lemma="iki" lemmaPred="ikaxa" posTag="Verbo" subPosTag="Copulativo" token="ikaxa">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+            <affix order="2" text="a" type="Clít. de segunda posición"/>
+        </word>
+        <word id="15" lemma="mia" lemmaPred="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="16" token="isintan"/>
+        <word id="17" token="isintantima"/>
+        <word id="18" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="19" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Ani manamanra jake maiwaporo , yami xaon niai ." translation="En la sierra y en la costa hay ferrocarriles.">
+        <word id="0" lemma="ani" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="Ani"/>
+        <word id="1" lemma="manan" lemmaPred="manamanra" posTag="Nombre" subPosTag="Contable" token="manamanra">
+            <affix order="1" text="man" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jati" lemmaPred="manamanra" posTag="Verbo" subPosTag="Intransitivo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="maiwaporo" lemmaPred="maiwaporo" posTag="Nombre" subPosTag="Contable" token="maiwaporo"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="yami" lemmaPred="yami" posTag="Nombre" subPosTag="Contable" token="yami"/>
+        <word id="6" lemma="xao" lemmaPred="xaon" posTag="Nombre" subPosTag="Contable" token="xaon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="niti" lemmaPred="niti" posTag="Verbo" subPosTag="Intransitivo" token="niai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Aniparo kexá jaríbake ." translation="Por ellos andan los trenes con motores poderosos.">
+        <word id="0" lemma="Aniparo" lemmaPred="Aniparo" posTag="Nombre" subPosTag="Contable" token="Aniparo"/>
+        <word id="1" lemma="kexá" lemmaPred="Aniparo" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="2" lemma="jati" lemmaPred="Aniparo" posTag="Verbo" subPosTag="Intransitivo" token="jaríbake">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaábo iki koshi máquinaya ; icha joni boai , icha jawékiribi boai ." translation="Llevan muchos pasajeros y mucha carga.">
+        <word id="0" lemma="Ja" lemmaPred="Jaábo" posTag="Pronombre" subPosTag="Personal" token="Jaábo">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="Jaábo" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="2" lemma="koshi" lemmaPred="Jaábo" posTag="Adjetivo" subPosTag="Calificativo" token="koshi"/>
+        <word id="3" lemma="máquina" lemmaPred="máquinaya" posTag="Nombre" subPosTag="Contable" token="máquinaya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma=";" posTag="Puntuación" subPosTag="" token=";"/>
+        <word id="5" lemma="icha" lemmaPred="máquinaya" posTag="Adjetivo" subPosTag="Calificativo" token="icha"/>
+        <word id="6" lemma="joni" lemmaPred="joninra" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="7" lemma="boti" lemmaPred="boai" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="icha" lemmaPred="boai" posTag="Adjetivo" subPosTag="Calificativo" token="icha"/>
+        <word id="10" lemma="jawéki" lemmaPred="jawékiribi" posTag="Nombre" subPosTag="Contable" token="jawékiribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="boti" lemmaPred="jawékiribi" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nií manan o aviónbo boax banéribikanai ." translation="Sobre la selva pasan los aviones.">
+        <word id="0" lemma="Nii" lemmaPred="Nií" posTag="Nombre" subPosTag="Contable" token="Nii"/>
+        <word id="1" lemma="manan" lemmaPred="aviónbo" posTag="Nombre" subPosTag="Contable" token="mananERROR"/>
+        <word id="2" lemma="o" lemmaPred="aviónbo" posTag="Conjunción" subPosTag="Coordinante" token="o"/>
+        <word id="3" lemma="avión" lemmaPred="aviónbo" posTag="Nombre" subPosTag="Contable" token="aviónbo"/>
+        <word id="4" lemma="kati" lemmaPred="boax" posTag="Verbo" subPosTag="Intransitivo" token="boax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="banéti" lemmaPred="banéribikanai" posTag="Verbo" subPosTag="Intransitivo" token="banéribikanai">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaráke aviónshokobo , jenen paketai ." translation="Hay aviones chicos que pueden acuatizar en el agua.">
+        <word id="0" lemma="jati" lemmaPred="Jaráke" posTag="Verbo" subPosTag="Intransitivo" token="Jaráke">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="avión" lemmaPred="aviónshokobo" posTag="Nombre" subPosTag="Contable" token="aviónshokobo">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jene" lemmaPred="jenen" posTag="Nombre" subPosTag="No contable" token="jenen">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="pakéti" lemmaPred="paketai" posTag="Verbo" subPosTag="Intransitivo" token="paketai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

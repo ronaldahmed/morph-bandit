@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="En awápishi nóntiaara ea yómetsoakanke" translation="Me robaron la canoa que hice de pashaca">
+        <word id="0" lemma="En" posTag="Pronombre" subPosTag="Personal" token="En"/>
+        <word id="1" lemma="awápishi" posTag="Nombre" subPosTag="Contable" token="awápishi"/>
+        <word id="2" lemma="nónti" posTag="Nombre" subPosTag="Contable" token="nóntiaara">
+            <affix order="1" text="a" type="Sufijo nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="4" lemma="yómetsoati" posTag="Verbo" subPosTag="Transitivo" token="yómetsoakanke">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Awarampiti naman rákatara en manánxawe bíke" translation="Conseguí un motelo que estaba debajo de este bejuco">
+        <word id="0" lemma="Awarampiti" posTag="Nombre" subPosTag="Contable" token="Awarampiti"/>
+        <word id="1" lemma="naman" posTag="Adverbio" subPosTag="Locación" token="naman"/>
+        <word id="2" lemma="rákati" posTag="Verbo" subPosTag="Intransitivo" token="rákatara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="En" posTag="Pronombre" subPosTag="Personal" token="en"/>
+        <word id="4" lemma="manánxawe" posTag="Nombre" subPosTag="Contable" token="manánxawe"/>
+        <word id="5" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bíke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Awátepon ochíti xéamaara méchai" translation="Cuando a el perro se le da de tomar la planta ahuátepon, se vuelve buen cazador">
+        <word id="0" lemma="Awátepon" posTag="Nombre" subPosTag="Contable" token="Awátepon"/>
+        <word id="1" lemma="ochíti" posTag="Nombre" subPosTag="Contable" token="ochíti"/>
+        <word id="2" lemma="xéati" posTag="Verbo" subPosTag="Transitivo" token="xéamaara">
+            <affix order="2" text="a#4" type="Clít. concord. de particip."/>
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="3" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="méchati" posTag="Verbo" subPosTag="Transitivo" token="méchai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Jawen áwininra bíke" translation="Su esposa lo recibió">
+        <word id="0" lemma="Jawen" posTag="Pronombre" subPosTag="Personal" token="Jawen"/>
+        <word id="1" lemma="áwinin" posTag="Nombre" subPosTag="Contable" token="áwininra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bíke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Atapa awin kéotaronki máwakanon íkai" translation="Dicen que cuando la gallina cacarea, anuncia que alguien va a morir">
+        <word id="0" lemma="átapa" posTag="Nombre" subPosTag="Contable" token="Atapa"/>
+        <word id="1" lemma="awin" posTag="Nombre" subPosTag="Contable" token="awin"/>
+        <word id="2" lemma="kéoti" posTag="Verbo" subPosTag="Intransitivo" token="kéotaronki">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="máwati" posTag="Verbo" subPosTag="Intransitivo" token="máwakanon">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="on" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="íki" posTag="Verbo" subPosTag="Transitivo" token="íkai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

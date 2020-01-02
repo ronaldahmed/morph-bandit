@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="¿ Jawekeská meskóboki min oinai ?" translation="¿Qué colores puedes ver?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeská" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeská"/>
+        <word id="2" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskóboki">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Enra meskó sion oinke ." translation="Veo todos los colores del arco iris.">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Enra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="2" lemma="sion" posTag="Nombre" subPosTag="Contable" token="sion"/>
+        <word id="3" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oinke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Min cuaderno meran wishawe , baken oina keskábo , meskó sionbo ." translation="Escribe en tu cuaderno los colores que la muchacha vió.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="bake" posTag="Nombre" subPosTag="Contable" token="baken">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="ointi" posTag="Verbo" subPosTag="Transitivo" token="oina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="keska" posTag="Postposición" subPosTag="" token="keskábo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="9" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="10" lemma="sion" posTag="Nombre" subPosTag="Contable" token="sionbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Min haíbata joi jakiribi haríbawe , 6 peinko peoxon hasta 9 pei kaman ." translation="Repasa las páginas de la segunda unidad de La Localidad.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aíbata">
+            <affix order="1" text="ibat" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jói" posTag="Nombre" subPosTag="Contable" token="joi"/>
+        <word id="3" lemma="jakiribi" posTag="Adverbio" subPosTag="Tiempo" token="jakiribi"/>
+        <word id="4" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aríbawe">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="6" posTag="Numeral" subPosTag="" token="6"/>
+        <word id="7" lemma="péi" posTag="Nombre" subPosTag="Contable" token="peinko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="peoti" posTag="Verbo" subPosTag="Transitivo" token="peoxon">
+            <affix order="1" text="xon" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="hasta" posTag="Postposición" subPosTag="" token="hasta"/>
+        <word id="10" lemma="9" posTag="Numeral" subPosTag="" token="9"/>
+        <word id="11" lemma="péi" posTag="Nombre" subPosTag="Contable" token="pei"/>
+        <word id="12" lemma="kaman" posTag="Postposición" subPosTag="" token="kaman"/>
+        <word id="13" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="San Martín Argentinainoax pikota iki , 1778 baritia iketian ." translation="San Martín nació en la Argentina en el año 1778.">
+        <word id="0" lemma="san" posTag="Adjetivo" subPosTag="Calificativo" token="San"/>
+        <word id="1" lemma="Martín" posTag="Nombre Propio" subPosTag="" token="Martín"/>
+        <word id="2" lemma="Argentina" posTag="Nombre Propio" subPosTag="" token="Argentinainoax">
+            <affix order="1" text="in" type="Clít. nominal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="pikóti" posTag="Verbo" subPosTag="Intransitivo" token="pikota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="1778" posTag="Numeral" subPosTag="" token="1778"/>
+        <word id="7" lemma="báritia" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

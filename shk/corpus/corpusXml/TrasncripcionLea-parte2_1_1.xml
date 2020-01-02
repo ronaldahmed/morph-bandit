@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Jara jake maníshain ." translation="Ellos están en el monte.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jati" posTag="Verbo" subPosTag="Copulativo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="manish" posTag="Nombre" subPosTag="Contable" token="maníshain">
+            <affix order="1" text="ain" type="Sufijo nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Tetébora jake maníshain ." translation="Hay gavilanes en el monte.">
+        <word id="0" lemma="Teté" posTag="Nombre" subPosTag="Contable" token="Tetébora">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jati" posTag="Verbo" subPosTag="Copulativo" token="jake">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="manish" posTag="Nombre" subPosTag="Contable" token="maníshain">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Janra bachiai jiwin ." translation="Él pone sus huevos en los árboles.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Janra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bachi áti" posTag="Verbo" subPosTag="Transitivo" token="bachiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Teténra bachiai jiwin ." translation="El gavilán pone sus huevos en los árboles.">
+        <word id="0" lemma="Teté" posTag="Nombre" subPosTag="Contable" token="Teténra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="bachi áti" posTag="Verbo" subPosTag="Transitivo" token="bachiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Janra piai nami ." translation="Come carne.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Janra">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="piti" posTag="Verbo" subPosTag="Transitivo" token="piai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="nami" posTag="Nombre" subPosTag="No contable" token="nami"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

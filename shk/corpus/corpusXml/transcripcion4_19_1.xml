@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jan noa escuelanko weitai neten jane wishawe ." translation="Escribe los nombres de los días en que venimos a la escuela.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="escuela" posTag="Nombre" subPosTag="Contable" token="escuelanko">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="weíti" posTag="Verbo" subPosTag="Intransitivo" token="weitai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="janéti" posTag="Verbo" subPosTag="Transitivo" token="jane"/>
+        <word id="6" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jan noa tantia neten jane wishawe ." translation="Escribe el nombre del día en que descansamos.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="tántiti" posTag="Verbo" subPosTag="Intransitivo" token="tantia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="nete" posTag="Nombre" subPosTag="Contable" token="neten">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="janéti" posTag="Verbo" subPosTag="Transitivo" token="jane"/>
+        <word id="5" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Netetiibi jawen hora senenshaman noa nokóti iki ." translation="Queremos ser puntuales todos los días de la semana.">
+        <word id="0" lemma="nete" posTag="Nombre" subPosTag="Contable" token="Netetiibi">
+            <affix order="1" text="tiibi" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="2" lemma="hora" posTag="Nombre" subPosTag="Contable" token="hora"/>
+        <word id="3" lemma="senénshaman" posTag="Adverbio" subPosTag="Tiempo" token="senenshaman"/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="5" lemma="nokóti" posTag="Verbo" subPosTag="Intransitivo" token="nokóti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Reloj" translation="El reloj">
+        <word id="0" lemma="reloj" posTag="Nombre" subPosTag="Contable" token="Reloj"/>
+    </sentence>
+    <sentence id="4" text="Maestron , rekena baritia bakebo reloj yoiaitian , ninkáwe ." translation="Escucha cuando tu maestro explica lo del reloj a los del primer año.">
+        <word id="0" lemma="maestro" posTag="Nombre" subPosTag="Contable" token="Maestron">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="rekénti" posTag="Verbo" subPosTag="Intransitivo" token="rekena">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="báritia" posTag="Nombre" subPosTag="Contable" token="baritia"/>
+        <word id="4" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="reloj" posTag="Nombre" subPosTag="Contable" token="reloj"/>
+        <word id="6" lemma="yóiti" posTag="Verbo" subPosTag="Transitivo" token="yoiaitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="ninkáti" posTag="Verbo" subPosTag="Transitivo" token="ninkáwe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

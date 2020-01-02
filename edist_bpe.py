@@ -71,20 +71,21 @@ class EDistBPE:
     self.merge_bigrams = self.build_merge_bigrams(self.merge_history)
 
 
-  def dump_merge_file(self,tbname):
-    if not os.path.exists("data/"+tbname):
-      os.makedirs("data/"+tbname)
-    outfile = open("data/%s/merges" % tbname,'w')
+  def dump_merge_file(self,tbname,fname="merges",prefix="data"):
+    if not os.path.exists(os.path.join(prefix,tbname)):
+      os.makedirs(os.path.join(prefi,tbname))
+    outfile = open(os.path.join(prefix,tbname,fname),'w')
     for op1,op2 in self.merge_history:
       print("%s-%s\t%s-%s" % (op1[0],op1[1],op2[0],op2[1]),file=outfile)
 
 
   def load_merge_file(self,filename):
     merges = []
-    for line in open(merge_file,'r'):
+    for line in open(filename,'r'):
       line = line.strip("\n")
       if line=="": continue
-      op1,op2 = line.strip("\t")
+      op1,op2 = line.split("\t")
+      
       merges.append([op1.split("-"),op2.split("-")])
     return self.build_merge_bigrams(merges)
 

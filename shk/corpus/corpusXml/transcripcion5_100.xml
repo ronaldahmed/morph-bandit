@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Min cuadernonin jawen janebo awé ." translation="Escribe en tu cuaderno sus nombres.">
+        <word id="0" lemma="mia" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" lemmaPred="cuadernonin" posTag="Nombre" subPosTag="Contable" token="cuadernonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jawen" lemmaPred="cuadernonin" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="3" lemma="jane" lemmaPred="janebo" posTag="Nombre" subPosTag="Contable" token="janebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ati" lemmaPred="janebo" posTag="Verbo" subPosTag="Transitivo" token="awé">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweraorin Norte América ?" translation="¿Por dónde queda Norte América?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jaweranorin" lemmaPred="Jaweraorin" posTag="Palabra Interrogativa" subPosTag="" token="Jaweranorin"/>
+        <word id="2" lemma="Norte" lemmaPred="Jaweraorin" posTag="Nombre Propio" subPosTag="" token="Norte"/>
+        <word id="3" lemma="América" lemmaPred="Jaweraorin" posTag="Nombre Propio" subPosTag="" token="América"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jawerato aninasinrin Perú ?" translation="¿En qué continente está el Perú?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="Jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="aninasi" lemmaPred="Jawerato" posTag="Nombre" subPosTag="Contable" token="aninasinrin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="Perú" lemmaPred="Jawerato" posTag="Nombre Propio" subPosTag="" token="Perú"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Metoe , jawerato pontérin África ." translation="Señala la dirección en que está África.">
+        <word id="0" lemma="Metowe" lemmaPred="Metoe" posTag="Verbo" subPosTag="Transitivo" token="Metowe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="Jawerato" lemmaPred="Metoe" posTag="Palabra Interrogativa" subPosTag="" token="jawerato"/>
+        <word id="3" lemma="ponté" lemmaPred="Metoe" posTag="Adverbio" subPosTag="Manera" token="pontérin">
+            <affix order="1" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="África" lemmaPred="Metoe" posTag="Nombre Propio" subPosTag="" token="África"/>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Jawerato pontéki kati iki , Asiain kaí ?" translation="¿Por dónde viajaría uno para llegar a Asia?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawerato" lemmaPred="Jawerato" posTag="Palabra Interrogativa" subPosTag="" token="Jawerato"/>
+        <word id="2" lemma="ponté" lemmaPred="pontéki" posTag="Adverbio" subPosTag="Manera" token="pontéki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="kati" lemmaPred="kati" posTag="Verbo" subPosTag="Intransitivo" token="kati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="kati" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="Asia" lemmaPred="Asiain" posTag="Nombre Propio" subPosTag="" token="Asiain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="kati" lemmaPred="Asiain" posTag="Verbo" subPosTag="Intransitivo" token="kaí">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

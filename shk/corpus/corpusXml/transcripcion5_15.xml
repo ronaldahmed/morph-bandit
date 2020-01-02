@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="Bake ikax , kaá iki Españain ." translation="Cuando todavía era niño, fue a España.">
+        <word id="0" lemma="bake" posTag="Nombre" subPosTag="Contable" token="Bake"/>
+        <word id="1" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kaá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="España" posTag="Nombre Propio" subPosTag="" token="Españain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainxon kirika aká iki , sontárobaon koshi inoxon ." translation="Allí estudió para oficial del ejército.">
+        <word id="0" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="kírika" posTag="Nombre" subPosTag="Contable" token="kirika"/>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="sontáro" posTag="Nombre" subPosTag="Contable" token="sontárobaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="kóshi" posTag="Nombre" subPosTag="Contable" token="koshi"/>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="inoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Kimisha chonka chosko baritiaya ikax , Argentinain joríbaa iki ." translation="Cuando tenía treinticuatro años de edad, regresó a la Argentina.">
+        <word id="0" lemma="kimisha " posTag="Numeral" subPosTag="" token="Kimisha"/>
+        <word id="1" lemma="chonka" posTag="Numeral" subPosTag="" token="chonka"/>
+        <word id="2" lemma="chosko" posTag="Numeral" subPosTag="" token="chosko"/>
+        <word id="3" lemma="báritia" posTag="Nombre" subPosTag="Contable" token="baritiaya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="Argentina" posTag="Nombre Propio" subPosTag="" token="Argentinain">
+            <affix order="1" text="in" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joríbaa">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Argentinainoax españolobo betan reteanana iki , Argentina jonibo xabakan pikókannon ikax ." translation="En la Argentina peleó contra los españoles para hacer libre a la Argentina.">
+        <word id="0" lemma="Argentina" posTag="Nombre Propio" subPosTag="" token="Argentinainoax">
+            <affix order="1" text="in" type="Clít. nominal"/>
+            <affix order="2" text="o" type="Clít. nominal"/>
+            <affix order="3" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="español" posTag="Adjetivo" subPosTag="Calificativo" token="españolbo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="3" lemma="réteti" posTag="Verbo" subPosTag="Transitivo" token="reteanana">
+            <affix order="1" text="anan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="Argentina" posTag="Nombre Propio" subPosTag="" token="Argentina"/>
+        <word id="7" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="xabá" posTag="Nombre" subPosTag="Contable" token="xabakan">
+            <affix order="1" text="kan" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="pikoti" posTag="Verbo" subPosTag="Transitivo" token="pikókannon">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="10" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Españolon apo ikonwamakaskanai jonibo potakana iki ." translation="Venció a los que querían que la Argentina obedeciera al rey de España.">
+        <word id="0" lemma="español" posTag="Adjetivo" subPosTag="Calificativo" token="Españolbaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="apo" posTag="Nombre" subPosTag="Contable" token="apo"/>
+        <word id="2" lemma="ikonhati" posTag="Verbo" subPosTag="Transitivo" token="ikonhamakaskanai">
+            <affix order="1" text="ma" type="Sufijo verbal"/>
+            <affix order="2" text="kas" type="Sufijo verbal"/>
+            <affix order="3" text="kan" type="Sufijo verbal"/>
+            <affix order="4" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="pótati" posTag="Verbo" subPosTag="Transitivo" token="potakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

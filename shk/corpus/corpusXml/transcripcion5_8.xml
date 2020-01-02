@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="¡ Tita ! ¿ Jawekeskatiki meskó chií koin jokonai ?" translation="Mamá, ¿por qué salen dos clases de humo?">
+        <word id="0" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="1" lemma="Títa" posTag="Nombre" subPosTag="Contable" token="Tita"/>
+        <word id="2" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="3" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="4" lemma="jawekeskati" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="meskó" posTag="Adjetivo" subPosTag="Calificativo" token="meskó"/>
+        <word id="6" lemma="chiicoin" posTag="Nombre" subPosTag="No contable" token="chiícoin"/>
+        <word id="7" lemma="koinERROR" posTag="Símbolo" subPosTag="" token="koinERROR"/>
+        <word id="8" lemma="jokonti" posTag="Verbo" subPosTag="Intransitivo" token="jokonai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="9" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Meskóra jokonyamai ¡ bake !" translation="No salen mezclados ¡hijo!">
+        <word id="0" lemma="mesko" posTag="Adjetivo" subPosTag="Calificativo" token="Meskóra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jokonti" posTag="Verbo" subPosTag="Intransitivo" token="jokonyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="3" lemma="báke" posTag="Nombre" subPosTag="Contable" token="bake"/>
+        <word id="4" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+    </sentence>
+    <sentence id="2" text="Jaa kentikameax jakonai iki xana tokoai ." translation="Lo que sale de la olla se llama vapor.">
+        <word id="0" lemma="jaa" posTag="Verbo" subPosTag="Intransitivo" token="Jaa"/>
+        <word id="1" lemma="kentika" posTag="Nombre" subPosTag="Contable" token="kentikameax">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jokonti" posTag="Verbo" subPosTag="Intransitivo" token="jokonai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="xana" posTag="Adjetivo" subPosTag="Calificativo" token="xana"/>
+        <word id="5" lemma="tocoti" posTag="Verbo" subPosTag="Intransitivo" token="tokoai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Xanara tokoai ompax kobinax bochiki boaitian ." translation="El vapor sube cuando el agua se calienta y evapora.">
+        <word id="0" lemma="xana" posTag="Adjetivo" subPosTag="Calificativo" token="Xanara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="tocoti" posTag="Verbo" subPosTag="Intransitivo" token="tokoai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="ompax" posTag="Nombre" subPosTag="Contable" token="ompax"/>
+        <word id="3" lemma="kobinti" posTag="Verbo" subPosTag="Intransitivo" token="kobinax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="Bóchiki" posTag="Adverbio" subPosTag="Locación" token="bochiki"/>
+        <word id="5" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boaitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Kentikameax xana tokoai iki wishnin keská ." translation="El vapor de la olla se parece a la neblina.">
+        <word id="0" lemma="kentika" posTag="Nombre" subPosTag="Contable" token="Kentikameax">
+            <affix order="1" text="meax" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="xana" posTag="Adjetivo" subPosTag="Calificativo" token="xana"/>
+        <word id="2" lemma="tocoti" posTag="Verbo" subPosTag="Intransitivo" token="tokoai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="wishnin" posTag="Nombre" subPosTag="No contable" token="wishnin"/>
+        <word id="5" lemma="keska" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>0</lastSentence>
+    <sentence id="0" text="Chií koinra jaskarama iki ." translation="El humo del fuego no es así.">
+        <word id="0" lemma="chii" posTag="Nombre" subPosTag="Contable" token="Chií"/>
+        <word id="1" lemma="koin" posTag="Nombre" subPosTag="No contable" token="koinra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="jaskarama">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jawekeskatiki xana tokoax bochiki boai ?" translation="¿Por qué sube el vapor?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskati" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="xana" posTag="Adjetivo" subPosTag="Calificativo" token="xana"/>
+        <word id="3" lemma="tokoti" posTag="Verbo" subPosTag="Transitivo" token="tokoax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="4" lemma="Bóchiki" posTag="Adverbio" subPosTag="Locación" token="bochiki"/>
+        <word id="5" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boai">
+            <affix order="1" text="ai#1" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="Jawe keskatamakan , niwe keská iwema ikax ." translation="Porque pesa menos que el aire.">
+        <word id="0" lemma="Jáwekeskati" posTag="Verbo" subPosTag="Intransitivo" token="Jawekeskatamakan">
+            <affix order="1" text="kan" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jawekeskata" posTag="Símbolo" subPosTag="" token="keskatamakanERROR"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="niwe" posTag="Nombre" subPosTag="No contable" token="niwe"/>
+        <word id="4" lemma="keska" posTag="Postposición" subPosTag="" token="keská"/>
+        <word id="5" lemma="iwe" posTag="Adjetivo" subPosTag="Calificativo" token="iwema">
+            <affix order="1" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="ikax">
+            <affix order="1" text="ax#1" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Naikan boax jakiribi maanai , moa jene . Jaátian moa oi iki ." translation="Cuando sube al cielo, cae otra vez como agua - cae como lluvia.">
+        <word id="0" lemma="naikan" posTag="Nombre" subPosTag="Contable" token="Naikan"/>
+        <word id="1" lemma="boti" posTag="Verbo" subPosTag="Transitivo" token="boax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="jakibiri" posTag="Adverbio" subPosTag="Tiempo" token="jakiribi"/>
+        <word id="3" lemma="maanti" posTag="Verbo" subPosTag="Intransitivo" token="maanai">
+            <affix order="1" text="ai#2" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="moa" posTag="Adverbio" subPosTag="Manera" token="moa"/>
+        <word id="6" lemma="jene" posTag="Nombre" subPosTag="No contable" token="jene"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="8" lemma="jaatian" posTag="Adverbio" subPosTag="Tiempo" token="Jaátian"/>
+        <word id="9" lemma="moa" posTag="Adverbio" subPosTag="Manera" token="moa"/>
+        <word id="10" lemma="oti" posTag="Nombre" subPosTag="No contable" token="oi"/>
+        <word id="11" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="¿ Jawekeskataxki maanti iki ?" translation="¿Cómo puede caerse?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jawekeskatax" posTag="Adverbio" subPosTag="Manera" token="Jawekeskataxki">
+            <affix order="1" text="ki#1" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="maanti" posTag="Verbo" subPosTag="Intransitivo" token="maanti"/>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

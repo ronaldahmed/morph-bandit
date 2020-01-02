@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaskara ikax , non yora iki kimisha jawékia ." translation="Así pues, nuestros cuerpos se componen de tres partes principales.">
+        <word id="0" lemma="jaskara" lemmaPred="" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="yora" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="5" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="6" lemma="kimisha" lemmaPred="" posTag="Numeral" subPosTag="" token="kimisha"/>
+        <word id="7" lemma="jawéki" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="jawékia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Non mapo iki , mapo xao , jainoax bemanan ." translation="La cabeza consta de cráneo y cara.">
+        <word id="0" lemma="noa" lemmaPred="" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="mapo" lemmaPred="bemanan" posTag="Nombre" subPosTag="Parte del cuerpo" token="mapo"/>
+        <word id="2" lemma="iki" lemmaPred="" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="mapo" lemmaPred="bemanan" posTag="Nombre" subPosTag="Parte del cuerpo" token="mapo"/>
+        <word id="5" lemma="xao" lemmaPred="xao" posTag="Nombre" subPosTag="Contable" token="xao"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="jainoax" lemmaPred="xao" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="8" lemma="bemanan" lemmaPred="bemanan" posTag="Nombre" subPosTag="Parte del cuerpo" token="bemanan"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Non yorabi iki , non xochi , non peká , non poró ." translation="El tronco consta de pecho, espalda y vientre.">
+        <word id="0" lemma="noa" lemmaPred="bemanan" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yora" lemmaPred="bemanan" posTag="Nombre" subPosTag="Contable" token="yorabi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="iki" lemmaPred="bemanan" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" lemmaPred="bemanan" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="xochi" lemmaPred="bemanan" posTag="Nombre" subPosTag="Parte del cuerpo" token="xochi"/>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="noa" lemmaPred="bemanan" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="peká" lemmaPred="peká" posTag="Nombre" subPosTag="Parte del cuerpo" token="peká"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="noa" lemmaPred="peká" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="11" lemma="poró" lemmaPred="poró" posTag="Nombre" subPosTag="Parte del cuerpo" token="poró"/>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Non yora chapatabo iki :" translation="Las extremidades son:">
+        <word id="0" lemma="noa" lemmaPred="poró" posTag="Pronombre" subPosTag="Personal" token="Non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="yora" lemmaPred="poró" posTag="Nombre" subPosTag="Contable" token="yora"/>
+        <word id="2" lemma="chapata" lemmaPred="chapatabo" posTag="Nombre" subPosTag="Contable" token="chapatabo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="chapatabo" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="4" text="bochikiri ikábo : poyan , meken ." translation="superiores: brazo, antebrazo y mano.">
+        <word id="0" lemma="bochiki" lemmaPred="bochikiri" posTag="Adverbio" subPosTag="Locación" token="bochikiri">
+            <affix order="1" text="ri" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="iki" lemmaPred="bochikiri" posTag="Verbo" subPosTag="Copulativo" token="ikábo">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+        <word id="3" lemma="poyan" lemmaPred="poyan" posTag="Nombre" subPosTag="Parte del cuerpo" token="poyan"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="meken" lemmaPred="meken" posTag="Nombre" subPosTag="Parte del cuerpo" token="meken"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

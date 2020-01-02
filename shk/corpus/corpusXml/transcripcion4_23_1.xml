@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="Jawéki joa non binai ." translation="Se usan las flores de las plantas.">
+        <word id="0" lemma="jawéki" lemmaPred="Jawéki" posTag="Nombre" subPosTag="Contable" token="Jawéki"/>
+        <word id="1" lemma="joti" lemmaPred="joti" posTag="Verbo" subPosTag="Intransitivo" token="joa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="biti" lemmaPred="binai" posTag="Verbo" subPosTag="Transitivo" token="binai">
+            <affix order="1" text="ina" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jaa bixon non xobo raóai , non chité ." translation="Las usamos para adornar nuestras casas y nuestros cuartos.">
+        <word id="0" lemma="ja" lemmaPred="Jaa" posTag="Verbo" subPosTag="Transitivo" token="Jaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="biti" lemmaPred="bixon" posTag="Verbo" subPosTag="Transitivo" token="bixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="xobo" lemmaPred="xobo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="4" lemma="raóati" lemmaPred="raóati" posTag="Verbo" subPosTag="Transitivo" token="raóai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="chité" lemmaPred="chité" posTag="Nombre" subPosTag="Contable" token="chité"/>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jawéki bimiribi non biai ." translation="Se usan las frutas de las plantas.">
+        <word id="0" lemma="jawéki" lemmaPred="Jawéki" posTag="Nombre" subPosTag="Contable" token="Jawéki"/>
+        <word id="1" lemma="bimi" lemmaPred="bimiribi" posTag="Nombre" subPosTag="Contable" token="bimiribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="biti" lemmaPred="biaí" posTag="Verbo" subPosTag="Transitivo" token="biai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Icha bixon non kokoai ." translation="Comemos mucha fruta de las plantas.">
+        <word id="0" lemma="icha" lemmaPred="Icha" posTag="Adjetivo" subPosTag="Calificativo" token="Icha"/>
+        <word id="1" lemma="biti" lemmaPred="bixon" posTag="Verbo" subPosTag="Transitivo" token="bixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="kokoti" lemmaPred="kokoai" posTag="Verbo" subPosTag="Transitivo" token="kokoai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jawéki jiwiribi non biai ." translation="Se usan los tallos de las plantas.">
+        <word id="0" lemma="jawéki" lemmaPred="Jawéki" posTag="Nombre" subPosTag="Contable" token="Jawéki"/>
+        <word id="1" lemma="jiwi" lemmaPred="jiwiribi" posTag="Nombre" subPosTag="Contable" token="jiwiribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="biti" lemmaPred="biaí" posTag="Verbo" subPosTag="Transitivo" token="biai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

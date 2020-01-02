@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Jawekeskatax ikárin maxó kexá ani ?" translation="¿Por qué el zorro tiene boca grande?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskatax" lemmaPred="Jawekeskatax" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskatax"/>
+        <word id="2" lemma="iki" lemmaPred="Jawekeskatax" posTag="Verbo" subPosTag="Copulativo" token="ikárin">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="maxó" lemmaPred="Jawekeskatax" posTag="Nombre" subPosTag="Contable" token="maxó"/>
+        <word id="4" lemma="kexá" lemmaPred="kexá" posTag="Postposición" subPosTag="" token="kexá"/>
+        <word id="5" lemma="ani" lemmaPred="kexá" posTag="Adjetivo" subPosTag="Calificativo" token="ani"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Nii meran benota" translation="Perdido en el monte">
+        <word id="0" lemma="nií" lemmaPred="kexá" posTag="Nombre" subPosTag="Contable" token="Nii"/>
+        <word id="1" lemma="meran" lemmaPred="kexá" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="2" lemma="benóti" lemmaPred="benota" posTag="Verbo" subPosTag="Intransitivo" token="benota">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Kakin non retea iki , westíora yawish , rabé jono ." translation="De ida (por el camino) matamos un armadillo y dos sajinos.">
+        <word id="0" lemma="kati" lemmaPred="benota" posTag="Verbo" subPosTag="Intransitivo" token="Kakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="non" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="reteti" lemmaPred="non" posTag="Verbo" subPosTag="Transitivo" token="retea">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="iki" lemmaPred="non" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="westiora" lemmaPred="non" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="6" lemma="yawish" lemmaPred="non" posTag="Nombre" subPosTag="Contable" token="yawish"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="rabé" lemmaPred="non" posTag="Numeral" subPosTag="" token="rabé"/>
+        <word id="9" lemma="jono" lemmaPred="jononra" posTag="Nombre" subPosTag="Contable" token="jono"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jokin , non westíora mananxawe biá iki ." translation="Siguiendo nuestro camino, hallamos un motelo.">
+        <word id="0" lemma="jóti" lemmaPred="Jokin" posTag="Verbo" subPosTag="Intransitivo" token="Jokin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="non" lemmaPred="Jokin" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="westiora" lemmaPred="Jokin" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="4" lemma="mananxawe" lemmaPred="Jokin" posTag="Nombre" subPosTag="Contable" token="mananxawe"/>
+        <word id="5" lemma="biti" lemmaPred="Jokin" posTag="Verbo" subPosTag="Transitivo" token="biá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="Jokin" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jatian jojókinbi , non bai onantimamaa iki ." translation="Hacia la mitad del camino ya nos habíamos errado.">
+        <word id="0" lemma="jatian" lemmaPred="Jokin" posTag="Adverbio" subPosTag="Tiempo" token="Jatian"/>
+        <word id="1" lemma="jojóti" lemmaPred="jojókinbi" posTag="Verbo" subPosTag="Intransitivo" token="jojókinbi">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="non" lemmaPred="jojókinbi" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="baí" lemmaPred="jojókinbi" posTag="Nombre" subPosTag="Contable" token="bai"/>
+        <word id="5" lemma="onanti" lemmaPred="onantimamaa" posTag="Verbo" subPosTag="Transitivo" token="onantimamaa">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+            <affix order="3" text="ma" type="Clít. de posición libre"/>
+            <affix order="4" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="iki" lemmaPred="onantimamaa" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

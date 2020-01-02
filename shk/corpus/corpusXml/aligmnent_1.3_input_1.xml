@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Eara Iquitoainoa iki" translation="Yo soy de Iquitos">
+        <word id="0" lemma="Eara" posTag="Pronombre" subPosTag="Personal" token="Eara"/>
+        <word id="1" lemma="Iquito" posTag="Nombre Propio" subPosTag="" token="Iquitoainoa">
+            <affix order="1" text="ain" type="Clít. nominal"/>
+            <affix order="2" text="noa" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+    </sentence>
+    <sentence id="1" text="Enra shinanai Genepanshian taenko kati jainoa koriki tsekai" translation="Pienso ir a la quebrada Genepanshea para extraer plata de allí">
+        <word id="0" lemma="Enra" posTag="Pronombre" subPosTag="Personal" token="Enra"/>
+        <word id="1" lemma="shinanti" posTag="Verbo" subPosTag="Transitivo" token="shinanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="Genepanshia" posTag="Nombre Propio" subPosTag="" token="Genepanshian">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="tae" posTag="Nombre" subPosTag="Contable" token="taenko">
+            <affix order="1" text="nko" type="Sufijo nominal"/>
+        </word>
+        <word id="4" lemma="kati" posTag="Verbo" subPosTag="Intransitivo" token="kati"/>
+        <word id="5" lemma="jainoa" posTag="Adverbio" subPosTag="Locación" token="jainoa"/>
+        <word id="6" lemma="koriki" posTag="Nombre" subPosTag="Contable" token="koriki"/>
+        <word id="7" lemma="tsekati" posTag="Verbo" subPosTag="Transitivo" token="tsekai">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Urubambankonia non Inka bíi kátira westíora jonín shínanai" translation="Cierto hombre piensa ir para traer a nuestro Inca del río Urubamba">
+        <word id="0" lemma="Urubamban" posTag="Nombre Propio" subPosTag="" token="Urubambankonia">
+            <affix order="1" text="kon" type="Sufijo nominal"/>
+            <affix order="2" text="nia" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="non" posTag="Pronombre" subPosTag="Personal" token="non"/>
+        <word id="2" lemma="Inka" posTag="Nombre Propio" subPosTag="" token="Inka"/>
+        <word id="3" lemma="bíikati" posTag="Verbo" subPosTag="Transitivo" token="bíi"/>
+        <word id="4" lemma="káti" posTag="Verbo" subPosTag="Transitivo" token="kátira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="westíora" posTag="Numeral" subPosTag="" token="westíora"/>
+        <word id="6" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonín">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="shínanti" posTag="Verbo" subPosTag="Transitivo" token="shínanai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Eara Yarínainoax jóke" translation="He venido de Yarina">
+        <word id="0" lemma="Eara" posTag="Pronombre" subPosTag="Personal" token="Eara"/>
+        <word id="1" lemma="Yarínai" posTag="Nombre Propio" subPosTag="" token="Yarínainoax">
+            <affix order="1" text="noa" type="Clít. nominal"/>
+            <affix order="2" text="x" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="jóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Eara Cacónkoniax nokóke" translation="He llegado de Caco">
+        <word id="0" lemma="Eara" posTag="Pronombre" subPosTag="Personal" token="Eara"/>
+        <word id="1" lemma="Cacónkoniax" posTag="Nombre Propio" subPosTag="" token="Cacónkoniax">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="nia" type="Clít. nominal"/>
+            <affix order="3" text="x" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="nokóti" posTag="Verbo" subPosTag="Transitivo" token="nokóke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

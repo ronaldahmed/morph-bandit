@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Wishawe , siná jawékinin janeboribi ." translation="Escribe los nombres de algunos animales salvajes del reino animal.">
+        <word id="0" lemma="wishati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="siná" lemmaPred="siná" posTag="Adjetivo" subPosTag="Calificativo" token="siná"/>
+        <word id="3" lemma="jawéki" lemmaPred="jawékin" posTag="Nombre" subPosTag="Contable" token="jawékinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jane" lemmaPred="janeboribi" posTag="Nombre" subPosTag="Contable" token="janeboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Wishawe , wetsa isakan janeboribi ." translation="Escribe los nombres de algunos pájaros del reino animal.">
+        <word id="0" lemma="wishati" lemmaPred="janeboribi" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="wetsa" lemmaPred="janeboribi" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="3" lemma="isá" lemmaPred="isakan" posTag="Nombre" subPosTag="Contable" token="isakan">
+            <affix order="1" text="kan" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jane" lemmaPred="isakan" posTag="Nombre" subPosTag="Contable" token="janeboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Wishawe , wetsa ronon janeboribi ." translation="Escribe los nombres de algunas culebras del reino animal.">
+        <word id="0" lemma="wishati" lemmaPred="isakan" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="wetsa" lemmaPred="isakan" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="3" lemma="rono" lemmaPred="rono" posTag="Nombre" subPosTag="Contable" token="ronon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jane" lemmaPred="rono" posTag="Nombre" subPosTag="Contable" token="janeboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wishawe , wetsa yapan janeboribi ." translation="Escribe los nombres de algunos peces del reino animal.">
+        <word id="0" lemma="wishati" lemmaPred="rono" posTag="Verbo" subPosTag="Transitivo" token="Wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="wetsa" lemmaPred="rono" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="3" lemma="yapa" lemmaPred="yapán" posTag="Nombre" subPosTag="Contable" token="yapan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="jane" lemmaPred="yapán" posTag="Nombre" subPosTag="Contable" token="janeboribi">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Min cuaderno meran jaa biáakin wishawe , kaíati jawéki , siná jawéki , isá jawéki , rono , jainoax yaparibi ." translation="Dibuja en tu cuaderno un animal doméstico, un animal salvaje, un pájaro, una culebra y un pez.">
+        <word id="0" lemma="mia" lemmaPred="yapán" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" lemmaPred="yapán" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" lemmaPred="yapán" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" token="jaa"/>
+        <word id="4" token="biáakin"/>
+        <word id="5" lemma="wishati" lemmaPred="biáakin" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="kaíati" lemmaPred="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="jawéki" lemmaPred="kaíati" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="9" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="10" lemma="siná" lemmaPred="kaíati" posTag="Adjetivo" subPosTag="Calificativo" token="siná"/>
+        <word id="11" lemma="jawéki" lemmaPred="kaíati" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="12" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="13" lemma="isá" lemmaPred="isá" posTag="Nombre" subPosTag="Contable" token="isá"/>
+        <word id="14" lemma="jawéki" lemmaPred="isá" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="15" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="16" lemma="rono" lemmaPred="rono" posTag="Nombre" subPosTag="Contable" token="rono"/>
+        <word id="17" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="18" lemma="jainoax" lemmaPred="rono" posTag="Conjunción" subPosTag="Coordinante" token="jainoax"/>
+        <word id="19" lemma="yapa" lemmaPred="yaparibi" posTag="Nombre" subPosTag="Contable" token="yaparibi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="20" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

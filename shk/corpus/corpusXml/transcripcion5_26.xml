@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Ramara Kosin jakonshaman akin waiaribai , caucho banonoxon ." translation="Pepe sembrará una chacra especial con árboles de caucho.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Ramara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonshaman">
+            <affix order="1" text="shaman" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="wai ati" posTag="Verbo" subPosTag="Transitivo" token="waiaribai">
+            <affix order="1" text="riba" type="Clít. de posición libre"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="caucho" posTag="Nombre" subPosTag="No contable" token="caucho"/>
+        <word id="7" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="bananoxon">
+            <affix order="1" text="noxon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="¿ Jaweatiki min caucho banai ? akin akana iki jonibaon ." translation="¿Por qué sembrarás caucho? le pregunta la gente.">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáweati" posTag="Palabra Interrogativa" subPosTag="" token="Jaweatiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="caucho" posTag="Nombre" subPosTag="No contable" token="caucho"/>
+        <word id="4" lemma="bánati" posTag="Verbo" subPosTag="Transitivo" token="banai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="6" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="9" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaábikan nií meran icha ikayanon caucho ." translation="Hay bastante caucho en el monte.">
+        <word id="0" lemma="játi" posTag="Verbo" subPosTag="Intransitivo" token="Jaábikan">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="kan" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="níi" posTag="Nombre" subPosTag="Contable" token="nií"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="ícha" posTag="Adverbio" subPosTag="Cantidad" token="icha"/>
+        <word id="4" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="ikayanon">
+            <affix order="1" text="kaya" type="Clít. de segunda posición"/>
+            <affix order="2" text="non" type="Clít. concord. de particip."/>
+        </word>
+        <word id="5" lemma="caucho" posTag="Nombre" subPosTag="No contable" token="caucho"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="¿ Jawekeskáakinmain min akasti iki , caucho waiakin ?" translation="¿Cómo te gusta hacer una chacra de caucho?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jáwekeskaati" posTag="Verbo" subPosTag="Transitivo" token="Jawekeskáakinmain">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+            <affix order="2" text="main" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akasti">
+            <affix order="1" text="kas" type="Sufijo verbal"/>
+            <affix order="2" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="6" lemma="caucho" posTag="Nombre" subPosTag="No contable" token="caucho"/>
+        <word id="7" lemma="wai ati" posTag="Verbo" subPosTag="Transitivo" token="waiakin">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Jainxon wetsa jonibaon Kosi osana iki ." translation="Algunas personas se ríen de Pepe.">
+        <word id="0" lemma="jainxon " posTag="Conjunción" subPosTag="Coordinante" token="Jainxon"/>
+        <word id="1" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="2" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibaon">
+            <affix order="1" text="baon" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosi"/>
+        <word id="4" lemma="osánti" posTag="Verbo" subPosTag="Intransitivo" token="osana">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

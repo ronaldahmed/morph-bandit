@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Ramara non wetsabi keskáakin , non ati iki wetsa jonibobires ." translation="También vamos a tratar como hermanos a los de otras tribus.">
+        <word id="0" lemma="rama" posTag="Adverbio" subPosTag="Tiempo" token="Ramara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="2" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsabi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="keskáakin" posTag="Postposición" subPosTag="" token="keskáakin"/>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="6" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="ati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="wétsa" posTag="Adjetivo" subPosTag="Cuantificador" token="wetsa"/>
+        <word id="9" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibobires">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jatíbira noa jaa maimea bakebobiressiki ." translation="Todos somos hijos de la misma tierra.">
+        <word id="0" lemma="jatíbi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="jati" posTag="Verbo" subPosTag="Intransitivo" token="jaa">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" token="maimea"/>
+        <word id="4" lemma="bake" posTag="Nombre" subPosTag="Contable" token="bakebobiressikiERROR">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jatíbira noa peruanobobiressiki ." translation="Todos somos peruanos.">
+        <word id="0" lemma="jatíbi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="noa"/>
+        <word id="2" lemma="peruano" posTag="Onomatopeya" subPosTag="" token="peruanobobiressikiERROR"/>
+        <word id="3" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wetsa jonibires joaitian non shinanti iki :" translation="Cuando viene alguna persona de otra tribu, digamos:">
+        <word id="0" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="Wetsa"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonibires">
+            <affix order="1" text="bires" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="jóti" posTag="Verbo" subPosTag="Intransitivo" token="joaitian">
+            <affix order="1" text="aitian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="non" posTag="Determinante" subPosTag="Demostrativo" token="non"/>
+        <word id="4" lemma="shinánti" posTag="Verbo" subPosTag="Transitivo" token="shinanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma=":" posTag="Puntuación" subPosTag="" token=":"/>
+    </sentence>
+    <sentence id="4" text="¡ Papa ! ¿ Jawekeskáaxonki min onana moa nete beá ?" translation="&quot;Papá, ¿cómo sabes cuando es de día?&quot;">
+        <word id="0" lemma="¡" posTag="Puntuación" subPosTag="" token="¡"/>
+        <word id="1" lemma="papa" posTag="Nombre Propio" subPosTag="" token="Papa"/>
+        <word id="2" lemma="!" posTag="Puntuación" subPosTag="" token="!"/>
+        <word id="3" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="4" lemma="jawekeskáati" posTag="Verbo" subPosTag="Transitivo" token="Jawekeskáaxonki">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="5" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="onanti" posTag="Verbo" subPosTag="Transitivo" token="onana"/>
+        <word id="7" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="moa"/>
+        <word id="8" lemma="nete" posTag="Nombre" subPosTag="Contable" token="nete"/>
+        <word id="9" lemma="béti" posTag="Verbo" subPosTag="Transitivo" token="beá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>3</lastSentence>
+    <sentence id="0" text="¿ Jatianki inon jawe beá iki ?" translation="Entonces, ¿qué trajo el tigre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="Jatian" lemmaPred="" posTag="Conjunción" subPosTag="Coordinante" token="Jatianki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="ino" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="inon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="jawe" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="4" lemma="beti" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="beá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Wetsa netenki inon chaxo jawe aká iki ?" translation="¿Qué dijo un día el tigre al venado?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="wetsa" lemmaPred="" posTag="Adjetivo" subPosTag="Calificativo" token="Wetsa"/>
+        <word id="2" lemma="nete" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="netenki">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ino" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="inon">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="chaxo" lemmaPred="" posTag="Nombre" subPosTag="Contable" token="chaxo"/>
+        <word id="5" lemma="jawe" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="6" lemma="ati" lemmaPred="" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Jaweki chaxonbiribi beá iki ?" translation="¿Y qué trajo el venado?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawe" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Jaweki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="chaxo" lemmaPred="chaxonbiribi" posTag="Nombre" subPosTag="Contable" token="chaxonbiribi">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+            <affix order="3" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="3" lemma="beti" lemmaPred="chaxonbiribi" posTag="Verbo" subPosTag="Transitivo" token="beá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="chaxonbiribi" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jawekeska shinanaxki ino jabata iki ?" translation="¿Por qué el tigre huyó del venado?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeska" lemmaPred="Mapó" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeska"/>
+        <word id="2" lemma="shinanti" lemmaPred="shinanaxki" posTag="Verbo" subPosTag="Transitivo" token="shinanaxki">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="3" lemma="ino" lemmaPred="ino" posTag="Nombre" subPosTag="Contable" token="ino"/>
+        <word id="4" lemma="jabáti" lemmaPred="ino" posTag="Verbo" subPosTag="Intransitivo" token="jabata">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="ino" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="Mapó ainbo iní" translation="La mujer greda">
+        <word id="0" lemma="mapó" lemmaPred="Mapó" posTag="Nombre" subPosTag="No contable" token="Mapó"/>
+        <word id="1" lemma="ainbo" lemmaPred="Mapó" posTag="Nombre" subPosTag="Contable" token="ainbo"/>
+        <word id="2" lemma="iki" lemmaPred="Mapó" posTag="Verbo" subPosTag="Copulativo" token="ini">
+            <affix order="1" text="ni" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+</corpus>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jawetianbi nikáyosma iki jaskara waiakanai ." translation="Nunca han oída tal cosa.">
+        <word id="0" lemma="jawetianbi" posTag="Adverbio" subPosTag="Tiempo" token="Jawetianbi"/>
+        <word id="1" lemma="ninkáti" posTag="Verbo" subPosTag="Transitivo" token="ninkáyosma">
+            <affix order="1" text="yosma" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="3" lemma="jaskara" posTag="Adjetivo" subPosTag="Calificativo" token="jaskara"/>
+        <word id="4" lemma="wai ati" posTag="Verbo" subPosTag="Transitivo" token="waiakanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jáatian Kosin jato yoya iki jawen shinan ." translation="Pepe les explica su idea a ellos.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Jáatian">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="tian" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="Kosi" posTag="Nombre Propio" subPosTag="" token="Kosin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="jato" posTag="Pronombre" subPosTag="Personal" token="jato"/>
+        <word id="3" lemma="yoiti" posTag="Verbo" subPosTag="Transitivo" token="yoia">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="jawen" posTag="Determinante" subPosTag="Posesivo" token="jawen"/>
+        <word id="6" lemma="shinán" posTag="Nombre" subPosTag="Contable" token="shinan"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Nokon xobo ochómara en waiai ." translation="La haré cerca de mi casa.">
+        <word id="0" lemma="nokon" posTag="Determinante" subPosTag="Demostrativo" token="Nokon"/>
+        <word id="1" lemma="xobo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="2" lemma="ochóma" posTag="Adverbio" subPosTag="Locación" token="ochómara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="wai ati" posTag="Verbo" subPosTag="Transitivo" token="waiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Nenoax wetsa baritianbo en ochó benabenayamai caucho ." translation="Después de unos años ya no tendré que ir lejos buscando caucho por el monte.">
+        <word id="0" lemma="neno" posTag="Adverbio" subPosTag="Locación" token="Nenoax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="1" lemma="wétsa" posTag="Adjetivo" subPosTag="Indefinido" token="wetsa"/>
+        <word id="2" lemma="baritia" posTag="Nombre" subPosTag="Contable" token="baritianbo">
+            <affix order="1" text="n" type="Clít. nominal"/>
+            <affix order="2" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="en">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ochó" posTag="Adverbio" subPosTag="Locación" token="ochó"/>
+        <word id="5" lemma="benati" posTag="Verbo" subPosTag="Transitivo" token="benayamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="i" type="Clít. concord. de particip."/>
+        </word>
+        <word id="6" lemma="caucho" posTag="Nombre" subPosTag="No contable" token="caucho"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaskatax ea iti iki noton xobonkobi , Pancha betan ." translation="Podré quedarme en casa con Paca.">
+        <word id="0" lemma="jaskatax" posTag="Conjunción" subPosTag="Coordinante" token="Jaskatax"/>
+        <word id="1" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="3" lemma="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="4" lemma="nokon" posTag="Pronombre" subPosTag="Demostrativo" token="nokon"/>
+        <word id="5" lemma="xobo" posTag="Nombre" subPosTag="Contable" token="xobonkobi">
+            <affix order="1" text="nko" type="Clít. nominal"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="7" lemma="Pancha" posTag="Nombre Propio" subPosTag="" token="Pancha"/>
+        <word id="8" lemma="betan" posTag="Conjunción" subPosTag="Coordinante" token="betan"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

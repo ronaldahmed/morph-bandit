@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Jaa vicuñabiribi akanai , &quot; Manan Animea Chonoshoko &quot; akin , jakonshoko ikaxbi oshitanishoko iketian ." translation="La vicuña se llama &quot;La señorita de la sierra&quot; porque es un animal delgadito y gracioso.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="vicuña" posTag="Nombre" subPosTag="Contable" token="vicuñabiribi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+            <affix order="2" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="5" lemma="manán" posTag="Nombre" subPosTag="Contable" token="Manan"/>
+        <word id="6" lemma="ani" posTag="Adjetivo" subPosTag="Calificativo" token="Animea">
+            <affix order="1" text="mea" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="chono" posTag="Nombre" subPosTag="Contable" token="Chonoshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="&quot;" posTag="Puntuación" subPosTag="" token="&quot;"/>
+        <word id="9" lemma="ati" posTag="Verbo" subPosTag="Transitivo" token="akin">
+            <affix order="1" text="kin" type="Sufijo verbal"/>
+        </word>
+        <word id="10" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="11" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakonshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="12" lemma="ikaxbi" posTag="Conjunción" subPosTag="Coordinante" token="ikaxbi"/>
+        <word id="13" lemma="oshi" posTag="Adjetivo" subPosTag="Calificativo" token="oshitanishoko">
+            <affix order="1" text="tani" type="Clít. de posición libre"/>
+            <affix order="2" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="14" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="15" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Vicuña rani bikanai , mas jakon rani iketian ." translation="De la vicuña se saca la mejor lana.">
+        <word id="0" lemma="vicuña" posTag="Nombre" subPosTag="Contable" token="Vicuña"/>
+        <word id="1" lemma="rani" posTag="Nombre" subPosTag="No contable" token="rani"/>
+        <word id="2" lemma="biti" posTag="Verbo" subPosTag="Transitivo" token="bikanai">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="mas" posTag="Símbolo" subPosTag="" token="mas"/>
+        <word id="5" lemma="jakon" posTag="Adjetivo" subPosTag="Calificativo" token="jakon"/>
+        <word id="6" lemma="rani" posTag="Nombre" subPosTag="No contable" token="rani"/>
+        <word id="7" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iketian">
+            <affix order="1" text="ketian" type="Clít. concord. de particip."/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jaa vicuña iki , jonin kaíatima jawéki ." translation="La vicuña es un animal silvestre.">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="vicuña" posTag="Nombre" subPosTag="Contable" token="vicuña"/>
+        <word id="2" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonin">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíatima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="6" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Jatíbi koshiai jawéki iki bakeai jawékibo ." translation="Todos los animales pertenecen al reino animal.">
+        <word id="0" lemma="jatíbi" posTag="Adjetivo" subPosTag="Cuantificador" token="Jatíbi"/>
+        <word id="1" lemma="kóshiti" posTag="Verbo" subPosTag="Intransitivo" token="koshiai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawéki"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="4" lemma="bakeati" posTag="Verbo" subPosTag="Transitivo" token="bakeaai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékibo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Min cuaderno meran wishawe , kaíati jawékinin jawebo ." translation="Escribe en tu cuaderno los nombres de algunos animales domésticos del reino animal.">
+        <word id="0" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="Min">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="1" lemma="cuaderno" posTag="Nombre" subPosTag="Contable" token="cuaderno"/>
+        <word id="2" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="3" lemma="wíshati" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="kaíati" posTag="Verbo" subPosTag="Transitivo" token="kaíati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="6" lemma="jawéki" posTag="Nombre" subPosTag="Contable" token="jawékinin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="jawe" posTag="Determinante" subPosTag="Demostrativo" token="jawebo">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+        </word>
+        <word id="8" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

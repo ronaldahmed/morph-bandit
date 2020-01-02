@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Títa náshiainra , jawen báke níi meran káke" translation="Mientras la madre se bañaba, su hijo fue al monte">
+        <word id="0" lemma="Títa" posTag="Nombre" subPosTag="Contable" token="Títa"/>
+        <word id="1" lemma="náshiti" posTag="Verbo" subPosTag="Intransitivo" token="náshiainra">
+            <affix order="1" text="ain" type="Sufijo verbal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="Jawen" posTag="Pronombre" subPosTag="Personal" token="jawen"/>
+        <word id="4" lemma="báke" posTag="Nombre" subPosTag="Contable" token="báke"/>
+        <word id="5" lemma="níi" posTag="Nombre" subPosTag="Contable" token="níi"/>
+        <word id="6" lemma="meran" posTag="Postposición" subPosTag="" token="meran"/>
+        <word id="7" lemma="káti" posTag="Verbo" subPosTag="Transitivo" token="káke">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="1" text="Ja ói beáibira , ea kái" translation="Aunque llueva, me voy">
+        <word id="0" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="1" lemma="óiti" posTag="Verbo" subPosTag="Intransitivo" token="ói"/>
+        <word id="2" lemma="beáibira" posTag="Conjunción" subPosTag="Coordinante" token="beáibira"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="ea"/>
+        <word id="5" lemma="káti" posTag="Verbo" subPosTag="Intransitivo" token="kái">
+            <affix order="1" text="i" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="2" text="Jenényoshin aínbaonronki jóni bónike béneanoxon" translation="Cuentan que antiguamente una sirena se llevó a un hombre para que fuese su esposo">
+        <word id="0" lemma="Jenényoshin" posTag="Nombre" subPosTag="Contable" token="Jenényoshin"/>
+        <word id="1" lemma="aínbo" posTag="Nombre" subPosTag="Contable" token="aínbaonronki">
+            <affix order="1" text="ronki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="jóni" posTag="Nombre" subPosTag="Contable" token="jóni"/>
+        <word id="3" lemma="bóti" posTag="Verbo" subPosTag="Transitivo" token="bónike">
+            <affix order="1" text="ni" type="Clít. de segunda posición"/>
+            <affix order="2" text="ke" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="béneati" posTag="Verbo" subPosTag="Transitivo" token="béneanoxon">
+            <affix order="1" text="noxon" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="3" text="Aínbobakera jawen titán tsískike" translation="A esta muchacha su madre le pintó la ingle">
+        <word id="0" lemma="Aínbobakera" posTag="Nombre" subPosTag="Contable" token="Aínbobakera"/>
+        <word id="1" lemma="Jawen" posTag="Pronombre" subPosTag="Personal" token="jawen"/>
+        <word id="2" lemma="titán" posTag="Nombre" subPosTag="Contable" token="titán"/>
+        <word id="3" lemma="tsískiti" posTag="Verbo" subPosTag="Transitivo" token="tsískike">
+            <affix order="1" text="ke" type="Sufijo verbal"/>
+        </word>
+    </sentence>
+    <sentence id="4" text="Ea náshiainkora benés iki" translation="Donde me baño no es profundo">
+        <word id="0" lemma="ea" posTag="Pronombre" subPosTag="Personal" token="Ea"/>
+        <word id="1" lemma="náshiti" posTag="Verbo" subPosTag="Intransitivo" token="náshiainkora">
+            <affix order="1" text="ainko" type="Clít. de posición libre"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="benés" posTag="Adjetivo" subPosTag="Calificativo" token="benés"/>
+        <word id="3" lemma="iki" posTag="Verbo" subPosTag="Transitivo" token="iki"/>
+    </sentence>
+</corpus>

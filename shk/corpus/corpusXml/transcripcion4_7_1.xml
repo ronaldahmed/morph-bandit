@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>1</lastSentence>
+    <sentence id="0" text="¿ Yoxanshoko ainboki joyamai ? ¿ Xontakoki joyamai ?" translation="¿Viene una persona anciana o una señorita?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="yoxán" posTag="Nombre" subPosTag="Contable" token="Yoxanshoko">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="ainbo" posTag="Nombre" subPosTag="Contable" token="ainboki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo nominal"/>
+        </word>
+        <word id="4" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+        <word id="5" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="6" lemma="xóntako" posTag="Nombre" subPosTag="Contable" token="Xóntakoki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="7" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joyamai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo nominal"/>
+        </word>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="Joyamarai , ni yoxanshokobi , ni xontakobi , ni nokon anibobi beyamakanai ." translation="No viene ni una persona anciana ni una señorita ni mis padres tampoco.">
+        <word id="0" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="Joyamarai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="1" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="2" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="3" lemma="yoxan" posTag="Nombre" subPosTag="Contable" token="yoxanshokobi">
+            <affix order="1" text="shoko" type="Clít. de posición libre"/>
+            <affix order="2" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="6" lemma="xóntako" posTag="Nombre" subPosTag="Contable" token="xóntakobi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="ni" posTag="Conjunción" subPosTag="Coordinante" token="ni"/>
+        <word id="9" lemma="nokon" posTag="Determinante" subPosTag="Posesivo" token="nokon"/>
+        <word id="10" lemma="anibo" posTag="Nombre" subPosTag="Contable" token="anibobi">
+            <affix order="1" text="bi" type="Clít. de posición libre"/>
+        </word>
+        <word id="11" lemma="beti" posTag="Verbo" subPosTag="Transitivo" token="beyamakanai">
+            <affix order="1" text="yama" type="Sufijo verbal"/>
+            <affix order="2" text="kan" type="Sufijo verbal"/>
+            <affix order="3" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Y ¿ jaweakiki mia weníinakaina ?" translation="Entonces, ¿por qué te pones de pie?">
+        <word id="0" lemma="y" posTag="Conjunción" subPosTag="Coordinante" token="Y"/>
+        <word id="1" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="2" lemma="jaweaki" posTag="Palabra Interrogativa" subPosTag="" token="jaweakiki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="mia" posTag="Pronombre" subPosTag="Personal" token="mia">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="wenínti" posTag="Verbo" subPosTag="Intransitivo" token="weníinakaina">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+            <affix order="2" text="kain" type="Sufijo verbal"/>
+            <affix order="3" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="Moara wetsa joni joai , jaára non shiroamita iki ." translation="Porque viene otra persona a quien respetamos.">
+        <word id="0" lemma="moa" posTag="Adverbio" subPosTag="Tiempo" token="Moara">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="wetsa" posTag="Adjetivo" subPosTag="Calificativo" token="wetsa"/>
+        <word id="2" lemma="joni" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="3" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="5" lemma="ja" posTag="Pronombre" subPosTag="Personal" token="jaára">
+            <affix order="1" text="a" type="Clít. nominal"/>
+            <affix order="2" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="6" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="7" lemma="shíroati" posTag="Verbo" subPosTag="Transitivo" token="shiroatima">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+            <affix order="2" text="ma" type="Clít. de posición libre"/>
+        </word>
+        <word id="8" lemma="iki" posTag="Verbo" subPosTag="Copulativo" token="iki"/>
+        <word id="9" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Jaa jonira joai , non reken ." translation="Viene otra persona que es mayor que nosotros.">
+        <word id="0" lemma="ja" posTag="Determinante" subPosTag="Demostrativo" token="Ja"/>
+        <word id="1" lemma="joni" posTag="Nombre" subPosTag="Contable" token="jonira">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="joti" posTag="Verbo" subPosTag="Intransitivo" token="joai">
+            <affix order="1" text="ai" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="noa" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="reken" posTag="Adjetivo" subPosTag="Calificativo" token="reken"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>2</lastSentence>
+    <sentence id="0" text="Jaskara ikax noa senen xetaya iti iki , jan piti jakonwakin nakati ." translation="Necesitamos todos los dientes para masticar bien la comida.">
+        <word id="0" lemma="jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="1" lemma="iki" lemmaPred="noa" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="3" token="senen"/>
+        <word id="4" lemma="xeta" lemmaPred="xetaya" posTag="Nombre" subPosTag="Parte del cuerpo" token="xetaya">
+            <affix order="1" text="ya" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="iti" lemmaPred="iti" posTag="Verbo" subPosTag="Copulativo" token="iti"/>
+        <word id="6" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="jan" lemmaPred="jan" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="9" lemma="piti" lemmaPred="piti" posTag="Nombre" subPosTag="Contable" token="piti"/>
+        <word id="10" lemma="jakonhati" lemmaPred="jakonwakin" posTag="Verbo" subPosTag="Transitivo" token="jakonhakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="11" lemma="nakati" lemmaPred="nakati" posTag="Verbo" subPosTag="Transitivo" token="nakati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="12" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="1" text="Jainxonra jakonwakin non xeta cuídanti iki ." translation="Por lo tanto debemos cuidar bien los dientes.">
+        <word id="0" lemma="jainxon" lemmaPred="Jainxonra" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonra">
+            <affix order="1" text="ra" type="Clít. de segunda posición"/>
+        </word>
+        <word id="1" lemma="jakonhati" lemmaPred="jakonwakin" posTag="Verbo" subPosTag="Transitivo" token="jakonhakin">
+            <affix order="1" text="kin" type="Clít. concord. de particip."/>
+        </word>
+        <word id="2" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="xeta" lemmaPred="xeta" posTag="Nombre" subPosTag="Parte del cuerpo" token="xeta"/>
+        <word id="4" lemma="cuídanti" lemmaPred="cuídanti" posTag="Verbo" subPosTag="Transitivo" token="cuídanti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="iki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Jainoax noa piá pekáo jakoni manokoxoti iki , ompax jawebiaomatonin . Jaskara ikax noa cepillonin manokoxoti iki ." translation="Debemos lavarnos los dientes con agua limpia, después de comer. Es bueno emplear un cepillo de dientes.">
+        <word id="0" lemma="jainoax" lemmaPred="Jainoax" posTag="Conjunción" subPosTag="Coordinante" token="Jainoax"/>
+        <word id="1" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="2" lemma="piá" lemmaPred="piá" posTag="Verbo" subPosTag="Transitivo" token="piá">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="3" lemma="pekáo" lemmaPred="pekáo" posTag="Conjunción" subPosTag="Subordinanate" token="pekáo"/>
+        <word id="4" token="jakoni"/>
+        <word id="5" token="manokoxoti"/>
+        <word id="6" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" lemma="ompax" lemmaPred="ompax" posTag="Nombre" subPosTag="No contable" token="ompax"/>
+        <word id="9" token="jawebiaomatonin"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+        <word id="11" lemma="jaskara" lemmaPred="Jaskara" posTag="Adverbio" subPosTag="Manera" token="Jaskara"/>
+        <word id="12" lemma="ikax" lemmaPred="ikax" posTag="Verbo" subPosTag="Copulativo" token="ikax">
+            <affix order="1" text="ax" type="Clít. concord. de particip."/>
+        </word>
+        <word id="13" lemma="noa" lemmaPred="noa" posTag="Pronombre" subPosTag="Personal" token="noa">
+            <affix order="1" text="a" type="Clít. nominal"/>
+        </word>
+        <word id="14" lemma="cepillo" lemmaPred="cepillonin" posTag="Nombre" subPosTag="Contable" token="cepillonin">
+            <affix order="1" text="nin" type="Clít. nominal"/>
+        </word>
+        <word id="15" token="manokoxoti"/>
+        <word id="16" token="iki"/>
+        <word id="17" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Min cepillo yamaketian , mia manokoxoresti iki , ompax jawebiaomatonin ." translation="Si no tienes un cepillo de dientes, puedes enjuagarte la boca con agua limpia.">
+        <word id="0" token="Min"/>
+        <word id="1" token="cepillo"/>
+        <word id="2" token="yamaketian"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="mia"/>
+        <word id="5" token="manokoxoresti"/>
+        <word id="6" token="iki"/>
+        <word id="7" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="8" token="ompax"/>
+        <word id="9" token="jawebiaomatonin"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Noa piaxbi manokoxoyamaketian , piti tsosábo non xeta naman banetai ." translation="Cuando no nos enjugamos la boca después de comer, pedacitos de la comida quedan en la boca.">
+        <word id="0" token="Noa"/>
+        <word id="1" token="piaxbi"/>
+        <word id="2" token="manokoxoyamaketian"/>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" token="piti"/>
+        <word id="5" token="tsosábo"/>
+        <word id="6" token="non"/>
+        <word id="7" token="xeta"/>
+        <word id="8" token="naman"/>
+        <word id="9" token="banetai"/>
+        <word id="10" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

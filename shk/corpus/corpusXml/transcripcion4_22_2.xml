@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="Neskáaxon" translation="Así">
+        <word id="0" lemma="neskáaxon" lemmaPred="Neskáaxon" posTag="Adverbio" subPosTag="Manera" token="Neskáaxon"/>
+    </sentence>
+    <sentence id="1" text="Jainsronribi wishawe , jaweatiborin jaa jiwi ixon ." translation="También escribe para qué sirven estos árboles.">
+        <word id="0" lemma="jainxon" lemmaPred="Jainsronribi" posTag="Conjunción" subPosTag="Coordinante" token="Jainxonribi">
+            <affix order="1" text="ribi" type="Clít. de posición libre"/>
+        </word>
+        <word id="1" lemma="wishawe" lemmaPred="wishawe" posTag="Verbo" subPosTag="Transitivo" token="wishawe">
+            <affix order="1" text="we" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="jaweati" lemmaPred="jaweatiborin" posTag="Palabra Interrogativa" subPosTag="" token="jaweatiborin">
+            <affix order="1" text="bo" type="Clít. nominal"/>
+            <affix order="2" text="rin" type="Clít. de segunda posición"/>
+        </word>
+        <word id="4" lemma="ja" lemmaPred="jaa" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="5" lemma="jiwi" lemmaPred="jiwi" posTag="Nombre" subPosTag="Contable" token="jiwi"/>
+        <word id="6" lemma="ixon" lemmaPred="ixon" posTag="Verbo" subPosTag="Copulativo" token="ixon">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="2" text="Caucho riki , jan non koríki gananti ." translation="El caucho sirve para ganar plata.">
+        <word id="0" lemma="caucho" lemmaPred="Caucho" posTag="Nombre" subPosTag="Contable" token="Caucho"/>
+        <word id="1" lemma="riki" lemmaPred="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="ja" lemmaPred="jan" posTag="Pronombre" subPosTag="Personal" token="jan">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="koríki" lemmaPred="gananti" posTag="Nombre" subPosTag="No contable" token="koríki"/>
+        <word id="6" lemma="gananti" lemmaPred="gananti" posTag="Verbo" subPosTag="Transitivo" token="gananti">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="3" text="Wanin riki , non jaa piti ." translation="El pifayo sirve para comida.">
+        <word id="0" lemma="wanin" lemmaPred="Wanin" posTag="Nombre" subPosTag="Contable" token="Wanin"/>
+        <word id="1" lemma="riki" lemmaPred="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="noa" lemmaPred="non" posTag="Pronombre" subPosTag="Personal" token="non">
+            <affix order="1" text="n" type="Clít. nominal"/>
+        </word>
+        <word id="4" lemma="ja" lemmaPred="jaa" posTag="Determinante" subPosTag="Demostrativo" token="ja"/>
+        <word id="5" lemma="piti" lemmaPred="piti" posTag="Nombre" subPosTag="Contable" token="piti"/>
+        <word id="6" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+    <sentence id="4" text="Konxan riki , xobo witáati ." translation="El cedro sirve para horcones.">
+        <word id="0" lemma="konxan" lemmaPred="Konxan" posTag="Nombre" subPosTag="Contable" token="Konxan"/>
+        <word id="1" lemma="riki" lemmaPred="riki" posTag="Verbo" subPosTag="Copulativo" token="riki"/>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="xobo" lemmaPred="xobo" posTag="Nombre" subPosTag="Contable" token="xobo"/>
+        <word id="4" lemma="witáati" lemmaPred="witáati" posTag="Verbo" subPosTag="Transitivo" token="witáati">
+            <affix order="1" text="ti" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="." posTag="Puntuación" subPosTag="" token="."/>
+    </sentence>
+</corpus>

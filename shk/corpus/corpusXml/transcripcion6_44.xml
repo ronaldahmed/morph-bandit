@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <lastSentence>4</lastSentence>
+    <sentence id="0" text="¿ Jawekeskataxki bochikiax , maankana iki ?" translation="¿Cómo bajaron los jóvenes de lo alto de la lupuna?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskatax" lemmaPred="" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskataxki">
+            <affix order="1" text="ki" type="Clít. de posición libre"/>
+        </word>
+        <word id="2" lemma="bochiki" lemmaPred="bochikiax" posTag="Adverbio" subPosTag="Locación" token="bochikiax">
+            <affix order="1" text="ax" type="Clít. nominal"/>
+        </word>
+        <word id="3" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="4" lemma="maanti" lemmaPred="maankana" posTag="Verbo" subPosTag="Intransitivo" token="maankana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="maankana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="1" text="¿ Pakéxonki , awá jawekeskaakana iki ?" translation="Después de bajar, ¿qué hicieron a la sachavaca?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="pakéti" lemmaPred="Pakéxonki" posTag="Verbo" subPosTag="Intransitivo" token="Pakéxonki">
+            <affix order="1" text="xon" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="," posTag="Puntuación" subPosTag="" token=","/>
+        <word id="3" lemma="awá" lemmaPred="Pakéxonki" posTag="Nombre" subPosTag="Contable" token="awá"/>
+        <word id="4" lemma="jawekeskaati" lemmaPred="Pakéxonki" posTag="Verbo" subPosTag="Transitivo" token="jawekeskaakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="5" lemma="iki" lemmaPred="Pakéxonki" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="6" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="2" text="¿ Kakáreskini jawe merakana iki ?" translation="Siguiendo el camino, ¿qué hallaron?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="kakáti" lemmaPred="Kakáreskini" posTag="Verbo" subPosTag="Intransitivo" token="Kakáreskini">
+            <affix order="1" text="res" type="Clít. de posición libre"/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+            <affix order="3" text="ni" type="Sufijo verbal"/>
+        </word>
+        <word id="2" lemma="jawe" lemmaPred="Kakáreskini" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="3" lemma="merati" lemmaPred="Kakáreskini" posTag="Verbo" subPosTag="Transitivo" token="merakana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="merakana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="3" text="¿ Jawekeskataxki keiba shitákana iki ?" translation="¿Cómo bandearon a la otra orilla?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="jawekeskatax" lemmaPred="Kakáreskini" posTag="Palabra Interrogativa" subPosTag="" token="Jawekeskataxki">
+            <affix order="1" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="2" lemma="keiba" lemmaPred="keibati" posTag="Adverbio" subPosTag="Locación" token="keiba"/>
+        <word id="3" lemma="shitati" lemmaPred="shitákana" posTag="Verbo" subPosTag="Transitivo" token="shitákana">
+            <affix order="1" text="kan" type="Sufijo verbal"/>
+            <affix order="2" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="4" lemma="iki" lemmaPred="shitákana" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="5" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+    <sentence id="4" text="¿ Ja paketainki joni kapetan jawe aká iki ?" translation="Mientras bajaban, ¿qué le sucedió al último hombre?">
+        <word id="0" lemma="¿" posTag="Puntuación" subPosTag="" token="¿"/>
+        <word id="1" lemma="ja" lemmaPred="shitákana" posTag="Pronombre" subPosTag="Personal" token="Ja"/>
+        <word id="2" lemma="paketi" lemmaPred="paketainki" posTag="Verbo" subPosTag="Intransitivo" token="paketainki">
+            <affix order="1" text="ain" type="Clít. concord. de particip."/>
+            <affix order="2" text="ki" type="Clít. de segunda posición"/>
+        </word>
+        <word id="3" lemma="joni" lemmaPred="paketainki" posTag="Nombre" subPosTag="Contable" token="joni"/>
+        <word id="4" lemma="kapé" lemmaPred="kapetan" posTag="Nombre" subPosTag="Contable" token="kapetan">
+            <affix order="1" text="tan" type="Clít. nominal"/>
+        </word>
+        <word id="5" lemma="jawe" lemmaPred="kapetan" posTag="Palabra Interrogativa" subPosTag="" token="jawe"/>
+        <word id="6" lemma="ati" lemmaPred="kapetan" posTag="Verbo" subPosTag="Transitivo" token="aká">
+            <affix order="1" text="a" type="Sufijo verbal"/>
+        </word>
+        <word id="7" lemma="iki" lemmaPred="kapetan" posTag="Verbo Auxiliar" subPosTag="" token="iki"/>
+        <word id="8" lemma="?" posTag="Puntuación" subPosTag="" token="?"/>
+    </sentence>
+</corpus>
